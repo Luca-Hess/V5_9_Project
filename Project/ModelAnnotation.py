@@ -284,6 +284,7 @@ print("="*60)
 script = generate_automation_script(example_protocol, model, tokenizer, device)
 print(script)
 
+
 #
 # # Protocol 103 annotation example
 # print(annotate_protocol("""Isolation Of Total DNA From NC64A Chlorella
