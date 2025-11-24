@@ -20,6 +20,7 @@ class LabAutomationMachine:
 
     AUTOMATED_ACTIONS = {
         'pipette': {'params': ['source', 'destination', 'volume']},
+        'add': {'params': ['reagent', 'container', 'volume']},
         'mix': {'params': ['container', 'duration', 'speed']},
         'incubate': {'params': ['container', 'temperature', 'duration']},
         'centrifuge': {'params': ['container', 'speed', 'duration', 'temperature']},
@@ -149,7 +150,7 @@ class RewardCalculator:
     def __init__(self):
         self.converter = AnnotationToScriptConverter()
 
-    def check_syntax(self, annotation: str): -> float:
+    def check_syntax(self, annotation: str) -> float:
         """Check if annotation follows proper .ann syntax"""
         score = 0.0
         lines = annotation.strip().split('\n')
@@ -174,7 +175,7 @@ class RewardCalculator:
             score = 0.0
 
             # Check that events exist
-            if len(actions)) > 0:
+            if len(actions) > 0:
                 score += 0.5
 
             # Check for reasonable number of actions (not too few or many)
@@ -341,11 +342,54 @@ def evaluate(model, data_loader, device):
             total_loss += loss.item()
     return total_loss / len(data_loader)
 
+def run_inference_on_specific_protocol(protocol_name: str, converter):
+    """Generate automation workflow for a specific test protocol by name"""
+    test_path = "WLP-Dataset-master/test"
+
+    # Find the specific protocol in the test dataset
+    if protocol_name.endswith(".ann"):
+        base_name = protocol_name[:-4]
+    else:
+        base_name = protocol_name
+
+    protocol_text = base_name + ".txt"
+    reference_annotation = base_name + ".ann"
+
+    txt_path = os.path.join(test_path, protocol_text)
+    ann_path = os.path.join(test_path, reference_annotation)
+
+    with open(txt_path, encoding="utf-8") as f:
+        text = f.read().strip()
+    with open(ann_path, encoding="utf-8") as f:
+        ann = f.read().strip()
+
+    print(f"\n{'=' * 80}")
+    print(f"PROTOCOL: {protocol_name}")
+    print(f"{'=' * 80}")
+    print(f"\nOriginal Protocol Text:")
+    print(text)
+    print(f"\n{'-' * 80}")
+    print(f"Reference Annotation (.ann file):")
+    print(ann)
+    print(f"\n{'-' * 80}")
+
+
+    # Convert annotation to automation script (rule-based)
+    script_from_reference = converter.convert(ann)
+
+    print(f"Automation Script (from reference annotation):")
+    print(script_from_reference)
+    print(f"\n{'=' * 80}\n")
+
+# Test on protocol_2 (index 2 in test set)
+print("Testing automation workflow generation on test data (BEFORE training):")
+run_inference_on_specific_protocol("protocol_224", converter)
+
 # Supervised pre-training
 print("Starting supervised pre-training...")
 num_pretraining_epochs = 3
 
-for epoch in range(num_pretrain_epochs):
+for epoch in range(num_pretraining_epochs):
     model.train()
     loop = tqdm.tqdm(train_loader, desc=f"Pretrain Epoch {epoch + 1}")
 
@@ -437,7 +481,7 @@ def generate_automation_workflow(protocol_text: str, model, tokenizer, device):
     input_text = f"translate protocol to automation: {protocol_text}"
     inputs = tokenizer(input_text, return_tensors="pt", max_length=512, truncation=True).to(device)
 
-    outputs = model.generate(
+    annotation_output = model.generate(
         **inputs,
         max_length=512,
         num_beams=4,
@@ -467,7 +511,7 @@ print("\nGenerated Automation Script:")
 print(script)
 
 
-#
+
 # # Protocol 103 annotation example
 # print(annotate_protocol("""Isolation Of Total DNA From NC64A Chlorella
 # Inoculate 500 mL flasks with NC64A chlorella, each flask to contain 360 mL of cells at 1.2 X 106 cells/mL in MBBM.
