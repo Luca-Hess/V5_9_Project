@@ -381,96 +381,98 @@ def run_inference_on_specific_protocol(protocol_name: str, converter):
     print(script_from_reference)
     print(f"\n{'=' * 80}\n")
 
-# Test on protocol_2 (index 2 in test set)
-print("Testing automation workflow generation on test data (BEFORE training):")
-run_inference_on_specific_protocol("protocol_224", converter)
+if __name__ == "__main__":
 
-# Supervised pre-training
-print("Starting supervised pre-training...")
-num_pretraining_epochs = 3
+    # Test on protocol_2 (index 2 in test set)
+    print("Testing automation workflow generation on test data (BEFORE training):")
+    run_inference_on_specific_protocol("protocol_224", converter)
 
-for epoch in range(num_pretraining_epochs):
-    model.train()
-    loop = tqdm.tqdm(train_loader, desc=f"Pretrain Epoch {epoch + 1}")
+    # Supervised pre-training
+    print("Starting supervised pre-training...")
+    num_pretraining_epochs = 3
 
-    for batch in loop:
-        batch = {k: v.to(device) for k, v in batch.items()}
+    for epoch in range(num_pretraining_epochs):
+        model.train()
+        loop = tqdm.tqdm(train_loader, desc=f"Pretrain Epoch {epoch + 1}")
 
-        if use_amp:
-            with autocast():
+        for batch in loop:
+            batch = {k: v.to(device) for k, v in batch.items()}
+
+            if use_amp:
+                with autocast():
+                    outputs = model(**batch)
+                    loss = outputs.loss
+                scaler.scale(loss).backward()
+                scaler.step(optimizer)
+                scaler.update()
+            else:
                 outputs = model(**batch)
                 loss = outputs.loss
-            scaler.scale(loss).backward()
-            scaler.step(optimizer)
-            scaler.update()
-        else:
-            outputs = model(**batch)
-            loss = outputs.loss
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-            optimizer.step()
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                optimizer.step()
 
-        optimizer.zero_grad()
-        loop.set_postfix(loss=loss.item())
+            optimizer.zero_grad()
+            loop.set_postfix(loss=loss.item())
 
-    test_loss = evaluate(model, test_loader, device)
-    scheduler.step(test_loss)
-    print(f"Pretrain Epoch {epoch + 1} finished, Test Loss: {test_loss:.4f}")
+        test_loss = evaluate(model, test_loader, device)
+        scheduler.step(test_loss)
+        print(f"Pretrain Epoch {epoch + 1} finished, Test Loss: {test_loss:.4f}")
 
-# Reinforcement Learning fine-tuning
-print("Starting RL fine-tuning...")
+    # Reinforcement Learning fine-tuning
+    print("Starting RL fine-tuning...")
 
-# Wrap model for PPO
-ppo_model = AutoModelForSeq2SeqLMWithValueHead.from_pretrained(model)
-ppo_model.to(device)
+    # Wrap model for PPO
+    ppo_model = AutoModelForSeq2SeqLMWithValueHead.from_pretrained(model)
+    ppo_model.to(device)
 
-ppo_config = PPOConfig(
-    learning_rate = 1e-5,
-    batch_size = 4,
-    mini_batch_size = 4,
-    gradient_accumulation_steps = 1
-)
+    ppo_config = PPOConfig(
+        learning_rate = 1e-5,
+        batch_size = 4,
+        mini_batch_size = 4,
+        gradient_accumulation_steps = 1
+    )
 
-ppo_trainer = PPOTrainer(
-    config=ppo_config,
-    model=ppo_model,
-    tokenizer=tokenizer
-)
+    ppo_trainer = PPOTrainer(
+        config=ppo_config,
+        model=ppo_model,
+        tokenizer=tokenizer
+    )
 
-# Training Loop
-num_rl_epochs = 2
-for epoch in range(num_rl_epochs):
-    loop = tqdm.tqdm(train_loader, desc=f"RL Epoch {epoch + 1}")
+    # Training Loop
+    num_rl_epochs = 2
+    for epoch in range(num_rl_epochs):
+        loop = tqdm.tqdm(train_loader, desc=f"RL Epoch {epoch + 1}")
 
-    for batch in loop:
-        protocol_texts = [tokenizer.decode(ids, skip_special_tokens=True)
-                          for ids in batch['input_ids']]
-        reference_annotations = [tokenizer.decode(ids, skip_special_tokens=True)
-                                 for ids in batch['labels']]
+        for batch in loop:
+            protocol_texts = [tokenizer.decode(ids, skip_special_tokens=True)
+                              for ids in batch['input_ids']]
+            reference_annotations = [tokenizer.decode(ids, skip_special_tokens=True)
+                                     for ids in batch['labels']]
 
-        # Generate annotations
-        query_tensors = batch['input_ids'].to(device)
-        response_tensors = ppo_trainer.generate(query_tensors, max_new_tokens=512)
+            # Generate annotations
+            query_tensors = batch['input_ids'].to(device)
+            response_tensors = ppo_trainer.generate(query_tensors, max_new_tokens=512)
 
-        # Decode generated annotations
-        generated_annotations = [tokenizer.decode(r.squeeze(), skip_special_tokens=True)
-                                 for r in response_tensors]
+            # Decode generated annotations
+            generated_annotations = [tokenizer.decode(r.squeeze(), skip_special_tokens=True)
+                                     for r in response_tensors]
 
-        # Calculate rewards
-        rewards = []
-        for gen_ann, ref_ann in zip(generated_annotations, reference_annotations):
-            reward = reward_calculator.calculate_reward(gen_ann, ref_ann)
-            rewards.append(torch.tensor(reward, device=device))
+            # Calculate rewards
+            rewards = []
+            for gen_ann, ref_ann in zip(generated_annotations, reference_annotations):
+                reward = reward_calculator.calculate_reward(gen_ann, ref_ann)
+                rewards.append(torch.tensor(reward, device=device))
 
-        # PPO update
-        stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
-        loop.set_postfix(mean_reward=torch.tensor(rewards).mean().item())
+            # PPO update
+            stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
+            loop.set_postfix(mean_reward=torch.tensor(rewards).mean().item())
 
-    print(f"RL Epoch {epoch + 1} finished, Mean Reward: {torch.tensor(rewards).mean().item():.4f}")
+        print(f"RL Epoch {epoch + 1} finished, Mean Reward: {torch.tensor(rewards).mean().item():.4f}")
 
-# Save final model
-ppo_model.save_pretrained("protocol_annotation_rl_model")
-tokenizer.save_pretrained("protocol_annotation_rl_model")
+    # Save final model
+    ppo_model.save_pretrained("protocol_annotation_rl_model")
+    tokenizer.save_pretrained("protocol_annotation_rl_model")
 
 
 def generate_automation_workflow(protocol_text: str, model, tokenizer, device):
@@ -494,21 +496,23 @@ def generate_automation_workflow(protocol_text: str, model, tokenizer, device):
     script = converter.convert(annotation)
     return annotation, script
 
-# Example usage
-example_protocol = """Standard RNA Synthesis (E2050)
-Thaw the necessary kit components.
-Mix and pulse-spin in microfuge to collect solutions to the bottoms of tubes.
-Keep on ice.
-Incubate at 37°C for 2 hours."""
+if __name__ == "__main__":
 
-print("\n" + "="*60)
-print("EXAMPLE AUTOMATION SCRIPT:")
-print("="*60)
-annotation, script = generate_automation_workflow(example_protocol, model, tokenizer, device)
-print("\nGenerated Annotation:")
-print(annotation)
-print("\nGenerated Automation Script:")
-print(script)
+    # Example usage
+    example_protocol = """Standard RNA Synthesis (E2050)
+    Thaw the necessary kit components.
+    Mix and pulse-spin in microfuge to collect solutions to the bottoms of tubes.
+    Keep on ice.
+    Incubate at 37°C for 2 hours."""
+
+    print("\n" + "="*60)
+    print("EXAMPLE AUTOMATION SCRIPT:")
+    print("="*60)
+    annotation, script = generate_automation_workflow(example_protocol, model, tokenizer, device)
+    print("\nGenerated Annotation:")
+    print(annotation)
+    print("\nGenerated Automation Script:")
+    print(script)
 
 
 
