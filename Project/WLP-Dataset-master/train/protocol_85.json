@@ -1,0 +1,153 @@
+[
+  {
+    "protocol": "Ethanol precipitation of nucleic acids (Eppendorf tubes)\nAdd 1/10 volume of 3M sodium acetate, pH 5.2 or 1/2 volume of 5M ammonium acetate.\nAdd 2-3 volumes of 100% Ethanol.\nMix and freeze overnight in -20.\nSpin at full speed in a standard microcentrifuge at 4 degrees for 30 minutes.\nDecant (or carefully pipet off) the supernatant.\nDry the pellet.\nAdd your desired quantity of water.\nVortex and spin down to resuspend.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "3M sodium acetate, pH 5.2 OR 5M ammonium acetate",
+          "volume": "1/10 volume OR 1/2 volume (relative to sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "100% Ethanol",
+          "volume": "2-3 volumes (relative to sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": "full speed (standard microcentrifuge)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "alternative": "carefully pipet off"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "water",
+          "volume": "desired quantity",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "spin down",
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='Eppendorf tube', reagent='3M sodium acetate, pH 5.2 OR 5M ammonium acetate', volume='1/10 volume OR 1/2 volume (relative to sample)')\nadd(container='Eppendorf tube', reagent='100% Ethanol', volume='2-3 volumes (relative to sample)')\nmix(container='Eppendorf tube')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: Eppendorf tube, temperature: -20\u00b0C, duration: overnight, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Eppendorf tube', temperature='4\u00b0C', duration='30 minutes', speed='full speed (standard microcentrifuge)')\ndecant(container='Eppendorf tube', reagent='supernatant', alternative='carefully pipet off')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: Eppendorf tube, reagent: pellet, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Eppendorf tube', reagent='water', volume='desired quantity')\nvortex(container='Eppendorf tube')\ncentrifuge(container='Eppendorf tube', speed='spin down', purpose='resuspend')",
+    "source_file": "protocol_85.txt"
+  }
+]

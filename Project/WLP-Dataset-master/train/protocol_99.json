@@ -1,0 +1,143 @@
+[
+  {
+    "protocol": "PCR with Q5\u00ae High-Fidelity 2X Master Mix (M0492)\nSet up the following reaction on ice: Q5\u00a0High-Fidelity 2X Master Mix, 12.5 \u00b5l, 25 \u00b5l, 1X; 10 \u00b5M, Forward Primer, 1.25 \u00b5l, 2.5 \u00b5l, 0.5 \u00b5M; 10 \u00b5M, Reverse Primer, 1.25 \u00b5l, 2.5 \u00b5l, 0.5 \u00b5M; Template DNA variable variable< 1,000 ng Nuclease-Free Water, to 25 \u00b5l, to 50 \u00b5l.\u00a0 \nGently mix the reaction.\nCollect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with mineral oil if using a PCR machine without a heated lid.\nQuickly transfer PCR tubes to a\u00a0thermocycler preheated to the denaturation temperature (98\u00b0C).",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Q5 High-Fidelity 2X Master Mix",
+          "volume": "12.5 \u00b5l or 25 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Forward Primer (10 \u00b5M)",
+          "volume": "1.25 \u00b5l or 2.5 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Reverse Primer (10 \u00b5M)",
+          "volume": "1.25 \u00b5l or 2.5 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Template DNA",
+          "volume": "variable (< 1,000 ng)",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Nuclease-Free Water",
+          "volume": "to 25 \u00b5l or to 50 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": "gentle",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "mineral oil",
+          "volume": "overlay (volume not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if using PCR machine without heated lid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "thermocycler preheated to 98\u00b0C",
+          "duration": null,
+          "speed": "quickly",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='PCR tube', reagent='Q5 High-Fidelity 2X Master Mix', volume='12.5 \u00b5l or 25 \u00b5l', temperature='on ice', final_concentration='1X')\npipette(container='PCR tube', reagent='Forward Primer (10 \u00b5M)', volume='1.25 \u00b5l or 2.5 \u00b5l', temperature='on ice', final_concentration='0.5 \u00b5M')\npipette(container='PCR tube', reagent='Reverse Primer (10 \u00b5M)', volume='1.25 \u00b5l or 2.5 \u00b5l', temperature='on ice', final_concentration='0.5 \u00b5M')\npipette(container='PCR tube', reagent='Template DNA', volume='variable (< 1,000 ng)', temperature='on ice')\npipette(container='PCR tube', reagent='Nuclease-Free Water', volume='to 25 \u00b5l or to 50 \u00b5l', temperature='on ice')\nmix(container='PCR tube', temperature='on ice', speed='gentle')\ncentrifuge(container='PCR tube', duration='quick spin')\npipette(container='PCR tube', reagent='mineral oil', volume='overlay (volume not specified)', condition='if using PCR machine without heated lid')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: PCR tube, temperature: thermocycler preheated to 98\u00b0C, speed: quickly)",
+    "source_file": "protocol_99.txt"
+  }
+]

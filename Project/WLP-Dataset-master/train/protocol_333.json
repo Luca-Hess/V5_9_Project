@@ -1,0 +1,685 @@
+[
+  {
+    "protocol": "ELISA protocol\nIncubate for 120 minutes at 37 \u2070C.\nInvert the plate and pat it against thick clean absorbent paper.\nIncubate for 60 minutes at 37\u00b0C.\n(wash 1/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).\u00a0 \n(wash 2/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).  \n(wash 3/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).  \n(wash 4/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L). \n(wash 5/5) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).  \nComplete removal of liquid at each step is essential.\nAdd 50\u00b5L of Stop Solution to each well.\nIf color change does not appear uniform, gently tap the plate to ensure thorough mixing.\nDetermine the optical density (OD value) of each well at once, using a microplatereader set to 450 nm.\nUser should open the micro-plate reader in advance, preheat the instrument, and set the testing parameters.\nAfter experiment, store all reagents according to the specified storage temperature respectively until their expiry.\nAdd 100\u00b5L of Standard, Blank, or Sample per well.\nThe blank well is added with Sample diluent.\nSolutions are added to the bottom of micro ELISA plate well, avoid inside wall touching and foaming as possible.\nMix it gently.\nCover the plate with sealer we provided.\nRemove the liquid from each well, don't wash. \nAdd 100\u00b5L of Detection Reagent A working solution to each well.\nCover with the Plate sealer.\nGently tap the plate to ensure thorough mixing.\nIncubate for 1 hour at 37\u00b0C.\n(wash 1/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L)\n(wash 2/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).  \n(wash 3/3) Aspirate each well and wash by filling each well with Wash Buffer (approximately 400\u00b5L).  \n (a squirt bottle, multi-channel pipette, manifold dispenser orautomated washer are needed).\nComplete removal of liquid at each step is essential.\nAfter the last wash, completely remove remaining Wash Buffer by aspirating or decanting.\nAdd 100\u00b5L of Detection Reagent B working solution to each well.\nCover withthe Plate sealer.\nAdd 90\u00b5L of Substrate Solution to each well.\nCover with a new Plate sealer and incubatefor 15-30 minutes at 37\u00b0C.\nProtect the plate from light.\nThe reaction time can be shortened orextended according to the actual color change, but this should not exceed more than 30 minutes.\nWhen apparent gradient appears in standard wells, user should terminate the reaction.\nAfter the last wash, completely remove remaining Wash Buffer by aspirating or decanting.\nInvert the plate and pat it against thick clean absorbent paper.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "120 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pat_against": "thick clean absorbent paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "3/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "3/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "4/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "4/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "5/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "5/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "complete removal of liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Stop Solution",
+          "volume": "50\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "tap",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "ensure thorough mixing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "microplate reader",
+            "wavelength": "450 nm"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "microplate reader",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "preheat": true,
+            "set_testing_parameters": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "all reagents",
+          "reagent": null,
+          "volume": null,
+          "temperature": "specified storage temperature",
+          "duration": "until expiry",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Standard, Blank, or Sample",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "blank well",
+          "reagent": "Sample diluent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "micro ELISA plate well",
+          "reagent": "solutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "add to bottom of well, avoid wall touching and foaming"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "plate",
+          "reagent": "sealer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "don't wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Detection Reagent A working solution",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "plate",
+          "reagent": "Plate sealer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tap",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "ensure thorough mixing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Wash Buffer",
+          "volume": "400\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each well",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "complete removal of liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "plate",
+          "reagent": "remaining Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "aspirating or decanting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Detection Reagent B working solution",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "plate",
+          "reagent": "Plate sealer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "each well",
+          "reagent": "Substrate Solution",
+          "volume": "90\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "plate",
+          "reagent": "new Plate sealer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15-30 minutes",
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "plate",
+          "reagent": "remaining Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "aspirating or decanting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pat_against": "thick clean absorbent paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='120 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: plate, other: {'pat_against': 'thick clean absorbent paper'})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='60 minutes')\naspirate(container='each well', reagent='liquid', wash_step='1/5')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='1/5')\naspirate(container='each well', reagent='liquid', wash_step='2/5')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='2/5')\naspirate(container='each well', reagent='liquid', wash_step='3/5')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='3/5')\naspirate(container='each well', reagent='liquid', wash_step='4/5')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='4/5')\naspirate(container='each well', reagent='liquid', wash_step='5/5')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='5/5')\naspirate(container='each well', reagent='liquid', note='complete removal of liquid')\ndispense(container='each well', reagent='Stop Solution', volume='50\u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: tap (container: plate, speed: gently, other: {'purpose': 'ensure thorough mixing'})\n# MANUAL: read (container: plate, other: {'instrument': 'microplate reader', 'wavelength': '450 nm'})\n# MANUAL: open (container: microplate reader, other: {'preheat': True, 'set_testing_parameters': True})\n# MANUAL: store (container: all reagents, temperature: specified storage temperature, duration: until expiry, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='each well', reagent='Standard, Blank, or Sample', volume='100\u00b5L')\ndispense(container='blank well', reagent='Sample diluent')\ndispense(container='micro ELISA plate well', reagent='solutions', note='add to bottom of well, avoid wall touching and foaming')\nmix(container='plate', speed='gently')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: plate, reagent: sealer, other: {})\n\n### AUTOMATED SECTION ###\naspirate(container='each well', reagent='liquid', note=\"don't wash\")\ndispense(container='each well', reagent='Detection Reagent A working solution', volume='100\u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: plate, reagent: Plate sealer, other: {})\n# MANUAL: tap (container: plate, speed: gently, other: {'purpose': 'ensure thorough mixing'})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='1 hour')\naspirate(container='each well', reagent='liquid', wash_step='1/3')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='1/3')\naspirate(container='each well', reagent='liquid', wash_step='2/3')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='2/3')\naspirate(container='each well', reagent='liquid', wash_step='3/3')\ndispense(container='each well', reagent='Wash Buffer', volume='400\u00b5L', wash_step='3/3')\naspirate(container='each well', reagent='liquid', note='complete removal of liquid')\naspirate(container='plate', reagent='remaining Wash Buffer', method='aspirating or decanting')\ndispense(container='each well', reagent='Detection Reagent B working solution', volume='100\u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: plate, reagent: Plate sealer, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='each well', reagent='Substrate Solution', volume='90\u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: plate, reagent: new Plate sealer, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='15-30 minutes', protect_from_light=True)\naspirate(container='plate', reagent='remaining Wash Buffer', method='aspirating or decanting')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: plate, other: {'pat_against': 'thick clean absorbent paper'})",
+    "source_file": "protocol_333.txt"
+  }
+]

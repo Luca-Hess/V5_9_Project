@@ -1,0 +1,577 @@
+[
+  {
+    "protocol": "Immunohistochemistry Protocol for Frozen Sections\nFix the tissue sections with a suitable fixative.\nOne of the commonly used fixation methods for frozen tissue sections is to immerse the slides in pre-cooled acetone (-20\u00b0C) for 10 min.\nPlace a freshly dissected tissue block (<5 mm thick) on to a pre-labeled tissue base mold.\nCover the entire tissue block with cryo-embedding media (e.g. OCT).\nSlowly place the base mold containing the tissue block into liquid nitrogen till the entiretissue block is submerged into liquid nitrogen to ensure tissue is frozen completely.\nStore the frozen tissue block at -80\u00b0C until ready for sectioning.\nTransfer the frozen tissue block to a cryotome cryostat (e.g. -20\u00b0C) prior to sectioning and allow the temperature of the frozen tissue block to equilibrate to the temperature of the cryotome cryostat.\nSection the frozen tissue block into a desired thickness (typically 5-10 \u00b5m) using the cryotome.\nPlace the tissue sections onto glass slides suitable for immunohistochemistry (e.g. Superfrost).\nDry the tissue sections overnight at room temperature.\nSections can be stored in a sealed slide box at -80\u00b0C for later use.\nPour off the fixative and allow acetone to evaporate from the tissue sections for \u2265\u00a020\u00a0min at room temperature.\nRinse the slides in 300 ml of 10 mM phosphate buffered saline (PBS) at a neutral pH for 5 min (1/2).\nRinse the slides in 300 ml of 10 mM phosphate buffered saline (PBS) at a neutral pH for 5 min (2/2).\nIncubate the slides in 0.3% H2O2 solution in PBS at room temperature for 10 min to block endogenous peroxidase activity.\nRinse the slides in 300 ml PBS for 5 min (1/2).\nRinse the slides in 300 ml PBS for 5 min (2/2).\n(optional) Add 100 \u00b5l blocking buffer (e.g. 10% fetal bovine serum in PBS) onto the sections of the slides and incubate in a humidified chamber at room temperature for 1h.\nDrain off the blocking buffer from the slides.\nApply 100 \u00b5l an appropriately diluted primary antibody (in antibody dilution buffer,e.g. 0.5% bovine serum albumin in PBS) to the sections on the slides and incubate in a humidified chamber for 1 h at room temperature or overnight at 4\u00b0C.\nRinse the slides in 300 ml PBS for 5 min (1/2).\nRinse the slides in 300 ml PBS for 5 min (2/2).\nApply 100 \u00b5l an appropriately diluted biotinylated secondary antibody (using the antibodydilution buffer) to the sections on the slides and incubate in a humidified chamberat room temperature for 30 min.\nRinse the slides in 300 ml PBS for 5 min (1/2).\nRinse the slides in 300 ml PBS for 5 min (2/2).\nRinse the slides in 300 ml PBS\u00a0for\u00a05 min (1/2).\nRinse the slides in 300 ml PBS\u00a0for\u00a05 min (2/2).\nApply 100 \u00b5l DAB substrate solution (freshly made just before use: 0.05% DAB - 0.015%H2O2 in PBS) to the sections on the slides to reveal the color of the antibody staining.\nAllow the color development for \u2264\u00a05 min until the desired color intensity is reached.\nWash slides in 300 ml PBS for 5 min\u00a0(1/2).\nWash slides in 300 ml PBS for 5 min\u00a0(2/2).\n(optional) Counterstain slides by immersing sides in Hematoxylin (e.g. Gill\u2019s Hematoxylin) for 1-2 min.\nRinse the slides in running tap water for \u2265\u00a015 min.\nDehydrate the tissue slides with \u00a095% alcohol change (1/4).\nDehydrate the tissue slides with 95% alcohol change (2/4).\nDehydrate the tissue slides with 100% alcohol change (3/4).\nDehydrate the tissue slides with 100% alcohol change (4/4).\nAdd 100 \u00b5l pre-diluted Sav-HRP conjugates (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min (keep protected from light).\nClear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount).\n[1/3] Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount).\n[2/3] Clear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount).\n[3/3] Observe the color of the antibody staining in the tissue sections under microscopy.",
+    "actions": [
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "tissue sections (on slides)",
+          "reagent": "fixative (e.g. acetone)",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "method": "immerse slides in pre-cooled acetone"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tissue base mold",
+          "reagent": "freshly dissected tissue block (<5 mm thick)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pre-labeled": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "tissue block (in base mold)",
+          "reagent": "cryo-embedding media (e.g. OCT)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "base mold containing tissue block",
+          "reagent": "liquid nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "until": "entire tissue block is submerged"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "frozen tissue block",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until ready for sectioning",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "frozen tissue block",
+          "reagent": "cryotome cryostat",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "equilibrate temperature prior to sectioning"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "frozen tissue block",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "cryotome cryostat"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "section",
+        "parameters": {
+          "container": "frozen tissue block",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thickness": "5-10 \u00b5m",
+            "instrument": "cryotome"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass slides (e.g. Superfrost)",
+          "reagent": "tissue sections",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tissue sections (on slides)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "sections (in sealed slide box)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "for later use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "slides",
+          "reagent": "fixative",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove fixative"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "evaporate",
+        "parameters": {
+          "container": "tissue sections (on slides)",
+          "reagent": "acetone",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "\u2265 20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "10 mM PBS (neutral pH)",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slides",
+          "reagent": "0.3% H2O2 solution in PBS",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "block endogenous peroxidase activity"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "blocking buffer (e.g. 10% fetal bovine serum in PBS)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slides (in humidified chamber)",
+          "reagent": "blocking buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "slides",
+          "reagent": "blocking buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "primary antibody (appropriately diluted in antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slides (in humidified chamber)",
+          "reagent": "primary antibody",
+          "volume": null,
+          "temperature": "room temperature or 4\u00b0C",
+          "duration": "1 h or overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "biotinylated secondary antibody (appropriately diluted in antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slides (in humidified chamber)",
+          "reagent": "biotinylated secondary antibody",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "repeat": "4 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "DAB substrate solution (0.05% DAB - 0.015% H2O2 in PBS, freshly made)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "reveal color of antibody staining"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "develop",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "\u2264 5 min",
+          "speed": null,
+          "other": {
+            "until": "desired color intensity is reached"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "counterstain",
+        "parameters": {
+          "container": "slides",
+          "reagent": "Hematoxylin (e.g. Gill\u2019s Hematoxylin)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 min",
+          "speed": null,
+          "other": {
+            "method": "immerse slides",
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "running tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "\u2265 15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "pre-diluted Sav-HRP conjugates (using antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "keep protected from light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slides (in humidified chamber)",
+          "reagent": "Sav-HRP conjugates",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "keep protected from light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "2 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "coverslip",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "mounting solution (e.g. Permount)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "tissue sections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscopy"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfix(container='tissue sections (on slides)', reagent='fixative (e.g. acetone)', temperature='-20\u00b0C', duration='10 min', method='immerse slides in pre-cooled acetone')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tissue base mold, reagent: freshly dissected tissue block (<5 mm thick), other: {'pre-labeled': True})\n\n### AUTOMATED SECTION ###\ncover(container='tissue block (in base mold)', reagent='cryo-embedding media (e.g. OCT)')\n\n### MANUAL SECTION ###\n# MANUAL: immerse (container: base mold containing tissue block, reagent: liquid nitrogen, speed: slowly, other: {'until': 'entire tissue block is submerged'})\n\n### AUTOMATED SECTION ###\nstore(container='frozen tissue block', temperature='-80\u00b0C', duration='until ready for sectioning')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: frozen tissue block, reagent: cryotome cryostat, temperature: -20\u00b0C, other: {'purpose': 'equilibrate temperature prior to sectioning'})\n\n### AUTOMATED SECTION ###\nequilibrate(container='frozen tissue block', temperature='-20\u00b0C', location='cryotome cryostat')\n\n### MANUAL SECTION ###\n# MANUAL: section (container: frozen tissue block, other: {'thickness': '5-10 \u00b5m', 'instrument': 'cryotome'})\n# MANUAL: place (container: glass slides (e.g. Superfrost), reagent: tissue sections, other: {})\n\n### AUTOMATED SECTION ###\ndry(container='tissue sections (on slides)', temperature='room temperature', duration='overnight')\nstore(container='sections (in sealed slide box)', temperature='-80\u00b0C', duration='for later use')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: slides, reagent: fixative, other: {'purpose': 'remove fixative'})\n\n### AUTOMATED SECTION ###\nevaporate(container='tissue sections (on slides)', reagent='acetone', temperature='room temperature', duration='\u2265 20 min')\nrinse(container='slides', reagent='10 mM PBS (neutral pH)', volume='300 ml', duration='5 min', repeat='2 times')\nincubate(container='slides', reagent='0.3% H2O2 solution in PBS', temperature='room temperature', duration='10 min', purpose='block endogenous peroxidase activity')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', repeat='2 times')\nadd(container='sections on slides', reagent='blocking buffer (e.g. 10% fetal bovine serum in PBS)', volume='100 \u00b5l', optional=True)\nincubate(container='slides (in humidified chamber)', reagent='blocking buffer', temperature='room temperature', duration='1 h', optional=True)\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: slides, reagent: blocking buffer, other: {})\n\n### AUTOMATED SECTION ###\napply(container='sections on slides', reagent='primary antibody (appropriately diluted in antibody dilution buffer)', volume='100 \u00b5l')\nincubate(container='slides (in humidified chamber)', reagent='primary antibody', temperature='room temperature or 4\u00b0C', duration='1 h or overnight')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', repeat='2 times')\napply(container='sections on slides', reagent='biotinylated secondary antibody (appropriately diluted in antibody dilution buffer)', volume='100 \u00b5l')\nincubate(container='slides (in humidified chamber)', reagent='biotinylated secondary antibody', temperature='room temperature', duration='30 min')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', repeat='4 times')\napply(container='sections on slides', reagent='DAB substrate solution (0.05% DAB - 0.015% H2O2 in PBS, freshly made)', volume='100 \u00b5l', purpose='reveal color of antibody staining')\ndevelop(container='slides', duration='\u2264 5 min', until='desired color intensity is reached')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', repeat='2 times')\ncounterstain(container='slides', reagent='Hematoxylin (e.g. Gill\u2019s Hematoxylin)', duration='1-2 min', method='immerse slides', optional=True)\nrinse(container='slides', reagent='running tap water', duration='\u2265 15 min')\ndehydrate(container='tissue slides', reagent='95% alcohol', repeat='2 times')\ndehydrate(container='tissue slides', reagent='100% alcohol', repeat='2 times')\nadd(container='sections on slides', reagent='pre-diluted Sav-HRP conjugates (using antibody dilution buffer)', volume='100 \u00b5l', keep protected from light=True)\nincubate(container='slides (in humidified chamber)', reagent='Sav-HRP conjugates', temperature='room temperature', duration='30 min', keep protected from light=True)\nclear(container='tissue slides', reagent='xylene', repeat='2 times')\n\n### MANUAL SECTION ###\n# MANUAL: coverslip (container: tissue slides, reagent: mounting solution (e.g. Permount), other: {})\n# MANUAL: observe (container: tissue sections, other: {'method': 'microscopy'})",
+    "source_file": "protocol_275.txt"
+  }
+]

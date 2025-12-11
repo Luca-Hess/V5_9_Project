@@ -1,0 +1,104 @@
+[
+  {
+    "protocol": "Nitrite reagent for dissolved cobalt analyses\nAdd\u00a012.9 g of sodium nitrite per 125 mL of Milli-Q, by weighing the sodium nitrite directly into a large trace metal clean bottle.\nAdd 125 mL of Milli-Q to the bottle by weight.\nAdd clean Chelex-100 resin to the bottle and place it on a shaker overnight to ensure the Chelex mixes throughout the solution.\nThe following morning, slowly pour the solution through an HPLC\u00a0column with a frit in order to filter the chelex and allow the solution to pass into a trace metal clean bottle.\nMake sure to test the reagent before use to ensure it is clean.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "large trace metal clean bottle",
+          "reagent": "sodium nitrite",
+          "volume": "12.9 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "Milli-Q",
+            "solvent_volume": "125 mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "large trace metal clean bottle",
+          "reagent": "Milli-Q",
+          "volume": "125 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by weight"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "large trace metal clean bottle",
+          "reagent": "clean Chelex-100 resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "large trace metal clean bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "ensure Chelex mixes throughout solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "HPLC column with frit",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "purpose": "filter Chelex and allow solution to pass into trace metal clean bottle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "test",
+        "parameters": {
+          "container": null,
+          "reagent": "reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "ensure it is clean"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: large trace metal clean bottle, reagent: sodium nitrite, volume: 12.9 g, other: {'solvent': 'Milli-Q', 'solvent_volume': '125 mL'})\n\n### AUTOMATED SECTION ###\ndispense(container='large trace metal clean bottle', reagent='Milli-Q', volume='125 mL', method='by weight')\nadd(container='large trace metal clean bottle', reagent='clean Chelex-100 resin')\nshake(container='large trace metal clean bottle', duration='overnight', purpose='ensure Chelex mixes throughout solution')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: HPLC column with frit, reagent: solution, speed: slowly, other: {'purpose': 'filter Chelex and allow solution to pass into trace metal clean bottle'})\n# MANUAL: test (reagent: reagent, other: {'purpose': 'ensure it is clean'})",
+    "source_file": "protocol_395.txt"
+  }
+]

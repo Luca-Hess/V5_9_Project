@@ -1,0 +1,227 @@
+[
+  {
+    "protocol": "Anti-Neu5Gc Antibody Kit Protocol - Flow Cytometry\nPrepare 0.5% Neu5Gc Assay Blocking Solution in PBS (diluent buffer).\nThe following tubes should be set up for flow cytometry analysis:\u00a0\n* Three (3) tubes containing cells to be examined.\nIf choosing to use different dilutions of primary antibody, as noted in step 3, more tubes may be needed.\n* Three (3) tubes containing positive control cells.\n* Three (3) tubes containing negative control cells. \nEach set of tubes to be analyzed should receive an antibody treatment as follows:\n* Tube 1 will contain cells that will receive no antibody, to be used as unstained control (optional but highly recommended).\n* Tube 2 will contain cells that receive Control Antibody.\n* Tube 3 will contain cells that receive Primary Antibody.\n- Note: if this is the first time running this experiment, optimize by using different dilutions of primary antibody.\nMore tubes containing sample will be needed.\nWash cells by adding 1 ml cold PBS, then gently centrifuge at 4\u00b0C.\nCarefully remove supernatant and discard.\nGently resuspend cells in 100 \u03bcl of the appropriate diluted antibody as outlined above.\nIncubate cells on ice for at least 1 hour. \nWash cells as above. \nGently resuspend cells in 100 \u03bcl Secondary Antibody in diluent buffer, and incubate for 1 hour on ice.\nWash cells as before.\nResuspend cell pellet in 400 \u03bcl of diluent buffer. \nRun cells through the flow cytometer.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.5% Neu5Gc Assay Blocking Solution in PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent_buffer": "PBS"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells to be examined, positive control cells, negative control cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_tubes": "3 each"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube 2",
+          "reagent": "Control Antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube 3",
+          "reagent": "Primary Antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cold PBS",
+          "volume": "1 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "appropriate diluted antibody",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells in antibody",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "at least 1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cold PBS",
+          "volume": "1 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "Secondary Antibody in diluent buffer",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells in Secondary Antibody",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cold PBS",
+          "volume": "1 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "diluent buffer",
+          "volume": "400 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "flow cytometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 0.5% Neu5Gc Assay Blocking Solution in PBS, other: {'diluent_buffer': 'PBS'})\n# MANUAL: set up (container: tubes, reagent: cells to be examined, positive control cells, negative control cells, other: {'number_of_tubes': '3 each'})\n\n### AUTOMATED SECTION ###\nadd(container='tube 2', reagent='Control Antibody')\nadd(container='tube 3', reagent='Primary Antibody')\nwash(container='tubes', reagent='cold PBS', volume='1 ml', temperature='cold')\ncentrifuge(container='tubes', temperature='4\u00b0C')\nremove(container='tubes', reagent='supernatant', discard=True)\nresuspend(container='tubes', reagent='appropriate diluted antibody', volume='100 \u03bcl')\nincubate(container='tubes', reagent='cells in antibody', temperature='on ice', duration='at least 1 hour')\nwash(container='tubes', reagent='cold PBS', volume='1 ml', temperature='cold')\nresuspend(container='tubes', reagent='Secondary Antibody in diluent buffer', volume='100 \u03bcl')\nincubate(container='tubes', reagent='cells in Secondary Antibody', temperature='on ice', duration='1 hour')\nwash(container='tubes', reagent='cold PBS', volume='1 ml', temperature='cold')\nresuspend(container='tubes', reagent='diluent buffer', volume='400 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: tubes, reagent: cells, other: {'instrument': 'flow cytometer'})",
+    "source_file": "protocol_433.txt"
+  }
+]

@@ -1,0 +1,275 @@
+[
+  {
+    "protocol": "Double SPRI for Second Generation Sequencing\nAdd 65 \u00b5l SPRI Ampure beads to 50\u00b5l of sample.\nMix and incubate for 20 minutes.\nSeparate on magnet (6 min.)\nTransfer all supernatant (about 115 \u00b5l) into a new well (off magnet).\nAdd 100 \u00b5l of SPRI beads.\nMix and incubate for 15 minutes.\nSeparate on magnet (6min), discard supernatant.\nWash beads with 60 \u00b5l of 70% EtOH.\nMove well off magnet.\nDry beads of EtOH (~10min).\nAdd 40 \u00b5l EB.\nMix and incubate for 3 minutes.\nSeparate on magnet and transfer eluted product into destination plate",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube or well",
+          "reagent": "SPRI Ampure beads",
+          "volume": "65 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "50 \u00b5l of sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample tube or well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample tube or well",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "sample tube or well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "6 minutes",
+          "speed": null,
+          "other": {
+            "method": "on magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new well",
+          "reagent": "supernatant",
+          "volume": "about 115 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "off magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well with supernatant",
+          "reagent": "SPRI beads",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "6 minutes",
+          "speed": null,
+          "other": {
+            "method": "on magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "well",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well",
+          "reagent": "70% EtOH",
+          "volume": "60 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "off magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "well",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "about 10 minutes",
+          "speed": null,
+          "other": {
+            "of": "EtOH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "EB",
+          "volume": "40 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "well",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "on magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "destination plate",
+          "reagent": "eluted product",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='sample tube or well', reagent='SPRI Ampure beads', volume='65 \u00b5l', to='50 \u00b5l of sample')\nmix(container='sample tube or well')\nincubate(container='sample tube or well', temperature='room temperature', duration='20 minutes')\nseparate(container='sample tube or well', duration='6 minutes', method='on magnet')\ntransfer(container='new well', reagent='supernatant', volume='about 115 \u00b5l', from='off magnet')\nadd(container='well with supernatant', reagent='SPRI beads', volume='100 \u00b5l')\nmix(container='well')\nincubate(container='well', temperature='room temperature', duration='15 minutes')\nseparate(container='well', duration='6 minutes', method='on magnet')\ndiscard(container='well', reagent='supernatant')\nwash(container='well', reagent='70% EtOH', volume='60 \u00b5l')\nmove(container='well', to='off magnet')\ndry(container='well', reagent='beads', duration='about 10 minutes', of='EtOH')\nadd(container='well', reagent='EB', volume='40 \u00b5l')\nmix(container='well')\nincubate(container='well', temperature='room temperature', duration='3 minutes')\nseparate(container='well', method='on magnet')\ntransfer(container='destination plate', reagent='eluted product')",
+    "source_file": "protocol_182.txt"
+  }
+]

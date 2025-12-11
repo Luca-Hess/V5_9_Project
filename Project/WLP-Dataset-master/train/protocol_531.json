@@ -1,0 +1,309 @@
+[
+  {
+    "protocol": "Digestion NotI\nAdd: - nuclease-free water qsp 50 \u00b5L >\u00a047\u00a0\u00b5L - 5\u00b5L 10X Buffer O- 1\u00b5L DNA (1 \u00b5g/\u00b5L) - 1 \u00b5L NotI 1\u00a0(10U/\u00b5L) *. \nMix gently and spin down for a few seconds.\nIncubate at 37\u00b0C for 1-16 hours.\nThe digestion reaction may be scaled either up or down. \nIt's possible to process extended incubation by adding 0.25U/\u00b5g of DNA in 50 \u00b5L of reaction volume.\nincubation at 80\u00b0C for 20 min.\nMeasure the volume of the DNA sample > 50 \u00b5L\nAdd 1/10 volume of sodium acetate, pH 5.2, (final concentration of 0.3 M) \n- These amounts assume that the DNA is in TE only; if DNA is in a solution containing salt, adjust salt accordingly to achieve the correct final concentration. > 5 \u00b5L.\nMix well.\nAdd 2 to 2.5 volumes of cold 100% ethanol (calculated after salt addition).> 110 (2V).\nMix well.\nPlace on ice or at -20 degrees C for >20 minutes.\nSpin a maximum speed in a microfuge 10-15 min.\nCarefully decant supernatant.\nAdd 1 ml 70% ethanol.\nMix.\nSpin briefly.\nCarefully decant supernatant.\nAir dry or briefly vacuum dry pellet.\nResuspend pellet in the appropriate volume of TE or water.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "nuclease-free water",
+          "volume": "47 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_volume": "50 \u00b5L"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Buffer O",
+          "volume": "5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA (1 \u00b5g/\u00b5L)",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "NotI 1 (10U/\u00b5L)",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "few seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1-16 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA sample",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "sodium acetate, pH 5.2",
+          "volume": "5 \u00b5L (1/10 volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.3 M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "cold 100% ethanol",
+          "volume": "110 \u00b5L (2-2.5 volumes)",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice or -20\u00b0C",
+          "duration": ">20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10-15 min",
+          "speed": "maximum speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "carefully",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "70% ethanol",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "carefully",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "air dry or briefly vacuum dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "TE or water",
+          "volume": "appropriate volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(reagent='nuclease-free water', volume='47 \u00b5L', final_volume='50 \u00b5L')\nadd(reagent='10X Buffer O', volume='5 \u00b5L')\nadd(reagent='DNA (1 \u00b5g/\u00b5L)', volume='1 \u00b5L')\nadd(reagent='NotI 1 (10U/\u00b5L)', volume='1 \u00b5L')\nmix(speed='gently')\ncentrifuge(duration='few seconds')\nincubate(temperature='37\u00b0C', duration='1-16 hours')\nincubate(temperature='80\u00b0C', duration='20 min')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: DNA sample, volume: 50 \u00b5L, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='sodium acetate, pH 5.2', volume='5 \u00b5L (1/10 volume)', final_concentration='0.3 M')\nadd(reagent='cold 100% ethanol', volume='110 \u00b5L (2-2.5 volumes)', temperature='cold')\nmix(speed='well')\nincubate(temperature='on ice or -20\u00b0C', duration='>20 minutes')\ncentrifuge(container='microfuge tube', duration='10-15 min', speed='maximum speed')\n\n### MANUAL SECTION ###\n# MANUAL: decant (reagent: supernatant, speed: carefully, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='70% ethanol', volume='1 ml')\nmix()\ncentrifuge(duration='briefly')\n\n### MANUAL SECTION ###\n# MANUAL: decant (reagent: supernatant, speed: carefully, other: {})\n# MANUAL: dry (reagent: pellet, other: {'method': 'air dry or briefly vacuum dry'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='TE or water', volume='appropriate volume')",
+    "source_file": "protocol_531.txt"
+  }
+]

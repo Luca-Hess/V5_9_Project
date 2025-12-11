@@ -1,0 +1,219 @@
+[
+  {
+    "protocol": "MojoSort\u2122 Positive Selection Columns Protocol\nPrepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSort\u2122buffer is recommended).\nPass the cells through a 70 \u03bcm filter, centrifuge (300 x g for 5 minutes), discard the supernatant and resuspend the cells in cell separation buffer.\nAdjust the cell concentration to 1 x 108 cells/mL.\nAliquot 100 \u03bcL (107 cells) into a new tube.\nVortex the antibody-conjugated Nanobeads (to resuspend) at max speed, 5 touches, and prepare the dilutions to test.\nAdd 10 \u03bcL of pre-diluted conjugated Nanobeads.\nMix well and incubate on ice for 15 minutes.\nScale up the volume accordingly if separating more cells.\nFor example, add 100 \u03bcL of pre-diluted Nanobeads for 1 x 108 cells.\nWhen working with less than 107 cells, use indicated volumes for 107 cells.\nNote: Depending on the conjugated nanobead you are using, a wash step may be required here.\nResuspend the cells in appropriate amount of buffer.\nAt least 500 \u03bcL is needed for column separation.\nNote: There are several types of commercially available columns, depending on your application, choose the one that fits best your experiment.\nSee 'Guidelines' for choosing a column for your experiment.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": "ice cold cell separation buffer (MojoSort\u2122 buffer recommended)",
+          "volume": null,
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pass",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "through": "70 \u03bcm filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filtered cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "300 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "centrifuged tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cell pellet",
+          "reagent": "cell separation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell concentration": "1 x 10^8 cells/mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcL (10^7 cells)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "antibody-conjugated Nanobeads tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "max speed",
+          "other": {
+            "touches": "5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "antibody-conjugated Nanobeads dilutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to test": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": "pre-diluted conjugated Nanobeads",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "well": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell suspension tube",
+          "reagent": "pre-diluted Nanobeads",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "1 x 10^8 cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cell pellet",
+          "reagent": "buffer",
+          "volume": "at least 500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for column separation": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='cell suspension tube', reagent='ice cold cell separation buffer (MojoSort\u2122 buffer recommended)', temperature='ice cold')\n\n### MANUAL SECTION ###\n# MANUAL: pass (container: cell suspension tube, other: {'through': '70 \u03bcm filter'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='filtered cell suspension', duration='5 minutes', speed='300 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: centrifuged tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='cell pellet', reagent='cell separation buffer')\n\n### MANUAL SECTION ###\n# MANUAL: adjust (container: cell suspension, other: {'cell concentration': '1 x 10^8 cells/mL'})\n\n### AUTOMATED SECTION ###\naliquot(container='new tube', reagent='cell suspension', volume='100 \u03bcL (10^7 cells)')\nvortex(container='antibody-conjugated Nanobeads tube', speed='max speed', touches='5')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: antibody-conjugated Nanobeads dilutions, other: {'to test': True})\n\n### AUTOMATED SECTION ###\nadd(container='cell suspension tube', reagent='pre-diluted conjugated Nanobeads', volume='10 \u03bcL')\nmix(container='cell suspension tube', well=True)\nincubate(container='cell suspension tube', temperature='on ice', duration='15 minutes')\nadd(container='cell suspension tube', reagent='pre-diluted Nanobeads', volume='100 \u03bcL', for='1 x 10^8 cells')\nresuspend(container='cell pellet', reagent='buffer', volume='at least 500 \u03bcL', for column separation=True)",
+    "source_file": "protocol_307.txt"
+  }
+]

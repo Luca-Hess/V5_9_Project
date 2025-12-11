@@ -1,0 +1,247 @@
+[
+  {
+    "protocol": "Protocol for STO Cell Transfection by FuGENE HD\nSTO cells were seeded the day before transfection with the density 15,000\u00a0cells per well in 100 \u03bcl complete growth medium DMEM+10% Fetal Bovine Serum.\nPrepare 0.02\u03bcg/\u03bcl pCMV\u03b2 plasmid DNA solution in OptiMEM\u00ae.\nAdd 6\u03bcl of reagent to 100 \u03bcl of OptiMEM\u00ae /DNA solution.\nMix carefully by pipetting (10-15 times).\nIncubate 5 min at room temperature.\nAdd 5\u03bcl complex per well to the cells, and mix thoroughly.\nPlace the cells into CO2 incubator for 26-28 hours.\nRemove the medium from the well and wash the cells once with 100\u03bcl per well PBS.\nFix the cells in the well with 50\u03bcl solution of 4% formaldehyde in PBS for 5min at room temperature.\nWash each well with 100\u03bcl PBS.\n(1/2) Add 50\u03bcl per well of substrate/stain solution and incubate the plate overnight at 37\u00b0C.\nObserve the cells under microscope and evaluate the proportion of blue (\u03b2-gal-positive) cells.\nWash each well with 100\u03bcl PBS.\n(2/2)",
+    "actions": [
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "well",
+          "reagent": "STO cells in DMEM+10% Fetal Bovine Serum",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_density": "15,000 cells per well"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "pCMV\u03b2 plasmid DNA solution in OptiMEM\u00ae",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "0.02\u03bcg/\u03bcl"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "OptiMEM\u00ae /DNA solution",
+          "reagent": "FuGENE HD reagent",
+          "volume": "6 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "OptiMEM\u00ae /DNA/FuGENE HD solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting",
+            "cycles": "10-15 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "OptiMEM\u00ae /DNA/FuGENE HD solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well (containing cells)",
+          "reagent": "transfection complex",
+          "volume": "5 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "well (containing cells and transfection complex)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well (containing cells and transfection complex)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "CO2 incubator",
+          "duration": "26-28 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "well",
+          "reagent": "medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well",
+          "reagent": "PBS",
+          "volume": "100 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "well",
+          "reagent": "4% formaldehyde in PBS",
+          "volume": "50 \u03bcl",
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well",
+          "reagent": "PBS",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "substrate/stain solution",
+          "volume": "50 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "well",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscope",
+            "evaluation": "proportion of blue (\u03b2-gal-positive) cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well",
+          "reagent": "PBS",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: seed (container: well, reagent: STO cells in DMEM+10% Fetal Bovine Serum, volume: 100 \u03bcl, other: {'cell_density': '15,000 cells per well'})\n# MANUAL: prepare (reagent: pCMV\u03b2 plasmid DNA solution in OptiMEM\u00ae, other: {'concentration': '0.02\u03bcg/\u03bcl'})\n\n### AUTOMATED SECTION ###\nadd(container='OptiMEM\u00ae /DNA solution', reagent='FuGENE HD reagent', volume='6 \u03bcl')\nmix(container='OptiMEM\u00ae /DNA/FuGENE HD solution', method='pipetting', cycles='10-15 times')\nincubate(container='OptiMEM\u00ae /DNA/FuGENE HD solution', temperature='room temperature', duration='5 min')\nadd(container='well (containing cells)', reagent='transfection complex', volume='5 \u03bcl per well')\nmix(container='well (containing cells and transfection complex)', method='thoroughly')\nincubate(container='well (containing cells and transfection complex)', temperature='CO2 incubator', duration='26-28 hours')\nremove(container='well', reagent='medium')\nwash(container='well', reagent='PBS', volume='100 \u03bcl per well', times='once')\nfix(container='well', reagent='4% formaldehyde in PBS', volume='50 \u03bcl', temperature='room temperature', duration='5 min')\nwash(container='well', reagent='PBS', volume='100 \u03bcl')\nadd(container='well', reagent='substrate/stain solution', volume='50 \u03bcl per well')\nincubate(container='plate', temperature='37\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: well, reagent: cells, other: {'method': 'microscope', 'evaluation': 'proportion of blue (\u03b2-gal-positive) cells'})\n\n### AUTOMATED SECTION ###\nwash(container='well', reagent='PBS', volume='100 \u03bcl')",
+    "source_file": "protocol_199.txt"
+  }
+]

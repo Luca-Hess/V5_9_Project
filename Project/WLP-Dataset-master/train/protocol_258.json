@@ -1,0 +1,457 @@
+[
+  {
+    "protocol": "Mouse BMDM\nPut 2 mL media per well in 6-wells plate (1 well per 2 marrows or per animal). \nClean femur as much as possible in a petri with a little bit of phenol red free media or PBS (the most important part is the middle). \nCut off both ends of the femur to expose the marrow.\nFill syringe up with the 2ml of media, insert into marrow and flush into the 6 well plate until the bone is clean (goes from pink to white).\nPass the media through the syringe 1-2 times (Start with 20G, then 26G). \nTransfer the cells to a 50 ml tube. \nPrepare RBC lysis solution (proportions in cell culture cabinet) \u2013 Or purchase from Sigma \nAdd 5ml per marrow.\nPlace on ice for 10min excatly.\nCentrifuge for 10min at 4\u00b0C 400g (~RCF, or 1200 rpm). \nDiscard supernatant. \nAdd 5ml CSF and 12ml of RPMI Medium (total volume is 15 ml) \u2013 Do not let cells dry, add medium immediately.(Or 9ml RMPI medium and 3ml CSF) \nTransfer the 15 mL cell suspension to a 100 mm polystyrene tissue culture petris (PrimariaTM, Becton Dickinson Labware) for 24 hrs. \nTransfer non-adherent cells after 24 hrs to fresh polystyrene petris or non adherent flasks (Green - Fisher).\nCultures are grown for 6 days with 15% (v/v) L-929 cell-conditioned medium as a source of M-CSF.\nAdd fresh CSF every 3 days.(15% of 15ml \u2013 (about 3ml)\nThe batch made by Kyoko and Rabi ais at 30% , so use 5ml.\nAfter 6 days, collect the cell with a policeman (cell scraper 25 cm, Sarstedt #83,1830).\nCentrifuged for 10min 400 x g. Discard supernatant and resuspend pellet in 2ml of RPMI 10% FBS without Pen/Strep Phenol free for LDH.\nFlush media through 25, 27, and 30 G needles to separate aggregates.\nCount cells to final concentration of 1 x 106 cells/ml.\nTo count cells, dilute 1/5 in Turks.\nAliquot 500 \u00b5L (5x105 cellules) per well in 24-wells plate, 100ul for 96 well plate.\nIncubate o/n, 5% CO2 before infection.",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "media",
+          "volume": "2 mL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wells": "1 well per 2 marrows or per animal"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "phenol red free media or PBS",
+          "volume": "a little bit",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "object": "femur"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "object": "both ends of femur"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "media",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "marrow (in femur)",
+          "reagent": "media",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "6-well plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pass",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 times",
+          "speed": null,
+          "other": {
+            "needle_gauge": "Start with 20G, then 26G"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "50 mL tube",
+          "reagent": "cells/media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "RBC lysis solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "cell culture cabinet"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "RBC lysis solution",
+          "volume": "5 mL per marrow",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "400g (~RCF, or 1200 rpm)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "CSF",
+          "volume": "5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "RPMI Medium",
+          "volume": "12 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "100 mm polystyrene tissue culture petri dish",
+          "reagent": "cell suspension",
+          "volume": "15 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "brand": "PrimariaTM, Becton Dickinson Labware"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "100 mm petri dish",
+          "reagent": "cell suspension",
+          "volume": "15 mL",
+          "temperature": null,
+          "duration": "24 hrs",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh polystyrene petri dish or non-adherent flask",
+          "reagent": "non-adherent cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "brand": "Green - Fisher"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri dish/flask",
+          "reagent": "cell culture",
+          "volume": "15 mL",
+          "temperature": null,
+          "duration": "6 days",
+          "speed": null,
+          "other": {
+            "supplement": "15% (v/v) L-929 cell-conditioned medium (M-CSF source)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh CSF",
+          "volume": "3 mL (15% of 15 mL)",
+          "temperature": null,
+          "duration": "every 3 days",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "CSF (Kyoko and Rabi batch)",
+          "volume": "5 mL (30% of 15 mL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "policeman (cell scraper 25 cm, Sarstedt #83,1830)"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "400 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "RPMI 10% FBS without Pen/Strep Phenol free",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "object": "cell pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "needles (25, 27, 30 G)",
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "separate aggregates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1 x 10^6 cells/mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "cells in Turks",
+          "volume": "1/5",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cells",
+          "volume": "500 \u00b5L (5x10^5 cells) per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "cells",
+          "volume": "100 \u00b5L per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "24-well or 96-well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "5% CO2",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "before": "infection"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='6-well plate', reagent='media', volume='2 mL per well', wells='1 well per 2 marrows or per animal')\n\n### MANUAL SECTION ###\n# MANUAL: clean (container: petri dish, reagent: phenol red free media or PBS, volume: a little bit, other: {'object': 'femur'})\n# MANUAL: cut (other: {'object': 'both ends of femur'})\n\n### AUTOMATED SECTION ###\naspirate(container='syringe', reagent='media', volume='2 mL')\n\n### MANUAL SECTION ###\n# MANUAL: flush (container: marrow (in femur), reagent: media, volume: 2 mL, other: {'destination': '6-well plate'})\n# MANUAL: pass (container: syringe, reagent: media, duration: 1-2 times, other: {'needle_gauge': 'Start with 20G, then 26G'})\n\n### AUTOMATED SECTION ###\ntransfer(container='50 mL tube', reagent='cells/media')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: RBC lysis solution, other: {'location': 'cell culture cabinet'})\n\n### AUTOMATED SECTION ###\ndispense(reagent='RBC lysis solution', volume='5 mL per marrow')\nincubate(temperature='on ice', duration='10 min')\ncentrifuge(temperature='4\u00b0C', duration='10 min', speed='400g (~RCF, or 1200 rpm)')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant)\n\n### AUTOMATED SECTION ###\ndispense(reagent='CSF', volume='5 mL')\ndispense(reagent='RPMI Medium', volume='12 mL')\ntransfer(container='100 mm polystyrene tissue culture petri dish', reagent='cell suspension', volume='15 mL', brand='PrimariaTM, Becton Dickinson Labware')\nincubate(container='100 mm petri dish', reagent='cell suspension', volume='15 mL', duration='24 hrs')\ntransfer(container='fresh polystyrene petri dish or non-adherent flask', reagent='non-adherent cells', brand='Green - Fisher')\nincubate(container='petri dish/flask', reagent='cell culture', volume='15 mL', duration='6 days', supplement='15% (v/v) L-929 cell-conditioned medium (M-CSF source)')\ndispense(reagent='fresh CSF', volume='3 mL (15% of 15 mL)', duration='every 3 days')\ndispense(reagent='CSF (Kyoko and Rabi batch)', volume='5 mL (30% of 15 mL)')\n\n### MANUAL SECTION ###\n# MANUAL: collect (reagent: cells, other: {'tool': 'policeman (cell scraper 25 cm, Sarstedt #83,1830)'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='10 min', speed='400 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant)\n\n### AUTOMATED SECTION ###\nresuspend(reagent='RPMI 10% FBS without Pen/Strep Phenol free', volume='2 mL', object='cell pellet')\n\n### MANUAL SECTION ###\n# MANUAL: flush (container: needles (25, 27, 30 G), reagent: media, other: {'purpose': 'separate aggregates'})\n# MANUAL: count (reagent: cells, other: {'final_concentration': '1 x 10^6 cells/mL'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='cells in Turks', volume='1/5')\naliquot(container='24-well plate', reagent='cells', volume='500 \u00b5L (5x10^5 cells) per well')\naliquot(container='96-well plate', reagent='cells', volume='100 \u00b5L per well')\nincubate(container='24-well or 96-well plate', reagent='cells', temperature='5% CO2', duration='overnight', before='infection')",
+    "source_file": "protocol_258.txt"
+  }
+]

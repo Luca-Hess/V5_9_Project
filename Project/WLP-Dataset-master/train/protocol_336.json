@@ -1,0 +1,348 @@
+[
+  {
+    "protocol": "Can Crusher-Culley Protocol\nUsing sterile technique, remove the plunger from the 60mL syringe.\nAttach the 0.02 \u00b5m filter (Anotop) to the end of the syringe.\nPour 50 mL of 0.2 \u00b5m filtrate into the 60-mL syringe.\nReplace plunger and mount the syringe and filter into the can crusher.\nPush the 0.2 \u00b5m filtrate very slowly through the Anotop, using the can crusher and applying gentle, steady pressure.\nWatch carefully for the last drop of water to go into the Anotop, and then stop pushing.\nUsing sterile technique, remove the Anotop from the syringe.\nDo not touch the filter inlet or outlet.\nSuck up the remaining 50mL of 0.2 \u00b5m filtrate for this depth into the 60-mL syringe.\nRe-attach the Anotop to the end of the syringe.\nRepeat Step 5: Push the 0.2 \u00b5m filtrate slowly through the Anotop, using the can crusher.\nRemove the Anotop from the syringe.\nWrite on the Anotop itself using a waterproof Sharpie. \nWrap the Anotop in clean parafilm, covering both the inlet and outlet.\nLabel a piece of aluminum foil with date, depth, and location (using waterproof Sharpie).\nWrap the parafilmed Anotop in the labeled aluminum foil.\nLabel a Ziploc bag with date, depths, and location.\nCollect several Anotops to put into one labeled Ziploc: one location/sample site per bag.\nPut the foil-wrapped Anotops into the labeled Ziploc bag.\nFreeze the Ziploc in -80\u00b0C freezer (if no -80\u00b0C freezer is available, use a -20\u00b0C freezer).\nDiscard the syringe and filtrate (unless you need some sterile water).",
+    "actions": [
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "plunger"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": "0.02 \u00b5m filter (Anotop)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "end of syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": "0.2 \u00b5m filtrate",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "plunger"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "syringe and filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "can crusher"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "60mL syringe with Anotop",
+          "reagent": "0.2 \u00b5m filtrate",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "very slowly, gentle steady pressure",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "watch",
+        "parameters": {
+          "container": "Anotop",
+          "reagent": "water",
+          "volume": "last drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "can crusher",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "last drop of water goes into Anotop"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Anotop",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "suck",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": "0.2 \u00b5m filtrate",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "depth": "for this depth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "60mL syringe",
+          "reagent": "Anotop",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "end of syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "60mL syringe with Anotop",
+          "reagent": "0.2 \u00b5m filtrate",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Anotop",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "write",
+        "parameters": {
+          "container": "Anotop",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "waterproof Sharpie"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "Anotop",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverage": "both inlet and outlet"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "piece of aluminum foil",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "info": "date, depth, location",
+            "tool": "waterproof Sharpie"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "parafilmed Anotop",
+          "reagent": "labeled aluminum foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "Ziploc bag",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "info": "date, depths, location"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "Ziploc bag",
+          "reagent": "Anotops",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per": "one location/sample site per bag"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "labeled Ziploc bag",
+          "reagent": "foil-wrapped Anotops",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "Ziploc bag",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C freezer (or -20\u00b0C)",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "syringe and filtrate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "exception": "unless you need some sterile water"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 60mL syringe, other: {'item': 'plunger'})\n# MANUAL: attach (container: 60mL syringe, reagent: 0.02 \u00b5m filter (Anotop), other: {'location': 'end of syringe'})\n\n### AUTOMATED SECTION ###\npour(container='60mL syringe', reagent='0.2 \u00b5m filtrate', volume='50 mL')\n\n### MANUAL SECTION ###\n# MANUAL: replace (container: 60mL syringe, other: {'item': 'plunger'})\n# MANUAL: mount (container: syringe and filter, other: {'equipment': 'can crusher'})\n# MANUAL: push (container: 60mL syringe with Anotop, reagent: 0.2 \u00b5m filtrate, volume: 50 mL, speed: very slowly, gentle steady pressure)\n# MANUAL: watch (container: Anotop, reagent: water, volume: last drop)\n# MANUAL: stop (container: can crusher, other: {'condition': 'last drop of water goes into Anotop'})\n# MANUAL: remove (container: Anotop, other: {'from': 'syringe'})\n\n### AUTOMATED SECTION ###\nsuck(container='60mL syringe', reagent='0.2 \u00b5m filtrate', volume='50 mL', depth='for this depth')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: 60mL syringe, reagent: Anotop, other: {'location': 'end of syringe'})\n# MANUAL: push (container: 60mL syringe with Anotop, reagent: 0.2 \u00b5m filtrate, volume: 50 mL, speed: slowly)\n# MANUAL: remove (container: Anotop, other: {'from': 'syringe'})\n# MANUAL: write (container: Anotop, other: {'tool': 'waterproof Sharpie'})\n# MANUAL: wrap (container: Anotop, reagent: parafilm, other: {'coverage': 'both inlet and outlet'})\n# MANUAL: label (container: piece of aluminum foil, other: {'info': 'date, depth, location', 'tool': 'waterproof Sharpie'})\n# MANUAL: wrap (container: parafilmed Anotop, reagent: labeled aluminum foil)\n# MANUAL: label (container: Ziploc bag, other: {'info': 'date, depths, location'})\n# MANUAL: collect (container: Ziploc bag, reagent: Anotops, other: {'per': 'one location/sample site per bag'})\n# MANUAL: put (container: labeled Ziploc bag, reagent: foil-wrapped Anotops)\n# MANUAL: freeze (container: Ziploc bag, temperature: -80\u00b0C freezer (or -20\u00b0C))\n# MANUAL: discard (container: syringe and filtrate, other: {'exception': 'unless you need some sterile water'})",
+    "source_file": "protocol_336.txt"
+  }
+]

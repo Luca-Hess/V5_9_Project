@@ -1,0 +1,219 @@
+[
+  {
+    "protocol": "Isotopic labeling of freshwater mixotrophic algae using isotopic labeled heat-killed bacteria\nPrepare modified DY-V media.\u00a0\u00a0\u00a0\nMedia used for Ochromonas growth was a modified version of DY-V media.\nModifications were:No MES was used, as it can be used as a source of carbon (bicarbonate and heat-killed bacteria\u00a0are the only sources of carbon used in this media).\nNo Na2SiO3 was used (Ochromonas does not need silica).\nNo NaNO3\u00a0(ammonium and heat-killed bacteria were the only sources of nitrogen used in this media).\nSodium bicarbonate added at a final concentration of 95 \u00b5M.\nBicarbonate addition is done before algal inoculum by 0.2 \u00b5m filtration of a stock solution (do not autoclave).\nMedia inoculation with labeled HKB.\u00a0\nAdd 15N 13C labeled heat-killed bacteria (HKB) to the media (isolation and labeling of HKB was done following this protocol).\nAdd an inoculum of the mixotrophic algae (volume of inoculum should be low as to avoid dilution of the isotopic label and carry over of nutrients).\nNOTE: as an example, values commonly used were ~5x103 Ochromonas mL-1 and ~5x107 HKB mL-1 as starting concentrations for the cultures.\nMixotrophic growth of the algae\u00a0Let the algae grow\u00a0so it incorporates\u00a0the isotopic signature in its biomass.\nTrack the algae growth through microscopy (live samples and/or fixed samples) and the decline of heat-killed bacteria (fixed samples and staining with DAPI to assess HKB concentrations through epifluorescence microscopy.\nSampling for assessment of algal isotopic signature Ochromonas was allowed to grow for\u00a02-3 generations before sampling for isotopic signature.\nTwo kind of samples can be collected:\u00a0\nBulk measurements: filter 30-50 mL of the cultures onto pre-combusted glass fiber filters and dry at 60 \u00baC over night to stop all biological activity.\nAfterwards, filters can be stored in glass vials at room temperature.\nFurther processing of the sample included an acidification step with HCl to remove inorganic carbon and the C- and N- isotopic composition of the sample was determined\u00a0by an isotope rato mas spectrometer (IRMS).\nCell-specific measurements: collect 2 mL of sample and fix with 2X EM-grade glutaraldehyde.\nSample can be stored in the fridge at 4 \u00baC.\nFurther processing of the sample involves\u00a0the deposition of cells onto sylicon wafers, wash with MQ-water and drye; map cells on the waffer using microscopy and analysis of single cells using a Cameca NanoSIMS 50 instrument. \n(NOTE: actual manipulation of the machine will be done by an expert user).",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "media preparation vessel",
+          "reagent": "sodium bicarbonate stock solution",
+          "volume": "to achieve 95 \u00b5M final concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filtration": "0.2 \u00b5m filtration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "media preparation vessel",
+          "reagent": "sodium bicarbonate stock solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "media",
+          "reagent": "15N 13C labeled heat-killed bacteria (HKB)",
+          "volume": "to achieve ~5x10^7 HKB mL-1",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "media",
+          "reagent": "mixotrophic algae inoculum",
+          "volume": "to achieve ~5x10^3 Ochromonas mL-1",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "volume should be low to avoid dilution of isotopic label"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "culture vessel",
+          "reagent": "media with algae and HKB",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-3 generations (duration not specified)",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": "30-50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "pre-combusted glass fiber filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "glass fiber filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60 \u00baC",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "stop all biological activity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "glass vials",
+          "reagent": "dried filters",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter",
+          "reagent": "HCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "acidification to remove inorganic carbon"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "2X EM-grade glutaraldehyde",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "fixation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "fixed sample",
+          "volume": null,
+          "temperature": "4 \u00baC",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sylicon wafer",
+          "reagent": "MQ-water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "sylicon wafer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='media preparation vessel', reagent='sodium bicarbonate stock solution', volume='to achieve 95 \u00b5M final concentration', filtration='0.2 \u00b5m filtration')\nfilter(container='media preparation vessel', reagent='sodium bicarbonate stock solution', filter_size='0.2 \u00b5m')\nadd(container='media', reagent='15N 13C labeled heat-killed bacteria (HKB)', volume='to achieve ~5x10^7 HKB mL-1')\nadd(container='media', reagent='mixotrophic algae inoculum', volume='to achieve ~5x10^3 Ochromonas mL-1', note='volume should be low to avoid dilution of isotopic label')\nincubate(container='culture vessel', reagent='media with algae and HKB', duration='2-3 generations (duration not specified)')\nfilter(container='culture', volume='30-50 mL', filter_type='pre-combusted glass fiber filter')\ndry(container='glass fiber filter', temperature='60 \u00baC', duration='overnight', purpose='stop all biological activity')\nstore(container='glass vials', reagent='dried filters', temperature='room temperature')\nadd(container='filter', reagent='HCl', purpose='acidification to remove inorganic carbon')\ncollect(container='culture', volume='2 mL')\nadd(container='sample tube', reagent='2X EM-grade glutaraldehyde', purpose='fixation')\nstore(container='sample tube', reagent='fixed sample', temperature='4 \u00baC')\nwash(container='sylicon wafer', reagent='MQ-water')\ndry(container='sylicon wafer')",
+    "source_file": "protocol_621.txt"
+  }
+]

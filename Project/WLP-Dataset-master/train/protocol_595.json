@@ -1,0 +1,168 @@
+[
+  {
+    "protocol": "Seydoux lab Cas9 preparation test: \nTag gtbp\u20101 with eGFP or mCherry using dpy\u201010 co\u2010CRISPR. \nPrepare the repair PCR template as indicated in Reagents for gtbp\u20101 eGFP and mCherry tagging (see guidelines) and Repair template synthesis.\nMake the injection mix as indicated in injection mixes, part I.\nUse the crRNA gtbp\u20101 Ct (#728 in Table S3).\nInject 15\u201020 young adult N2 worms and recover as described in Worm recovery and handling.\nPool the recovered worms (P0s) on one plate and incubate for 22\u201023h at 20 \u00b0C (day 1).\nClone the P0s to individual OP50 plates and incubate at 20 \u00b0C for 4\u20105 days (day 2).\nWhen the F1s reach the adult stage, check for Rollers.\nFrom those \u201cjackpot broods\u201d, screen the Rollers for fluorescent protein expression as described in Screening for edit of interest.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "repair PCR template for gtbp-1 eGFP and mCherry tagging",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "see guidelines and Repair template synthesis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "injection mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "see injection mixes, part I"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "inject",
+        "parameters": {
+          "container": "N2 worms (15-20 young adults)",
+          "reagent": "injection mix (with crRNA gtbp-1 Ct #728)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "injected N2 worms",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "see Worm recovery and handling"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "recovered worms (P0s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "one plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate with pooled P0 worms",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20 \u00b0C",
+          "duration": "22-23 h",
+          "speed": null,
+          "other": {
+            "day": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "clone",
+        "parameters": {
+          "container": "P0 worms",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "individual OP50 plates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "individual OP50 plates with P0 worms",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20 \u00b0C",
+          "duration": "4-5 days",
+          "speed": null,
+          "other": {
+            "day": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "F1 worms (adult stage)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "Rollers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "screen",
+        "parameters": {
+          "container": "Rollers from jackpot broods",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "fluorescent protein expression",
+            "reference": "see Screening for edit of interest"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: repair PCR template for gtbp-1 eGFP and mCherry tagging, other: {'reference': 'see guidelines and Repair template synthesis'})\n# MANUAL: make (reagent: injection mix, other: {'reference': 'see injection mixes, part I'})\n# MANUAL: inject (container: N2 worms (15-20 young adults), reagent: injection mix (with crRNA gtbp-1 Ct #728))\n# MANUAL: recover (container: injected N2 worms, other: {'reference': 'see Worm recovery and handling'})\n# MANUAL: pool (container: recovered worms (P0s), other: {'destination': 'one plate'})\n\n### AUTOMATED SECTION ###\nincubate(container='plate with pooled P0 worms', temperature='20 \u00b0C', duration='22-23 h', day='1')\n\n### MANUAL SECTION ###\n# MANUAL: clone (container: P0 worms, other: {'destination': 'individual OP50 plates'})\n\n### AUTOMATED SECTION ###\nincubate(container='individual OP50 plates with P0 worms', temperature='20 \u00b0C', duration='4-5 days', day='2')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: F1 worms (adult stage), other: {'for': 'Rollers'})\n# MANUAL: screen (container: Rollers from jackpot broods, other: {'for': 'fluorescent protein expression', 'reference': 'see Screening for edit of interest'})",
+    "source_file": "protocol_595.txt"
+  }
+]

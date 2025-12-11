@@ -1,0 +1,198 @@
+[
+  {
+    "protocol": "Fractionation of Light and Heavy Mitochondria by Gradient Cushion using the FOCUS\u2122 Mitochondria Kit\nSuspend the mitochondrial pellet in 100\u00b5l 1X SubCell Buffer-II.\nMake a step gradient by adding 200\u00b5l SubCell Buffer-V to a centrifuge tube and then overlaying with 200\u00b5l SubCell Buffer-IV.\nGently float the mitochondrial suspension on the surface of the step gradient.\nCentrifuge the gradient at 20,000x g for 20 minutes.\nObserve the two white bands.\nCarefully remove each band to a separate tube.\nDilute the mitochondrial suspensions with equal volume of 1X SubCell Buffer-II.\nCentrifuge the tubes at 12,000x g for 15 minutes and discard the supernatant.\nSuspend the mitochondrial pellets in 30-50\u00b5l Working Mitochondria Storage Buffer and keep the suspensions on ice before downstream processing.\nThe suspensions may be stored on ice up to 48 hours.",
+    "actions": [
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "mitochondrial pellet",
+          "reagent": "1X SubCell Buffer-II",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "SubCell Buffer-V",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "centrifuge tube (with SubCell Buffer-V)",
+          "reagent": "SubCell Buffer-IV",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "step gradient (centrifuge tube)",
+          "reagent": "mitochondrial suspension",
+          "volume": "100\u00b5l (from previous step)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently on surface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tube (with gradient and mitochondrial suspension)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "20,000x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "centrifuge tube (post-centrifugation)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "two white bands"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "centrifuge tube (post-centrifugation)",
+          "reagent": "each band",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "separate tube",
+            "method": "carefully"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "separate tube (with mitochondrial band)",
+          "reagent": "1X SubCell Buffer-II",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes (with diluted mitochondrial suspensions)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": "12,000x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tubes (post-centrifugation)",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "mitochondrial pellets",
+          "reagent": "Working Mitochondria Storage Buffer",
+          "volume": "30-50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "suspensions",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "before downstream processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "suspensions",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "up to 48 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsuspend(container='mitochondrial pellet', reagent='1X SubCell Buffer-II', volume='100\u00b5l')\ndispense(container='centrifuge tube', reagent='SubCell Buffer-V', volume='200\u00b5l')\noverlay(container='centrifuge tube (with SubCell Buffer-V)', reagent='SubCell Buffer-IV', volume='200\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: step gradient (centrifuge tube), reagent: mitochondrial suspension, volume: 100\u00b5l (from previous step), other: {'method': 'gently on surface'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge tube (with gradient and mitochondrial suspension)', duration='20 minutes', speed='20,000x g')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: centrifuge tube (post-centrifugation), other: {'target': 'two white bands'})\n# MANUAL: remove (container: centrifuge tube (post-centrifugation), reagent: each band, other: {'destination': 'separate tube', 'method': 'carefully'})\n\n### AUTOMATED SECTION ###\ndilute(container='separate tube (with mitochondrial band)', reagent='1X SubCell Buffer-II', volume='equal volume')\ncentrifuge(container='tubes (with diluted mitochondrial suspensions)', duration='15 minutes', speed='12,000x g')\ndiscard(container='tubes (post-centrifugation)', reagent='supernatant')\nsuspend(container='mitochondrial pellets', reagent='Working Mitochondria Storage Buffer', volume='30-50\u00b5l')\nkeep(container='suspensions', temperature='on ice', duration='before downstream processing')\nstore(container='suspensions', temperature='on ice', duration='up to 48 hours')",
+    "source_file": "protocol_541.txt"
+  }
+]

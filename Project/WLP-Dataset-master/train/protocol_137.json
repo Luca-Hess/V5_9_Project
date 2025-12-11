@@ -1,0 +1,158 @@
+[
+  {
+    "protocol": "Nile Red Staining of Drosophila Larval Tissues\nDissect tissues in ice cold PBS, keeping samples on ice until required sample size is obtained.\nFix tissues in 4% PFA for 20 minutes.\nWash tissues 3x in PBS.\nStain samples in Nile Red at 0.5 ug/mL diluted in PBS for 1 hour.\nWash tissues 3x in PBS.\nCarefully replace the PBS with mounting medium before transferring samples to slides and imaging.\nImage immediately, or temporarily store slides at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "dissect",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS (ice cold)",
+          "volume": null,
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "Drosophila larval tissues",
+            "keep_on_ice": true,
+            "until": "required sample size is obtained"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": null,
+          "reagent": "4% PFA",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "sample": "tissues"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "tissues",
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": null,
+          "reagent": "Nile Red (0.5 ug/mL in PBS)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "sample": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "tissues",
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": null,
+          "reagent": "mounting medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "tissues",
+            "remove": "PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "tissues in mounting medium"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "image",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "mounted tissues"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "temporarily",
+          "speed": null,
+          "other": {
+            "sample": "mounted tissues"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: dissect (reagent: PBS (ice cold), temperature: ice cold, other: {'sample': 'Drosophila larval tissues', 'keep_on_ice': True, 'until': 'required sample size is obtained'})\n\n### AUTOMATED SECTION ###\nfix(reagent='4% PFA', duration='20 minutes', sample='tissues')\nwash(reagent='PBS', sample='tissues', times=3)\nstain(reagent='Nile Red (0.5 ug/mL in PBS)', duration='1 hour', sample='samples')\nwash(reagent='PBS', sample='tissues', times=3)\nreplace(reagent='mounting medium', sample='tissues', remove='PBS')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: slides, other: {'sample': 'tissues in mounting medium'})\n# MANUAL: image (container: slides, other: {'sample': 'mounted tissues'})\n\n### AUTOMATED SECTION ###\nstore(container='slides', temperature='4\u00b0C', duration='temporarily', sample='mounted tissues')",
+    "source_file": "protocol_137.txt"
+  }
+]

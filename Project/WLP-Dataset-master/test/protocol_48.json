@@ -1,0 +1,275 @@
+[
+  {
+    "protocol": "LB Agar Plates\nWeigh out the following into a 1L Erlenmeyer flask: 5g NaCl.\n5g Tryptone.\n2.5g Yeast Extract.\n7.5g Agar.\nadd (dH2O) to 500mL.\nSwirl to mix.\nCover the top of the flask with aluminum foil and label with autoclave tape.\nAutoclave on the liquid setting for 20 minutes or according to your autoclave's specifications.\nAfter removing the solution from the autoclave, allow the agar solution to cool to 55\u00b0C.\nAdd the appropriate amount of desired antibiotic to the solution (500\u03bcL if you are using a 1,000x antibiotic stock) and swirl to mix.\nPour ~20mL of LB agar per 10cm polystyrene Petri dish.\nPlace the lids on the plates and allow them to cool for 30-60 minutes (until solidified).\nInvert the plates and let sit for several more hours or overnight.\nLabel the bottom of plates with antibiotic and date and store in plastic bags or sealed with parafilm at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "NaCl",
+          "volume": "5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "Tryptone",
+          "volume": "5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "Yeast Extract",
+          "volume": "2.5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "Agar",
+          "volume": "7.5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "dH2O",
+          "volume": "500mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "aluminum foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "autoclave tape"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes or according to specifications",
+          "speed": null,
+          "other": {
+            "setting": "liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "agar solution",
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "antibiotic",
+          "volume": "500\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stock_concentration": "1,000x"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "10cm polystyrene Petri dish",
+          "reagent": "LB agar",
+          "volume": "~20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "LB agar",
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 minutes (until solidified)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several hours or overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "bottom of plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "information": "antibiotic and date"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "plastic bags or sealed with parafilm"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: 1L Erlenmeyer flask, reagent: NaCl, volume: 5g, other: {})\n# MANUAL: weigh (container: 1L Erlenmeyer flask, reagent: Tryptone, volume: 5g, other: {})\n# MANUAL: weigh (container: 1L Erlenmeyer flask, reagent: Yeast Extract, volume: 2.5g, other: {})\n# MANUAL: weigh (container: 1L Erlenmeyer flask, reagent: Agar, volume: 7.5g, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1L Erlenmeyer flask', reagent='dH2O', volume='500mL')\nmix(container='1L Erlenmeyer flask', method='swirl')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: 1L Erlenmeyer flask, reagent: aluminum foil, other: {'label': 'autoclave tape'})\n\n### AUTOMATED SECTION ###\nautoclave(container='1L Erlenmeyer flask', duration='20 minutes or according to specifications', setting='liquid')\ncool(container='1L Erlenmeyer flask', reagent='agar solution', temperature='55\u00b0C')\nadd(container='1L Erlenmeyer flask', reagent='antibiotic', volume='500\u03bcL', stock_concentration='1,000x')\nmix(container='1L Erlenmeyer flask', method='swirl')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: 10cm polystyrene Petri dish, reagent: LB agar, volume: ~20mL, other: {})\n# MANUAL: cover (container: Petri dish, reagent: lid, other: {})\n\n### AUTOMATED SECTION ###\ncool(container='Petri dish', reagent='LB agar', duration='30-60 minutes (until solidified)')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: Petri dish, other: {})\n\n### AUTOMATED SECTION ###\nwait(container='Petri dish', duration='several hours or overnight')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: bottom of plates, other: {'information': 'antibiotic and date'})\n# MANUAL: store (container: plates, temperature: 4\u00b0C, other: {'method': 'plastic bags or sealed with parafilm'})",
+    "source_file": "protocol_48.txt"
+  }
+]

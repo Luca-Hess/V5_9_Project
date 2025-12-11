@@ -1,0 +1,139 @@
+[
+  {
+    "protocol": "Blue/White Screening of Bacterial Colonies X-Gal/IPTG Plates\nCool autoclaved growth media agar to 50\u00b0C.\nAdd 10 \u00b5l X-Gal Solution (20 mg/ml) per 1 mL of Media(or 2 \u00b5l X-Gal Solution (100 mg/ml) per 1 mL of Media).\nAdd 10 \u00b5l IPTG (100mM) per 1 mL of Media for a final concentration of 1mM.\nAdd screening antibiotic of choice (Ampicillin, Kanamycin, Carbenicillin, etc).\nPour plates and allow to cool to room temperature (usually at least 30 minutes) before use.\nSpread transformed competent cells as desired.\nNote: Blue/White Selection plates are generally stable for only 1 week if stored at 4\u00b0C in clear sleeves, but may be\u00a0stored in the dark (or a dark sleeve) at 4\u00b0C for up to 1 month.",
+    "actions": [
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "growth media agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "growth media agar",
+          "reagent": "X-Gal Solution (20 mg/ml)",
+          "volume": "10 \u00b5l per 1 mL of Media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "growth media agar",
+          "reagent": "X-Gal Solution (100 mg/ml)",
+          "volume": "2 \u00b5l per 1 mL of Media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "growth media agar",
+          "reagent": "IPTG (100mM)",
+          "volume": "10 \u00b5l per 1 mL of Media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "growth media agar",
+          "reagent": "screening antibiotic of choice (Ampicillin, Kanamycin, Carbenicillin, etc)",
+          "volume": "unspecified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plates",
+          "reagent": "prepared media",
+          "volume": "unspecified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "at least 30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "plates",
+          "reagent": "transformed competent cells",
+          "volume": "unspecified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 week (clear sleeves) or up to 1 month (dark sleeve)",
+          "speed": null,
+          "other": {
+            "storage_condition": "clear sleeves or dark sleeve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncool(container='growth media agar', temperature='50\u00b0C')\nadd(container='growth media agar', reagent='X-Gal Solution (20 mg/ml)', volume='10 \u00b5l per 1 mL of Media')\nadd(container='growth media agar', reagent='X-Gal Solution (100 mg/ml)', volume='2 \u00b5l per 1 mL of Media')\nadd(container='growth media agar', reagent='IPTG (100mM)', volume='10 \u00b5l per 1 mL of Media', final_concentration='1mM')\nadd(container='growth media agar', reagent='screening antibiotic of choice (Ampicillin, Kanamycin, Carbenicillin, etc)', volume='unspecified')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plates, reagent: prepared media, volume: unspecified, other: {})\n\n### AUTOMATED SECTION ###\ncool(container='plates', temperature='room temperature', duration='at least 30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: plates, reagent: transformed competent cells, volume: unspecified, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='plates', temperature='4\u00b0C', duration='1 week (clear sleeves) or up to 1 month (dark sleeve)', storage_condition='clear sleeves or dark sleeve')",
+    "source_file": "protocol_494.txt"
+  }
+]

@@ -1,0 +1,133 @@
+[
+  {
+    "protocol": "Plant Protoplast Encapsulation. \nGently load plant protoplast suspensions into hamilton gas-tight syringe.\nLoad 2.5% wt% Pico-Surf(TM) 1in Novec 7500 into hamilton gas-tight syringe.\nPlace the microfluidic device to the stage of bright-field inverted microscope which connects with a high-speed camera.\nConnect the syringes to the corresponding inlets of the microfluidic chip via PTFE microtubing.\nLoad onto\u00a0Harvard Apparatus, PHD 2000 syringe pump\u00a0and start infusing.\nRecord the encapsulation videos with the fast camera (PHANTOM MIROEX4) using the manufacturer's software.\nImage the plant protoplasts in droplets with\u00a0Andor iXon Ultra 897 camera for fluorescence and bright field images, controlled with the Labview software.",
+    "actions": [
+      {
+        "action": "load",
+        "parameters": {
+          "container": "hamilton gas-tight syringe",
+          "reagent": "plant protoplast suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "hamilton gas-tight syringe",
+          "reagent": "2.5% wt% Pico-Surf(TM) 1 in Novec 7500",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microfluidic device",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "stage of bright-field inverted microscope",
+            "connected_device": "high-speed camera"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "syringes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "corresponding inlets of microfluidic chip",
+            "via": "PTFE microtubing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Harvard Apparatus, PHD 2000 syringe pump",
+          "reagent": "syringes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "infuse",
+        "parameters": {
+          "container": "syringe pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": "fast camera (PHANTOM MIROEX4)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "encapsulation videos",
+            "software": "manufacturer's software"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "image",
+        "parameters": {
+          "container": "Andor iXon Ultra 897 camera",
+          "reagent": "plant protoplasts in droplets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mode": "fluorescence and bright field",
+            "software": "Labview"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nload(container='hamilton gas-tight syringe', reagent='plant protoplast suspension', speed='gently')\nload(container='hamilton gas-tight syringe', reagent='2.5% wt% Pico-Surf(TM) 1 in Novec 7500')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: microfluidic device, other: {'location': 'stage of bright-field inverted microscope', 'connected_device': 'high-speed camera'})\n# MANUAL: connect (container: syringes, other: {'to': 'corresponding inlets of microfluidic chip', 'via': 'PTFE microtubing'})\n\n### AUTOMATED SECTION ###\nload(container='Harvard Apparatus, PHD 2000 syringe pump', reagent='syringes')\ninfuse(container='syringe pump')\n\n### MANUAL SECTION ###\n# MANUAL: record (container: fast camera (PHANTOM MIROEX4), other: {'subject': 'encapsulation videos', 'software': \"manufacturer's software\"})\n# MANUAL: image (container: Andor iXon Ultra 897 camera, reagent: plant protoplasts in droplets, other: {'mode': 'fluorescence and bright field', 'software': 'Labview'})",
+    "source_file": "protocol_596.txt"
+  }
+]

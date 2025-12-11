@@ -1,0 +1,115 @@
+[
+  {
+    "protocol": "TCBS Agar Plates (500ml)\nIn 500ml MilliQ, add 44g TCBS Agar.\nMix thoroughly Loosen cap.\nBring to a boil in microwave to dissolve completely and boil for approximately 1 minute.\nDO NOT AUTOCLAVE. \nAllow to cool to approximately 60\u00baC by running container until MilliQ\u00a0 Under a flame, pour TCBS agar into sterile plates about half way.\nQuickly run flame over surface of agar to remove any air bubbles.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "500ml MilliQ (presumably a bottle or flask)",
+          "reagent": "TCBS Agar",
+          "volume": "44g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "500ml MilliQ with TCBS Agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "loosen",
+        "parameters": {
+          "container": "cap of bottle/flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "bottle/flask with mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boiling",
+          "duration": "approximately 1 minute",
+          "speed": null,
+          "other": {
+            "method": "microwave"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "bottle/flask with dissolved TCBS Agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": "approximately 60\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "running container under water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "sterile plates",
+          "reagent": "TCBS agar",
+          "volume": "about half way (per plate)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "environment": "under a flame"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "surface of agar in plates",
+          "reagent": "flame",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove air bubbles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='500ml MilliQ (presumably a bottle or flask)', reagent='TCBS Agar', volume='44g')\nmix(container='500ml MilliQ with TCBS Agar')\n\n### MANUAL SECTION ###\n# MANUAL: loosen (container: cap of bottle/flask, other: {})\n\n### AUTOMATED SECTION ###\nheat(container='bottle/flask with mixture', temperature='boiling', duration='approximately 1 minute', method='microwave')\n\n### MANUAL SECTION ###\n# MANUAL: cool (container: bottle/flask with dissolved TCBS Agar, temperature: approximately 60\u00baC, other: {'method': 'running container under water'})\n# MANUAL: pour (container: sterile plates, reagent: TCBS agar, volume: about half way (per plate), other: {'environment': 'under a flame'})\n# MANUAL: run (container: surface of agar in plates, reagent: flame, other: {'purpose': 'remove air bubbles'})",
+    "source_file": "protocol_473.txt"
+  }
+]

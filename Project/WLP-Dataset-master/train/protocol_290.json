@@ -1,0 +1,265 @@
+[
+  {
+    "protocol": "Preparing AQUIL Media\nNutrient Stock\u00a0Add 1.42g Sodium Silicate\u00a0to 50ml of UPW in a 50ml vial.\nAdd 0.43g Sodium Nitrate\u00a0to 50ml of UPW in a 50ml vial.\nAdd 0.069g Sodium dihydrogen Phosphate\u00a0to 50ml of UPW in a 50ml vial.\nVitamin Stock\u00a0Add 0.037g of Vitamin B12 to 50ml of UPW in a 50ml vial.\nAdd 0.0061g of Biotin to 50ml of UPW in a 50ml vial.\nAdd 1.5g Thiamine to 50ml of UPW in a 50ml vial.\nEDTA Stock\u00a0Add all of the following dry chemicals into one clean 50ml vial in order to make EDTA stock.\nNutrient and vitamin stocks should be chelexed and filter-sterilized before use.\nEDTA(metals) stock should be filter-sterilized.\nTo make AQUIL, add the following reagents to 1L of chelexed, microwave-sterilized ASW, or 1L microwave sterilized surface seawater.\nAdd 1ml EDTA stock, 1ml sodium silicate, 1ml sodium nitrate, 1ml sodium dihydrogen phosphate, 100ul vitamin B12, 100ul biotin and 100ul thiamine stock.\nInvert bottle twice for mixing.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Sodium Silicate",
+          "volume": "1.42g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Sodium Nitrate",
+          "volume": "0.43g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Sodium dihydrogen Phosphate",
+          "volume": "0.069g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Vitamin B12",
+          "volume": "0.037g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Biotin",
+          "volume": "0.0061g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "Thiamine",
+          "volume": "1.5g solid + 50ml UPW",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml vial",
+          "reagent": "EDTA stock dry chemicals",
+          "volume": "all dry chemicals (amounts not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "in order"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "chelex",
+        "parameters": {
+          "container": "nutrient and vitamin stocks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "filter-sterilize",
+        "parameters": {
+          "container": "nutrient and vitamin stocks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter-sterilize",
+        "parameters": {
+          "container": "EDTA(metals) stock",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "EDTA stock",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "sodium silicate",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "sodium nitrate",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "sodium dihydrogen phosphate",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "vitamin B12 stock",
+          "volume": "100ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "biotin stock",
+          "volume": "100ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L bottle (chelexed, microwave-sterilized ASW or surface seawater)",
+          "reagent": "thiamine stock",
+          "volume": "100ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "1L bottle (AQUIL media)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='50ml vial', reagent='Sodium Silicate', volume='1.42g solid + 50ml UPW')\nadd(container='50ml vial', reagent='Sodium Nitrate', volume='0.43g solid + 50ml UPW')\nadd(container='50ml vial', reagent='Sodium dihydrogen Phosphate', volume='0.069g solid + 50ml UPW')\nadd(container='50ml vial', reagent='Vitamin B12', volume='0.037g solid + 50ml UPW')\nadd(container='50ml vial', reagent='Biotin', volume='0.0061g solid + 50ml UPW')\nadd(container='50ml vial', reagent='Thiamine', volume='1.5g solid + 50ml UPW')\nadd(container='50ml vial', reagent='EDTA stock dry chemicals', volume='all dry chemicals (amounts not specified)', order='in order')\n\n### MANUAL SECTION ###\n# MANUAL: chelex (container: nutrient and vitamin stocks, other: {})\n\n### AUTOMATED SECTION ###\nfilter-sterilize(container='nutrient and vitamin stocks')\nfilter-sterilize(container='EDTA(metals) stock')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='EDTA stock', volume='1ml')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='sodium silicate', volume='1ml')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='sodium nitrate', volume='1ml')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='sodium dihydrogen phosphate', volume='1ml')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='vitamin B12 stock', volume='100ul')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='biotin stock', volume='100ul')\nadd(container='1L bottle (chelexed, microwave-sterilized ASW or surface seawater)', reagent='thiamine stock', volume='100ul')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: 1L bottle (AQUIL media), other: {'times': '2'})",
+    "source_file": "protocol_290.txt"
+  }
+]

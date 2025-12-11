@@ -1,0 +1,251 @@
+[
+  {
+    "protocol": "Immunofluorescent Staining of Foxp3 in Frozen Sections\nThaw frozen sections in a sealed environment to avoid damage by frozen watercrystals. (Approximately 1 hour.)\nFix for 5 minutes in acetone (-20\u00b0C) (note: do not use more often than 5 times).\nDry for 10 minutes at room temperature.\nIncubate sections in TBS-T (50 mM Tris, 150 mM NaCl, adjust pH with HCl to 7.6 with 0.05% Tween 20) for 15 minutes.\nPretreatment: Perform antigen retrieval or enzyme digestion if needed.\nWash twice for 2 minutes each with TBS-T (Optional: staining of surface marker can be performed before \u201cCleaning\u201d step)\nCleaning: Incubate sections with 1% Triton X-100 diluted in TBS for 30 minutes at room temperature.\nThis step will help to reduce background staining (longer incubationmay be more effective, especially for sections thicker than 10 \u03bcm).\nNormal Serum Blocking: Without washing, incubate sections directly with 5% normal mouse/rat/rabbit serum blocking solution for 30 minutes at room temperature.\nNote: Normal serum should be the same species of which the secondary antibody is raised.\nWash three times for 2 minutes each with TBS-T.\nEndogenous Peroxidase Blocking: Incubate sections with 3% H2O2 in TBS for 10 minutes to block endogenous peroxidise. (Recommended for liver sections, but optional for other tissues.)\nWash 3 times for 2 minutes each with TBS-T.\nPrimary Antibody: Incubate sections with primary antibody at its optimaldilution (Mouse Foxp3-Alexa Fluor\u00ae 647, clone MF-14, cat # 126408) in \u201cantibodydilution buffer\u201c for 30-60 minutes at room temperature.\nNote: Using a purifiedunconjugated antibody along with a secondary reagent may improve staining due tosignal amplifcation.\nWash twice for 2 minutes with TBS-T.\nCounterstain twice for 3 minutes each with DAPI Wash twice for 2 minutes with TBS-T.\nCoverslip with Mowiol or mounting medium.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "frozen sections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "environment": "sealed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "frozen sections",
+          "reagent": "acetone",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "sections",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T (50 mM Tris, 150 mM NaCl, pH 7.6, 0.05% Tween 20)",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pretreat",
+        "parameters": {
+          "container": "sections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "antigen retrieval or enzyme digestion if needed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "1% Triton X-100 in TBS",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "5% normal mouse/rat/rabbit serum blocking solution",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "3% H2O2 in TBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "block endogenous peroxidase"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "primary antibody (Mouse Foxp3-Alexa Fluor\u00ae 647, clone MF-14, cat # 126408) in antibody dilution buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "counterstain",
+        "parameters": {
+          "container": "sections",
+          "reagent": "DAPI",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sections",
+          "reagent": "TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "coverslip",
+        "parameters": {
+          "container": "sections",
+          "reagent": "Mowiol or mounting medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: frozen sections, duration: 1 hour, other: {'environment': 'sealed'})\n\n### AUTOMATED SECTION ###\nfix(container='frozen sections', reagent='acetone', temperature='-20\u00b0C', duration='5 minutes')\ndry(container='sections', temperature='room temperature', duration='10 minutes')\nincubate(container='sections', reagent='TBS-T (50 mM Tris, 150 mM NaCl, pH 7.6, 0.05% Tween 20)', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: pretreat (container: sections, other: {'method': 'antigen retrieval or enzyme digestion if needed'})\n\n### AUTOMATED SECTION ###\nwash(container='sections', reagent='TBS-T', duration='2 minutes', repeat=2)\nincubate(container='sections', reagent='1% Triton X-100 in TBS', temperature='room temperature', duration='30 minutes')\nincubate(container='sections', reagent='5% normal mouse/rat/rabbit serum blocking solution', temperature='room temperature', duration='30 minutes')\nwash(container='sections', reagent='TBS-T', duration='2 minutes', repeat=3)\nincubate(container='sections', reagent='3% H2O2 in TBS', duration='10 minutes', purpose='block endogenous peroxidase')\nwash(container='sections', reagent='TBS-T', duration='2 minutes', repeat=3)\nincubate(container='sections', reagent='primary antibody (Mouse Foxp3-Alexa Fluor\u00ae 647, clone MF-14, cat # 126408) in antibody dilution buffer', temperature='room temperature', duration='30-60 minutes')\nwash(container='sections', reagent='TBS-T', duration='2 minutes', repeat=2)\ncounterstain(container='sections', reagent='DAPI', duration='3 minutes', repeat=2)\nwash(container='sections', reagent='TBS-T', duration='2 minutes', repeat=2)\n\n### MANUAL SECTION ###\n# MANUAL: coverslip (container: sections, reagent: Mowiol or mounting medium)",
+    "source_file": "protocol_140.txt"
+  }
+]

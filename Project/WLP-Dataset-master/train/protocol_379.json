@@ -1,0 +1,280 @@
+[
+  {
+    "protocol": "Phototaxis suppression\nTo ensure that you only use photopositive/photonegative flies for this experiment, do a preselection by running a regular, single-trial photoxasis experiment without aversive stimulus and collect only the flies in either the bright or the dark tube.\nAfter placing the filter paper in the appropriate tube and with the elevator down, load the selected flies (around 50) into the entrance tube and give them 10 minutes for dark adaption.\nShift the elevator all the way up, tap the flies into the elevator and move it to the middle position (between the entrance tube and the dark tube).\nBring the T-maze back into the vertical position and put the elevator with the flies all the way down.\nNow let the flies choose between the bright tube and the dark tube for 30 seconds.\nTap all the flies into the tube which doesn\u2019t contain the aversive stimulus (The elevator is still down).\nTake this tube and put all the flies in the entrance tube again (with a funnel).\nLet them calm down for 15 seconds.\nRepeat the \"Bright/dark tube choice\" section (steps 3 through 8).\nSwitch the tube which contains the aversive stimulus with a tube without any filter paper and repeat the \"Bright/dark tube choice\" section (steps 3 through 8).\nPut the elevator up and count the flies in the entrance tube, the transparent tube and the opaque tube after anesthetizing them.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "bright tube or dark tube",
+          "reagent": "flies",
+          "volume": "around 50 flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "selection": "photopositive or photonegative"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "appropriate tube",
+          "reagent": "filter paper",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "selected flies",
+          "volume": "around 50 flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "flies",
+          "volume": "around 50 flies",
+          "temperature": "dark (implied)",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "dark adaption"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shift",
+        "parameters": {
+          "container": "elevator",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "all the way up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "tap",
+        "parameters": {
+          "container": "elevator",
+          "reagent": "flies",
+          "volume": "around 50 flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "entrance tube",
+            "to": "elevator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "elevator",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "middle (between entrance tube and dark tube)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": "T-maze",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "vertical"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "elevator",
+          "reagent": "flies",
+          "volume": "around 50 flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "all the way down"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "T-maze",
+          "reagent": "flies",
+          "volume": "around 50 flies",
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "purpose": "flies choose between bright and dark tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "tap",
+        "parameters": {
+          "container": "tube (without aversive stimulus)",
+          "reagent": "flies",
+          "volume": "all flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "elevator",
+            "to": "tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "flies",
+          "volume": "all flies",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "with a funnel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "flies",
+          "volume": "all flies",
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": null,
+          "other": {
+            "purpose": "let them calm down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "switch",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "tube with aversive stimulus",
+            "to": "tube without filter paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "section": "\"Bright/dark tube choice\" (steps 3 through 8)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "elevator",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "entrance tube, transparent tube, opaque tube",
+          "reagent": "flies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after": "anesthetizing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: bright tube or dark tube, reagent: flies, volume: around 50 flies, other: {'selection': 'photopositive or photonegative'})\n# MANUAL: place (container: appropriate tube, reagent: filter paper, other: {})\n# MANUAL: load (container: entrance tube, reagent: selected flies, volume: around 50 flies, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='entrance tube', reagent='flies', volume='around 50 flies', temperature='dark (implied)', duration='10 minutes', purpose='dark adaption')\n\n### MANUAL SECTION ###\n# MANUAL: shift (container: elevator, other: {'position': 'all the way up'})\n# MANUAL: tap (container: elevator, reagent: flies, volume: around 50 flies, other: {'from': 'entrance tube', 'to': 'elevator'})\n# MANUAL: move (container: elevator, other: {'position': 'middle (between entrance tube and dark tube)'})\n# MANUAL: bring (container: T-maze, other: {'position': 'vertical'})\n# MANUAL: put (container: elevator, reagent: flies, volume: around 50 flies, other: {'position': 'all the way down'})\n\n### AUTOMATED SECTION ###\nwait(container='T-maze', reagent='flies', volume='around 50 flies', duration='30 seconds', purpose='flies choose between bright and dark tube')\n\n### MANUAL SECTION ###\n# MANUAL: tap (container: tube (without aversive stimulus), reagent: flies, volume: all flies, other: {'from': 'elevator', 'to': 'tube'})\n# MANUAL: put (container: entrance tube, reagent: flies, volume: all flies, other: {'method': 'with a funnel'})\n\n### AUTOMATED SECTION ###\nwait(container='entrance tube', reagent='flies', volume='all flies', duration='15 seconds', purpose='let them calm down')\n\n### MANUAL SECTION ###\n# MANUAL: switch (container: tube, other: {'from': 'tube with aversive stimulus', 'to': 'tube without filter paper'})\n# MANUAL: repeat (other: {'section': '\"Bright/dark tube choice\" (steps 3 through 8)'})\n# MANUAL: put (container: elevator, other: {'position': 'up'})\n# MANUAL: count (container: entrance tube, transparent tube, opaque tube, reagent: flies, other: {'after': 'anesthetizing'})",
+    "source_file": "protocol_379.txt"
+  }
+]

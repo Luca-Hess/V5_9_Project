@@ -1,0 +1,227 @@
+[
+  {
+    "protocol": "LB Agar Plates\n20g of Agar add (dH2O) to 500mL. \nSwirl to mix with a stir bar for 10 minutes. \nCover the top of the flask with aluminum foil and label with autoclave tape.\nAutoclave on the liquid setting for 30\u00a0minutes.\nAfter removing the solution from the autoclave, allow the agar solution to cool to 55\u00b0C.\nAdd the appropriate amount of desired antibiotic to the solution and swirl to mix.\niGEM standard concentrations:\nTetKanCam15ug/mL50ug/mL35ug/mL. \nPour ~20mL of LB agar per 10cm polystyrene Petri dish.\nPlace the lids on the plates and allow them to cool for 30-60 minutes (until solidified). \nInvert the plates and let sit for several more hours or overnight.\nLabel the bottom of plates with antibiotic and date and store in plastic bags or sealed with parafilm at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flask",
+          "reagent": "Agar",
+          "volume": "20g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "dH2O",
+            "final_volume": "500mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "method": "swirl with stir bar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "aluminum foil",
+            "label": "autoclave tape"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "flask",
+          "reagent": "agar solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "setting": "liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "flask",
+          "reagent": "agar solution",
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flask",
+          "reagent": "antibiotic",
+          "volume": "appropriate amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "iGEM standard (Tet 15ug/mL, Kan 50ug/mL, Cam 35ug/mL)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10cm polystyrene Petri dish",
+          "reagent": "LB agar",
+          "volume": "20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "lid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "LB agar",
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {
+            "until": "solidified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several hours or overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "Petri dish (bottom)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "info": "antibiotic and date"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "packaging": "plastic bags or sealed with parafilm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='flask', reagent='Agar', volume='20g', solvent='dH2O', final_volume='500mL')\nmix(container='flask', duration='10 minutes', method='swirl with stir bar')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: flask, other: {'material': 'aluminum foil', 'label': 'autoclave tape'})\n\n### AUTOMATED SECTION ###\nautoclave(container='flask', reagent='agar solution', duration='30 minutes', setting='liquid')\ncool(container='flask', reagent='agar solution', temperature='55\u00b0C')\nadd(container='flask', reagent='antibiotic', volume='appropriate amount', concentration='iGEM standard (Tet 15ug/mL, Kan 50ug/mL, Cam 35ug/mL)')\nmix(container='flask', method='swirl')\ndispense(container='10cm polystyrene Petri dish', reagent='LB agar', volume='20mL')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: Petri dish, other: {'material': 'lid'})\n\n### AUTOMATED SECTION ###\ncool(container='Petri dish', reagent='LB agar', duration='30-60 minutes', until='solidified')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: Petri dish, other: {})\n\n### AUTOMATED SECTION ###\nwait(container='Petri dish', duration='several hours or overnight')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: Petri dish (bottom), other: {'info': 'antibiotic and date'})\n# MANUAL: store (container: Petri dish, temperature: 4\u00b0C, other: {'packaging': 'plastic bags or sealed with parafilm'})",
+    "source_file": "protocol_524.txt"
+  }
+]

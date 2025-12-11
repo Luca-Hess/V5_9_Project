@@ -1,0 +1,129 @@
+[
+  {
+    "protocol": "Colony PCR Protocol\nLigated DNA is transformed into cells.\nPlate transformed cells on selection plate.\nGo home, wait 13 hours.\nPick a well separated single colony from selection plate via yellow pipette tips.\nMove said colony to 96 well microtittle plate.\nPlace individual colony into a single well containing 50 \u00b5l sterile distilled water.\nRepeat for as many colonies as desired.\nMake up PCR mix.\nUse multichannel pipette to add 7.5 \u00b5l PCR mix to a 96 well PCR plate.\nAdd 2.5 \u00b5l colony solution.\nRun PCR reaction.\nAdd 4 \u00b5l loading dye once PCR run is complete.\nLoad (PCR reaction mix + dye) into gel and run.\nComplete run takes about 5 hours.",
+    "actions": [
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "13 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "96 well microtiter plate",
+          "reagent": "sterile distilled water",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_well": "single well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "96 well PCR plate",
+          "reagent": "PCR mix",
+          "volume": "7.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "multichannel pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "96 well PCR plate",
+          "reagent": "colony solution",
+          "volume": "2.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "PCR reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": "loading dye",
+          "volume": "4 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "once PCR run is complete"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "PCR reaction mix + dye",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwait(duration='13 hours')\npipette(container='96 well microtiter plate', reagent='sterile distilled water', volume='50 \u00b5l', destination_well='single well')\npipette(container='96 well PCR plate', reagent='PCR mix', volume='7.5 \u00b5l', instrument='multichannel pipette')\npipette(container='96 well PCR plate', reagent='colony solution', volume='2.5 \u00b5l')\nincubate(container='PCR plate', process='PCR reaction')\npipette(container='PCR plate', reagent='loading dye', volume='4 \u00b5l', timing='once PCR run is complete')\nload(container='gel', reagent='PCR reaction mix + dye')\nrun(container='gel', duration='5 hours')",
+    "source_file": "protocol_22.txt"
+  }
+]

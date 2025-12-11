@@ -1,0 +1,357 @@
+[
+  {
+    "protocol": "ACUITYAdvanced Protocol\nACUITYAdvanced system is recommended for use on formalin fixed paraffin embedded sections.\nPositively charged slides recommended to securely adhere tissue.\nParaffin embedded sections must be de-paraffinized with xylene and rehydrated with a graded series of ethanolbefore staining.\nDO NOT let specimen or tissue dry from this point on.\nOptimal working dilution and incubation times are to bedetermined by the investigator.\nWe recommend Peroxidase Block, Catalog# 927401 or 927402.\nIf supplied by user, prepare as per recommended protocol (supplied by user for 931101, 931201, 930501).\nWhen using ACUITYAdvanced hydrogen peroxide, incubate slides in 3% hydrogen peroxide blocking reagent for 10 minutes (hydrogen peroxide is provided with 930901, 931001, 930601 and 930701).\nRinse with distilled water.\nPlease refer to your antibody datasheet for recommended protocols if required.\nFor HIER we recommend HIER, Catalog # 928501 (order separately).\nHIER or enzyme for digestion to be supplied by user.\nWash with PBS 2 minutes, 3 times.\nApply 2 drops (100 \u03bcL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 1.\nIncubate in a humidity chamber for 10 minutes.\nDrain or blot off solution.\nDo not rinse!\nApply 2 drops (100 \u03bcL or enough volume to cover tissue section) of primary antibody.\nIncubate in a humidity chamber for 30-60 minutes.\nRinse with PBS 2 minutes, 3 times.\nApply 2 drops (100 \u03bcL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 2.\nIncubate in a humidity chamber for 15-20 minutes.\nRinse with PBS 2 minutes, 3 times.\nApply 2 drops (100 \u03bcL or enough volume to cover tissue section) of ACUITYAdvanced Reagent 3.\nIncubate in a humidity chamber for 15 minutes.\nRinse with PBS 2 minutes, 3 times If supplied by user; prepare as per recommended protocol.\nWhen using ACUITYAdvanced Chromogens (provided with kits 930901, 931001, 930601 and 930701) please reference Chromogen Preparation Table.\nRinse with distilled or tap water (AEC is alcohol soluble; do not dehydrate).\nCounterstain with desired counterstain.\nMount and coverslip.\nAEC chromogen should be prepared 1 part AEC chromogen to 50 parts AEC Substrate Buffer.\nDAB chromogen should be prepared 1 part DAB Chromogen to 25 parts DAB Substrate Buffer.\nThe following table provides some sample preparation examples.",
+    "actions": [
+      {
+        "action": "deparaffinize",
+        "parameters": {
+          "container": "slide",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "paraffin embedded section"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "rehydrate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "graded series of ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "paraffin embedded section"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "3% hydrogen peroxide blocking reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "humidity_chamber": false
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "distilled water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "slide",
+          "reagent": "ACUITYAdvanced Reagent 1",
+          "volume": "100 \u03bcL or enough to cover tissue section",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drops": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "humidity_chamber": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "drain or blot off solution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "slide",
+          "reagent": "primary antibody",
+          "volume": "100 \u03bcL or enough to cover tissue section",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drops": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {
+            "humidity_chamber": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "slide",
+          "reagent": "ACUITYAdvanced Reagent 2",
+          "volume": "100 \u03bcL or enough to cover tissue section",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drops": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": {
+            "humidity_chamber": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "slide",
+          "reagent": "ACUITYAdvanced Reagent 3",
+          "volume": "100 \u03bcL or enough to cover tissue section",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drops": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "humidity_chamber": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "distilled or tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "counterstain",
+        "parameters": {
+          "container": "slide",
+          "reagent": "desired counterstain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "AEC chromogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1 part AEC chromogen to 50 parts AEC Substrate Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "DAB chromogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1 part DAB Chromogen to 25 parts DAB Substrate Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndeparaffinize(container='slide', reagent='xylene', sample_type='paraffin embedded section')\nrehydrate(container='slide', reagent='graded series of ethanol', sample_type='paraffin embedded section')\nincubate(container='slide', reagent='3% hydrogen peroxide blocking reagent', duration='10 minutes', humidity_chamber=False)\nrinse(container='slide', reagent='distilled water', times=1)\nwash(container='slide', reagent='PBS', duration='2 minutes', times=3)\napply(container='slide', reagent='ACUITYAdvanced Reagent 1', volume='100 \u03bcL or enough to cover tissue section', drops=2)\nincubate(container='slide', duration='10 minutes', humidity_chamber=True)\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: slide, other: {'method': 'drain or blot off solution'})\n\n### AUTOMATED SECTION ###\napply(container='slide', reagent='primary antibody', volume='100 \u03bcL or enough to cover tissue section', drops=2)\nincubate(container='slide', duration='30-60 minutes', humidity_chamber=True)\nwash(container='slide', reagent='PBS', duration='2 minutes', times=3)\napply(container='slide', reagent='ACUITYAdvanced Reagent 2', volume='100 \u03bcL or enough to cover tissue section', drops=2)\nincubate(container='slide', duration='15-20 minutes', humidity_chamber=True)\nwash(container='slide', reagent='PBS', duration='2 minutes', times=3)\napply(container='slide', reagent='ACUITYAdvanced Reagent 3', volume='100 \u03bcL or enough to cover tissue section', drops=2)\nincubate(container='slide', duration='15 minutes', humidity_chamber=True)\nwash(container='slide', reagent='PBS', duration='2 minutes', times=3)\nrinse(container='slide', reagent='distilled or tap water', times=1)\ncounterstain(container='slide', reagent='desired counterstain')\n\n### MANUAL SECTION ###\n# MANUAL: mount (container: slide, reagent: coverslip, other: {})\n\n### AUTOMATED SECTION ###\nprepare(reagent='AEC chromogen', ratio='1 part AEC chromogen to 50 parts AEC Substrate Buffer')\nprepare(reagent='DAB chromogen', ratio='1 part DAB Chromogen to 25 parts DAB Substrate Buffer')",
+    "source_file": "protocol_168.txt"
+  }
+]

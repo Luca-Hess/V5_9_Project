@@ -1,0 +1,667 @@
+[
+  {
+    "protocol": "Stellaris\u00ae RNA FISH FFPE (Paraffin-Embedded Tissue) Protocol\nParaffin embedded tissue must be sliced at a thickness of 4-10 \u03bcm using a microtome and mounted onto a microscope slide.\nImmerse the slide-mounted tissue section in 100% xylene for 10 minutes; repeat in fresh 100% xylene for an additional 5 minutes.\nImmerse the slide in 100% ethanol for 10 minutes; repeat in fresh 100% ethanol for an additional 10 minutes.\nImmerse the slide in 95% ethanol for 10 minutes.\nTo permeabilize the tissue section, immerse the slide in 70% ethanol for at least 1 hour at room temperature.\nSlides can be stored at +2 to +8 \u00b0C in 70% ethanol up to a week before hybridization.\nImmerse the slide in 1X PBS for 2-5 minutes.\nDecant PBS, and immerse the slide in pre-warmed (37 \u00b0C) proteinase K solution (10 \u03bcg/mL proteinase K in 1X PBS).\nIncubate for 20 minutes at 37 \u00b0C.\nWash with 1X PBS for 2-5 minutes.\nWash with 1X PBS for 2-5 minutes.\nIf frozen before using, warm the reconstituted probe solution to room temperature.\nMix well by vortexing, then centrifuge briefly.\nTo prepare the Hybridization Buffer containing probe, add 2 \u03bcL of probe stock solution to 200 \u03bcL of Hybridization Buffer (enough for one coverslip), and then vortex and centrifuge.\nThis creates a working probe solution of 125 nM.\nThis solution will be used on steps\u00a016 and 17.\nImmerse the slide-mounted tissue section in Wash Buffer A (see recipe above) for 2-5 minutes.\nAssemble humidified chamber: 150 mm tissue culture plate; a single water-saturated paper towel placed alongside the inner chamber edge.\nThis chamber will help prevent evaporation of the probe solution from the tissue section.\nRemove the slide from Wash Buffer A, and carefully wipe away excess buffer surrounding the tissue section.\nDispense 200 \u03bcL of Hybridization Buffer containing probe onto the tissue section of the slide.\n(Note that 200 \u03bcL is recommended when using a 24 mm x 60 mm, rectangular, #1 coverglass.\nIf different sized coverglasses are used, the volume may need to be adjusted accordingly).\nCarefully place a clean coverglass over the Hybridization Buffer containing probe to completely cover the tissue section, and allow for even distribution of the Hybridization Buffer.\nPlace the slide in the humidified chamber, cover with the tissue culture lid, and seal with Parafilm\u00ae.\nIncubate in the dark at 37 \u00b0C for at least 4 hours.\n(Incubation can be continued up to 16 hours).\nImmerse the slide in Wash Buffer A, and allow the submerged coverglass to slide off the tissue section.\nGentle agitation may be required to remove the coverglass.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant Wash Buffer A, and then add DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant DAPI staining buffer, and then immerse slide in Wash Buffer B for 2-5 minutes.\nRemove the slide from Wash Buffer B, and carefully wipe away excess buffer surrounding the tissue section.\nAdd a small drop (approximately 50-100 \u03bcL) of Vectashield Mounting Medium onto the tissue section, and cover with a clean #1 coverglass.\nGently squeeze out excess anti-fade from underneath the coverglass.\nSeal the coverglass perimeter with clear nail polish, and allow to dry.\nProceed to Imaging.",
+    "actions": [
+      {
+        "action": "slice",
+        "parameters": {
+          "container": "paraffin embedded tissue",
+          "reagent": null,
+          "volume": "4-10 \u03bcm thickness",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "microtome"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "tissue section",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide-mounted tissue section",
+          "reagent": "100% xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide-mounted tissue section",
+          "reagent": "fresh 100% xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "100% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "fresh 100% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "95% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "at least 1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "slide",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": "+2 to +8 \u00b0C",
+          "duration": "up to a week",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "slide",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "pre-warmed (37 \u00b0C) proteinase K solution (10 \u03bcg/mL proteinase K in 1X PBS)",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "proteinase K solution",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "reconstituted probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Hybridization Buffer",
+          "reagent": "probe stock solution",
+          "volume": "2 \u03bcL probe stock solution to 200 \u03bcL Hybridization Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prepare Hybridization Buffer containing probe"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Hybridization Buffer containing probe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Hybridization Buffer containing probe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide-mounted tissue section",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "humidified chamber",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": "150 mm tissue culture plate, water-saturated paper towel"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wipe",
+        "parameters": {
+          "container": "slide",
+          "reagent": "excess buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "surrounding tissue section"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "slide-mounted tissue section",
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": "clean coverglass",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "over Hybridization Buffer containing probe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "humidified chamber"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "humidified chamber",
+          "reagent": "tissue culture lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "humidified chamber",
+          "reagent": "Parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide in humidified chamber",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "at least 4 hours (up to 16 hours)",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "allow submerged coverglass to slide off tissue section"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "slide",
+          "reagent": "DAPI nuclear stain (Wash Buffer A with 5 ng/mL DAPI)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "counterstain nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "DAPI staining buffer",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "slide",
+          "reagent": "DAPI staining buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wipe",
+        "parameters": {
+          "container": "slide",
+          "reagent": "excess buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "surrounding tissue section"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Vectashield Mounting Medium",
+          "volume": "50-100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mount tissue section"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "slide",
+          "reagent": "clean #1 coverglass",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "squeeze",
+        "parameters": {
+          "container": "coverglass",
+          "reagent": "excess anti-fade",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "underneath coverglass"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "coverglass perimeter",
+          "reagent": "clear nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "coverglass perimeter",
+          "reagent": "clear nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: slice (container: paraffin embedded tissue, volume: 4-10 \u03bcm thickness, other: {'instrument': 'microtome'})\n# MANUAL: mount (container: microscope slide, reagent: tissue section, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide-mounted tissue section', reagent='100% xylene', duration='10 minutes')\nimmerse(container='slide-mounted tissue section', reagent='fresh 100% xylene', duration='5 minutes')\nimmerse(container='slide', reagent='100% ethanol', duration='10 minutes')\nimmerse(container='slide', reagent='fresh 100% ethanol', duration='10 minutes')\nimmerse(container='slide', reagent='95% ethanol', duration='10 minutes')\nimmerse(container='slide', reagent='70% ethanol', temperature='room temperature', duration='at least 1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: slide, reagent: 70% ethanol, temperature: +2 to +8 \u00b0C, duration: up to a week, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide', reagent='1X PBS', duration='2-5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: slide, reagent: PBS, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide', reagent='pre-warmed (37 \u00b0C) proteinase K solution (10 \u03bcg/mL proteinase K in 1X PBS)', temperature='37 \u00b0C')\nincubate(container='slide', reagent='proteinase K solution', temperature='37 \u00b0C', duration='20 minutes')\nwash(container='slide', reagent='1X PBS', duration='2-5 minutes')\nwash(container='slide', reagent='1X PBS', duration='2-5 minutes')\nwarm(container='reconstituted probe solution', temperature='room temperature')\nmix(container='probe solution', speed='vortex')\ncentrifuge(container='probe solution', duration='briefly')\nadd(container='Hybridization Buffer', reagent='probe stock solution', volume='2 \u03bcL probe stock solution to 200 \u03bcL Hybridization Buffer', purpose='prepare Hybridization Buffer containing probe')\nmix(container='Hybridization Buffer containing probe', speed='vortex')\ncentrifuge(container='Hybridization Buffer containing probe', duration='briefly')\nimmerse(container='slide-mounted tissue section', reagent='Wash Buffer A', duration='2-5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: assemble (container: humidified chamber, other: {'components': '150 mm tissue culture plate, water-saturated paper towel'})\n# MANUAL: remove (container: slide, reagent: Wash Buffer A, other: {})\n# MANUAL: wipe (container: slide, reagent: excess buffer, other: {'location': 'surrounding tissue section'})\n\n### AUTOMATED SECTION ###\ndispense(container='slide-mounted tissue section', reagent='Hybridization Buffer containing probe', volume='200 \u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: slide, reagent: clean coverglass, other: {'location': 'over Hybridization Buffer containing probe'})\n# MANUAL: place (container: slide, other: {'location': 'humidified chamber'})\n# MANUAL: cover (container: humidified chamber, reagent: tissue culture lid, other: {})\n# MANUAL: seal (container: humidified chamber, reagent: Parafilm, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='slide in humidified chamber', temperature='37 \u00b0C', duration='at least 4 hours (up to 16 hours)', light='dark')\nimmerse(container='slide', reagent='Wash Buffer A', purpose='allow submerged coverglass to slide off tissue section')\nincubate(container='slide', reagent='Wash Buffer A', temperature='37 \u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: slide, reagent: Wash Buffer A, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='slide', reagent='DAPI nuclear stain (Wash Buffer A with 5 ng/mL DAPI)', purpose='counterstain nuclei')\nincubate(container='slide', reagent='DAPI staining buffer', temperature='37 \u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: slide, reagent: DAPI staining buffer, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide', reagent='Wash Buffer B', duration='2-5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: slide, reagent: Wash Buffer B, other: {})\n# MANUAL: wipe (container: slide, reagent: excess buffer, other: {'location': 'surrounding tissue section'})\n\n### AUTOMATED SECTION ###\nadd(container='slide', reagent='Vectashield Mounting Medium', volume='50-100 \u03bcL', purpose='mount tissue section')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: slide, reagent: clean #1 coverglass, other: {})\n# MANUAL: squeeze (container: coverglass, reagent: excess anti-fade, other: {'location': 'underneath coverglass'})\n# MANUAL: seal (container: coverglass perimeter, reagent: clear nail polish, other: {})\n# MANUAL: dry (container: coverglass perimeter, reagent: clear nail polish, other: {})",
+    "source_file": "protocol_534.txt"
+  }
+]

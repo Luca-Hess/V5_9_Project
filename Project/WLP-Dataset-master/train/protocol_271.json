@@ -1,0 +1,255 @@
+[
+  {
+    "protocol": "Zymoclean\u2122 Gel DNA Recovery Kit\nExcise the DNA fragment\u00a0from the agarose gel using a razor blade, scalpel or other device and transfer it into a 15 ml microcentrifuge tube. \nAdd 3 volumes of ADB to each volume of agarose excised from the gel.\nIncubate at 37-55\u00a0\u00b0C for 5-10 minutes until the gel slice is completely dissolved.\nTransfer the melted agarose solution to a Zymo-Spin\u2122 Column in a Collection Tube.\nCentrifuge for 30-60 seconds.\nDiscard the flow-through.\nWash #1:Add 200 \u00b5l of DNA Wash Buffer to the column.\nWash #1:Centrifuge for 30 seconds.\nDiscard the flow-through.\nWash #2: Add 200 \u00b5l of DNA Wash Buffer to the column.\nWash #2:Centrifuge for 30 seconds.\nDiscard the flow-through.\nAdd \u2265 6 \u00b5l DNA Elution Buffer\u00a0or water\u00a0directly to the column matrix.\nPlace column into a 1.5 ml tube and centrifuge for 30-60 seconds to elute DNA.",
+    "actions": [
+      {
+        "action": "excise",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "DNA fragment",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "razor blade, scalpel or other device"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "15 ml microcentrifuge tube",
+          "reagent": "excised DNA fragment",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 ml microcentrifuge tube",
+          "reagent": "ADB",
+          "volume": "3 volumes per 1 volume agarose",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37-55\u00b0C",
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "until": "gel slice is completely dissolved"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Zymo-Spin Column in Collection Tube",
+          "reagent": "melted agarose solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Zymo-Spin Column in Collection Tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Zymo-Spin Column",
+          "reagent": "DNA Wash Buffer",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Zymo-Spin Column in Collection Tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_step": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "1"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Zymo-Spin Column",
+          "reagent": "DNA Wash Buffer",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Zymo-Spin Column in Collection Tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_step": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_step": "2"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Zymo-Spin Column",
+          "reagent": "DNA Elution Buffer or water",
+          "volume": "\u2265 6 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "directly_to": "column matrix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "1.5 ml tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column in 1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 seconds",
+          "speed": null,
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: excise (container: agarose gel, reagent: DNA fragment, other: {'tool': 'razor blade, scalpel or other device'})\n\n### AUTOMATED SECTION ###\ntransfer(container='15 ml microcentrifuge tube', reagent='excised DNA fragment')\nadd(container='15 ml microcentrifuge tube', reagent='ADB', volume='3 volumes per 1 volume agarose')\nincubate(container='15 ml microcentrifuge tube', temperature='37-55\u00b0C', duration='5-10 minutes', until='gel slice is completely dissolved')\ntransfer(container='Zymo-Spin Column in Collection Tube', reagent='melted agarose solution')\ncentrifuge(container='Zymo-Spin Column in Collection Tube', duration='30-60 seconds')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Zymo-Spin Column', reagent='DNA Wash Buffer', volume='200 \u00b5l', wash_step='1')\ncentrifuge(container='Zymo-Spin Column in Collection Tube', duration='30 seconds', wash_step='1')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube, reagent: flow-through, other: {'wash_step': '1'})\n\n### AUTOMATED SECTION ###\nadd(container='Zymo-Spin Column', reagent='DNA Wash Buffer', volume='200 \u00b5l', wash_step='2')\ncentrifuge(container='Zymo-Spin Column in Collection Tube', duration='30 seconds', wash_step='2')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube, reagent: flow-through, other: {'wash_step': '2'})\n\n### AUTOMATED SECTION ###\nadd(container='Zymo-Spin Column', reagent='DNA Elution Buffer or water', volume='\u2265 6 \u00b5l', directly_to='column matrix')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: column, other: {'into': '1.5 ml tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='column in 1.5 ml tube', duration='30-60 seconds', purpose='elute DNA')",
+    "source_file": "protocol_271.txt"
+  }
+]

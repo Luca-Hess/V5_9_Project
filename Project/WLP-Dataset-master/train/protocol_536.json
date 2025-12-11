@@ -1,0 +1,233 @@
+[
+  {
+    "protocol": "Quick Protocol for Monarch\u00ae DNA Gel Extraction Kit (NEB #T1020)\nExcise the DNA fragment from the agarose gel, taking care to trim excess agarose.\nTransfer to a 1.5 ml microfuge tube and weigh the gel slice.\nMinimize exposure to UV light.\nAdd 4 volumes of Gel Dissolving Buffer to the gel slice (e.g., 400 \u03bcl buffer per 100 \u03bcl or 100 mg agarose).\nIncubate the sample between 37\u201355\u00b0C (typically 50\u00b0C), until the gel slice is completely dissolved (generally 5\u201310 minutes).\nThe time that takes a gel slice to melt depends on the size of the slice, the temperature used in the incubation as well as the percent agarose used in the gel.\nThe time recommended above should be used just as a guideline.\nInsert column into collection tube and load sample onto the column.\nSpin for 1 minute at 16,000 x g, then discard flow-through.\nRe-insert column into collection tube.\nAdd 200 \u03bcl DNA Wash Buffer (with ethanol added)\u00a0and spin for 1 minute at 16,000 x g.\u00a0\nDiscarding flow-through is optional.\nRepeat Step 5 (Step 5: Re-insert column into collection tube.\nAdd 200 \u03bcl DNA Wash Buffer and spin for 1 minute at 16,000 x g.\u00a0\nDiscarding flow-through is optional).\nTransfer column to a clean 1.5 ml microfuge tube.\nUse care to ensure that\u00a0the tip of the column does not come into contact with the flow-through.\nIf in doubt, re-spin for 1 minute.\nAdd \u2265 6 \u03bcl of DNA Elution Buffer to the center of the matrix.\nWait for 1 minute, and spin for 1 minute at 16,000 x g to elute the DNA.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microfuge tube",
+          "reagent": "Gel Dissolving Buffer",
+          "volume": "4 volumes per gel slice (e.g., 400 \u03bcl buffer per 100 \u03bcl or 100 mg agarose)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "gel slice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microfuge tube",
+          "reagent": "gel slice with Gel Dissolving Buffer",
+          "volume": null,
+          "temperature": "37\u201355\u00b0C (typically 50\u00b0C)",
+          "duration": "5\u201310 minutes or until gel slice is dissolved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "column",
+          "reagent": "dissolved gel sample",
+          "volume": "entire sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "collection tube with column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column",
+          "reagent": "DNA Wash Buffer (with ethanol added)",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "collection tube with column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "Re-insert column, add 200 \u03bcl DNA Wash Buffer, centrifuge 1 min at 16,000 x g"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean 1.5 ml microfuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column",
+          "reagent": "DNA Elution Buffer",
+          "volume": "\u2265 6 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of the matrix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 ml microfuge tube with column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5 ml microfuge tube', reagent='Gel Dissolving Buffer', volume='4 volumes per gel slice (e.g., 400 \u03bcl buffer per 100 \u03bcl or 100 mg agarose)', sample='gel slice')\nincubate(container='1.5 ml microfuge tube', reagent='gel slice with Gel Dissolving Buffer', temperature='37\u201355\u00b0C (typically 50\u00b0C)', duration='5\u201310 minutes or until gel slice is dissolved')\n\n### MANUAL SECTION ###\n# MANUAL: insert (container: column, other: {'destination': 'collection tube'})\n\n### AUTOMATED SECTION ###\nload(container='column', reagent='dissolved gel sample', volume='entire sample')\ncentrifuge(container='collection tube with column', duration='1 minute', speed='16,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n# MANUAL: insert (container: column, other: {'destination': 'collection tube'})\n\n### AUTOMATED SECTION ###\nadd(container='column', reagent='DNA Wash Buffer (with ethanol added)', volume='200 \u03bcl')\ncentrifuge(container='collection tube with column', duration='1 minute', speed='16,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nrepeat(step='Re-insert column, add 200 \u03bcl DNA Wash Buffer, centrifuge 1 min at 16,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: column, other: {'destination': 'clean 1.5 ml microfuge tube'})\n\n### AUTOMATED SECTION ###\nadd(container='column', reagent='DNA Elution Buffer', volume='\u2265 6 \u03bcl', location='center of the matrix')\nwait(container='column', duration='1 minute')\ncentrifuge(container='1.5 ml microfuge tube with column', duration='1 minute', speed='16,000 x g', purpose='elute DNA')",
+    "source_file": "protocol_536.txt"
+  }
+]

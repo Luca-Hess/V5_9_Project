@@ -1,0 +1,129 @@
+[
+  {
+    "protocol": "Obtaining pure phage stock\nTransfer phages from the clearing zone on the plate to 1 mL phage buffer or sterile sea water in a sterile tube by scraping off the surface layer of the soft agar containing the phages using a sterile loop.\nAllow the phages to diffuse into the medium overnight at 4\u00b0C.\nVortex the tube and centrifuge the sample (10,000 x g, 10 min) to remove bacteria and agar.\nTransfer the supernatant to a new tube.\nThis sample will typically contain 106\u2013108 phages mL\u20131.\nTo isolate single phages, dilutions of this concentrate should be done, followed by plaque assay, and subsequent isolation of phages from single plaques.\nUsually, this procedure is repeated 3 times to dilute out any contaminant phage associated with the phage of interest and increase the probability that only one specific phage is present in the final phage stock.\nIn the end, the phage concentrate is 0.2 \u00b5m filtered and kept in the fridge.",
+    "actions": [
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile tube",
+          "reagent": "phages from clearing zone on plate, 1 mL phage buffer or sterile sea water",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "scraping off surface layer of soft agar using sterile loop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile tube",
+          "reagent": "phages in buffer or sea water",
+          "volume": "1 mL",
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phage suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phage suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000 x g",
+          "other": {
+            "purpose": "remove bacteria and agar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "phage concentrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "isolate single phages"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "phage concentrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered phage concentrate",
+          "volume": null,
+          "temperature": "fridge",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: sterile tube, reagent: phages from clearing zone on plate, 1 mL phage buffer or sterile sea water, volume: 1 mL, other: {'method': 'scraping off surface layer of soft agar using sterile loop'})\n\n### AUTOMATED SECTION ###\nincubate(container='sterile tube', reagent='phages in buffer or sea water', volume='1 mL', temperature='4\u00b0C', duration='overnight')\nvortex(container='tube', reagent='phage suspension')\ncentrifuge(container='tube', reagent='phage suspension', duration='10 min', speed='10,000 x g', purpose='remove bacteria and agar')\ntransfer(container='new tube', reagent='supernatant')\ndilute(reagent='phage concentrate', purpose='isolate single phages')\nfilter(reagent='phage concentrate', filter_size='0.2 \u00b5m')\nstore(reagent='filtered phage concentrate', temperature='fridge')",
+    "source_file": "protocol_276.txt"
+  }
+]

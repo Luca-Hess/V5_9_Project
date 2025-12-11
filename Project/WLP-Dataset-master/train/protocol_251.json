@@ -1,0 +1,1403 @@
+[
+  {
+    "protocol": "Embedding yeast colonies for light and electron microscopy\nIncubate approximately 300 colonies on agar medium for the indicated time.\nRemove an isolated colony (1-2 mm in diameter) and a small amount of the underlying agar medium, and place on a microscope slide. \nPlace several drops of 2% agar (42\u00b0C) \u00a0on a microscope slide, and\u00a0immediately place the colony on the agar and then place several drops of agar on top of the colony and allow to solidify.\nTrim the resulting agar block with a razor blade, and place in a 3.5 ml borosilicate screw-cap vial (Fisher 03-339-21B) containing 1.5ml, 2%, paraformaldehyde/2%, glutaraldehyde.\nFix colonies by incubating for 7 days at 4\u00b0C.\nWash #1: Wash agar blocks on ice by incubating for 15 minutes with 1.5 ml of 0.15M sodium cacodylate (pH 7.2). \nWash #2: Wash agar blocks on ice by incubating for 15 minutes with 1.5 ml of 0.15M sodium cacodylate (pH 7.2). \nWash #3: Wash agar blocks on ice by incubating for 5 minutes with 1.5ml OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0).\nWash #4: Wash agar blocks on ice by incubating for 5 minutes with 1.5ml OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0).\nIf sections will be used for electron microscopy, add 1% OsO4 in OS to vials to cover the agar blocks and incubate on ice in a chemical fume hood for 1 hr.\nOtherwise skip to step 13.\nDispose of 1% OsO4 in hazardous waste.\nWashA: Wash with 1.5ml OS buffer by incubating on ice for 10 minutes.\nWashB: Wash with 1.5ml OS buffer by incubating on ice for 10 minutes.\nAdd 1.5 ml OS and incubate overnight at 4\u00b0C.\nWashA: Wash blocks with 1.5ml cold water by incubating on ice for 10 minutes.\nWashB: Wash blocks with 1.5ml cold water by incubating on ice for 10 minutes.\nWash #1:\u00a0 Add 1.5ml cold 25% ethanol and incubate on ice for 10 minutes.\nWash #2: Add 1.5ml cold 50% ethanol and incubate on ice for 10 minutes.\nWash #3: Add 1.5ml cold 75% ethanol and incubate on ice for 10 minutes.\nWash #4: Add 1.5ml cold 95% ethanol and incubate on ice for 10 minutes.\nWash #5: Add 1.5ml cold 100% ethanol and incubate on ice for 10 minutes.\nWash #6:\u00a0 Add 1.5ml cold 100% ethanol and incubate on ice for 10 minutes.\nRemove ethanol and resuspend in 1.5ml cold 100% ethanol.\nLeave the blocks overnight at 4\u00b0C in 100% ethanol.\nMake Spurr's reagent by stirring slowly under chemical fume hood 5 grams ERL4221, 4 grams DER736 and 13 grams NSA for 20 minutes(Electron Microscopy Sciences).\nAdd 0.15 grams DMAE(Electron Microscopy Sciences) and stir for 20 minutes.\nDe-gas for 1-2 hrs.\nWash blocks with 1.5ml\u00a0unopened room temp 100% ethanol by incubating at room temp for 10 minutes.\nRepeat 4 more times.\nTreatment#1: Remove ethanol and add 1.5ml of a 2:1 ratio of 100% ethanol:Spurr's reagent.\nTreatment#1: Rotate vial for 15 minutes on wheel at room temperature.\nTreatment#1: Allow to stand for 30 minutes at room temperature.\nTreatment#2: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 2:1 ratio of 100% ethanol:Spurr's reagent.\nRotate vial for 15 minutes on wheel at room temperature.\nTreatment#2: Allow to stand for 30 minutes at room temperature.\nTreatment #3: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 2:1 ratio of 100% ethanol: Spurr's reagent.\nRotate vial for 15 minutes on wheel at room temperature.\nTreatment #3: Allow to stand for 30 minutes at room temperature.\nTreatment #4: Remove 100% ethanol: Spurr's reagent and add 1.5ml of a 1:1 ratio of 100% ethanol:Spurr's reagent.\nRotate vials for 15 minutes on wheel at room temperature.\nTreatment #4: Allow to stand for 30 minutes at room temperature.\nTreatment#5: Remove 100% ethanol:Spurr's reagent and add 1.5ml of a 1:1 ratio of 100% ethanol: Spurr's reagent.\nRotate vials for 15 minutes on wheel at room temperature.\nTreatment#5: Allow to stand for 30 minutes at room temperature.\nRemove 100% ethanol:Spurr's reagent and add 1.5ml\u00a0 Spurr's reagent to vial.\nIncubate for 4hrs at room temperature.\nReplace with 1.5ml Spurr's reagent and rotate the vial overnight on the wheel at room temperature.\nReplace with 1.5ml Spurr's reagent and rotate the vial until late afternoon on the wheel at room temperature.\nRemove the Spurr's reagent and replace with 1.5ml freshly made Spurr's reagent.\nRotate the vial overnight on the wheel at room temperature.\nThe next day replace with 1.5ml Spurr's reagent and rotate until the following day on the wheel at room temperature.\nThe next day replace with 1.5ml Spurr's reagent and rotate until the following day on the wheel at room temperature.\nPlace each agar block in a mold with 0.2ml Spurr's reagent and incubate at 60\u00b0C for four hours.\nTop off the molds with Spurr's reagent and incubate at 60\u00b0C for 3 days.\nCollect sections(0.5u) from the central region of the colony in a drop of dH20 on a glass slide.\nDry slide on a 52\u00b0C heat block.\nStain sections with 1% toluidine blue, 1% Sodium Borate for 5-15 seconds.\nWash slide under a stream of dH20.\nDry on heat block.\nCover in Permount(Fisher SP15-100).\nExamine by light microscopy.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar medium plate",
+          "reagent": "yeast colonies",
+          "volume": "approximately 300 colonies",
+          "temperature": null,
+          "duration": "indicated time",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "agar medium plate",
+          "reagent": "isolated colony and underlying agar",
+          "volume": "1-2 mm diameter colony",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "colony and agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "2% agar (42\u00b0C)",
+          "volume": "several drops",
+          "temperature": "42\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "colony on agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "2% agar",
+          "volume": "several drops",
+          "temperature": "42\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "colony"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "agar block",
+          "volume": null,
+          "temperature": null,
+          "duration": "until solidified",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "trim",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "agar block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "razor blade"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "3.5 ml borosilicate screw-cap vial",
+          "reagent": "trimmed agar block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "vial_spec": "Fisher 03-339-21B"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "3.5 ml borosilicate screw-cap vial",
+          "reagent": "paraformaldehyde/glutaraldehyde (2% each)",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in fixative",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "7 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "0.15M sodium cacodylate (pH 7.2)",
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "0.15M sodium cacodylate (pH 7.2)",
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0)",
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0)",
+            "wash_number": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "1% OsO4 in OS buffer",
+          "volume": "enough to cover agar blocks",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if for electron microscopy"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in OsO4",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1 hr",
+          "speed": null,
+          "other": {
+            "location": "chemical fume hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispose",
+        "parameters": {
+          "container": null,
+          "reagent": "1% OsO4",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "waste_type": "hazardous"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "OS buffer",
+            "wash_label": "WashA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "OS buffer",
+            "wash_label": "WashB"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "OS buffer",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in OS buffer",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "cold water",
+            "wash_label": "WashA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "cold water",
+            "wash_label": "WashB"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 25% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 25% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 50% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 50% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 75% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 75% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 95% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 95% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 100% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 100% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 100% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 6
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 100% ethanol",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "wash_number": 6
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold 100% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 100% ethanol",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "Spurr's reagent",
+          "volume": "5g ERL4221, 4g DER736, 13g NSA",
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "stir slowly",
+          "other": {
+            "location": "chemical fume hood"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "0.15g DMAE",
+          "volume": "0.15g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": null,
+          "reagent": "Spurr's reagent + DMAE",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "de-gas",
+        "parameters": {
+          "container": null,
+          "reagent": "Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block",
+          "volume": "1.5 ml",
+          "temperature": "room temp",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "buffer": "unopened 100% ethanol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "vial",
+          "reagent": "wash with 1.5ml unopened room temp 100% ethanol",
+          "volume": "1.5 ml",
+          "temperature": "room temp",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "times": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ratio of 100% ethanol:Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ratio of 100% ethanol:Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "device": "wheel",
+            "treatment": "Treatment#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ratio of 100% ethanol:Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "device": "wheel",
+            "treatment": "Treatment#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "2:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "1:1 ratio of 100% ethanol:Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "device": "wheel",
+            "treatment": "Treatment#4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "1:1 ratio of 100% ethanol:Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "device": "wheel",
+            "treatment": "Treatment#5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in 1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "treatment": "Treatment#5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "1:1 ethanol:Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "4 hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "overnight"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "until late afternoon"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until late afternoon",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "vial",
+          "reagent": "freshly made Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in freshly made Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "until following day"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until following day",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Spurr's reagent",
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "until following day"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "vial",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until following day",
+          "speed": null,
+          "other": {
+            "device": "wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "mold",
+          "reagent": "agar block",
+          "volume": "0.2 ml Spurr's reagent",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mold",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "4 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "top_off",
+        "parameters": {
+          "container": "mold",
+          "reagent": "Spurr's reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mold",
+          "reagent": "agar block in Spurr's reagent",
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "3 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "sections (0.5u) from central region of colony",
+          "volume": "drop of dH2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": "52\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "heat block"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "1% toluidine blue, 1% Sodium Borate",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-15 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "under stream of dH2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "heat block"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "Permount (Fisher SP15-100)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "light microscopy"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='agar medium plate', reagent='yeast colonies', volume='approximately 300 colonies', duration='indicated time')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: agar medium plate, reagent: isolated colony and underlying agar, volume: 1-2 mm diameter colony, other: {})\n# MANUAL: place (container: microscope slide, reagent: colony and agar, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='microscope slide', reagent='2% agar (42\u00b0C)', volume='several drops', temperature='42\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: microscope slide, reagent: colony on agar, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='microscope slide', reagent='2% agar', volume='several drops', temperature='42\u00b0C', on_top_of='colony')\nallow(container='microscope slide', reagent='agar block', duration='until solidified')\n\n### MANUAL SECTION ###\n# MANUAL: trim (container: microscope slide, reagent: agar block, other: {'tool': 'razor blade'})\n# MANUAL: place (container: 3.5 ml borosilicate screw-cap vial, reagent: trimmed agar block, other: {'vial_spec': 'Fisher 03-339-21B'})\n\n### AUTOMATED SECTION ###\nadd(container='3.5 ml borosilicate screw-cap vial', reagent='paraformaldehyde/glutaraldehyde (2% each)', volume='1.5 ml')\nincubate(container='vial', reagent='agar block in fixative', temperature='4\u00b0C', duration='7 days')\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='15 minutes', buffer='0.15M sodium cacodylate (pH 7.2)', wash_number=1)\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='15 minutes', buffer='0.15M sodium cacodylate (pH 7.2)', wash_number=2)\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='5 minutes', buffer='OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0)', wash_number=3)\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='5 minutes', buffer='OS buffer (100 mM KH2PO4, 10 mM MgCl2, pH 6.0)', wash_number=4)\nadd(container='vial', reagent='1% OsO4 in OS buffer', volume='enough to cover agar blocks', condition='if for electron microscopy')\nincubate(container='vial', reagent='agar block in OsO4', temperature='on ice', duration='1 hr', location='chemical fume hood')\n\n### MANUAL SECTION ###\n# MANUAL: dispose (reagent: 1% OsO4, other: {'waste_type': 'hazardous'})\n\n### AUTOMATED SECTION ###\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='10 minutes', buffer='OS buffer', wash_label='WashA')\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='10 minutes', buffer='OS buffer', wash_label='WashB')\nadd(container='vial', reagent='OS buffer', volume='1.5 ml')\nincubate(container='vial', reagent='agar block in OS buffer', temperature='4\u00b0C', duration='overnight')\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='10 minutes', buffer='cold water', wash_label='WashA')\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='on ice', duration='10 minutes', buffer='cold water', wash_label='WashB')\nadd(container='vial', reagent='cold 25% ethanol', volume='1.5 ml', temperature='cold', wash_number=1)\nincubate(container='vial', reagent='agar block in 25% ethanol', temperature='on ice', duration='10 minutes', wash_number=1)\nadd(container='vial', reagent='cold 50% ethanol', volume='1.5 ml', temperature='cold', wash_number=2)\nincubate(container='vial', reagent='agar block in 50% ethanol', temperature='on ice', duration='10 minutes', wash_number=2)\nadd(container='vial', reagent='cold 75% ethanol', volume='1.5 ml', temperature='cold', wash_number=3)\nincubate(container='vial', reagent='agar block in 75% ethanol', temperature='on ice', duration='10 minutes', wash_number=3)\nadd(container='vial', reagent='cold 95% ethanol', volume='1.5 ml', temperature='cold', wash_number=4)\nincubate(container='vial', reagent='agar block in 95% ethanol', temperature='on ice', duration='10 minutes', wash_number=4)\nadd(container='vial', reagent='cold 100% ethanol', volume='1.5 ml', temperature='cold', wash_number=5)\nincubate(container='vial', reagent='agar block in 100% ethanol', temperature='on ice', duration='10 minutes', wash_number=5)\nadd(container='vial', reagent='cold 100% ethanol', volume='1.5 ml', temperature='cold', wash_number=6)\nincubate(container='vial', reagent='agar block in 100% ethanol', temperature='on ice', duration='10 minutes', wash_number=6)\nremove(container='vial', reagent='ethanol')\nresuspend(container='vial', reagent='cold 100% ethanol', volume='1.5 ml', temperature='cold')\nincubate(container='vial', reagent='agar block in 100% ethanol', temperature='4\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: make (reagent: Spurr's reagent, volume: 5g ERL4221, 4g DER736, 13g NSA, duration: 20 minutes, speed: stir slowly, other: {'location': 'chemical fume hood'})\n# MANUAL: add (reagent: 0.15g DMAE, volume: 0.15g, other: {})\n\n### AUTOMATED SECTION ###\nstir(reagent=\"Spurr's reagent + DMAE\", duration='20 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: de-gas (reagent: Spurr's reagent, duration: 1-2 hrs, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='vial', reagent='agar block', volume='1.5 ml', temperature='room temp', duration='10 minutes', buffer='unopened 100% ethanol')\nrepeat(container='vial', reagent='wash with 1.5ml unopened room temp 100% ethanol', volume='1.5 ml', temperature='room temp', duration='10 minutes', times=4)\nremove(container='vial', reagent='ethanol')\nadd(container='vial', reagent=\"2:1 ratio of 100% ethanol:Spurr's reagent\", volume='1.5 ml', treatment='Treatment#1')\nrotate(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='15 minutes', device='wheel')\nallow(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='30 minutes', treatment='Treatment#1')\nremove(container='vial', reagent=\"2:1 ethanol:Spurr's reagent\", treatment='Treatment#2')\nadd(container='vial', reagent=\"2:1 ratio of 100% ethanol:Spurr's reagent\", volume='1.5 ml', treatment='Treatment#2')\nrotate(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='15 minutes', device='wheel', treatment='Treatment#2')\nallow(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='30 minutes', treatment='Treatment#2')\nremove(container='vial', reagent=\"2:1 ethanol:Spurr's reagent\", treatment='Treatment#3')\nadd(container='vial', reagent=\"2:1 ratio of 100% ethanol:Spurr's reagent\", volume='1.5 ml', treatment='Treatment#3')\nrotate(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='15 minutes', device='wheel', treatment='Treatment#3')\nallow(container='vial', reagent=\"agar block in 2:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='30 minutes', treatment='Treatment#3')\nremove(container='vial', reagent=\"2:1 ethanol:Spurr's reagent\", treatment='Treatment#4')\nadd(container='vial', reagent=\"1:1 ratio of 100% ethanol:Spurr's reagent\", volume='1.5 ml', treatment='Treatment#4')\nrotate(container='vial', reagent=\"agar block in 1:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='15 minutes', device='wheel', treatment='Treatment#4')\nallow(container='vial', reagent=\"agar block in 1:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='30 minutes', treatment='Treatment#4')\nremove(container='vial', reagent=\"1:1 ethanol:Spurr's reagent\", treatment='Treatment#5')\nadd(container='vial', reagent=\"1:1 ratio of 100% ethanol:Spurr's reagent\", volume='1.5 ml', treatment='Treatment#5')\nrotate(container='vial', reagent=\"agar block in 1:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='15 minutes', device='wheel', treatment='Treatment#5')\nallow(container='vial', reagent=\"agar block in 1:1 ethanol:Spurr's reagent\", temperature='room temperature', duration='30 minutes', treatment='Treatment#5')\nremove(container='vial', reagent=\"1:1 ethanol:Spurr's reagent\")\nadd(container='vial', reagent=\"Spurr's reagent\", volume='1.5 ml')\nincubate(container='vial', reagent=\"agar block in Spurr's reagent\", temperature='room temperature', duration='4 hrs')\nreplace(container='vial', reagent=\"Spurr's reagent\", volume='1.5 ml', frequency='overnight')\nrotate(container='vial', reagent=\"agar block in Spurr's reagent\", temperature='room temperature', duration='overnight', device='wheel')\nreplace(container='vial', reagent=\"Spurr's reagent\", volume='1.5 ml', frequency='until late afternoon')\nrotate(container='vial', reagent=\"agar block in Spurr's reagent\", temperature='room temperature', duration='until late afternoon', device='wheel')\nremove(container='vial', reagent=\"Spurr's reagent\")\nreplace(container='vial', reagent=\"freshly made Spurr's reagent\", volume='1.5 ml')\nrotate(container='vial', reagent=\"agar block in freshly made Spurr's reagent\", temperature='room temperature', duration='overnight', device='wheel')\nreplace(container='vial', reagent=\"Spurr's reagent\", volume='1.5 ml', frequency='until following day')\nrotate(container='vial', reagent=\"agar block in Spurr's reagent\", temperature='room temperature', duration='until following day', device='wheel')\nreplace(container='vial', reagent=\"Spurr's reagent\", volume='1.5 ml', frequency='until following day')\nrotate(container='vial', reagent=\"agar block in Spurr's reagent\", temperature='room temperature', duration='until following day', device='wheel')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: mold, reagent: agar block, volume: 0.2 ml Spurr's reagent, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='mold', reagent=\"agar block in Spurr's reagent\", temperature='60\u00b0C', duration='4 hours')\ntop_off(container='mold', reagent=\"Spurr's reagent\")\nincubate(container='mold', reagent=\"agar block in Spurr's reagent\", temperature='60\u00b0C', duration='3 days')\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: glass slide, reagent: sections (0.5u) from central region of colony, volume: drop of dH2O, other: {})\n\n### AUTOMATED SECTION ###\ndry(container='glass slide', reagent='sections', temperature='52\u00b0C', device='heat block')\nstain(container='glass slide', reagent='1% toluidine blue, 1% Sodium Borate', duration='5-15 seconds')\nwash(container='glass slide', reagent='sections', method='under stream of dH2O')\ndry(container='glass slide', reagent='sections', device='heat block')\ncover(container='glass slide', reagent='Permount (Fisher SP15-100)')\n\n### MANUAL SECTION ###\n# MANUAL: examine (container: glass slide, reagent: sections, other: {'method': 'light microscopy'})",
+    "source_file": "protocol_251.txt"
+  }
+]

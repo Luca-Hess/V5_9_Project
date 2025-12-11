@@ -1,0 +1,221 @@
+[
+  {
+    "protocol": "Conjugation on filters. \nInoculate small (2 or 3 ml) cultures of your donor and recipient strains, with appropriate antibiotics, in lysogeny broth (LB).\nDo this late in the day, the day before you want to do the conjugation.\nTake 1 ml of donor and recipient culture and centrifuge at 10,000 rcf for 2 minutes to pellet the bacteria.\nAspirate and discard the supernatant and resuspend the bacterial pellet in fresh LB with no antibiotics.\nFirst thing in the morning on the day of the conjugation, place sterilised 0.2 um pore size filters on an L-agar plate without antibiotics.\nUse aseptic technique.\nYou will need one filter for each conjugation you're setting up, plus one for each strain on its own as a control.\nPipette 10 ul of the resuspended donor and recipient strains in the same place on a filter, sitting on the agar plate.\nDo the same for each strain on its own as a control.\nIncubate the plate upside down (agar suface facing up) at 37 degrees Celsius.\nNear the end of your work day, take the plate out of the incubator.\nUsing aseptic technique, pick each filter off the plate using forceps and place it in a 1.5 ml tube containing 1 ml of sterile PBS.\nVortex the tubes to free the bacteria from the filter.\nRemove and discard the filters from the tubes using aseptic technique.\nPlate desired volumes of the bacterial suspension on selective agar medium and incubate over night.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "culture tube or flask",
+          "reagent": "donor and recipient strains, lysogeny broth (LB), appropriate antibiotics",
+          "volume": "2 or 3 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1 ml donor and recipient culture",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10,000 rcf",
+          "other": {
+            "purpose": "pellet bacteria"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": "supernatant (approx. 1 ml)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "discard supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "bacterial pellet, fresh LB (no antibiotics)",
+          "volume": "not specified (assume 1 ml)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "L-agar plate",
+          "reagent": "sterilised 0.2 um pore size filters",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotics": "none"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "filter on agar plate",
+          "reagent": "resuspended donor and recipient strains",
+          "volume": "10 ul each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "same place on filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "filter on agar plate",
+          "reagent": "resuspended donor or recipient strain (control)",
+          "volume": "10 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on separate filter for control"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "not specified (assume several hours)",
+          "speed": null,
+          "other": {
+            "orientation": "upside down (agar surface facing up)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "incubator",
+          "reagent": "plate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "filter",
+          "volume": "1 ml sterile PBS",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "filter, PBS",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": "not specified",
+          "speed": "not specified",
+          "other": {
+            "purpose": "free bacteria from filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "discard filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "selective agar medium",
+          "reagent": "bacterial suspension",
+          "volume": "desired volumes (not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "not specified (assume 37\u00b0C)",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: culture tube or flask, reagent: donor and recipient strains, lysogeny broth (LB), appropriate antibiotics, volume: 2 or 3 ml, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube', reagent='1 ml donor and recipient culture', volume='1 ml', duration='2 minutes', speed='10,000 rcf', purpose='pellet bacteria')\naspirate(container='tube', reagent='supernatant', volume='supernatant (approx. 1 ml)', purpose='discard supernatant')\nresuspend(container='tube', reagent='bacterial pellet, fresh LB (no antibiotics)', volume='not specified (assume 1 ml)')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: L-agar plate, reagent: sterilised 0.2 um pore size filters, other: {'antibiotics': 'none'})\n\n### AUTOMATED SECTION ###\npipette(container='filter on agar plate', reagent='resuspended donor and recipient strains', volume='10 ul each', location='same place on filter')\npipette(container='filter on agar plate', reagent='resuspended donor or recipient strain (control)', volume='10 ul', location='on separate filter for control')\nincubate(container='agar plate', temperature='37\u00b0C', duration='not specified (assume several hours)', orientation='upside down (agar surface facing up)')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: incubator, reagent: plate, other: {})\n# MANUAL: place (container: 1.5 ml tube, reagent: filter, volume: 1 ml sterile PBS, other: {})\n\n### AUTOMATED SECTION ###\nvortex(container='tube', reagent='filter, PBS', volume='1 ml', duration='not specified', speed='not specified', purpose='free bacteria from filter')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: tube, reagent: filter, other: {'purpose': 'discard filter'})\n# MANUAL: plate (container: selective agar medium, reagent: bacterial suspension, volume: desired volumes (not specified), other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='agar plate', temperature='not specified (assume 37\u00b0C)', duration='overnight')",
+    "source_file": "protocol_597.txt"
+  }
+]

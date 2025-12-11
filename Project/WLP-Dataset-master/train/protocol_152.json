@@ -1,0 +1,137 @@
+[
+  {
+    "protocol": "Basic Illumina Sequence Quality Control\nAssess raw FASTQ sequences using the program FastQCGoal.\nRemove low quality sequences to increase average quality score of reads above 28 For current sequencing centers, the 5' end of has had Illumina adapters and primers removed.\nBut there can be inclusion of the 3' end Illumina adapter in DNA fragments\u00a0with length less than the number of the cycles for the sequencer.\nRemove Illumina adaptor sequences from 3' end of sequences - be sure to preserve\u00a0reads of 0 length.\nRepeat step for all raw read files.\nAssess Cutadapt results with FastQC.\nRemove low quality base pairs from sequences, generally from the 3' end, using a sliding window of 10 bp that will trim all trailing bases if the average quality score drops below 28.\nImportant: To maintain the order of paired-end Illumina sequences both reads must be input simultaneously with the same number of sequences submitted from each read pair, regardless of the length of the sequence.\nAssess file quality scores using FastQC.\nUtilize Trimmomatic for any other issues - such as poor quality in the first bp, etc.",
+    "actions": [
+      {
+        "action": "assess",
+        "parameters": {
+          "container": "raw FASTQ files",
+          "reagent": "none",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "FastQC"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "FASTQ sequences",
+          "reagent": "none",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "low quality sequences to increase average quality score above 28"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "DNA fragments (FASTQ sequences)",
+          "reagent": "Illumina adapter sequences (3' end)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "preserve": "reads of 0 length"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "all raw read files",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "remove Illumina adaptor sequences from 3' end"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "assess",
+        "parameters": {
+          "container": "Cutadapt results",
+          "reagent": "none",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "FastQC"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "sequences (FASTQ)",
+          "reagent": "none",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "low quality base pairs from 3' end using sliding window of 10 bp; trim trailing bases if average quality score < 28"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assess",
+        "parameters": {
+          "container": "file quality scores",
+          "reagent": "none",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "FastQC"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "utilize",
+        "parameters": {
+          "container": "sequences (FASTQ)",
+          "reagent": "Trimmomatic",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "other issues such as poor quality in first bp"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: assess (container: raw FASTQ files, reagent: none, other: {'software': 'FastQC'})\n# MANUAL: remove (container: FASTQ sequences, reagent: none, other: {'criteria': 'low quality sequences to increase average quality score above 28'})\n# MANUAL: remove (container: DNA fragments (FASTQ sequences), reagent: Illumina adapter sequences (3' end), other: {'preserve': 'reads of 0 length'})\n# MANUAL: repeat (container: all raw read files, other: {'step': \"remove Illumina adaptor sequences from 3' end\"})\n# MANUAL: assess (container: Cutadapt results, reagent: none, other: {'software': 'FastQC'})\n# MANUAL: remove (container: sequences (FASTQ), reagent: none, other: {'criteria': \"low quality base pairs from 3' end using sliding window of 10 bp; trim trailing bases if average quality score < 28\"})\n# MANUAL: assess (container: file quality scores, reagent: none, other: {'software': 'FastQC'})\n# MANUAL: utilize (container: sequences (FASTQ), reagent: Trimmomatic, other: {'criteria': 'other issues such as poor quality in first bp'})",
+    "source_file": "protocol_152.txt"
+  }
+]

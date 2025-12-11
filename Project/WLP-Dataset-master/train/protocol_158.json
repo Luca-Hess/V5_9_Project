@@ -1,0 +1,69 @@
+[
+  {
+    "protocol": "Precision Count Beads\u2122 Protocol and Applications\nPerform sample preparation and staining as usual.\nSome examples of sample that may be used are:a. Cell lines, b. Whole blood, c. PBMC, d. Cells from migration assays.\u00a0\nNote: Sample handling such as centrifugation, decanting, or transferring between different tubes can significantly affect cell counts and should be kept to a minimum.\nVigorously vortex the Precision Count Beads\u2122 bottle for 30-40 seconds to ensure complete mixing and break up of aggregates that may occur during storage.\nAdd 50\u03bcl of Precision Count Beads\u2122 per sample.\nAccurate pipetting is crucial at this stage.\nWe recommend using reverse pipetting to ensure pipetting of an accurate amount of beads.\nSet up the FSC and SSC channels for the cells of interest as recommended or previously defined, ensuring that the FSC threshold is not too high.\nPrecision Count Beads\u2122 have a high SSC and low FSC profile.\nThus, SSC should be adjusted in such a way that the cells are optimally visible.\nThis can be done by acquiring a sample of Precision Count Beads\u2122 alone and compare to the cells profile.\nAdjust compensation for the samples if needed Precision Count Beads\u2122 are highly fluorescent in all channels.\nMake sure to adjust the voltage to optimally detect the Precision Count Beads\u2122 in at least one fluorescent channel.\nAcquire samples on a flow cytometer, gently vortexing every sample prior to acquisition to ensure adequate suspension of the cell and bead populations.\nData analysis should be performed as usual to identify the cell population(s) of interest.\nIn an ungated plot of the same sample, Precision Count Beads\u2122 can be visualized using one or two fluorescent parameters and a gate set around the bead population.\nThe bead count and cell count can be obtained using the statistics function from the software.\nAbsolute counts can then be calculated using formulas provided in the example below.",
+    "actions": [
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "Precision Count Beads\u2122 bottle",
+          "reagent": "Precision Count Beads\u2122",
+          "volume": null,
+          "temperature": null,
+          "duration": "30-40 seconds",
+          "speed": "vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "Precision Count Beads\u2122",
+          "volume": "50\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "sample (cells and beads)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "timing": "prior to acquisition"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "acquire",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "sample (cells and beads)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "flow cytometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nvortex(container='Precision Count Beads\u2122 bottle', reagent='Precision Count Beads\u2122', duration='30-40 seconds', speed='vigorously')\npipette(container='sample tube', reagent='Precision Count Beads\u2122', volume='50\u03bcl')\nvortex(container='sample tube', reagent='sample (cells and beads)', speed='gently', timing='prior to acquisition')\n\n### MANUAL SECTION ###\n# MANUAL: acquire (container: sample tube, reagent: sample (cells and beads), other: {'instrument': 'flow cytometer'})",
+    "source_file": "protocol_158.txt"
+  }
+]

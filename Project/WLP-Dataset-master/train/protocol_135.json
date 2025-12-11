@@ -1,0 +1,155 @@
+[
+  {
+    "protocol": "Isolation of temperate phages by plaque agar overlay\nSoft agar overlay tubes are melted in boiling water and placed in the 47\u00b0C water bath.\nOne tube of soft agar is removed from the water bath.\n1.0 mL host culture and either 1.0 or 0.1 mL viral concentrate is added.\nThe contents of the tube is mixed well by rolling back and forth between two hands, and the tube contents are immediately emptied onto an agar plate.\nThe top agar is gently spread over the agar surface by sliding the plate on the bench surface using a circular motion.\nThe top agar is allowed to harden by not disturbing the plates for 30 min.\nThe plates are incubated (top agar side down) overnight to 48 h.\nTemperate phage plaques will appear as turbid or cloudy plaques, whereas purely lytic phage will appear as sharply defined, clear plaques.",
+    "actions": [
+      {
+        "action": "melt",
+        "parameters": {
+          "container": "soft agar overlay tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boiling water",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "soft agar overlay tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "47\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "one tube of soft agar",
+          "reagent": null,
+          "volume": "one tube",
+          "temperature": "47\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "soft agar tube",
+          "reagent": "host culture",
+          "volume": "1.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "soft agar tube",
+          "reagent": "viral concentrate",
+          "volume": "1.0 or 0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "soft agar tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "rolling back and forth between two hands"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": "tube contents (soft agar + host + viral concentrate)",
+          "volume": "entire tube contents",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": "top agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "sliding plate on bench in circular motion"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "purpose": "allow top agar to harden"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plates (top agar side down)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight to 48 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmelt(container='soft agar overlay tubes', temperature='boiling water')\nincubate(container='soft agar overlay tubes', temperature='47\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: one tube of soft agar, volume: one tube, temperature: 47\u00b0C, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='soft agar tube', reagent='host culture', volume='1.0 mL')\nadd(container='soft agar tube', reagent='viral concentrate', volume='1.0 or 0.1 mL')\nmix(container='soft agar tube', method='rolling back and forth between two hands')\ndispense(container='agar plate', reagent='tube contents (soft agar + host + viral concentrate)', volume='entire tube contents')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: agar plate, reagent: top agar, other: {'method': 'sliding plate on bench in circular motion'})\n\n### AUTOMATED SECTION ###\nwait(container='agar plates', duration='30 min', purpose='allow top agar to harden')\nincubate(container='agar plates (top agar side down)', duration='overnight to 48 h')",
+    "source_file": "protocol_135.txt"
+  }
+]

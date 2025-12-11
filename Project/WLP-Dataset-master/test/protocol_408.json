@@ -1,0 +1,180 @@
+[
+  {
+    "protocol": "Mucin biotinylation - NHS-biotin reagent\nCalculate how much NHS-Biotin that is needed for biotinylation of the desired amount of mucin (assumed to have Mw 500 000 Da) and\u00a0the molar ratio of biotin:mucin should be 1:2000.\nPrepare Phosphate Buffered Saline (PBS)\u00a0with pH 7.4.\nDissolve mucin\u00a0in PBS to a concentration of 2mg/ml.\nTake out the NHS-Biotin reagent and equilibrate it in room temperature before opening the vial.\nDissolve NHS-Biotin in dimethylsulfoxide (DMSO) to a concentration of 10 mM.\nAdd the pre-calculated volume of biotin reagent to the protein solution and incubate\u00a0at 4\u00a0\u00b0C for 4 hours.\nTo remove unbound biotin, exchange the buffer for water by overnight dialysis.\nTransfer the solution to another tube, freeze and freeze-dry.",
+    "actions": [
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "NHS-Biotin, mucin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "molar_ratio": "1:2000",
+            "mucin_Mw": "500000 Da"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Phosphate Buffered Saline (PBS)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.4"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "mucin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "PBS",
+            "concentration": "2 mg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "NHS-Biotin vial",
+          "reagent": "NHS-Biotin",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "NHS-Biotin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "dimethylsulfoxide (DMSO)",
+            "concentration": "10 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "pre-calculated volume of biotin reagent",
+          "volume": "pre-calculated",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "protein solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "4 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "exchange",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "method": "dialysis",
+            "from_buffer": "original buffer",
+            "to_buffer": "water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "another tube",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze-dry",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: calculate (reagent: NHS-Biotin, mucin, other: {'molar_ratio': '1:2000', 'mucin_Mw': '500000 Da'})\n# MANUAL: prepare (reagent: Phosphate Buffered Saline (PBS), other: {'pH': '7.4'})\n\n### AUTOMATED SECTION ###\ndissolve(reagent='mucin', solvent='PBS', concentration='2 mg/ml')\n\n### MANUAL SECTION ###\n# MANUAL: equilibrate (container: NHS-Biotin vial, reagent: NHS-Biotin, temperature: room temperature)\n\n### AUTOMATED SECTION ###\ndissolve(reagent='NHS-Biotin', solvent='dimethylsulfoxide (DMSO)', concentration='10 mM')\nadd(reagent='pre-calculated volume of biotin reagent', volume='pre-calculated', destination='protein solution')\nincubate(temperature='4\u00b0C', duration='4 hours')\n\n### MANUAL SECTION ###\n# MANUAL: exchange (duration: overnight, other: {'method': 'dialysis', 'from_buffer': 'original buffer', 'to_buffer': 'water'})\n\n### AUTOMATED SECTION ###\ntransfer(container='another tube', reagent='solution')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (reagent: solution)\n# MANUAL: freeze-dry (reagent: solution)",
+    "source_file": "protocol_408.txt"
+  }
+]

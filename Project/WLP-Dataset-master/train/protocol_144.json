@@ -1,0 +1,185 @@
+[
+  {
+    "protocol": "QuikChange Mutagenesis\nPrepare PCR mixture.\nPerform the PCR.\nAfter PCR, add 1ul of DpnI to each pcr tube.\nIncubate 1 hour-O/N at 37C.\nPCR Purify using Qaigen kit.\nAdd 5ul of PCR reaction into 25ul DH5alpha or TG1 cells.\nIncubate on ice for 5 minutes.\nHeatshock at 42C for 45 seconds.\nRecover on ice for 2 minutes.\nAdd 200ul LB (if in 96 well or 8 strip format) to each reaction.\nShake at 37C for 1 hour.\nPlate on warmed antibiotic plates.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixture": "PCR mixture"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "PCR"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pcr tube",
+          "reagent": "DpnI",
+          "volume": "1ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pcr tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37C",
+          "duration": "1 hour-O/N",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "PCR Purify using Qaigen kit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DH5alpha or TG1 cells",
+          "reagent": "PCR reaction",
+          "volume": "5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heatshock",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "42C",
+          "duration": "45 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "LB",
+          "volume": "200ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if in 96 well or 8 strip format"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "warmed antibiotic plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (other: {'mixture': 'PCR mixture'})\n# MANUAL: perform (other: {'process': 'PCR'})\n\n### AUTOMATED SECTION ###\nadd(container='pcr tube', reagent='DpnI', volume='1ul')\nincubate(container='pcr tube', temperature='37C', duration='1 hour-O/N')\n\n### MANUAL SECTION ###\n# MANUAL: purify (other: {'method': 'PCR Purify using Qaigen kit'})\n\n### AUTOMATED SECTION ###\nadd(container='DH5alpha or TG1 cells', reagent='PCR reaction', volume='5ul')\nincubate(temperature='ice', duration='5 minutes')\nheatshock(temperature='42C', duration='45 seconds')\nrecover(temperature='ice', duration='2 minutes')\nadd(container='reaction', reagent='LB', volume='200ul', condition='if in 96 well or 8 strip format')\nshake(temperature='37C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: warmed antibiotic plates)",
+    "source_file": "protocol_144.txt"
+  }
+]

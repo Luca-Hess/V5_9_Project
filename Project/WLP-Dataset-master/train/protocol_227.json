@@ -1,0 +1,97 @@
+[
+  {
+    "protocol": "Generation of DNA fragments by sonication\nGeneration of DNA fragments by sonication is performed by placing a microcentrifuge tube containing the buffered DNA sample into an ice-water bath in a cup-horn sonicator.\nSonication is conducted for a varying number of 10 s bursts using maximum output and continuous power.\nExact conditions for sonication should be empirically determined for a given DNA sample before a preparative sonication is performed.\nTypically, 100 \u00b5g DNA in TE buffer is split into 10 aliquots of 35 \u00b5L.\n5 aliquots are subjected to sonication for increasing numbers of 10 s bursts.\nAliquots from each time point are run on an agarose gel to determine optimal-sized DNA fragments (1\u20134 kb).\nOnce optimal sonication conditions are determined, the remaining 5 aliquots (approximately 8 \u00b5g) are sonicated according to those predetermined conditions.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "buffered DNA sample",
+          "volume": null,
+          "temperature": "ice-water bath",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "cup-horn sonicator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "buffered DNA sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 s bursts (varying number)",
+          "speed": "maximum output, continuous power",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "split",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "100 \u00b5g DNA in TE buffer",
+          "volume": "10 aliquots of 35 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": "aliquots (5)",
+          "reagent": "DNA in TE buffer",
+          "volume": "35 \u00b5L per aliquot",
+          "temperature": null,
+          "duration": "increasing numbers of 10 s bursts",
+          "speed": "maximum output, continuous power",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "aliquots from each time point",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine optimal-sized DNA fragments (1\u20134 kb)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": "aliquots (5, remaining)",
+          "reagent": "DNA in TE buffer (approx. 8 \u00b5g)",
+          "volume": null,
+          "temperature": null,
+          "duration": "predetermined conditions",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: microcentrifuge tube, reagent: buffered DNA sample, temperature: ice-water bath, other: {'location': 'cup-horn sonicator'})\n# MANUAL: sonicate (container: microcentrifuge tube, reagent: buffered DNA sample, duration: 10 s bursts (varying number), speed: maximum output, continuous power)\n\n### AUTOMATED SECTION ###\nsplit(container='microcentrifuge tube', reagent='100 \u00b5g DNA in TE buffer', volume='10 aliquots of 35 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: sonicate (container: aliquots (5), reagent: DNA in TE buffer, volume: 35 \u00b5L per aliquot, duration: increasing numbers of 10 s bursts, speed: maximum output, continuous power)\n# MANUAL: run (container: agarose gel, reagent: aliquots from each time point, other: {'purpose': 'determine optimal-sized DNA fragments (1\u20134 kb)'})\n# MANUAL: sonicate (container: aliquots (5, remaining), reagent: DNA in TE buffer (approx. 8 \u00b5g), duration: predetermined conditions)",
+    "source_file": "protocol_227.txt"
+  }
+]

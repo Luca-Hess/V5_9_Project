@@ -1,0 +1,561 @@
+[
+  {
+    "protocol": "Preparation of PBCV-1 Lysin\nCentrifuge the NC64A chlorella (use actively growing cells approximately 1.0-2.0 X 107 cells/mL) in the Sorvall GSA rotor at 7,000 rpm, 5 min, 4\u00b0C.\nUse sterile bottles to harvest the cells.\nDiscard the supernatants.\nResuspend the cells with sterile BBM.\nAdjust the final volume to 500 mL with sterile BBM.\nAdd filter-sterilized tetracycline (12.5 mg/Ml stock, add 0.1 mL per 50 mL of BBM solution) and PBCV-1 at an moi (multiplicity of infection) of 0.01.\nIncubate overnight at 25\u00b0C with continuous light and shaking.\nThis material is now termed \u201clysate\u201d.\nCentrifuge the lysate in the Sorvall GSA rotor at 3,500 rpm, 10 min, 5\u00b0C.\nDecant the supernatants to clean bottles.\nCentrifuge the supernatant on the Sorvall GSA rotor at 10,000 rpm, 60 min, 5\u00b0C.\nDecant the supernatant to clean flasks.\nAdd d-H2O to a final volume of 1000 mL.\nPlace at 4\u00b0C.\nAdd, at 4\u00b0C: 2-ME to 2 mM EDTA to 5 mM NaN3 to 200 mg/liter (NH4)2SO4 to 40% saturation Adjust the pH to 7.0 with NaOH.\nCover and incubate at 4\u00b0C overnight.\nCentrifuge the material in the Sorvall GSA rotor at 10,000 rpm, 60 min, 5\u00b0C.\nDecant the supernatant to clean flasks.\nDiscard the pellets.\nAdd, at 4\u00b0C, (NH4)2SO4 to 65% saturation.\nAdjust the pH to 7.0 with NaOH.\nCover and incubate at 4\u00b0C overnight.\nCentrifuge the material in the Sorvall GSA rotor at 10,000 rpm, 10 min, 5\u00b0C.\nAspirate off the supernatant.\nSave the pellet.\nResuspend the pellet with 10.0 mL of 10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME + 2 mg NaN3.\nCentrifuge the material in the Sorvall SS34 rotor at 15,000 rpm, 60 min, 5\u00b0C.\nSave the supernatant.\nDialyze the supernatant for 48-72 hours at 4\u00b0C against 10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME, 200 mg/liter NaN3.\nChange the buffer once every 24 hours.\nRemove the material from the dialysis.\nCentrifuge the material in the Sorvall SS34 rotor at 13,000 rpm, 60 min, 5\u00b0C.\nAliquot the supernatant into microfuge tubes and store at -20\u00b0C.\nAssay the supernatant fraction for lysin activity.\nSave the supernatant.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall GSA rotor",
+          "reagent": "NC64A chlorella cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "7,000 rpm",
+          "other": {
+            "cell_density": "1.0-2.0 x 10^7 cells/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "cells with sterile BBM",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "sterile BBM",
+          "volume": "500 mL (final)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "filter-sterilized tetracycline (12.5 mg/mL stock)",
+          "volume": "0.1 mL per 50 mL BBM",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "PBCV-1",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "0.01"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile bottles",
+          "reagent": "cell mixture",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "light": "continuous",
+            "shaking": "yes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall GSA rotor",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "10 min",
+          "speed": "3,500 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall GSA rotor",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "60 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "clean flasks",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean flasks",
+          "reagent": "d-H2O",
+          "volume": "to 1000 mL final",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flasks",
+          "reagent": [
+            "2-ME to 2 mM",
+            "EDTA to 5 mM",
+            "NaN3 to 200 mg/liter",
+            "(NH4)2SO4 to 40% saturation"
+          ],
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "NaOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall GSA rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "60 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "clean flasks",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "(NH4)2SO4",
+          "volume": "to 65% saturation",
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "NaOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall GSA rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet with 10.0 mL of 10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME + 2 mg NaN3",
+          "volume": "10.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "60 min",
+          "speed": "15,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "48-72 hours",
+          "speed": null,
+          "other": {
+            "buffer": "10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME, 200 mg/liter NaN3"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "change",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "once every 24 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "material from dialysis",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "5\u00b0C",
+          "duration": "60 min",
+          "speed": "13,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant fraction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "lysin activity"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall GSA rotor', reagent='NC64A chlorella cells', temperature='4\u00b0C', duration='5 min', speed='7,000 rpm', cell_density='1.0-2.0 x 10^7 cells/mL')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: sterile bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='sterile bottles', reagent='cells with sterile BBM')\nadjust(container='sterile bottles', reagent='sterile BBM', volume='500 mL (final)')\nadd(container='sterile bottles', reagent='filter-sterilized tetracycline (12.5 mg/mL stock)', volume='0.1 mL per 50 mL BBM')\nadd(container='sterile bottles', reagent='PBCV-1', MOI='0.01')\nincubate(container='sterile bottles', reagent='cell mixture', temperature='25\u00b0C', duration='overnight', light='continuous', shaking='yes')\ncentrifuge(container='Sorvall GSA rotor', reagent='lysate', temperature='5\u00b0C', duration='10 min', speed='3,500 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: clean bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall GSA rotor', reagent='supernatant', temperature='5\u00b0C', duration='60 min', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: clean flasks, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='clean flasks', reagent='d-H2O', volume='to 1000 mL final')\nplace(container='flasks', reagent='solution', temperature='4\u00b0C')\nadd(container='flasks', reagent=['2-ME to 2 mM', 'EDTA to 5 mM', 'NaN3 to 200 mg/liter', '(NH4)2SO4 to 40% saturation'], temperature='4\u00b0C')\nadjust(container='flasks', reagent='NaOH', pH='7.0')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: flasks, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', reagent='solution', temperature='4\u00b0C', duration='overnight')\ncentrifuge(container='Sorvall GSA rotor', reagent='material', temperature='5\u00b0C', duration='60 min', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: clean flasks, reagent: supernatant, other: {})\n# MANUAL: discard (reagent: pellets, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='flasks', reagent='(NH4)2SO4', volume='to 65% saturation', temperature='4\u00b0C')\nadjust(container='flasks', reagent='NaOH', pH='7.0')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: flasks, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', reagent='solution', temperature='4\u00b0C', duration='overnight')\ncentrifuge(container='Sorvall GSA rotor', reagent='material', temperature='5\u00b0C', duration='10 min', speed='10,000 rpm')\naspirate(reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: pellet, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet with 10.0 mL of 10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME + 2 mg NaN3', volume='10.0 mL')\ncentrifuge(container='Sorvall SS34 rotor', reagent='material', temperature='5\u00b0C', duration='60 min', speed='15,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: supernatant, other: {})\n# MANUAL: dialyze (reagent: supernatant, temperature: 4\u00b0C, duration: 48-72 hours, other: {'buffer': '10 mM Tris-HCl, pH 8.0, 1 mM EDTA, 2 mM 2-ME, 200 mg/liter NaN3'})\n# MANUAL: change (reagent: buffer, duration: once every 24 hours, other: {})\n# MANUAL: remove (reagent: material from dialysis, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall SS34 rotor', reagent='material', temperature='5\u00b0C', duration='60 min', speed='13,000 rpm')\naliquot(container='microfuge tubes', reagent='supernatant')\nstore(container='microfuge tubes', reagent='supernatant', temperature='-20\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: assay (reagent: supernatant fraction, other: {'for': 'lysin activity'})\n# MANUAL: save (reagent: supernatant, other: {})",
+    "source_file": "protocol_263.txt"
+  }
+]

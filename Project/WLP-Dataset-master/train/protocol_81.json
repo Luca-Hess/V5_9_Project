@@ -1,0 +1,181 @@
+[
+  {
+    "protocol": "ASP12A Recipe for culturing Aureococcus anophagefferens\nPrepare Trace Metal Solutions I - III, Fe-EDTA Sodium Salt Solution, and Vitamin Solution.\nAdd constituents to 750 mL MilliQ water, shake to dissolve.\nAdd MilliQ water to 1.0 L.\nFilter sterilize.\nTrace Metal Solutions and Fe-EDTA Sodium Salt Solution are stored at 4\u00baC in 15 - 50 mL aliquots, while the Vitamin solution is stored at -20\u00baC in 5 - 10 mL aliquots.\nAdd anhydrous salts, hydrous salts, macronutrients and Tris Base to 75% desired MilliQ water while stirring to dissolve.\nAdd MilliQ water to final volume, autoclave.\nOnce cooled, add in 1mL of the Trace Metal Solutions, Fe-EDTA Sodium Salt Solution, and Vitamin Solution per 1L of media made.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Trace Metal Solutions I - III, Fe-EDTA Sodium Salt Solution, Vitamin Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "constituents",
+          "volume": "to 750 mL MilliQ water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dissolve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "MilliQ water",
+          "volume": "to 1.0 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "15 - 50 mL aliquots (Trace Metal Solutions and Fe-EDTA Sodium Salt Solution), 5 - 10 mL aliquots (Vitamin Solution)",
+          "reagent": "Trace Metal Solutions, Fe-EDTA Sodium Salt Solution, Vitamin Solution",
+          "volume": null,
+          "temperature": "4\u00baC (Trace Metal Solutions and Fe-EDTA Sodium Salt Solution), -20\u00baC (Vitamin Solution)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "anhydrous salts, hydrous salts, macronutrients, Tris Base",
+          "volume": "to 75% desired MilliQ water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dissolve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "MilliQ water",
+          "volume": "to final volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Trace Metal Solutions, Fe-EDTA Sodium Salt Solution, Vitamin Solution",
+          "volume": "1 mL per 1 L media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Trace Metal Solutions I - III, Fe-EDTA Sodium Salt Solution, Vitamin Solution, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='constituents', volume='to 750 mL MilliQ water')\nshake(purpose='to dissolve')\nadd(reagent='MilliQ water', volume='to 1.0 L')\nfilter sterilize()\nstore(container='15 - 50 mL aliquots (Trace Metal Solutions and Fe-EDTA Sodium Salt Solution), 5 - 10 mL aliquots (Vitamin Solution)', reagent='Trace Metal Solutions, Fe-EDTA Sodium Salt Solution, Vitamin Solution', temperature='4\u00baC (Trace Metal Solutions and Fe-EDTA Sodium Salt Solution), -20\u00baC (Vitamin Solution)')\nadd(reagent='anhydrous salts, hydrous salts, macronutrients, Tris Base', volume='to 75% desired MilliQ water')\nstir(purpose='to dissolve')\nadd(reagent='MilliQ water', volume='to final volume')\nautoclave()\ncool()\nadd(reagent='Trace Metal Solutions, Fe-EDTA Sodium Salt Solution, Vitamin Solution', volume='1 mL per 1 L media')",
+    "source_file": "protocol_81.txt"
+  }
+]

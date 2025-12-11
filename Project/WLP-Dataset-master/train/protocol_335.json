@@ -1,0 +1,131 @@
+[
+  {
+    "protocol": "Bacteriophage isolation using enrichment cultures\nPotential host cells are grown\u00a0overnight in liquid cultures containing a rich growth medium (e.g., MLB).\nAdjust\u00a0to an optical density measured at 525 nm (OD525) of 0.3\u20130.5.\nApproximately 25 mL water sample is filtered (0.2 \u00b5m or 0.45 \u00b5m syringe filters) to minimize the risk of bacterial contamination of the enrichment cultures.\nTransfer filtered samples to triplicate sterile 100 mL culture flasks.\nAdd 3 mL 10\u00d7 growth medium (i.e., 10 times concentrated medium).\nStart enrichment cultures by adding 1 mL of each of the target host strains of interest (e.g., 1\u20136 different strains for each incubation) to the culture flask.\nIncubate the cultures on a shaking table at a temperature and period that is appropriate for the host bacteria.\nA control culture is established where the environmental sample is replaced by 25 mL artificial seawater (or 0.02 \u00b5m filtered water sample) to verify bacterial growth in absence of phages.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "liquid culture vessel",
+          "reagent": "potential host cells in rich growth medium (e.g., MLB)",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "growth_medium": "rich (e.g., MLB)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "liquid culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optical_density": "0.3\u20130.5 at 525 nm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "water sample",
+          "volume": "25 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u00b5m or 0.45 \u00b5m syringe filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "triplicate sterile 100 mL culture flasks",
+          "reagent": "filtered water sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": "10\u00d7 growth medium",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "10\u00d7"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": "target host strain(s)",
+          "volume": "1 mL per strain (1\u20136 strains)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": "enrichment culture",
+          "volume": null,
+          "temperature": "appropriate for host bacteria",
+          "duration": "appropriate for host bacteria",
+          "speed": "shaking table",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "establish",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": "control culture (25 mL artificial seawater or 0.02 \u00b5m filtered water sample)",
+          "volume": "25 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "verify bacterial growth in absence of phages"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: liquid culture vessel, reagent: potential host cells in rich growth medium (e.g., MLB), duration: overnight, other: {'growth_medium': 'rich (e.g., MLB)'})\n# MANUAL: adjust (reagent: liquid culture, other: {'optical_density': '0.3\u20130.5 at 525 nm'})\n# MANUAL: filter (reagent: water sample, volume: 25 mL, other: {'filter_type': '0.2 \u00b5m or 0.45 \u00b5m syringe filter'})\n\n### AUTOMATED SECTION ###\ntransfer(container='triplicate sterile 100 mL culture flasks', reagent='filtered water sample')\nadd(container='culture flask', reagent='10\u00d7 growth medium', volume='3 mL', concentration='10\u00d7')\nadd(container='culture flask', reagent='target host strain(s)', volume='1 mL per strain (1\u20136 strains)')\nincubate(container='culture flask', reagent='enrichment culture', temperature='appropriate for host bacteria', duration='appropriate for host bacteria', speed='shaking table')\n\n### MANUAL SECTION ###\n# MANUAL: establish (container: culture flask, reagent: control culture (25 mL artificial seawater or 0.02 \u00b5m filtered water sample), volume: 25 mL, other: {'purpose': 'verify bacterial growth in absence of phages'})",
+    "source_file": "protocol_335.txt"
+  }
+]

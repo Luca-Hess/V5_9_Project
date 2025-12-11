@@ -1,0 +1,314 @@
+[
+  {
+    "protocol": "NUCLEIC dotMETRIC\u2122\nFor double stranded DNA, use undiluted Nucleic Acid Dilution Buffer.\nFor RNA or oligos, dilute the Nucleic Acid Dilution Buffer 100 fold.\ni.e. Use 1\u00b5l Nucleic Acid Dilution Buffer in 99\u00b5l ultrapure water.\nDilute samples at least 1:1 with the appropriate Dilution Buffer.\nOpen the NUCLEIC Test Strip box, remove a strip, and peel away the protective sheets using the forceps provided.\nAttach the white NUCLEIC Strip to the application board with the side magnets.\nApply 1\u20105\u00b5l of the diluted samples to the Test Strip using one of these two methods (or see the Guidelines for using G\u2010Biosciences\u2019 Spot Application Device):\u00a0\nFree\u2010Drop Method Of Application Squeeze the pipette plunger until a drop is formed at the tip of the pipette tip.\nLower the drop until it touches the Test Strip.\nThe nucleic acid solution drop will immediately spread on the Test Strip.\ndotMETRIC\u2122 Application Method. \nApply sample by point of contact capillary action.\nUse pipette tips with an outside bore diameterof 0.6\u20100.7 mm (Cat. # 786\u201064).\nKeep the pipette tip straight up and allow the capillary action of the strip to draw the sample from the pipette tip (see figure below).\nDo not use the plunger to force the solution out.\nNOTE: Accurately pipetting 1\u00b5l requires skill and caution.\nA deviation of up to \u00b1\u00a020% could be due simply to pipetting errors.\nIn addition, applying more than >1 \u00b5l or multiple spots are sometimes slow & tedious.\nSamples do not need to dry before adding NUCLEIC Dye.\nPlace the NUCLEIC strip in a developing tray (Cat. # 786\u2010024) or other small dish.\nApply 0.5ml NUCLEIC Dye directly to the strip.\nIncubate at room temperature for 1 minute without shaking or rocking.\nDiscard the NUCLEIC Dye and rinse the strip for 10 seconds in 50ml ultra pure water.\nDiscard the rinse and wash with 50ml ultra pure water for 30\u201060 seconds or until the blue background disappears.\nRemove the strip from the second wash as soon as the blue background disappears.\nFor Free\u2010Drop Method: Compare the color of the test sample spot with the dotMETRIC\u2122 Standard provided.\nFor dotMETRIC Application: Use the NUCLEIC dotMETRIC\u2122 scale to determine the concentration of the diluted sample.\nIf a dot is not symmetrical measure both the widest and narrowest points of the dot and average.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Nucleic Acid Dilution Buffer",
+          "volume": "1\u00b5l buffer in 99\u00b5l ultrapure water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "RNA or oligos",
+            "dilution_factor": "1:100"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_buffer": "appropriate Dilution Buffer",
+            "dilution_factor": "at least 1:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "NUCLEIC Test Strip box",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "NUCLEIC Test Strip box",
+          "reagent": "strip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "peel",
+        "parameters": {
+          "container": "strip",
+          "reagent": "protective sheets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "forceps"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "application board",
+          "reagent": "white NUCLEIC Strip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "side": "magnets"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "Test Strip",
+          "reagent": "diluted sample",
+          "volume": "1-5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Free-Drop or dotMETRIC Application"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "Test Strip",
+          "reagent": "diluted sample",
+          "volume": "1-5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Free-Drop",
+            "pipette_tip": null
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "Test Strip",
+          "reagent": "diluted sample",
+          "volume": "1-5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "dotMETRIC Application",
+            "pipette_tip": "0.6-0.7 mm bore diameter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "developing tray or small dish",
+          "reagent": "NUCLEIC strip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "strip",
+          "reagent": "NUCLEIC Dye",
+          "volume": "0.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "strip",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "no shaking or rocking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "strip",
+          "reagent": "NUCLEIC Dye",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "strip",
+          "reagent": "ultra pure water",
+          "volume": "50ml",
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "strip",
+          "reagent": "rinse",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "strip",
+          "reagent": "ultra pure water",
+          "volume": "50ml",
+          "temperature": null,
+          "duration": "30-60 seconds or until blue background disappears",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "strip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as soon as blue background disappears",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "compare",
+        "parameters": {
+          "container": "Test Strip",
+          "reagent": "test sample spot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "dotMETRIC\u2122 Standard"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "NUCLEIC dotMETRIC\u2122 scale",
+          "reagent": "diluted sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "color comparison"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "Test Strip",
+          "reagent": "dot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "points": "widest and narrowest",
+            "calculation": "average"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='Nucleic Acid Dilution Buffer', volume='1\u00b5l buffer in 99\u00b5l ultrapure water', sample_type='RNA or oligos', dilution_factor='1:100')\ndilute(reagent='sample', dilution_buffer='appropriate Dilution Buffer', dilution_factor='at least 1:1')\n\n### MANUAL SECTION ###\n# MANUAL: open (container: NUCLEIC Test Strip box, other: {})\n# MANUAL: remove (container: NUCLEIC Test Strip box, reagent: strip, other: {})\n# MANUAL: peel (container: strip, reagent: protective sheets, other: {'tool': 'forceps'})\n# MANUAL: attach (container: application board, reagent: white NUCLEIC Strip, other: {'side': 'magnets'})\n\n### AUTOMATED SECTION ###\napply(container='Test Strip', reagent='diluted sample', volume='1-5\u00b5l', method='Free-Drop or dotMETRIC Application')\ndispense(container='Test Strip', reagent='diluted sample', volume='1-5\u00b5l', method='Free-Drop', pipette_tip=None)\ndispense(container='Test Strip', reagent='diluted sample', volume='1-5\u00b5l', method='dotMETRIC Application', pipette_tip='0.6-0.7 mm bore diameter')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: developing tray or small dish, reagent: NUCLEIC strip, other: {})\n\n### AUTOMATED SECTION ###\napply(container='strip', reagent='NUCLEIC Dye', volume='0.5ml')\nincubate(container='strip', temperature='room temperature', duration='1 minute', speed='no shaking or rocking')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: strip, reagent: NUCLEIC Dye, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='strip', reagent='ultra pure water', volume='50ml', duration='10 seconds')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: strip, reagent: rinse, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='strip', reagent='ultra pure water', volume='50ml', duration='30-60 seconds or until blue background disappears')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: strip, duration: as soon as blue background disappears, other: {})\n# MANUAL: compare (container: Test Strip, reagent: test sample spot, other: {'reference': 'dotMETRIC\u2122 Standard'})\n# MANUAL: determine (container: NUCLEIC dotMETRIC\u2122 scale, reagent: diluted sample, other: {'method': 'color comparison'})\n# MANUAL: measure (container: Test Strip, reagent: dot, other: {'points': 'widest and narrowest', 'calculation': 'average'})",
+    "source_file": "protocol_374.txt"
+  }
+]

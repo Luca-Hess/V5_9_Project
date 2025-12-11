@@ -1,0 +1,417 @@
+[
+  {
+    "protocol": "Isolation of cyanophages by plaque assays\nPrepare base plates Prepare top agar/agarose.\nPrepare target indicator cells.\nPrepare the sample: Environmental samples should be prefiltered as described earlier.\nAdsorb 50 to 100 \u00b5L sample (as is, and 10-fold serial dilutions, up to ca.\n3 levels) to 0.5 mL target cells under the usual culturing conditions (e.g., for Synechococcus sp.\nstrain DC2, constant 5\u201325 \u00b5mol quanta m\u20132s\u20131, at 25\u00b0C), agitate occasionally to encourage adsorption of phage to host.\nAfter 1 h, transfer virus: host mixture to 2.5 mL soft agar.\nQuickly and gently vortex the mixture and pour the entire tube contents onto the surface of the agar plate.\nWorking rapidly, gently rock and swirl the plate to spread the mixture evenly onto the plate surface before the agar starts to gel.\nSet aside on a flat surface to harden (about 1 h).\nPrepare a control plate containing only cells; this plate will allow you to monitor cell growth.\nSeal plate with parafilm, flip plates upside down.\nIncubation of plates under constant low light conditions (5 to 25 \u00b5mol quanta m\u20132s\u20131) will produce darker lawns thus allowing for easier detection of plaques.\nNote the number of plaque forming units (PFUs), plaque size, and morphology.\nChoose a well-isolated plaque on a plate that contains less than 100 PFUs.\nHarvest the plaque using a Pasteur pipette: gently press the tip of the pipette into the plaque to the bottom agar; using gentle suction, remove the plug.\nTransfer the plug to 1 mL media and vortex briefly to break it up.\nPlace the tube at 4\u00b0C and allow the phages particle to elute from the plug overnight to form a plaque lysate.\nVortex and centrifuge the sample (ca.\n12,000g for 10 min) to pellet cyanobacteria and agar.\nTransfer the supernatant to a new tube; typical titer of the plaque lysate can be 104 to 105 PFU mL\u20131.\nRepeat steps 14\u00a0to 19\u00a0for a minimum of 3 plaques.\nChoosing plaques with different morphologies may result in the isolation of different phages.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "base plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "top agar/agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "target indicator cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prefilter",
+        "parameters": {
+          "container": null,
+          "reagent": "environmental samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adsorb",
+        "parameters": {
+          "container": null,
+          "reagent": "sample (as is, and 10-fold serial dilutions, up to ca. 3 levels) to target cells",
+          "volume": "50 to 100 \u00b5L sample to 0.5 mL target cells",
+          "temperature": "25\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "constant 5\u201325 \u00b5mol quanta m\u20132s\u20131"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": null,
+          "reagent": "virus:host mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "occasionally": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "virus:host mixture",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "light": "constant 5\u201325 \u00b5mol quanta m\u20132s\u20131"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "virus:host mixture to soft agar",
+          "volume": "2.5 mL soft agar",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "quickly and gently",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": "entire tube contents",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "surface of agar plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "plate",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "rapidly",
+          "speed": "gently",
+          "other": {
+            "purpose": "spread mixture evenly before agar gels"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "plate",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "rapidly",
+          "speed": "gently",
+          "other": {
+            "purpose": "spread mixture evenly before agar gels"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "set aside",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "about 1 h",
+          "speed": null,
+          "other": {
+            "surface": "flat"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "plate",
+          "reagent": "cells (control plate)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "monitor cell growth"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flip",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "upside down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "constant low light (5 to 25 \u00b5mol quanta m\u20132s\u20131)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "note",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "observation": "number of PFUs, plaque size, morphology"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "choose",
+        "parameters": {
+          "container": "plate",
+          "reagent": "well-isolated plaque (<100 PFUs)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "plate",
+          "reagent": "plaque",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "Pasteur pipette"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plug",
+          "volume": "1 mL media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plug in media",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "elute phage particles from plug"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "12,000g",
+          "other": {
+            "purpose": "pellet cyanobacteria and agar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "minimum of 3 plaques",
+          "speed": null,
+          "other": {
+            "steps": "14 to 19"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: base plates, other: {})\n# MANUAL: prepare (reagent: top agar/agarose, other: {})\n# MANUAL: prepare (reagent: target indicator cells, other: {})\n# MANUAL: prefilter (reagent: environmental samples, other: {})\n# MANUAL: adsorb (reagent: sample (as is, and 10-fold serial dilutions, up to ca. 3 levels) to target cells, volume: 50 to 100 \u00b5L sample to 0.5 mL target cells, temperature: 25\u00b0C, other: {'light': 'constant 5\u201325 \u00b5mol quanta m\u20132s\u20131'})\n\n### AUTOMATED SECTION ###\nagitate(reagent='virus:host mixture', occasionally=True)\nincubate(reagent='virus:host mixture', temperature='25\u00b0C', duration='1 h', light='constant 5\u201325 \u00b5mol quanta m\u20132s\u20131')\ntransfer(reagent='virus:host mixture to soft agar', volume='2.5 mL soft agar')\nvortex(reagent='mixture', duration='quickly and gently')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: tube, reagent: mixture, volume: entire tube contents, other: {'destination': 'surface of agar plate'})\n\n### AUTOMATED SECTION ###\nrock(container='plate', reagent='mixture', duration='rapidly', speed='gently', purpose='spread mixture evenly before agar gels')\nswirl(container='plate', reagent='mixture', duration='rapidly', speed='gently', purpose='spread mixture evenly before agar gels')\nset aside(container='plate', duration='about 1 h', surface='flat')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: plate, reagent: cells (control plate), other: {'purpose': 'monitor cell growth'})\n\n### AUTOMATED SECTION ###\nseal(container='plate', reagent='parafilm')\nflip(container='plates', orientation='upside down')\nincubate(container='plates', light='constant low light (5 to 25 \u00b5mol quanta m\u20132s\u20131)')\n\n### MANUAL SECTION ###\n# MANUAL: note (container: plates, other: {'observation': 'number of PFUs, plaque size, morphology'})\n# MANUAL: choose (container: plate, reagent: well-isolated plaque (<100 PFUs), other: {})\n# MANUAL: harvest (container: plate, reagent: plaque, other: {'tool': 'Pasteur pipette'})\n\n### AUTOMATED SECTION ###\ntransfer(container='tube', reagent='plug', volume='1 mL media')\nvortex(container='tube', reagent='plug in media', duration='briefly')\nplace(container='tube', temperature='4\u00b0C', duration='overnight', purpose='elute phage particles from plug')\nvortex(container='sample')\ncentrifuge(container='sample', duration='10 min', speed='12,000g', purpose='pellet cyanobacteria and agar')\ntransfer(container='new tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (duration: minimum of 3 plaques, other: {'steps': '14 to 19'})",
+    "source_file": "protocol_95.txt"
+  }
+]

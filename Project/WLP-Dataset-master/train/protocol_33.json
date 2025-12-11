@@ -1,0 +1,464 @@
+[
+  {
+    "protocol": "Fingerprinting aquatic virus communities using pulsed field gel electrophoresis (PFGE)\nPrepare the 1.5% agarose and the lysis buffer.\nIncubate the agarose at 80\u00b0C until further use.\nDispense 5 mL of the freshly made lysis buffer into 50-mL Falcon tubes, one for each sample.\nCombine equal volumes (200 \u00b5L) of virus concentrate and molten 1.5% agarose.\nMix briefly.\nDispense the mixture into plug molds with a pipette.\nPlace the plug molds in the freezer (\u201320\u00b0C) for at least 2 min to set.\nRemove the tape from the bottom of the plug molds and push the plugs out from the molds into 5 mL lysis buffer.\nIncubate the plugs in lysis buffer overnight in the dark at 30\u00b0C.\nThe next day, decant the lysis buffer using a plastic sieve (screened cap) that can be attached at the top of the Falcon tube.\nWash the plugs three times, 30 min each, in TE buffer 10:1 at room temperature.\nThe plugs can be stored at 4\u00b0C in TE 20:50 for several month before further processing; nevertheless, we recommend running the samples as soon as possible, because degradation of the viral DNA will occur and result in less discrete bands.\nSet up the gel rig.\nPrepare a 1% agarose gel in 1\u00d7 TBE buffer.\nMelt until the agarose is completely dissolved.\nPlace the warm agarose at 60\u00b0C for 10 min before pouring into the gel rig and allowing it to cool.\nKeep ~5 mL agarose at 60\u00b0C for later use to seal the wells.\nWhen the agarose is set, pour 50 mL of 1\u00d7 TBE running buffer on the top of the gel and place it in the refrigerator for at least 20 min or overnight.\nPlace molecular weight standards (slices of ~5 mm) on either side of the gel.\nPlace the samples between the markers using a sterile loop.\nOverlay the wells with leftover molten 1% agarose.\nRemove the gel from the pouring rig and remove any extraneous agarose from the bottom and edges.\nPrepare the 1\u00d7 TBE (running buffer) and place at 14\u00b0C until further use.\nPlace the gel into the electrophoresis chamber and carefully pour the cooled 1\u00d7 TBE running buffer into the chamber.\nRun the gel at 6 V cm\u20131 with pulse ramps from 20 to 40 s (for example) at 14\u00b0C for 22 h. To separate different viral genome size classes, each sample could be run three times:.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1.5% agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "lysis buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose",
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "until further use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "50-mL Falcon tubes",
+          "reagent": "freshly made lysis buffer",
+          "volume": "5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "one for each sample": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": "virus concentrate and molten 1.5% agarose",
+          "volume": "200 \u00b5L each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equal volumes": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "virus concentrate and agarose mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "using": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "at least 2 min",
+          "speed": null,
+          "other": {
+            "location": "freezer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": "tape from bottom",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": "plugs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "5 mL lysis buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "plugs in lysis buffer",
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "using": "plastic sieve (screened cap)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "plugs",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "three times, 30 min each",
+          "speed": null,
+          "other": {
+            "buffer": "TE buffer 10:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "plugs",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "several months",
+          "speed": null,
+          "other": {
+            "buffer": "TE 20:50"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "gel rig",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1% agarose gel in 1\u00d7 TBE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": "until completely dissolved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": null,
+          "reagent": "warm agarose",
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel rig",
+          "reagent": "warm agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "allow to cool": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose",
+          "volume": "~5 mL",
+          "temperature": "60\u00b0C",
+          "duration": "for later use",
+          "speed": null,
+          "other": {
+            "purpose": "seal wells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel",
+          "reagent": "1\u00d7 TBE running buffer",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top of gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": "at least 20 min or overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": "molecular weight standards (slices of ~5 mm)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "either side of gel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "between markers",
+            "tool": "sterile loop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "wells",
+          "reagent": "leftover molten 1% agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel",
+          "reagent": "extraneous agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom and edges"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1\u00d7 TBE (running buffer)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1\u00d7 TBE (running buffer)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "14\u00b0C",
+          "duration": "until further use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "electrophoresis chamber"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "electrophoresis chamber",
+          "reagent": "cooled 1\u00d7 TBE running buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": "14\u00b0C",
+          "duration": "22 h",
+          "speed": "6 V cm\u20131 with pulse ramps from 20 to 40 s",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 1.5% agarose, other: {'buffer': 'lysis buffer'})\n\n### AUTOMATED SECTION ###\nincubate(reagent='agarose', temperature='80\u00b0C', duration='until further use')\ndispense(container='50-mL Falcon tubes', reagent='freshly made lysis buffer', volume='5 mL', one for each sample=True)\ncombine(reagent='virus concentrate and molten 1.5% agarose', volume='200 \u00b5L each', equal volumes=True)\nmix(reagent='virus concentrate and agarose mixture', duration='briefly')\ndispense(container='plug molds', reagent='mixture', using='pipette')\nplace(container='plug molds', temperature='-20\u00b0C', duration='at least 2 min', location='freezer')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: plug molds, reagent: tape from bottom, other: {})\n# MANUAL: push (container: plug molds, reagent: plugs, other: {'destination': '5 mL lysis buffer'})\n\n### AUTOMATED SECTION ###\nincubate(reagent='plugs in lysis buffer', temperature='30\u00b0C', duration='overnight', condition='in the dark')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: Falcon tube, reagent: lysis buffer, other: {'using': 'plastic sieve (screened cap)'})\n\n### AUTOMATED SECTION ###\nwash(reagent='plugs', temperature='room temperature', duration='three times, 30 min each', buffer='TE buffer 10:1')\nstore(reagent='plugs', temperature='4\u00b0C', duration='several months', buffer='TE 20:50')\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: gel rig, other: {})\n# MANUAL: prepare (reagent: 1% agarose gel in 1\u00d7 TBE buffer, other: {})\n\n### AUTOMATED SECTION ###\nmelt(reagent='agarose', duration='until completely dissolved')\nplace(reagent='warm agarose', temperature='60\u00b0C', duration='10 min')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: gel rig, reagent: warm agarose, other: {'allow to cool': True})\n\n### AUTOMATED SECTION ###\nkeep(reagent='agarose', volume='~5 mL', temperature='60\u00b0C', duration='for later use', purpose='seal wells')\npour(container='gel', reagent='1\u00d7 TBE running buffer', volume='50 mL', location='on top of gel')\nplace(container='gel', temperature='refrigerator', duration='at least 20 min or overnight')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: gel, reagent: molecular weight standards (slices of ~5 mm), other: {'location': 'either side of gel'})\n# MANUAL: place (container: gel, reagent: samples, other: {'location': 'between markers', 'tool': 'sterile loop'})\n\n### AUTOMATED SECTION ###\noverlay(container='wells', reagent='leftover molten 1% agarose')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gel, reagent: extraneous agarose, other: {'location': 'bottom and edges'})\n# MANUAL: prepare (reagent: 1\u00d7 TBE (running buffer), other: {})\n\n### AUTOMATED SECTION ###\nplace(container='1\u00d7 TBE (running buffer)', temperature='14\u00b0C', duration='until further use')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: gel, other: {'location': 'electrophoresis chamber'})\n\n### AUTOMATED SECTION ###\npour(container='electrophoresis chamber', reagent='cooled 1\u00d7 TBE running buffer')\nrun(container='gel', temperature='14\u00b0C', duration='22 h', speed='6 V cm\u20131 with pulse ramps from 20 to 40 s')",
+    "source_file": "protocol_33.txt"
+  }
+]

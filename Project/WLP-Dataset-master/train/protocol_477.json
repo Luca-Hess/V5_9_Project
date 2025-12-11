@@ -1,0 +1,148 @@
+[
+  {
+    "protocol": "Checking DNA Concentration with Agarose Gel\nPrepare 0.7% agarose. \nPost-stain with SYBR Gold. \nWhile the gel is cooling, prepare samples: 1\u00b5l of 10x loading buffer per 10\u00b5l of sample. \nPrepare the appropriate dilutions of the appropriate marker (commonly 10ng of HINDIII [lambda] DNA). \nAdd running buffer to cover gel. \nGently rock the comb before pulling it out. \nRun at 50V about 2-4 hours to get clean band separations. \nPost-stain the gel in SYBR Gold \u2018bath\u2019 (20ul SYBR: 200ml TAE for 30 minutes).\nCompare gel quantification to that obtained using Nanodrop to get a feeling for how \u2018clean\u2019 the DNA prep is.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "0.7%"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "post-stain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": "10x loading buffer",
+          "volume": "1\u00b5l per 10\u00b5l sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_volume": "10\u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "marker (HINDIII [lambda] DNA)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "appropriate",
+            "amount": "10ng"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel box",
+          "reagent": "running buffer",
+          "volume": "enough to cover gel",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "comb",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2-4 hours",
+          "speed": "50V",
+          "other": {
+            "purpose": "clean band separations"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "post-stain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "SYBR Gold",
+          "volume": "20ul SYBR Gold in 200ml TAE",
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "bath": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "compare",
+        "parameters": {
+          "container": "gel quantification, Nanodrop quantification",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "assess DNA prep cleanliness"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: agarose, other: {'concentration': '0.7%'})\n\n### AUTOMATED SECTION ###\npost-stain(container='gel', reagent='SYBR Gold')\nprepare(container='sample tubes', reagent='10x loading buffer', volume='1\u00b5l per 10\u00b5l sample', sample_volume='10\u00b5l')\nprepare(reagent='marker (HINDIII [lambda] DNA)', dilution='appropriate', amount='10ng')\nadd(container='gel box', reagent='running buffer', volume='enough to cover gel')\n\n### MANUAL SECTION ###\n# MANUAL: rock (container: comb, speed: gently)\n\n### AUTOMATED SECTION ###\nrun(container='gel', duration='2-4 hours', speed='50V', purpose='clean band separations')\npost-stain(container='gel', reagent='SYBR Gold', volume='20ul SYBR Gold in 200ml TAE', duration='30 minutes', bath=True)\n\n### MANUAL SECTION ###\n# MANUAL: compare (container: gel quantification, Nanodrop quantification, other: {'purpose': 'assess DNA prep cleanliness'})",
+    "source_file": "protocol_477.txt"
+  }
+]

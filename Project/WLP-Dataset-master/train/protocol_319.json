@@ -1,0 +1,136 @@
+[
+  {
+    "protocol": "In vitro digestion of DNA with Cas9 Nuclease, S. pyogenes (M0386)\nPrepare 300nM sgRNA by diluting the stock with nuclease-free water on ice.\nPrepare 30nM substrate DNA with a single target sequence by diluting the stock with nuclease-free water on ice.\nAssemble the reaction at room temperature in the following order (total volume\u00a030 \u00b5l). \nPre-incubate for 10 minutes at 37\u2070C. \nAdd 30nM substrate DNA Mix thoroughly.\nIncubate at 37\u00b0C for 1 hour.\nProceed with fragment analysis.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "sgRNA stock",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "300nM",
+            "diluent": "nuclease-free water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "substrate DNA stock",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "30nM",
+            "diluent": "nuclease-free water",
+            "target_sequence": "single"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction components",
+          "volume": "30 \u00b5l",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "as specified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "step": "pre-incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "30nM substrate DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction fragments",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "fragment analysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='sgRNA stock', temperature='on ice', final_concentration='300nM', diluent='nuclease-free water')\ndilute(reagent='substrate DNA stock', temperature='on ice', final_concentration='30nM', diluent='nuclease-free water', target_sequence='single')\nassemble(reagent='reaction components', volume='30 \u00b5l', temperature='room temperature', order='as specified')\nincubate(reagent='reaction mixture', temperature='37\u00b0C', duration='10 minutes', step='pre-incubation')\nadd(reagent='30nM substrate DNA')\nmix(reagent='reaction mixture', thoroughly=True)\nincubate(reagent='reaction mixture', temperature='37\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (reagent: reaction fragments, other: {'method': 'fragment analysis'})",
+    "source_file": "protocol_319.txt"
+  }
+]

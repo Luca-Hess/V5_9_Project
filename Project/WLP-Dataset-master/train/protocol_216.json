@@ -1,0 +1,243 @@
+[
+  {
+    "protocol": "General Autoclaving\nPlace reservoirs in autoclave bags.\nWrap plates in foil and place a piece of autoclave tape on top.\nPlace autoclave tape on pipet tip boxes. \nPlace all items in beige autoclave tray.\nBring to autoclave.\nFill out table hanging from autoclave: Name/Lab, Process, Time Open autoclave door by pressing button.\nFor dry autoclave place tray with items in the middle of the autoclave.\nFor wet autoclave fill large Erlenmeyer flask with DI water and place in the autoclave with sensor placed in flask.\nClose autoclave door by pressing button.\nSelect which autoclave process to run, P1 for dry, P2 for wet.\nPress Start button and wait until in progress.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "autoclave bag",
+          "reagent": "reservoirs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "plates",
+          "reagent": "foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plates",
+          "reagent": "autoclave tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "pipet tip boxes",
+          "reagent": "autoclave tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "beige autoclave tray",
+          "reagent": "all items",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": "beige autoclave tray with items",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "autoclave"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill out",
+        "parameters": {
+          "container": "table hanging from autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fields": [
+              "Name/Lab",
+              "Process",
+              "Time"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "autoclave door",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pressing button"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": "tray with items",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "middle",
+            "condition": "dry autoclave"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "large Erlenmeyer flask",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "wet autoclave"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": "large Erlenmeyer flask with DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sensor": "placed in flask",
+            "condition": "wet autoclave"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "autoclave door",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pressing button"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "P1 for dry, P2 for wet"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "press",
+        "parameters": {
+          "container": "Start button",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until in progress",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: autoclave bag, reagent: reservoirs, other: {})\n# MANUAL: wrap (container: plates, reagent: foil, other: {})\n# MANUAL: place (container: plates, reagent: autoclave tape, other: {'location': 'on top'})\n# MANUAL: place (container: pipet tip boxes, reagent: autoclave tape, other: {})\n# MANUAL: place (container: beige autoclave tray, reagent: all items, other: {})\n# MANUAL: bring (container: beige autoclave tray with items, other: {'destination': 'autoclave'})\n# MANUAL: fill out (container: table hanging from autoclave, other: {'fields': ['Name/Lab', 'Process', 'Time']})\n# MANUAL: open (container: autoclave door, other: {'method': 'pressing button'})\n# MANUAL: place (container: autoclave, reagent: tray with items, other: {'location': 'middle', 'condition': 'dry autoclave'})\n\n### AUTOMATED SECTION ###\nfill(container='large Erlenmeyer flask', reagent='DI water', condition='wet autoclave')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: autoclave, reagent: large Erlenmeyer flask with DI water, other: {'sensor': 'placed in flask', 'condition': 'wet autoclave'})\n# MANUAL: close (container: autoclave door, other: {'method': 'pressing button'})\n# MANUAL: select (container: autoclave, other: {'process': 'P1 for dry, P2 for wet'})\n# MANUAL: press (container: Start button, other: {})\n\n### AUTOMATED SECTION ###\nwait(duration='until in progress')",
+    "source_file": "protocol_216.txt"
+  }
+]

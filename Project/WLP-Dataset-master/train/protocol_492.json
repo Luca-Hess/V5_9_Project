@@ -1,0 +1,71 @@
+[
+  {
+    "protocol": "EPPS recipe for dissolved cobalt analyses\nWeigh out 22 g of EPPS directly into a 200 mL trace metal clean bottle.\nAdd 173 mL of Milli-Q to the bottle by weight\u00a0using an analytical balance.\nMake sure the EPPS is fully dissolved, and then pass the EPPS solution through an HPLC column packed with Chelex-100 resin\u00a0into a trace metal clean bottle.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "200 mL trace metal clean bottle",
+          "reagent": "EPPS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "22 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "200 mL trace metal clean bottle",
+          "reagent": "Milli-Q",
+          "volume": "173 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by weight using an analytical balance"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "200 mL trace metal clean bottle",
+          "reagent": "EPPS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pass",
+        "parameters": {
+          "container": "HPLC column packed with Chelex-100 resin",
+          "reagent": "EPPS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "trace metal clean bottle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: 200 mL trace metal clean bottle, reagent: EPPS, other: {'mass': '22 g'})\n\n### AUTOMATED SECTION ###\nadd(container='200 mL trace metal clean bottle', reagent='Milli-Q', volume='173 mL', method='by weight using an analytical balance')\ndissolve(container='200 mL trace metal clean bottle', reagent='EPPS')\npass(container='HPLC column packed with Chelex-100 resin', reagent='EPPS solution', destination='trace metal clean bottle')",
+    "source_file": "protocol_492.txt"
+  }
+]

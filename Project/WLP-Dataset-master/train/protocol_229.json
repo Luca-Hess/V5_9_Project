@@ -1,0 +1,299 @@
+[
+  {
+    "protocol": "Phenol extraction of proteins\nTo 100 \u00b5l of PBCV-1 in a 1.5 conical plastic centrifuge tube add 150 \u00b5l of phenol.\nAdd DTT (~10 \u00b5l), 10% SDS (~20 \u00b5l), 10M LiCl (~15 \u00b5l) and Ponceau S (~10 \u00b5l).\nHeat 5 min at 75\u00b0C, mix thoroughly.\nAllow to cool, centrifuge 1 min (5K).\nDraw off lower (clear) phase into 1.5 conical plastic centrifuge tube.\nAdd 1 ml acetone and then 5 \u00b5l of 1% Ficoll, mix.\nStore 20 min at -20\u00b0C.\nCentrifuge 1 min (6K).\nDiscard supernatant, drain tube, wash ppt once with acetone (ppt sticks to tube) and dry.\nDissolve pellet in ~50 \u00b5l cracking buffer (1% SDS; 5% glycerol; 0.03125 M Tris-HCl, pH 6.8; bromophenol blue-trace).",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "phenol",
+          "volume": "150 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "initial_content": "100 \u00b5l of PBCV-1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "DTT",
+          "volume": "~10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "10% SDS",
+          "volume": "~20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "10M LiCl",
+          "volume": "~15 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "Ponceau S",
+          "volume": "~10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "5000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "draw",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "lower (clear) phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "1.5 conical plastic centrifuge tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "acetone",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "1% Ficoll",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "6000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "acetone",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "ppt"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "ppt"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "1.5 conical plastic centrifuge tube",
+          "reagent": "cracking buffer (1% SDS; 5% glycerol; 0.03125 M Tris-HCl, pH 6.8; bromophenol blue-trace)",
+          "volume": "~50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5 conical plastic centrifuge tube', reagent='phenol', volume='150 \u00b5l', initial_content='100 \u00b5l of PBCV-1')\nadd(container='1.5 conical plastic centrifuge tube', reagent='DTT', volume='~10 \u00b5l')\nadd(container='1.5 conical plastic centrifuge tube', reagent='10% SDS', volume='~20 \u00b5l')\nadd(container='1.5 conical plastic centrifuge tube', reagent='10M LiCl', volume='~15 \u00b5l')\nadd(container='1.5 conical plastic centrifuge tube', reagent='Ponceau S', volume='~10 \u00b5l')\nheat(container='1.5 conical plastic centrifuge tube', temperature='75\u00b0C', duration='5 min')\nmix(container='1.5 conical plastic centrifuge tube', speed='thoroughly')\ncool(container='1.5 conical plastic centrifuge tube')\ncentrifuge(container='1.5 conical plastic centrifuge tube', duration='1 min', speed='5000 x g')\ndraw(container='1.5 conical plastic centrifuge tube', reagent='lower (clear) phase', destination='1.5 conical plastic centrifuge tube')\nadd(container='1.5 conical plastic centrifuge tube', reagent='acetone', volume='1 ml')\nadd(container='1.5 conical plastic centrifuge tube', reagent='1% Ficoll', volume='5 \u00b5l')\nmix(container='1.5 conical plastic centrifuge tube')\nstore(container='1.5 conical plastic centrifuge tube', temperature='-20\u00b0C', duration='20 min')\ncentrifuge(container='1.5 conical plastic centrifuge tube', duration='1 min', speed='6000 x g')\ndiscard(container='1.5 conical plastic centrifuge tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: 1.5 conical plastic centrifuge tube)\n\n### AUTOMATED SECTION ###\nwash(container='1.5 conical plastic centrifuge tube', reagent='acetone', target='ppt')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: 1.5 conical plastic centrifuge tube, other: {'target': 'ppt'})\n\n### AUTOMATED SECTION ###\ndissolve(container='1.5 conical plastic centrifuge tube', reagent='cracking buffer (1% SDS; 5% glycerol; 0.03125 M Tris-HCl, pH 6.8; bromophenol blue-trace)', volume='~50 \u00b5l', target='pellet')",
+    "source_file": "protocol_229.txt"
+  }
+]

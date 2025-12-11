@@ -1,0 +1,320 @@
+[
+  {
+    "protocol": "Autoclave Frankfurter Fiesta\nPlace food in container or foil as directed in the recipe.\nPlace on shelf in the autoclave chamber.\nFill chamber.\nSet autoclave to sterilize and close.\nLet autoclave come to 265\u00b0F.\nPressure must show in the green range.\nAdjust to maintain temperature between 260-270\u00b0.\nFollow the cooking time as per the recipe, beginning as soon as temperature reaches 265\u00b0F.\nWhen cooking time is complete, vent and remove food.\nIf any food or its liquids leak into the water in the chamber, drain the autoclave and refill with fresh water before using again.\nLine autoclave tray with heavy-duty foil.\nSlash franks on a diagonal 3 or 4 times on both sides.\nPlace franks on tray.\nCook accord to instructions outlined in autoclave cookery basics for 4 minutes.\nVent, then remove the sausages and foil.\nPlace buns on the tray and put them in with the door closed for about 4-5 minutes to warm.\nBreak out the mustard, sauerkraut, and any condiment you desire.",
+    "actions": [
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "Frankfurter Fiesta (food)",
+          "volume": null,
+          "temperature": "265\u00b0F",
+          "duration": "as per recipe",
+          "speed": null,
+          "other": {
+            "pressure": "green range",
+            "temperature_range": "260-270\u00b0F"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "container or foil",
+          "reagent": "food",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "as_directed": "recipe"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "autoclave chamber shelf",
+          "reagent": "container or foil with food",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": "sterilize",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "close": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "food",
+          "volume": null,
+          "temperature": "265\u00b0F",
+          "duration": "until temperature reached",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": "260-270\u00b0F",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pressure": "green range"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "food",
+          "volume": null,
+          "temperature": "265\u00b0F",
+          "duration": "as per recipe",
+          "speed": null,
+          "other": {
+            "start": "when temperature reaches 265\u00b0F"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vent",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "food",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "refill",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "fresh water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "line",
+        "parameters": {
+          "container": "autoclave tray",
+          "reagent": "heavy-duty foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "slash",
+        "parameters": {
+          "container": null,
+          "reagent": "franks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pattern": "diagonal 3 or 4 times on both sides"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tray",
+          "reagent": "franks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cook",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "franks on tray",
+          "volume": null,
+          "temperature": null,
+          "duration": "4 minutes",
+          "speed": null,
+          "other": {
+            "instructions": "autoclave cookery basics"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "vent",
+        "parameters": {
+          "container": "autoclave",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "sausages and foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tray",
+          "reagent": "buns",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "autoclave chamber",
+          "reagent": "buns on tray",
+          "volume": null,
+          "temperature": null,
+          "duration": "4-5 minutes",
+          "speed": null,
+          "other": {
+            "door_closed": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "break out",
+        "parameters": {
+          "container": null,
+          "reagent": "mustard, sauerkraut, condiments",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nautoclave(container='autoclave chamber', reagent='Frankfurter Fiesta (food)', temperature='265\u00b0F', duration='as per recipe', pressure='green range', temperature_range='260-270\u00b0F')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: container or foil, reagent: food, other: {'as_directed': 'recipe'})\n# MANUAL: place (container: autoclave chamber shelf, reagent: container or foil with food, other: {})\n\n### AUTOMATED SECTION ###\nfill(container='autoclave chamber', reagent='water')\nset(container='autoclave', temperature='sterilize', close=True)\nincubate(container='autoclave chamber', reagent='food', temperature='265\u00b0F', duration='until temperature reached')\nadjust(container='autoclave', temperature='260-270\u00b0F', pressure='green range')\nincubate(container='autoclave chamber', reagent='food', temperature='265\u00b0F', duration='as per recipe', start='when temperature reaches 265\u00b0F')\nvent(container='autoclave')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: autoclave chamber, reagent: food, other: {})\n\n### AUTOMATED SECTION ###\ndrain(container='autoclave chamber', reagent='water')\nrefill(container='autoclave chamber', reagent='fresh water')\n\n### MANUAL SECTION ###\n# MANUAL: line (container: autoclave tray, reagent: heavy-duty foil, other: {})\n# MANUAL: slash (reagent: franks, other: {'pattern': 'diagonal 3 or 4 times on both sides'})\n# MANUAL: place (container: tray, reagent: franks, other: {})\n\n### AUTOMATED SECTION ###\ncook(container='autoclave chamber', reagent='franks on tray', duration='4 minutes', instructions='autoclave cookery basics')\nvent(container='autoclave')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: autoclave chamber, reagent: sausages and foil, other: {})\n# MANUAL: place (container: tray, reagent: buns, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='autoclave chamber', reagent='buns on tray', duration='4-5 minutes', door_closed=True)\n\n### MANUAL SECTION ###\n# MANUAL: break out (reagent: mustard, sauerkraut, condiments, other: {})",
+    "source_file": "protocol_472.txt"
+  }
+]

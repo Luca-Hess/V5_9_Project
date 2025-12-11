@@ -1,0 +1,130 @@
+[
+  {
+    "protocol": "THP1 cell line differentiation\nGrow cells till confluent - cells like to grow in clumps.\u00a0\nMedia used - RPMI + 10% FBS + b-mercaptoethanol\nPlate 50,000 c/ well in a 24 well plate in 500 ul.\u00a0\nAdd 10-50ng/ml of PMA for 72 hours.\u00a0\nAfter 3 days - rest cells for 16hours.\u00a0\nGamma stimulate with 10-50U IFNg o/n - use for PAMP stimulation",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "THP1 cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "until confluent",
+            "note": "cells like to grow in clumps"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "RPMI + 10% FBS + b-mercaptoethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": "THP1 cells",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "50,000 cells/well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": "PMA",
+          "volume": "10-50 ng/ml",
+          "temperature": null,
+          "duration": "72 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "72 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rest",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "16 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": "IFNg",
+          "volume": "10-50 U",
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "gamma stimulate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "24 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "gamma stimulation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (reagent: THP1 cells, other: {'condition': 'until confluent', 'note': 'cells like to grow in clumps'})\n# MANUAL: prepare (reagent: RPMI + 10% FBS + b-mercaptoethanol, other: {})\n\n### AUTOMATED SECTION ###\nplate(container='24 well plate', reagent='THP1 cells', volume='500 ul', cell_count='50,000 cells/well')\nadd(container='24 well plate', reagent='PMA', volume='10-50 ng/ml', duration='72 hours')\nincubate(container='24 well plate', duration='72 hours')\nrest(container='24 well plate', reagent='cells', duration='16 hours')\nadd(container='24 well plate', reagent='IFNg', volume='10-50 U', duration='overnight', purpose='gamma stimulate')\nincubate(container='24 well plate', duration='overnight', purpose='gamma stimulation')",
+    "source_file": "protocol_118.txt"
+  }
+]

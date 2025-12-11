@@ -1,0 +1,293 @@
+[
+  {
+    "protocol": "YES Rich Medium\nAdd 5.0 g Yeast Extract to a 1 Liter Erlenmeyer Flask.\nAdd 30 g Glucose or Dextrose to the flask.\nAdd 0.25 g Adenine to the flask.\nAdd 0.25 g Uracil to the flask.\nAdd 0.25 g Histidine to the flask.\nAdd 0.25 Leucine to the flask.\nAdd 0.25 g Lysine to the flask.\nAdd 1 g Arginine to the flask.\nOptional: For solid medium add 20 g Difco Bacto Agar to the flask.\nFill the flask with water up to the 1 Liter mark on the flask.\nPlace a magnetic stir bar into the flask and place the flask on a magnetic stirrer to dissolve the powder into the water.\nRemove the stir bar with a magnetic rod.\nPlace aluminum foil over the top of the flask and then autoclave on a liquid cycle for 20 minutes.\nIf solid medium, pour while still hot into plates and let them sit out to cool overnight on the lab bench.\nIf liquid medium, aliquot into smaller amounts and store at + 4 C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Yeast Extract",
+          "volume": "5.0 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Glucose or Dextrose",
+          "volume": "30 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Adenine",
+          "volume": "0.25 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Uracil",
+          "volume": "0.25 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Histidine",
+          "volume": "0.25 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Leucine",
+          "volume": "0.25 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Lysine",
+          "volume": "0.25 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Arginine",
+          "volume": "1 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "Difco Bacto Agar",
+          "volume": "20 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "water",
+          "volume": "up to 1 Liter mark",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "magnetic stir bar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "magnetic stirrer",
+            "goal": "dissolve powder into water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "magnetic stir bar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "magnetic rod"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": "aluminum foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "1 Liter Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "cycle": "liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plates",
+          "reagent": "solid medium",
+          "volume": null,
+          "temperature": "hot",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "conditional": "if solid medium"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "location": "lab bench",
+            "conditional": "if solid medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "smaller containers",
+          "reagent": "liquid medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "conditional": "if liquid medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "smaller containers",
+          "reagent": "liquid medium",
+          "volume": null,
+          "temperature": "+4 C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "conditional": "if liquid medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1 Liter Erlenmeyer Flask', reagent='Yeast Extract', volume='5.0 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Glucose or Dextrose', volume='30 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Adenine', volume='0.25 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Uracil', volume='0.25 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Histidine', volume='0.25 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Leucine', volume='0.25 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Lysine', volume='0.25 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Arginine', volume='1 g')\nadd(container='1 Liter Erlenmeyer Flask', reagent='Difco Bacto Agar', volume='20 g', optional=True)\nfill(container='1 Liter Erlenmeyer Flask', reagent='water', volume='up to 1 Liter mark')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: 1 Liter Erlenmeyer Flask, reagent: magnetic stir bar, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='1 Liter Erlenmeyer Flask', method='magnetic stirrer', goal='dissolve powder into water')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 1 Liter Erlenmeyer Flask, reagent: magnetic stir bar, other: {'tool': 'magnetic rod'})\n# MANUAL: cover (container: 1 Liter Erlenmeyer Flask, reagent: aluminum foil, other: {})\n\n### AUTOMATED SECTION ###\nautoclave(container='1 Liter Erlenmeyer Flask', duration='20 minutes', cycle='liquid')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plates, reagent: solid medium, temperature: hot, other: {'conditional': 'if solid medium'})\n\n### AUTOMATED SECTION ###\ncool(container='plates', temperature='room temperature', duration='overnight', location='lab bench', conditional='if solid medium')\naliquot(container='smaller containers', reagent='liquid medium', conditional='if liquid medium')\nstore(container='smaller containers', reagent='liquid medium', temperature='+4 C', conditional='if liquid medium')",
+    "source_file": "protocol_184.txt"
+  }
+]

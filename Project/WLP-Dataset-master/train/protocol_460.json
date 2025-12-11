@@ -1,0 +1,240 @@
+[
+  {
+    "protocol": "Mouse T Cell Activation with anti-CD3\u03b5 Antibodies (clone 145-2C11)\nPrepare a 5 \u00b5g/ml solution of anti-CD3\u03b5 (clone 145-2C11) in sterile PBS.\nDispense 50 \u00b5l of the antibody solution to each microwell of the 96-well assay plate.\nFor the unstimulated control wells, add 50 \u00b5l of sterile PBS.\nSeal plate.\nIncubate at 37\u00b0C for 2 hours or 4\u00b0C overnight.\nAseptically decant antibody solution from microwell plate.\nWash plate microwells 3 times with sterile PBS (wash 1/3).\nPrepare single cell suspension of cells of interest.\nResuspend cells in supplemented cell culture medium to 1-2 x 106/ml.\nAliquot 200 \u00b5l cell suspension into plate microwells.\nCover with lid.\nIncubate at 37\u00b0C in 5% CO2 and 100% humidity for 3 days.\nWash plate microwells 3 times with sterile PBS (wash 2/3).\nWash plate microwells 3 times with sterile PBS (wash 3/3).\nDiscard liquid.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "anti-CD3\u03b5 (clone 145-2C11) in sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "5 \u00b5g/ml"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "96-well assay plate microwell",
+          "reagent": "antibody solution",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unstimulated control microwell",
+          "reagent": "sterile PBS",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "96-well assay plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96-well assay plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C or 4\u00b0C",
+          "duration": "2 hours or overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "microwell plate",
+          "reagent": "antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "aseptically": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microwell plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3,
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "single cell suspension of cells of interest",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "supplemented cell culture medium",
+            "concentration": "1-2 x 10^6/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "plate microwells",
+          "reagent": "cell suspension",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "3 days",
+          "speed": null,
+          "other": {
+            "CO2": "5%",
+            "humidity": "100%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microwell plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3,
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microwell plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3,
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "microwell plate",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: anti-CD3\u03b5 (clone 145-2C11) in sterile PBS, other: {'concentration': '5 \u00b5g/ml'})\n\n### AUTOMATED SECTION ###\ndispense(container='96-well assay plate microwell', reagent='antibody solution', volume='50 \u00b5l')\nadd(container='unstimulated control microwell', reagent='sterile PBS', volume='50 \u00b5l')\nseal(container='96-well assay plate')\nincubate(container='96-well assay plate', temperature='37\u00b0C or 4\u00b0C', duration='2 hours or overnight')\ndecant(container='microwell plate', reagent='antibody solution', aseptically=True)\nwash(container='microwell plate', reagent='sterile PBS', times=3, wash_number=1)\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: single cell suspension of cells of interest)\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', medium='supplemented cell culture medium', concentration='1-2 x 10^6/ml')\naliquot(container='plate microwells', reagent='cell suspension', volume='200 \u00b5l')\ncover(container='plate', lid=True)\nincubate(container='plate', temperature='37\u00b0C', duration='3 days', CO2='5%', humidity='100%')\nwash(container='microwell plate', reagent='sterile PBS', times=3, wash_number=2)\nwash(container='microwell plate', reagent='sterile PBS', times=3, wash_number=3)\ndiscard(container='microwell plate', reagent='liquid')",
+    "source_file": "protocol_460.txt"
+  }
+]

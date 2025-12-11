@@ -1,0 +1,116 @@
+[
+  {
+    "protocol": "Sampling for extracellular phage quantification by qPCR and MPN assays\nPlace\u00a0filter plate (MSGVN2210) onto receiver\u00a096-well plate without touching the bottom of the sterile filter plate.\nKeep a log of your sample layout (which samples are in which wells).\nPlate-Setup Template:\u00a0 Transfer 250 \u00b5L of sample from each experimental bottle/tube into empty wells on the filter plate in duplicate.\nIt is not necessary to fill the entire plate; we will continue to use the same plate over the course of the experiment.\nCentrifuge at 1000 x g for 3 min.\nBe sure to balance the centrifuge.\nBetween sampling, store stacked filter/filtrate plates at 4\u00b0C, covered with a plate lid.\nDo not disturb the stacked plates, to avoid cross-contamination between wells.\nAfter filling the entire plate, remove the filter plate and discard.\nStore the filtrate plate at 4\u00b0C, covered with a plate lid and wrapped well with parafilm, until analysis.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter plate (MSGVN2210) onto receiver 96-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "do not touch the bottom of the sterile filter plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "filter plate wells",
+          "reagent": "sample from experimental bottle/tube",
+          "volume": "250 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "duplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filter plate on receiver plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": "1000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "stacked filter/filtrate plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "between sampling",
+          "speed": null,
+          "other": {
+            "covered": "plate lid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "filter plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "filtrate plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until analysis",
+          "speed": null,
+          "other": {
+            "covered": "plate lid",
+            "wrapped": "parafilm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: filter plate (MSGVN2210) onto receiver 96-well plate, other: {'note': 'do not touch the bottom of the sterile filter plate'})\n\n### AUTOMATED SECTION ###\ntransfer(container='filter plate wells', reagent='sample from experimental bottle/tube', volume='250 \u00b5L', replicates='duplicate')\ncentrifuge(container='filter plate on receiver plate', duration='3 min', speed='1000 x g')\nstore(container='stacked filter/filtrate plates', temperature='4\u00b0C', duration='between sampling', covered='plate lid')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter plate)\n# MANUAL: discard (container: filter plate)\n\n### AUTOMATED SECTION ###\nstore(container='filtrate plate', temperature='4\u00b0C', duration='until analysis', covered='plate lid', wrapped='parafilm')",
+    "source_file": "protocol_458.txt"
+  }
+]

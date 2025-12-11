@@ -1,0 +1,225 @@
+[
+  {
+    "protocol": "One-Step Transformation of Yeast\nAdd 90 uL of 50% Polyethylene Glycol 3350 to a 1.5 mL microcentrifuge tube.\nAdd 10 uL of 0.2 N Lithium Acetate to the microcentrifuge tube.\nPellet yeast from 1 mL liquid culture or take a toothpick full of freshly grown yeast on a plate and resuspend in the solution.\nAdd 1 ug of DNA and briefly vortex.\nIncubate at 45\u00b0C for 30 minutes to 1 hour, vortexing briefly every 10 minutes.\nAdd 1 mL water to the tube and pipette to mix, then centrifuge at 14,000 RPM for 15 seconds.\nRemove the supernatant and resuspend the pellet in 200 uL water, then spread on selective plates and incubate at 30\u00b0C for 3-6 days.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "50% Polyethylene Glycol 3350",
+          "volume": "90 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "0.2 N Lithium Acetate",
+          "volume": "10 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "1 mL liquid culture",
+          "reagent": "yeast",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "yeast pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solution": "PEG/LiAc solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "DNA",
+          "volume": "1 ug",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": "30 minutes to 1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly every 10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "water",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": "14,000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "pellet",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solution": "water"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "selective plates",
+          "reagent": "resuspended yeast",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "selective plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "3-6 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5 mL microcentrifuge tube', reagent='50% Polyethylene Glycol 3350', volume='90 uL')\nadd(container='1.5 mL microcentrifuge tube', reagent='0.2 N Lithium Acetate', volume='10 uL')\npellet(container='1 mL liquid culture', reagent='yeast', volume='1 mL')\nresuspend(container='1.5 mL microcentrifuge tube', reagent='yeast pellet', solution='PEG/LiAc solution')\nadd(container='1.5 mL microcentrifuge tube', reagent='DNA', volume='1 ug')\nvortex(container='1.5 mL microcentrifuge tube', duration='briefly')\nincubate(container='1.5 mL microcentrifuge tube', temperature='45\u00b0C', duration='30 minutes to 1 hour')\nvortex(container='1.5 mL microcentrifuge tube', duration='briefly every 10 minutes')\nadd(container='1.5 mL microcentrifuge tube', reagent='water', volume='1 mL')\npipette(container='1.5 mL microcentrifuge tube', purpose='mix')\ncentrifuge(container='1.5 mL microcentrifuge tube', duration='15 seconds', speed='14,000 RPM')\nremove(container='1.5 mL microcentrifuge tube', reagent='supernatant')\nresuspend(container='1.5 mL microcentrifuge tube', reagent='pellet', volume='200 uL', solution='water')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: selective plates, reagent: resuspended yeast, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='selective plates', temperature='30\u00b0C', duration='3-6 days')",
+    "source_file": "protocol_380.txt"
+  }
+]

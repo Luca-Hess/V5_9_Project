@@ -1,0 +1,201 @@
+[
+  {
+    "protocol": "FLVP assays\nPerform\u00a0preparation of FLVPs as described in Viral and bacterial isolates, propagation and preparation of stocks.\nPrepare a 10-fold dilution series of the culture or natural sample to be enumerated so that ~105 cells mL\u20131 of the target (FLVP-specific species) will be obtained.\nPerform all subsequent steps under subdued light, since the stain will fade if exposed.\nAdd 0.1 mL FLVP working stock to 0.9 mL sample in a microcentrifuge tube for each slide to be prepared and vortex to mix.\nAllow up to 30 min for adsorption of FLVPs to target cells.\nFilter each 1 mL sample onto a 0.2-\u00b5m Anodisc filter using a 0.45-\u00b5m HA filter for backing.\nPipette 10 \u00b5L mounting medium onto the surface of a slide.\nPlace the filter over the drop.\nPipette 10 \u00b5L mounting medium onto the surface of the filter.\nPlace a 25 \u00d7 25 mm coverslip over the filter.\nObserve the slides under blue-light excitation and count the cells with a fluorescent halo.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "description": "preparation of FLVPs as described in another section"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.5
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "culture or natural sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_series": "10-fold",
+            "target_concentration": "~10^5 cells/mL of FLVP-specific species"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "FLVP working stock",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "0.9 mL sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample + FLVP working stock",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample + FLVP working stock",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": "up to 30 min",
+          "speed": null,
+          "other": {
+            "purpose": "adsorption of FLVPs to target cells",
+            "light_condition": "subdued light"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2-\u00b5m Anodisc filter",
+            "backing_filter": "0.45-\u00b5m HA filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "slide",
+          "reagent": "mounting medium",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "surface of slide"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "over the drop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "filter",
+          "reagent": "mounting medium",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "surface of filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dimensions": "25 \u00d7 25 mm",
+            "location": "over the filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "blue-light excitation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "slide",
+          "reagent": "cells with fluorescent halo",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (other: {'description': 'preparation of FLVPs as described in another section'})\n# MANUAL: prepare (reagent: culture or natural sample, other: {'dilution_series': '10-fold', 'target_concentration': '~10^5 cells/mL of FLVP-specific species'})\n\n### AUTOMATED SECTION ###\nadd(container='microcentrifuge tube', reagent='FLVP working stock', volume='0.1 mL', to='0.9 mL sample')\nvortex(container='microcentrifuge tube', reagent='sample + FLVP working stock', volume='1 mL')\nincubate(container='microcentrifuge tube', reagent='sample + FLVP working stock', volume='1 mL', duration='up to 30 min', purpose='adsorption of FLVPs to target cells', light_condition='subdued light')\nfilter(reagent='sample', volume='1 mL', filter_type='0.2-\u00b5m Anodisc filter', backing_filter='0.45-\u00b5m HA filter')\npipette(container='slide', reagent='mounting medium', volume='10 \u00b5L', location='surface of slide')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: slide, reagent: filter, other: {'location': 'over the drop'})\n\n### AUTOMATED SECTION ###\npipette(container='filter', reagent='mounting medium', volume='10 \u00b5L', location='surface of filter')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: slide, reagent: coverslip, other: {'dimensions': '25 \u00d7 25 mm', 'location': 'over the filter'})\n# MANUAL: observe (container: slide, other: {'method': 'blue-light excitation'})\n# MANUAL: count (container: slide, reagent: cells with fluorescent halo)",
+    "source_file": "protocol_121.txt"
+  }
+]

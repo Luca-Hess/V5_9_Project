@@ -1,0 +1,201 @@
+[
+  {
+    "protocol": "Anti-Neu5Gc Antibody Kit Protocol - ELISA\nCoat the 96-well ELISA plate with the target molecule in 50 mM sodium carbonate-bicarbonate buffer, pH 9.5 (up to 1 \u03bcg/well in 100 \u03bcl carbonate buffer, in triplicate) for at least 2 hours at ambient temperature or overnight at 4\u00b0C.\nWash the wells 3 to 5 times with PBS.\nBlock wells with PBS-T (200 \u03bcl/well) for 1 hour at room temperature.\nAdd the anti-Neu5Gc antibody (or the negative control antibody), diluted in PBS-T, to the appropriate well(s) and incubate for 2 hours at room temperature.\nWash wells as before with PBS-T. \nAdd enzyme-conjugated secondary antibody (donkey-anti-chicken antibody, 1:10,000 in PBS) to each well and incubate for 1 hour at room temperature.\nWash wells again with PBS-T. \nAdd enzyme substrate, allow the wells to develop; quench the reaction if necessary.\nRead absorbance on an ELISA plate reader at the appropriate wavelength.",
+    "actions": [
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "target molecule in 50 mM sodium carbonate-bicarbonate buffer, pH 9.5",
+          "volume": "100 \u03bcl/well",
+          "temperature": "ambient temperature or 4\u00b0C",
+          "duration": "at least 2 hours or overnight",
+          "speed": null,
+          "other": {
+            "amount_per_well": "up to 1 \u03bcg/well",
+            "replicates": "in triplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "3 to 5 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "block",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "PBS-T",
+          "volume": "200 \u03bcl/well",
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "anti-Neu5Gc antibody or negative control antibody (diluted in PBS-T)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_wells": "appropriate well(s)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "PBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "enzyme-conjugated secondary antibody (donkey-anti-chicken antibody, 1:10,000 in PBS)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "PBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": "enzyme substrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until wells develop",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "quench",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "96-well ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "ELISA plate reader",
+            "wavelength": "appropriate wavelength"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncoat(container='96-well ELISA plate', reagent='target molecule in 50 mM sodium carbonate-bicarbonate buffer, pH 9.5', volume='100 \u03bcl/well', temperature='ambient temperature or 4\u00b0C', duration='at least 2 hours or overnight', amount_per_well='up to 1 \u03bcg/well', replicates='in triplicate')\nwash(container='96-well ELISA plate', reagent='PBS', cycles='3 to 5 times')\nblock(container='96-well ELISA plate', reagent='PBS-T', volume='200 \u03bcl/well', temperature='room temperature', duration='1 hour')\nadd(container='96-well ELISA plate', reagent='anti-Neu5Gc antibody or negative control antibody (diluted in PBS-T)', target_wells='appropriate well(s)')\nincubate(container='96-well ELISA plate', temperature='room temperature', duration='2 hours')\nwash(container='96-well ELISA plate', reagent='PBS-T')\nadd(container='96-well ELISA plate', reagent='enzyme-conjugated secondary antibody (donkey-anti-chicken antibody, 1:10,000 in PBS)')\nincubate(container='96-well ELISA plate', temperature='room temperature', duration='1 hour')\nwash(container='96-well ELISA plate', reagent='PBS-T')\nadd(container='96-well ELISA plate', reagent='enzyme substrate')\nwait(container='96-well ELISA plate', duration='until wells develop')\n\n### MANUAL SECTION ###\n# MANUAL: quench (container: 96-well ELISA plate)\n\n### AUTOMATED SECTION ###\nread(container='96-well ELISA plate', instrument='ELISA plate reader', wavelength='appropriate wavelength')",
+    "source_file": "protocol_378.txt"
+  }
+]

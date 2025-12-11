@@ -1,0 +1,174 @@
+[
+  {
+    "protocol": "Estimation of Humus in Soil/Manure\nTake 20 g soil or manure in a conical flask and add 100 mL of extractant (1:5 ratio). \nShake well and allow standing for 18 h.   \nFilter through Whatman filter paper no. 1 (the residue portion on filter paper is called humin and the filtrate is humus.\nIt is dark brown in color with pH 13).\nTo get rid of sodium, the humus is dialyzed in dialysis tubes or parchment paper against running tap water for 24 h.  \nIt is free of sodium.\nMeasure the volume, and a known volume (10 mL) is taken in a pre-weighed 100 mL beaker.\nThe beaker is dried in an oven at 70\u00b0C to a constant weight.\nThe difference in weight gives the amount of humus in 10 mL.\nAccordingly, it is calculated on a percentage basis.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "conical flask",
+          "reagent": "soil or manure",
+          "volume": "20 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "conical flask",
+          "reagent": "extractant",
+          "volume": "100 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "conical flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "conical flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "18 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "Whatman filter paper no. 1",
+          "reagent": "soil/manure extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "dialysis tubes or parchment paper",
+          "reagent": "humus",
+          "volume": null,
+          "temperature": null,
+          "duration": "24 h",
+          "speed": null,
+          "other": {
+            "against": "running tap water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "humus solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pre-weighed 100 mL beaker",
+          "reagent": "humus solution",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "beaker",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "to constant weight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "beaker",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before": "drying",
+            "after": "drying"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "basis": "percentage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='conical flask', reagent='soil or manure', volume='20 g', ratio='1:5')\nadd(container='conical flask', reagent='extractant', volume='100 mL', ratio='1:5')\nshake(container='conical flask')\nwait(container='conical flask', duration='18 h')\nfilter(container='Whatman filter paper no. 1', reagent='soil/manure extract')\n\n### MANUAL SECTION ###\n# MANUAL: dialyze (container: dialysis tubes or parchment paper, reagent: humus, duration: 24 h, other: {'against': 'running tap water'})\n\n### AUTOMATED SECTION ###\nmeasure(reagent='humus solution')\nadd(container='pre-weighed 100 mL beaker', reagent='humus solution', volume='10 mL')\ndry(container='beaker', temperature='70\u00b0C', duration='to constant weight')\nweigh(container='beaker', before='drying', after='drying')\ncalculate(basis='percentage')",
+    "source_file": "protocol_516.txt"
+  }
+]

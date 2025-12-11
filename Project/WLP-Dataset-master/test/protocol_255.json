@@ -1,0 +1,100 @@
+[
+  {
+    "protocol": "A Typical DNase I Reaction (M0303)\nResuspend 10 \u00b5g RNA in 1X DNase I Reaction Buffer to a final volume of 100 \u00b5l. \nAdd 2 units of DNase I Mix thoroughly. \nIncubate at 37\u00b0C for 10 minutes.\nAdd 1 \u00b5l of 0.5 M EDTA (to a final concentration of 5 mM).\nHeat inactivate at 75\u00b0C for 10 minutes.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "10 \u00b5g RNA",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X DNase I Reaction Buffer",
+            "final_volume": "100 \u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I",
+          "volume": "2 units",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "0.5 M EDTA",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "5 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "inactivate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(reagent='10 \u00b5g RNA', volume='100 \u00b5l', buffer='1X DNase I Reaction Buffer', final_volume='100 \u00b5l')\nadd(reagent='DNase I', volume='2 units')\nmix()\nincubate(temperature='37\u00b0C', duration='10 minutes')\nadd(reagent='0.5 M EDTA', volume='1 \u00b5l', final_concentration='5 mM')\nheat(temperature='75\u00b0C', duration='10 minutes', purpose='inactivate')",
+    "source_file": "protocol_255.txt"
+  }
+]

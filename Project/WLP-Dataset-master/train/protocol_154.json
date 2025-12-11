@@ -1,0 +1,511 @@
+[
+  {
+    "protocol": "High quality DNA extraction from Fungi_small scale\nCollect tissue/spores (10-20mg) in a 2ml eppendorf tube with one metal bead.\nlyse tissue/spores with liquid nitrogen in a precooled tissuelycer.\nusing 50Hz for 1min.\nMake lysis buffer by mixing buffer A+B+C (2.5:2.5:1 + 0.1%PVP final) and briefly heat to 64 \u00b0C.\nLet cool to room temperature, add RNAse T1 to lysis buffer according to 1:1750 of RNAse T1: lysis buffer ratio.\nAdd 500ul lysis buffer into the powder, briefly vortex, incubate at 64oC for 30 mins Cool on ice for 5 mins.\nAdd 100 ul (0.2 vol) of KAc 5M, mix by inversion, incubate on ice for max 5 mins.\nSpin at 4oC at max speed for 10 mins.\nTransfer supernatant to fresh eppendorf tube containing 500ul (1vol) (P/C/I) and mix by inversion for 2 mins.\nSpin at 4 \u00b0C and max speed for 10 mins.\nTransfer supernatant (~400ul) to fresh eppendorf tube containing 500ul RT isopropanol.\nIncubate at RT for 5-10mins.\nSpin at 4 \u00b0C and max speed for 30 mins.\nCarefully remove supernatant with pipette and wash with 1mL fresh 70% Ethanol, invert several times to dislodge pellet.\nSpin in table top centrifuge for 5mins at 13000g.\nRemove supernatant with pipette and wash with 1mL fresh 70% Ethanol, invert several times to dislodge pellet.\nSpin in table top centrifuge for 5mins at 13000g.\nRemove supernatant with pipette.\nSpin in table top centrifuge for 1min at 13000g.\nRemove the remaining ethanol with pipette.\nAir-dry pellet for 7mins.\nAdd 50ul of TE buffer and flick the tube slightly for mixing.\nDO NOT vortex as it shears DNA.Store at -20oC.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "2ml eppendorf tube",
+          "reagent": "tissue/spores",
+          "volume": "10-20mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "metal_bead": "one"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "precooled tissuelycer",
+          "reagent": "tissue/spores",
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tissuelycer",
+          "reagent": "tissue/spores",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "50Hz",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer A+B+C",
+          "volume": "2.5:2.5:1 + 0.1% PVP final",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "make lysis buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": "64\u00b0C",
+          "duration": "briefly",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "RNAse T1",
+          "volume": "1:1750 ratio to lysis buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "powder in eppendorf tube",
+          "reagent": "lysis buffer",
+          "volume": "500ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "64\u00b0C",
+          "duration": "30 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "5 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "KAc 5M",
+          "volume": "100ul (0.2 vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "max 5 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 mins",
+          "speed": "max speed",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_contains": "500ul (1vol) (P/C/I)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 mins",
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 mins",
+          "speed": "max speed",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh eppendorf tube",
+          "reagent": "supernatant",
+          "volume": "~400ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_contains": "500ul RT isopropanol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5-10 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 mins",
+          "speed": "max speed",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "fresh 70% Ethanol",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert several times to dislodge pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "13000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "fresh 70% Ethanol",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert several times to dislodge pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "13000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "remaining ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "7 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "TE buffer",
+          "volume": "50ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick tube slightly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: 2ml eppendorf tube, reagent: tissue/spores, volume: 10-20mg, other: {'metal_bead': 'one'})\n# MANUAL: lyse (container: precooled tissuelycer, reagent: tissue/spores, temperature: liquid nitrogen)\n\n### AUTOMATED SECTION ###\nmix(container='tissuelycer', reagent='tissue/spores', duration='1 min', speed='50Hz')\nmix(reagent='buffer A+B+C', volume='2.5:2.5:1 + 0.1% PVP final', purpose='make lysis buffer')\nheat(reagent='lysis buffer', temperature='64\u00b0C', duration='briefly')\ncool(reagent='lysis buffer', temperature='room temperature')\nadd(reagent='RNAse T1', volume='1:1750 ratio to lysis buffer')\nadd(container='powder in eppendorf tube', reagent='lysis buffer', volume='500ul')\nvortex(container='eppendorf tube', duration='briefly')\nincubate(container='eppendorf tube', temperature='64\u00b0C', duration='30 mins')\ncool(container='eppendorf tube', temperature='ice', duration='5 mins')\nadd(container='eppendorf tube', reagent='KAc 5M', volume='100ul (0.2 vol)')\nmix(container='eppendorf tube', method='inversion')\nincubate(container='eppendorf tube', temperature='ice', duration='max 5 mins')\ncentrifuge(container='eppendorf tube', temperature='4\u00b0C', duration='10 mins', speed='max speed')\ntransfer(container='fresh eppendorf tube', reagent='supernatant', destination_contains='500ul (1vol) (P/C/I)')\nmix(container='eppendorf tube', duration='2 mins', method='inversion')\ncentrifuge(container='eppendorf tube', temperature='4\u00b0C', duration='10 mins', speed='max speed')\ntransfer(container='fresh eppendorf tube', reagent='supernatant', volume='~400ul', destination_contains='500ul RT isopropanol')\nincubate(container='eppendorf tube', temperature='room temperature', duration='5-10 mins')\ncentrifuge(container='eppendorf tube', temperature='4\u00b0C', duration='30 mins', speed='max speed')\nremove(container='eppendorf tube', reagent='supernatant', method='pipette')\nwash(container='eppendorf tube', reagent='fresh 70% Ethanol', volume='1mL', method='invert several times to dislodge pellet')\ncentrifuge(container='eppendorf tube', duration='5 mins', speed='13000g')\nremove(container='eppendorf tube', reagent='supernatant', method='pipette')\nwash(container='eppendorf tube', reagent='fresh 70% Ethanol', volume='1mL', method='invert several times to dislodge pellet')\ncentrifuge(container='eppendorf tube', duration='5 mins', speed='13000g')\nremove(container='eppendorf tube', reagent='supernatant', method='pipette')\ncentrifuge(container='eppendorf tube', duration='1 min', speed='13000g')\nremove(container='eppendorf tube', reagent='remaining ethanol', method='pipette')\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: eppendorf tube, reagent: pellet, duration: 7 mins)\n\n### AUTOMATED SECTION ###\nadd(container='eppendorf tube', reagent='TE buffer', volume='50ul')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: eppendorf tube, other: {'method': 'flick tube slightly'})\n# MANUAL: store (container: eppendorf tube, temperature: -20\u00b0C)",
+    "source_file": "protocol_154.txt"
+  }
+]

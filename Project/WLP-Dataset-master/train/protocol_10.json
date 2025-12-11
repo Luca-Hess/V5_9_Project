@@ -1,0 +1,389 @@
+[
+  {
+    "protocol": "Purification of pooled PCR amplicon libraries using SPRI beads\nVortex AMPure XP or RXN pureplus SPRI beads to resuspend.\nMake your pooled library up to 100\u00a0\u03bcl if necessary.\nAdd 60 \u03bcl resuspended SPRI\u00a0beads to 100\u00a0\u03bcl of pooled PCR product.\nMix well by pipetting up and down at least 10 times.\nVortex AMPure XP beads to resuspend.\nIncubate for 5 minutes at room temperature.\nQuickly spin the tube and place it on an appropriate magnetic stand to separate beads from supernatant.\nAfter the solution is clear (about 5 minutes), carefully remove and discard the supernatant.\nBe careful not to disturb the beads that contain DNA targets (Caution: do not discard beads).\nAdd 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nIncubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.\nAdd 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nIncubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.\nAdd 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nIncubate at room temperature for 30 seconds, and then carefully remove and discard the supernatant.\nAir the dry beads for 10 minutes while the tube is on the magnetic stand with the lid open.\nElute the DNA target from the beads by adding 30 \u03bcl of 10 mM Tris-HCl, pH 8.0 or 0.1X TE.Note: Be sure not to transfer any beads.\nTrace amounts of bead carry over may affect the optimal performance of the polymerase used in the subsequent PCR step.\nMix well by pipetting up and down, or on a vortex mixer.\nQuickly spin the tube and place it on the magnetic stand.\nAfter the solution is clear (about 5 minutes), transfer 27ul a new PCR tube for amplification.",
+    "actions": [
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "AMPure XP or RXN pureplus SPRI beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust_volume",
+        "parameters": {
+          "container": "pooled library tube",
+          "reagent": "pooled library",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": "resuspended SPRI beads",
+          "volume": "60 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting up and down at least 10 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "AMPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place_on_magnetic_stand",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "solution_clear": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air_dry",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand, lid open)",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled PCR product tube (on magnetic stand)",
+          "reagent": "10 mM Tris-HCl, pH 8.0 or 0.1X TE",
+          "volume": "30 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "elute_DNA": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting up and down or vortex mixer",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place_on_magnetic_stand",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "pooled PCR product tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "solution_clear": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "pooled PCR product tube to new PCR tube",
+          "reagent": "eluted DNA",
+          "volume": "27 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for_amplification": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nvortex(reagent='AMPure XP or RXN pureplus SPRI beads')\nadjust_volume(container='pooled library tube', reagent='pooled library', volume='100 \u03bcl')\nadd(container='pooled PCR product tube', reagent='resuspended SPRI beads', volume='60 \u03bcl')\nmix(container='pooled PCR product tube', speed='pipetting up and down at least 10 times')\nvortex(reagent='AMPure XP beads')\nincubate(container='pooled PCR product tube', temperature='room temperature', duration='5 minutes')\ncentrifuge(container='pooled PCR product tube', duration='quick spin')\nplace_on_magnetic_stand(container='pooled PCR product tube')\nwait(container='pooled PCR product tube', duration='5 minutes', solution_clear=True)\nremove_supernatant(container='pooled PCR product tube', reagent='supernatant', discard=True)\nadd(container='pooled PCR product tube (on magnetic stand)', reagent='80% freshly prepared ethanol', volume='200 \u03bcl')\nincubate(container='pooled PCR product tube (on magnetic stand)', temperature='room temperature', duration='30 seconds')\nremove_supernatant(container='pooled PCR product tube', reagent='supernatant', discard=True)\nadd(container='pooled PCR product tube (on magnetic stand)', reagent='80% freshly prepared ethanol', volume='200 \u03bcl')\nincubate(container='pooled PCR product tube (on magnetic stand)', temperature='room temperature', duration='30 seconds')\nremove_supernatant(container='pooled PCR product tube', reagent='supernatant', discard=True)\nadd(container='pooled PCR product tube (on magnetic stand)', reagent='80% freshly prepared ethanol', volume='200 \u03bcl')\nincubate(container='pooled PCR product tube (on magnetic stand)', temperature='room temperature', duration='30 seconds')\nremove_supernatant(container='pooled PCR product tube', reagent='supernatant', discard=True)\n\n### MANUAL SECTION ###\n# MANUAL: air_dry (container: pooled PCR product tube (on magnetic stand, lid open), reagent: beads, duration: 10 minutes, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='pooled PCR product tube (on magnetic stand)', reagent='10 mM Tris-HCl, pH 8.0 or 0.1X TE', volume='30 \u03bcl', elute_DNA=True)\nmix(container='pooled PCR product tube', speed='pipetting up and down or vortex mixer')\ncentrifuge(container='pooled PCR product tube', duration='quick spin')\nplace_on_magnetic_stand(container='pooled PCR product tube')\nwait(container='pooled PCR product tube', duration='5 minutes', solution_clear=True)\ntransfer(container='pooled PCR product tube to new PCR tube', reagent='eluted DNA', volume='27 \u03bcl', for_amplification=True)",
+    "source_file": "protocol_10.txt"
+  }
+]

@@ -1,0 +1,333 @@
+[
+  {
+    "protocol": "MojoSort\u2122 Negative Selection Columns Protocol\nPrepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSort\u2122buffer recommended).\nPass the cells through a 70 \u03bcm filter, centrifuge (300 x g for 5 minutes), discard the supernatant and resuspend the cells in cell separation buffer.\nAdjust the cell concentration to 1 x 108 cells/mL.\nAliquot 100 \u03bcL (107 cells) into a new tube.\nAdd 10 \u03bcL of the pre-diluted Biotin-Antibody Cocktail, mix well and incubate on ice for 15 minutes.\nScale up the volume if separating more cells.\nFor example, add 100 \u03bcL of pre-diluted antibody cocktail for separating 1 x 108 cells in 1ml of buffer.\nWhen working withless than 107 cells, use indicated volumes for 107 cells.\nAdd cell separation buffer up to 4 mL; centrifuge the cells at 300 x g for 5 minutes.\nDiscard supernatant and resuspend in 100 \u03bcL of buffer.\nVortex the Streptavidin conjugated Nanobeads (to resuspend) at max speed, 5 touches, and prepare the dilutions to test.\nAdd 10 \u03bcL of pre-diluted Streptavidin Nanobeads.\nMix well and incubate on ice for 15 minutes.\nScale up the volume accordingly if separating more cells.\nFor example, add 100 \u03bcL of pre-diluted Nanobeads for separating 1 x 108 cells in 1ml of buffer.\nWhen working with less than 107 cells,use indicated volumes for 107 cells.\nNote: Depending on the isolation kit you are using, a wash step may be required here.\nIf you observe aggregates, filter the suspension.\nTo maximize yield, you can disrupt the aggregates by pipetting the solution up and down.\nResuspend the cells in appropriate amount of buffer.\nAt least 500 \u03bcL is needed for column separation,\u00a0Note: There are several types of commercially available columns, depending on your application, choose the one that fits best your experiment.\nSee 'Guidelines' for choosing a column for your experiment.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "single cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "ice cold cell separation buffer (MojoSort\u2122 buffer recommended)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pass",
+        "parameters": {
+          "container": "70 \u03bcm filter",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "300 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "cell separation buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "cell suspension",
+          "volume": "1 x 10^8 cells/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcL (10^7 cells)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pre-diluted Biotin-Antibody Cocktail",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell suspension + Biotin-Antibody Cocktail",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell suspension + Biotin-Antibody Cocktail",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell separation buffer",
+          "volume": "up to 4 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "300 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "cell separation buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "Streptavidin conjugated Nanobeads tube",
+          "reagent": "Streptavidin conjugated Nanobeads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "max speed, 5 touches",
+          "other": {
+            "purpose": "to resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "dilutions of Streptavidin conjugated Nanobeads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to test"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pre-diluted Streptavidin Nanobeads",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell suspension + Streptavidin Nanobeads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell suspension + Streptavidin Nanobeads",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if aggregates observed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "disrupt aggregates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "appropriate amount (at least 500 \u03bcL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "cell separation buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: single cell suspension, other: {'buffer': 'ice cold cell separation buffer (MojoSort\u2122 buffer recommended)'})\n# MANUAL: pass (container: 70 \u03bcm filter, reagent: cell suspension, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='cells', duration='5 minutes', speed='300 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', buffer='cell separation buffer')\n\n### MANUAL SECTION ###\n# MANUAL: adjust (reagent: cell suspension, volume: 1 x 10^8 cells/mL, other: {})\n\n### AUTOMATED SECTION ###\naliquot(container='new tube', reagent='cell suspension', volume='100 \u03bcL (10^7 cells)')\nadd(container='tube', reagent='pre-diluted Biotin-Antibody Cocktail', volume='10 \u03bcL')\nmix(container='tube', reagent='cell suspension + Biotin-Antibody Cocktail')\nincubate(container='tube', reagent='cell suspension + Biotin-Antibody Cocktail', temperature='on ice', duration='15 minutes')\nadd(container='tube', reagent='cell separation buffer', volume='up to 4 mL')\ncentrifuge(reagent='cells', duration='5 minutes', speed='300 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', volume='100 \u03bcL', buffer='cell separation buffer')\nvortex(container='Streptavidin conjugated Nanobeads tube', reagent='Streptavidin conjugated Nanobeads', speed='max speed, 5 touches', purpose='to resuspend')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: dilutions of Streptavidin conjugated Nanobeads, other: {'purpose': 'to test'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='pre-diluted Streptavidin Nanobeads', volume='10 \u03bcL')\nmix(container='tube', reagent='cell suspension + Streptavidin Nanobeads')\nincubate(container='tube', reagent='cell suspension + Streptavidin Nanobeads', temperature='on ice', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: filter (reagent: cell suspension, other: {'condition': 'if aggregates observed'})\n\n### AUTOMATED SECTION ###\npipette(reagent='cell suspension', purpose='disrupt aggregates')\nresuspend(reagent='cells', volume='appropriate amount (at least 500 \u03bcL)', buffer='cell separation buffer')",
+    "source_file": "protocol_250.txt"
+  }
+]

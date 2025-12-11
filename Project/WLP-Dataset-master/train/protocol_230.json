@@ -1,0 +1,85 @@
+[
+  {
+    "protocol": "Removal of Single-Stranded Extension using Mung Bean Nuclease (M0250)\nSuspend DNA (0.1 \u03bcg/\u03bcl) in 1X Mung Bean Nuclease Buffer or 1X NEBuffer 1.1, 2.1 or CutSmart.\nAdd 1.0 unit of Mung Bean Nuclease per \u03bcg DNA.\nIncubate at 30\u00b0C for 30 minutes.\nInactivate the enzyme by phenol/chloroform extraction or by addition of SDS to 0.01%.\nRecover the DNA by ethanol precipitation.",
+    "actions": [
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA (0.1 \u03bcg/\u03bcl)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X Mung Bean Nuclease Buffer or 1X NEBuffer 1.1, 2.1 or CutSmart"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Mung Bean Nuclease",
+          "volume": "1.0 unit per \u03bcg DNA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": "phenol/chloroform or SDS",
+          "volume": "SDS to 0.01%",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "phenol/chloroform extraction or addition of SDS"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "ethanol precipitation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsuspend(reagent='DNA (0.1 \u03bcg/\u03bcl)', buffer='1X Mung Bean Nuclease Buffer or 1X NEBuffer 1.1, 2.1 or CutSmart')\nadd(reagent='Mung Bean Nuclease', volume='1.0 unit per \u03bcg DNA')\nincubate(temperature='30\u00b0C', duration='30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: inactivate (reagent: phenol/chloroform or SDS, volume: SDS to 0.01%, other: {'method': 'phenol/chloroform extraction or addition of SDS'})\n# MANUAL: recover (reagent: DNA, other: {'method': 'ethanol precipitation'})",
+    "source_file": "protocol_230.txt"
+  }
+]

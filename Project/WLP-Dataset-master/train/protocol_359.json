@@ -1,0 +1,249 @@
+[
+  {
+    "protocol": "Protocol for washing and modifying QCM-D sensors\nPrepare solutions of 2% SDS, 0.1% SDS and 0.1 M HCl.\nClean\u00a0the gold-coated QCM-D sensors by hand with 2% SDS to mechanically remove contaminants.\nBe sure that the glove is wet all the time so it doesn't scratch the sensor!\nPlace the sensors in a stand and put them in a 0.1% SDS solution.\nHeat for 10 min at 80\u00b0C, then rinse the sensors with water.\nPlace the sensors in a 0.1 M HCl solution.\nHeat for 10 min at 80\u00b0C, then rinse the sensors with water several times to remove all HCl solution.\nThen blow the sensors dry under a flow of nitrogen.\nMake an ethanolic solution with total concentration 10 mM of mixed PEG thiols (PEG and biotin-PEG thiols in a molar ratio of 99:1).\n(MW, dS-PEG = 386.5 Da and MW, dS-PEG-biotin = 788.0 Da) Incubate the QCM-D sensors in the ethanolic PEG thiol\u00a0solution for at least 16 hours at 4\u00b0C in darkness.\nRinse the sensors a couple of times with ethanol, then a couple of times with milli-Q water and lastly blow them dry with nitrogen.\nThey may now be used or stored.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "2% SDS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.1% SDS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.1 M HCl solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "gold-coated QCM-D sensors",
+          "reagent": "2% SDS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by hand"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "sensors in stand",
+          "reagent": "0.1% SDS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "sensors in 0.1% SDS solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "0.1 M HCl solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "sensors in 0.1 M HCl solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "several"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "blow",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "ethanolic solution of mixed PEG thiols (PEG and biotin-PEG thiols in molar ratio 99:1)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "10 mM"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "QCM-D sensors",
+          "reagent": "ethanolic PEG thiol solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "at least 16 hours",
+          "speed": null,
+          "other": {
+            "condition": "darkness"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "a couple"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "milli-Q water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "a couple"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "blow",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 2% SDS solution, other: {})\n# MANUAL: prepare (reagent: 0.1% SDS solution, other: {})\n# MANUAL: prepare (reagent: 0.1 M HCl solution, other: {})\n# MANUAL: clean (container: gold-coated QCM-D sensors, reagent: 2% SDS, other: {'method': 'by hand'})\n# MANUAL: place (container: sensors in stand, reagent: 0.1% SDS solution, other: {})\n\n### AUTOMATED SECTION ###\nheat(container='sensors in 0.1% SDS solution', temperature='80\u00b0C', duration='10 min')\nrinse(container='sensors', reagent='water')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: sensors, reagent: 0.1 M HCl solution, other: {})\n\n### AUTOMATED SECTION ###\nheat(container='sensors in 0.1 M HCl solution', temperature='80\u00b0C', duration='10 min')\nrinse(container='sensors', reagent='water', times='several')\n\n### MANUAL SECTION ###\n# MANUAL: blow (container: sensors, reagent: nitrogen, other: {'method': 'flow'})\n# MANUAL: make (reagent: ethanolic solution of mixed PEG thiols (PEG and biotin-PEG thiols in molar ratio 99:1), other: {'concentration': '10 mM'})\n\n### AUTOMATED SECTION ###\nincubate(container='QCM-D sensors', reagent='ethanolic PEG thiol solution', temperature='4\u00b0C', duration='at least 16 hours', condition='darkness')\nrinse(container='sensors', reagent='ethanol', times='a couple')\nrinse(container='sensors', reagent='milli-Q water', times='a couple')\n\n### MANUAL SECTION ###\n# MANUAL: blow (container: sensors, reagent: nitrogen, other: {'method': 'flow'})",
+    "source_file": "protocol_359.txt"
+  }
+]

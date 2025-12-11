@@ -1,0 +1,83 @@
+[
+  {
+    "protocol": "How to make a 50 mg/ml Rifampicin Stock Solution\nWeigh 0.5 g of rifampicin.\nAdd 10 ml of 100% methanol.\nDissolve completely.\nStock may be kept at -20\u00b0C for 1 year.\nRifampicin may precipitate in the freezer.\nDissolve again before use.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "rifampicin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.5 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "100% methanol",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "rifampicin in methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": null,
+          "reagent": "rifampicin stock solution",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "1 year",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "rifampicin stock solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before_use": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: rifampicin, other: {'mass': '0.5 g'})\n\n### AUTOMATED SECTION ###\nadd(reagent='100% methanol', volume='10 ml')\ndissolve(reagent='rifampicin in methanol')\nkeep(reagent='rifampicin stock solution', temperature='-20\u00b0C', duration='1 year')\ndissolve(reagent='rifampicin stock solution', before_use=True)",
+    "source_file": "protocol_79.txt"
+  }
+]

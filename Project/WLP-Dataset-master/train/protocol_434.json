@@ -1,0 +1,189 @@
+[
+  {
+    "protocol": "T-maze phototaxis with LEDs\nClip wings of half of the flies.\nLet flies recover for 1 day (at 25\u00b0C, faster recovery).\nPut the flies in the T-maze (entrance tube) and let them adapt themselves to the machine and the darkness for 10 minutes.\nMove the flies into the elevator (the mobile part of the T-maze), and let them stay there for around 1 minute.\nMove the flies to the bottom of T-maze (taking down the elevator).\nNow they will have to make a decision between two different tubes: one is completely dark, and the other one has a LED in the bottom/is entirely transparent.\nWe are going to use different LEDs: White LEDs, Yellow LEDs, Green LEDs. \nWait for 30 seconds for the flies to make their decision, and lock them in the tubes that they have chosen (taking up the elevator).\nAnesthetize the flies\u00a0with CO2 and count them under the magnifying glass.",
+    "actions": [
+      {
+        "action": "clip",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "wings of half of the flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "let recover",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "1 day",
+          "speed": null,
+          "other": {
+            "subject": "flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "T-maze entrance tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "T-maze entrance tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "condition": "darkness",
+            "subject": "flies"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "T-maze elevator",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "T-maze elevator",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "subject": "flies"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "bottom of T-maze",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies",
+            "method": "taking down the elevator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "T-maze tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "subject": "flies making decision"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lock",
+        "parameters": {
+          "container": "T-maze tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies",
+            "method": "taking up the elevator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "anesthetize",
+        "parameters": {
+          "container": null,
+          "reagent": "CO2",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "subject": "flies",
+            "method": "under magnifying glass"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: clip (other: {'subject': 'wings of half of the flies'})\n# MANUAL: let recover (temperature: 25\u00b0C, duration: 1 day, other: {'subject': 'flies'})\n# MANUAL: put (container: T-maze entrance tube, other: {'subject': 'flies'})\n\n### AUTOMATED SECTION ###\nincubate(container='T-maze entrance tube', duration='10 minutes', condition='darkness', subject='flies')\n\n### MANUAL SECTION ###\n# MANUAL: move (container: T-maze elevator, other: {'subject': 'flies'})\n\n### AUTOMATED SECTION ###\nincubate(container='T-maze elevator', duration='1 minute', subject='flies')\n\n### MANUAL SECTION ###\n# MANUAL: move (container: bottom of T-maze, other: {'subject': 'flies', 'method': 'taking down the elevator'})\n\n### AUTOMATED SECTION ###\nwait(container='T-maze tubes', duration='30 seconds', subject='flies making decision')\n\n### MANUAL SECTION ###\n# MANUAL: lock (container: T-maze tubes, other: {'subject': 'flies', 'method': 'taking up the elevator'})\n# MANUAL: anesthetize (reagent: CO2, other: {'subject': 'flies'})\n# MANUAL: count (other: {'subject': 'flies', 'method': 'under magnifying glass'})",
+    "source_file": "protocol_434.txt"
+  }
+]

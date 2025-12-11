@@ -1,0 +1,506 @@
+[
+  {
+    "protocol": "Generating Cas9-mediated fluorescent protein knock-ins with a self-excising selection cassette (SEC)\nSee the Guidelines for: 1.\nChoosing the Cas9 targets site 2.\nAdding the target sequence to the Cas9\u2013sgRNA construct 3.\nDesigning primers to add homology arms to an FP\u2013SEC vector Grow bacteria carrying the FP\u2013SEC vector and miniprep the plasmid DNA.\nNote that, prior to replacing the ccdB elements with homology arms, FP\u2013SEC vectors must be grown in cells that are resistant to ccdB (ccdB Survival cells).\nDigest an entire miniprep of FP\u2013SEC vector overnight at 37\u00b0C (consult Table P1 for which construct and enzymes to use).\nPurify the digested vector using a PCR cleanup spin column to remove the enzymes.\nProcess the entire digested vector as one sample; do not attempt to gel purify individual bands.\nThe digested, purified vector may be stored at 4\u00b0C for at least a few months and reused to construct multiple repair templates.\nGenerate two PCR products (the homology arms) using genomic DNA as the template and the primers you designed above.\nMix the two PCR products and purify them together on a single PCR cleanup spin column.\nMix 1 \u00b5L of vector, 4 \u00b5L of homology arms and 5 \u00b5L of isothemal assembly enzyme mix (we use NEBuilder HiFi DNA assembly mix from NEB).\nIncubate 1h @ 50\u00b0C or as directed by the enzyme manufacturer.\nTransform 2 \u00b5L of the reaction to suitable competent cells.\nIsolate DNA from 3-6 clones and sequence with M13 Forward and Reverse primers to verify correct insertion of the homology arms.\nPrepare an injection mix containing the following: 10 ng/\u00b5L homologous repair template,\u00a050 ng/\u00b5L Cas9-sgRNA construct with your targeting sequence\u00a0Fluorescent co-injection markers (to label extrachromosomal arrays),\u00a0\u00a010 ng/\u00b5L pGH8 (Prab-3::mCherry neuronal co-injection marker; Addgene #19359),\u00a05 ng/\u00b5L pCFJ104 (Pmyo-3::mCherry body wall muscle co-injection marker; Addgene #19328),\u00a02.5 ng/\u00b5L pCFJ90 (Pmyo-2::mCherry pharyngeal co-injection marker; Addgene #19327). \nPrepare plasmid DNA using Invitrogen\u2019s PureLink mini-prep kit, which gives high injection efficiencies.\nInject the mixture into the gonads of 50-60 young adult worms of strain N2 (or substitute any strain you like).\nTransfer the injected worms to new seeded plates (three animals per plate works well in our hands).\nUse regular NGM plates (no drug) at this stage.\nAlso make a control plate with uninjected worms, so that when you do the drug selection it can serve as a negative control.\nPut the plates at 25\u00b0C and let the worms lay eggs without selection for 2-3 days.\nPrepare and filter sterilize a 5 mg/mL hygromycin solution in water.\nFor 6 cm plates poured with 10 mL agar plates, pipet 500 \u00b5L of drug onto the surface of each plate of worms, for a final concentration of ~250 \u00b5g/mL (if using different size plates, adjust the volume accordingly).\nSwirl gently so that the solution covers the entire surface of the plate, then let it dry.\nPut the worms back at 25\u00baC.\nExamine the plates and identify those that contain Roller (Rol) animals that survived the hygromycin treatment.\nCandidate knock-in animals are L4/adults that 1) survive hygromycin selection; 2) are Rol; and 3) lack the red fluorescent extrachromosomal array markers.\nSingle 5-10 candidate knock-in adults to new plates without hygromycin.\nLook for plates where 100% of L4s and adults are Rollers.\n(See the Guidelines for details.)\nPick 6-8 L1/L2 larvae to each of three new plates.\nIt is possible to perform marker excision using older animals, but using young larvae results in the highest efficiency because the germ cells have not yet begun to divide.\nHeat shock the plates at 34\u00b0C for 4 hours (or at 32\u00b0C for 4-5 hours) in an air incubator to activate expression of hs::Cre.\nReturn the plates to 20\u00b0C or 25\u00b0C.\nPick wild-type worms to new plates.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "culture flask or plate",
+          "reagent": "bacteria carrying FP\u2013SEC vector",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_type": "ccdB Survival cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "miniprep",
+        "parameters": {
+          "container": null,
+          "reagent": "plasmid DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Invitrogen PureLink mini-prep kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "FP\u2013SEC vector",
+          "volume": "entire miniprep",
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "enzymes": "consult Table P1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "PCR cleanup spin column",
+          "reagent": "digested vector",
+          "volume": "entire digested vector",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove enzymes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "digested, purified vector",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "at least a few months",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "generate",
+        "parameters": {
+          "container": null,
+          "reagent": "two PCR products (homology arms)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "template": "genomic DNA",
+            "primers": "designed above"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "two PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "PCR cleanup spin column",
+          "reagent": "mixed PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "vector, homology arms, isothemal assembly enzyme mix",
+          "volume": {
+            "vector": "1 \u00b5L",
+            "homology arms": "4 \u00b5L",
+            "enzyme mix": "5 \u00b5L"
+          },
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "enzyme": "NEBuilder HiFi DNA assembly mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "assembly reaction",
+          "volume": "10 \u00b5L",
+          "temperature": "50\u00b0C",
+          "duration": "1h or as directed by enzyme manufacturer",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "2 \u00b5L of assembly reaction",
+          "volume": "2 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "suitable competent cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA from 3-6 clones",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA from clones",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "primers": "M13 Forward and Reverse"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "injection mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": {
+              "homologous repair template": "10 ng/\u00b5L",
+              "Cas9-sgRNA construct": "50 ng/\u00b5L",
+              "pGH8": "10 ng/\u00b5L",
+              "pCFJ104": "5 ng/\u00b5L",
+              "pCFJ90": "2.5 ng/\u00b5L"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inject",
+        "parameters": {
+          "container": "gonads of worms",
+          "reagent": "injection mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "worms": "50-60 young adult worms of strain N2 or substitute"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "seeded plates",
+          "reagent": "injected worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "animals_per_plate": "three"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "NGM plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drug": "none"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": "control plate",
+          "reagent": "uninjected worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "2-3 days",
+          "speed": null,
+          "other": {
+            "selection": "none"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "5 mg/mL hygromycin solution in water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": "hygromycin solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "surface of each plate of worms",
+          "reagent": "hygromycin solution",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate_size": "6 cm",
+            "agar_volume": "10 mL",
+            "final_concentration": "~250 \u00b5g/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "plate",
+          "reagent": "hygromycin solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "cover entire surface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "plates",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phenotype": "Roller (Rol) animals"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "single",
+        "parameters": {
+          "container": "new plates without hygromycin",
+          "reagent": "5-10 candidate knock-in adults",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "look",
+        "parameters": {
+          "container": "plates",
+          "reagent": "L4s and adults",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phenotype": "100% Rollers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "three new plates",
+          "reagent": "6-8 L1/L2 larvae per plate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "plates",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": "34\u00b0C or 32\u00b0C",
+          "duration": "4 hours (34\u00b0C) or 4-5 hours (32\u00b0C)",
+          "speed": null,
+          "other": {
+            "incubator": "air incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": "20\u00b0C or 25\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "new plates",
+          "reagent": "wild-type worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: culture flask or plate, reagent: bacteria carrying FP\u2013SEC vector, other: {'cell_type': 'ccdB Survival cells'})\n\n### AUTOMATED SECTION ###\nminiprep(reagent='plasmid DNA', kit='Invitrogen PureLink mini-prep kit')\ndigest(reagent='FP\u2013SEC vector', volume='entire miniprep', temperature='37\u00b0C', duration='overnight', enzymes='consult Table P1')\npurify(container='PCR cleanup spin column', reagent='digested vector', volume='entire digested vector', purpose='remove enzymes')\nstore(reagent='digested, purified vector', temperature='4\u00b0C', duration='at least a few months')\ngenerate(reagent='two PCR products (homology arms)', template='genomic DNA', primers='designed above')\nmix(reagent='two PCR products')\npurify(container='PCR cleanup spin column', reagent='mixed PCR products')\nmix(reagent='vector, homology arms, isothemal assembly enzyme mix', volume={'vector': '1 \u00b5L', 'homology arms': '4 \u00b5L', 'enzyme mix': '5 \u00b5L'}, enzyme='NEBuilder HiFi DNA assembly mix')\nincubate(reagent='assembly reaction', volume='10 \u00b5L', temperature='50\u00b0C', duration='1h or as directed by enzyme manufacturer')\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: 2 \u00b5L of assembly reaction, volume: 2 \u00b5L, other: {'cells': 'suitable competent cells'})\n\n### AUTOMATED SECTION ###\nisolate(reagent='DNA from 3-6 clones')\nsequence(reagent='DNA from clones', primers='M13 Forward and Reverse')\nprepare(reagent='injection mix', components={'homologous repair template': '10 ng/\u00b5L', 'Cas9-sgRNA construct': '50 ng/\u00b5L', 'pGH8': '10 ng/\u00b5L', 'pCFJ104': '5 ng/\u00b5L', 'pCFJ90': '2.5 ng/\u00b5L'})\n\n### MANUAL SECTION ###\n# MANUAL: inject (container: gonads of worms, reagent: injection mix, other: {'worms': '50-60 young adult worms of strain N2 or substitute'})\n# MANUAL: transfer (container: seeded plates, reagent: injected worms, other: {'animals_per_plate': 'three'})\n\n### AUTOMATED SECTION ###\nprepare(container='NGM plates', drug='none')\n\n### MANUAL SECTION ###\n# MANUAL: make (container: control plate, reagent: uninjected worms)\n\n### AUTOMATED SECTION ###\nincubate(container='plates', reagent='worms', temperature='25\u00b0C', duration='2-3 days', selection='none')\nprepare(reagent='5 mg/mL hygromycin solution in water')\nfilter sterilize(reagent='hygromycin solution')\npipette(container='surface of each plate of worms', reagent='hygromycin solution', volume='500 \u00b5L', plate_size='6 cm', agar_volume='10 mL', final_concentration='~250 \u00b5g/mL')\n\n### MANUAL SECTION ###\n# MANUAL: swirl (container: plate, reagent: hygromycin solution, speed: gently, other: {'purpose': 'cover entire surface'})\n\n### AUTOMATED SECTION ###\ndry(container='plate')\nincubate(container='plates', reagent='worms', temperature='25\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: examine (container: plates, reagent: worms, other: {'phenotype': 'Roller (Rol) animals'})\n# MANUAL: single (container: new plates without hygromycin, reagent: 5-10 candidate knock-in adults)\n# MANUAL: look (container: plates, reagent: L4s and adults, other: {'phenotype': '100% Rollers'})\n# MANUAL: pick (container: three new plates, reagent: 6-8 L1/L2 larvae per plate)\n\n### AUTOMATED SECTION ###\nheat shock(container='plates', reagent='worms', temperature='34\u00b0C or 32\u00b0C', duration='4 hours (34\u00b0C) or 4-5 hours (32\u00b0C)', incubator='air incubator')\nincubate(container='plates', reagent='worms', temperature='20\u00b0C or 25\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: pick (container: new plates, reagent: wild-type worms)",
+    "source_file": "protocol_194.txt"
+  }
+]

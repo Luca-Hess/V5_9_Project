@@ -1,0 +1,160 @@
+[
+  {
+    "protocol": "CB-X\u2122 Protein Assay for simple aqueous samples\nChill CB-X\u2122 at -20\u00b0C.\nPrior to use, mix CB-X\u2122 Assay Dye by gently inverting the bottle several times.\nDO NOT SHAKE THE BOTTLE.\nDilute the supplied protein standards in the same buffer as your protein samples.\nWe recommend duplicates of 5-6 dilutions within the range of 0.1-1.0mg/ml.\nTransfer 50\u00b5l diluted protein standards and test samples to the assay tubes.\nSet up a blank containing 50\u00b5l of the buffer used to generate the standards.\nAdd 1ml CB-X\u2122 Assay Dye into each tube and mix well.\nIncubate for 5 minutes at room temperature.\nRead the absorbance at 595nm.\nPrepare a standard calibration plot for the determination of protein concentration of the unknown samples.",
+    "actions": [
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "CB-X\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "CB-X\u2122 Assay Dye bottle",
+          "reagent": "CB-X\u2122 Assay Dye",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle inversion",
+          "other": {
+            "method": "invert several times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "protein standards",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "same as protein samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "assay tubes",
+          "reagent": "diluted protein standards and test samples",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "buffer used to generate standards",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "blank"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "CB-X\u2122 Assay Dye",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "assay tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "595nm",
+            "measurement": "absorbance"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "standard calibration plot"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nchill(container='CB-X\u2122', temperature='-20\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: CB-X\u2122 Assay Dye bottle, reagent: CB-X\u2122 Assay Dye, speed: gentle inversion, other: {'method': 'invert several times'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='protein standards', buffer='same as protein samples')\ntransfer(container='assay tubes', reagent='diluted protein standards and test samples', volume='50\u00b5l')\nset up(container='assay tube', reagent='buffer used to generate standards', volume='50\u00b5l', purpose='blank')\nadd(container='each tube', reagent='CB-X\u2122 Assay Dye', volume='1ml')\nmix(container='each tube', speed='well')\nincubate(container='assay tubes', temperature='room temperature', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: read (container: assay tubes, other: {'wavelength': '595nm', 'measurement': 'absorbance'})\n# MANUAL: prepare (other: {'purpose': 'standard calibration plot'})",
+    "source_file": "protocol_339.txt"
+  }
+]

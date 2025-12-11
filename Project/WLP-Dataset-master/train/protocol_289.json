@@ -1,0 +1,517 @@
+[
+  {
+    "protocol": "Cesium Chloride Gradients\nPrepare cesium chloride densities of p1.2, p1.4, p1.5 and p1.65 in seawater (sw) that has been 0.02\u03bcm (or 0.2\u03bcm) filtered and autoclaved.\nPlace tube of prepared cesium on balance.  \nTare balance to 0. \nRemove 1ml with sterile pipet tip.\nLayer CsCl from the bottom using a gradient fractionator if you have one or by hand. \nCarefully layer on sample (~5ml can be layered with SW40 ~15ml with SW28).\nWeigh and balance tubes.\nCentrifuge using SW40 or SW28 Beckman rotor @ 24,000rpm for 4hr at 4\u00b0C. \nHave sterile 0.5ml tubes (SW40) or 1.5ml tubes (SW28) labeled 1-24 Open tubes in a rack.\nPlace tube on ring stand. \nPuncture about 2mm from the bottom side of the tube using a sterile 20 guage needle, bevel up.\nCollect droplets to fill each tube in order.\nPlace tube with sample on 4-place balance in holder.\nTare to 0.\nWith sterile pipet tip, remove 100\u00b5l.\nTake measurement.\nReturn sample to tube.\nRemove another 100\u00b5l, take measurement, return sample to tube.\nRemove yet another 100\u00b5l, take measurement, and return sample to tube.\nAfter all tubes have been measured, take average of the 3 values for each tube.\nMultiply by 10.\nPool and extract DNA or can confirm presence of virus first by staining 10\u00b5l with SYBR gold. \nCount under fluorescent scope.\nPool all samples with virus.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "cesium chloride in seawater (filtered and autoclaved)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "densities": [
+              "1.2",
+              "1.4",
+              "1.5",
+              "1.65 g/mL"
+            ],
+            "filtration": "0.02\u03bcm or 0.2\u03bcm",
+            "autoclaved": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube of prepared cesium",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "balance"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tare",
+        "parameters": {
+          "container": "balance",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "value": "0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube of prepared cesium",
+          "reagent": "cesium chloride solution",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "tube",
+          "reagent": "CsCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "from the bottom using gradient fractionator or by hand"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "tube (SW40 or SW28)",
+          "reagent": "sample",
+          "volume": "~5ml (SW40), ~15ml (SW28)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "carefully"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "balance",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes (SW40 or SW28 Beckman rotor)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "4hr",
+          "speed": "24,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "sterile 0.5ml tubes (SW40) or 1.5ml tubes (SW28)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": "1-24"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "tubes in rack",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "ring stand"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "puncture",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "2mm from bottom side",
+            "tool": "sterile 20 gauge needle, bevel up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "tubes (1-24)",
+          "reagent": "droplets",
+          "volume": "to fill each tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "in order"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "4-place balance in holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tare",
+        "parameters": {
+          "container": "balance",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "value": "0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "removed sample",
+          "reagent": null,
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "removed sample",
+          "reagent": null,
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "removed sample",
+          "reagent": null,
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "tube with sample",
+          "reagent": "sample",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "average",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "values": "3 measurements per tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "multiply",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "factor": "10"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "pooled sample",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "confirm",
+        "parameters": {
+          "container": "sample",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "staining 10\u00b5l with SYBR gold"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "sample",
+          "reagent": "SYBR gold",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "sample",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "fluorescent scope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "samples with virus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: cesium chloride in seawater (filtered and autoclaved), other: {'densities': ['1.2', '1.4', '1.5', '1.65 g/mL'], 'filtration': '0.02\u03bcm or 0.2\u03bcm', 'autoclaved': True})\n# MANUAL: place (container: tube of prepared cesium, other: {'location': 'balance'})\n# MANUAL: tare (container: balance, other: {'value': '0'})\n\n### AUTOMATED SECTION ###\nremove(container='tube of prepared cesium', reagent='cesium chloride solution', volume='1ml', tool='sterile pipet tip')\nlayer(container='tube', reagent='CsCl', method='from the bottom using gradient fractionator or by hand')\nlayer(container='tube (SW40 or SW28)', reagent='sample', volume='~5ml (SW40), ~15ml (SW28)', method='carefully')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: tubes, other: {})\n# MANUAL: balance (container: tubes, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tubes (SW40 or SW28 Beckman rotor)', temperature='4\u00b0C', duration='4hr', speed='24,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: sterile 0.5ml tubes (SW40) or 1.5ml tubes (SW28), other: {'labels': '1-24'})\n# MANUAL: open (container: tubes in rack, other: {})\n# MANUAL: place (container: tube, other: {'location': 'ring stand'})\n# MANUAL: puncture (container: tube, other: {'location': '2mm from bottom side', 'tool': 'sterile 20 gauge needle, bevel up'})\n\n### AUTOMATED SECTION ###\ncollect(container='tubes (1-24)', reagent='droplets', volume='to fill each tube', order='in order')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tube with sample, other: {'location': '4-place balance in holder'})\n# MANUAL: tare (container: balance, other: {'value': '0'})\n\n### AUTOMATED SECTION ###\nremove(container='tube with sample', reagent='sample', volume='100\u00b5l', tool='sterile pipet tip')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: removed sample, volume: 100\u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nreturn(container='tube with sample', reagent='sample', volume='100\u00b5l')\nremove(container='tube with sample', reagent='sample', volume='100\u00b5l', tool='sterile pipet tip')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: removed sample, volume: 100\u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nreturn(container='tube with sample', reagent='sample', volume='100\u00b5l')\nremove(container='tube with sample', reagent='sample', volume='100\u00b5l', tool='sterile pipet tip')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: removed sample, volume: 100\u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nreturn(container='tube with sample', reagent='sample', volume='100\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: average (container: tube, other: {'values': '3 measurements per tube'})\n# MANUAL: multiply (other: {'factor': '10'})\n\n### AUTOMATED SECTION ###\npool(container='tubes', reagent='samples')\n\n### MANUAL SECTION ###\n# MANUAL: extract (container: pooled sample, reagent: DNA, other: {})\n# MANUAL: confirm (container: sample, reagent: virus, other: {'method': 'staining 10\u00b5l with SYBR gold'})\n\n### AUTOMATED SECTION ###\nstain(container='sample', reagent='SYBR gold', volume='10\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: sample, reagent: virus, other: {'method': 'fluorescent scope'})\n\n### AUTOMATED SECTION ###\npool(container='samples with virus')",
+    "source_file": "protocol_289.txt"
+  }
+]

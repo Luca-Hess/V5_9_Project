@@ -1,0 +1,932 @@
+[
+  {
+    "protocol": "BMDM Salmonella Replication\nThe day before.\nInoculate 5 ml of TSB with 1 colony of Salmonella Typhimurium.\nIncubate on the wheel at 37C overnight.\nCollect BMDM using a cell scraper.\nTransfer the cells from one Petri dish to a 50-ml tube.\nCentrifuge 10 min at 1200 RPM.\nRemove and discard the supernatant.\nRe-suspend the cells using 3-ml syringe and needle (start with a 21 or 20 gauge needle and finish with 25 gauge in 2 ml RPMI + 10% FCS.\nCount BMDM using the Coulter Counter or a 1/5 dilution with Turks.\n(1.5ml Acetic acid, 48.5 ddH2O and Gentacin Violet \u2013 trace).\nAdjust with fresh cell culture medium the number of cells to a final concentration of 1x10^6 cells per ml.\nAliquot 500 \u03bcL (5x10^5 cells) per well for a 24-well plate.\nAliquot 3 mL (3x10^6 cells) per well for a 6-well plate.\nAnd 100ul for 96 well plate.\nIncubate o/n at 37C, 5% CO2.\nFor LDH, all the samples are in triplicate.\nThe day of the experiment:Inoculate 50 ml of TSB with 2 ml of the overnight culture of Salmonella.\nGrow at 37C with agitation until the OD at 600nm reaches 0.9 (it takes between 90-120 min).\nPlace the bacterial culture on ice and adjust the OD to 0.9 if needed.\nIn the meantime, prepare all the media which need to be kept at 37CMedium in which to add bacteriaPBS for the washesGentamicin +RPMI+10%FCSTitron and PBS for lysis Centrifuge two tubes of 1 ml (5 x 10^8 bact) of the bacterial culture and resuspend in 1 ml of saline or PBS or RPMI without FCS.\nUse Eppendorf tube and centrifuge in the cold room 3-4 min at 13000 RPM.\nVerify that the BMDM are healthy under the microscope.\nRemove the cell culture medium and replace it with RPMI and 10% FCSPer well:6-well plate: 3 ml RPMI +10%FCS and 60ul bacteria24-well plate: 500 \u03bcL RPMI +FCS and 10ul bacteria96 well plate: 100ul RPMI+10%FCS and 2ul bacteria(10 \u03bcL corresponds approximately to 5x10^6 bacteria; MOI of 10 bacteria/cell).\nFor a 6-well plate, prepare 20 ml of culture medium + 400 \u03bcl of washed bacteria.\nFor a 24-well plate, prepare 15 ml of culture medium + 300 \u03bcl of washed bacteria.\nFor a 96 well place, prepare 10ml of culture medium and 200ul of washed bacteria.\nBut for LDH, you only need to prepare enough for the Salmonella wells, not for all 96 wells.\nCentrifuge at 500g for 5 minutes at 25C Incubate 45 min at 37C, 5% CO2.\nDuring the incubation time, plate the infectious dose 10^-3 (100 \u03bcl), 10^-4 (100 \u03bcl) and 10^-5 (100 \u03bcl).\nAfter the incubation period, remove and discard the supernatant.\nWash the cells twice with PBS (preheated at 37C) (prepared before hand) using: 500 \u03bcl for 24-well plate and 10 ml for 6-well plate. 100ul for 96 well plate.\nAdd 500 \u03bcL (24-well plate) or 2 ml (6-well plate) RPMI 10% FCS without phenol for LDH (preheated at 37C) containing 100 \u03bcg/ml gentamicin.\nAdd an extra triplicate for medium.\nFor a 24-well plate, prepare 15 ml of culture medium + 150 \u03bcl of gentamicin 10 mg/ml.\nFor a 6-well plate, prepare 20 ml of culture medium + 200 \u03bcl of of gentamicin 10 mg/ml.\nFor a 96 well plate, prepare 15ml of culture medium + 150ul of gentamicin at 10mg/ml.\nThis corresponds to time 0 for LDH.\nStart timer for time points and 45 min prior to last time point for max rel.\nFor all time points: spin plate at 250g for 4min *keep on ice*. \nTake 50ul of supernatant for LDH into special LDH plates (can use multichanel) and keep on ice.\nTake 50ul for ELISA cytokine expression.\nLyse cells with 100ul of PBS-1% Titron X-100 (prepared in advance).\nTranfer 100ul to 2ml push cap tubes for plating.\nDilute 50ul in 450ul for 10^-1 and 10^-2#CFUs/50\u03bcl x 100 for LDH x dilution = CFUs per well.\nContinue on for Non LDH experiment: Incubate 1 hour at 37C, 5% CO2. \nAfter the incubation period, remove and discard the supernatant.\nWash the cells twice with PBS (preheated at 37C) using 500 \u03bcl for 24-well plate ml for 6-well plate.\nAdd 500 \u03bcL (24-well plate) or 2 ml (6-well plate) RPMI 10% FCS (preheated at 37C) containing 10 \u03bcg/ml gentamicin.\nFor a 24-well plate, prepare 15 ml of culture medium + 15 \u03bcl of gentamicin10 mg/ml.\nFor a 6-well plate, prepare 20 ml of culture medium + 20 \u03bcl of of gentamicin 10 mg/ml.\nPursue the incubation (1, 2, and 4 h).\nTime 0 corresponds to the time just after adding the RPMI containing 10\u03bcg/ml gentamicin.\nAt each time point, collect the supernatants for future cytokine ELISA assays and freeze them at -80C.\nLyse the cells with 500 \u03bcL PBS- 1%Triton X-100 and transfer the lysate to 4-ml push cap tube.\nDilute the lysate (10-1 to 10-3).\nSpread 100 \u03bcL of 10-2 and 10-3 dilutions on TSB Petri dishes and incubate overnight.\nThe day after: Count the CFUs taking into account the volume plated and the dilution.\n#CFUs/100\u03bcl x 500 x dilution = CFUs per well",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "5 ml tube or flask",
+          "reagent": "TSB + 1 colony Salmonella Typhimurium",
+          "volume": "5 ml TSB",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube or flask",
+          "reagent": "Salmonella Typhimurium in TSB",
+          "volume": "5 ml",
+          "temperature": "37C",
+          "duration": "overnight",
+          "speed": "wheel",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "BMDM",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "cell scraper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "50-ml tube",
+          "reagent": "BMDM cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "Petri dish"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50-ml tube",
+          "reagent": "BMDM cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "1200 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "50-ml tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "50-ml tube",
+          "reagent": "BMDM cells in RPMI + 10% FCS",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "3-ml syringe and needle (21/20 gauge start, 25 gauge finish)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "BMDM",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Coulter Counter or 1/5 dilution with Turks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "BMDM cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "1x10^6 cells/ml",
+            "medium": "fresh cell culture medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "BMDM cell suspension",
+          "volume": "500 \u03bcL (5x10^5 cells)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "BMDM cell suspension",
+          "volume": "3 ml (3x10^6 cells)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "BMDM cell suspension",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates (24-well, 6-well, 96-well)",
+          "reagent": "BMDM cells",
+          "volume": null,
+          "temperature": "37C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "50 ml tube or flask",
+          "reagent": "TSB + 2 ml overnight Salmonella culture",
+          "volume": "50 ml TSB + 2 ml culture",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube or flask",
+          "reagent": "Salmonella in TSB",
+          "volume": "50 ml",
+          "temperature": "37C",
+          "duration": "90-120 min (until OD600=0.9)",
+          "speed": "agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube or flask",
+          "reagent": "bacterial culture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "tube or flask",
+          "reagent": "bacterial culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD600": "0.9"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "media (RPMI+10%FCS, PBS, Gentamicin, Titron)",
+          "volume": null,
+          "temperature": "37C (for media to be kept warm)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "1 ml bacterial culture (5x10^8 bacteria)",
+          "volume": "1 ml",
+          "temperature": "cold room",
+          "duration": "3-4 min",
+          "speed": "13000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "bacterial pellet in saline or PBS or RPMI without FCS",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "verify",
+        "parameters": {
+          "container": "Petri dish/plate",
+          "reagent": "BMDM",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cell culture medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replace_with": "RPMI + 10% FCS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "RPMI + 10% FCS and bacteria",
+          "volume": "3 ml RPMI + 60 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "RPMI + 10% FCS and bacteria",
+          "volume": "500 \u03bcL RPMI + 10 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "RPMI + 10% FCS and bacteria",
+          "volume": "100 \u03bcL RPMI + 2 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "culture medium + washed bacteria",
+          "volume": "20 ml medium + 400 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "culture medium + washed bacteria",
+          "volume": "15 ml medium + 300 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "culture medium + washed bacteria",
+          "volume": "10 ml medium + 200 \u03bcl bacteria",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "25C",
+          "duration": "5 min",
+          "speed": "500g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37C",
+          "duration": "45 min",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "infectious dose dilutions",
+          "volume": "100 \u03bcl each (10^-3, 10^-4, 10^-5)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "PBS (preheated at 37C)",
+          "volume": "500 \u03bcl for 24-well, 10 ml for 6-well, 100 \u03bcl for 96-well",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin",
+          "volume": "500 \u03bcL",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "LDH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin",
+          "volume": "2 ml",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "LDH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin",
+          "volume": "100 \u03bcl",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "LDH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "culture medium + gentamicin 10 mg/ml",
+          "volume": "15 ml medium + 150 \u03bcl gentamicin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "culture medium + gentamicin 10 mg/ml",
+          "volume": "20 ml medium + 200 \u03bcl gentamicin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "culture medium + gentamicin 10 mg/ml",
+          "volume": "15 ml medium + 150 \u03bcl gentamicin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timer": "for time points and 45 min prior to last time point for max rel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "4 min",
+          "speed": "250g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "supernatant for LDH",
+          "volume": "50 \u03bcl",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "special LDH plates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "supernatant for ELISA",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "ELISA plates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "PBS-1% Triton X-100",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prepared_in_advance": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2 ml push cap tube",
+          "reagent": "lysate",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": "50 \u03bcl in 450 \u03bcl for 10^-1 and 10^-2",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "PBS (preheated at 37C)",
+          "volume": "500 \u03bcl for 24-well, ml for 6-well",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "RPMI 10% FCS (preheated at 37C) + 10 \u03bcg/ml gentamicin",
+          "volume": "500 \u03bcl",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "RPMI 10% FCS (preheated at 37C) + 10 \u03bcg/ml gentamicin",
+          "volume": "2 ml",
+          "temperature": "37C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "culture medium + gentamicin 10 mg/ml",
+          "volume": "15 ml medium + 15 \u03bcl gentamicin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": "culture medium + gentamicin 10 mg/ml",
+          "volume": "20 ml medium + 20 \u03bcl gentamicin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37C",
+          "duration": "1, 2, and 4 h",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "cytokine ELISA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "-80C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "PBS-1% Triton X-100",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "4-ml push cap tube",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilutions": "10^-1 to 10^-3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "TSB Petri dish",
+          "reagent": "10^-2 and 10^-3 lysate dilutions",
+          "volume": "100 \u03bcl each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "TSB Petri dish",
+          "reagent": "spread lysate dilutions",
+          "volume": null,
+          "temperature": "overnight",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "TSB Petri dish",
+          "reagent": "CFUs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "consider": "volume plated and dilution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 5 ml tube or flask, reagent: TSB + 1 colony Salmonella Typhimurium, volume: 5 ml TSB, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='tube or flask', reagent='Salmonella Typhimurium in TSB', volume='5 ml', temperature='37C', duration='overnight', speed='wheel')\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: Petri dish, reagent: BMDM, other: {'method': 'cell scraper'})\n\n### AUTOMATED SECTION ###\ntransfer(container='50-ml tube', reagent='BMDM cells', from='Petri dish')\ncentrifuge(container='50-ml tube', reagent='BMDM cells', duration='10 min', speed='1200 RPM')\nremove(container='50-ml tube', reagent='supernatant', discard=True)\n\n### MANUAL SECTION ###\n# MANUAL: resuspend (container: 50-ml tube, reagent: BMDM cells in RPMI + 10% FCS, volume: 2 ml, other: {'method': '3-ml syringe and needle (21/20 gauge start, 25 gauge finish)'})\n# MANUAL: count (reagent: BMDM, other: {'method': 'Coulter Counter or 1/5 dilution with Turks'})\n\n### AUTOMATED SECTION ###\nadjust(reagent='BMDM cells', final concentration='1x10^6 cells/ml', medium='fresh cell culture medium')\naliquot(container='24-well plate', reagent='BMDM cell suspension', volume='500 \u03bcL (5x10^5 cells)')\naliquot(container='6-well plate', reagent='BMDM cell suspension', volume='3 ml (3x10^6 cells)')\naliquot(container='96-well plate', reagent='BMDM cell suspension', volume='100 \u03bcL')\nincubate(container='plates (24-well, 6-well, 96-well)', reagent='BMDM cells', temperature='37C', duration='overnight', CO2='5%')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 50 ml tube or flask, reagent: TSB + 2 ml overnight Salmonella culture, volume: 50 ml TSB + 2 ml culture, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='tube or flask', reagent='Salmonella in TSB', volume='50 ml', temperature='37C', duration='90-120 min (until OD600=0.9)', speed='agitation')\nplace(container='tube or flask', reagent='bacterial culture', temperature='on ice')\nadjust(container='tube or flask', reagent='bacterial culture', OD600='0.9')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: media (RPMI+10%FCS, PBS, Gentamicin, Titron), temperature: 37C (for media to be kept warm), other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Eppendorf tube', reagent='1 ml bacterial culture (5x10^8 bacteria)', volume='1 ml', temperature='cold room', duration='3-4 min', speed='13000 RPM')\nresuspend(container='Eppendorf tube', reagent='bacterial pellet in saline or PBS or RPMI without FCS', volume='1 ml')\n\n### MANUAL SECTION ###\n# MANUAL: verify (container: Petri dish/plate, reagent: BMDM, other: {'method': 'microscope'})\n\n### AUTOMATED SECTION ###\nremove(container='well plate', reagent='cell culture medium', replace_with='RPMI + 10% FCS')\nadd(container='6-well plate', reagent='RPMI + 10% FCS and bacteria', volume='3 ml RPMI + 60 \u03bcl bacteria')\nadd(container='24-well plate', reagent='RPMI + 10% FCS and bacteria', volume='500 \u03bcL RPMI + 10 \u03bcl bacteria')\nadd(container='96-well plate', reagent='RPMI + 10% FCS and bacteria', volume='100 \u03bcL RPMI + 2 \u03bcl bacteria')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 6-well plate, reagent: culture medium + washed bacteria, volume: 20 ml medium + 400 \u03bcl bacteria, other: {})\n# MANUAL: prepare (container: 24-well plate, reagent: culture medium + washed bacteria, volume: 15 ml medium + 300 \u03bcl bacteria, other: {})\n# MANUAL: prepare (container: 96-well plate, reagent: culture medium + washed bacteria, volume: 10 ml medium + 200 \u03bcl bacteria, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='well plate', reagent='cells', temperature='25C', duration='5 min', speed='500g')\nincubate(container='well plate', reagent='cells', temperature='37C', duration='45 min', CO2='5%')\nplate(container='Petri dish', reagent='infectious dose dilutions', volume='100 \u03bcl each (10^-3, 10^-4, 10^-5)')\nremove(container='well plate', reagent='supernatant', discard=True)\nwash(container='well plate', reagent='PBS (preheated at 37C)', volume='500 \u03bcl for 24-well, 10 ml for 6-well, 100 \u03bcl for 96-well', temperature='37C', times=2)\nadd(container='24-well plate', reagent='RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin', volume='500 \u03bcL', temperature='37C', for='LDH')\nadd(container='6-well plate', reagent='RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin', volume='2 ml', temperature='37C', for='LDH')\nadd(container='96-well plate', reagent='RPMI 10% FCS (preheated at 37C) + 100 \u03bcg/ml gentamicin', volume='100 \u03bcl', temperature='37C', for='LDH')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 24-well plate, reagent: culture medium + gentamicin 10 mg/ml, volume: 15 ml medium + 150 \u03bcl gentamicin, other: {})\n# MANUAL: prepare (container: 6-well plate, reagent: culture medium + gentamicin 10 mg/ml, volume: 20 ml medium + 200 \u03bcl gentamicin, other: {})\n# MANUAL: prepare (container: 96-well plate, reagent: culture medium + gentamicin 10 mg/ml, volume: 15 ml medium + 150 \u03bcl gentamicin, other: {})\n# MANUAL: start (other: {'timer': 'for time points and 45 min prior to last time point for max rel'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='well plate', reagent='cells', temperature='on ice', duration='4 min', speed='250g')\ntake(container='well plate', reagent='supernatant for LDH', volume='50 \u03bcl', temperature='on ice', destination='special LDH plates')\ntake(container='well plate', reagent='supernatant for ELISA', volume='50 \u03bcl', destination='ELISA plates')\nlyse(container='well plate', reagent='PBS-1% Triton X-100', volume='100 \u03bcl', prepared_in_advance=True)\ntransfer(container='2 ml push cap tube', reagent='lysate', volume='100 \u03bcl')\ndilute(reagent='lysate', volume='50 \u03bcl in 450 \u03bcl for 10^-1 and 10^-2')\nincubate(container='well plate', reagent='cells', temperature='37C', duration='1 hour', CO2='5%')\nremove(container='well plate', reagent='supernatant', discard=True)\nwash(container='well plate', reagent='PBS (preheated at 37C)', volume='500 \u03bcl for 24-well, ml for 6-well', temperature='37C', times=2)\nadd(container='24-well plate', reagent='RPMI 10% FCS (preheated at 37C) + 10 \u03bcg/ml gentamicin', volume='500 \u03bcl', temperature='37C')\nadd(container='6-well plate', reagent='RPMI 10% FCS (preheated at 37C) + 10 \u03bcg/ml gentamicin', volume='2 ml', temperature='37C')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 24-well plate, reagent: culture medium + gentamicin 10 mg/ml, volume: 15 ml medium + 15 \u03bcl gentamicin, other: {})\n# MANUAL: prepare (container: 6-well plate, reagent: culture medium + gentamicin 10 mg/ml, volume: 20 ml medium + 20 \u03bcl gentamicin, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='well plate', reagent='cells', temperature='37C', duration='1, 2, and 4 h', CO2='5%')\ncollect(container='well plate', reagent='supernatant', for='cytokine ELISA')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: tube, reagent: supernatant, temperature: -80C, other: {})\n\n### AUTOMATED SECTION ###\nlyse(container='well plate', reagent='PBS-1% Triton X-100', volume='500 \u03bcl')\ntransfer(container='4-ml push cap tube', reagent='lysate')\ndilute(reagent='lysate', dilutions='10^-1 to 10^-3')\nspread(container='TSB Petri dish', reagent='10^-2 and 10^-3 lysate dilutions', volume='100 \u03bcl each')\nincubate(container='TSB Petri dish', reagent='spread lysate dilutions', temperature='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: TSB Petri dish, reagent: CFUs, other: {'consider': 'volume plated and dilution'})",
+    "source_file": "protocol_202.txt"
+  }
+]

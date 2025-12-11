@@ -1,0 +1,547 @@
+[
+  {
+    "protocol": "Immunoprecipitation using Protein A/G Magnetic Beads\nRinse a 60 mm culture dish of confluent cells with PBS.\nLyse the cells with 0.5 ml cold Immunoprecipitation Buffer.\nMaintain constant agitation for 30 minutes at 4\u00b0C.\nScrape the cells from the dish.\nSonicate on ice for 5 seconds; repeat 4 times.\nCentrifuge for 5 minutes at 4\u00b0C.\nAssay for total protein then adjust concentration to approximately 1 mg/ml with Immunoprecipitation Buffer.\nIn a 1.5 ml microcentrifuge tube, add 25 \u03bcl Protein A/G Magnetic Beads to 200 \u03bcl of crude cell extract.\nGently vortex.\nIncubate at 4\u00b0C for 1 hour.\nApply magnetic field for 30 seconds to pull beads to the side of the tube.\nPipette supernatant to a clean 1.5 ml microcentrifuge tube and discard the beads.\nAdd 1-5 \u03bcg of antibody to crude cell lysate.\nVortex.\nIncubate at 4\u00b0C for 1 hour.\nAdd 25 \u03bcl of Protein A/G Magnetic Beads suspension.\nGently vortex.\nIncubate with agitation for 1 hour at 4\u00b0C.\nApply magnetic field to pull beads to the side of the tube.\nCarefully pipette to remove supernatant.\n(wash #1) Wash with 500 \u03bcl of Immunoprecipitation Buffer by gentle vortex.\n(wash #1) Apply magnetic field then remove supernatant and discard.\n(wash #2) Wash with\u00a0500 \u03bcl\u00a0of Immunoprecipitation Buffer by gentle vortex.\n(wash #2) Apply magnetic field then remove supernatant and discard.\n(wash #3) Wash with\u00a0500 \u03bcl\u00a0of Immunoprecipitation Buffer by gentle vortex.\n(wash #3) Apply magnetic field then remove supernatant and discard.\nResuspend bead pellet in 30 \u03bcl of 3X SDS Sample Loading Buffer.\nIncubate sample at 70\u00b0C for 5 minutes.\nApply magnetic field to sample then load supernatant on SDS-PAGE gel and electrophorese.",
+    "actions": [
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "60 mm culture dish",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "60 mm culture dish",
+          "reagent": "Immunoprecipitation Buffer",
+          "volume": "0.5 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "culture dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": "constant",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "culture dish",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 seconds",
+          "speed": null,
+          "other": {
+            "repeat": "4 times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": null,
+          "reagent": "total protein",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "Immunoprecipitation Buffer",
+          "volume": "to approximately 1 mg/ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target concentration": "1 mg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "Protein A/G Magnetic Beads",
+          "volume": "25 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "200 \u03bcl of crude cell extract"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "field": "magnetic"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "clean 1.5 ml microcentrifuge tube",
+            "discard": "beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "antibody",
+          "volume": "1-5 \u03bcg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "crude cell lysate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Protein A/G Magnetic Beads suspension",
+          "volume": "25 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": "agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field": "magnetic"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove": "supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Immunoprecipitation Buffer",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vortex",
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field": "magnetic",
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove": "supernatant",
+            "discard": true,
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Immunoprecipitation Buffer",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vortex",
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field": "magnetic",
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove": "supernatant",
+            "discard": true,
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Immunoprecipitation Buffer",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vortex",
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field": "magnetic",
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove": "supernatant",
+            "discard": true,
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "3X SDS Sample Loading Buffer",
+          "volume": "30 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "bead pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field": "magnetic"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "SDS-PAGE gel",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "electrophorese",
+        "parameters": {
+          "container": "SDS-PAGE gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nrinse(container='60 mm culture dish', reagent='PBS')\nlyse(container='60 mm culture dish', reagent='Immunoprecipitation Buffer', volume='0.5 ml', temperature='cold')\nagitate(container='culture dish', temperature='4\u00b0C', duration='30 minutes', speed='constant')\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: culture dish, reagent: cells, other: {})\n# MANUAL: sonicate (temperature: on ice, duration: 5 seconds, other: {'repeat': '4 times'})\n\n### AUTOMATED SECTION ###\ncentrifuge(temperature='4\u00b0C', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: assay (reagent: total protein, other: {})\n\n### AUTOMATED SECTION ###\nadjust(reagent='Immunoprecipitation Buffer', volume='to approximately 1 mg/ml', target concentration='1 mg/ml')\nadd(container='1.5 ml microcentrifuge tube', reagent='Protein A/G Magnetic Beads', volume='25 \u03bcl', to='200 \u03bcl of crude cell extract')\nvortex(container='1.5 ml microcentrifuge tube', speed='gentle')\nincubate(container='1.5 ml microcentrifuge tube', temperature='4\u00b0C', duration='1 hour')\napply(container='1.5 ml microcentrifuge tube', duration='30 seconds', field='magnetic')\npipette(container='1.5 ml microcentrifuge tube', reagent='supernatant', to='clean 1.5 ml microcentrifuge tube', discard='beads')\nadd(reagent='antibody', volume='1-5 \u03bcg', to='crude cell lysate')\nvortex()\nincubate(temperature='4\u00b0C', duration='1 hour')\nadd(reagent='Protein A/G Magnetic Beads suspension', volume='25 \u03bcl')\nvortex(speed='gentle')\nincubate(temperature='4\u00b0C', duration='1 hour', speed='agitation')\napply(field='magnetic')\npipette(reagent='supernatant', remove='supernatant')\nwash(reagent='Immunoprecipitation Buffer', volume='500 \u03bcl', speed='gentle vortex', wash_number=1)\napply(field='magnetic', wash_number=1)\npipette(reagent='supernatant', remove='supernatant', discard=True, wash_number=1)\nwash(reagent='Immunoprecipitation Buffer', volume='500 \u03bcl', speed='gentle vortex', wash_number=2)\napply(field='magnetic', wash_number=2)\npipette(reagent='supernatant', remove='supernatant', discard=True, wash_number=2)\nwash(reagent='Immunoprecipitation Buffer', volume='500 \u03bcl', speed='gentle vortex', wash_number=3)\napply(field='magnetic', wash_number=3)\npipette(reagent='supernatant', remove='supernatant', discard=True, wash_number=3)\nresuspend(reagent='3X SDS Sample Loading Buffer', volume='30 \u03bcl', target='bead pellet')\nincubate(container='sample', temperature='70\u00b0C', duration='5 minutes')\napply(container='sample', field='magnetic')\nload(container='SDS-PAGE gel', reagent='supernatant')\nelectrophorese(container='SDS-PAGE gel')",
+    "source_file": "protocol_32.txt"
+  }
+]

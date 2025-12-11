@@ -1,0 +1,217 @@
+[
+  {
+    "protocol": "SYBR Green or Gold Staining\nMake dilution of virus prep in 0.02\u00b5m filtered seawater (100 kDa permeate if available).\nAdd diluted virus to 1 ml 0.02\u00a0\u00b5m filtered seawater and add 1\u00a0\u00b5l SYBR green or gold (10,000x stock) to solution.\nIncubate RT, in the dark for 15 min.\nPrepare 25mm SYBR towers: use 0.02\u00b5m Anodiscs, careful not to break membrane.\nFilter sample onto membrane (use vacuum).\nRinse tower in 1L Q-water in between samples and blot onto paper towel to dry.\nRemove membrane and place cell-side up on microscope slide.\nPipet 32\u00b5l 0.1% phenylenediamine (made in PBS/50% glycerol) on 22mm square coverslip.\nInvert over filter on microscope slide and press down to spread mounting medium.\nPlace slide at \u201320\u00b0C to enhance fluorescence.\nRead slides using 100x oil immersion objective and inverted fluorescent microscope.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "virus prep",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "0.02\u00b5m filtered seawater (100 kDa permeate if available)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "diluted virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "1 ml 0.02\u00b5m filtered seawater"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR green or gold (10,000x stock)",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "25mm SYBR towers",
+          "reagent": "0.02\u00b5m Anodiscs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "careful not to break membrane"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vacuum"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tower",
+          "reagent": "Q-water",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "between": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "tower",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "onto": "paper towel to dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "cell-side up on microscope slide"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "22mm square coverslip",
+          "reagent": "0.1% phenylenediamine (made in PBS/50% glycerol)",
+          "volume": "32 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "coverslip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "over": "filter on microscope slide",
+            "press": "down to spread mounting medium"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to enhance fluorescence"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "objective": "100x oil immersion",
+            "microscope": "inverted fluorescent microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='virus prep', diluent='0.02\u00b5m filtered seawater (100 kDa permeate if available)')\nadd(reagent='diluted virus', to='1 ml 0.02\u00b5m filtered seawater')\nadd(reagent='SYBR green or gold (10,000x stock)', volume='1 \u00b5l', to='solution')\nincubate(temperature='RT', duration='15 min', condition='in the dark')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 25mm SYBR towers, reagent: 0.02\u00b5m Anodiscs, other: {'note': 'careful not to break membrane'})\n# MANUAL: filter (container: membrane, reagent: sample, other: {'method': 'vacuum'})\n\n### AUTOMATED SECTION ###\nrinse(container='tower', reagent='Q-water', volume='1 L', between='samples')\n\n### MANUAL SECTION ###\n# MANUAL: blot (container: tower, other: {'onto': 'paper towel to dry'})\n# MANUAL: remove (container: membrane, other: {'place': 'cell-side up on microscope slide'})\n\n### AUTOMATED SECTION ###\npipette(container='22mm square coverslip', reagent='0.1% phenylenediamine (made in PBS/50% glycerol)', volume='32 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: coverslip, other: {'over': 'filter on microscope slide', 'press': 'down to spread mounting medium'})\n\n### AUTOMATED SECTION ###\nplace(container='slide', temperature='-20\u00b0C', purpose='to enhance fluorescence')\n\n### MANUAL SECTION ###\n# MANUAL: read (container: slides, other: {'objective': '100x oil immersion', 'microscope': 'inverted fluorescent microscope'})",
+    "source_file": "protocol_130.txt"
+  }
+]

@@ -1,0 +1,265 @@
+[
+  {
+    "protocol": "Western Blot - Whole Embryonic Sample\nCollect 100 embryos and place into eppendorf tube (1.5ml) containing 50ul of embryo wash. \nAdd 3 drops of bleach and let sit for 3 mins.\nRaise volume to 1.5ml using dH2O.\nSpin down for 1min. \nRemove solution.\nAdd 1.5ml of dH2O.\nSpin down 1min. \nRemove solution.\nAdd 1.5ml of dH2O.\nSpin down 1 min. \nRemove solution with micropipette.\nAdd 50ul of 1X PBS. \nAdd 50ul of 2X SDS SB Homogenize with pestle and 27ga needle. \nBoil for 5 mins at 98 degrees C. \nStore at -20 degrees C",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": "100 embryos",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "embryo wash",
+          "volume": "50ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "bleach",
+          "volume": "3 drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "dH2O",
+          "volume": "to 1.5ml (raise volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "dH2O",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "dH2O",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "micropipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "1X PBS",
+          "volume": "50ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": "2X SDS SB",
+          "volume": "50ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pestle and 27ga needle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "98C",
+          "duration": "5 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: 1.5ml eppendorf tube, volume: 100 embryos, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1.5ml eppendorf tube', reagent='embryo wash', volume='50ul')\nadd(container='1.5ml eppendorf tube', reagent='bleach', volume='3 drops')\nincubate(container='1.5ml eppendorf tube', duration='3 mins')\nadd(container='1.5ml eppendorf tube', reagent='dH2O', volume='to 1.5ml (raise volume)')\ncentrifuge(container='1.5ml eppendorf tube', duration='1 min')\nremove(container='1.5ml eppendorf tube', reagent='solution')\nadd(container='1.5ml eppendorf tube', reagent='dH2O', volume='1.5ml')\ncentrifuge(container='1.5ml eppendorf tube', duration='1 min')\nremove(container='1.5ml eppendorf tube', reagent='solution')\nadd(container='1.5ml eppendorf tube', reagent='dH2O', volume='1.5ml')\ncentrifuge(container='1.5ml eppendorf tube', duration='1 min')\nremove(container='1.5ml eppendorf tube', reagent='solution', tool='micropipette')\nadd(container='1.5ml eppendorf tube', reagent='1X PBS', volume='50ul')\nadd(container='1.5ml eppendorf tube', reagent='2X SDS SB', volume='50ul')\n\n### MANUAL SECTION ###\n# MANUAL: homogenize (container: 1.5ml eppendorf tube, other: {'tool': 'pestle and 27ga needle'})\n\n### AUTOMATED SECTION ###\nboil(container='1.5ml eppendorf tube', temperature='98C', duration='5 mins')\nstore(container='1.5ml eppendorf tube', temperature='-20C')",
+    "source_file": "protocol_381.txt"
+  }
+]

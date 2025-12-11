@@ -1,0 +1,97 @@
+[
+  {
+    "protocol": "Kane Lab Lyophilized Coffee\nPlace 1 cup of coffee (cream&sugar ok) in a (clean) lyophilization flask. \nFlash freeze by bathing flask, with hand rotation, in a bath of liquid nitrogen, until all liquid frozen. \nAttach to vacuum lyophilization system overnight. \nScrape lyophilized crystals into a clean coffee cup. \nAdd hot water, and enjoy!",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "lyophilization flask",
+          "reagent": "coffee (cream & sugar ok)",
+          "volume": "1 cup",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "lyophilization flask",
+          "reagent": "coffee",
+          "volume": "1 cup",
+          "temperature": "liquid nitrogen bath",
+          "duration": "until all liquid frozen",
+          "speed": "hand rotation",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "lyophilization flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "vacuum lyophilization system"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "lyophilization flask (attached to vacuum lyophilization system)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "lyophilization flask",
+          "reagent": "lyophilized crystals",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean coffee cup"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean coffee cup (with lyophilized crystals)",
+          "reagent": "hot water",
+          "volume": null,
+          "temperature": "hot",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: lyophilization flask, reagent: coffee (cream & sugar ok), volume: 1 cup, other: {})\n# MANUAL: freeze (container: lyophilization flask, reagent: coffee, volume: 1 cup, temperature: liquid nitrogen bath, duration: until all liquid frozen, speed: hand rotation, other: {})\n# MANUAL: attach (container: lyophilization flask, other: {'to': 'vacuum lyophilization system'})\n\n### AUTOMATED SECTION ###\nincubate(container='lyophilization flask (attached to vacuum lyophilization system)', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: lyophilization flask, reagent: lyophilized crystals, other: {'destination': 'clean coffee cup'})\n\n### AUTOMATED SECTION ###\nadd(container='clean coffee cup (with lyophilized crystals)', reagent='hot water', temperature='hot')",
+    "source_file": "protocol_314.txt"
+  }
+]

@@ -1,0 +1,109 @@
+[
+  {
+    "protocol": "Construction of pGGDestTol2LC-sgRNA vectors\nLigate the U6x:sgRNA cassettes into a pGGDestTol2LC vector by mixing the following components: \nIncubate mixture at 37 \u00b0C for 20 min. \nIncubate at 16\u00a0\u00b0C for 15min. \nIncubate at 80\u00a0\u00b0C for 15min. \nThe reaction is ready for transformation (use 5 \u00b5l of the ligation and plate 50% of the transformants).\nTransform and spread onto ampicillin (100 \u00b5g/ml) plates.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "U6x:sgRNA cassettes, pGGDestTol2LC vector",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "16\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "ampicillin plates",
+          "reagent": "transformants",
+          "volume": "50% of transformants",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ampicillin_concentration": "100 \u00b5g/ml"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='U6x:sgRNA cassettes, pGGDestTol2LC vector')\nincubate(container='mixture', temperature='37\u00b0C', duration='20 min')\nincubate(container='mixture', temperature='16\u00b0C', duration='15 min')\nincubate(container='mixture', temperature='80\u00b0C', duration='15 min')\npipette(reagent='ligation mixture', volume='5 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: transform (other: {})\n# MANUAL: spread (container: ampicillin plates, reagent: transformants, volume: 50% of transformants, other: {'ampicillin_concentration': '100 \u00b5g/ml'})",
+    "source_file": "protocol_501.txt"
+  }
+]

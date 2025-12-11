@@ -1,0 +1,788 @@
+[
+  {
+    "protocol": "BetaMark\u2122 x-42 ELISA Kit (Colorimetric) Protocol\nLabel (2) 1.5mL microcentrifuge tubes as intermediate #1 & 2. (use enclosed tubes). \nAdd 990uL of standard diluent to intermediate tubes #1 & 2.\nReconstitute one 20ug vial of 1-42 standard with 80uL of Standard Diluent.\nMix well by inversion.\nDo not vortex.\nConcentration will be 250ug/mL.\nIncubate 30 minutes at room temperature.\nNote: During 30 minute incubation; proceed thru the next 3 sections. \nAfter 30 minutes incubation, mix well by inversion, do not vortex.\nOnce reconstituted, standard must be used within the same day.\nAdd 10uL from the vial of reconstituted 1-42 standard to 990uL of standard diluent in intermediate tube #1.\nMixwell by inversion, do not vortex.\nRemove 10ml from intermediate #1 tube and add to 990mL of standard diluent in intermediate #2 tube.\nMix well by inversion, do not vortex.\nThe final concentration of standard in intermediate tube #2 will be 25ng/mL.\nLabel a 50mL centrifuge tube as \u201c1X Incubation Buffer\u201d. \nDilute 2X Incubation buffer to 1X by adding 10mL of 2X incubation buffer to 10mL of lab grade water* in the 50mL tube labeled \u201c1X Incubation Buffer\u201d.\n*Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization (RODI).\nMix well by vortexing.\nThis will be diluent for the standard curve and samples.\nLabel a 1L container \u201c1X Wash buffer\u201d.\nDilute 5X wash buffer to 1X for use.\nMix 125mL of 5X Wash buffer with 500mL of lab grade water for a total volume of 625mL.\nLabel (8) 1.5mL microcentrifuge tubes as #1-8 (use enclosed tubes).\nAliquot 240uL of the 1X incubation buffer (made previously in step II) to each of the standard curve tubes (#2-8) and 490mL to tube #1 (standard curve top point).\nRemove 10uL from intermediate #2 and add to 490uL 1X incubation buffer in tube #1 (this will be the top point of the standard curve, final concentration will be 250pg/mL).\nMix well by inversion, do not vortex.\nContinue making 1.8 fold serial dilutions by adding 300uL of the previous dilution to 240uL of 1X incubationbuffer in tubes #2-7.\nMix well by inversion between each dilution.\nDilute samples in 1X incubation buffer to 2X concentration.\nMix well by inversion.\nFor example, if the final sample dilution should be 1:10, dilute the sample 1:5 in 1X incubation buffer.\nThe sample will then be diluted 1:2 in step VII for a final dilution factor of 1:10.\nRun samples in duplicate or triplicate.\nNote: All sample matrices will perform differently in the kit.\nIt is important that you determine the ideal dilutionfor your particular sample type.\nIt is good practice to run 2-3 dilutions per sample to ensure at least 1 dilution falls within the range of the standard curve.\nFor most sample types, a good starting dilution would be 1:5-1:10.\nDue tothe format of the assay, samples are not able to run neat.\nLabel a 15mL tube as \u201cDiluted HRP Detection Antibody\u201d. \nAdd 6mL of 1X Incubation buffer to the tube labeled \u201cDiluted HRP Detection Antibody\u201d. \nAdd 6uL of HRP Detection Antibody and mix well by vortexing. \nRemove plate from foil pouch.\nRemove extra stripwells if necessary and store in resealable foil pouch at 2-8\u00b0C until use.\nAdd 300uL per well of 1X Wash Buffer.\nNote: Use of automated plate washer is highly recommended. \nDump out wash buffer and pat dry on paper towels.\nAdd 50uL of each standard to the plate in duplicate or triplicate.\nFollow the plate layout outlined in Table 3 below.\nNote: Wells E1-E3 contain the zero or blank sample (Std #8). \nAdd 50uL of each sample to the plate in duplicate or triplicate.\nAdd 50uL per well of diluted HRP detection antibody to all wells.\nCover plate with plate sealer.\nMix the plate gently on a plate shaker for one minute.\nIncubate overnight at 2-8\u00b0C.\nNOTE: Once diluted with 50uL of diluted HRP detection antibody, the final standard cuve concentrations will beoutlined in Table 4.\nPlease use these concentrations to generate your standard curve.\nRemove plate from refrigerator and dump contents if washing manually.\nWash plate 5X by adding 300uL 1X wash buffer per well.\nNote: Use of automated plate washer is highly recommended Mix chemiluminescent substrates for use:\u00a0\ni. Add 5.5mL of substrate A to a 50mL centrifuge tube.\nii. Add 5.5mL of substrate B to the same 50mL centrifuge tube.\nMix well by vortexing 3 X 2 seconds. \nAdd 100uL of mixed substrate per well.\nNotes: We recommend pouring substrate into a reservoir and use a multi-channel pipette to dispense.\nIf reading multiple plates add substrate one plate at a time, do not add substrate to all plates at the same time.\nAdd substrate to each plate immediately before reading.\nShake plate on either a plate shaker or using the shaking mechanism within the luminometer for 15 seconds.\nRead plate immediately.\nPlates must be read within 5 minutes of adding substrate.\nNotes: The recommended luminometer settings are to read at a mid-range sensitivity level for 1 secondper well.\nThese settings will vary between plate reader manufacturers, please consult your owner\u2019smanual prior to performing this assay.\nSee Biolegend.com for Preparation of Brain Samples for BetaMark\u2122 Beta Amyloid ELISA",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1.5mL microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": [
+              "intermediate #1",
+              "intermediate #2"
+            ],
+            "quantity": 2
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tubes #1 & #2 (1.5mL microcentrifuge tubes)",
+          "reagent": "standard diluent",
+          "volume": "990uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "20ug vial of 1-42 standard",
+          "reagent": "Standard Diluent",
+          "volume": "80uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "20ug vial of 1-42 standard",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "20ug vial of 1-42 standard (reconstituted)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "20ug vial of 1-42 standard (reconstituted)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": "reconstituted 1-42 standard",
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": "standard diluent",
+          "volume": "990uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": null,
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #2",
+          "reagent": "standard diluent",
+          "volume": "990uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #2",
+          "reagent": "removed 10uL from intermediate tube #1",
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "intermediate tube #2",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "50mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "1X Incubation Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL centrifuge tube labeled '1X Incubation Buffer'",
+          "reagent": "2X Incubation buffer",
+          "volume": "10mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL centrifuge tube labeled '1X Incubation Buffer'",
+          "reagent": "lab grade water",
+          "volume": "10mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "50mL centrifuge tube labeled '1X Incubation Buffer'",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1L container",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "1X Wash buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L container labeled '1X Wash buffer'",
+          "reagent": "5X Wash buffer",
+          "volume": "125mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L container labeled '1X Wash buffer'",
+          "reagent": "lab grade water",
+          "volume": "500mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1L container labeled '1X Wash buffer'",
+          "reagent": null,
+          "volume": "total 625mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1.5mL microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": [
+              "#1",
+              "#2",
+              "#3",
+              "#4",
+              "#5",
+              "#6",
+              "#7",
+              "#8"
+            ],
+            "quantity": 8
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "standard curve tubes (#2-8, 1.5mL microcentrifuge tubes)",
+          "reagent": "1X incubation buffer",
+          "volume": "240uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "tube #1 (standard curve top point, 1.5mL microcentrifuge tube)",
+          "reagent": "1X incubation buffer",
+          "volume": "490uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube #1 (standard curve top point)",
+          "reagent": "removed 10uL from intermediate #2",
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube #1 (standard curve top point)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "serial dilute",
+        "parameters": {
+          "container": "tubes #2-7 (1.5mL microcentrifuge tubes)",
+          "reagent": "previous dilution + 1X incubation buffer",
+          "volume": "300uL previous dilution + 240uL 1X incubation buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fold": "1.8"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes #2-7 (after each dilution)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": "1X incubation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "2X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "15mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "Diluted HRP Detection Antibody"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15mL tube labeled 'Diluted HRP Detection Antibody'",
+          "reagent": "1X Incubation buffer",
+          "volume": "6mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15mL tube labeled 'Diluted HRP Detection Antibody'",
+          "reagent": "HRP Detection Antibody",
+          "volume": "6uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15mL tube labeled 'Diluted HRP Detection Antibody'",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "1X Wash Buffer",
+          "volume": "300uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dump",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "wash buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pat dry on paper towels"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "each standard",
+          "volume": "50uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "duplicate or triplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "each sample",
+          "volume": "50uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "duplicate or triplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "diluted HRP detection antibody",
+          "volume": "50uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "plate sealer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "method": "plate shaker"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "2-8\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "refrigerator"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dump",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "contents",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "1X wash buffer",
+          "volume": "300uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL centrifuge tube",
+          "reagent": "substrate A",
+          "volume": "5.5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL centrifuge tube",
+          "reagent": "substrate B",
+          "volume": "5.5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "50mL centrifuge tube (substrate mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 x 2 seconds",
+          "speed": null,
+          "other": {
+            "method": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate wells",
+          "reagent": "mixed substrate",
+          "volume": "100uL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": null,
+          "other": {
+            "method": "plate shaker or luminometer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 second per well",
+          "speed": null,
+          "other": {
+            "instrument": "luminometer",
+            "sensitivity": "mid-range"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1.5mL microcentrifuge tubes, other: {'labels': ['intermediate #1', 'intermediate #2'], 'quantity': 2})\n\n### AUTOMATED SECTION ###\nadd(container='intermediate tubes #1 & #2 (1.5mL microcentrifuge tubes)', reagent='standard diluent', volume='990uL')\nreconstitute(container='20ug vial of 1-42 standard', reagent='Standard Diluent', volume='80uL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 20ug vial of 1-42 standard, other: {'method': 'inversion'})\n\n### AUTOMATED SECTION ###\nincubate(container='20ug vial of 1-42 standard (reconstituted)', temperature='room temperature', duration='30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 20ug vial of 1-42 standard (reconstituted), other: {'method': 'inversion'})\n\n### AUTOMATED SECTION ###\nadd(container='intermediate tube #1', reagent='reconstituted 1-42 standard', volume='10uL')\nadd(container='intermediate tube #1', reagent='standard diluent', volume='990uL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: intermediate tube #1, other: {'method': 'inversion'})\n\n### AUTOMATED SECTION ###\nremove(container='intermediate tube #1', volume='10uL')\nadd(container='intermediate tube #2', reagent='standard diluent', volume='990uL')\nadd(container='intermediate tube #2', reagent='removed 10uL from intermediate tube #1', volume='10uL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: intermediate tube #2, other: {'method': 'inversion'})\n# MANUAL: label (container: 50mL centrifuge tube, other: {'label': '1X Incubation Buffer'})\n\n### AUTOMATED SECTION ###\nadd(container=\"50mL centrifuge tube labeled '1X Incubation Buffer'\", reagent='2X Incubation buffer', volume='10mL')\nadd(container=\"50mL centrifuge tube labeled '1X Incubation Buffer'\", reagent='lab grade water', volume='10mL')\nmix(container=\"50mL centrifuge tube labeled '1X Incubation Buffer'\", method='vortexing')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1L container, other: {'label': '1X Wash buffer'})\n\n### AUTOMATED SECTION ###\nadd(container=\"1L container labeled '1X Wash buffer'\", reagent='5X Wash buffer', volume='125mL')\nadd(container=\"1L container labeled '1X Wash buffer'\", reagent='lab grade water', volume='500mL')\nmix(container=\"1L container labeled '1X Wash buffer'\", volume='total 625mL')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1.5mL microcentrifuge tubes, other: {'labels': ['#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8'], 'quantity': 8})\n\n### AUTOMATED SECTION ###\naliquot(container='standard curve tubes (#2-8, 1.5mL microcentrifuge tubes)', reagent='1X incubation buffer', volume='240uL')\naliquot(container='tube #1 (standard curve top point, 1.5mL microcentrifuge tube)', reagent='1X incubation buffer', volume='490uL')\nadd(container='tube #1 (standard curve top point)', reagent='removed 10uL from intermediate #2', volume='10uL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube #1 (standard curve top point), other: {'method': 'inversion'})\n\n### AUTOMATED SECTION ###\nserial dilute(container='tubes #2-7 (1.5mL microcentrifuge tubes)', reagent='previous dilution + 1X incubation buffer', volume='300uL previous dilution + 240uL 1X incubation buffer', fold='1.8')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tubes #2-7 (after each dilution), other: {'method': 'inversion'})\n\n### AUTOMATED SECTION ###\ndilute(container='sample tubes', reagent='1X incubation buffer', final concentration='2X')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: sample tubes, other: {'method': 'inversion'})\n# MANUAL: label (container: 15mL tube, other: {'label': 'Diluted HRP Detection Antibody'})\n\n### AUTOMATED SECTION ###\nadd(container=\"15mL tube labeled 'Diluted HRP Detection Antibody'\", reagent='1X Incubation buffer', volume='6mL')\nadd(container=\"15mL tube labeled 'Diluted HRP Detection Antibody'\", reagent='HRP Detection Antibody', volume='6uL')\nmix(container=\"15mL tube labeled 'Diluted HRP Detection Antibody'\", method='vortexing')\nadd(container='ELISA plate wells', reagent='1X Wash Buffer', volume='300uL per well')\n\n### MANUAL SECTION ###\n# MANUAL: dump (container: ELISA plate wells, reagent: wash buffer, other: {'method': 'pat dry on paper towels'})\n\n### AUTOMATED SECTION ###\nadd(container='ELISA plate wells', reagent='each standard', volume='50uL per well', replicates='duplicate or triplicate')\nadd(container='ELISA plate wells', reagent='each sample', volume='50uL per well', replicates='duplicate or triplicate')\nadd(container='ELISA plate wells', reagent='diluted HRP detection antibody', volume='50uL per well')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: ELISA plate, reagent: plate sealer)\n\n### AUTOMATED SECTION ###\nshake(container='ELISA plate', duration='1 minute', method='plate shaker')\nincubate(container='ELISA plate', temperature='2-8\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: ELISA plate, other: {'from': 'refrigerator'})\n# MANUAL: dump (container: ELISA plate wells, reagent: contents)\n\n### AUTOMATED SECTION ###\nwash(container='ELISA plate wells', reagent='1X wash buffer', volume='300uL per well', cycles=5)\nadd(container='50mL centrifuge tube', reagent='substrate A', volume='5.5mL')\nadd(container='50mL centrifuge tube', reagent='substrate B', volume='5.5mL')\nmix(container='50mL centrifuge tube (substrate mixture)', duration='3 x 2 seconds', method='vortexing')\nadd(container='ELISA plate wells', reagent='mixed substrate', volume='100uL per well')\nshake(container='ELISA plate', duration='15 seconds', method='plate shaker or luminometer')\nread(container='ELISA plate', duration='1 second per well', instrument='luminometer', sensitivity='mid-range')",
+    "source_file": "protocol_487.txt"
+  }
+]

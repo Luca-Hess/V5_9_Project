@@ -1,0 +1,649 @@
+[
+  {
+    "protocol": "Preparing Biological Samples for Column Chemistry\nFiltering Cultures\u00a01.1 Oxalate Wash Preparation\u00a0Before filtration, make an oxalate wash that will be used in order to remove extracellular iron from diatoms.\nMix consecutively from a to f in 600 ml of ultra pure.\nTake up to 1 L ultra pure once Ph 8 is reached.\n15.3g, EDTA; 14.7g, Sodium Citrate; 0.74g, Potassium Chloride; 5g, Sodium Chloride;\nSeveral drops of Sodium Hydroxide until a Ph of 6-712.6g, Oxalic Acid is 1.2. \nHarvest Diatoms Once They Have Been Filtered:\u00a0\nOnce cultures have been grown to their optimal density (approximately 3500 RFU), they need to be harvested.\nIn order to do so, the following items are needed: a pair of tweezers that have been cleaned in 10% HCl overnight, polycarbonate filters (0.1um) that have been washed in 10% HCl overnight and rinsed in UPW, 3 bottles: one to collect waste, one that contains ASW and one that contains UPW, oxalate wash, a 60ml syringe, and syringe filter tip.\nLabel several 15ml tubes with the designated solution numbers on them.\nOne tube should be labeled for unwashed solutions and a separate tube labeled for washed solutions.\nFor example, the tubes may say, \u201csolution 1#1 unwashed\u201d, \u201csolution 1#2 washed\u201d.\nOnce tubes are labeled, assemble the filtration apparatus.\nUse polyethylene gloves to handle the tweezers, remove one polycarbonate filter from its container and place on the filter rig.\nScrew the reservoir onto the filter rig and rinse the filter with UPW, allowing the water to be filtered through.\nPour 250ml of culture onto the filter and allow it to drain.\nRinse the filter three times with 5ml of ASW.\nOnce filter has completely drained, unscrew the reservoir with polyethylene gloves, remove the filter with tweezers, and place it in the corresponding 15ml tube that is labeled \u201cunwashed\u201d.\nSyringe filter 60ml of oxalate wash into the remaining 750ml of culture.\nInvert bottle once and allow to sit for 30min.\nInvert bottle a second time and place a new polycarbonate filter onto the filter rig, rinse with UPW and pour the remaining culture onto filter.\nRinse filter three times with 5ml ASW, drain completely, remove filter, and place in corresponding tube labeled \u201cwashed\u201d.\nRepeat these steps until all of the 1L bottles have been filtered.\nRinse tweezers with UPW as well as the filter rig, and put everything back in its place.\nRinse the bottles out with UPW and take them to the clean lab to be cleaned.\nAll cultures, once filtered, need to be run through columns in order to examine iron limitation.\nPreparation for Isotopic Analysis\u00a0Transfer filter to a clean 15 mL tube for storage.\nTransfer the filter into a small teflon (PFA) vial.\nAdd 1 mL conc.\nTE clean HCl and 1 mL conc.\nTE clean HNO3 to each vial.\nCAREFUL: This reaction will produce a corrosive and foul-smelling orange gas.\nPlace caps loosely on vials and place vials in a fume hood.\nIF YOU DECIDE TO PUT THEM ON A HOT PLATE, DO NOT TURN ON HEAT.\n(If hotplate is not available, find another good place to store them overnight in a fume hood.)\nAfter the samples have reacted overnight, remove the filters from the vials with a pair of teflon tweezers.\nTry to pick up the filter in a way that most of the remaining diatom shells remain on the filter.\nThe filter will also have a lot of the acid still in it, and this acid contains valuable amounts of Fe.\nRinse off this acid back into the PFA vial by twice pipetting 1 mL of TE H2O over each filter.\nEvaporate samples to dryness on a hot plate.\nReconstitute samples in 200 uL of 10N HCl +0.001% H2O2.\nCollect a subsample before samples are run through columns.\nRun samples through \u2018mini\u2019 columns (135 uL) according to established procedures.\nWhile running columns, clean each of your PFA vials by blasting then with TE water from the tap and putting them on the hot plate with 0.1 N HNO3 for an hour or two as columns run.\nElute from the columns into the same PFA vials your samples came out of.\nDry down overnight (or for a few hours).\nRe dissolve in 100ul of conc.\nHNO3\u00a0Put on hot plate in bio lab, capped, for 30min at 350.\nTake off hot plate in clean lab and put on hot plate in biological lab to dry down.\nReconstitute in 1100ul 0.1N HNO3\u00a0Take off 100ul of sample and dilute to 1ml with .1N HNO3, put in 15 ml vial.\nGive the sample from the step above to Tim to run on element.\n(This gives the concentration that allows you to calculate step 22).\nWhen you have calculated the amount of Fe in each sample, add enough double-spike to get a 1:2 sample: spike ratio.\nThe sample is ready for isotopic analysis.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "600 ml vessel",
+          "reagent": "EDTA, Sodium Citrate, Potassium Chloride, Sodium Chloride, Sodium Hydroxide, Oxalic Acid",
+          "volume": "600 ml ultra pure water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "consecutively from a to f"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1 L vessel",
+          "reagent": "ultra pure water",
+          "volume": "up to 1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "once pH 8 is reached"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "15 ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": "designated solution numbers, unwashed/washed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "filtration apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "polycarbonate filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "culture",
+          "volume": "250 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter",
+          "reagent": "ASW",
+          "volume": "5 ml x 3",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "tweezers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "15 ml tube labeled 'unwashed'",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "syringe filter",
+        "parameters": {
+          "container": "culture bottle",
+          "reagent": "oxalate wash",
+          "volume": "60 ml into 750 ml culture",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "syringe filter tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "culture bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "culture bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "culture bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "second time"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter",
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "new polycarbonate filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "remaining culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter",
+          "reagent": "ASW",
+          "volume": "5 ml x 3",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "tweezers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "15 ml tube labeled 'washed'",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tweezers",
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter rig",
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "bottles",
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean 15 ml tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "small teflon (PFA) vial",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "conc. TE clean HCl",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "conc. TE clean HNO3",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "fume hood",
+          "reagent": "PFA vial (loosely capped)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "teflon tweezers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "TE H2O",
+          "volume": "1 ml x 2",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "over": "filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "evaporate",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "hot plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "10N HCl + 0.001% H2O2",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "subsample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "mini columns (135 uL)",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "procedure": "established procedures"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "PFA vials",
+          "reagent": "TE water, 0.1 N HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 hours",
+          "speed": null,
+          "other": {
+            "method": "blast with TE water, hot plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "columns",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "same PFA vials"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight or few hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "conc. HNO3",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "350",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "location": "hot plate in bio lab, capped"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "hot plate in biological lab"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "0.1N HNO3",
+          "volume": "1100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sample",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "15 ml vial",
+          "reagent": "sample + 0.1N HNO3",
+          "volume": "to 1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "double-spike",
+          "volume": "enough for 1:2 sample:spike ratio",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(container='600 ml vessel', reagent='EDTA, Sodium Citrate, Potassium Chloride, Sodium Chloride, Sodium Hydroxide, Oxalic Acid', volume='600 ml ultra pure water', order='consecutively from a to f')\nadd(container='1 L vessel', reagent='ultra pure water', volume='up to 1 L', condition='once pH 8 is reached')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 15 ml tubes, other: {'labels': 'designated solution numbers, unwashed/washed'})\n# MANUAL: assemble (container: filtration apparatus, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='filter rig', reagent='UPW', filter='polycarbonate filter')\npour(container='filter rig', reagent='culture', volume='250 ml')\nrinse(container='filter', reagent='ASW', volume='5 ml x 3')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter rig, reagent: filter, other: {'tool': 'tweezers'})\n# MANUAL: place (container: 15 ml tube labeled 'unwashed', reagent: filter, other: {})\n\n### AUTOMATED SECTION ###\nsyringe filter(container='culture bottle', reagent='oxalate wash', volume='60 ml into 750 ml culture', tool='syringe filter tip')\ninvert(container='culture bottle', times='once')\nwait(container='culture bottle', duration='30 min')\ninvert(container='culture bottle', times='second time')\nrinse(container='filter', reagent='UPW', filter='new polycarbonate filter')\npour(container='filter rig', reagent='remaining culture')\nrinse(container='filter', reagent='ASW', volume='5 ml x 3')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter rig, reagent: filter, other: {'tool': 'tweezers'})\n# MANUAL: place (container: 15 ml tube labeled 'washed', reagent: filter, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='tweezers', reagent='UPW')\nrinse(container='filter rig', reagent='UPW')\nrinse(container='bottles', reagent='UPW')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: clean 15 ml tube, reagent: filter, other: {'purpose': 'storage'})\n# MANUAL: transfer (container: small teflon (PFA) vial, reagent: filter, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='PFA vial', reagent='conc. TE clean HCl', volume='1 ml')\nadd(container='PFA vial', reagent='conc. TE clean HNO3', volume='1 ml')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: fume hood, reagent: PFA vial (loosely capped), other: {})\n\n### AUTOMATED SECTION ###\nwait(container='PFA vial', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: PFA vial, reagent: filter, other: {'tool': 'teflon tweezers'})\n\n### AUTOMATED SECTION ###\npipette(container='PFA vial', reagent='TE H2O', volume='1 ml x 2', over='filter')\nevaporate(container='PFA vial', reagent='sample', method='hot plate')\nreconstitute(container='PFA vial', reagent='10N HCl + 0.001% H2O2', volume='200 uL')\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: PFA vial, reagent: subsample, other: {})\n\n### AUTOMATED SECTION ###\nrun(container='mini columns (135 uL)', reagent='sample', procedure='established procedures')\nclean(container='PFA vials', reagent='TE water, 0.1 N HNO3', duration='1-2 hours', method='blast with TE water, hot plate')\nelute(container='columns', reagent='sample', destination='same PFA vials')\ndry(container='PFA vial', reagent='sample', duration='overnight or few hours')\nreconstitute(container='PFA vial', reagent='conc. HNO3', volume='100 uL')\nincubate(container='PFA vial', reagent='sample', temperature='350', duration='30 min', location='hot plate in bio lab, capped')\ndry(container='PFA vial', reagent='sample', location='hot plate in biological lab')\nreconstitute(container='PFA vial', reagent='0.1N HNO3', volume='1100 uL')\n\n### MANUAL SECTION ###\n# MANUAL: take (container: PFA vial, reagent: sample, volume: 100 uL, other: {})\n\n### AUTOMATED SECTION ###\ndilute(container='15 ml vial', reagent='sample + 0.1N HNO3', volume='to 1 ml')\nadd(container='sample', reagent='double-spike', volume='enough for 1:2 sample:spike ratio')",
+    "source_file": "protocol_235.txt"
+  }
+]

@@ -1,0 +1,455 @@
+[
+  {
+    "protocol": "Glyoxal/borate and RNase T1-based detection of inosine residues in RNA\nIncubate for 45 min at 37 \u00b0C.\nDilute the reaction by adding an equal volume (100 \u03bcl) of 1 M sodium borate,\u00a0pH 7.5.\nImmediately precipitate with five volumes of 100% ethanol (relative to the diluted mixture; 1000 \u03bcl).\nSpin at >15,000 g for 30 minutes at 4 \u00b0C.\nDiscard the supernatant.A white pellet of 10-20 \u03bcl is expected to have formed.\nAdd 1 volume of 70% (aq.)\nethanol to wash the pellet.\nDirectly proceed to a spin at >15,000 g for 5 minutes at 4 \u00b0C.\nDiscard the supernatant.\nLet the pellet dry at room temperature, so that no traces of liquid remain (30-60 minutes).\nAlternatively, dry under vacuum for 10 minutes (without heating).\nSolubilize the pellet in 40 \u00b5l of Tris-borate buffer (10 mM Tris-HCl, pH 7.8; 1 M sodium borate, pH 7.5).\nThe final volume of the resuspended sample should be 47-48 \u00b5l.After adding the buffer, wait for 5-10 minutes before resuspending the pellet.\nThis makes the pellet less sticky and prevents sample loss.\nAdd RNase T1 to a desired final concentration.\nIf required, dilute the RNase in the Tris-borate buffer.\nUse the Tris-borate buffer to complete the volume to 50 \u00b5l.Optimize the amount using\u00a0the\u00a0enzyme concentration gradient by monitoring the progress of the reaction by a Northern blot or RT-PCR.\nIf the inosine content of the investigated site is close to 100%, 1000 U of RNase T1 will cut\u00a0essentially all molecules of a transcript present at ~0.5 pmol or less in 3 minutes at 37 \u00b0C.\nIncubate for 3 minutes at 37 \u00b0C.\nDilute the reaction with an equal volume of ice-cold RNase-free water and place on ice.\nPause point: Proceed directly to the next step or snap-freeze the reactions in liquid nitrogen and store at -80 \u00b0C.\nExtract the RNA, e.g.\nusing the home-made Trizol substitute (see the corresponding protocol:\u00a0RNA extraction using the 'home-made' Trizol substitute).\nSolubilize the pelleted RNA in 50 \u00b5l of 100 mM sodium phosphate pH 7.0.\nAdd an equal volume (50 \u03bcl) of 100% DMSO and mix well.\nDe-glyoxalate the RNA by incubating it for 3 hours at 65 \u00b0C (with gentle mixing every 15-30 minutes).\nDilute the reaction with an equal volume of ice-cold RNase-free water (100 \u03bcl).\nExtract the RNA, e.g. using the home-made Trizol substitute (see the corresponding protocol: RNA extraction using the 'home-made' Trizol substitute).\nResuspend the RNA in RNase-free water.\nStore at -80 \u00b0C or proceed directly to downstream analysis (Northern blot hybridization, primer extension, RT-PCR, RNA-Seq).",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "45 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "1 M sodium borate, pH 7.5",
+          "volume": "100 \u03bcl (equal volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": null,
+          "reagent": "100% ethanol",
+          "volume": "1000 \u03bcl (five volumes relative to diluted mixture)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "30 min",
+          "speed": ">15,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "70% ethanol (aq.)",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "5 min",
+          "speed": ">15,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30-60 min",
+          "speed": null,
+          "other": {
+            "until": "no traces of liquid remain"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "vacuum (no heating)",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "solubilize",
+        "parameters": {
+          "container": null,
+          "reagent": "Tris-borate buffer (10 mM Tris-HCl, pH 7.8; 1 M sodium borate, pH 7.5)",
+          "volume": "40 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {
+            "after": "adding buffer, before resuspending pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": "47-48 \u00b5l (final volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase T1",
+          "volume": "to desired final concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase T1",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "Tris-borate buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Tris-borate buffer",
+          "volume": "to complete volume to 50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "ice-cold RNase-free water",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 \u00b0C (liquid nitrogen)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "Trizol substitute",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "see corresponding protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "solubilize",
+        "parameters": {
+          "container": null,
+          "reagent": "100 mM sodium phosphate pH 7.0",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pelleted RNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "100% DMSO",
+          "volume": "50 \u00b5l (equal volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "well": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": "65 \u00b0C",
+          "duration": "3 hours",
+          "speed": null,
+          "other": {
+            "with": "gentle mixing every 15-30 min"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "interval": "every 15-30 min during incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "ice-cold RNase-free water",
+          "volume": "100 \u03bcl (equal volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "Trizol substitute",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "see corresponding protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase-free water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "RNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "or": "proceed directly to downstream analysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(temperature='37 \u00b0C', duration='45 min')\ndilute(reagent='1 M sodium borate, pH 7.5', volume='100 \u03bcl (equal volume)')\nprecipitate(reagent='100% ethanol', volume='1000 \u03bcl (five volumes relative to diluted mixture)')\ncentrifuge(temperature='4 \u00b0C', duration='30 min', speed='>15,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='70% ethanol (aq.)', volume='1 volume', to='pellet')\ncentrifuge(temperature='4 \u00b0C', duration='5 min', speed='>15,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n# MANUAL: dry (reagent: pellet, temperature: room temperature, duration: 30-60 min, other: {'until': 'no traces of liquid remain'})\n# MANUAL: dry (reagent: pellet, temperature: vacuum (no heating), duration: 10 min, other: {})\n\n### AUTOMATED SECTION ###\nsolubilize(reagent='Tris-borate buffer (10 mM Tris-HCl, pH 7.8; 1 M sodium borate, pH 7.5)', volume='40 \u00b5l', to='pellet')\nwait(duration='5-10 min', after='adding buffer, before resuspending pellet')\nresuspend(reagent='pellet', volume='47-48 \u00b5l (final volume)')\nadd(reagent='RNase T1', volume='to desired final concentration')\ndilute(reagent='RNase T1', diluent='Tris-borate buffer')\nadd(reagent='Tris-borate buffer', volume='to complete volume to 50 \u00b5l')\nincubate(temperature='37 \u00b0C', duration='3 min')\ndilute(reagent='ice-cold RNase-free water', volume='equal volume')\nplace(temperature='on ice')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (temperature: -80 \u00b0C (liquid nitrogen), other: {})\n# MANUAL: extract (reagent: Trizol substitute, other: {'method': 'see corresponding protocol'})\n\n### AUTOMATED SECTION ###\nsolubilize(reagent='100 mM sodium phosphate pH 7.0', volume='50 \u00b5l', to='pelleted RNA')\nadd(reagent='100% DMSO', volume='50 \u00b5l (equal volume)')\nmix(well=True)\nincubate(reagent='RNA', temperature='65 \u00b0C', duration='3 hours', with='gentle mixing every 15-30 min')\nmix(speed='gentle', interval='every 15-30 min during incubation')\ndilute(reagent='ice-cold RNase-free water', volume='100 \u03bcl (equal volume)')\n\n### MANUAL SECTION ###\n# MANUAL: extract (reagent: Trizol substitute, other: {'method': 'see corresponding protocol'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='RNase-free water', to='RNA')\n\n### MANUAL SECTION ###\n# MANUAL: store (temperature: -80 \u00b0C, other: {'or': 'proceed directly to downstream analysis'})",
+    "source_file": "protocol_355.txt"
+  }
+]

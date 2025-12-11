@@ -1,0 +1,421 @@
+[
+  {
+    "protocol": "FASP Kit Protocol-ORNL Developed for Bacteriophage\nPrepare Urea/SDS Solution.\nTransfer Urea solution + sample to spin filter.\nCentrifuge at 14,000 x g for 15 min.\nAdd 200\u00b5L fresh Urea solution (no DTT, no SDS).\nCentrifuge at 14,000 x g for 15 min.\nDiscard flow\u00ad\u2010through.\nAdd 10\u00b5L iodoacetamide solution and 90\u00b5L Urea solution (no DTT, no SDS).\nVortex for 1 min, then incubate without mixing for 20 min in the dark.\nCentrifuge at 14,000 x g for 10 min.\nAdd 100\u00b5L Urea solution (no DTT, no SDS).\nCentrifuge at 14,000 x g for 15 min.\nRepeat this step twice.\nDiscard flow\u00ad\u2010through.\nAdd 100\u00b5L 50mM ammonium bicarbonate solution (provided with FASP kit).\nCentrifuge at 14,000 x g for 15 min.\nTransfer filter to new collection tube.\nAdd 75\u00b5L digestion solution.\nVortex briefly.\nIncubate at 37\u00b0C for 4 \u2013 18 hours (NO ROCKING). \nAdd 40\u00b5L 50mM ammonium bicarbonate solution.\nCentrifuge at 14,000 x g for 10 min.\nRepeat this step once.\nAdd 50\u00b5L 0.5 M sodium chloride solution (provided with FASP kit).\nCentrifuge at 14,000 x g for 10 min.\nFiltrate contains digested proteins.\nAdd 170\u00b5L* H\u2082O + formic acid.\nAliquot (150\u00b5L x 2)*, freeze",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Urea/SDS Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "Urea solution + sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "fresh Urea solution (no DTT, no SDS)",
+          "volume": "200\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "iodoacetamide solution",
+          "volume": "10\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "Urea solution (no DTT, no SDS)",
+          "volume": "90\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 min",
+          "speed": "no mixing",
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "Urea solution (no DTT, no SDS)",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "50mM ammonium bicarbonate solution (provided with FASP kit)",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new collection tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": "digestion solution",
+          "volume": "75\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "4\u201318 hours",
+          "speed": "no rocking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": "50mM ammonium bicarbonate solution",
+          "volume": "40\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": "0.5 M sodium chloride solution (provided with FASP kit)",
+          "volume": "50\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filter (in new collection tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filtrate",
+          "reagent": "H\u2082O + formic acid",
+          "volume": "170\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "filtrate",
+          "reagent": null,
+          "volume": "150\u00b5L x 2",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "aliquots",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Urea/SDS Solution, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='spin filter', reagent='Urea solution + sample')\ncentrifuge(container='spin filter', duration='15 min', speed='14,000 x g')\nadd(container='spin filter', reagent='fresh Urea solution (no DTT, no SDS)', volume='200\u00b5L')\ncentrifuge(container='spin filter', duration='15 min', speed='14,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: spin filter, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='spin filter', reagent='iodoacetamide solution', volume='10\u00b5L')\nadd(container='spin filter', reagent='Urea solution (no DTT, no SDS)', volume='90\u00b5L')\nvortex(container='spin filter', duration='1 min')\nincubate(container='spin filter', duration='20 min', speed='no mixing', light='in the dark')\ncentrifuge(container='spin filter', duration='10 min', speed='14,000 x g')\nadd(container='spin filter', reagent='Urea solution (no DTT, no SDS)', volume='100\u00b5L')\ncentrifuge(container='spin filter', duration='15 min', speed='14,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (container: spin filter, other: {'times': '2'})\n# MANUAL: discard (container: spin filter, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='spin filter', reagent='50mM ammonium bicarbonate solution (provided with FASP kit)', volume='100\u00b5L')\ncentrifuge(container='spin filter', duration='15 min', speed='14,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: new collection tube, reagent: filter, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='filter (in new collection tube)', reagent='digestion solution', volume='75\u00b5L')\nvortex(container='filter (in new collection tube)', duration='briefly')\nincubate(container='filter (in new collection tube)', temperature='37\u00b0C', duration='4\u201318 hours', speed='no rocking')\nadd(container='filter (in new collection tube)', reagent='50mM ammonium bicarbonate solution', volume='40\u00b5L')\ncentrifuge(container='filter (in new collection tube)', duration='10 min', speed='14,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (container: filter (in new collection tube), other: {'times': '1'})\n\n### AUTOMATED SECTION ###\nadd(container='filter (in new collection tube)', reagent='0.5 M sodium chloride solution (provided with FASP kit)', volume='50\u00b5L')\ncentrifuge(container='filter (in new collection tube)', duration='10 min', speed='14,000 x g')\nadd(container='filtrate', reagent='H\u2082O + formic acid', volume='170\u00b5L')\naliquot(container='filtrate', volume='150\u00b5L x 2')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: aliquots, other: {})",
+    "source_file": "protocol_535.txt"
+  }
+]

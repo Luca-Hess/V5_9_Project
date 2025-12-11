@@ -1,0 +1,376 @@
+[
+  {
+    "protocol": "Viruses from Sulfolobus and close relatives\nFor each sample to be collected, one anaerobic collection vessel (Fig 1A in guidelines) is prepared.\nA small amount (ca. 50\u2013220 mg) of elemental sulfur (e.g., Riedel-deHa\u00ebn) is placed in an anaerobic tube.\n0.1 mL of a 2% resazurin solution and 0.1 mL of water saturated with H2S are added.\nThe air in the tube is displaced with CO2 and N2 by the Hungate technique and the tube is stoppered (Hungate et al. 1966).\nA cap is placed on the tube and the assemblage autoclaved.\nLiquid and wet sediment samples are collected from turbid terrestrial hot springs with high temperature > 70\u02daC and low pH < 4.\nSamples are collected in sterile 50-mL conical flasks at the end of an extendible pole with a clamp (see Fig. 1A in guidelines).\nAfter most of the sediment is allowed to settle, the pH of the liquid is carefully adjusted to ca. 5.5 with solid CaCO3 by slow addition and stirring.\nOnce the pH is adjusted the sample is transferred to a pre-prepared anaerobic tube using a syringe (see above and Fig. 1A in guidelines).\nIf the resazurin indicator changes to pink, drops of H2S-saturated water are added until the sample clears.\nSamples can be maintained for up to 2 weeks at room temperature before enrichment.\nSamples collected either in anaerobic tubes or filled centrifuge tubes are diluted 1:50 or 1:100 in Sulfolobus growth medium* (Zillig et al. 1994).\nIncubate samples at 80\u02daC with shaking (150 rpm) for up to 2 weeks.\nThe medium was buffered with 0.7 g glycine per liter and the pH was adjusted to pH 3\u20133.5 with 1:2 diluted sulfuric acid.\nFor long-term 80\u02daC growth, our favorite bath liquid is PEG 400, which is a noncorrosive, nontoxic, water soluble compound that does not evaporate (see Fig. 1B in guidelines).\nWhen growth is detected by either an increase in turbidity or production of a characteristic \u201cdamp sock\u201d odor (W. Zillig pers. comm.), samples are plated on Gelrite\u00ae plates (see below and Fig. lC in guidelines), rediluted 1:50, and screened for VLP production by a spot-onlawn assay (see below and Fig. 1D in guidelines) or electron microscopy (see below and Fig. 2 in guidelines).\nThe second round of enrichment culture is also plated and screened for virus production.\nPlates are made by slowly adding 6\u201310 grams/L Gelrite (Kelco) to Sulfolobus media (see above) and boiling until dissolved.\nCalcium (Ca(NO3)2) and magnesium (MgCl2) are added to a final concentration of 1.5 and 5 mM, respectively, to stabilize the gel.\nBefore the gel solidifies, ca. 25 mL is poured into standard (90 mm) Petri plates with cams.\nAfter the Gelrite solidifies, plates can be stored at 4\u02daC indefinitely.\nApproximately 0.1 mL, from undiluted to 10-3, of enrichment cultures are spread on Gelrite plates in the presence or absence of 0.5 mL 0.2% Gelrite dissolved in Sulfolobus medium.\nPlates are incubated inverted in airtight moist containers at 75\u201380\u02daC for approximately 1 week before colonies appear (Fig. 1C in guidelines).",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "anaerobic collection vessel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "elemental sulfur",
+          "volume": "50\u2013220 mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "2% resazurin solution",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "water saturated with H2S",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "displace",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "air (with CO2 and N2)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "technique": "Hungate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "stopper",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "anaerobic tube (with cap)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "sterile 50-mL conical flasks",
+          "reagent": "liquid and wet sediment samples",
+          "volume": null,
+          "temperature": ">70\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "<4",
+            "tool": "extendible pole with clamp"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "sterile 50-mL conical flasks",
+          "reagent": "sediment",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "settle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "sterile 50-mL conical flasks",
+          "reagent": "solid CaCO3",
+          "volume": "to ca. pH 5.5",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "slow addition and stirring"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "pre-prepared anaerobic tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "syringe"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "H2S-saturated water",
+          "volume": "drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if resazurin indicator changes to pink"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "maintain",
+        "parameters": {
+          "container": "anaerobic tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "up to 2 weeks",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "anaerobic tubes or filled centrifuge tubes",
+          "reagent": "Sulfolobus growth medium",
+          "volume": "1:50 or 1:100",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u02daC",
+          "duration": "up to 2 weeks",
+          "speed": "150 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "buffer",
+        "parameters": {
+          "container": "medium",
+          "reagent": "glycine",
+          "volume": "0.7 g/L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "medium",
+          "reagent": "1:2 diluted sulfuric acid",
+          "volume": "to pH 3\u20133.5",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Sulfolobus media",
+          "reagent": "Gelrite",
+          "volume": "6\u201310 g/L",
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "Sulfolobus media with Gelrite",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boiling",
+          "duration": "until dissolved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Sulfolobus media with dissolved Gelrite",
+          "reagent": "Ca(NO3)2 and MgCl2",
+          "volume": "final concentration 1.5 mM Ca(NO3)2, 5 mM MgCl2",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "stabilize gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "standard (90 mm) Petri plates with cams",
+          "reagent": "Gelrite solution",
+          "volume": "ca. 25 mL",
+          "temperature": "before gel solidifies",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Gelrite plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": "indefinitely",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "Gelrite plates",
+          "reagent": "enrichment cultures (undiluted to 10^-3)",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "presence": "0.5 mL 0.2% Gelrite dissolved in Sulfolobus medium (optional)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Gelrite plates (inverted in airtight moist containers)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u201380\u02daC",
+          "duration": "approximately 1 week",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: anaerobic collection vessel, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='anaerobic tube', reagent='elemental sulfur', volume='50\u2013220 mg')\nadd(container='anaerobic tube', reagent='2% resazurin solution', volume='0.1 mL')\nadd(container='anaerobic tube', reagent='water saturated with H2S', volume='0.1 mL')\n\n### MANUAL SECTION ###\n# MANUAL: displace (container: anaerobic tube, reagent: air (with CO2 and N2), other: {'technique': 'Hungate'})\n# MANUAL: stopper (container: anaerobic tube, other: {})\n# MANUAL: place (container: anaerobic tube, reagent: cap, other: {})\n\n### AUTOMATED SECTION ###\nautoclave(container='anaerobic tube (with cap)')\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: sterile 50-mL conical flasks, reagent: liquid and wet sediment samples, temperature: >70\u02daC, other: {'pH': '<4', 'tool': 'extendible pole with clamp'})\n# MANUAL: allow (container: sterile 50-mL conical flasks, reagent: sediment, other: {'action': 'settle'})\n\n### AUTOMATED SECTION ###\nadjust(container='sterile 50-mL conical flasks', reagent='solid CaCO3', volume='to ca. pH 5.5', method='slow addition and stirring')\ntransfer(container='pre-prepared anaerobic tube', reagent='sample', tool='syringe')\nadd(container='anaerobic tube', reagent='H2S-saturated water', volume='drops', condition='if resazurin indicator changes to pink')\nmaintain(container='anaerobic tube', reagent='sample', temperature='room temperature', duration='up to 2 weeks')\ndilute(container='anaerobic tubes or filled centrifuge tubes', reagent='Sulfolobus growth medium', volume='1:50 or 1:100')\nincubate(container='samples', temperature='80\u02daC', duration='up to 2 weeks', speed='150 rpm')\nbuffer(container='medium', reagent='glycine', volume='0.7 g/L')\nadjust(container='medium', reagent='1:2 diluted sulfuric acid', volume='to pH 3\u20133.5')\nadd(container='Sulfolobus media', reagent='Gelrite', volume='6\u201310 g/L', speed='slowly')\nboil(container='Sulfolobus media with Gelrite', temperature='boiling', duration='until dissolved')\nadd(container='Sulfolobus media with dissolved Gelrite', reagent='Ca(NO3)2 and MgCl2', volume='final concentration 1.5 mM Ca(NO3)2, 5 mM MgCl2', purpose='stabilize gel')\npour(container='standard (90 mm) Petri plates with cams', reagent='Gelrite solution', volume='ca. 25 mL', temperature='before gel solidifies')\nstore(container='Gelrite plates', temperature='4\u02daC', duration='indefinitely')\nspread(container='Gelrite plates', reagent='enrichment cultures (undiluted to 10^-3)', volume='0.1 mL', presence='0.5 mL 0.2% Gelrite dissolved in Sulfolobus medium (optional)')\nincubate(container='Gelrite plates (inverted in airtight moist containers)', temperature='75\u201380\u02daC', duration='approximately 1 week')",
+    "source_file": "protocol_247.txt"
+  }
+]

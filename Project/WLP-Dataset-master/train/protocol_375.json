@@ -1,0 +1,186 @@
+[
+  {
+    "protocol": "Splenocyte Preperation\nHarvest mouse spleen and prepare a single cell suspension.\nUse slides or a syrings to push the spleen through a cell strainer.\nPellet the cells by centrifugation (350 x g); aspirate the supernatant.\nDilute the 10X Red Blood Cell Lysis Buffer to 1X working concentration with deionized water and resuspend the pellet in 5 ml of 1X Lysis Buffer.\nIncubate on ice for 4-5 minutes with occasional shaking.\nStop the reaction by diluting the Lysis Buffer with 20-30 ml of 1X PBS.\nSpin the cells (350 x g) and discard the supernatant.\nResuspend the pellet in the appropriate buffer Count cells, adjust density, and proceed with cell staining procedures.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Red Blood Cell Lysis Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "deionized water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": "5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X Lysis Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "4-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "occasional",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Lysis Buffer",
+          "volume": "20-30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "appropriate buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "cell density",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(speed='350 x g')\naspirate(reagent='supernatant')\ndilute(reagent='10X Red Blood Cell Lysis Buffer', diluent='deionized water', final_concentration='1X')\nresuspend(reagent='pellet', volume='5 ml', buffer='1X Lysis Buffer')\nincubate(temperature='on ice', duration='4-5 minutes')\nshake(duration='occasional')\ndilute(reagent='Lysis Buffer', volume='20-30 ml', diluent='1X PBS')\ncentrifuge(speed='350 x g')\ndiscard(reagent='supernatant')\nresuspend(reagent='pellet', buffer='appropriate buffer')\n\n### MANUAL SECTION ###\n# MANUAL: count (reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\nadjust(reagent='cell density')",
+    "source_file": "protocol_375.txt"
+  }
+]

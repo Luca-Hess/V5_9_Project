@@ -1,0 +1,109 @@
+[
+  {
+    "protocol": "Labyrinthula growth medium\nCombine the following: Autoclave the medium.\nAdd 15 g of artificial salt (Instant Ocean).\nLet the medium cool down to 50\u00b0C.\nAdd 15 ml of Penicillin/Streptomycin (concentration: XX) and 6 ml of horse serum.\nPour the medium in petri dishes, about 5 ml each plate.",
+    "actions": [
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": "Labyrinthula growth medium components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": "medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "artificial salt (Instant Ocean)",
+          "volume": "15 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "medium",
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Penicillin/Streptomycin",
+          "volume": "15 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "XX"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "horse serum",
+          "volume": "6 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "petri dishes",
+          "reagent": "medium",
+          "volume": "5 ml each plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: combine (reagent: Labyrinthula growth medium components, other: {})\n# MANUAL: autoclave (reagent: medium, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='artificial salt (Instant Ocean)', volume='15 g')\ncool(reagent='medium', temperature='50\u00b0C')\nadd(reagent='Penicillin/Streptomycin', volume='15 ml', concentration='XX')\nadd(reagent='horse serum', volume='6 ml')\npour(container='petri dishes', reagent='medium', volume='5 ml each plate')",
+    "source_file": "protocol_224.txt"
+  }
+]

@@ -1,0 +1,104 @@
+[
+  {
+    "protocol": "DNase I Treatment\nDNase I made up to 40,000 U/ml in storage buffer (-20\u00b0C freezer door) = stock solution.\nDilute stock solution 1:40 in 10x reaction buffer = 1,000 U/ml = 1 U/ul = working dilution.\nUse at a 1:10 dilution: 1\u03bcl per 9 \u03bcl solution to be treated.\nIncubate at room temperature for 2hr.\nPrepare 1M EDTA disodium salt dihydrate.\nPrepare 1M EGTA tetrasodium salt.\nInactivate DNase by adding 100 mM EDTA/100 mM EGTA final concentration.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I stock solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_ratio": "1:40",
+            "diluent": "10x reaction buffer",
+            "final_concentration": "1,000 U/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I working dilution",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_ratio": "1:10",
+            "diluent": "solution to be treated",
+            "final_volume": "10 \u03bcl (1 \u03bcl DNase I + 9 \u03bcl solution)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I treated solution",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1M EDTA disodium salt dihydrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1M EGTA tetrasodium salt",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA/EGTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "100 mM EDTA / 100 mM EGTA",
+            "purpose": "inactivate DNase"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='DNase I stock solution', dilution_ratio='1:40', diluent='10x reaction buffer', final_concentration='1,000 U/ml')\ndilute(reagent='DNase I working dilution', volume='1 \u03bcl', dilution_ratio='1:10', diluent='solution to be treated', final_volume='10 \u03bcl (1 \u03bcl DNase I + 9 \u03bcl solution)')\nincubate(reagent='DNase I treated solution', temperature='room temperature', duration='2 hr')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 1M EDTA disodium salt dihydrate, other: {})\n# MANUAL: prepare (reagent: 1M EGTA tetrasodium salt, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='EDTA/EGTA', final_concentration='100 mM EDTA / 100 mM EGTA', purpose='inactivate DNase')",
+    "source_file": "protocol_277.txt"
+  }
+]

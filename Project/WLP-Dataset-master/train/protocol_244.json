@@ -1,0 +1,271 @@
+[
+  {
+    "protocol": "MBBM Media\nPrepare 10 stock solutions per 1 liter Milli-Q H2O each: 25.0 g, NaNO3; 2.5 g, CaCl2*2H2O; 7.5 g, MgSO4*7H2O; 7.5 g, K2HPO4; 17.5 g, KH2PO4; 2.5 g, NaCl; 50.0 g, disodium EDTA; 31.0 g, KOH; 4.98 g, FeSO4*7H2O; per 1 liter acidified H2O (acificied H2O: 999.0 mL, Milli-Q H2O; and 1.0 mL, concentrated H2SO4) 11.42 g, H3BO3; 8.82 g, ZnSO4*7H2O; 1.44 g, MnCl2*4H2O; 0.71 g, MoO3; 1.57 g, CuSO4*5H2O; and 0.49 g, CoNO3*6H2O.\u00a0 \nAdd to 950 mL, Milli-Q H2O: 1.0 g, bacto-peptone; 5.0 g, sucrose; 10.0 mL of stock solution 1-6; 1.0 mL of stock solutions 7-9; 2.0 mL stock solution 10.\u00a0 \nFor MBBM agar plates, add 1.5% agar prior to autoclaving. \nFor MBBM soft agar, add 0.75% agar prior to autoclaving. \nAutoclave at 121\u00b0C for 20 min. \nLet media cool to room temperature and add antibiotics:* 700\u00a0\u00b5g/mL, Ampicillin; and/or* 10\u00a0\u00b5g/mL,\u00a0Tetracycline.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "1 liter bottle or flask",
+          "reagent": "Milli-Q H2O",
+          "volume": "1 liter",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stock_solutions": [
+              {
+                "name": "NaNO3",
+                "amount": "25.0 g"
+              },
+              {
+                "name": "CaCl2*2H2O",
+                "amount": "2.5 g"
+              },
+              {
+                "name": "MgSO4*7H2O",
+                "amount": "7.5 g"
+              },
+              {
+                "name": "K2HPO4",
+                "amount": "7.5 g"
+              },
+              {
+                "name": "KH2PO4",
+                "amount": "17.5 g"
+              },
+              {
+                "name": "NaCl",
+                "amount": "2.5 g"
+              },
+              {
+                "name": "disodium EDTA",
+                "amount": "50.0 g"
+              },
+              {
+                "name": "KOH",
+                "amount": "31.0 g"
+              },
+              {
+                "name": "FeSO4*7H2O",
+                "amount": "4.98 g"
+              }
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "1 liter bottle or flask",
+          "reagent": "acidified H2O",
+          "volume": "1 liter",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "acidified_H2O": [
+              {
+                "name": "Milli-Q H2O",
+                "amount": "999.0 mL"
+              },
+              {
+                "name": "concentrated H2SO4",
+                "amount": "1.0 mL"
+              }
+            ],
+            "stock_solutions": [
+              {
+                "name": "H3BO3",
+                "amount": "11.42 g"
+              },
+              {
+                "name": "ZnSO4*7H2O",
+                "amount": "8.82 g"
+              },
+              {
+                "name": "MnCl2*4H2O",
+                "amount": "1.44 g"
+              },
+              {
+                "name": "MoO3",
+                "amount": "0.71 g"
+              },
+              {
+                "name": "CuSO4*5H2O",
+                "amount": "1.57 g"
+              },
+              {
+                "name": "CoNO3*6H2O",
+                "amount": "0.49 g"
+              }
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "950 mL Milli-Q H2O",
+          "reagent": "bacto-peptone",
+          "volume": "1.0 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "950 mL Milli-Q H2O",
+          "reagent": "sucrose",
+          "volume": "5.0 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "950 mL Milli-Q H2O",
+          "reagent": "stock solution 1-6",
+          "volume": "10.0 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "950 mL Milli-Q H2O",
+          "reagent": "stock solution 7-9",
+          "volume": "1.0 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "950 mL Milli-Q H2O",
+          "reagent": "stock solution 10",
+          "volume": "2.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "media for agar plates",
+          "reagent": "agar",
+          "volume": "1.5% (w/v)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "application": "prior to autoclaving"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "media for soft agar",
+          "reagent": "agar",
+          "volume": "0.75% (w/v)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "application": "prior to autoclaving"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "media",
+          "reagent": null,
+          "volume": null,
+          "temperature": "121\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "media",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cooled media",
+          "reagent": "Ampicillin",
+          "volume": "700 \u00b5g/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cooled media",
+          "reagent": "Tetracycline",
+          "volume": "10 \u00b5g/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 1 liter bottle or flask, reagent: Milli-Q H2O, volume: 1 liter, other: {'stock_solutions': [{'name': 'NaNO3', 'amount': '25.0 g'}, {'name': 'CaCl2*2H2O', 'amount': '2.5 g'}, {'name': 'MgSO4*7H2O', 'amount': '7.5 g'}, {'name': 'K2HPO4', 'amount': '7.5 g'}, {'name': 'KH2PO4', 'amount': '17.5 g'}, {'name': 'NaCl', 'amount': '2.5 g'}, {'name': 'disodium EDTA', 'amount': '50.0 g'}, {'name': 'KOH', 'amount': '31.0 g'}, {'name': 'FeSO4*7H2O', 'amount': '4.98 g'}]})\n# MANUAL: prepare (container: 1 liter bottle or flask, reagent: acidified H2O, volume: 1 liter, other: {'acidified_H2O': [{'name': 'Milli-Q H2O', 'amount': '999.0 mL'}, {'name': 'concentrated H2SO4', 'amount': '1.0 mL'}], 'stock_solutions': [{'name': 'H3BO3', 'amount': '11.42 g'}, {'name': 'ZnSO4*7H2O', 'amount': '8.82 g'}, {'name': 'MnCl2*4H2O', 'amount': '1.44 g'}, {'name': 'MoO3', 'amount': '0.71 g'}, {'name': 'CuSO4*5H2O', 'amount': '1.57 g'}, {'name': 'CoNO3*6H2O', 'amount': '0.49 g'}]})\n\n### AUTOMATED SECTION ###\nadd(container='950 mL Milli-Q H2O', reagent='bacto-peptone', volume='1.0 g')\nadd(container='950 mL Milli-Q H2O', reagent='sucrose', volume='5.0 g')\nadd(container='950 mL Milli-Q H2O', reagent='stock solution 1-6', volume='10.0 mL each')\nadd(container='950 mL Milli-Q H2O', reagent='stock solution 7-9', volume='1.0 mL each')\nadd(container='950 mL Milli-Q H2O', reagent='stock solution 10', volume='2.0 mL')\nadd(container='media for agar plates', reagent='agar', volume='1.5% (w/v)', application='prior to autoclaving')\nadd(container='media for soft agar', reagent='agar', volume='0.75% (w/v)', application='prior to autoclaving')\nautoclave(container='media', temperature='121\u00b0C', duration='20 min')\ncool(container='media', temperature='room temperature')\nadd(container='cooled media', reagent='Ampicillin', volume='700 \u00b5g/mL')\nadd(container='cooled media', reagent='Tetracycline', volume='10 \u00b5g/mL')",
+    "source_file": "protocol_244.txt"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "protocol": "Anti-Neu5Gc Antibody Kit Protocol - Western blot\nPrepare two identical SDS-PAGE gels. \nLoad and run samples in loading buffer. \nRecommended loading of gel:\u00a0\nLane 1: Molecular Weight Marker.\nLanes 2, 8, 10: Blank.\nLanes 3-6: Samples.\nLane 7: Positive Control.\nLane 9: Negative Control. \nConfirm the presence of proteins on gel by Coomassie Staining Blot proteins to membrane of choice. \nConfirm protein transfer by Ponceau or other method of choice. \nBlock each membrane in 20 ml TBS-T with 200 \u03bcl diluted Neu5Gc Assay Blocking Solution, gently rocking at 4\u00b0C.\u00a0 \nIncubate first blot in Primary Antibody, and one blot in Control Antibody for 2 hours at 25\u00b0C or overnight at 4\u00b0C with gentle rocking. \nWash blot with 50 ml TBS-T for 5 min at 25\u00b0C, gently rocking 5 times.\nIncubate blots with optimal dilution of enzyme-conjugated secondary antibody of choice at 25\u00b0C for 1 hour. \nWash blot with 50 ml TBS-T for 5 min at 25\u00b0C , gently rocking 5 times.\nDevelop each blot with the appropriate substrate",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "SDS-PAGE gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": "two identical"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "SDS-PAGE gel",
+          "reagent": "samples in loading buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lane assignments": {
+              "Lane 1": "Molecular Weight Marker",
+              "Lanes 2,8,10": "Blank",
+              "Lanes 3-6": "Samples",
+              "Lane 7": "Positive Control",
+              "Lane 9": "Negative Control"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "SDS-PAGE gel",
+          "reagent": "samples in loading buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "confirm",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Coomassie Staining",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "presence of proteins"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "membrane of choice",
+          "reagent": "proteins",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "confirm",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "Ponceau or other method",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "protein transfer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "block",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "20 ml TBS-T with 200 \u03bcl diluted Neu5Gc Assay Blocking Solution",
+          "volume": "20 ml TBS-T, 200 \u03bcl Blocking Solution",
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": "gently rocking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "first blot",
+          "reagent": "Primary Antibody",
+          "volume": null,
+          "temperature": "25\u00b0C or 4\u00b0C",
+          "duration": "2 hours at 25\u00b0C or overnight at 4\u00b0C",
+          "speed": "gentle rocking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "one blot",
+          "reagent": "Control Antibody",
+          "volume": null,
+          "temperature": "25\u00b0C or 4\u00b0C",
+          "duration": "2 hours at 25\u00b0C or overnight at 4\u00b0C",
+          "speed": "gentle rocking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "blot",
+          "reagent": "50 ml TBS-T",
+          "volume": "50 ml",
+          "temperature": "25\u00b0C",
+          "duration": "5 min per wash",
+          "speed": "gently rocking",
+          "other": {
+            "repeat": "5 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "blots",
+          "reagent": "enzyme-conjugated secondary antibody (optimal dilution)",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "blot",
+          "reagent": "50 ml TBS-T",
+          "volume": "50 ml",
+          "temperature": "25\u00b0C",
+          "duration": "5 min per wash",
+          "speed": "gently rocking",
+          "other": {
+            "repeat": "5 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "develop",
+        "parameters": {
+          "container": "blot",
+          "reagent": "appropriate substrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: SDS-PAGE gel, other: {'quantity': 'two identical'})\n\n### AUTOMATED SECTION ###\nload(container='SDS-PAGE gel', reagent='samples in loading buffer', lane assignments={'Lane 1': 'Molecular Weight Marker', 'Lanes 2,8,10': 'Blank', 'Lanes 3-6': 'Samples', 'Lane 7': 'Positive Control', 'Lane 9': 'Negative Control'})\n\n### MANUAL SECTION ###\n# MANUAL: run (container: SDS-PAGE gel, reagent: samples in loading buffer)\n# MANUAL: confirm (container: gel, reagent: Coomassie Staining, other: {'purpose': 'presence of proteins'})\n# MANUAL: blot (container: membrane of choice, reagent: proteins)\n# MANUAL: confirm (container: membrane, reagent: Ponceau or other method, other: {'purpose': 'protein transfer'})\n\n### AUTOMATED SECTION ###\nblock(container='membrane', reagent='20 ml TBS-T with 200 \u03bcl diluted Neu5Gc Assay Blocking Solution', volume='20 ml TBS-T, 200 \u03bcl Blocking Solution', temperature='4\u00b0C', speed='gently rocking')\nincubate(container='first blot', reagent='Primary Antibody', temperature='25\u00b0C or 4\u00b0C', duration='2 hours at 25\u00b0C or overnight at 4\u00b0C', speed='gentle rocking')\nincubate(container='one blot', reagent='Control Antibody', temperature='25\u00b0C or 4\u00b0C', duration='2 hours at 25\u00b0C or overnight at 4\u00b0C', speed='gentle rocking')\nwash(container='blot', reagent='50 ml TBS-T', volume='50 ml', temperature='25\u00b0C', duration='5 min per wash', speed='gently rocking', repeat='5 times')\nincubate(container='blots', reagent='enzyme-conjugated secondary antibody (optimal dilution)', temperature='25\u00b0C', duration='1 hour')\nwash(container='blot', reagent='50 ml TBS-T', volume='50 ml', temperature='25\u00b0C', duration='5 min per wash', speed='gently rocking', repeat='5 times')\n\n### MANUAL SECTION ###\n# MANUAL: develop (container: blot, reagent: appropriate substrate)",
+    "source_file": "protocol_325.txt"
+  }
+]

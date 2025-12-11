@@ -1,0 +1,463 @@
+[
+  {
+    "protocol": "Tangential flow filtration (TFF) concentration of phytoplankton\nGet Vivaflow catridge out of storage Mount Vivaflow catridge as Fig.\n1 (image de C. Brussaard) in open circuit.\nRemove the clamps Set the pump to maximum speed.\nManometer should be at about 2.5 bars (with a new cassette sometimes the manometer get stuck, if the value is too low there is a leak in the system).\nRinse the cartridge with about 250 mL of MilliQ water (longer is cartridge has been stored in ethanol). \nReplace MilliQ water by sample in 6 L bottle. \nTake sample for flow cytometry to compute concentration factor.\nRinse cartridge with about 250 mL of sample. \nPut the retentate line into the sample bottle (Fig. 2B - Recirculation mode).\nRecord sample volume and start pump increasing to macimum speed.\nClamp the retentate line to increase filtrate flow so that Manometer gets up to 2.5 bars.\nConcentrate sample until about 250 mL remains (6 L takes about one hour).\nTransfer sample\u00a0to a smaller bottle (250 mL) then finally to a 50 mL tube with conical bottom. \nContinue to concentrate very carefully, lowering the pump speed until the sample volume is reduced to 15-20 mL. \nWhen final volume is about 10 mL, clamp filtrate tube and recirculate slowly (no change of volume should take place). \nLeaving the filtrate tube clamped, get the feed line out of the sample in order to get back the total volume of concentrated sample. \nTake sample for flow cytometry count (to compare with original sample concnetration and estimate concentration factor). \nStore concentrated sample for later use (e.g. flow cytometry sorting, culture etc...). \nGo back to Fig. 1 configuration (Open circuit). \nRinse 1 min with filtered sea water. \nRinse 1 min with distilled water. \nRinse with 50 mL NaOH 0.1 M. \nPut all three tubes (feed, retentate, filtrate) in bottle containing NaOH 0.1 M. \nRecirculate for 20 min (to get rid of everything on the cartridge filter). \nRinse with 250 mL of MilliQ water (Fig. 1). \nStop the pump and clamp all three tubes. \nStore at 4\u00b0C.\nFor a storage beyond 1 day, store with Ethanol 10%",
+    "actions": [
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "configuration": "open circuit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clamps",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "maximum",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "MilliQ water",
+          "volume": "250 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "6 L bottle",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "previous_reagent": "MilliQ water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "flow cytometry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "sample",
+          "volume": "250 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "retentate line",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "sample bottle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parameter": "volume"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "increase to maximum",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "retentate line",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "increase filtrate flow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": "until about 250 mL remains",
+          "temperature": null,
+          "duration": "about one hour",
+          "speed": null,
+          "other": {
+            "initial_volume": "6 L"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": "250 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "smaller bottle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": "to 50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "50 mL tube with conical bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": "reduce to 15-20 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "lowering pump speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "filtrate tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "sample",
+          "volume": "about 10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "note": "no change of volume should take place"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "get",
+        "parameters": {
+          "container": "feed line",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "get back total volume of concentrated sample"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "flow cytometry count"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "concentrated sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "later use"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "filtered sea water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "distilled water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "NaOH 0.1 M",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "feed, retentate, filtrate tubes",
+          "reagent": "NaOH 0.1 M",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "bottle containing NaOH 0.1 M"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "NaOH 0.1 M",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "purpose": "clean cartridge filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "MilliQ water",
+          "volume": "250 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "configuration": "Fig. 1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "feed, retentate, filtrate tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Vivaflow cartridge",
+          "reagent": "Ethanol 10%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "storage beyond 1 day"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: mount (container: Vivaflow cartridge, other: {'configuration': 'open circuit'})\n# MANUAL: remove (container: clamps, other: {})\n\n### AUTOMATED SECTION ###\nset(container='pump', speed='maximum')\nrinse(container='Vivaflow cartridge', reagent='MilliQ water', volume='250 mL')\nreplace(container='6 L bottle', reagent='sample', previous_reagent='MilliQ water')\n\n### MANUAL SECTION ###\n# MANUAL: take (container: sample, other: {'purpose': 'flow cytometry'})\n\n### AUTOMATED SECTION ###\nrinse(container='Vivaflow cartridge', reagent='sample', volume='250 mL')\n\n### MANUAL SECTION ###\n# MANUAL: put (container: retentate line, other: {'destination': 'sample bottle'})\n# MANUAL: record (container: sample, other: {'parameter': 'volume'})\n\n### AUTOMATED SECTION ###\nstart(container='pump', speed='increase to maximum')\n\n### MANUAL SECTION ###\n# MANUAL: clamp (container: retentate line, other: {'purpose': 'increase filtrate flow'})\n\n### AUTOMATED SECTION ###\nconcentrate(container='sample', volume='until about 250 mL remains', duration='about one hour', initial_volume='6 L')\ntransfer(container='sample', volume='250 mL', destination='smaller bottle')\ntransfer(container='sample', volume='to 50 mL', destination='50 mL tube with conical bottom')\nconcentrate(container='sample', volume='reduce to 15-20 mL', speed='lowering pump speed')\n\n### MANUAL SECTION ###\n# MANUAL: clamp (container: filtrate tube, other: {})\n\n### AUTOMATED SECTION ###\nrecirculate(container='Vivaflow cartridge', reagent='sample', volume='about 10 mL', speed='slowly', note='no change of volume should take place')\n\n### MANUAL SECTION ###\n# MANUAL: get (container: feed line, other: {'purpose': 'get back total volume of concentrated sample'})\n# MANUAL: take (container: sample, other: {'purpose': 'flow cytometry count'})\n# MANUAL: store (container: concentrated sample, other: {'purpose': 'later use'})\n\n### AUTOMATED SECTION ###\nrinse(container='Vivaflow cartridge', reagent='filtered sea water', duration='1 min')\nrinse(container='Vivaflow cartridge', reagent='distilled water', duration='1 min')\nrinse(container='Vivaflow cartridge', reagent='NaOH 0.1 M', volume='50 mL')\n\n### MANUAL SECTION ###\n# MANUAL: put (container: feed, retentate, filtrate tubes, reagent: NaOH 0.1 M, other: {'destination': 'bottle containing NaOH 0.1 M'})\n\n### AUTOMATED SECTION ###\nrecirculate(container='Vivaflow cartridge', reagent='NaOH 0.1 M', duration='20 min', purpose='clean cartridge filter')\nrinse(container='Vivaflow cartridge', reagent='MilliQ water', volume='250 mL', configuration='Fig. 1')\nstop(container='pump')\n\n### MANUAL SECTION ###\n# MANUAL: clamp (container: feed, retentate, filtrate tubes, other: {})\n# MANUAL: store (container: Vivaflow cartridge, temperature: 4\u00b0C, other: {})\n# MANUAL: store (container: Vivaflow cartridge, reagent: Ethanol 10%, other: {'condition': 'storage beyond 1 day'})",
+    "source_file": "protocol_447.txt"
+  }
+]

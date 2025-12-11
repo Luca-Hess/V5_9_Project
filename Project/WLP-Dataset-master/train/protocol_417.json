@@ -1,0 +1,95 @@
+[
+  {
+    "protocol": "Ligation Protocol for NEB PCR Cloning Kit (E1202)\nMix the first 3 components of the reaction.\nAdd\u00a0Cloning Master Mix (2X), 5\u00a0\u03bcl,\u00a0to a total of 10\u00a0\u03bcl\u00a0per ligation reaction.\nIncubate at room temperature (25\u00b0C) for 5\u201315 minutes.\nIncubate on ice for 2 minutes.\nTransform immediately into NEB 10-beta Competent\u00a0E. coli\u00a0or store at -20\u00b0C.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "first 3 components of the reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Cloning Master Mix (2X)",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_volume_per_reaction": "10 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C (room temperature)",
+          "duration": "5\u201315 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "NEB 10-beta Competent E. coli",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='first 3 components of the reaction')\nadd(reagent='Cloning Master Mix (2X)', volume='5 \u03bcl', final_volume_per_reaction='10 \u03bcl')\nincubate(temperature='25\u00b0C (room temperature)', duration='5\u201315 minutes')\nincubate(temperature='on ice', duration='2 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: NEB 10-beta Competent E. coli, other: {})\n\n### AUTOMATED SECTION ###\nstore(temperature='-20\u00b0C')",
+    "source_file": "protocol_417.txt"
+  }
+]

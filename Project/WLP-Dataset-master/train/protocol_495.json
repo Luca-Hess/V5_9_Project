@@ -1,0 +1,251 @@
+[
+  {
+    "protocol": "Quick Protocol for Monarch\u00ae PCR & DNA Cleanup Kit (5 \u03bcg) (NEB #T1030)\nDilute sample with DNA Cleanup Binding Buffer according to the table below.\nMix well by pipetting up and down or flicking the tube.\nDo not vortex.\nA sample volume of 20\u2013100 \u03bcl is recommended.\nFor smaller samples, TE can be used to adjust the volume.\nFor diluted samples larger than 800 \u03bcl, load a portion of the sample, proceed with step 2, and then repeat as necessary.\nSample\u00a0TypeRatio of Binding Buffer: \nSampleExampledsDNA > 2 kb\u00a0(plasmids, gDNA)2:1200 \u03bcl: 100 \u03bcldsDNA < 2 kb (some amplicons, \u00a0fragments)5:1500 \u03bcl: 100 \u03bclssDNA (cDNA, M13)7:1700 \u03bcl: 100 \u03bcl. \nInsert column into collection tube and load sample onto column.\nSpin for 1 minute at 16,000 x g, then discard flow-through.\nRe-insert column into collection tube.\nAdd 200 \u03bcl DNA Wash Buffer (with ethanol added) and spin for 1 minute at 16,000 x g.\u00a0\nDiscarding flow-through is optional.\nRepeat Step 3.\n(Step 3: Re-insert column into collection tube.\nAdd 200 \u03bcl DNA Wash Buffer and spin for 1 minute at 16,000 x g.\u00a0\nDiscarding flow-through is optional).\nTransfer column to a clean 1.5 ml microfuge tube.\nUse care to ensure that the tip of the column does not come into contact with the flow-through.\nIf in doubt, re-spin for 1 minute.\nAdd \u2265 6 \u03bcl of DNA Elution Buffer to the center of the matrix.\nWait for 1 minute, then spin for 1 minute at 16,000 x g to elute the DNA.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNA Cleanup Binding Buffer",
+          "volume": "variable (see table, e.g., 200 \u03bcl, 500 \u03bcl, 700 \u03bcl)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_volume": "20\u2013100 \u03bcl recommended",
+            "sample_type": "dsDNA > 2 kb, dsDNA < 2 kb, ssDNA",
+            "ratio": "2:1, 5:1, 7:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "diluted sample",
+          "volume": "total sample volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TE",
+          "volume": "variable (to reach recommended sample volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "for smaller samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "column in collection tube",
+          "reagent": "diluted sample",
+          "volume": "\u2264 800 \u03bcl per load",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "if sample > 800 \u03bcl, repeat loading"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "column into collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "collection tube with column",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "column into collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column in collection tube",
+          "reagent": "DNA Wash Buffer (with ethanol added)",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "collection tube with column",
+          "reagent": "DNA Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "collection tube with column",
+          "reagent": "DNA Wash Buffer",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {
+            "step": "add wash buffer and centrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "column to clean 1.5 ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column (in clean 1.5 ml microfuge tube)",
+          "reagent": "DNA Elution Buffer",
+          "volume": "\u2265 6 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of the matrix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "column in microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tube with column",
+          "reagent": "elution buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "16,000 x g",
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(container='tube', reagent='DNA Cleanup Binding Buffer', volume='variable (see table, e.g., 200 \u03bcl, 500 \u03bcl, 700 \u03bcl)', sample_volume='20\u2013100 \u03bcl recommended', sample_type='dsDNA > 2 kb, dsDNA < 2 kb, ssDNA', ratio='2:1, 5:1, 7:1')\nmix(container='tube', reagent='diluted sample', volume='total sample volume', method='pipetting up and down')\nadjust(container='tube', reagent='TE', volume='variable (to reach recommended sample volume)', condition='for smaller samples')\nload(container='column in collection tube', reagent='diluted sample', volume='\u2264 800 \u03bcl per load', repeat='if sample > 800 \u03bcl, repeat loading')\n\n### MANUAL SECTION ###\n# MANUAL: insert (container: column into collection tube, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='collection tube with column', reagent='sample', duration='1 minute', speed='16,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n# MANUAL: insert (container: column into collection tube, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='column in collection tube', reagent='DNA Wash Buffer (with ethanol added)', volume='200 \u03bcl')\ncentrifuge(container='collection tube with column', reagent='DNA Wash Buffer', duration='1 minute', speed='16,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {'optional': True})\n\n### AUTOMATED SECTION ###\nrepeat(container='collection tube with column', reagent='DNA Wash Buffer', volume='200 \u03bcl', duration='1 minute', speed='16,000 x g', step='add wash buffer and centrifuge')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: column to clean 1.5 ml microfuge tube, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='column (in clean 1.5 ml microfuge tube)', reagent='DNA Elution Buffer', volume='\u2265 6 \u03bcl', location='center of the matrix')\nwait(container='column in microfuge tube', duration='1 minute')\ncentrifuge(container='microfuge tube with column', reagent='elution buffer', duration='1 minute', speed='16,000 x g', purpose='elute DNA')",
+    "source_file": "protocol_495.txt"
+  }
+]

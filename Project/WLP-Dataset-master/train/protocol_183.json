@@ -1,0 +1,121 @@
+[
+  {
+    "protocol": "Cultivation / Spore Production for Alternaria Solani\nInoculate Mycelium with spores from the stock plate of fresh SNA plates.\nMake sure to inoculate only a small amount right in the middle of the plate to allow even and equal spread and growth throughout the plate.\nStore plate in a growth chamber with 12/12 h darkness/blacklight.\u00a0\nOptimal temperature is 22\u00b0C.\u00a0\nOptimal humidity 60-70%.\u00a0\nAllow to grow for 3 weeks.\nHarvest spores adding some 0.0-0.5% tween solution to the plate and scraping gently with a coverslip.\nCollect all liquid with spores Filter through four layers of mesh (e.g. cheese cloth) to remove mycelial debris.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "fresh SNA plate",
+          "reagent": "spores from stock plate",
+          "volume": "small amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "middle of plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "22\u00b0C",
+          "duration": "3 weeks",
+          "speed": null,
+          "other": {
+            "environment": "growth chamber",
+            "light_cycle": "12/12 h darkness/blacklight",
+            "humidity": "60-70%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "plate",
+          "reagent": "mycelium",
+          "volume": null,
+          "temperature": "22\u00b0C",
+          "duration": "3 weeks",
+          "speed": null,
+          "other": {
+            "humidity": "60-70%",
+            "light_cycle": "12/12 h darkness/blacklight"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plate",
+          "reagent": "0.0-0.5% tween solution",
+          "volume": "some",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "coverslip",
+            "gentle": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "plate",
+          "reagent": "liquid with spores",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "liquid with spores",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_material": "four layers of mesh (e.g. cheese cloth)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: fresh SNA plate, reagent: spores from stock plate, volume: small amount, other: {'location': 'middle of plate'})\n\n### AUTOMATED SECTION ###\nstore(container='plate', temperature='22\u00b0C', duration='3 weeks', environment='growth chamber', light_cycle='12/12 h darkness/blacklight', humidity='60-70%')\ngrow(container='plate', reagent='mycelium', temperature='22\u00b0C', duration='3 weeks', humidity='60-70%', light_cycle='12/12 h darkness/blacklight')\nadd(container='plate', reagent='0.0-0.5% tween solution', volume='some')\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: plate, other: {'tool': 'coverslip', 'gentle': True})\n\n### AUTOMATED SECTION ###\ncollect(container='plate', reagent='liquid with spores', volume='all')\nfilter(reagent='liquid with spores', filter_material='four layers of mesh (e.g. cheese cloth)')",
+    "source_file": "protocol_183.txt"
+  }
+]

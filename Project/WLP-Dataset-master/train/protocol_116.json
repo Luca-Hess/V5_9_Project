@@ -1,0 +1,930 @@
+[
+  {
+    "protocol": "Enumeration of virus particles in aquatic or sediment samples by epifluorescence microscopy\nPrepare reagents.\nCollect and prepare sample according to sample type.\nPrepare slide labels with critical information such as the date, sample location, and volume filtered to keep track of the samples once they have been filtered and stained.\nFor every set of four samples to be stained, use a permanent pen to mark the bottom of a plastic Petri plate into four labeled sections.\nFor each filter that is to be prepared, add a 78- \u00b5L drop of 0.02-\u00b5m filtered dH2O on each section of the marked Petri plates.\nThaw a 40-\u00b5L vial of the stock SYBR solution and add 2 \u00b5L stock solution to each drop (78 \u00b5L) of sterile dH2O or buffer.\nMix the stain by gently pipetting up and down.\nPlace the Petri plates in the dark so that the stain is not bleached.\nPrepare the antifade solution in a clean, sterilized 2-mL microcentrifuge tube.\nDilute the 10% (wt/vol) stock of p-phenylenediamine 1:100 using glycerol/PBS as the diluent.\nKeep the solution on ice and protect it from light.\nFor each filter that is to be prepared, add a 80-\u00b5L drop of thawed Yo-Pro working solution on each section of the marked Petri plates.\nPlace a 9-cm-diameter filter paper soaked with 3 mL aqueous NaCl solution (0.3% wt/vol) in the lid of the Petri plates to prevent evaporation of the stain.\nConnect a filtration unit for 25-mm filters to a vacuum source, ensuring the vacuum is \u226413 kPa.\nPlace a 0.45-\u00b5m nitrocellulose backing filter on each filter support, and overlay it with a thin layer of dH2O.\nCarefully pick up a 0.02-\u00b5m Anodisc filter by its plastic ring and lay it over the wet backing filter, with the plastic ring facing upward.\nIf the sample has been preserved and frozen as described, thaw it in a 37\u00b0C water bath.\nFor a sample that has just been collected, fix it with 0.5% glutaraldehyde for 15\u201330 min at 4\u00b0C before preparing slides.\nIn addition, prepare duplicate control samples by fixing 1 mL of the 0.02-\u00b5m filtered water that was used to dilute the SYBR stain.\nBecause divalent cations interfere with the binding of the stain, seawater samples should be diluted to <7 psu with 0.02-\u00b5m filtered dH2O before filtration.\nIt is a good idea to make test slides (including a control with no sample added) to be sure an appropriate volume is filtered, that the procedure is working, and that the filters and reagents do not have viruses on or in them (some batches of Anodiscs have been covered with bacteria and viruses).\nFor most lake and coastal seawater samples, which have viral abundances of ~107 mL\u20131, 0.8\u20131.0 mL sample is added to the surface of the Anodisc filter while the vacuum is off.\nTurn on the vacuum and suck the sample through the filter.\nFor oligotrophic or very deep ocean samples, it may be necessary to filter 4 mL or more.\nFilter towers must be cleaned between samples.\nRinse the towers with 0.02-\u00b5m filtered dH2O followed by ethanol.\nDry with lint-free paper (e.g., Kimwipe).\nOnce the sample is filtered, remove the Anodisc with the vacuum still on.\nAllow the filter to air-dry (typically a minute or less), until the surface is visibly dry.\nPlace the Anodisc, sample side up, on a drop of stain in the Petri dish.\nAllow the filter to stain for 15 min in the dark.\nAllow the filter to stain for 48 h in the dark, at room temperature.\nAdd a drop of dH2O on the backing filter, lay the stained Anodisc on top, and use the vacuum to remove any remaining fluid.\nSome samples (e.g., sediments, vent fluid, and humic waters) may require the filters to be rinsed to reduce background fluorescence.\nIf so, while the vacuum is still on and the filter is damp, rinse the filter twice with 1 mL of 0.02-\u00b5m filtered dH2O.\nRemove the Anodisc while the vacuum is on.\nPlace the Anodisc, sample-side up, on a 9-cm filter paper or Kimwipe in the dark, and allow the filter to dry until it appears opaque.\nPlace 12\u201315 \u00b5L antifade solution on a labeled glass slide and lay the dry Anodisc on top.\nAdd ~20 \u00b5L antifade on top of the Anodisc and cover with a coverslip.\nPlace 12\u201315 \u00b5L spectrophotometric-grade glycerol on a labeled glass slide and lay the dry Anodisc on top.\nAdd ~20 \u00b5L glycerol on top of the Anodisc and cover with a coverslip.\nRemove any air bubbles that are trapped under the coverslip by gently pressing on the surface.\nThe slides can be counted immediately or stored frozen at \u201320\u00b0C for at least 4 months with no decrease in estimates of viral abundance.\nCount the viruses at 1000\u00d7 magnification using a 100\u00d7 oilemersion objective.\nBegin by checking the test filters to ensure that the reagents or filters were not contaminated and the filtered volumes were appropriate.\nCheck each slide before counting to make sure that the filter is evenly stained and that the viruses are on a single plane of focus and not suspended in the mounting medium and are evenly distributed across the filter.\nUsing the ocular reticule, select an appropriate number of grid squares so that there are 10\u2013100 stained viruses in each field.\nEstimate the abundance of viruses by counting at least 20 random fields.\nKeep a tally of the number of particles in each field so that the variation in abundance of particles among fields can be determined.\nFor each sample, record the number of particles counted in each field, the number of fields counted, the area of the field, and the volume of sample filtered.\nThe abundance of viruses mL\u20131 (Vt) in the sample = Vc \u00f7 Fc \u00d7 At \u00f7 Af \u00f7 S, where Vc = total number of viruses counted, Fc = total number of fields counted, At = surface area of the filter (\u00b5m2) (see note below), Af = area of each field (\u00b5m2), and S = volume of sample filtered (mL).\nThe total number of particles counted will determine the size of the 95% confidence intervals on the estimates of viral abundance.\nBy assuming a Poisson distribution, the 95% confidence intervals can be estimated using the following equations (Suttle 1993):",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "reagents"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "aquatic or sediment"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "slide",
+          "reagent": "label",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "information": [
+              "date",
+              "sample location",
+              "volume filtered"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "plastic Petri plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sections": 4,
+            "tool": "permanent pen"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "marked Petri plate section",
+          "reagent": "0.02-\u00b5m filtered dH2O",
+          "volume": "78 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per filter": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "40-\u00b5L vial",
+          "reagent": "stock SYBR solution",
+          "volume": "40 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "drop of dH2O or buffer (78 \u00b5L)",
+          "reagent": "stock SYBR solution",
+          "volume": "2 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per drop": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "drop",
+          "reagent": "stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Petri plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "2-mL microcentrifuge tube",
+          "reagent": "antifade solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "clean": true,
+            "sterilized": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10% (wt/vol) stock of p-phenylenediamine",
+          "volume": "1:100",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "glycerol/PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protect_from": "light"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "marked Petri plate section",
+          "reagent": "Yo-Pro working solution",
+          "volume": "80 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thawed": true,
+            "per filter": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "lid of Petri plates",
+          "reagent": "filter paper soaked with aqueous NaCl solution",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_paper_diameter": "9 cm",
+            "NaCl_concentration": "0.3% wt/vol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "filtration unit",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "25-mm",
+            "vacuum_source": true,
+            "vacuum_pressure": "\u226413 kPa"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter support",
+          "reagent": "0.45-\u00b5m nitrocellulose backing filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "backing filter",
+          "reagent": "dH2O",
+          "volume": "thin layer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "wet backing filter",
+          "reagent": "0.02-\u00b5m Anodisc filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "plastic ring facing upward"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C water bath",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if preserved and frozen"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "sample",
+          "reagent": "glutaraldehyde",
+          "volume": "0.5%",
+          "temperature": "4\u00b0C",
+          "duration": "15\u201330 min",
+          "speed": null,
+          "other": {
+            "condition": "if freshly collected"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "duplicate control samples",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fixative": "glutaraldehyde",
+            "water_type": "0.02-\u00b5m filtered"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "seawater samples",
+          "volume": "<7 psu",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "0.02-\u00b5m filtered dH2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Anodisc filter surface",
+          "reagent": "sample",
+          "volume": "0.8\u20131.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "vacuum": "off",
+            "sample_type": "lake and coastal seawater"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "suck",
+        "parameters": {
+          "container": "filter",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Anodisc filter surface",
+          "reagent": "sample",
+          "volume": "4 mL or more",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "oligotrophic or deep ocean"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "filter towers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "between_samples": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter towers",
+          "reagent": "0.02-\u00b5m filtered dH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "followed_by": "ethanol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter towers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "lint-free paper (Kimwipe)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "vacuum": "on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "air_dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "typically a minute or less",
+          "speed": null,
+          "other": {
+            "until": "surface visibly dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "Anodisc (sample side up) on drop of stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "filter",
+          "reagent": "stain",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "location": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "filter",
+          "reagent": "stain",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "48 h",
+          "speed": null,
+          "other": {
+            "location": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "backing filter",
+          "reagent": "dH2O",
+          "volume": "drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lay",
+        "parameters": {
+          "container": "backing filter",
+          "reagent": "stained Anodisc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "fluid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vacuum"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter",
+          "reagent": "0.02-\u00b5m filtered dH2O",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 2,
+            "condition": "if required"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "vacuum": "on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter paper or Kimwipe",
+          "reagent": "Anodisc (sample-side up)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "appears opaque"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "labeled glass slide",
+          "reagent": "antifade solution",
+          "volume": "12\u201315 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lay",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "dry Anodisc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": "antifade solution",
+          "volume": "~20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "labeled glass slide",
+          "reagent": "spectrophotometric-grade glycerol",
+          "volume": "12\u201315 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lay",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "dry Anodisc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": "glycerol",
+          "volume": "~20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Anodisc",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "air bubbles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently pressing on coverslip"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "at least 4 months",
+          "speed": null,
+          "other": {
+            "option": "can be counted immediately"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "slide",
+          "reagent": "viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "magnification": "1000\u00d7",
+            "objective": "100\u00d7 oil immersion"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "test filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "ensure reagents/filters not contaminated, filtered volumes appropriate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before": "counting",
+            "criteria": [
+              "evenly stained",
+              "viruses on single plane of focus",
+              "not suspended in mounting medium",
+              "evenly distributed"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "ocular reticule",
+          "reagent": "grid squares",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "10\u2013100 stained viruses per field"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "estimate",
+        "parameters": {
+          "container": "slide",
+          "reagent": "viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "counting at least 20 random fields"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "tally",
+          "reagent": "number of particles in each field",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine variation in abundance"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "data": [
+              "number of particles counted in each field",
+              "number of fields counted",
+              "area of field",
+              "volume of sample filtered"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (other: {'item': 'reagents'})\n# MANUAL: collect (reagent: sample, other: {'sample_type': 'aquatic or sediment'})\n# MANUAL: prepare (container: slide, reagent: label, other: {'information': ['date', 'sample location', 'volume filtered']})\n# MANUAL: mark (container: plastic Petri plate, other: {'sections': 4, 'tool': 'permanent pen'})\n\n### AUTOMATED SECTION ###\nadd(container='marked Petri plate section', reagent='0.02-\u00b5m filtered dH2O', volume='78 \u00b5L', per filter=True)\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: 40-\u00b5L vial, reagent: stock SYBR solution, volume: 40 \u00b5L)\n\n### AUTOMATED SECTION ###\nadd(container='drop of dH2O or buffer (78 \u00b5L)', reagent='stock SYBR solution', volume='2 \u00b5L', per drop=True)\nmix(container='drop', reagent='stain', method='gently pipetting up and down')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: Petri plates, other: {'location': 'dark'})\n# MANUAL: prepare (container: 2-mL microcentrifuge tube, reagent: antifade solution, other: {'clean': True, 'sterilized': True})\n\n### AUTOMATED SECTION ###\ndilute(reagent='10% (wt/vol) stock of p-phenylenediamine', volume='1:100', diluent='glycerol/PBS')\n\n### MANUAL SECTION ###\n# MANUAL: keep (container: solution, temperature: on ice, other: {'protect_from': 'light'})\n\n### AUTOMATED SECTION ###\nadd(container='marked Petri plate section', reagent='Yo-Pro working solution', volume='80 \u00b5L', thawed=True, per filter=True)\n\n### MANUAL SECTION ###\n# MANUAL: place (container: lid of Petri plates, reagent: filter paper soaked with aqueous NaCl solution, volume: 3 mL, other: {'filter_paper_diameter': '9 cm', 'NaCl_concentration': '0.3% wt/vol'})\n# MANUAL: connect (container: filtration unit, other: {'filter_size': '25-mm', 'vacuum_source': True, 'vacuum_pressure': '\u226413 kPa'})\n# MANUAL: place (container: filter support, reagent: 0.45-\u00b5m nitrocellulose backing filter)\n\n### AUTOMATED SECTION ###\noverlay(container='backing filter', reagent='dH2O', volume='thin layer')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: wet backing filter, reagent: 0.02-\u00b5m Anodisc filter, other: {'orientation': 'plastic ring facing upward'})\n# MANUAL: thaw (container: sample, temperature: 37\u00b0C water bath, other: {'condition': 'if preserved and frozen'})\n\n### AUTOMATED SECTION ###\nfix(container='sample', reagent='glutaraldehyde', volume='0.5%', temperature='4\u00b0C', duration='15\u201330 min', condition='if freshly collected')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: duplicate control samples, volume: 1 mL, other: {'fixative': 'glutaraldehyde', 'water_type': '0.02-\u00b5m filtered'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='seawater samples', volume='<7 psu', diluent='0.02-\u00b5m filtered dH2O')\nadd(container='Anodisc filter surface', reagent='sample', volume='0.8\u20131.0 mL', vacuum='off', sample_type='lake and coastal seawater')\nturn_on(container='vacuum')\nsuck(container='filter', reagent='sample')\nadd(container='Anodisc filter surface', reagent='sample', volume='4 mL or more', sample_type='oligotrophic or deep ocean')\n\n### MANUAL SECTION ###\n# MANUAL: clean (container: filter towers, other: {'between_samples': True})\n\n### AUTOMATED SECTION ###\nrinse(container='filter towers', reagent='0.02-\u00b5m filtered dH2O', followed_by='ethanol')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: filter towers, other: {'method': 'lint-free paper (Kimwipe)'})\n# MANUAL: remove (container: Anodisc, other: {'vacuum': 'on'})\n# MANUAL: air_dry (container: filter, duration: typically a minute or less, other: {'until': 'surface visibly dry'})\n# MANUAL: place (container: Petri dish, reagent: Anodisc (sample side up) on drop of stain)\n\n### AUTOMATED SECTION ###\nincubate(container='filter', reagent='stain', duration='15 min', location='dark')\nincubate(container='filter', reagent='stain', temperature='room temperature', duration='48 h', location='dark')\nadd(container='backing filter', reagent='dH2O', volume='drop')\n\n### MANUAL SECTION ###\n# MANUAL: lay (container: backing filter, reagent: stained Anodisc)\n\n### AUTOMATED SECTION ###\nremove(container='fluid', method='vacuum')\nrinse(container='filter', reagent='0.02-\u00b5m filtered dH2O', volume='1 mL', times=2, condition='if required')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Anodisc, other: {'vacuum': 'on'})\n# MANUAL: place (container: filter paper or Kimwipe, reagent: Anodisc (sample-side up), other: {'location': 'dark'})\n# MANUAL: dry (container: filter, other: {'until': 'appears opaque'})\n\n### AUTOMATED SECTION ###\nadd(container='labeled glass slide', reagent='antifade solution', volume='12\u201315 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: lay (container: glass slide, reagent: dry Anodisc)\n\n### AUTOMATED SECTION ###\nadd(container='Anodisc', reagent='antifade solution', volume='~20 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: Anodisc, reagent: coverslip)\n\n### AUTOMATED SECTION ###\nadd(container='labeled glass slide', reagent='spectrophotometric-grade glycerol', volume='12\u201315 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: lay (container: glass slide, reagent: dry Anodisc)\n\n### AUTOMATED SECTION ###\nadd(container='Anodisc', reagent='glycerol', volume='~20 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: Anodisc, reagent: coverslip)\n# MANUAL: remove (container: air bubbles, other: {'method': 'gently pressing on coverslip'})\n# MANUAL: store (container: slides, temperature: -20\u00b0C, duration: at least 4 months, other: {'option': 'can be counted immediately'})\n# MANUAL: count (container: slide, reagent: viruses, other: {'magnification': '1000\u00d7', 'objective': '100\u00d7 oil immersion'})\n# MANUAL: check (container: test filters, other: {'purpose': 'ensure reagents/filters not contaminated, filtered volumes appropriate'})\n# MANUAL: check (container: slide, other: {'before': 'counting', 'criteria': ['evenly stained', 'viruses on single plane of focus', 'not suspended in mounting medium', 'evenly distributed']})\n# MANUAL: select (container: ocular reticule, reagent: grid squares, other: {'criteria': '10\u2013100 stained viruses per field'})\n# MANUAL: estimate (container: slide, reagent: viruses, other: {'method': 'counting at least 20 random fields'})\n# MANUAL: keep (container: tally, reagent: number of particles in each field, other: {'purpose': 'determine variation in abundance'})\n# MANUAL: record (container: sample, other: {'data': ['number of particles counted in each field', 'number of fields counted', 'area of field', 'volume of sample filtered']})",
+    "source_file": "protocol_116.txt"
+  }
+]

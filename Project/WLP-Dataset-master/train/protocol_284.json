@@ -1,0 +1,146 @@
+[
+  {
+    "protocol": "Haemolymph extraction of adult Drosophila\nSting 3 holes in a 0.5ml Eppendorf cap and put into 15ml Eppendorf cap with removed lid.\nRemove the flies\u2019 wings, spear the fly\u2019s thorax with the peaked stylus.\nCollect 20 speared flies in the 0.5ml Eppendorf cap with holes, on ice.\nCentrifuge the 0.5ml Eppendorf cap within the 1.5ml one (1 min, 5000 rpm, at 4\u00b0C).\nDiscard the 0.5ml Eppendorf cap, soak the pellet with a capillary.\nRecord the amount of soaked haemolymph (to fill up the 0.5\u03bcl you need around 50 flies).\nThe haemolymph from the capillary can be transferred with the suction cup anywhere.\nAdd 19.5\u00b5l cold PBS to 0.5\u00b5l haemolymph.\nAdd 10\u00b5l of this mixture to 30\u00b5l Citrate Acid Buffer and 10\u00b5l of a 3% Trehalase-Citrate acid buffer solution.\nIncubate over night at 37\u00b0C.\nAdd 50\u00b5l Tris Buffer.\n80\u00b5 of this mixture are added to 156.8\u00b5 Glucose oxidase (aliquot in the freezer) and 3.2\u00b5l o-Dianisidine (freshly added from the fridge).\nIncubate for exactly 30 min at 37\u00b0C.\nStop reaction by adding 160\u00b5l Sulfuric Acid.\nMeasure at 540nm at the (nanoDrop) spectrometer.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "0.5ml Eppendorf cap within 1.5ml Eppendorf cap",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (presumably tube containing haemolymph)",
+          "reagent": "cold PBS",
+          "volume": "19.5\u00b5l",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "0.5\u00b5l haemolymph"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (presumably new tube)",
+          "reagent": "mixture of PBS and haemolymph",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "30\u00b5l Citrate Acid Buffer and 10\u00b5l of 3% Trehalase-Citrate acid buffer solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "unknown (presumably tube containing mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (presumably tube containing incubated mixture)",
+          "reagent": "Tris Buffer",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (presumably new tube)",
+          "reagent": "mixture (after Tris Buffer addition)",
+          "volume": "80\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "156.8\u00b5l Glucose oxidase (aliquot in freezer) and 3.2\u00b5l o-Dianisidine (freshly added from fridge)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "unknown (presumably tube containing mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (presumably tube containing incubated mixture)",
+          "reagent": "Sulfuric Acid",
+          "volume": "160\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "stop reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "unknown (presumably tube containing final mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "540nm",
+            "instrument": "nanoDrop spectrometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='0.5ml Eppendorf cap within 1.5ml Eppendorf cap', temperature='4\u00b0C', duration='1 min', speed='5000 rpm')\nadd(container='unknown (presumably tube containing haemolymph)', reagent='cold PBS', volume='19.5\u00b5l', temperature='cold', to='0.5\u00b5l haemolymph')\nadd(container='unknown (presumably new tube)', reagent='mixture of PBS and haemolymph', volume='10\u00b5l', to='30\u00b5l Citrate Acid Buffer and 10\u00b5l of 3% Trehalase-Citrate acid buffer solution')\nincubate(container='unknown (presumably tube containing mixture)', temperature='37\u00b0C', duration='overnight')\nadd(container='unknown (presumably tube containing incubated mixture)', reagent='Tris Buffer', volume='50\u00b5l')\nadd(container='unknown (presumably new tube)', reagent='mixture (after Tris Buffer addition)', volume='80\u00b5l', to='156.8\u00b5l Glucose oxidase (aliquot in freezer) and 3.2\u00b5l o-Dianisidine (freshly added from fridge)')\nincubate(container='unknown (presumably tube containing mixture)', temperature='37\u00b0C', duration='30 min')\nadd(container='unknown (presumably tube containing incubated mixture)', reagent='Sulfuric Acid', volume='160\u00b5l', purpose='stop reaction')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: unknown (presumably tube containing final mixture), other: {'wavelength': '540nm', 'instrument': 'nanoDrop spectrometer'})",
+    "source_file": "protocol_284.txt"
+  }
+]

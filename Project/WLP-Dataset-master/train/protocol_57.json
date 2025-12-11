@@ -1,0 +1,429 @@
+[
+  {
+    "protocol": "DNA Extraction for college laboratory setting\nLabel\tone tube for\teach\tplant.\nHarvest 2-3 seedlings and place in a mortar.\nFill with about 50 ml of liquid nitrogen.\nGrind tissue with pestle.\nAdd 1 ml of extraction buffer to the tube.\nAdd 120 \u00b5l of 10% SDS.\nMix by inverting.\nIncubate tube(s) at 65 \u02daC for 20 minutes.\nAdd 300 \u00b5l 5M KOAc.\nMix well by inverting several times (important!\n), then place on ice 5 minutes.\nCentrifuge\tfor\t5\tminutes\tat\t>12,000\trpm.\nLabel\ta\tsecond\ttube.\nPass 700 \u00b5l of the supernatant through a miracloth funnel into the second tube.\nAdd 600 \u00b5l of isopropanol.\nMix the contents thoroughly by inverting.\nSpin\tfor\t5\tminutes\tat\t14,000\trpm.\nCarefully pour off and discard the supernatant.\nUse a P20 set to 20 \u00b5l to remove the remaining drops of liquid without disturbing the DNA pellet.\nAdd 500 \u00b5l of 70% ethanol and flick the tube until the pellet comes off the bottom.\nSpin\t5 minutes.\nPour off the ethanol.\nUse a P20 set to 20 \u00b5l to remove the remaining drops without disturbing the pellet.\nLeave\tthe\ttube\topen\ton\tthe\tbench\tto\tair dry\tfor\t5-10\tminutes.\nResuspend the DNA in 50 \u00b5l TE and incubate at room temperature for 5 minutes for complete resuspension.\nSamples should be frozen for storage.",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": "one tube for each plant"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "mortar",
+          "reagent": "2-3 seedlings",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "mortar",
+          "reagent": "liquid nitrogen",
+          "volume": "50 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "grind",
+        "parameters": {
+          "container": "mortar",
+          "reagent": "tissue",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pestle"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "extraction buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "10% SDS",
+          "volume": "120 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65 \u02daC",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "5M KOAc",
+          "volume": "300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": ">12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pass",
+        "parameters": {
+          "container": "miracloth funnel into second tube",
+          "reagent": "supernatant",
+          "volume": "700 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "isopropanol",
+          "volume": "600 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "14,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "remaining drops of liquid",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "P20 pipette",
+            "do not disturb": "DNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "70% ethanol",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick until pellet comes off bottom"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "remaining drops",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "P20 pipette",
+            "do not disturb": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "air dry",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "tube open": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "TE",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "DNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "second tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "complete resuspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "second tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: tube, other: {'quantity': 'one tube for each plant'})\n# MANUAL: harvest (container: mortar, reagent: 2-3 seedlings, other: {})\n\n### AUTOMATED SECTION ###\nfill(container='mortar', reagent='liquid nitrogen', volume='50 ml')\n\n### MANUAL SECTION ###\n# MANUAL: grind (container: mortar, reagent: tissue, other: {'tool': 'pestle'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='extraction buffer', volume='1 ml')\nadd(container='tube', reagent='10% SDS', volume='120 \u00b5l')\nmix(container='tube', method='inverting')\nincubate(container='tube', temperature='65 \u02daC', duration='20 minutes')\nadd(container='tube', reagent='5M KOAc', volume='300 \u00b5l')\nmix(container='tube', method='inverting several times')\nplace(container='tube', temperature='on ice', duration='5 minutes')\ncentrifuge(container='tube', duration='5 minutes', speed='>12,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: second tube, other: {})\n# MANUAL: pass (container: miracloth funnel into second tube, reagent: supernatant, volume: 700 \u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='second tube', reagent='isopropanol', volume='600 \u00b5l')\nmix(container='second tube', method='inverting thoroughly')\ncentrifuge(container='second tube', duration='5 minutes', speed='14,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: second tube, reagent: supernatant, other: {'discard': True})\n\n### AUTOMATED SECTION ###\nremove(container='second tube', reagent='remaining drops of liquid', volume='20 \u00b5l', instrument='P20 pipette', do not disturb='DNA pellet')\nadd(container='second tube', reagent='70% ethanol', volume='500 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: second tube, other: {'method': 'flick until pellet comes off bottom'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='second tube', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: second tube, reagent: ethanol, other: {})\n\n### AUTOMATED SECTION ###\nremove(container='second tube', reagent='remaining drops', volume='20 \u00b5l', instrument='P20 pipette', do not disturb='pellet')\n\n### MANUAL SECTION ###\n# MANUAL: air dry (container: second tube, temperature: room temperature, duration: 5-10 minutes, other: {'tube open': True})\n\n### AUTOMATED SECTION ###\nresuspend(container='second tube', reagent='TE', volume='50 \u00b5l', target='DNA pellet')\nincubate(container='second tube', temperature='room temperature', duration='5 minutes', purpose='complete resuspension')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: second tube, reagent: sample, other: {'purpose': 'storage'})",
+    "source_file": "protocol_57.txt"
+  }
+]

@@ -1,0 +1,283 @@
+[
+  {
+    "protocol": "Electroporation Protocol (C2986)\nPrepare 17mm x 100mm round-bottom culture tubes (e.g. VWR #60818-667) at room temperature. \nPlace SOC recovery medium in a 37\u00b0C water bath. \nPre-warm selective plates at 37\u00b0C for 1 hour. \nPlace electroporation cuvettes (1mm) and microcentrifuge tubes on ice. \nAs a positive control for transformation, dilute the control pUC19 by 1:5 to a final concentration of 10 pg/\u03bcl using sterile water. \nThaw NEB Turbo Electrocompetent cells on ice (about 10 min) and mix cells by flicking gently. \nTransfer 25 \u03bcl of the cells (or the amount specified for the cuvettes) to a chilled microcentrifuge tube. \nAdd 1 \u03bcl of the DNA solution.\nCarefully transfer the cell/DNA mix into a chilled cuvette without introducing bubbles and make sure that the cells deposit across the bottom of the cuvette. \nElectroporate using the following conditions for BTX ECM 630 and Bio-Rad GenePulser electroporators: 2.1 kV, 100 \u03a9, and 25 \u03bcF.\nThe typical time constant is ~2.6 milliseconds. \nImmediately add 975 \u00b5l of 37\u00b0C SOC to the cuvette. \nGently mix up and down twice. \nTransfer to the 17mm x 100mm round-bottom culture tube.\nShake vigorously (250 rpm) or rotate at 37\u00b0C for 1 hour. \nDilute the cells as appropriate then spread 100-200 \u03bcl cells onto a pre-warmed selective plate. \nIncubate plates 8 hours to overnight at 37\u00b0C.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "17mm x 100mm round-bottom culture tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "example": "VWR #60818-667"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SOC recovery medium",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "water bath"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-warm",
+        "parameters": {
+          "container": "selective plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "electroporation cuvettes (1mm) and microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "control pUC19",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "1:5",
+            "final concentration": "10 pg/\u03bcl",
+            "diluent": "sterile water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "NEB Turbo Electrocompetent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "about 10 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "NEB Turbo Electrocompetent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "by flicking gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "chilled microcentrifuge tube",
+          "reagent": "NEB Turbo Electrocompetent cells",
+          "volume": "25 \u03bcl (or amount specified for cuvettes)",
+          "temperature": "chilled",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "chilled microcentrifuge tube",
+          "reagent": "DNA solution",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "chilled cuvette",
+          "reagent": "cell/DNA mix",
+          "volume": "entire mix",
+          "temperature": "chilled",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "without introducing bubbles, ensure cells deposit across bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "electroporate",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": "cell/DNA mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "BTX ECM 630 or Bio-Rad GenePulser",
+            "settings": {
+              "voltage": "2.1 kV",
+              "resistance": "100 \u03a9",
+              "capacitance": "25 \u03bcF"
+            },
+            "time constant": "~2.6 ms"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": "SOC",
+          "volume": "975 \u03bcl",
+          "temperature": "37\u00b0C",
+          "duration": "immediately after electroporation",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": "cell/SOC mix",
+          "volume": "entire contents",
+          "temperature": null,
+          "duration": null,
+          "speed": "up and down twice, gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "17mm x 100mm round-bottom culture tube",
+          "reagent": "cell/SOC mix",
+          "volume": "entire contents",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": "250 rpm",
+          "other": {
+            "alternative": "rotate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "as appropriate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "pre-warmed selective plate",
+          "reagent": "cells",
+          "volume": "100-200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "8 hours to overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 17mm x 100mm round-bottom culture tubes, temperature: room temperature, other: {'example': 'VWR #60818-667'})\n# MANUAL: place (container: SOC recovery medium, temperature: 37\u00b0C, other: {'location': 'water bath'})\n\n### AUTOMATED SECTION ###\npre-warm(container='selective plates', temperature='37\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: electroporation cuvettes (1mm) and microcentrifuge tubes, temperature: on ice)\n\n### AUTOMATED SECTION ###\ndilute(reagent='control pUC19', dilution='1:5', final concentration='10 pg/\u03bcl', diluent='sterile water')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: NEB Turbo Electrocompetent cells, temperature: on ice, duration: about 10 min)\n\n### AUTOMATED SECTION ###\nmix(container='NEB Turbo Electrocompetent cells', speed='by flicking gently')\ntransfer(container='chilled microcentrifuge tube', reagent='NEB Turbo Electrocompetent cells', volume='25 \u03bcl (or amount specified for cuvettes)', temperature='chilled')\nadd(container='chilled microcentrifuge tube', reagent='DNA solution', volume='1 \u03bcl')\ntransfer(container='chilled cuvette', reagent='cell/DNA mix', volume='entire mix', temperature='chilled', note='without introducing bubbles, ensure cells deposit across bottom')\nelectroporate(container='cuvette', reagent='cell/DNA mix', device='BTX ECM 630 or Bio-Rad GenePulser', settings={'voltage': '2.1 kV', 'resistance': '100 \u03a9', 'capacitance': '25 \u03bcF'}, time constant='~2.6 ms')\nadd(container='cuvette', reagent='SOC', volume='975 \u03bcl', temperature='37\u00b0C', duration='immediately after electroporation')\nmix(container='cuvette', reagent='cell/SOC mix', volume='entire contents', speed='up and down twice, gently')\ntransfer(container='17mm x 100mm round-bottom culture tube', reagent='cell/SOC mix', volume='entire contents')\nshake(container='culture tube', temperature='37\u00b0C', duration='1 hour', speed='250 rpm', alternative='rotate')\ndilute(reagent='cells', note='as appropriate')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: pre-warmed selective plate, reagent: cells, volume: 100-200 \u03bcl)\n\n### AUTOMATED SECTION ###\nincubate(container='plates', temperature='37\u00b0C', duration='8 hours to overnight')",
+    "source_file": "protocol_285.txt"
+  }
+]

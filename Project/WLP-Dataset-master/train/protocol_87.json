@@ -1,0 +1,73 @@
+[
+  {
+    "protocol": "Adsorbing Viruses on TEM Grids\nOn the same day as grid prep, use glow discharge to render grids hydrophylic.\nHolding the grid in the tweezers, place 5 \u00b5l of viral lysate onto the shiny side of the grid (Figure 1).\nLet the sample sit for ~3 minutes to allow the viruses to adsorb to the grid.\nStain the viruses using the protocol \u201cPositive and Negative Staining of Viruses on TEM Grids\u201d.",
+    "actions": [
+      {
+        "action": "glow discharge",
+        "parameters": {
+          "container": "TEM grid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "render grids hydrophylic"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "TEM grid (shiny side)",
+          "reagent": "viral lysate",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "tweezers holding grid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "TEM grid with viral lysate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (assumed)",
+          "duration": "~3 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "allow viruses to adsorb"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "TEM grid with adsorbed viruses",
+          "reagent": "stain (per referenced protocol)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "Positive and Negative Staining of Viruses on TEM Grids"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: glow discharge (container: TEM grid, other: {'purpose': 'render grids hydrophylic'})\n\n### AUTOMATED SECTION ###\ndispense(container='TEM grid (shiny side)', reagent='viral lysate', volume='5 \u00b5l', tool='tweezers holding grid')\nincubate(container='TEM grid with viral lysate', temperature='room temperature (assumed)', duration='~3 minutes', purpose='allow viruses to adsorb')\n\n### MANUAL SECTION ###\n# MANUAL: stain (container: TEM grid with adsorbed viruses, reagent: stain (per referenced protocol), other: {'protocol': 'Positive and Negative Staining of Viruses on TEM Grids'})",
+    "source_file": "protocol_87.txt"
+  }
+]

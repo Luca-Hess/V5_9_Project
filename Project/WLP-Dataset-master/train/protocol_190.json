@@ -1,0 +1,210 @@
+[
+  {
+    "protocol": "Prophage induction in marine Synechococcus\nFilter each sample through a 0.2-\u00b5m filter to a volume of approximately 5 mL to remove most of the ambient viruses.\nAdd virus-free (0.02-\u00b5m filtered) water prepared from the same sample and reduce the volume a second time.\nReturn the retentate to its original volume by adding virus-free seawater, dividing into aliquots, and incubating with and without inducing agent.\nAmend treated samples with the inducing agent mitomycin C at a concentration of 1 \u00b5g/mL or with the inducing agent of choice.\nEmploy the most probable number (MPN) method to enumerate the cyanophage population (Suttle and Chan 1994).\nPrepare a one- to five-dilution series of the environmental or prophage induction treatment sample using 96-well microtiter plates (Costar, Corning Inc.).\nFreshly dilute a susceptible Synechococcus host 1:10 and place in each well.\nPrepare control plates similarly using sterile SN media in the first column of wells.\nPrepare three replicate treatment and control plates from each site.\nIncubate the plates until good growth of the host organism is evident (10\u201314 days).\nScore wells as positive for virus if lysis of the host organism is evident as a well clearing.\nCalculate viral abundance for each plate using an MPN program (Hurley and Roscoe 1983).\nEvaluate treatment and control cyanophage and Synechococcus counts by paired t test between samples using Minitab statistical software.\nPerform comparison of induction results and environmental parameters using linear regression and X2\u00a0 analysis, also using Minitab.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": "approximately 5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2-\u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filtered sample",
+          "reagent": "virus-free (0.02-\u00b5m filtered) water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prepared_from": "same sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "sample with added water",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "second_time": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "retentate",
+          "reagent": "virus-free seawater",
+          "volume": "to original volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": "retentate",
+          "reagent": null,
+          "volume": "aliquots",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "aliquots",
+          "reagent": "with and without inducing agent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "treated samples",
+          "reagent": "mitomycin C or inducing agent of choice",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1 \u00b5g/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "96-well microtiter plates",
+          "reagent": "environmental or prophage induction treatment sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_series": "one- to five-dilution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "Synechococcus host",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_factor": "1:10"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "each well",
+          "reagent": "diluted Synechococcus host",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "control plates",
+          "reagent": "sterile SN media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "first column of wells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "treatment and control plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "three",
+            "from_each_site": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10\u201314 days",
+          "speed": null,
+          "other": {
+            "until": "good growth of host organism is evident"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='sample', volume='approximately 5 mL', filter_size='0.2-\u00b5m')\nadd(container='filtered sample', reagent='virus-free (0.02-\u00b5m filtered) water', prepared_from='same sample')\nfilter(container='sample with added water', second_time=True)\nadd(container='retentate', reagent='virus-free seawater', volume='to original volume')\ndivide(container='retentate', volume='aliquots')\nincubate(container='aliquots', reagent='with and without inducing agent')\nadd(container='treated samples', reagent='mitomycin C or inducing agent of choice', concentration='1 \u00b5g/mL')\nprepare(container='96-well microtiter plates', reagent='environmental or prophage induction treatment sample', dilution_series='one- to five-dilution')\ndilute(container='Synechococcus host', dilution_factor='1:10')\nplace(container='each well', reagent='diluted Synechococcus host')\nprepare(container='control plates', reagent='sterile SN media', location='first column of wells')\nprepare(container='treatment and control plates', replicates='three', from_each_site=True)\nincubate(container='plates', duration='10\u201314 days', until='good growth of host organism is evident')",
+    "source_file": "protocol_190.txt"
+  }
+]

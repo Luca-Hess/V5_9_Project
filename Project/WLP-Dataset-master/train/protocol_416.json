@@ -1,0 +1,503 @@
+[
+  {
+    "protocol": "Transformation of Bacterial Cultures Using Hexamine Cobalt Chloride\nPrepare the SOB medium.\nPrepare the SOC medium by using the SOB media supplemented with 20mM glucose.\nPrepare the TFB buffer.\nPrepare the DTT solution.\nGrow 5 mL of the host cells overnight in SOB media at 37\u00b0C.\nInoculate 40 mL of SOB medium with 0.8 mL of the overnight culture.\nGrow to an A550 of 0.45-0.55 at 37\u00b0C (approximately 3-4 hours).\nCentrifuge the cells in the Sorvall SS34 rotor at 5,000 rpm, 5 min, 4\u00b0C.\nDiscard the supernatant.\nResuspend the pellet with 12.5 mL of the TFB solution.\nHold the remaining 2.5 mL of TFB for use later.\nChill the cells on ice for 15 min.\nCentrifuge the cells in the Sorvall SS34 rotor at 5,000 rpm, 5 min, 4\u00b0C.\nDiscard the supernatant.\nResuspend the pellet with 2.4 mL of TFB solution.\nAdd DMSO to 3.5% (84\u00b5L), mix and chill on ice for 5 min.\nAdd DTT solution to 75 mM (84 \u00b5L), mix and chill on ice for 10 min.\nAdd an equal volume of DMSO as before (84 \u00b5L), mix and chill on ice for 5 min.\nThe cells are now \"competent\".\nPipet 21 \u00b5L competent cells per prechilled microfuge tube.\nAdd the DNA (in as small a volume as possible, 1-2 \u00b5L/tube), mix and chill on ice for 30 min.\nHeat pulse the tubes at 42\u00b0C for 3 min.\nAdd 80 \u00b5L of SOC medium per tube and incubate the tubes at 37\u00b0C for 60 min.\nSpread 100 \u00b5L onto each plate.\nIncubate the plates at 37\u00b0C overnight.\nThen chill on ice for 2 min.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "SOB medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "SOC medium (SOB media supplemented with 20mM glucose)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "TFB buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "DTT solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "host cells in SOB media",
+          "volume": "5 mL",
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": null,
+          "reagent": "SOB medium with overnight culture",
+          "volume": "40 mL SOB medium, 0.8 mL overnight culture",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "inoculated SOB medium",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "3-4 hours",
+          "speed": null,
+          "other": {
+            "A550": "0.45-0.55"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet with TFB solution",
+          "volume": "12.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": null,
+          "reagent": "TFB solution",
+          "volume": "2.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "for use later"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet with TFB solution",
+          "volume": "2.4 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DMSO",
+          "volume": "84 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "3.5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DTT solution",
+          "volume": "84 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "75 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DMSO",
+          "volume": "84 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "same as before"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "prechilled microfuge tube",
+          "reagent": "competent cells",
+          "volume": "21 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "DNA",
+          "volume": "1-2 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "in as small a volume as possible"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "cells + DNA",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "cells + DNA",
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "method": "heat pulse"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "SOC medium",
+          "volume": "80 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "cells + DNA + SOC medium",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "plate",
+          "reagent": "transformed cells",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": "transformed cells",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: SOB medium, other: {})\n# MANUAL: prepare (reagent: SOC medium (SOB media supplemented with 20mM glucose), other: {})\n# MANUAL: prepare (reagent: TFB buffer, other: {})\n# MANUAL: prepare (reagent: DTT solution, other: {})\n# MANUAL: grow (reagent: host cells in SOB media, volume: 5 mL, temperature: 37\u00b0C, duration: overnight, other: {})\n# MANUAL: inoculate (reagent: SOB medium with overnight culture, volume: 40 mL SOB medium, 0.8 mL overnight culture, other: {})\n# MANUAL: grow (reagent: inoculated SOB medium, temperature: 37\u00b0C, duration: 3-4 hours, other: {'A550': '0.45-0.55'})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='cells', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall SS34')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet with TFB solution', volume='12.5 mL')\n\n### MANUAL SECTION ###\n# MANUAL: hold (reagent: TFB solution, volume: 2.5 mL, other: {'purpose': 'for use later'})\n\n### AUTOMATED SECTION ###\nchill(reagent='cells', temperature='on ice', duration='15 min')\ncentrifuge(reagent='cells', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall SS34')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet with TFB solution', volume='2.4 mL')\nadd(reagent='DMSO', volume='84 \u00b5L', final_concentration='3.5%')\nmix()\nchill(reagent='cells', temperature='on ice', duration='5 min')\nadd(reagent='DTT solution', volume='84 \u00b5L', final_concentration='75 mM')\nmix()\nchill(reagent='cells', temperature='on ice', duration='10 min')\nadd(reagent='DMSO', volume='84 \u00b5L', final_concentration='same as before')\nmix()\nchill(reagent='cells', temperature='on ice', duration='5 min')\npipette(container='prechilled microfuge tube', reagent='competent cells', volume='21 \u00b5L')\nadd(container='microfuge tube', reagent='DNA', volume='1-2 \u00b5L', note='in as small a volume as possible')\nmix(container='microfuge tube')\nchill(container='microfuge tube', reagent='cells + DNA', temperature='on ice', duration='30 min')\nheat(container='microfuge tube', reagent='cells + DNA', temperature='42\u00b0C', duration='3 min', method='heat pulse')\nadd(container='microfuge tube', reagent='SOC medium', volume='80 \u00b5L')\nincubate(container='microfuge tube', reagent='cells + DNA + SOC medium', temperature='37\u00b0C', duration='60 min')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: plate, reagent: transformed cells, volume: 100 \u00b5L, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', reagent='transformed cells', temperature='37\u00b0C', duration='overnight')\nchill(container='plate', temperature='on ice', duration='2 min')",
+    "source_file": "protocol_416.txt"
+  }
+]

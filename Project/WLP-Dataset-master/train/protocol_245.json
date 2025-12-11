@@ -1,0 +1,190 @@
+[
+  {
+    "protocol": "Lowry Protein Assay\nSet up a standard curve of 0, 10, 25, 50, 100, 150 and 200 \u00b5g of BSA in 10-15 ml tubes, 1.0 mL volume per sample.\nSet up tubes (10-15 mL) of the unknown protein sample(s) to determine their concentration, the final volume per sample is to be 1.0 mL.\nAdd 5.0 mL of reagent \u201cC\u201d to each tube, mix immediately.\nLet the samples sit for 10 min at room temperature.\nAdd 0.5 mL of reagent \u201cD\u201d to each tube, mix immediately.\nLet the samples sit for 30 min at room temperature.\nRead absorbance at 600 nm.\nRecord values, plot standard curve and determine sample concentration(s).",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": "BSA standard (0, 10, 25, 50, 100, 150, 200 \u00b5g in buffer)",
+          "volume": "1.0 mL per sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "standard curve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": "unknown protein sample",
+          "volume": "1.0 mL per sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "unknown"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": "reagent C",
+          "volume": "5.0 mL per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "immediately after reagent C addition",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": "reagent D",
+          "volume": "0.5 mL per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "immediately after reagent D addition",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "10-15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "600 nm",
+            "measurement": "absorbance"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "data": "absorbance values"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "plot",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "data": "standard curve"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "data": "sample concentration(s)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='10-15 mL tube', reagent='BSA standard (0, 10, 25, 50, 100, 150, 200 \u00b5g in buffer)', volume='1.0 mL per sample', sample_type='standard curve')\npipette(container='10-15 mL tube', reagent='unknown protein sample', volume='1.0 mL per sample', sample_type='unknown')\ndispense(container='10-15 mL tube', reagent='reagent C', volume='5.0 mL per tube')\nmix(container='10-15 mL tube', duration='immediately after reagent C addition')\nincubate(container='10-15 mL tube', temperature='room temperature', duration='10 min')\ndispense(container='10-15 mL tube', reagent='reagent D', volume='0.5 mL per tube')\nmix(container='10-15 mL tube', duration='immediately after reagent D addition')\nincubate(container='10-15 mL tube', temperature='room temperature', duration='30 min')\nread(container='10-15 mL tube', wavelength='600 nm', measurement='absorbance')\n\n### MANUAL SECTION ###\n# MANUAL: record (other: {'data': 'absorbance values'})\n# MANUAL: plot (other: {'data': 'standard curve'})\n# MANUAL: determine (other: {'data': 'sample concentration(s)'})",
+    "source_file": "protocol_245.txt"
+  }
+]

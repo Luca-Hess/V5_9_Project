@@ -1,0 +1,575 @@
+[
+  {
+    "protocol": "Bulk gDNA extraction from coral samples\nAcquire sample material.\nSmall amounts of coral tissue, with or without skeleton, may be obtained by clipping off branch tips, scraping with a razor blade, etc.\nAdd sample to 500 \u00b5L 1% SDS in DNAB in a microcentrifuge tube.\nBe sure that sample is fully immersed in the buffer.\nIncubate sample for 60-90 minutes at 65\u00b0C.\nSample is now stabilized for storage at room temperature, and can be treated as an \"archive\" for future use.\nThese archives can be used for multiple attempts at DNA extraction.\nAdd 25 \u00b5L Proteinase K (10 mg/mL) to\u00a0sample archive and vortex well.\nIncubate overnight at 37\u00b0C, for 6-7 hours at 45\u00b0C, or for 2-3 hours at 55\u00b0C.\nPrepare a new set of 1.5 mL tubes for the samples you intend to process, and add 100 \u00b5L of each\u00a0sample archive (in 1% SDS in DNAB) to the new set of tubes.\nReturn the remainder of the sample archive to storage.\nDefrost CTAB mix (stored at -20\u00b0C) and add twice volume (200 \u00b5L) to each sample.\nVortex and incubate at 65\u00b0C for 30-60 minutes.\nAllow samples to cool.\nIn fume hood, add equal volume (300 \u00b5L) of chloroform.\nBe sure to \u2018charge\u2019 (i.e., fill and empty pipette tip with chloroform 2 to 3 times) the pipette tip before first use, or your tip will leak chloroform.\nVortex sample and invert several times, but be careful that caps are tight \u2013 leaking chloroform will erase your sample labels!\nPut in rack on rotating platform for 2-3 hours.\nCentrifuge at 10,000g (RCF) for 10 minutes.\nAlign tubes in centrifuge so that hinges are on the outside.\nWhile spinning, prepare a new set of labeled 1.5 mL tubes.\nRemove samples from centrifuge and very carefully pipette off top ~250 \u00b5L into new tube.\nDispose the rest of the contents into appropriate waste container.\nAdd twice volume (500 \u00b5L) of 100% (200-proof) ethanol (EtOH).\nEnsure caps are shut tightly and invert samples in their rack several times, together with a few brief shakes to make sure samples are well mixed.\nPut samples in freezer for at least 2 hours to promote DNA precipitation.\nIf the EtOH is pre-chilled, you can leave it in the -20\u00b0C freezer for only a 1/2 hour.\nPut samples in centrifuge (ensuring that the hinges of the tubes are on the outside) and spin for 10 minutes at 10,000g (RCF).\nRemove samples from centrifuge and carefully decant off ethanol from all the tubes into a waste container.\nThe DNA pellet should remain stuck to the inside of the tube.\nPut tubes, with their caps open, in the Vacufuge/Speedvac.\nBe careful when putting the tubes in and don\u2019t touch the inside of the caps.\nSpeedvac at 45\u00b0C for 30-60 minutes.\nRemove samples from vacufuge and add 100 \u00b5L of 0.3 M NaOAc (do not use the stock 3 M solution!).\nVortex sample well to dissolve pellet.\nWhen the pellet is dissolved the\u00a0sample will appear \u201csyrupy\u201d and will not bounce around as droplets inside the tube.\nOnce the pellet is dissolved, add 200uL of 100% Ethanol, vortex and invert several times and put in freezer for at least 2hrs.\nRemove samples from freezer, and centrifuge for 10 minutes at 10,000g (RCF).\nDecant supernatant into appropriate waste container.\nAdd 100 \u00b5L of 70% Ethanol, and vortex thoroughly (this is the \u201cEthanol Wash\u201d step).\nCentrifuge for 10 minutes at 10,000g (RCF), and again decant supernatant into appropriate waste container.\nPut samples in Vacufuge with the caps open, and speedvac at 45\u00b0C for 30-60 minutes to thoroughly dry the pellet.\nTake samples out of centrifuge and add 50-100 \u00b5L TE buffer.\nVortex briefly to mix and store at -20\u00b0C in freezer.\nSample is now ready for PCR.\nStore DNA samples at -20\u00b0C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample + 500 \u00b5L 1% SDS in DNAB",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample in 1% SDS in DNAB",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "60-90 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Proteinase K (10 mg/mL)",
+          "volume": "25 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample + Proteinase K",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample + Proteinase K",
+          "volume": null,
+          "temperature": "37\u00b0C or 45\u00b0C or 55\u00b0C",
+          "duration": "overnight or 6-7 hours or 2-3 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample archive (in 1% SDS in DNAB)",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "defrost",
+        "parameters": {
+          "container": "CTAB mix tube",
+          "reagent": "CTAB mix",
+          "volume": null,
+          "temperature": "-20\u00b0C to room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "CTAB mix",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "twice volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample + CTAB mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample + CTAB mix",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "chloroform",
+          "volume": "300 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "equal volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample + chloroform",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "invert": "several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-3 hours",
+          "speed": null,
+          "other": {
+            "platform": "rotating"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "10,000g (RCF)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "top ~250 \u00b5L (aqueous phase)",
+          "volume": "250 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispose",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "remaining contents",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "100% ethanol (EtOH)",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "twice volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "shake": "briefly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + ethanol",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "2 hours (or 0.5 hour if EtOH pre-chilled)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "10,000g (RCF)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "speedvac",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "DNA pellet",
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {
+            "device": "Vacufuge/Speedvac"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "0.3 M NaOAc",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + NaOAc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": {
+            "purpose": "dissolve pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "100% Ethanol",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "invert": "several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + ethanol",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "at least 2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "10,000g (RCF)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "70% Ethanol",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "Ethanol Wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + 70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "10,000g (RCF)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "speedvac",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "DNA pellet",
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "dry pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "TE buffer",
+          "volume": "50-100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "sample + TE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "briefly",
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "DNA sample",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='microcentrifuge tube', reagent='sample + 500 \u00b5L 1% SDS in DNAB', volume='500 \u00b5L')\nincubate(container='microcentrifuge tube', reagent='sample in 1% SDS in DNAB', temperature='65\u00b0C', duration='60-90 minutes')\nadd(container='microcentrifuge tube', reagent='Proteinase K (10 mg/mL)', volume='25 \u00b5L')\nvortex(container='microcentrifuge tube', reagent='sample + Proteinase K', speed='well')\nincubate(container='microcentrifuge tube', reagent='sample + Proteinase K', temperature='37\u00b0C or 45\u00b0C or 55\u00b0C', duration='overnight or 6-7 hours or 2-3 hours')\nadd(container='1.5 mL tube', reagent='sample archive (in 1% SDS in DNAB)', volume='100 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: defrost (container: CTAB mix tube, reagent: CTAB mix, temperature: -20\u00b0C to room temperature, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1.5 mL tube', reagent='CTAB mix', volume='200 \u00b5L', ratio='twice volume')\nvortex(container='1.5 mL tube', reagent='sample + CTAB mix')\nincubate(container='1.5 mL tube', reagent='sample + CTAB mix', temperature='65\u00b0C', duration='30-60 minutes')\ncool(container='1.5 mL tube', reagent='sample', temperature='room temperature')\nadd(container='1.5 mL tube', reagent='chloroform', volume='300 \u00b5L', ratio='equal volume')\nvortex(container='1.5 mL tube', reagent='sample + chloroform', invert='several times')\nrotate(container='1.5 mL tube', reagent='sample', duration='2-3 hours', platform='rotating')\ncentrifuge(container='1.5 mL tube', reagent='sample', duration='10 minutes', speed='10,000g (RCF)')\npipette(container='1.5 mL tube', reagent='top ~250 \u00b5L (aqueous phase)', volume='250 \u00b5L', destination='new tube')\n\n### MANUAL SECTION ###\n# MANUAL: dispose (container: 1.5 mL tube, reagent: remaining contents, other: {'destination': 'waste container'})\n\n### AUTOMATED SECTION ###\nadd(container='new tube', reagent='100% ethanol (EtOH)', volume='500 \u00b5L', ratio='twice volume')\ninvert(container='new tube', reagent='sample + ethanol', shake='briefly')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: new tube, reagent: sample + ethanol, temperature: -20\u00b0C, duration: 2 hours (or 0.5 hour if EtOH pre-chilled), other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='new tube', reagent='sample', duration='10 minutes', speed='10,000g (RCF)')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: new tube, reagent: ethanol, other: {'destination': 'waste container'})\n\n### AUTOMATED SECTION ###\nspeedvac(container='new tube', reagent='DNA pellet', temperature='45\u00b0C', duration='30-60 minutes', device='Vacufuge/Speedvac')\nadd(container='new tube', reagent='0.3 M NaOAc', volume='100 \u00b5L')\nvortex(container='new tube', reagent='sample + NaOAc', speed='well', purpose='dissolve pellet')\nadd(container='new tube', reagent='100% Ethanol', volume='200 \u00b5L')\nvortex(container='new tube', reagent='sample + ethanol', invert='several times')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: new tube, reagent: sample + ethanol, temperature: -20\u00b0C, duration: at least 2 hours, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='new tube', reagent='sample', duration='10 minutes', speed='10,000g (RCF)')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: new tube, reagent: supernatant, other: {'destination': 'waste container'})\n\n### AUTOMATED SECTION ###\nadd(container='new tube', reagent='70% Ethanol', volume='100 \u00b5L', purpose='Ethanol Wash')\nvortex(container='new tube', reagent='sample + 70% ethanol', speed='thoroughly')\ncentrifuge(container='new tube', reagent='sample', duration='10 minutes', speed='10,000g (RCF)')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: new tube, reagent: supernatant, other: {'destination': 'waste container'})\n\n### AUTOMATED SECTION ###\nspeedvac(container='new tube', reagent='DNA pellet', temperature='45\u00b0C', duration='30-60 minutes', purpose='dry pellet')\nadd(container='new tube', reagent='TE buffer', volume='50-100 \u00b5L')\nvortex(container='new tube', reagent='sample + TE buffer', speed='briefly', purpose='mix')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: new tube, reagent: DNA sample, temperature: -20\u00b0C, other: {})",
+    "source_file": "protocol_444.txt"
+  }
+]

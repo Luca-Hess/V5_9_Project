@@ -1,0 +1,223 @@
+[
+  {
+    "protocol": "One-step growth experiments (bacteriophages)\n200 \u00b5L overnight culture is inoculated in 100 mL culture flask with 50 mL growth medium (e.g., LB).\nIncubate on a shaking table until the density in the culture has reached cell density of ~5 \u00d7 108 CFU mL\u20131 (corresponding to an OD525 of ~0.3).\n1 mL aliquots of the bacterial culture are mixed with subsamples of the phage stock in triplicate microfuge tubes at an multiplicity of infection (MOI) of approximately 0.01.\nIncubate for 10 min to allow the phages to adsorb to the host cells.\nCentrifuge the cells (6000g, 10 min).\nRemove the supernatant.\nResuspend the pellet in 1 mL growth medium (e.g., LB).\nRepeat steps 5-7 to wash out any further unadsorbed phages.\nTransfer 50 \u00b5L of the resuspended culture (bacteria and adsorbed phages) to 50 mL growth medium in a 100 mL culture flask and mix well.\nTransfer 1 mL to a microfuge tube.\nIncubate the triplicate 50 mL cultures on a shaking table.\nDetermine the number of PFU (total infectious centers) by plaque assay in the collected sample.\nContinue to collect samples for PFU over time for 6\u20138 hours.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "100 mL culture flask",
+          "reagent": "200 \u00b5L overnight culture + 50 mL growth medium (e.g., LB)",
+          "volume": "200 \u00b5L overnight culture, 50 mL growth medium",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "manual action, initial setup"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "100 mL culture flask",
+          "reagent": "bacterial culture",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": "until OD525 ~0.3 (~5 \u00d7 10^8 CFU/mL)",
+          "speed": "shaking table",
+          "other": {
+            "endpoint": "OD525 ~0.3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microfuge tubes (triplicate)",
+          "reagent": "1 mL bacterial culture + subsamples of phage stock",
+          "volume": "1 mL bacterial culture, phage stock (MOI ~0.01)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "0.01"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "bacterial culture + phage",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "phage adsorption"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "cells",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "6000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "pellet in 1 mL growth medium (e.g., LB)",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "cells",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "centrifuge, remove supernatant, resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "100 mL culture flask",
+          "reagent": "50 \u00b5L resuspended culture + 50 mL growth medium",
+          "volume": "50 \u00b5L resuspended culture, 50 mL growth medium",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix": "well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "100 mL culture flask",
+          "reagent": "culture",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "after transfer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "culture",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "100 mL culture flask (triplicate 50 mL cultures)",
+          "reagent": "culture",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "shaking table",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "collected sample",
+          "reagent": "PFU (plaque assay)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "plaque assay"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "collected sample",
+          "reagent": "PFU",
+          "volume": null,
+          "temperature": null,
+          "duration": "6\u20138 hours",
+          "speed": null,
+          "other": {
+            "frequency": "over time"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 100 mL culture flask, reagent: 200 \u00b5L overnight culture + 50 mL growth medium (e.g., LB), volume: 200 \u00b5L overnight culture, 50 mL growth medium, other: {'note': 'manual action, initial setup'})\n\n### AUTOMATED SECTION ###\nincubate(container='100 mL culture flask', reagent='bacterial culture', volume='50 mL', duration='until OD525 ~0.3 (~5 \u00d7 10^8 CFU/mL)', speed='shaking table', endpoint='OD525 ~0.3')\nmix(container='microfuge tubes (triplicate)', reagent='1 mL bacterial culture + subsamples of phage stock', volume='1 mL bacterial culture, phage stock (MOI ~0.01)', MOI='0.01')\nincubate(container='microfuge tubes', reagent='bacterial culture + phage', volume='1 mL', duration='10 min', purpose='phage adsorption')\ncentrifuge(container='microfuge tubes', reagent='cells', volume='1 mL', duration='10 min', speed='6000g')\nremove(container='microfuge tubes', reagent='supernatant')\nresuspend(container='microfuge tubes', reagent='pellet in 1 mL growth medium (e.g., LB)', volume='1 mL')\nrepeat(container='microfuge tubes', reagent='cells', volume='1 mL', steps='centrifuge, remove supernatant, resuspend')\ntransfer(container='100 mL culture flask', reagent='50 \u00b5L resuspended culture + 50 mL growth medium', volume='50 \u00b5L resuspended culture, 50 mL growth medium', mix='well')\nmix(container='100 mL culture flask', reagent='culture', volume='50 mL', note='after transfer')\ntransfer(container='microfuge tube', reagent='culture', volume='1 mL')\nincubate(container='100 mL culture flask (triplicate 50 mL cultures)', reagent='culture', volume='50 mL', speed='shaking table')\n\n### MANUAL SECTION ###\n# MANUAL: determine (container: collected sample, reagent: PFU (plaque assay), other: {'method': 'plaque assay'})\n\n### AUTOMATED SECTION ###\ncollect(container='collected sample', reagent='PFU', duration='6\u20138 hours', frequency='over time')",
+    "source_file": "protocol_221.txt"
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "protocol": "MegaLong\u2122 Protocol for Isolation of >100kb Genomic DNA (Bacterial DNA)\nOn ice, add 0.5ml bacteria culture to a Tube-O-DIALYZER\u2122 and centrifuge at 5,000xg for 5 minutes to pellet cells.\nDiscard the supernatant.\nAdd 50\u00b5l lysis solution containing 1% SDS, 0.1N NaOH and 10mM EDTA (not supplied), 25\u00b5l of Digestion Buffer and 10\u00b5l LongLife\u2122 Proteinase K Solution.\nIncubate at 55\u00b0C for 2-4 hours with periodic rocking.\nDo not vortex.\nAfter digestion is complete, centrifuge the tube for 20 seconds at 1,000g.\nReplace the cap with the dialysis cap.\nDo not discard the storage cap as this will be required for storage of DNA.\nPlace the Tube-O-DIALYZER\u2122 upside down in a 50ml centrifuge tube and centrifuge at 1000xg for 30 seconds to bring the sample onto the dialysis membrane.\nRemove the Tube-O-DIALYZER\u2122 from the 50ml tube with forceps and keeping it inverted slide into the provided float and dialyze in 500ml 1X TE buffer at room temperature for 18-24 hours with 2-3 buffer changes.\nGently swirl tube to mix contents at each buffer change.\nFollowing dialysis the genomic DNA may be concentrated in the Tube-O-DIALYZER\u2122 using either Tube-O-DIALYZER\u2122 Concentrator (Cat. # 786-144) or Concentrator Solution (Cat. # 786-143).\nSimply prepare the Concentrator as per the instructions and invert the Tube-O-DIALYZER\u2122 containing your DNA in the solution.\nIf concentration is not required or following concentration, centrifuge the tube at 1000xg for 1 minute.\nReplace the dialysis cap with the normal cap.\nThe genomic DNA is now ready for use.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "bacteria culture",
+          "volume": "0.5ml",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "5,000xg",
+          "other": {
+            "purpose": "to pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "lysis solution containing 1% SDS, 0.1N NaOH and 10mM EDTA",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "Digestion Buffer",
+          "volume": "25\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "LongLife\u2122 Proteinase K Solution",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": "2-4 hours",
+          "speed": null,
+          "other": {
+            "rocking": "periodic"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 seconds",
+          "speed": "1,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "dialysis cap"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "upside down",
+            "secondary_container": "50ml centrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122 (in 50ml centrifuge tube)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "1,000xg",
+          "other": {
+            "purpose": "bring sample onto dialysis membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122 (in float)",
+          "reagent": "1X TE buffer",
+          "volume": "500ml",
+          "temperature": "room temperature",
+          "duration": "18-24 hours",
+          "speed": null,
+          "other": {
+            "buffer_changes": "2-3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "when": "at each buffer change"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "1,000xg",
+          "other": {
+            "condition": "if concentration is not required or following concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "Tube-O-DIALYZER\u2122",
+          "reagent": "dialysis cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "normal cap"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='Tube-O-DIALYZER\u2122', reagent='bacteria culture', volume='0.5ml', temperature='on ice')\ncentrifuge(container='Tube-O-DIALYZER\u2122', duration='5 minutes', speed='5,000xg', purpose='to pellet cells')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Tube-O-DIALYZER\u2122, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Tube-O-DIALYZER\u2122', reagent='lysis solution containing 1% SDS, 0.1N NaOH and 10mM EDTA', volume='50\u00b5l')\nadd(container='Tube-O-DIALYZER\u2122', reagent='Digestion Buffer', volume='25\u00b5l')\nadd(container='Tube-O-DIALYZER\u2122', reagent='LongLife\u2122 Proteinase K Solution', volume='10\u00b5l')\nincubate(container='Tube-O-DIALYZER\u2122', temperature='55\u00b0C', duration='2-4 hours', rocking='periodic')\ncentrifuge(container='Tube-O-DIALYZER\u2122', duration='20 seconds', speed='1,000g')\n\n### MANUAL SECTION ###\n# MANUAL: replace (container: Tube-O-DIALYZER\u2122, reagent: cap, other: {'with': 'dialysis cap'})\n# MANUAL: place (container: Tube-O-DIALYZER\u2122, other: {'orientation': 'upside down', 'secondary_container': '50ml centrifuge tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Tube-O-DIALYZER\u2122 (in 50ml centrifuge tube)', duration='30 seconds', speed='1,000xg', purpose='bring sample onto dialysis membrane')\ndialyze(container='Tube-O-DIALYZER\u2122 (in float)', reagent='1X TE buffer', volume='500ml', temperature='room temperature', duration='18-24 hours', buffer_changes='2-3')\nswirl(container='Tube-O-DIALYZER\u2122', speed='gently', when='at each buffer change')\ncentrifuge(container='Tube-O-DIALYZER\u2122', duration='1 minute', speed='1,000xg', condition='if concentration is not required or following concentration')\n\n### MANUAL SECTION ###\n# MANUAL: replace (container: Tube-O-DIALYZER\u2122, reagent: dialysis cap, other: {'with': 'normal cap'})",
+    "source_file": "protocol_313.txt"
+  }
+]

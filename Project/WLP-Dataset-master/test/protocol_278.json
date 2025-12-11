@@ -1,0 +1,269 @@
+[
+  {
+    "protocol": "Charcoal treatment of seawater to remove organics (esp. vitamins).\nCollect seawater for medium, filter through a 0.22\u00a0\u03bcm filter to remove cells and particles.\nAutoclave or microwave the filtered water to sterilze.\nAllow water to cool before treating with charcoal.\nPour the sterilzed water into a designated flask with stir bar that can contain at least 1L of liquid.\nWash activated charcoal.\nAdd 2.5g NaCl to 500mL of Milli Q water into a designated clean flask for charcoal washing.\nThe charcoal sticks so it is best to dedicate a flask for washing (and other treatment steps).\nAdd 10g of activated charcoal to the NaCl2 solution.\nAdd stir bar.\nStir for at least 10min.\nRecover the charcoal by filtration upon a glass fiber (GF/F) filter using a designated filter rig.\nUse a scoopula to add washed charcoal to the sterilized seawater made in Step1.\nTake care not to rip the GF/F filter.\nObtain the remaining charcoal in the rig by swirling sterilzed water in the filtration rig and pouring that\u00a0out into your flask with the sterilzed seawater (and now washed charcoal).\nStir the washed charcoal plus sterilzed seawater for at least 30min, using a stir plate.\nRemove charcoal from the seawater by filtering the mixture using a disposable filtration rig with a 0.2\u00a0\u03bcm filter.\nAfter removing the charcoal and any larger than\u00a00.2\u00a0\u03bcm particles, work in a sterile environment (laminar flow hood recommended) and aseptically add desired nutrient requirements to your seawater to complete your medium.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "seawater collection vessel",
+          "reagent": "seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.22 \u03bcm",
+            "purpose": "remove cells and particles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "filtered water container",
+          "reagent": "filtered seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "alternative": "microwave"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "sterilized water container",
+          "reagent": "sterilized seawater",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "designated flask with stir bar (\u22651L capacity)",
+          "reagent": "sterilized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "activated charcoal",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "2.5g NaCl",
+          "volume": "2.5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "500mL Milli Q water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "500mL Milli Q water",
+          "volume": "500mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "10g activated charcoal",
+          "volume": "10g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "stir bar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "designated clean flask for charcoal washing",
+          "reagent": "charcoal/NaCl/Milli Q water mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "at least 10min",
+          "speed": null,
+          "other": {
+            "equipment": "stir plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "designated filter rig",
+          "reagent": "charcoal mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "glass fiber (GF/F)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterilized seawater flask",
+          "reagent": "washed charcoal",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "scoopula"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "filtration rig",
+          "reagent": "sterilized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "obtain remaining charcoal"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "sterilized seawater flask",
+          "reagent": "swirled water with remaining charcoal",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "sterilized seawater flask",
+          "reagent": "washed charcoal plus sterilized seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": "at least 30min",
+          "speed": null,
+          "other": {
+            "equipment": "stir plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "disposable filtration rig",
+          "reagent": "charcoal/seawater mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "final seawater medium container",
+          "reagent": "desired nutrient requirements",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "environment": "sterile (laminar flow hood recommended)",
+            "method": "aseptically"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='seawater collection vessel', reagent='seawater', filter_type='0.22 \u03bcm', purpose='remove cells and particles')\nautoclave(container='filtered water container', reagent='filtered seawater', alternative='microwave')\ncool(container='sterilized water container', reagent='sterilized seawater', temperature='room temperature')\npour(container='designated flask with stir bar (\u22651L capacity)', reagent='sterilized water')\n\n### MANUAL SECTION ###\n# MANUAL: wash (container: designated clean flask for charcoal washing, reagent: activated charcoal, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='designated clean flask for charcoal washing', reagent='2.5g NaCl', volume='2.5g', solvent='500mL Milli Q water')\nadd(container='designated clean flask for charcoal washing', reagent='500mL Milli Q water', volume='500mL')\nadd(container='designated clean flask for charcoal washing', reagent='10g activated charcoal', volume='10g')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: designated clean flask for charcoal washing, reagent: stir bar, other: {})\n\n### AUTOMATED SECTION ###\nstir(container='designated clean flask for charcoal washing', reagent='charcoal/NaCl/Milli Q water mixture', duration='at least 10min', equipment='stir plate')\nfilter(container='designated filter rig', reagent='charcoal mixture', filter_type='glass fiber (GF/F)')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: sterilized seawater flask, reagent: washed charcoal, other: {'tool': 'scoopula'})\n\n### AUTOMATED SECTION ###\nswirl(container='filtration rig', reagent='sterilized water', purpose='obtain remaining charcoal')\npour(container='sterilized seawater flask', reagent='swirled water with remaining charcoal')\nstir(container='sterilized seawater flask', reagent='washed charcoal plus sterilized seawater', duration='at least 30min', equipment='stir plate')\nfilter(container='disposable filtration rig', reagent='charcoal/seawater mixture', filter_type='0.2 \u03bcm')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: final seawater medium container, reagent: desired nutrient requirements, other: {'environment': 'sterile (laminar flow hood recommended)', 'method': 'aseptically'})",
+    "source_file": "protocol_278.txt"
+  }
+]

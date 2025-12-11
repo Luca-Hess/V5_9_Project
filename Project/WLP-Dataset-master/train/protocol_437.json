@@ -1,0 +1,109 @@
+[
+  {
+    "protocol": "Marine Purity Broth\nAutoclave BD Difco AC Broth and NaCl Qs to 1 L with distilled water for 20 min.\nAfter broth has cooled, add 16 ml 2 M MgSO4 and 10 ml 1 M CaCl2.\u00a0 \nDispense 2.0 or 4.5 ml per sterile tube. \nInoculate sterile MPB with 1:5 (vol:vol) dilution of culture. \nIncubate at 22\u00b0C",
+    "actions": [
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": "BD Difco AC Broth and NaCl Qs to 1 L with distilled water",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "broth",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "2 M MgSO4",
+          "volume": "16 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1 M CaCl2",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sterile tube",
+          "reagent": "broth",
+          "volume": "2.0 or 4.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "sterile MPB",
+          "reagent": "culture (1:5 vol:vol dilution)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "1:5 (vol:vol)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "22\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: autoclave (reagent: BD Difco AC Broth and NaCl Qs to 1 L with distilled water, volume: 1 L, duration: 20 min, other: {})\n\n### AUTOMATED SECTION ###\ncool(reagent='broth')\nadd(reagent='2 M MgSO4', volume='16 ml')\nadd(reagent='1 M CaCl2', volume='10 ml')\ndispense(container='sterile tube', reagent='broth', volume='2.0 or 4.5 ml')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: sterile MPB, reagent: culture (1:5 vol:vol dilution), other: {'dilution': '1:5 (vol:vol)'})\n\n### AUTOMATED SECTION ###\nincubate(temperature='22\u00b0C')",
+    "source_file": "protocol_437.txt"
+  }
+]

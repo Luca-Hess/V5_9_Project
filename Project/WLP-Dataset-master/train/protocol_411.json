@@ -1,0 +1,123 @@
+[
+  {
+    "protocol": "Investigating non-specific protein binding and streptavidin binding using QCM-D sensing\nPrepare a Hepes Buffered Saline (HBS) solution containing 150 mM NaCl and 10 mM Hepes.\nThen prepare a solution of\u00a025 \u00b5g/ml streptavidin in HBS.\nUsing QCM-D sensing, make a baseline of the HBS solution.\nExpose the modified sensors to non-diluted Fetal Bovine Serum (FBS) for 30-60 min under static conditions in QCM-D and measure the amount of adsorbed\u00a0FBS\u00a0relative to the HBS baseline obtained in the previous step.\nRinse the sensors with the HBS solution.\nFlow the streptavidin solution over the\u00a0modified sensors (100-500 \u00b5l/min), until they are saturated.\nRinse the sensors with the HBS solution.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Hepes Buffered Saline (HBS) solution containing 150 mM NaCl and 10 mM Hepes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "25 \u00b5g/ml streptavidin in HBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "make baseline",
+        "parameters": {
+          "container": "QCM-D sensor",
+          "reagent": "HBS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "expose",
+        "parameters": {
+          "container": "modified sensors (QCM-D)",
+          "reagent": "non-diluted Fetal Bovine Serum (FBS)",
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 min",
+          "speed": "static conditions",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "QCM-D sensor",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "relative_to": "HBS baseline"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "HBS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flow",
+        "parameters": {
+          "container": "modified sensors",
+          "reagent": "streptavidin solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "until saturated",
+          "speed": "100-500 \u00b5l/min",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "sensors",
+          "reagent": "HBS solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Hepes Buffered Saline (HBS) solution containing 150 mM NaCl and 10 mM Hepes, other: {})\n# MANUAL: prepare (reagent: 25 \u00b5g/ml streptavidin in HBS, other: {})\n# MANUAL: make baseline (container: QCM-D sensor, reagent: HBS solution, other: {})\n# MANUAL: expose (container: modified sensors (QCM-D), reagent: non-diluted Fetal Bovine Serum (FBS), duration: 30-60 min, speed: static conditions, other: {})\n# MANUAL: measure (container: QCM-D sensor, other: {'relative_to': 'HBS baseline'})\n\n### AUTOMATED SECTION ###\nrinse(container='sensors', reagent='HBS solution')\nflow(container='modified sensors', reagent='streptavidin solution', duration='until saturated', speed='100-500 \u00b5l/min')\nrinse(container='sensors', reagent='HBS solution')",
+    "source_file": "protocol_411.txt"
+  }
+]

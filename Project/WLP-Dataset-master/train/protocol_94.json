@@ -1,0 +1,537 @@
+[
+  {
+    "protocol": "Activation and Intracellular Staining of Whole Blood: For the Detection of Intracellular Cytokines and Other Intracellular Targets\nIf staining intracellular antigens (e.g. IFN-\u03b3 or IL-4), first perform cell surface antigen staining as described in BioLegend\u2019s Cell Surface Immunofluorescence Staining Protocol, then fix cells in 0.5 ml/tube Fixation Buffer (BioLegend Cat. No. 420801) in the dark for 20 minutes at room temperature.\nCentrifuge at 350 x g for 5 minutes, discard supernatant.\nTo put the experiment \u201con hold\u201d at this point for future staining and analysis, wash cells 1x with Cell StainingBuffer (BioLegend Cat. No. 420201).\nResuspend cells in Cell Staining Buffer and store cells at 4\u00b0C (short term) or in 90% FCS/10% DMSO for storage at -80\u00b0C (long term, for fixed cells without surface antigen staining).\nDilute 10X Intracellular Staining Perm Wash Buffer (Cat. No. 421002) to 1X in DI water.\nResuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.\n(1/3) Resuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.\n(2/3) Resuspend fixed cells in Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5-10 minutes.\n(3/3) Resuspend fixed/permeabilized cells in residual Intracellular Staining Perm Wash Buffer and add a predetermined optimum concentration of fluorophore-conjugated antibody of interest (e.g. PE anti-IFN-\u03b3) or an appropriate negative control for 20 minutes in the dark at room temperature.\nWash with 2 ml of Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5 minutes.\n(1/2) Wash with 2 ml of Intracellular Staining Perm Wash Buffer and centrifuge at 350 x g for 5 minutes.\n(2/2) If primary intracellular antibody is biotinylated, it will be necessary to perform fluorophore conjugated Streptavidin incubations and subsequent washes in Intracellular Staining Perm Wash Buffer.\nResuspend fixed and intracellularly labeled cells in 0.5 ml Cell Staining Buffer and analyze with appropriate controls.\nSet PMT voltage and compensation using cell surface staining controls.\nSet quadrant markers based on blocking controls, isotype controls, or unstained cells.\nDilute heparinized whole blood 1:1 with sterile appropriate tissue culture medium.\nAt this stage, in vitro cellular stimulation by either antigen or mitogen can be performed.\nIf intending to stain intracellular cytokines or chemokines (e.g. IFN-\u03b3 or IL-4), addition of an efficient protein transport inhibitor such as brefeldin A (BioLegend Cat. No. 420601) or monensin (BioLegend Cat. No. 420701) is critical.\nAfter addition of a suitable cellular activator, aliquot 200 \u03bcl of the whole blood cell suspension into 12 x 75 mm plastic tubes and incubate for 4-6 hours in 5% CO2 at 37\u00b0C.\nAdd 2 ml of 1X Red Blood Cell Lysis Buffer (Cat. No. 420301) and incubate for 5-10 minutes at room temperature.\nCentrifuge at 350 x g for 5 minutes and discard the supernatant.\nWash cells 1X with Cell Staining Buffer.",
+    "actions": [
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Fixation Buffer (BioLegend Cat. No. 420801)",
+          "volume": "0.5 ml",
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer (BioLegend Cat. No. 420201)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1x"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells in Cell Staining Buffer",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "short term"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells in 90% FCS/10% DMSO",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "long term, for fixed cells without surface antigen staining"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Intracellular Staining Perm Wash Buffer (Cat. No. 421002)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "fixed cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "fixed cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "fixed cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "residual Intracellular Staining Perm Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "fixed/permeabilized cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fluorophore-conjugated antibody of interest or negative control",
+          "volume": "predetermined optimum concentration",
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fluorophore conjugated Streptavidin",
+          "volume": "predetermined concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if primary intracellular antibody is biotinylated"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Intracellular Staining Perm Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "fixed and intracellularly labeled"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells with appropriate controls",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": "PMT voltage and compensation",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "controls": "cell surface staining controls"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": "quadrant markers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "controls": "blocking controls, isotype controls, or unstained cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "heparinized whole blood",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:1",
+            "diluent": "sterile appropriate tissue culture medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "protein transport inhibitor (e.g. brefeldin A or monensin)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if staining intracellular cytokines or chemokines"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "12 x 75 mm plastic tubes",
+          "reagent": "whole blood cell suspension",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "whole blood cell suspension",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "4-6 hours",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1X Red Blood Cell Lysis Buffer (Cat. No. 420301)",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1x"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfix(container='tube', reagent='Fixation Buffer (BioLegend Cat. No. 420801)', volume='0.5 ml', temperature='room temperature', duration='20 minutes', light_condition='in the dark')\ncentrifuge(container='tube', duration='5 minutes', speed='350 x g')\ndiscard(container='tube', reagent='supernatant')\nwash(container='tube', reagent='Cell Staining Buffer (BioLegend Cat. No. 420201)', times='1x')\nresuspend(container='tube', reagent='Cell Staining Buffer')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube, reagent: cells in Cell Staining Buffer, temperature: 4\u00b0C, other: {'condition': 'short term'})\n# MANUAL: store (container: tube, reagent: cells in 90% FCS/10% DMSO, temperature: -80\u00b0C, other: {'condition': 'long term, for fixed cells without surface antigen staining'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='10X Intracellular Staining Perm Wash Buffer (Cat. No. 421002)', diluent='DI water', final_concentration='1X')\nresuspend(container='tube', reagent='Intracellular Staining Perm Wash Buffer', cells='fixed cells')\ncentrifuge(container='tube', duration='5-10 minutes', speed='350 x g')\nresuspend(container='tube', reagent='Intracellular Staining Perm Wash Buffer', cells='fixed cells')\ncentrifuge(container='tube', duration='5-10 minutes', speed='350 x g')\nresuspend(container='tube', reagent='Intracellular Staining Perm Wash Buffer', cells='fixed cells')\ncentrifuge(container='tube', duration='5-10 minutes', speed='350 x g')\nresuspend(container='tube', reagent='residual Intracellular Staining Perm Wash Buffer', cells='fixed/permeabilized cells')\nadd(container='tube', reagent='fluorophore-conjugated antibody of interest or negative control', volume='predetermined optimum concentration', temperature='room temperature', duration='20 minutes', light_condition='in the dark')\nwash(container='tube', reagent='Intracellular Staining Perm Wash Buffer', volume='2 ml')\ncentrifuge(container='tube', duration='5 minutes', speed='350 x g')\nwash(container='tube', reagent='Intracellular Staining Perm Wash Buffer', volume='2 ml')\ncentrifuge(container='tube', duration='5 minutes', speed='350 x g')\nincubate(container='tube', reagent='fluorophore conjugated Streptavidin', volume='predetermined concentration', condition='if primary intracellular antibody is biotinylated')\nwash(container='tube', reagent='Intracellular Staining Perm Wash Buffer')\nresuspend(container='tube', reagent='Cell Staining Buffer', volume='0.5 ml', cells='fixed and intracellularly labeled')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: tube, reagent: cells with appropriate controls)\n# MANUAL: set (reagent: PMT voltage and compensation, other: {'controls': 'cell surface staining controls'})\n# MANUAL: set (reagent: quadrant markers, other: {'controls': 'blocking controls, isotype controls, or unstained cells'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='heparinized whole blood', ratio='1:1', diluent='sterile appropriate tissue culture medium')\nadd(reagent='protein transport inhibitor (e.g. brefeldin A or monensin)', condition='if staining intracellular cytokines or chemokines')\naliquot(container='12 x 75 mm plastic tubes', reagent='whole blood cell suspension', volume='200 \u03bcl')\nincubate(container='tube', reagent='whole blood cell suspension', temperature='37\u00b0C', duration='4-6 hours', CO2='5%')\nadd(container='tube', reagent='1X Red Blood Cell Lysis Buffer (Cat. No. 420301)', volume='2 ml')\nincubate(container='tube', temperature='room temperature', duration='5-10 minutes')\ncentrifuge(container='tube', duration='5 minutes', speed='350 x g')\ndiscard(container='tube', reagent='supernatant')\nwash(container='tube', reagent='Cell Staining Buffer', times='1x')",
+    "source_file": "protocol_94.txt"
+  }
+]

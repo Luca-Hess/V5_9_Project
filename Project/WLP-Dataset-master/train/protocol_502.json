@@ -1,0 +1,887 @@
+[
+  {
+    "protocol": "Obtaining targeted metagenomes from uncultivated environmental Synechococcus using flow cytometry-based viral tagging\nPrepare SNAX medium according to directions6, but use 15N ammonium chloride which will provide the heavy isotope. \nGrow cyanobacteria in the medium with heavy\u00a0nitrogen and transfer at least 3 times before use. \nExtract DNA from bacterial grown in heavy nitrogen using standard methods. \nQuantify the DNA using Quant-iT Pico Green (Invitrogen #P7589). \nUse at least 10 \u00b5g of DNA for density gradient centrifugation. \nFor density gradient centrifugation, a Beckman VTi 65 vertical rotor was used with 13x48 mm OptiSeal polyallomer tubes (4.9 ml capacity). \nMix the DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6)\u00a0to a final volume of\u00a00.9 ml. \nMix the DNA with 4ml of CsCl prepared in TE to a density of p1.8. \nDispense 4.9 ml of the DNA sample in CsCl into the OptiSeal tube and plug with the black caps. \nCentrifuge at 44,000 rpm (=184,678.5 g) in a Beckman L70 or L80 ultracentrifuge for 48 hr at 18\u00b0C. \u00a0 \nCollect 0.2-0.25 ml fractions and measure the density of each. \nCalculate amount of DNA in each fraction using Quant-iT Pico Green (perform in duplicate) to determine the density of the fractions with DNA. \nEstimate the ratio of isotopic labeled cells. \nThaw 10,000x stock of SYBR Gold in the dark and vortex vigorously. \nCentrifuge for 10 min at 3000 x g. \nDilute 1:100 (to 100x) with TE buffer and then filter through 0.02\u00b5m filter. \nAliquot into 50 or 100\u00b5l amounts and store frozen at -20\u00b0C. \nThaw prepared 100X SYBR Gold the dark, one time only. \nVortex thawed SYBR Gold vigorously before using to stain viruses. \nIf using CsCl-purified virus, dialyze in modified MTN buffer.\u00a0 \nStain the viruses by adding prepared SYBR Gold to the viral suspension to a final concentration of 5 to 10x for a concentrated viral stock (equal to or greater than E+09) or 1x for less concentrated viral stock (<E+09). \nPrepare a blank without virus to assess how well the excess SYBR Gold is washed away.\u00a0 \nVortex the sample for 10 sec on high to mix the dye and viruses. \nIncubate 10 min in the dark at room temperature. \nHeat at 46\u00b0C for 15 minutes inside hybridization oven (not heat block), inverting tubes every 5 minutes, using foil to keep the sample in the dark. \nCool down the sample in the dark at room temperature for 10 min. \nPrepare 0.02\u00b5m filtered 1% bovine serum albumin (BSA; equal to 10 mg/ml) in phosphate buffered saline (PBS). \nWash Nanosep 10k tubes by adding 500\u00b5l MTN buffer, let stand 10 min. \nSpin until almost dry (5,000 x g, 10 min). \nDiscard the flow-through.\u00a0 \nAdd 500\u00b5l 0.02\u00b5m filtered 1% BSA, let stand 1hr at room temperature.\u00a0 \nSpin until almost dry (5,000 x g, 15-30 min).\u00a0 \nDiscard the flow-through. \nWash with 500\u00b5l 0.02\u00b5m filtered MTN buffer. \nConcentrate the 500\u00b5l stained and cooled virus preparations and the SYBR-Blank in the pre-treated Nanosep devices using 3,000 x g for 15-30 min, at 10\u00b0C to get to <50\u00b5l volume. \nWash the reduced volume of stained virus or SYBR-Blank with 500\u00b5l 0.02\u00b5m filtered MTN buffer.\u00a0 \nRepeat spin as in step #36. \nRepeat #37&38 for a total of 6 washes being sure to bring volume to <50\u00b5l each time. \nTransfer the 50\u00b5l of washed viruses and SYBR-Blank from the Nanosep into fresh collection tubes. \nKeep the collection tubes on ice. \nAdd 50\u00b5l 0.02\u00b5m filtered buffer to each Nanosep and sonicate for 3 min using the settings of 50W at 42 kHz. \nPipet up and down on the filter carefully so as not to puncture the membrane and add to the appropriate stained virus or blank tubes and transport the collection tubes of washed viruses on ice. \nCount the host cells and the SYBR-stained viruses to determine the amount of each to add. \nUse at least 2 ml of cells at 106 cells/ml, mix with appropriate concentration of virus particles and incubate for 10-20 minutes to start detecting VT signal. \nPrepare the flow cytometer for use and trigger on forward angle or side scatter Examine the 0.02\u00b5m filtered MTN buffer and set voltages so that noise is minimized.\nExamine the host cells alone to set voltages to determine proper concentration to use and to determine where they are located on the plot of 520nm vs scatter. \nUse fluorescent polystyrene FLOW CheckTM microspheres (final concentration is 1:1 to host cells) as an internal standard for counting and sorting. \nMix the host cells with the SYBR-Blank, for 10 min and mix the tube gently. \nMix the host cells with the stained and washed virus at the appropriate VBR and examine after appropriate incubation times. \nSort and collect the viral-tagged cells, which are of increased fluorescence. \nTrigger on forward scatter to only detect cell-sized particles.\u00a0\nSorted viral-tagged cells can be subjected to DNA extraction and separation of 15N-labeled \u201cheavy\u201d host DNA from non-labeled \u201clight\u201d viral DNA by CsCl density ultracentrifugation (See \"Cesium Chloride Virus Purification and Dialysis\"). \nLight DNA can be linker amplified8 for sequencing by 454 Roche Titanium and Illumina HiSeq 2000",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "SNAX medium with 15N ammonium chloride",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "directions6"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "cyanobacteria in SNAX medium with heavy nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_times": "at least 3 times before use"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA from bacteria grown in heavy nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "standard methods"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Quant-iT Pico Green (Invitrogen #P7589)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "OptiSeal polyallomer tubes (13x48 mm, 4.9 ml capacity)",
+          "reagent": "DNA sample in CsCl",
+          "volume": "4.9 ml",
+          "temperature": "18\u00b0C",
+          "duration": "48 hr",
+          "speed": "44,000 rpm (=184,678.5 g)",
+          "other": {
+            "centrifuge": "Beckman L70 or L80 ultracentrifuge",
+            "rotor": "Beckman VTi 65 vertical rotor"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6)",
+          "volume": "final volume 0.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA with 4 ml CsCl prepared in TE",
+          "volume": "4 ml CsCl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "density": "p1.8"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "OptiSeal tube",
+          "reagent": "DNA sample in CsCl",
+          "volume": "4.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plug": "black caps"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "fractions",
+          "volume": "0.2-0.25 ml per fraction",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measure": "density of each"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA in each fraction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Quant-iT Pico Green",
+            "replicates": "duplicate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "estimate",
+        "parameters": {
+          "container": null,
+          "reagent": "ratio of isotopic labeled cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "10,000x stock of SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "3000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR Gold",
+          "volume": "1:100 (to 100x) with TE buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "diluted SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.02\u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered SYBR Gold",
+          "volume": "50 or 100\u00b5l amounts",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "storage": "store frozen at -20\u00b0C"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "prepared 100X SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "in the dark",
+            "times": "one time only"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "thawed SYBR Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "purpose": "before using to stain viruses"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": null,
+          "reagent": "CsCl-purified virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "modified MTN buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": null,
+          "reagent": "viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "SYBR Gold concentration": "5 to 10x for concentrated viral stock (>=E+09), 1x for less concentrated (<E+09)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "blank without virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "assess how well excess SYBR Gold is washed away"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 sec",
+          "speed": "high",
+          "other": {
+            "purpose": "mix dye and viruses"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "46\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "device": "hybridization oven",
+            "invert": "every 5 min",
+            "light": "foil to keep in dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.02\u00b5m filtered 1% BSA (10 mg/ml) in PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "Nanosep 10k tubes",
+          "reagent": "500\u00b5l MTN buffer",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": "10 min (let stand)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Nanosep 10k tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "5,000 x g",
+          "other": {
+            "endpoint": "until almost dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Nanosep 10k tubes",
+          "reagent": "500\u00b5l 0.02\u00b5m filtered 1% BSA",
+          "volume": "500\u00b5l",
+          "temperature": "room temperature",
+          "duration": "1 hr (let stand)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Nanosep 10k tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15-30 min",
+          "speed": "5,000 x g",
+          "other": {
+            "endpoint": "until almost dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "Nanosep 10k tubes",
+          "reagent": "500\u00b5l 0.02\u00b5m filtered MTN buffer",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "pre-treated Nanosep devices",
+          "reagent": "500\u00b5l stained and cooled virus preparations and SYBR-Blank",
+          "volume": "500\u00b5l",
+          "temperature": "10\u00b0C",
+          "duration": "15-30 min",
+          "speed": "3,000 x g",
+          "other": {
+            "endpoint": "<50\u00b5l volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "Nanosep devices",
+          "reagent": "500\u00b5l 0.02\u00b5m filtered MTN buffer",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "reduced volume of stained virus or SYBR-Blank"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Nanosep devices",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15-30 min",
+          "speed": "3,000 x g",
+          "other": {
+            "repeat": "as in step #36"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "Nanosep devices",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "#37 & #38",
+            "total_washes": "6",
+            "endpoint": "<50\u00b5l each time"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh collection tubes",
+          "reagent": "50\u00b5l washed viruses and SYBR-Blank from Nanosep",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "collection tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Nanosep",
+          "reagent": "50\u00b5l 0.02\u00b5m filtered buffer",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sonicate": "3 min, 50W at 42 kHz"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down carefully, do not puncture membrane",
+            "add_to": "appropriate stained virus or blank tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transport",
+        "parameters": {
+          "container": "collection tubes of washed viruses",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "host cells and SYBR-stained viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine amount of each to add"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "2 ml of cells at 10^6 cells/ml with appropriate concentration of virus particles",
+          "volume": "2 ml cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "incubate": "10-20 min to start detecting VT signal"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells and virus mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "10-20 min",
+          "speed": null,
+          "other": {
+            "purpose": "start detecting VT signal"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "flow cytometer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "trigger": "forward angle or side scatter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": null,
+          "reagent": "0.02\u00b5m filtered MTN buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "set_voltages": "minimize noise"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": null,
+          "reagent": "host cells alone",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "set_voltages": "determine proper concentration and location on plot of 520nm vs scatter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "fluorescent polystyrene FLOW CheckTM microspheres",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1:1 to host cells",
+            "purpose": "internal standard for counting and sorting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "host cells with SYBR-Blank",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "host cells with stained and washed virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "VBR": "appropriate",
+            "examine": "after appropriate incubation times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "sort",
+        "parameters": {
+          "container": null,
+          "reagent": "viral-tagged cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "increased fluorescence"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "trigger",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "scatter": "forward",
+            "purpose": "detect cell-sized particles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA from sorted viral-tagged cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "separation": "15N-labeled 'heavy' host DNA from non-labeled 'light' viral DNA by CsCl density ultracentrifugation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "light DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "linker amplified",
+            "sequencing": "454 Roche Titanium and Illumina HiSeq 2000"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: SNAX medium with 15N ammonium chloride, other: {'reference': 'directions6'})\n# MANUAL: grow (reagent: cyanobacteria in SNAX medium with heavy nitrogen, other: {'transfer_times': 'at least 3 times before use'})\n# MANUAL: extract (reagent: DNA from bacteria grown in heavy nitrogen, other: {'method': 'standard methods'})\n# MANUAL: quantify (reagent: DNA, other: {'kit': 'Quant-iT Pico Green (Invitrogen #P7589)'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='OptiSeal polyallomer tubes (13x48 mm, 4.9 ml capacity)', reagent='DNA sample in CsCl', volume='4.9 ml', temperature='18\u00b0C', duration='48 hr', speed='44,000 rpm (=184,678.5 g)', centrifuge='Beckman L70 or L80 ultracentrifuge', rotor='Beckman VTi 65 vertical rotor')\nmix(reagent='DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6)', volume='final volume 0.9 ml')\nmix(reagent='DNA with 4 ml CsCl prepared in TE', volume='4 ml CsCl', density='p1.8')\ndispense(container='OptiSeal tube', reagent='DNA sample in CsCl', volume='4.9 ml', plug='black caps')\ncollect(reagent='fractions', volume='0.2-0.25 ml per fraction', measure='density of each')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (reagent: DNA in each fraction, other: {'kit': 'Quant-iT Pico Green', 'replicates': 'duplicate'})\n# MANUAL: estimate (reagent: ratio of isotopic labeled cells, other: {})\n# MANUAL: thaw (reagent: 10,000x stock of SYBR Gold, other: {'light': 'in the dark'})\n\n### AUTOMATED SECTION ###\nvortex(reagent='SYBR Gold', speed='vigorously')\ncentrifuge(reagent='SYBR Gold', duration='10 min', speed='3000 x g')\ndilute(reagent='SYBR Gold', volume='1:100 (to 100x) with TE buffer')\nfilter(reagent='diluted SYBR Gold', filter_size='0.02\u00b5m')\naliquot(reagent='filtered SYBR Gold', volume='50 or 100\u00b5l amounts', storage='store frozen at -20\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: prepared 100X SYBR Gold, other: {'light': 'in the dark', 'times': 'one time only'})\n\n### AUTOMATED SECTION ###\nvortex(reagent='thawed SYBR Gold', speed='vigorously', purpose='before using to stain viruses')\n\n### MANUAL SECTION ###\n# MANUAL: dialyze (reagent: CsCl-purified virus, other: {'buffer': 'modified MTN buffer'})\n\n### AUTOMATED SECTION ###\nstain(reagent='viruses', SYBR Gold concentration='5 to 10x for concentrated viral stock (>=E+09), 1x for less concentrated (<E+09)')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: blank without virus, other: {'purpose': 'assess how well excess SYBR Gold is washed away'})\n\n### AUTOMATED SECTION ###\nvortex(reagent='sample', duration='10 sec', speed='high', purpose='mix dye and viruses')\nincubate(reagent='sample', temperature='room temperature', duration='10 min', light='in the dark')\nheat(reagent='sample', temperature='46\u00b0C', duration='15 min', device='hybridization oven', invert='every 5 min', light='foil to keep in dark')\ncool(reagent='sample', temperature='room temperature', duration='10 min', light='in the dark')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 0.02\u00b5m filtered 1% BSA (10 mg/ml) in PBS, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='Nanosep 10k tubes', reagent='500\u00b5l MTN buffer', volume='500\u00b5l', duration='10 min (let stand)')\ncentrifuge(container='Nanosep 10k tubes', duration='10 min', speed='5,000 x g', endpoint='until almost dry')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Nanosep 10k tubes', reagent='500\u00b5l 0.02\u00b5m filtered 1% BSA', volume='500\u00b5l', temperature='room temperature', duration='1 hr (let stand)')\ncentrifuge(container='Nanosep 10k tubes', duration='15-30 min', speed='5,000 x g', endpoint='until almost dry')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='Nanosep 10k tubes', reagent='500\u00b5l 0.02\u00b5m filtered MTN buffer', volume='500\u00b5l')\nconcentrate(container='pre-treated Nanosep devices', reagent='500\u00b5l stained and cooled virus preparations and SYBR-Blank', volume='500\u00b5l', temperature='10\u00b0C', duration='15-30 min', speed='3,000 x g', endpoint='<50\u00b5l volume')\nwash(container='Nanosep devices', reagent='500\u00b5l 0.02\u00b5m filtered MTN buffer', volume='500\u00b5l', sample='reduced volume of stained virus or SYBR-Blank')\ncentrifuge(container='Nanosep devices', duration='15-30 min', speed='3,000 x g', repeat='as in step #36')\nrepeat(container='Nanosep devices', steps='#37 & #38', total_washes='6', endpoint='<50\u00b5l each time')\ntransfer(container='fresh collection tubes', reagent='50\u00b5l washed viruses and SYBR-Blank from Nanosep', volume='50\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: keep (container: collection tubes, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Nanosep', reagent='50\u00b5l 0.02\u00b5m filtered buffer', volume='50\u00b5l', sonicate='3 min, 50W at 42 kHz')\npipette(container='filter', method='up and down carefully, do not puncture membrane', add_to='appropriate stained virus or blank tubes')\n\n### MANUAL SECTION ###\n# MANUAL: transport (container: collection tubes of washed viruses, temperature: on ice, other: {})\n# MANUAL: count (reagent: host cells and SYBR-stained viruses, other: {'purpose': 'determine amount of each to add'})\n\n### AUTOMATED SECTION ###\nmix(reagent='2 ml of cells at 10^6 cells/ml with appropriate concentration of virus particles', volume='2 ml cells', incubate='10-20 min to start detecting VT signal')\nincubate(reagent='cells and virus mixture', duration='10-20 min', purpose='start detecting VT signal')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: flow cytometer, other: {'trigger': 'forward angle or side scatter'})\n# MANUAL: examine (reagent: 0.02\u00b5m filtered MTN buffer, other: {'set_voltages': 'minimize noise'})\n# MANUAL: examine (reagent: host cells alone, other: {'set_voltages': 'determine proper concentration and location on plot of 520nm vs scatter'})\n# MANUAL: use (reagent: fluorescent polystyrene FLOW CheckTM microspheres, other: {'final_concentration': '1:1 to host cells', 'purpose': 'internal standard for counting and sorting'})\n\n### AUTOMATED SECTION ###\nmix(reagent='host cells with SYBR-Blank', duration='10 min', speed='gently')\nmix(reagent='host cells with stained and washed virus', VBR='appropriate', examine='after appropriate incubation times')\n\n### MANUAL SECTION ###\n# MANUAL: sort (reagent: viral-tagged cells, other: {'criteria': 'increased fluorescence'})\n# MANUAL: trigger (other: {'scatter': 'forward', 'purpose': 'detect cell-sized particles'})\n# MANUAL: extract (reagent: DNA from sorted viral-tagged cells, other: {'separation': \"15N-labeled 'heavy' host DNA from non-labeled 'light' viral DNA by CsCl density ultracentrifugation\"})\n# MANUAL: amplify (reagent: light DNA, other: {'method': 'linker amplified', 'sequencing': '454 Roche Titanium and Illumina HiSeq 2000'})",
+    "source_file": "protocol_502.txt"
+  }
+]

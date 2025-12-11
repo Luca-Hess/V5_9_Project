@@ -1,0 +1,333 @@
+[
+  {
+    "protocol": "Viruses Purification of Perkinsus spp.\nFirst, Fill centrifuge bottles with 450mL Perkinsus Culture in the logarithmic growth phase.\nCentrifuge bottles at 1500 g; 15 min at room temperature.\nTransfer supernatant to a clean tube, and store at 4\u00b0C for further analyses.\nResuspend pellet in 10% initial culture volume supernatant in a 50mL Falcon Tube.\nCentrifuge tubes at 1500 g; 15 min at room temperature.\nTransfer supernatant to a clean tube, and store at 4\u00b0C for further analyses.\nResuspend pellet in 4mL PBS/0.35 M NaCl) containing protease inhibitor cocktail.\nTransfer the pellet resuspended in 2mL Eppendorf Tubes (1.5mL/tube).\nAdd 100mL Glass beads.\nDisruptor Genie for 15sec.\nVerify cell disruption : place a 20mL under light microscope.\nDisruptor Genie for 1min.\nVerify cell disruption : place a 20mL under light microscope.\nDisruptor Genie for 3min.\nVerify cell disruption : place a 20mL under light microscope.\nCentrifugation at 10,000 g; 30 min, 4\u00b0C. \nRemoved the supernatant to clean 1.5mL Eppendorf tube, discard the pellet (cell debris). \nCentrifugation again at 10,000 g; 30 min, 4\u00b0C. \nRemoved the supernatant to clean 1.5mL Eppendorf tube, discard the pellet (cell debris). \nConserve the tubes at 4\u00b0C",
+    "actions": [
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "Perkinsus Culture in logarithmic growth phase",
+          "volume": "450mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 min",
+          "speed": "1500 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "for further analyses",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "50mL Falcon Tube",
+          "reagent": "pellet in 10% initial culture volume supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 min",
+          "speed": "1500 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "for further analyses",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in 4mL PBS/0.35 M NaCl containing protease inhibitor cocktail",
+          "volume": "4mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2mL Eppendorf Tubes (1.5mL/tube)",
+          "reagent": "pellet resuspended",
+          "volume": "1.5mL/tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Glass beads",
+          "volume": "100mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "disrupt",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": null,
+          "other": {
+            "instrument": "Disruptor Genie"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "verify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "light microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "disrupt",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "instrument": "Disruptor Genie"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "verify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "light microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "disrupt",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "instrument": "Disruptor Genie"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "verify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "light microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 min",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clean 1.5mL Eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": "pellet (cell debris)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 min",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clean 1.5mL Eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": "pellet (cell debris)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfill(container='centrifuge bottles', reagent='Perkinsus Culture in logarithmic growth phase', volume='450mL')\ncentrifuge(container='centrifuge bottles', temperature='room temperature', duration='15 min', speed='1500 g')\ntransfer(container='clean tube', reagent='supernatant')\nstore(container='clean tube', reagent='supernatant', temperature='4\u00b0C', duration='for further analyses')\nresuspend(container='50mL Falcon Tube', reagent='pellet in 10% initial culture volume supernatant')\ncentrifuge(container='tubes', temperature='room temperature', duration='15 min', speed='1500 g')\ntransfer(container='clean tube', reagent='supernatant')\nstore(container='clean tube', reagent='supernatant', temperature='4\u00b0C', duration='for further analyses')\nresuspend(reagent='pellet in 4mL PBS/0.35 M NaCl containing protease inhibitor cocktail', volume='4mL')\ntransfer(container='2mL Eppendorf Tubes (1.5mL/tube)', reagent='pellet resuspended', volume='1.5mL/tube')\nadd(reagent='Glass beads', volume='100mL')\ndisrupt(duration='15 sec', instrument='Disruptor Genie')\n\n### MANUAL SECTION ###\n# MANUAL: verify (volume: 20mL, other: {'method': 'light microscope'})\n\n### AUTOMATED SECTION ###\ndisrupt(duration='1 min', instrument='Disruptor Genie')\n\n### MANUAL SECTION ###\n# MANUAL: verify (volume: 20mL, other: {'method': 'light microscope'})\n\n### AUTOMATED SECTION ###\ndisrupt(duration='3 min', instrument='Disruptor Genie')\n\n### MANUAL SECTION ###\n# MANUAL: verify (volume: 20mL, other: {'method': 'light microscope'})\n\n### AUTOMATED SECTION ###\ncentrifuge(temperature='4\u00b0C', duration='30 min', speed='10,000 g')\nremove(container='clean 1.5mL Eppendorf tube', reagent='supernatant', discard='pellet (cell debris)')\ncentrifuge(temperature='4\u00b0C', duration='30 min', speed='10,000 g')\nremove(container='clean 1.5mL Eppendorf tube', reagent='supernatant', discard='pellet (cell debris)')\nstore(container='tubes', temperature='4\u00b0C')",
+    "source_file": "protocol_283.txt"
+  }
+]

@@ -1,0 +1,183 @@
+[
+  {
+    "protocol": "Transformation Protocol\nThaw competent cells on ice. \nChill approximately 5 ng (2 \u03bcl) of the ligation mixture in a 1.5 ml microcentrifuge tube.\nAdd 50 \u00b5l of competent cells to the DNA.\nMix gently by pipetting up and down or flicking the tube 4\u20135 times to mix the cells and DNA.\nDo not vortex.\nPlace the mixture on ice for 30 minutes.\nDo not mix.\nHeat shock at 42\u00b0C for 30 seconds.\nDo not mix.\nAdd 950 \u00b5l of room temperature media to the tube.\nPlace tube at 37\u00b0C for 60 minutes.\nShake vigorously (250 rpm) or rotate.\nWarm selection plates to 37\u00b0C.\nSpread 50\u2013100 \u00b5l of the cells and ligation mixture onto the plates.\nIncubate overnight at 37\u00b0C",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "competent cells tube",
+          "reagent": "competent cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "ligation mixture",
+          "volume": "2 \u03bcl (~5 ng)",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "competent cells",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "DNA (ligation mixture)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "cells and DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down or flicking tube 4\u20135 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "mixture (cells + DNA)",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "mixture (cells + DNA)",
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "room temperature media",
+          "volume": "950 \u03bcl",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "mixture (cells + DNA + media)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "mixture (cells + DNA + media)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": "250 rpm",
+          "other": {
+            "alternative": "rotate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "selection plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "selection plates",
+          "reagent": "cells and ligation mixture",
+          "volume": "50\u2013100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "selection plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: competent cells tube, reagent: competent cells, temperature: on ice, other: {})\n# MANUAL: chill (container: 1.5 ml microcentrifuge tube, reagent: ligation mixture, volume: 2 \u03bcl (~5 ng), temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1.5 ml microcentrifuge tube', reagent='competent cells', volume='50 \u03bcl', to='DNA (ligation mixture)')\nmix(container='1.5 ml microcentrifuge tube', reagent='cells and DNA', method='pipetting up and down or flicking tube 4\u20135 times')\nincubate(container='1.5 ml microcentrifuge tube', reagent='mixture (cells + DNA)', temperature='on ice', duration='30 minutes')\nheat shock(container='1.5 ml microcentrifuge tube', reagent='mixture (cells + DNA)', temperature='42\u00b0C', duration='30 seconds')\nadd(container='1.5 ml microcentrifuge tube', reagent='room temperature media', volume='950 \u03bcl', temperature='room temperature')\nincubate(container='1.5 ml microcentrifuge tube', reagent='mixture (cells + DNA + media)', temperature='37\u00b0C', duration='60 minutes')\nshake(container='1.5 ml microcentrifuge tube', reagent='mixture (cells + DNA + media)', temperature='37\u00b0C', duration='60 minutes', speed='250 rpm', alternative='rotate')\nwarm(container='selection plates', temperature='37\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: selection plates, reagent: cells and ligation mixture, volume: 50\u2013100 \u03bcl, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='selection plates', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_564.txt"
+  }
+]

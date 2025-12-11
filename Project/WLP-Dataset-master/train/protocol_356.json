@@ -1,0 +1,101 @@
+[
+  {
+    "protocol": "How to make a 50 mg/ml Kanamycin Stock Solution\nWeigh 0.5 g of Kanamycin Monosulfate. \nAdd 10 ml of sterile H2O.\nDisolve completely.\nPrewet a 0.2 \u00b5m syringe filter by drawing through 5-10 ml of sterile H2O\u00a0and discard water.\nSterilize Kanamycin Stock through the prepared 0.2 \u00b5m syringe filter.\nStock may be kept at -20\u00b0C for 1 year.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "Kanamycin Monosulfate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.5 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile H2O",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "goal": "dissolve completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prewet",
+        "parameters": {
+          "container": "0.2 \u00b5m syringe filter",
+          "reagent": "sterile H2O",
+          "volume": "5-10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "draw through filter and discard water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "prepared 0.2 \u00b5m syringe filter",
+          "reagent": "Kanamycin Stock Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "goal": "sterilize"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "Kanamycin Stock Solution",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "1 year",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: Kanamycin Monosulfate, other: {'mass': '0.5 g'})\n\n### AUTOMATED SECTION ###\nadd(reagent='sterile H2O', volume='10 ml')\nmix(goal='dissolve completely')\n\n### MANUAL SECTION ###\n# MANUAL: prewet (container: 0.2 \u00b5m syringe filter, reagent: sterile H2O, volume: 5-10 ml, other: {'method': 'draw through filter and discard water'})\n# MANUAL: filter (container: prepared 0.2 \u00b5m syringe filter, reagent: Kanamycin Stock Solution, other: {'goal': 'sterilize'})\n# MANUAL: store (reagent: Kanamycin Stock Solution, temperature: -20\u00b0C, duration: 1 year)",
+    "source_file": "protocol_356.txt"
+  }
+]

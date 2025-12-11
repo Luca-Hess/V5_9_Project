@@ -1,0 +1,165 @@
+[
+  {
+    "protocol": "Phenol/chloroform extraction. \nDilute your nucleic acid sample to 100\u2013700 \u00b5L or divide your samples into tubes such that you have no more than 700 \u00b5L per tube.\nAdd an equal volume of phenol to the tube, vortex vigorously to mix the phases.\nSpin in a microfuge at top speed for 1\u20132 min to separate the phases.\nRemove the aqueous phase to a new tube, being careful not to transfer any of the protein at the phase interface.\nRepeat the phenol extraction from step 4.\nRepeat the phenol extraction from step 4.\nExtract the sample with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.\nExtract the sample again with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.\nPrecipitate the nucleic acid.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nucleic acid sample",
+          "volume": "100\u2013700 \u00b5L per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "divide_samples": "no more than 700 \u00b5L per tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume to sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "step 4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "step 4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform:isoamyl alcohol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove trace phenol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform:isoamyl alcohol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove trace phenol",
+            "repeat": "again"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": null,
+          "reagent": "nucleic acid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(container='tube', reagent='nucleic acid sample', volume='100\u2013700 \u00b5L per tube', divide_samples='no more than 700 \u00b5L per tube')\nadd(container='tube', reagent='phenol', volume='equal volume to sample')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\nextract(container='tube', reagent='phenol', volume='equal volume', repeat='step 4')\nextract(container='tube', reagent='phenol', volume='equal volume', repeat='step 4')\nextract(container='tube', reagent='chloroform:isoamyl alcohol', volume='equal volume', purpose='remove trace phenol')\nextract(container='tube', reagent='chloroform:isoamyl alcohol', volume='equal volume', purpose='remove trace phenol', repeat='again')\n\n### MANUAL SECTION ###\n# MANUAL: precipitate (reagent: nucleic acid)",
+    "source_file": "protocol_586.txt"
+  }
+]

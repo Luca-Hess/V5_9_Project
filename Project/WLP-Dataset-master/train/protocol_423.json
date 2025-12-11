@@ -1,0 +1,455 @@
+[
+  {
+    "protocol": "Isolation of DNA from phage lysate\nPut phage lysate in plastic centrifuge bottle\u00a0and add RNase (for 100 ml add 10 \u00b5l, for 150 ml add 15 \u00b5l, etc.)\nIncubate 30 min. at room temperature. \nAdd NaCl to a final concentration of 1M (for 100 ml add 6.5 g NaCl). \nIncubate for 1 hour on ice Centrifuge for 10 min. at 11,000xg (8,300 rpm on GSA rotor). \nTransfer supernatant to a new bottle. \nAdd PEG 8000 at 100g/l (for 100 ml add 10 g PEG) and shake to mix. \nIncubate 1 hour on ice Centrifuge for 10 min. at 10,000xg (7,835 rpm on GSA rotor). \nCarefully pour out the supernatant to discard.\u00a0\nSet the bottle upside down on paper towels/Kimwipes to drain remaining liquid. \nRinse the inside of the bottle twice with SM buffer (total volume of 1-2 ml). \nCollect in 2 ml microcentrifuge tubes (1 ml per bottle). \nShake resin to resuspend and heat TE to 80\u00b0C. \nAdd 1 ml resin to each 2 ml tube.\u00a0 \nMix by inversion. \nAttach column to 3 ml syringe and push sample through 1 ml at a time.\u00a0 \nPush 2 ml of 80% isopropanol through each column 1 ml at a time. \nPlace column in original 2 ml tube. \nCentrifuge 2 min at 10,000xg to remove excess isopropanol. \nPlace column in new 1.5 ml microcentrifuge tube. \nAdd 100 \u00b5l warm TE to elute. \nBriefly vortex Centrifuge for 30 sec. at 10,000xg.\u00a0 \nCheck concentration of isolated DNA using NanoDrop.\nUse Quant IT DNA quantification to validate NanoDrop readings",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": "phage lysate",
+          "volume": "100-150 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": "RNase",
+          "volume": "10 \u00b5l per 100 ml lysate, 15 \u00b5l per 150 ml lysate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": "NaCl",
+          "volume": "6.5 g per 100 ml lysate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "plastic centrifuge bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "11,000xg (8,300 rpm on GSA rotor)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": "PEG 8000",
+          "volume": "10 g per 100 ml lysate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "100 g/l"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000xg (7,835 rpm on GSA rotor)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "set bottle upside down on paper towels/Kimwipes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "new bottle",
+          "reagent": "SM buffer",
+          "volume": "1-2 ml (twice)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "2 ml microcentrifuge tubes",
+          "reagent": null,
+          "volume": "1 ml per bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "resin container",
+          "reagent": "resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "TE solution",
+          "reagent": "TE",
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "resin",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by inversion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "3 ml syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "column",
+          "reagent": "sample",
+          "volume": "1 ml at a time",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "column",
+          "reagent": "80% isopropanol",
+          "volume": "2 ml (1 ml at a time)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "original 2 ml tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column in 2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "10,000xg",
+          "other": {
+            "purpose": "remove excess isopropanol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "new 1.5 ml microcentrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "warm TE",
+          "volume": "100 \u00b5l",
+          "temperature": "warm",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to elute"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": "10,000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "isolated DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "NanoDrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "validate",
+        "parameters": {
+          "container": null,
+          "reagent": "isolated DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Quant IT DNA quantification"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='plastic centrifuge bottle', reagent='phage lysate', volume='100-150 ml')\nadd(container='plastic centrifuge bottle', reagent='RNase', volume='10 \u00b5l per 100 ml lysate, 15 \u00b5l per 150 ml lysate')\nincubate(container='plastic centrifuge bottle', temperature='room temperature', duration='30 min')\nadd(container='plastic centrifuge bottle', reagent='NaCl', volume='6.5 g per 100 ml lysate', final_concentration='1M')\nincubate(container='plastic centrifuge bottle', temperature='on ice', duration='1 hour')\ncentrifuge(container='plastic centrifuge bottle', duration='10 min', speed='11,000xg (8,300 rpm on GSA rotor)')\ntransfer(container='new bottle', reagent='supernatant')\nadd(container='new bottle', reagent='PEG 8000', volume='10 g per 100 ml lysate', final_concentration='100 g/l')\nshake(container='new bottle', purpose='to mix')\nincubate(container='new bottle', temperature='on ice', duration='1 hour')\ncentrifuge(container='new bottle', duration='10 min', speed='10,000xg (7,835 rpm on GSA rotor)')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: new bottle, reagent: supernatant, other: {})\n# MANUAL: drain (container: new bottle, other: {'method': 'set bottle upside down on paper towels/Kimwipes'})\n\n### AUTOMATED SECTION ###\nrinse(container='new bottle', reagent='SM buffer', volume='1-2 ml (twice)')\ncollect(container='2 ml microcentrifuge tubes', volume='1 ml per bottle')\nshake(container='resin container', reagent='resin', purpose='to resuspend')\nheat(container='TE solution', reagent='TE', temperature='80\u00b0C')\nadd(container='2 ml microcentrifuge tube', reagent='resin', volume='1 ml')\nmix(container='2 ml microcentrifuge tube', method='by inversion')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: column, other: {'to': '3 ml syringe'})\n# MANUAL: push (container: column, reagent: sample, volume: 1 ml at a time, other: {})\n# MANUAL: push (container: column, reagent: 80% isopropanol, volume: 2 ml (1 ml at a time), other: {})\n# MANUAL: place (container: column, other: {'location': 'original 2 ml tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='column in 2 ml tube', duration='2 min', speed='10,000xg', purpose='remove excess isopropanol')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: column, other: {'location': 'new 1.5 ml microcentrifuge tube'})\n\n### AUTOMATED SECTION ###\nadd(container='1.5 ml microcentrifuge tube', reagent='warm TE', volume='100 \u00b5l', temperature='warm', purpose='to elute')\nvortex(container='1.5 ml microcentrifuge tube', duration='briefly')\ncentrifuge(container='1.5 ml microcentrifuge tube', duration='30 sec', speed='10,000xg')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: isolated DNA, other: {'method': 'NanoDrop'})\n# MANUAL: validate (reagent: isolated DNA, other: {'method': 'Quant IT DNA quantification'})",
+    "source_file": "protocol_423.txt"
+  }
+]

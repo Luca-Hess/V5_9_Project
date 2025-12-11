@@ -1,0 +1,161 @@
+[
+  {
+    "protocol": "Bottle cleaning procedure for dissolved cobalt analyses\nObtain 60 mL narrow-mouth low density polyethylene bottles (LDPE) for this procedure.\nBottles are soaked for 10 days in the acidic detergent, Citranox, and rotated after approximately 5 days to make sure all sides of the bottles have been coated with soap.\nThe bottles are then rinsed thoroughly with Milli-Q water (usually 5 times, or until all soap is gone), and then filled with 10% HCl (new HCl) to soak for 10 days (also being rotated after 5 days).\nEach bottle is then rinsed thoroughly with pH 2 Milli-Q, and double-bagged and stored empty.",
+    "actions": [
+      {
+        "action": "obtain",
+        "parameters": {
+          "container": "60 mL narrow-mouth LDPE bottles",
+          "reagent": null,
+          "volume": "60 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "soak",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": "Citranox (acidic detergent)",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "time_after_start": "5 days"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": "Milli-Q water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "5 times or until all soap is gone"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": "10% HCl (new HCl)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "soak",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": "10% HCl (new HCl)",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "time_after_start": "5 days"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": "pH 2 Milli-Q water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "double-bag",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "state": "empty"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "60 mL LDPE bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "state": "empty"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: obtain (container: 60 mL narrow-mouth LDPE bottles, volume: 60 mL, other: {})\n\n### AUTOMATED SECTION ###\nsoak(container='60 mL LDPE bottles', reagent='Citranox (acidic detergent)', duration='10 days')\nrotate(container='60 mL LDPE bottles', time_after_start='5 days')\nrinse(container='60 mL LDPE bottles', reagent='Milli-Q water', repeat='5 times or until all soap is gone')\nfill(container='60 mL LDPE bottles', reagent='10% HCl (new HCl)')\nsoak(container='60 mL LDPE bottles', reagent='10% HCl (new HCl)', duration='10 days')\nrotate(container='60 mL LDPE bottles', time_after_start='5 days')\nrinse(container='60 mL LDPE bottles', reagent='pH 2 Milli-Q water', repeat='thoroughly')\n\n### MANUAL SECTION ###\n# MANUAL: double-bag (container: 60 mL LDPE bottles, other: {'state': 'empty'})\n# MANUAL: store (container: 60 mL LDPE bottles, other: {'state': 'empty'})",
+    "source_file": "protocol_540.txt"
+  }
+]

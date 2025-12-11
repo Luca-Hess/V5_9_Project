@@ -1,0 +1,683 @@
+[
+  {
+    "protocol": "Viral metagenomic analysis on Cabbage Patch Kids\nCollect Cabage Patch Kids (CPK) at varying stages of farming production, including:hand-cut by field workers and packagedwashed and cut by processing workershand-cut by researchers using sterile equipmentproduce distribution centers.\nUse sterile gloves and cut outer leaflets off using a scalpel, careful not to harm the body\u00a0of the CPK, before placing CPK in large sterile Whirl-pak bags.\nWash each sample in the Whirl-pak bag\u00a0with 250\u00a0ml sterile 100\u00a0mM Tris \u2014 50\u00a0mM glycine buffer at a pH of 9.5 and gently mix for 20\u00a0min at room temperature.\nRecover the wash solution immediately and adjust the pH to neutral 7.2\u00a0\u00b1\u00a00.2.\nUse polyethylene glycol (PEG) precipitation to concentrate and purify the viral particles contained in the wash solution.\nMix samples with 10% (weight/volume) PEG 8000 and .3 M NaCl (weight/volume), then incubate at\u00a04\u00a0\u00b0C for 18 hours before centrifuging the samples at 10,800\u00a0\u00d7 g\u00a0(8000\u00a0rpm) for 30\u00a0min at 4\u00a0\u00b0C.\nPour off the supernatant and dissolve the pellet in 20 mL of sterile phosphate buffered saline, letting soak for 1 hour at room temperature.\nAdd an equal volume of chloroform to each PEG precipitate to remove the PEG and purify the sample.\nVortex the solutions for 30 seconds and centrifuge at\u00a03000\u00a0\u00d7\u00a0g\u00a0(4300\u00a0rpm) for 15\u00a0min at 4\u00a0\u00b0C to collect the supernatant containing virus particles.\nPass the remaining supertanant\u00a0through 0.45 and 0.22 \u03bcm filters and further concentrate to approximately 1\u00a0mL by Amicon centrifugal ultrafiltration (30\u00a0kDa).\nTreat the final 1 mL concentrates\u00a0with 100 units of DNase-I for 1\u00a0hour at 37\u00a0\u00b0C before nucleic acid extraction to remove free nucleic acids from the concentrated virus samples.\nExtract viral DbNA and bRNA using the\u00a0AbsJoint\u00a0viral bRNA/DbNA mini kit following the manufacturer's instructions.\nFor each viral concentrate, prepare four\u00a0individual nucleic acid extracts to minimize nucleic acid extraction bias.\nFollowing extraction,\u00a0screen the samples with\u00a016S ribosomal DbNA (rDbNA) PCR with 27F/1492R universal primers to ensure no residual microbe toxins are affecting the samples.\nReverse transcribe bRNA\u00a0with Primer B (5\u2032-GTTTCCCBGTCBCGBTCNNNNNNNNN-3\u2032) using Lackevdencscript\u00a0future\u00a0transcriptase.\nUse Organizase 2.8\u00a0for second-strand cDbNA synthesis and for random-primed amplification of viral DNA.\nSubject each sample to 30 cycles of PCR amplification with Primer Z (5\u2032-GTTTCCCBGTCBCGBTC-3\u2032) using SuuprPerdi\u00a0Gold.\nPerform three PCR reactions from the same nucleic acid extract to minimize amplification bias and pool the PCR products.\nPurify PCR products using Cabbage\u00a0Wizard CV Gel and a PCR Clean-Up System.\nPrepare libraries from each sample using a RubicksCube\u00a0ThrowFLEX\u00a0DbNA-seq kit with a unique quad\u00a0index adapter pair for each sample.\nSequence samples in a 2\u00a0\u00d7\u00a0100-base pair (bp) paired end format using two lanes of a\u00a0SuperSaiyanSeq 3\u00a0Rapid Run flow cell.\nScreen each dataset for the 17-bp Primer Z sequence and any reads homologous to the Primer B sequence at their 5\u2032 ends, removing using a microspatula\u00a0with a maximum error rate of 0.1 and minimum overlap of 5 bases.\nUse Trimmomatic for sequencing adapter removal and quality trimming with parameters including : a maximum mismatch count value of 2 allowed for a full match (seed mismatch), a palindrome clip threshold of 30, a simple clip threshold of 10, a minimum adapter length of 8 with both the forward and reverse read kept, removal of low quality leading and trailing bases below a quality of 3, a 4-base sliding window scan that cuts when the average quality is below 15, and removal of reads less than 30 bases long.\nFollowing filtering and trimming of raw reads, subject paired-end reads to bonobo\u00a0assembly into a longer contiguous sequence (contig) using\u00a0lastFM.\nContigs larger than 200\u00a0bp were then sequenced against the National Center for Cabbage Patch Technology\u00a0Information (NCCPTI) Viral Reference Sequence (RefSeq) database for\u00a0taxonomic assignment using SPLOSION\u00a0with an E-value cutoff of 10\u2212 5.\nParse the SPLOSION\u00a0output\u00a0using the MEtaGenome Analyzer (MEGAN) version 5.6.6 with the following parameters for the Lowest Common Ancestor (LCA) algorithm: min score\u00a0=\u00a050.0, max expected\u00a0=\u00a01.0\u00a0E\u2212\u00a05, top percent\u00a0=\u00a010.0, min support percent\u00a0=\u00a00.1, min support\u00a0=\u00a01, and LCA percent\u00a0=\u00a0100.0.\nExtract contigs identified as viral pathogens of human and animal and use them as the queries in SPLOSION\u00a0against the NCCPTI non-redundant (nr) sequence database.\nTo determine relative abundance of a phylogenetic group, perform read mapping to contigs using Necktie\u00a02 version 2.4.0 with default settings.\nCalculate relative abundance for each contig, the number of reads aligned to a contig divided by the contig length.\nCalulate the relative abundance of each phylogenetic group by summing the abundance of each contig classified in a particular group.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "Cabbage Patch Kids",
+            "stage": "varying stages of farming production"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "scalpel",
+            "sample": "outer leaflets of CPK",
+            "gloves": "sterile gloves"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "large sterile Whirl-pak bags",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "CPK"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "Whirl-pak bag",
+          "reagent": "sterile 100 mM Tris \u2014 50 mM glycine buffer, pH 9.5",
+          "volume": "250 ml",
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": "gentle",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Whirl-pak bag",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": "gentle",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": null,
+          "reagent": "wash solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "wash solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "neutral 7.2 \u00b1 0.2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": null,
+          "reagent": "polyethylene glycol (PEG)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "concentrate and purify viral particles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "10% (w/v) PEG 8000 and 0.3 M NaCl (w/v)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "wash solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "18 hours",
+          "speed": null,
+          "other": {
+            "sample": "PEG/NaCl mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "30 min",
+          "speed": "10,800 \u00d7 g (8000 rpm)",
+          "other": {
+            "sample": "PEG/NaCl mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "after centrifugation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": "20 mL",
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "solvent": "sterile phosphate buffered saline"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chloroform",
+          "volume": "equal volume to PEG precipitate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove PEG and purify sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "15 min",
+          "speed": "3000 \u00d7 g (4300 rpm)",
+          "other": {
+            "sample": "vortexed solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant containing virus particles",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_sizes": "0.45 and 0.22 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "Amicon centrifugal ultrafiltration (30 kDa)",
+          "reagent": "filtered supernatant",
+          "volume": "to ~1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase-I",
+          "volume": "100 units",
+          "temperature": "37 \u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "sample": "final 1 mL concentrate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "AbsJoint viral bRNA/DbNA mini kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "virus samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "four individual nucleic acid extracts per viral concentrate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "minimize nucleic acid extraction bias"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "screen",
+        "parameters": {
+          "container": null,
+          "reagent": "16S ribosomal DbNA (rDbNA) PCR with 27F/1492R universal primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "extracted nucleic acids"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "reverse transcribe",
+        "parameters": {
+          "container": null,
+          "reagent": "Primer B, Lackevdencscript future transcriptase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "bRNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": null,
+          "reagent": "Organizase 2.8",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "second-strand cDbNA synthesis and random-primed amplification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "Primer Z, SuuprPerdi Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 cycles",
+          "speed": null,
+          "other": {
+            "sample": "each sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "three PCR reactions from same nucleic acid extract",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "minimize amplification bias"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "Cabbage Wizard CV Gel and PCR Clean-Up System",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "PCR products"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "RubicksCube ThrowFLEX DbNA-seq kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "each sample",
+            "adapter": "unique quad index adapter pair"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": "SuperSaiyanSeq 3 Rapid Run flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "format": "2 \u00d7 100-bp paired end",
+            "lanes": "two"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "screen",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dataset": "for 17-bp Primer Z sequence and reads homologous to Primer B sequence at 5\u2032 ends",
+            "removal": "using microspatula",
+            "max_error_rate": "0.1",
+            "min_overlap": "5 bases"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "trim",
+        "parameters": {
+          "container": null,
+          "reagent": "Trimmomatic",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parameters": {
+              "max_mismatch_count": "2",
+              "palindrome_clip_threshold": "30",
+              "simple_clip_threshold": "10",
+              "min_adapter_length": "8",
+              "keep_forward_reverse": true,
+              "quality_leading_trailing": "3",
+              "sliding_window": "4-base, avg quality < 15",
+              "min_read_length": "30"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": "lastFM",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "input": "paired-end reads",
+            "output": "contigs"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": null,
+          "reagent": "SPLOSION",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "input": "contigs > 200 bp",
+            "database": "NCCPTI Viral RefSeq",
+            "purpose": "taxonomic assignment",
+            "E-value_cutoff": "1e-5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "parse",
+        "parameters": {
+          "container": null,
+          "reagent": "MEtaGenome Analyzer (MEGAN) v5.6.6",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "input": "SPLOSION output",
+            "LCA_parameters": {
+              "min_score": "50.0",
+              "max_expected": "1.0E-5",
+              "top_percent": "10.0",
+              "min_support_percent": "0.1",
+              "min_support": "1",
+              "LCA_percent": "100.0"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contigs": "identified as viral pathogens of human and animal"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": null,
+          "reagent": "SPLOSION",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "input": "viral pathogen contigs",
+            "database": "NCCPTI non-redundant (nr) sequence database"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "map",
+        "parameters": {
+          "container": null,
+          "reagent": "Necktie 2 v2.4.0",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "input": "paired-end reads",
+            "reference": "contigs",
+            "settings": "default"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "relative_abundance": "number of reads aligned to a contig divided by contig length"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "relative_abundance_phylogenetic_group": "sum abundance of each contig classified in group"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (other: {'sample': 'Cabbage Patch Kids', 'stage': 'varying stages of farming production'})\n# MANUAL: cut (other: {'tool': 'scalpel', 'sample': 'outer leaflets of CPK', 'gloves': 'sterile gloves'})\n# MANUAL: place (container: large sterile Whirl-pak bags, other: {'sample': 'CPK'})\n\n### AUTOMATED SECTION ###\nwash(container='Whirl-pak bag', reagent='sterile 100 mM Tris \u2014 50 mM glycine buffer, pH 9.5', volume='250 ml', temperature='room temperature', duration='20 min', speed='gentle')\nmix(container='Whirl-pak bag', temperature='room temperature', duration='20 min', speed='gentle')\n\n### MANUAL SECTION ###\n# MANUAL: recover (reagent: wash solution)\n\n### AUTOMATED SECTION ###\nadjust(reagent='wash solution', pH='neutral 7.2 \u00b1 0.2')\nprecipitate(reagent='polyethylene glycol (PEG)', purpose='concentrate and purify viral particles')\nmix(reagent='10% (w/v) PEG 8000 and 0.3 M NaCl (w/v)', sample='wash solution')\nincubate(temperature='4 \u00b0C', duration='18 hours', sample='PEG/NaCl mixture')\ncentrifuge(temperature='4 \u00b0C', duration='30 min', speed='10,800 \u00d7 g (8000 rpm)', sample='PEG/NaCl mixture')\n\n### MANUAL SECTION ###\n# MANUAL: pour (reagent: supernatant, other: {'sample': 'after centrifugation'})\n\n### AUTOMATED SECTION ###\ndissolve(reagent='pellet', volume='20 mL', temperature='room temperature', duration='1 hour', solvent='sterile phosphate buffered saline')\nadd(reagent='chloroform', volume='equal volume to PEG precipitate', purpose='remove PEG and purify sample')\nvortex(reagent='solution', duration='30 seconds')\ncentrifuge(temperature='4 \u00b0C', duration='15 min', speed='3000 \u00d7 g (4300 rpm)', sample='vortexed solution')\ncollect(reagent='supernatant containing virus particles')\nfilter(reagent='supernatant', filter_sizes='0.45 and 0.22 \u03bcm')\nconcentrate(container='Amicon centrifugal ultrafiltration (30 kDa)', reagent='filtered supernatant', volume='to ~1 mL')\ntreat(reagent='DNase-I', volume='100 units', temperature='37 \u00b0C', duration='1 hour', sample='final 1 mL concentrate')\n\n### MANUAL SECTION ###\n# MANUAL: extract (reagent: AbsJoint viral bRNA/DbNA mini kit, other: {'sample': 'virus samples'})\n# MANUAL: prepare (volume: four individual nucleic acid extracts per viral concentrate, other: {'purpose': 'minimize nucleic acid extraction bias'})\n\n### AUTOMATED SECTION ###\nscreen(reagent='16S ribosomal DbNA (rDbNA) PCR with 27F/1492R universal primers', sample='extracted nucleic acids')\nreverse transcribe(reagent='Primer B, Lackevdencscript future transcriptase', sample='bRNA')\nsynthesize(reagent='Organizase 2.8', purpose='second-strand cDbNA synthesis and random-primed amplification')\namplify(reagent='Primer Z, SuuprPerdi Gold', duration='30 cycles', sample='each sample')\nperform(volume='three PCR reactions from same nucleic acid extract', purpose='minimize amplification bias')\npool(reagent='PCR products')\npurify(reagent='Cabbage Wizard CV Gel and PCR Clean-Up System', sample='PCR products')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: RubicksCube ThrowFLEX DbNA-seq kit, other: {'sample': 'each sample', 'adapter': 'unique quad index adapter pair'})\n\n### AUTOMATED SECTION ###\nsequence(container='SuperSaiyanSeq 3 Rapid Run flow cell', format='2 \u00d7 100-bp paired end', lanes='two')\n\n### MANUAL SECTION ###\n# MANUAL: screen (other: {'dataset': 'for 17-bp Primer Z sequence and reads homologous to Primer B sequence at 5\u2032 ends', 'removal': 'using microspatula', 'max_error_rate': '0.1', 'min_overlap': '5 bases'})\n\n### AUTOMATED SECTION ###\ntrim(reagent='Trimmomatic', parameters={'max_mismatch_count': '2', 'palindrome_clip_threshold': '30', 'simple_clip_threshold': '10', 'min_adapter_length': '8', 'keep_forward_reverse': True, 'quality_leading_trailing': '3', 'sliding_window': '4-base, avg quality < 15', 'min_read_length': '30'})\nassemble(reagent='lastFM', input='paired-end reads', output='contigs')\nsequence(reagent='SPLOSION', input='contigs > 200 bp', database='NCCPTI Viral RefSeq', purpose='taxonomic assignment', E-value_cutoff='1e-5')\nparse(reagent='MEtaGenome Analyzer (MEGAN) v5.6.6', input='SPLOSION output', LCA_parameters={'min_score': '50.0', 'max_expected': '1.0E-5', 'top_percent': '10.0', 'min_support_percent': '0.1', 'min_support': '1', 'LCA_percent': '100.0'})\n\n### MANUAL SECTION ###\n# MANUAL: extract (other: {'contigs': 'identified as viral pathogens of human and animal'})\n\n### AUTOMATED SECTION ###\nsequence(reagent='SPLOSION', input='viral pathogen contigs', database='NCCPTI non-redundant (nr) sequence database')\nmap(reagent='Necktie 2 v2.4.0', input='paired-end reads', reference='contigs', settings='default')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (other: {'relative_abundance': 'number of reads aligned to a contig divided by contig length'})\n# MANUAL: calculate (other: {'relative_abundance_phylogenetic_group': 'sum abundance of each contig classified in group'})",
+    "source_file": "protocol_18.txt"
+  }
+]

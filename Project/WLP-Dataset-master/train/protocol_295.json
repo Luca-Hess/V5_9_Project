@@ -1,0 +1,1116 @@
+[
+  {
+    "protocol": "Paraffin Embedding of Drosophila Pupal Tissues\nPuncture posterior end of staged pupa with dissecting scissors, fine forcepts, or .22 gauge needle.\nPlace into Eppendorf tube with 500 ul of FAAG and store overnight at 4 degrees Celsius. \nRemove FAAG in the hood and dispose in \"Aldehyde Waste\" container.\nDehydrate through ethanol series and clear in Xylenes.\nRotate in nutator at RT.\nSolution 1: 80% Ethanol 500 ul Dehydrate through ethanol series continued.\nSolution 2: 85% Ethanol 500 ul Dehydrate through ethanol series continued.\nSolution 3: 90% Ethanol 500 ul Dehydrate through ethanol series continued.\nSolution 4: 100% Ethanol 500 ul. \nRepeat Step 5\u00a0Dehydrate through ethanol series continued.\nSolution 4: 100% Ethanol 500 ul. \nRepeat Step 5 Dehydrate through ethanol series continued.\nSolution 4: 100% Ethanol 500 ul. \nRepeat Step 5\u00a0Dehydrate through ethanol series continued.\nSolution 4: 100% Ethanol 500 ul. \nReplace 100% Ethanol with 500ul Xylenes for thirty minutes.\nDispose of Xylenes in \"Aldehyde Waste\" container. \nRepeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.\nDispose of Xylenes in \"Aldehyde Waste\" container. \nRepeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.\nDispose of Xylenes in \"Aldehyde Waste\" container. \nRepeat Step 9: Remove Xylenes and replace with new 500ul Xylenes for thirty minutes.\nDispose of Xylenes in \"Aldehyde Waste\" container Paraffin Infiltration.\nTransfer pupae to scintillation vial with 2 ml of Xylenes using designated paintbrush.\nMark the level of Xylenes on tube.\nAdd ~20 paraffin chips (paraplast xtra) and melt in 42 degree Celsius incubator.\n(Volume should double)\u00a0Leave overnight.\nIn 500 ml beaker, add melted paraffin and incubate at 56 degrees celsius for use tomorrow.\nRemove Xylenes/Wax and place onto wax waste tray.\nAdd a small amount of melted paraffin at 56 degrees Celsius to dilute residual Xylene, remove and place onto wax waste tray.\nAdd melted 56 degree Celsius paraffin incubate for 1-2 hours.\nRemove paraffin and replace with fresh\u00a0melted 56 degree Celsius paraffin incubate for 1-2 hours.\nRemove paraffin and replace with fresh melted 56 degree Celsius paraffin and fill to the top of the glass vial.\nIncubate overnight.\nMake mold by taping the ends and sides of cut index cards and tape ends to prevent leaks.\nPre-heat hot block to 56 degrees Celsius and cover completely with tin foil.\nWhen hot block reaches temp, swirl pupae in the vial and quickly pour wax and pupae into mold on top of hot block.\nOrient the samples quickly before the wax hardens.\nFill the remainder of the boat with melted paraffin.\nLet sit for 15 minutes to begin to solidify.\nCarefully remove boat from hot block and coll overnight at room temp.\nCut wax into individual pyramid shaped blocks for sectioning using a razor blade.\nMount blocks onto chuck by melting paraffin with heated flat spatula.\nCection blocks on microtome at 7um and float onto slides with water that are pre-warmed on slide warmer at 42 degrees Celsius.\nAllow the sections to expand on slide warmer for 2-5 minutes.\nRemove water by wicking with a kimwipe.\nBake slides on 42 degree Celsius slide warmer overnight.\nHydrate samples by placing in Xylenes (container 1) for 3 minutes. \nHydrate samples by placing in Xylenes (container 2) for 3 minutes. \nHydrate samples by placing in 100% Ethanol\u00a0(container 1) for 3 minutes. \nHydrate samples by placing in 100% Ethanol\u00a0(container 2) for 3 minutes. \nHydrate samples by placing in 95% Ethanol for 3 minutes. \nHydrate samples by placing in 70% Ethanol for 3 minutes. \nRinse under running tap water for 5 mins.\nStain SamplesSubmerge slides in Weigert's Hematoxylin for 5 mins.\nRinse under running tap water for 5 mins.\nSubmerge in Pollak Trichrome for 7 mins.\nRinse in distilled water for approx 10 seconds to remove the bulk of the stain.\nSubmerge in Acidified distilled water for 10 sec.\nDehydration:Dip\u00a0slides into 70% Ethanol 3 times. \nDip\u00a0slides into 95% Ethanol (container 1) 3 times. \nSubmerge\u00a0slides into 95% Ethanol (container 2)\u00a0for 3 mins.\nSubmerge\u00a0slides into 100% Ethanol (container 1)\u00a0for 3 mins.\nSubmerge\u00a0slides into 100% Ethanol (container 2)\u00a0for 3 mins.\nSubmerge\u00a0slides into Xylenes (container 1)\u00a0for 3 mins.\nSubmerge\u00a0slides into Xylenes\u00a0(container 2)\u00a0for 3 mins.\nRemove slides from Xylenes and drain for 2 mins on a paper towel Use 78ul of Permount (for large coverslip) and apply coverslip.\nLet slides harden overnight.",
+    "actions": [
+      {
+        "action": "puncture",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "dissecting scissors, fine forceps, or .22 gauge needle",
+            "sample": "posterior end of staged pupa"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "FAAG",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "punctured pupa"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 degrees Celsius",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "sample": "pupa in FAAG"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "FAAG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispose",
+        "parameters": {
+          "container": "\"Aldehyde Waste\" container",
+          "reagent": "FAAG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "ethanol series",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "series": [
+              "80% Ethanol",
+              "85% Ethanol",
+              "90% Ethanol",
+              "100% Ethanol"
+            ],
+            "volume_per_step": "500 ul"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "nutator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "80% Ethanol",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "85% Ethanol",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "90% Ethanol",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "100% Ethanol",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "100% Ethanol",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "500 ul Xylenes",
+            "duration": "30 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispose",
+        "parameters": {
+          "container": "\"Aldehyde Waste\" container",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "Eppendorf tube",
+          "reagent": "Xylenes",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "repeat": "3 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "scintillation vial",
+          "reagent": "Xylenes",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "pupae",
+            "tool": "designated paintbrush"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "scintillation vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "level": "Xylenes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "scintillation vial",
+          "reagent": "paraffin chips (paraplast xtra)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "~20 chips"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": "scintillation vial",
+          "reagent": "paraffin chips",
+          "volume": null,
+          "temperature": "42 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "leave",
+        "parameters": {
+          "container": "scintillation vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "500 ml beaker",
+          "reagent": "melted paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "500 ml beaker",
+          "reagent": "melted paraffin",
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": "until use tomorrow",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "Xylenes/Wax",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "wax waste tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "melted paraffin",
+          "volume": "small amount",
+          "temperature": "56 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dilute residual Xylene"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "diluted paraffin/Xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "wax waste tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "melted paraffin",
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": "1-2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "fresh melted paraffin",
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": "1-2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "fresh melted paraffin",
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fill_to_top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": "index cards (mold)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "taping ends and sides"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pre-heat",
+        "parameters": {
+          "container": "hot block",
+          "reagent": null,
+          "volume": null,
+          "temperature": "56 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cover": "tin foil"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "pupae"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "mold on hot block",
+          "reagent": "wax and pupae",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "orient",
+        "parameters": {
+          "container": "mold",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before": "wax hardens"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "boat (mold)",
+          "reagent": "melted paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remainder": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "let sit",
+        "parameters": {
+          "container": "boat (mold)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "begin to solidify"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "boat (mold)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "hot block"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "boat (mold)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "wax block",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "shape": "individual pyramid shaped blocks",
+            "tool": "razor blade"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "chuck",
+          "reagent": "wax blocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "melting paraffin with heated flat spatula"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "section",
+        "parameters": {
+          "container": "microtome",
+          "reagent": "wax blocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thickness": "7 um"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "slides",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": "42 degrees Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "water": "pre-warmed on slide warmer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "slide warmer",
+          "reagent": "sections",
+          "volume": null,
+          "temperature": "42 degrees Celsius",
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "expand"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "slides",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "wicking with kimwipe"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "bake",
+        "parameters": {
+          "container": "slide warmer",
+          "reagent": "slides",
+          "volume": null,
+          "temperature": "42 degrees Celsius",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": "container 1",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": "container 2",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": "container 1",
+          "reagent": "100% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": "container 2",
+          "reagent": "100% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": null,
+          "reagent": "95% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "hydrate",
+        "parameters": {
+          "container": null,
+          "reagent": "70% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "running tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": null,
+          "reagent": "Weigert's Hematoxylin",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "running tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": null,
+          "reagent": "Pollak Trichrome",
+          "volume": null,
+          "temperature": null,
+          "duration": "7 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "distilled water",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {
+            "purpose": "remove bulk of stain",
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": null,
+          "reagent": "acidified distilled water",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dip",
+        "parameters": {
+          "container": null,
+          "reagent": "70% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "slides",
+            "times": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dip",
+        "parameters": {
+          "container": "container 1",
+          "reagent": "95% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "slides",
+            "times": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "container 2",
+          "reagent": "95% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "container 1",
+          "reagent": "100% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "container 2",
+          "reagent": "100% Ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "container 1",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "container 2",
+          "reagent": "Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "sample": "slides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "slides from Xylenes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drain": "2 minutes on paper towel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "Permount",
+          "volume": "78 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverslip": "large"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "let harden",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: puncture (other: {'tool': 'dissecting scissors, fine forceps, or .22 gauge needle', 'sample': 'posterior end of staged pupa'})\n\n### AUTOMATED SECTION ###\nplace(container='Eppendorf tube', reagent='FAAG', volume='500 ul', sample='punctured pupa')\nstore(container='Eppendorf tube', temperature='4 degrees Celsius', duration='overnight', sample='pupa in FAAG')\nremove(container='Eppendorf tube', reagent='FAAG', location='hood')\n\n### MANUAL SECTION ###\n# MANUAL: dispose (container: \"Aldehyde Waste\" container, reagent: FAAG)\n\n### AUTOMATED SECTION ###\ndehydrate(container='Eppendorf tube', reagent='ethanol series', series=['80% Ethanol', '85% Ethanol', '90% Ethanol', '100% Ethanol'], volume_per_step='500 ul')\nclear(container='Eppendorf tube', reagent='Xylenes')\nrotate(container='Eppendorf tube', temperature='room temperature', device='nutator')\ndehydrate(container='Eppendorf tube', reagent='80% Ethanol', volume='500 ul')\ndehydrate(container='Eppendorf tube', reagent='85% Ethanol', volume='500 ul')\ndehydrate(container='Eppendorf tube', reagent='90% Ethanol', volume='500 ul')\ndehydrate(container='Eppendorf tube', reagent='100% Ethanol', volume='500 ul')\nreplace(container='Eppendorf tube', reagent='100% Ethanol', volume='500 ul', with='500 ul Xylenes', duration='30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: dispose (container: \"Aldehyde Waste\" container, reagent: Xylenes)\n\n### AUTOMATED SECTION ###\nremove(container='Eppendorf tube', reagent='Xylenes')\nreplace(container='Eppendorf tube', reagent='Xylenes', volume='500 ul', duration='30 minutes', repeat='3 times')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: scintillation vial, reagent: Xylenes, volume: 2 ml, other: {'sample': 'pupae', 'tool': 'designated paintbrush'})\n# MANUAL: mark (container: scintillation vial, other: {'level': 'Xylenes'})\n\n### AUTOMATED SECTION ###\nadd(container='scintillation vial', reagent='paraffin chips (paraplast xtra)', amount='~20 chips')\nmelt(container='scintillation vial', reagent='paraffin chips', temperature='42 degrees Celsius', device='incubator')\nleave(container='scintillation vial', duration='overnight')\nadd(container='500 ml beaker', reagent='melted paraffin')\nincubate(container='500 ml beaker', reagent='melted paraffin', temperature='56 degrees Celsius', duration='until use tomorrow')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: glass vial, reagent: Xylenes/Wax, other: {'place': 'wax waste tray'})\n\n### AUTOMATED SECTION ###\nadd(container='glass vial', reagent='melted paraffin', volume='small amount', temperature='56 degrees Celsius', purpose='dilute residual Xylene')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: glass vial, reagent: diluted paraffin/Xylene, other: {'place': 'wax waste tray'})\n\n### AUTOMATED SECTION ###\nadd(container='glass vial', reagent='melted paraffin', temperature='56 degrees Celsius')\nincubate(container='glass vial', reagent='paraffin', temperature='56 degrees Celsius', duration='1-2 hours')\nremove(container='glass vial', reagent='paraffin')\nreplace(container='glass vial', reagent='fresh melted paraffin', temperature='56 degrees Celsius', duration='1-2 hours')\nremove(container='glass vial', reagent='paraffin')\nreplace(container='glass vial', reagent='fresh melted paraffin', temperature='56 degrees Celsius', fill_to_top=True)\nincubate(container='glass vial', reagent='paraffin', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: make (container: index cards (mold), other: {'method': 'taping ends and sides'})\n\n### AUTOMATED SECTION ###\npre-heat(container='hot block', temperature='56 degrees Celsius', cover='tin foil')\nswirl(container='vial', sample='pupae')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: mold on hot block, reagent: wax and pupae)\n# MANUAL: orient (container: mold, reagent: samples, other: {'before': 'wax hardens'})\n\n### AUTOMATED SECTION ###\nfill(container='boat (mold)', reagent='melted paraffin', remainder=True)\nlet sit(container='boat (mold)', duration='15 minutes', purpose='begin to solidify')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: boat (mold), other: {'from': 'hot block'})\n\n### AUTOMATED SECTION ###\ncool(container='boat (mold)', temperature='room temperature', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: cut (container: wax block, other: {'shape': 'individual pyramid shaped blocks', 'tool': 'razor blade'})\n# MANUAL: mount (container: chuck, reagent: wax blocks, other: {'method': 'melting paraffin with heated flat spatula'})\n# MANUAL: section (container: microtome, reagent: wax blocks, other: {'thickness': '7 um'})\n# MANUAL: float (container: slides, reagent: sections, temperature: 42 degrees Celsius, other: {'water': 'pre-warmed on slide warmer'})\n\n### AUTOMATED SECTION ###\nallow(container='slide warmer', reagent='sections', temperature='42 degrees Celsius', duration='2-5 minutes', purpose='expand')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: slides, reagent: water, other: {'method': 'wicking with kimwipe'})\n\n### AUTOMATED SECTION ###\nbake(container='slide warmer', reagent='slides', temperature='42 degrees Celsius', duration='overnight')\nhydrate(container='container 1', reagent='Xylenes', duration='3 minutes', sample='slides')\nhydrate(container='container 2', reagent='Xylenes', duration='3 minutes', sample='slides')\nhydrate(container='container 1', reagent='100% Ethanol', duration='3 minutes', sample='slides')\nhydrate(container='container 2', reagent='100% Ethanol', duration='3 minutes', sample='slides')\nhydrate(reagent='95% Ethanol', duration='3 minutes', sample='slides')\nhydrate(reagent='70% Ethanol', duration='3 minutes', sample='slides')\n\n### MANUAL SECTION ###\n# MANUAL: rinse (reagent: running tap water, duration: 5 minutes, other: {'sample': 'slides'})\n\n### AUTOMATED SECTION ###\nsubmerge(reagent=\"Weigert's Hematoxylin\", duration='5 minutes', sample='slides')\n\n### MANUAL SECTION ###\n# MANUAL: rinse (reagent: running tap water, duration: 5 minutes, other: {'sample': 'slides'})\n\n### AUTOMATED SECTION ###\nsubmerge(reagent='Pollak Trichrome', duration='7 minutes', sample='slides')\nrinse(reagent='distilled water', duration='10 seconds', purpose='remove bulk of stain', sample='slides')\nsubmerge(reagent='acidified distilled water', duration='10 seconds', sample='slides')\ndip(reagent='70% Ethanol', sample='slides', times='3')\ndip(container='container 1', reagent='95% Ethanol', sample='slides', times='3')\nsubmerge(container='container 2', reagent='95% Ethanol', duration='3 minutes', sample='slides')\nsubmerge(container='container 1', reagent='100% Ethanol', duration='3 minutes', sample='slides')\nsubmerge(container='container 2', reagent='100% Ethanol', duration='3 minutes', sample='slides')\nsubmerge(container='container 1', reagent='Xylenes', duration='3 minutes', sample='slides')\nsubmerge(container='container 2', reagent='Xylenes', duration='3 minutes', sample='slides')\n\n### MANUAL SECTION ###\n# MANUAL: remove (reagent: slides from Xylenes, other: {'drain': '2 minutes on paper towel'})\n\n### AUTOMATED SECTION ###\napply(reagent='Permount', volume='78 ul', coverslip='large')\nlet harden(container='slides', duration='overnight')",
+    "source_file": "protocol_295.txt"
+  }
+]

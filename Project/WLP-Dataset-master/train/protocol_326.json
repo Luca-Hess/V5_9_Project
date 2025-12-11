@@ -1,0 +1,350 @@
+[
+  {
+    "protocol": "Agarose gel electrophoresis, 1.2% with Ethidum bromide\nWeigh out 0.6 g (1.2% w/v of 50mL) agarose and add it to the Erlenmeyer Flask.\nAdd 50mL of 1x TAE buffer Place Erlenmeyer Flask in microwave.\nSet to wait 30 seconds, then full power (P10, 1250W) for 20 seconds followed by low power (P1, 125W) for 30 seconds or until solution is clear and agarose is completely dissolved.\nRemove Erlenmeyer Flask from microwave and let it sit on the lab bench to cool just until you can comfortably pick it up.\nAdd 1\u03bcL concentrated ethidium bromide (10mg/mL) into the flask and swirl to mix, taking care not to introduce bubbles.\nPlace gel tray on clamp and clamp securely.\nAdd well plates where you want wells and use a level to ensure it is balanced.\nPour contents of the Erlemeyer Flask into the gel tray and let it sit for 30 minutes, or until a blue tint appears.\nRemove the well plates carefully as to not tear the gel and remove the tray from the clamp, but ensure the gel remains in the tray.\nPlace gel tray into gel electrophoresis apparatus with the wells closer to the negative/black end.\nPour additional TAE Buffer to fill each side of the apparatus and to create a thin layer of buffer covering the top of the gel.\nPrepare DNA ladder and samples by adding 6x blue dye Pipette your samples into each well.\nPlace lid on apparatus and plug cables into high voltage power supply.\nRun at 100V (~6.6V/cm) for 45-60 minutes or until the loading dye has sufficiently migrated down the gel.\nGel can be imaged on UV transilluminator through the UV-transparent gel tray or removed and wrapped in plastic wrap for storage at 4\u00b0C for later use.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": "agarose",
+          "volume": "0.6 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1.2% w/v of 50mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": "1x TAE buffer",
+          "volume": "50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds (wait), 20 seconds (full power), 30 seconds (low power) or until dissolved",
+          "speed": null,
+          "other": {
+            "microwave_power": [
+              "P10, 1250W",
+              "P1, 125W"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until flask can be comfortably picked up",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": "concentrated ethidium bromide (10mg/mL)",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirl, avoid bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "clamp"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "well plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "where you want wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "level",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "level"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "contents of Erlenmeyer Flask",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes or until blue tint appears",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "well plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "care": "do not tear gel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clamp",
+          "reagent": "gel tray",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ensure": "gel remains in tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "gel electrophoresis apparatus",
+            "orientation": "wells closer to negative/black end"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel electrophoresis apparatus",
+          "reagent": "additional TAE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fill": "each side and thin layer over gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA ladder and samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "add 6x blue dye"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "gel wells",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel electrophoresis apparatus",
+          "reagent": "lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "plug",
+        "parameters": {
+          "container": "high voltage power supply",
+          "reagent": "cables",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel electrophoresis apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "45-60 minutes or until loading dye migrates",
+          "speed": null,
+          "other": {
+            "voltage": "100V (~6.6V/cm)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "image",
+        "parameters": {
+          "container": "UV transilluminator",
+          "reagent": "gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tray": "UV-transparent gel tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wrap": "plastic wrap",
+            "storage": "4\u00b0C"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: Erlenmeyer Flask, reagent: agarose, volume: 0.6 g, other: {'concentration': '1.2% w/v of 50mL'})\n\n### AUTOMATED SECTION ###\nadd(container='Erlenmeyer Flask', reagent='1x TAE buffer', volume='50 mL')\n\n### MANUAL SECTION ###\n# MANUAL: heat (container: Erlenmeyer Flask, duration: 30 seconds (wait), 20 seconds (full power), 30 seconds (low power) or until dissolved, other: {'microwave_power': ['P10, 1250W', 'P1, 125W']})\n# MANUAL: cool (container: Erlenmeyer Flask, duration: until flask can be comfortably picked up)\n\n### AUTOMATED SECTION ###\nadd(container='Erlenmeyer Flask', reagent='concentrated ethidium bromide (10mg/mL)', volume='1 \u03bcL')\nmix(container='Erlenmeyer Flask', method='swirl, avoid bubbles')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: gel tray, other: {'location': 'clamp'})\n# MANUAL: add (container: gel tray, reagent: well plates, other: {'position': 'where you want wells'})\n# MANUAL: level (container: gel tray, other: {'tool': 'level'})\n\n### AUTOMATED SECTION ###\npour(container='gel tray', reagent='contents of Erlenmeyer Flask')\nwait(container='gel tray', duration='30 minutes or until blue tint appears')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gel tray, reagent: well plates, other: {'care': 'do not tear gel'})\n# MANUAL: remove (container: clamp, reagent: gel tray, other: {'ensure': 'gel remains in tray'})\n# MANUAL: place (container: gel tray, other: {'location': 'gel electrophoresis apparatus', 'orientation': 'wells closer to negative/black end'})\n\n### AUTOMATED SECTION ###\npour(container='gel electrophoresis apparatus', reagent='additional TAE buffer', fill='each side and thin layer over gel')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: DNA ladder and samples, other: {'method': 'add 6x blue dye'})\n\n### AUTOMATED SECTION ###\npipette(container='gel wells', reagent='samples')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: gel electrophoresis apparatus, reagent: lid)\n# MANUAL: plug (container: high voltage power supply, reagent: cables)\n\n### AUTOMATED SECTION ###\nrun(container='gel electrophoresis apparatus', duration='45-60 minutes or until loading dye migrates', voltage='100V (~6.6V/cm)')\n\n### MANUAL SECTION ###\n# MANUAL: image (container: UV transilluminator, reagent: gel, other: {'tray': 'UV-transparent gel tray'})\n# MANUAL: remove (container: gel tray, reagent: gel, other: {'wrap': 'plastic wrap', 'storage': '4\u00b0C'})",
+    "source_file": "protocol_326.txt"
+  }
+]

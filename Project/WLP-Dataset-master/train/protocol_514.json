@@ -1,0 +1,241 @@
+[
+  {
+    "protocol": "One Shot\u00ae TOP10 Chemically Competent E. coli Transformation\nCentrifuge the vial(s) containing the ligation reaction(s) briefly and place on ice.\nThaw, on ice, one 50 \u03bcL vial of One Shot\u00ae cells for each ligation/transformation.\nPipet 1\u20135 \u03bcL of each ligation reaction directly into the vial of competent cells and mix by tapping gently.\nDo not mix by pipetting up and down.\nThe remaining ligation mixture(s) can be stored at \u221220\u00b0C.\nIncubate the vial(s) on ice for 30 minutes.\nIncubate for exactly 30 seconds in the 42\u00b0C water bath.\nDo not mix or shake.\nRemove vial(s) from the 42\u00b0C bath and place them on ice.\nAdd 250 \u03bcL of pre-warmed S.O.C medium to each vial.\nS.O.C is a rich medium; sterile technique must be practiced to avoid contamination.\nPlace the vial(s) in a microcentrifuge rack on its side and secure with tape to avoid loss of the vial(s).\nShake the vial(s) at 37\u00b0C for exactly 1 hour at 225 rpm in a shaking incubator.\nSpread 20\u2013200 \u03bcL from each transformation vial on separate, labeled LB agar plates.\nThe remaining transformation mix may be stored at 4\u00b0C and plated out the next day, if desired.\nInvert the plate(s) and incubate at 37\u00b0C overnight.\nSelect colonies and analyze by plasmid isolation, PCR, or sequencing.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "vial(s) containing ligation reaction(s)",
+          "reagent": "ligation reaction(s)",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "vial(s) containing ligation reaction(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "50 \u03bcL vial of One Shot\u00ae cells",
+          "reagent": "One Shot\u00ae cells",
+          "volume": "50 \u03bcL",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "vial of competent cells",
+          "reagent": "ligation reaction",
+          "volume": "1\u20135 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "vial of competent cells",
+          "reagent": "ligation reaction + competent cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "tapping gently"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "remaining ligation mixture(s)",
+          "reagent": "ligation mixture(s)",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "vial(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C (water bath)",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "vial(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each vial",
+          "reagent": "pre-warmed S.O.C medium",
+          "volume": "250 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "vial(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": "225 rpm",
+          "other": {
+            "equipment": "shaking incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "LB agar plates",
+          "reagent": "transformation vial mix",
+          "volume": "20\u2013200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "separate, labeled plates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "remaining transformation mix",
+          "reagent": "transformation mix",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight (optional)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "plate(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate(s)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "colonies",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by plasmid isolation, PCR, or sequencing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='vial(s) containing ligation reaction(s)', reagent='ligation reaction(s)', duration='briefly')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: vial(s) containing ligation reaction(s), temperature: on ice, other: {})\n# MANUAL: thaw (container: 50 \u03bcL vial of One Shot\u00ae cells, reagent: One Shot\u00ae cells, volume: 50 \u03bcL, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\npipette(container='vial of competent cells', reagent='ligation reaction', volume='1\u20135 \u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: vial of competent cells, reagent: ligation reaction + competent cells, other: {'method': 'tapping gently'})\n# MANUAL: store (container: remaining ligation mixture(s), reagent: ligation mixture(s), temperature: -20\u00b0C, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='vial(s)', temperature='on ice', duration='30 minutes')\nincubate(container='vial(s)', temperature='42\u00b0C (water bath)', duration='30 seconds')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: vial(s), temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='each vial', reagent='pre-warmed S.O.C medium', volume='250 \u03bcL')\nshake(container='vial(s)', temperature='37\u00b0C', duration='1 hour', speed='225 rpm', equipment='shaking incubator')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: LB agar plates, reagent: transformation vial mix, volume: 20\u2013200 \u03bcL, other: {'label': 'separate, labeled plates'})\n# MANUAL: store (container: remaining transformation mix, reagent: transformation mix, temperature: 4\u00b0C, duration: overnight (optional), other: {})\n# MANUAL: invert (container: plate(s), other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate(s)', temperature='37\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: select (container: colonies, other: {'method': 'by plasmid isolation, PCR, or sequencing'})",
+    "source_file": "protocol_514.txt"
+  }
+]

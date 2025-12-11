@@ -1,0 +1,223 @@
+[
+  {
+    "protocol": "Staining protocol for unicellular protists: Mitotracker and Dapi\n2% PFA Fixation: Add PFA drop by drop and mixing carefully into\u00a01mL cells for a final concentration of 2%PFA.\nIncubate cells for 4 min at room temperature. \nCentrifuge at 1000g for 5 minutes. \nWash cells with 1XPBS (1/2). \nResuspend cells with 1mL 1xPBS. \nAdd 1mM mitotracker dye.\nRoom temperature, protect from light.\u00a0 \nAdd 1/1000 DAPI dye.\nRoom temperature, protect from light. \nCentrifuge at 1000g for 5 minutes and resuspend with 1xPBS.\u00a0 \nMount your slide and ready for observation!\nWash cells with 1XPBS (2/2). \nIncubate for 10 minutes.\nRoom temperature, protect from light. \nIncubate for 5 minutes.\nRoom temperature, protect from light. \nWash with 1xPBS (1/2). \nWash with 1xPBS (2/2)",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1mL cells",
+          "reagent": "PFA",
+          "volume": "drop by drop (final concentration 2% PFA)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixing": "carefully"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "4 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "1000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cells",
+          "reagent": "mitotracker dye",
+          "volume": "1mM (final concentration)",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cells",
+          "reagent": "DAPI dye",
+          "volume": "1/1000 (final concentration)",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "1000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "1xPBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1mL cells', reagent='PFA', volume='drop by drop (final concentration 2% PFA)', mixing='carefully')\nincubate(container='cells', temperature='room temperature', duration='4 min')\ncentrifuge(container='cells', duration='5 min', speed='1000g')\nwash(container='cells', reagent='1xPBS', wash_number='1/2')\nresuspend(container='cells', reagent='1xPBS', volume='1mL')\nadd(container='cells', reagent='mitotracker dye', volume='1mM (final concentration)', temperature='room temperature', protect_from_light=True)\nadd(container='cells', reagent='DAPI dye', volume='1/1000 (final concentration)', temperature='room temperature', protect_from_light=True)\ncentrifuge(container='cells', duration='5 min', speed='1000g')\nresuspend(container='cells', reagent='1xPBS')\nwash(container='cells', reagent='1xPBS', wash_number='2/2')\nincubate(container='cells', temperature='room temperature', duration='10 min', protect_from_light=True)\nincubate(container='cells', temperature='room temperature', duration='5 min', protect_from_light=True)\nwash(container='cells', reagent='1xPBS', wash_number='1/2')\nwash(container='cells', reagent='1xPBS', wash_number='2/2')",
+    "source_file": "protocol_201.txt"
+  }
+]

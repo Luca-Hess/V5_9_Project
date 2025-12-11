@@ -1,0 +1,644 @@
+[
+  {
+    "protocol": "Gambierdiscus Whole Cell Hybridization\nPrepare Prehybridization/ Hybridization Buffer.\nThe Promega filtration manifold has a 14-sample capacity.\nThe following recipe prepares buffer for 15 samples.\nIn a 50 mL centrifuge tube labeled \u201cprehybridization\u201d buffer add: 20.4 mL Milli-Q water 6.0 mL 25X SET 300 \u03bcL 10% IGEPAL CA-630 300 \u03bcL Poly A 10 mg/mL (3-10 freezer in Styrofoam box) 3.0 mL Formamide* (in flammable refrigerator/freezer in 3-30). \nPrepare hybridization buffer: Probe working stock concentration = 200 ng/\u03bcL.\nFor each sample, use 1 mL buffer + 10\u00a0\u03bcL working stock probe.\nThus, for 14 samples, transfer 14 mL buffer into a 15 mL tube labeled \u201chybridization buffer and add 140\u00a0\u00b5L probe (14 x 10\u00a0\u03bcL).\nPrepare 0.2X SET Wash For 15 samples (1 mL per sample): 120 \u03bcL 25X SET 14.880 mL Milli-Q water 20ul of Calcifluor (3-30 fridge). \nPlace Whatman Cyclopore filter (5 \u03bcm, 25 mm), shiny-side up, on the filter unit base with minimal vacuum applied (2.5\u201d Hg = 65 mm Hg).\nWith continued vacuum, wet filter with Milli-Q, add the o-ring and the chimney.\nTighten by only turning base of the filter chimney!\nDiscard blue backing filter.\nLabel the towers with the appropriate sample information.\nInclude: Site ID and number, Sampling Month\u00a0and Hybridization Date.\n(Use a sticky label that can later be placed onto a microscope slide).\nMix sample well (inverting tube ~6 times) and remove an aliquot of sample and place onto the membrane (record volume to sample used).\nFilter each tower to near dryness.\nEMPTY CONTENTS OF FILTRATION MANIFOLD (THE \u201cPIG\u201d) INTO METHANOL WASTE CARBOY!\nAdd 1 mL prehybridization buffer to each tower.\nPrehybridize the cells for 5 minutes at room temperature.\nFilter each sample to near dryness.\nAdd 1 mL hybridization buffer containing the oligonucleotide probe.\nCap the tubes and place the filter manifold into a large black plastic bag containing a wet paper towel to help minimize evaporation.\nFold over the bag and seal it with a binder clip.\nPlace the filter manifold and the tube of 0.2X SET into the incubator and allow the samples to hybridize for an hour at\u00a0the probe's hybridization temperature.\nAfter incubation, filter each sample to near dryness.\nAdd 1.0 mL 0.2X SET (50\u02daC) to each sample (wash step) and incubate for 5 minutes at room temperature.\nFilter each sample to near dryness.\nWhile the vacuum is on, remove the chimney (loosen by only turning base of filter chimney!).\nRemove the filter from the fritted base and place it on a microscope slide using forceps (minimize the amount of filter surface area that forceps come into contact with).\nAdd 25-30 \u03bcL glycerol/SET solution in equal drops to the filter and mount with a cover slip.\nAdd the label to the slide.\nStore prepared slides cold and dark.\nView filters on a fluorescence microscope with the appropriate filter set.\nCounts should be completed within 1-2 days of staining.\nEMPTY CONTENTS OF FILTRATION MANIFOLD (THE \u201cPIG\u201d) INTO FORMALIN WASTE CARBOY!",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 mL centrifuge tube labeled 'prehybridization' buffer",
+          "reagent": "Milli-Q water",
+          "volume": "20.4 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 mL centrifuge tube labeled 'prehybridization' buffer",
+          "reagent": "25X SET",
+          "volume": "6.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 mL centrifuge tube labeled 'prehybridization' buffer",
+          "reagent": "10% IGEPAL CA-630",
+          "volume": "300 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 mL centrifuge tube labeled 'prehybridization' buffer",
+          "reagent": "Poly A 10 mg/mL",
+          "volume": "300 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "storage": "3-10 freezer in Styrofoam box"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 mL centrifuge tube labeled 'prehybridization' buffer",
+          "reagent": "Formamide",
+          "volume": "3.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "storage": "flammable refrigerator/freezer in 3-30"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "15 mL tube labeled 'hybridization buffer'",
+          "reagent": "prehybridization/hybridization buffer",
+          "volume": "14 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL tube labeled 'hybridization buffer'",
+          "reagent": "probe working stock",
+          "volume": "140 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "200 ng/\u03bcL"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube for 0.2X SET Wash",
+          "reagent": "25X SET",
+          "volume": "120 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube for 0.2X SET Wash",
+          "reagent": "Milli-Q water",
+          "volume": "14.880 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube for 0.2X SET Wash",
+          "reagent": "Calcifluor",
+          "volume": "20 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "storage": "3-30 fridge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Whatman Cyclopore filter (5 \u03bcm, 25 mm)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "shiny-side up",
+            "location": "filter unit base",
+            "vacuum": "minimal (2.5\u201d Hg = 65 mm Hg)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wet",
+        "parameters": {
+          "container": "filter",
+          "reagent": "Milli-Q water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "vacuum": "continued"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter unit",
+          "reagent": "o-ring and chimney",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "tighten",
+        "parameters": {
+          "container": "filter chimney",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "turning base only"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "blue backing filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "towers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "information": "Site ID and number, Sampling Month and Hybridization Date"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert ~6 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "aliquot of sample",
+          "volume": "record volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "aliquot of sample",
+          "volume": "record volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "each tower",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "endpoint": "near dryness"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "filtration manifold (the 'PIG')",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "methanol waste carboy"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tower",
+          "reagent": "prehybridization buffer",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prehybridize",
+        "parameters": {
+          "container": "cells in each tower",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "each sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "endpoint": "near dryness"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tower",
+          "reagent": "hybridization buffer containing oligonucleotide probe",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter manifold and tube of 0.2X SET",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples in filter manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": "probe's hybridization temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "each sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "endpoint": "near dryness"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each sample",
+          "reagent": "0.2X SET",
+          "volume": "1.0 mL",
+          "temperature": "50\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "each sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "each sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "endpoint": "near dryness"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "chimney",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "loosen by only turning base of filter chimney",
+            "vacuum": "on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter from fritted base",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "forceps",
+            "minimize_contact": "filter surface area"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter on slide",
+          "reagent": "glycerol/SET solution",
+          "volume": "25-30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "equal drops"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "filter on slide",
+          "reagent": "cover slip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "slide",
+          "reagent": "label",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "prepared slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold and dark",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "view",
+        "parameters": {
+          "container": "filters on microscope slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "fluorescence microscope",
+            "filter_set": "appropriate"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "filters on microscope slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "within 1-2 days of staining",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "filtration manifold (the 'PIG')",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "formalin waste carboy"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container=\"50 mL centrifuge tube labeled 'prehybridization' buffer\", reagent='Milli-Q water', volume='20.4 mL')\nadd(container=\"50 mL centrifuge tube labeled 'prehybridization' buffer\", reagent='25X SET', volume='6.0 mL')\nadd(container=\"50 mL centrifuge tube labeled 'prehybridization' buffer\", reagent='10% IGEPAL CA-630', volume='300 \u03bcL')\nadd(container=\"50 mL centrifuge tube labeled 'prehybridization' buffer\", reagent='Poly A 10 mg/mL', volume='300 \u03bcL', storage='3-10 freezer in Styrofoam box')\nadd(container=\"50 mL centrifuge tube labeled 'prehybridization' buffer\", reagent='Formamide', volume='3.0 mL', storage='flammable refrigerator/freezer in 3-30')\ntransfer(container=\"15 mL tube labeled 'hybridization buffer'\", reagent='prehybridization/hybridization buffer', volume='14 mL')\nadd(container=\"15 mL tube labeled 'hybridization buffer'\", reagent='probe working stock', volume='140 \u03bcL', concentration='200 ng/\u03bcL')\nadd(container='tube for 0.2X SET Wash', reagent='25X SET', volume='120 \u03bcL')\nadd(container='tube for 0.2X SET Wash', reagent='Milli-Q water', volume='14.880 mL')\nadd(container='tube for 0.2X SET Wash', reagent='Calcifluor', volume='20 \u03bcL', storage='3-30 fridge')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: Whatman Cyclopore filter (5 \u03bcm, 25 mm), other: {'position': 'shiny-side up', 'location': 'filter unit base', 'vacuum': 'minimal (2.5\u201d Hg = 65 mm Hg)'})\n\n### AUTOMATED SECTION ###\nwet(container='filter', reagent='Milli-Q water', vacuum='continued')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: filter unit, reagent: o-ring and chimney, other: {})\n# MANUAL: tighten (container: filter chimney, other: {'method': 'turning base only'})\n# MANUAL: discard (container: blue backing filter, other: {})\n# MANUAL: label (container: towers, other: {'information': 'Site ID and number, Sampling Month and Hybridization Date'})\n\n### AUTOMATED SECTION ###\nmix(container='sample tube', reagent='sample', method='invert ~6 times')\nremove(container='sample tube', reagent='aliquot of sample', volume='record volume')\nplace(container='membrane', reagent='aliquot of sample', volume='record volume')\nfilter(container='each tower', reagent='sample', endpoint='near dryness')\n\n### MANUAL SECTION ###\n# MANUAL: empty (container: filtration manifold (the 'PIG'), other: {'destination': 'methanol waste carboy'})\n\n### AUTOMATED SECTION ###\nadd(container='each tower', reagent='prehybridization buffer', volume='1 mL')\nprehybridize(container='cells in each tower', temperature='room temperature', duration='5 minutes')\nfilter(container='each sample', endpoint='near dryness')\nadd(container='each tower', reagent='hybridization buffer containing oligonucleotide probe', volume='1 mL')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: tubes, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='filter manifold and tube of 0.2X SET', location='incubator')\nincubate(container='samples in filter manifold', temperature=\"probe's hybridization temperature\", duration='1 hour')\nfilter(container='each sample', endpoint='near dryness')\nadd(container='each sample', reagent='0.2X SET', volume='1.0 mL', temperature='50\u02daC', step='wash')\nincubate(container='each sample', temperature='room temperature', duration='5 minutes')\nfilter(container='each sample', endpoint='near dryness')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: chimney, other: {'method': 'loosen by only turning base of filter chimney', 'vacuum': 'on'})\n# MANUAL: remove (container: filter from fritted base, other: {'tool': 'forceps', 'minimize_contact': 'filter surface area'})\n# MANUAL: place (container: microscope slide, reagent: filter, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='filter on slide', reagent='glycerol/SET solution', volume='25-30 \u03bcL', method='equal drops')\n\n### MANUAL SECTION ###\n# MANUAL: mount (container: filter on slide, reagent: cover slip, other: {})\n# MANUAL: add (container: slide, reagent: label, other: {})\n# MANUAL: store (container: prepared slides, temperature: cold and dark, other: {})\n# MANUAL: view (container: filters on microscope slide, other: {'instrument': 'fluorescence microscope', 'filter_set': 'appropriate'})\n# MANUAL: count (container: filters on microscope slide, duration: within 1-2 days of staining, other: {})\n# MANUAL: empty (container: filtration manifold (the 'PIG'), other: {'destination': 'formalin waste carboy'})",
+    "source_file": "protocol_451.txt"
+  }
+]

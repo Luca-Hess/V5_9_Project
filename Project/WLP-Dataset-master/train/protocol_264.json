@@ -1,0 +1,331 @@
+[
+  {
+    "protocol": "In vitro transcription of guide RNAs\nNo PCR cleanup necessary at this point.\nIncubate transcription mix for ~18 hours at 37\u02da in a thermalcycler. \nAdd 1 \u00b5l of RNase-free DNase; incubated 20 min, room Temp. \u00a0\nBring volume to 150 uL with 100% EtOH (this helps binding of small fragments). \nAdd 5X SPRI (we use homemade SeraPure beads for RNA binding) 5*10 (IVT sgRNA) = 50 uL of SPRI Beads5*20 (IVT sgRNA) = 100 uL SPRI Beads. \u00a0\nPipette to mix 10 times Incubate 5 minutes at room temperature. \u00a0\nPlace on magnetic stand, 5 min. \nDiscard supernatant. \nWash#1 Add 200 uL, 80% EtOH.\nWait 2 min.\nRemove EtOH.\nWash #2:\u00a0Add 200 uL, 80% EtOH.\nWait 2 min.\nRemove EtOH.\nAir dry 5-10 min (pellet will change from a glossy/wet to matte/dry. )\nElute 20 uL of water or TE.\nPipette mix 10 times.\nIncubate 2 minutes at room temperature. \nPlace on magnetic stand, 5 min. \nKeep Supernatant.\nTransfer to a new plate / tubes.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermalcycler",
+          "reagent": "transcription mix",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "18 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase-free DNase",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "100% EtOH",
+          "volume": "to 150 \u00b5l total volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "SPRI beads (homemade SeraPure beads)",
+          "volume": "50 \u00b5l or 100 \u00b5l (depending on IVT sgRNA amount)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "calculation": "5X volume of IVT sgRNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix_times": 10
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "80% EtOH",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "80% EtOH",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "air dry",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "water or TE",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix_times": 10
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new plate / tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='thermalcycler', reagent='transcription mix', temperature='37\u00b0C', duration='18 hours')\nadd(reagent='RNase-free DNase', volume='1 \u00b5l')\nincubate(temperature='room temperature', duration='20 min')\nadd(reagent='100% EtOH', volume='to 150 \u00b5l total volume')\nadd(reagent='SPRI beads (homemade SeraPure beads)', volume='50 \u00b5l or 100 \u00b5l (depending on IVT sgRNA amount)', calculation='5X volume of IVT sgRNA')\npipette(mix_times=10)\nincubate(temperature='room temperature', duration='5 min')\nplace(container='magnetic stand', duration='5 min')\ndiscard(reagent='supernatant')\nadd(reagent='80% EtOH', volume='200 \u00b5l', wash='1')\nwait(duration='2 min')\nremove(reagent='EtOH', wash='1')\nadd(reagent='80% EtOH', volume='200 \u00b5l', wash='2')\nwait(duration='2 min')\nremove(reagent='EtOH', wash='2')\n\n### MANUAL SECTION ###\n# MANUAL: air dry (reagent: pellet, duration: 5-10 min, other: {})\n\n### AUTOMATED SECTION ###\nelute(reagent='water or TE', volume='20 \u00b5l')\npipette(mix_times=10)\nincubate(temperature='room temperature', duration='2 min')\nplace(container='magnetic stand', duration='5 min')\n\n### MANUAL SECTION ###\n# MANUAL: keep (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='new plate / tubes', reagent='supernatant')",
+    "source_file": "protocol_264.txt"
+  }
+]

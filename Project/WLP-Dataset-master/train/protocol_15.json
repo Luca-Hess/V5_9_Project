@@ -1,0 +1,217 @@
+[
+  {
+    "protocol": "Quanti-iT\u2122 Pico Green dsDNA Assay (Invitrogen P7589)\nWarm Quant-iT PicoGreen reagent to room temp in the dark.\nPrepare 1XTE buffer from 20X stock solution using nuclease-free water:\u00a0 will need 200 \u03bcl/well (for diluting standards, samples and PicoGreen).\nDilute DNA standard to either \u201cHigh\u201d 2 \u03bcg/mL (1:50 of \u03bb DNA stock) or \u201cLow\u201d 50 ng/mL (1:1000 of \u03bb DNA stock).\nDetermine amount of sample to assay (eg, 2\u03bcl sample in total of 100\u03bcl TE buffer).\nAdd correct amount of TE buffer to all wells.\nAdd standards to wells.\nThen add samples to wells.\nDilute PicoGreen 1:200 in TE buffer and protect from light until ready to add to plate.\nAdd equivalent volume (100 \u03bcl) of diluted PicoGreen to every well (keeping plate in the dark as much as possible).\nTap plate to mix.\nIncubate 5 minutes at room temperature keeping plate in the dark.\nTake fluorescent readings using 485nm excitation and 535nm emission filters.\nDetermine standard curve and calculate concentration of DNA in samples (see table in the guidelines).",
+    "actions": [
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "Quant-iT PicoGreen reagent",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1X TE buffer",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stock_solution": "20X TE buffer",
+            "diluent": "nuclease-free water",
+            "purpose": "for diluting standards, samples and PicoGreen"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA standard",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "high_concentration": "2 \u03bcg/mL (1:50 of \u03bb DNA stock)",
+            "low_concentration": "50 ng/mL (1:1000 of \u03bb DNA stock)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": "2 \u03bcl sample in total of 100 \u03bcl TE buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "amount of sample to assay"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "TE buffer",
+          "volume": "correct amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "standards",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "PicoGreen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "1:200 in TE buffer",
+            "light_condition": "protect from light until ready to add to plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "diluted PicoGreen",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light_condition": "keeping plate in the dark as much as possible"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "tap plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "keeping plate in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "fluorescence reader",
+            "excitation": "485 nm",
+            "emission": "535 nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "standard curve and calculate concentration of DNA in samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwarm(reagent='Quant-iT PicoGreen reagent', temperature='room temperature', light_condition='in the dark')\nprepare(reagent='1X TE buffer', volume='200 \u03bcl/well', stock_solution='20X TE buffer', diluent='nuclease-free water', purpose='for diluting standards, samples and PicoGreen')\ndilute(reagent='DNA standard', high_concentration='2 \u03bcg/mL (1:50 of \u03bb DNA stock)', low_concentration='50 ng/mL (1:1000 of \u03bb DNA stock)')\n\n### MANUAL SECTION ###\n# MANUAL: determine (reagent: sample, volume: 2 \u03bcl sample in total of 100 \u03bcl TE buffer, other: {'purpose': 'amount of sample to assay'})\n\n### AUTOMATED SECTION ###\nadd(container='well', reagent='TE buffer', volume='correct amount')\nadd(container='well', reagent='standards')\nadd(container='well', reagent='samples')\ndilute(reagent='PicoGreen', dilution='1:200 in TE buffer', light_condition='protect from light until ready to add to plate')\nadd(container='well', reagent='diluted PicoGreen', volume='100 \u03bcl', light_condition='keeping plate in the dark as much as possible')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: plate, other: {'method': 'tap plate'})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='room temperature', duration='5 minutes', light_condition='keeping plate in the dark')\nread(container='plate', instrument='fluorescence reader', excitation='485 nm', emission='535 nm')\n\n### MANUAL SECTION ###\n# MANUAL: determine (other: {'purpose': 'standard curve and calculate concentration of DNA in samples'})",
+    "source_file": "protocol_15.txt"
+  }
+]

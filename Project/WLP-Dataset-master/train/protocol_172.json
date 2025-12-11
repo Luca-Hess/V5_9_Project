@@ -1,0 +1,311 @@
+[
+  {
+    "protocol": "Algal culture harvest and RNA extraction for RNA-Seq\nUse sterile techniques to harvest 800 ml of culture, and divide into 4 250 ml centrifuge bottles with 200 ml each.\nSpin the centrifuge bottles at 5000 g for 10 min.\nCarefully decant the supernatant.\nUse 0.5 ml of RNALater to resuspend the pellet and transfer it to a microcentrifuge tube.\nUse another 0.25 ml of RNALater to wash the bottle and obtain any remaining cells.\nTransfer this 0.25 ml into the same microcentrifuge tube.\nDepending on whether you want pseudo-replicates, you can keep the 4 harvested pellet separate or mixed.\nStore the harvested cells at or below -20oC until ready for RNA extraction.\nBefore RNA extraction, the RNALater needs to be removed.\nThaw samples if they are frozen.\nCentrifuge samples at > 10 k g for 10 min at 4oC.\nRNALater sometimes affects the buoyancy of the cells, and make them a bit harder to pellet.\nIf you find that the cells are not pelleting, spin harder for a longer time.\nDecant supernatent with RNALater.\nExtract RNA using\u00a0a RNeasy Plant Mini Kit (Qiagen) following the manufacturer's instructions.\nRemove any DNA from the extracted samples using\u00a0DNase (Sigma), following manufacturer's instructions.\nClean up the total RNA using\u00a0a RNA Clean & Concentrator kit (Zymo), following the manufacturer's instructions.\nQuantify the RNA using any preferred method, e.g. Qubit fluorometer.\nStore the RNA at -80oC.\nIt may be ideal to aliquot some RNA out so that you don't need to thaw the entire RNA sample if you need some for any reason",
+    "actions": [
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "culture vessel",
+          "reagent": "algal culture",
+          "volume": "800 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sterile_technique": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": "4 x 250 ml centrifuge bottles",
+          "reagent": "algal culture",
+          "volume": "200 ml per bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": null,
+          "volume": "200 ml per bottle",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "5000 g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge bottle",
+          "reagent": "RNALater",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "resuspended pellet in RNALater",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "centrifuge bottle",
+          "reagent": "RNALater",
+          "volume": "0.25 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "remaining cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "washed RNALater with cells",
+          "volume": "0.25 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "harvested cells",
+          "volume": null,
+          "temperature": "-20\u00b0C or below",
+          "duration": "until ready for RNA extraction",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "RNALater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if frozen"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": ">10,000 g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "longer",
+          "speed": "harder",
+          "other": {
+            "condition": "if cells not pelleting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "supernatant with RNALater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "RNeasy Plant Mini Kit (Qiagen)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "DNase (Sigma)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "clean up",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "total RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "RNA Clean & Concentrator kit (Zymo)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Qubit fluorometer or other"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "avoid thawing entire sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: harvest (container: culture vessel, reagent: algal culture, volume: 800 ml, other: {'sterile_technique': True})\n\n### AUTOMATED SECTION ###\ndivide(container='4 x 250 ml centrifuge bottles', reagent='algal culture', volume='200 ml per bottle')\ncentrifuge(container='centrifuge bottles', volume='200 ml per bottle', duration='10 min', speed='5000 g')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuge bottles, reagent: supernatant, other: {'carefully': True})\n\n### AUTOMATED SECTION ###\nresuspend(container='centrifuge bottle', reagent='RNALater', volume='0.5 ml', target='pellet')\ntransfer(container='microcentrifuge tube', reagent='resuspended pellet in RNALater', volume='0.5 ml')\nwash(container='centrifuge bottle', reagent='RNALater', volume='0.25 ml', target='remaining cells')\ntransfer(container='microcentrifuge tube', reagent='washed RNALater with cells', volume='0.25 ml')\nstore(container='microcentrifuge tube', reagent='harvested cells', temperature='-20\u00b0C or below', duration='until ready for RNA extraction')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: microcentrifuge tube, reagent: RNALater)\n\n### AUTOMATED SECTION ###\nthaw(container='microcentrifuge tube', reagent='sample', condition='if frozen')\ncentrifuge(container='microcentrifuge tube', reagent='sample', temperature='4\u00b0C', duration='10 min', speed='>10,000 g')\nspin(container='microcentrifuge tube', reagent='sample', duration='longer', speed='harder', condition='if cells not pelleting')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: microcentrifuge tube, reagent: supernatant with RNALater)\n# MANUAL: extract (container: microcentrifuge tube, reagent: RNA, other: {'kit': 'RNeasy Plant Mini Kit (Qiagen)'})\n# MANUAL: remove (container: microcentrifuge tube, reagent: DNA, other: {'kit': 'DNase (Sigma)'})\n# MANUAL: clean up (container: microcentrifuge tube, reagent: total RNA, other: {'kit': 'RNA Clean & Concentrator kit (Zymo)'})\n# MANUAL: quantify (reagent: RNA, other: {'method': 'Qubit fluorometer or other'})\n\n### AUTOMATED SECTION ###\nstore(reagent='RNA', temperature='-80\u00b0C')\naliquot(reagent='RNA', purpose='avoid thawing entire sample')",
+    "source_file": "protocol_172.txt"
+  }
+]

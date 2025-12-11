@@ -1,0 +1,386 @@
+[
+  {
+    "protocol": "Making heat-killed bacteria for feeding axenic phagotrophic protists\nObtaining a clonal bacteria strain (Skip to step 2 if one is already available)Prepare 1.5.% agar plates with 0.5% yeast extract and 0.5% trypton.\nUse the salinity that the protist culture in growing in i.e. 0.5 g yeast extract+ 0.5 g trypton + 1.5 g agar in 100 ml of MiliQ water (MQ)/Filtered sea water (FSW).\nHeat to dissolve.\nAutoclave to sterilize.\nPour into medium sized petri dishes.\nWhen the agar plates are cooled and set, streak some liquid from a bacterized culture of the protist on the agar plates.\nIncubate the agar plates at the same conditions of the protist culture\nWhen bacteria colonies form, use a flame sterilized metal loop to pick one clonal strain and dip the metal loop into a nutrient broth (0.5% yeast extract + 0.5% trypton in MQ/FSW).\nLet the bacteria grow in the same incubating conditions.\nGrow a large amount of the bacteria.\nPrepare 1 L of bacteria nutrient broth (Or however much depending on how much bacteria you want to grow)0.5% yeast extract + 0.5% trypton in MQ or FSW and autoclave to sterilize.\nTransfer 0.1 ml of the bacteria culture into the broth.\nLet the bacteria grow for ~4 days.\nHeat-killing the bacteria filled 250 ml centrifuge bottles entirely with the bacteria culture.\nPlace in water bath at 70oC for 30 min \nCentrifuge and wash the bacteria.\nCentrifuge the heat-killed bacteria at 10 k g for 20 min.\nDecant supernatant.\nAdd ~25 ml of sterilized MQ/FSW (depending on the salinity of your culture) in the bottle.\nVortex/shake to resuspend pellet.\nAdd MQ/FSW to fill to 200 ml and centrifuge again at 10 k g for 20 min.\nRepeat this step until you have washed the bacteria 3 times.\nAfter washing for the last time, centrifuge and decant supernatant.\nAdd as little MQ/FSW as possible and vortex/shake to resuspend pellet.\nYou may also sonicate the concentrated bacteria if a sonicator is available.\nTest the sterility of the bacteria.\nTest the sterility of the bacteria by placing a dilute aliquot of the heat-killed bacteria in 5 ml of 0.5% yeast extract + 0.5% trypton broth.\nMake sure that the liquid is still clear after adding the bacteria so that it will be possible to tell whether the liquid became cloudy if there was bacterial growth.\nIncubate the sterility test for several day.\nThe bacteria is sterile if there is no cloudiness in the test after 5 days.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": "0.5% yeast extract, 0.5% trypton, 1.5% agar",
+          "volume": "100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "MiliQ water or Filtered sea water",
+            "salinity": "same as protist culture"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "agar mixture",
+          "volume": "100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dissolve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": "agar mixture",
+          "volume": "100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to sterilize"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "medium sized petri dishes",
+          "reagent": "sterilized agar mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "same as protist culture",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "nutrient broth",
+          "reagent": "0.5% yeast extract, 0.5% trypton in MQ/FSW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "nutrient broth",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to sterilize"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "nutrient broth",
+          "reagent": "bacteria culture",
+          "volume": "0.1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "nutrient broth with bacteria",
+          "reagent": null,
+          "volume": null,
+          "temperature": "same as protist culture",
+          "duration": "~4 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "250 ml centrifuge bottles",
+          "reagent": "bacteria culture",
+          "volume": "entirely filled",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "bacteria culture",
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "heat-killed bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 min",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "sterilized MQ/FSW",
+          "volume": "~25 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "salinity": "depending on culture"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "MQ/FSW",
+          "volume": "to fill to 200 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "washed bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 min",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "washed bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "3"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "washed bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "final wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "final wash"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "MQ/FSW",
+          "volume": "as little as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "concentrated bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "test",
+        "parameters": {
+          "container": null,
+          "reagent": "heat-killed bacteria",
+          "volume": "dilute aliquot",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "place in 5 ml of 0.5% yeast extract + 0.5% trypton broth"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterility test tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: agar plates, reagent: 0.5% yeast extract, 0.5% trypton, 1.5% agar, volume: 100 ml, other: {'solvent': 'MiliQ water or Filtered sea water', 'salinity': 'same as protist culture'})\n\n### AUTOMATED SECTION ###\nheat(reagent='agar mixture', volume='100 ml', purpose='to dissolve')\nautoclave(reagent='agar mixture', volume='100 ml', purpose='to sterilize')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: medium sized petri dishes, reagent: sterilized agar mixture, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='agar plates', temperature='same as protist culture')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: nutrient broth, reagent: 0.5% yeast extract, 0.5% trypton in MQ/FSW, other: {})\n\n### AUTOMATED SECTION ###\nautoclave(container='nutrient broth', purpose='to sterilize')\ntransfer(container='nutrient broth', reagent='bacteria culture', volume='0.1 ml')\nincubate(container='nutrient broth with bacteria', temperature='same as protist culture', duration='~4 days')\nfill(container='250 ml centrifuge bottles', reagent='bacteria culture', volume='entirely filled')\nheat(container='centrifuge bottles', reagent='bacteria culture', temperature='70\u00b0C', duration='30 min', method='water bath')\ncentrifuge(container='centrifuge bottles', reagent='heat-killed bacteria', duration='20 min', speed='10,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuge bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='centrifuge bottles', reagent='sterilized MQ/FSW', volume='~25 ml', salinity='depending on culture')\nvortex(container='centrifuge bottles', reagent='pellet', purpose='resuspend pellet')\nadd(container='centrifuge bottles', reagent='MQ/FSW', volume='to fill to 200 ml')\ncentrifuge(container='centrifuge bottles', reagent='washed bacteria', duration='20 min', speed='10,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (container: centrifuge bottles, reagent: washed bacteria, other: {'times': '3'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge bottles', reagent='washed bacteria', purpose='final wash')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuge bottles, reagent: supernatant, other: {'purpose': 'final wash'})\n\n### AUTOMATED SECTION ###\nadd(container='centrifuge bottles', reagent='MQ/FSW', volume='as little as possible')\nvortex(container='centrifuge bottles', reagent='pellet', purpose='resuspend pellet')\nsonicate(container='centrifuge bottles', reagent='concentrated bacteria', optional=True)\n\n### MANUAL SECTION ###\n# MANUAL: test (reagent: heat-killed bacteria, volume: dilute aliquot, other: {'method': 'place in 5 ml of 0.5% yeast extract + 0.5% trypton broth'})\n\n### AUTOMATED SECTION ###\nincubate(container='sterility test tube', duration='several days')",
+    "source_file": "protocol_124.txt"
+  }
+]

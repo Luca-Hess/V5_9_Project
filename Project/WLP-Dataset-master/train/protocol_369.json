@@ -1,0 +1,83 @@
+[
+  {
+    "protocol": "Fe-EDTA Stock solution for ESAW Media for Marine Phytoplankton\nNa2EDTA FeCl3 Bring solution to 1000 mL with MilliQ H2O and filter sterilize with a 0.2\u03bcm filter.\nStore in the dark at 4\u00baC",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "stock solution container",
+          "reagent": "Na2EDTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "stock solution container",
+          "reagent": "FeCl3",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": "stock solution container",
+          "reagent": "MilliQ H2O",
+          "volume": "1000 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "stock solution container",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2\u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "stock solution container",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='stock solution container', reagent='Na2EDTA')\nadd(container='stock solution container', reagent='FeCl3')\nbring(container='stock solution container', reagent='MilliQ H2O', volume='1000 mL')\nfilter(container='stock solution container', filter_type='0.2\u03bcm')\nstore(container='stock solution container', temperature='4\u00baC', condition='in the dark')",
+    "source_file": "protocol_369.txt"
+  }
+]

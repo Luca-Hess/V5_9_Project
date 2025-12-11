@@ -1,0 +1,391 @@
+[
+  {
+    "protocol": "RNA extraction protocol (Trizol)\nAdd 1000 \u00b5L of Trizol per 50-100 mg of parsite tissues in a 2 mL eppendorf tube (RNAse free) and place the parasite tissues into their respective, labelled tube. \nAdd 1 metal bead into each tube and place the tubes into a TissueLyzer.\nRun it at 30 Hz for 3 minutes. \nCentrifuge at 12,000 x g for 10 minutes at 4\u00b0C. \nDiscard top layer of liquid formed in the eppendorf after the centrifugation (contains fatty acids). \nTransfer supernatant into a new and labelled eppendorf tube (2 mL).\nIncubate at room temperature for 5 minutes.\nAdd 200 \u00b5L of chloroform per tube. \nMix vigorously by inverting the tubes up and down for 1 minute.\nDO NOT VORTEX!\nCentrifuge at 12,000 x g for 15 minutes at 4\u00b0C. \nTransfer with precaution the aqueous phase (supernatant) into a new 2 mL eppendorf tube. \nAdd 500 \u00b5L of RNAse free isopropanol (100%) and mix thoroughly.  \nIncubate for 15 minutes at room temperature.  \nCentrifuge at 12,000 x g for 10 minutes at 4\u00b0C. \nDiscard supernatant. \nAdd 1000 \u00b5L of 75% ethanol (kept cold at -20\u00b0C) per tube. \nVortex thoroughly and centrifuge at 7500g for 5 minutes at 4\u00b0C.\nDiscard supernatant and let the tubes dry out with the cap opened for 5-10 minutes. \nAdd 20-50 \u00b5L of DEPC treated water into each tube. \nPlace the tubes into the incubator (65\u00b0C) for 1 minute. \nVortex thoroughly and repeat step 19 until RNA is completely dissolved.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL RNAse free eppendorf tube",
+          "reagent": "Trizol",
+          "volume": "1000 \u00b5L",
+          "other": {
+            "sample": "50-100 mg parasite tissues"
+          },
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "parasite tissues",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labelled": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "metal bead",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "TissueLyzer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "TissueLyzer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": "30 Hz"
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 minutes",
+          "speed": "12,000 x g"
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "top layer of liquid (fatty acids)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new labelled 2 mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "chloroform",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "method": "invert tubes up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 minutes",
+          "speed": "12,000 x g"
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 2 mL eppendorf tube",
+          "reagent": "aqueous phase (supernatant)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "precaution": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "RNAse free isopropanol (100%)",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 minutes",
+          "speed": "12,000 x g"
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "75% ethanol (kept cold at -20\u00b0C)",
+          "volume": "1000 \u00b5L",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 minutes",
+          "speed": "7500 x g"
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "cap": "opened"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": "DEPC treated water",
+          "volume": "20-50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "1 minute",
+          "speed": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "2 mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "19",
+            "until": "RNA is completely dissolved"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='2 mL RNAse free eppendorf tube', reagent='Trizol', volume='1000 \u00b5L', sample='50-100 mg parasite tissues')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: 2 mL eppendorf tube, reagent: parasite tissues, other: {'labelled': True})\n# MANUAL: add (container: 2 mL eppendorf tube, reagent: metal bead)\n\n### AUTOMATED SECTION ###\nplace(container='2 mL eppendorf tube', equipment='TissueLyzer')\nrun(container='TissueLyzer', duration='3 minutes', speed='30 Hz')\ncentrifuge(container='2 mL eppendorf tube', temperature='4\u00b0C', duration='10 minutes', speed='12,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 2 mL eppendorf tube, reagent: top layer of liquid (fatty acids))\n\n### AUTOMATED SECTION ###\ntransfer(container='new labelled 2 mL eppendorf tube', reagent='supernatant')\nincubate(container='2 mL eppendorf tube', temperature='room temperature', duration='5 minutes')\nadd(container='2 mL eppendorf tube', reagent='chloroform', volume='200 \u00b5L')\nmix(container='2 mL eppendorf tube', duration='1 minute', method='invert tubes up and down')\ncentrifuge(container='2 mL eppendorf tube', temperature='4\u00b0C', duration='15 minutes', speed='12,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: new 2 mL eppendorf tube, reagent: aqueous phase (supernatant), other: {'precaution': True})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL eppendorf tube', reagent='RNAse free isopropanol (100%)', volume='500 \u00b5L')\nmix(container='2 mL eppendorf tube', method='thoroughly')\nincubate(container='2 mL eppendorf tube', temperature='room temperature', duration='15 minutes')\ncentrifuge(container='2 mL eppendorf tube', temperature='4\u00b0C', duration='10 minutes', speed='12,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 2 mL eppendorf tube, reagent: supernatant)\n\n### AUTOMATED SECTION ###\nadd(container='2 mL eppendorf tube', reagent='75% ethanol (kept cold at -20\u00b0C)', volume='1000 \u00b5L', temperature='-20\u00b0C')\nvortex(container='2 mL eppendorf tube', method='thoroughly')\ncentrifuge(container='2 mL eppendorf tube', temperature='4\u00b0C', duration='5 minutes', speed='7500 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 2 mL eppendorf tube, reagent: supernatant)\n# MANUAL: dry (container: 2 mL eppendorf tube, duration: 5-10 minutes, other: {'cap': 'opened'})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL eppendorf tube', reagent='DEPC treated water', volume='20-50 \u00b5L')\nincubate(container='2 mL eppendorf tube', temperature='65\u00b0C', duration='1 minute')\nvortex(container='2 mL eppendorf tube', method='thoroughly')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (container: 2 mL eppendorf tube, other: {'step': '19', 'until': 'RNA is completely dissolved'})",
+    "source_file": "protocol_429.txt"
+  }
+]

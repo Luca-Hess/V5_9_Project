@@ -1,0 +1,220 @@
+[
+  {
+    "protocol": "Th1 Polarization of Mouse CD4+ Cells\nHarvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.\nTease lymph nodes through a sterile 70-\u00b5m nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).\nResuspend cells in complete medium and use your favorite method to isolate CD4+cells.\nCheck out Biocompare.com to find useful kits.\nOn day 0, coat 12-well plate with anti-mouse CD3\u03b5, clone 145-2C11 (3 \u00b5g/ml).\nIncubate\u00a0at 37\u00b0C for 2 hours.\n(Alternatively, incubate at 4\u00b0C overnight.)\nAseptically decant antibody solution from the plate.\nWash plate with sterile PBS (wash 1/3).\nWash plate with sterile PBS (wash 2/3).\nWash plate with sterile PBS (wash 3/3).\nDiscard liquid.\nPlate CD4+ cells at 1.0 x 106 /1ml/well.\nCulture cells for 5 days at 37\u00b0C, 5% CO2, in the presence of anti-mouse CD28, clone 37.51 (3 \u00b5g/mL), anti-mouse IL-4, clone 11B11 (10 \u00b5g/mL), recombinant mouse IL-2 (5 ng/mL), and recombinant mouse IL-12 (10 ng/ml).\nOn day 3, if media is yellow, add 2 ml/well of fresh media.\nAfter harvesting, the cells are ready for staining.\nOn day 5, wash cells once and then restimulate in complete media with 50 ng/ml PMA, 1 \u03bcg/ml ionomycin and 10 \u00b5l monensin (1000x), in a 6-well plate in incubator at 37\u00b0C for 5 hours.",
+    "actions": [
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "3 \u00b5g/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "aseptic": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "CD4+ cells",
+          "volume": "1 ml/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_number": "1.0 x 10^6/well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": [
+            "anti-mouse CD28, clone 37.51 (3 \u00b5g/mL)",
+            "anti-mouse IL-4, clone 11B11 (10 \u00b5g/mL)",
+            "recombinant mouse IL-2 (5 ng/mL)",
+            "recombinant mouse IL-12 (10 ng/ml)"
+          ],
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "5 days",
+          "speed": null,
+          "other": {
+            "CO2": "5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "fresh media",
+          "volume": "2 ml/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if media is yellow",
+            "day": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "day": "5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "restimulate",
+        "parameters": {
+          "container": "6-well plate",
+          "reagent": [
+            "complete media",
+            "PMA (50 ng/ml)",
+            "ionomycin (1 \u03bcg/ml)",
+            "monensin (10 \u00b5l, 1000x)"
+          ],
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "5 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncoat(container='12-well plate', reagent='anti-mouse CD3\u03b5, clone 145-2C11', concentration='3 \u00b5g/ml')\nincubate(container='12-well plate', temperature='37\u00b0C', duration='2 hours')\nincubate(container='12-well plate', temperature='4\u00b0C', duration='overnight')\ndecant(container='12-well plate', reagent='antibody solution', aseptic=True)\nwash(container='12-well plate', reagent='sterile PBS', wash_number=1)\nwash(container='12-well plate', reagent='sterile PBS', wash_number=2)\nwash(container='12-well plate', reagent='sterile PBS', wash_number=3)\ndiscard(container='12-well plate', reagent='liquid')\nplate(container='12-well plate', reagent='CD4+ cells', volume='1 ml/well', cell_number='1.0 x 10^6/well')\nculture(container='12-well plate', reagent=['anti-mouse CD28, clone 37.51 (3 \u00b5g/mL)', 'anti-mouse IL-4, clone 11B11 (10 \u00b5g/mL)', 'recombinant mouse IL-2 (5 ng/mL)', 'recombinant mouse IL-12 (10 ng/ml)'], temperature='37\u00b0C', duration='5 days', CO2='5%')\nadd(container='12-well plate', reagent='fresh media', volume='2 ml/well', condition='if media is yellow', day='3')\nwash(container='6-well plate', day='5')\nrestimulate(container='6-well plate', reagent=['complete media', 'PMA (50 ng/ml)', 'ionomycin (1 \u03bcg/ml)', 'monensin (10 \u00b5l, 1000x)'], temperature='37\u00b0C', duration='5 hours')",
+    "source_file": "protocol_523.txt"
+  }
+]

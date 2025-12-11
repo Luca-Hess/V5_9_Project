@@ -1,0 +1,55 @@
+[
+  {
+    "protocol": "Single-temperature Double Digest\nSet up the following reaction (total reaction volume\u00a050\u00a0\u00b5l).\nMix components by pipetting the reaction mixture up and down, or by \"flicking\" the reaction tube.\nQuick (\"touch\") spin-down in a microcentrifuge.\nDo not vortex the reaction.\nIncubate for 1 hour at the enzyme-specific appropriate temperature.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture (all components, total volume 50 \u00b5l)",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick (touch) spin-down",
+          "speed": null,
+          "other": {
+            "type": "microcentrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": "50 \u00b5l",
+          "temperature": "enzyme-specific appropriate temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='reaction tube', reagent='reaction mixture (all components, total volume 50 \u00b5l)', volume='50 \u00b5l', method='up and down')\ncentrifuge(container='reaction tube', duration='quick (touch) spin-down', type='microcentrifuge')\nincubate(container='reaction tube', reagent='reaction mixture', volume='50 \u00b5l', temperature='enzyme-specific appropriate temperature', duration='1 hour')",
+    "source_file": "protocol_331.txt"
+  }
+]

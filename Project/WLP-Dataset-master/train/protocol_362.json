@@ -1,0 +1,546 @@
+[
+  {
+    "protocol": "Enumerating algal viruses by flow cytometry\nFCM Sample Collection.\nFix samples of virus and TE buffer (i.e., for background noise) as described below.\nTransfer 600 \u00b5L of culture sample to a sterile 1.2 mL cryovial tube.\nAdd 6 \u00b5L 25% glutaraldehyde (0.25% final concentration) and gently vortex to mix.\nAliquot 200 \u00b5L to two additional cryovials (i.e., triplicate samples).\nTransfer 3 x 1 mL of 0.02-\u00b5m-filtered TE buffer to triplicate sterile 1.2 mL cryovials.\nAdd 10 \u00b5L 25% glut to each tube and gently vortex to mix.\nSnap cryovials into cryocanes and incubate at 4\u00b0C for 30 minutes in the dark.\nFlash freeze in liquid nitrogen.\nStore at -80\u00b0C until analysis.\nVirus Dilution and CountingDilute and stain a sample aliquot for viruses immediately after thawing.\nStore thawed sample on ice.\nAn aliquot can be run for host cell counts while the diluted virus sample is incubating.\nDilute sample in 0.02-\u00b5m-filtered 1X TE buffer according to the Dilution Table.\nNOTE: For a new sample, prepare multiple dilutions to test and determine the most appropriate dilution factor.\nStagger these dilutions/staining by ~5 minutes to allow for sample loading and back-flushing between dilution tests.\nPrepare a 1.7 mL microcentrifuge tube for staining by adding 2.5 \u00b5L of 100X SYBR Green I nucleic acid stain (this can be pre-aliquoted and kept in the dark at room temperature).\nAdd 497.5 \u00b5L of the diluted sample to the staining tube (0.5X SYBR Green I final conc) and mix by pipetting and gentle vortexing.\nIncubate the diluted/stained sample for 15 minutes in the dark at room temperature.\nAfter incubation, transfer 480 \u00b5L of the stained sample to a 5 mL round bottom tube.\nAdd 10 \u00b5L 3\u00b0 Grn and 10 \u00b5L 4\u00b0 YG beads to the 5 mL tube.\nRun immediately on HIGH voltage settings: Trigger = 520, TFSC = 40, PFSC = 27, SSC = 40, 520 = 40, 572 = 40, 692 = 40.\nLoad sample for 2 min, run for 2-4 min (depending on concentration), and back-flush for 2 min.\nHost Cell Counts.\nRun an unstained aliquot of sample for host cell counts while the diluted virus sample is incubating.\nPrepare a 5 mL round bottom tube with 10 \u00b5L 3\u00b0 Grn and 10 \u00b5L 4\u00b0 YG beads.\nDepending on the host cell concentration, add 50 or 100 \u00b5L sample to the 5 mL tube.\nBring volume up to 500 \u00b5L by adding 430 or 380 \u00b5L 1X PBS to the 5 mL tube.\nRun immediately on LOW voltage settings: Trigger = TFSC, TFSC = 27, PFSC = 19, SSC = 40, 520 = 40, 572 = 40, 692 = 40.\nLoad sample for 2 min, run for 2-4 min (depending on concentration), and back-flush for 2 min.",
+    "actions": [
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": "culture sample, TE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "description": "as described below"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 1.2 mL cryovial tube",
+          "reagent": "culture sample",
+          "volume": "600 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": "25% glutaraldehyde",
+          "volume": "6 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "0.25%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": "fixed sample",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "two additional cryovials (triplicate samples)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 1.2 mL cryovials",
+          "reagent": "0.02-\u00b5m-filtered TE buffer",
+          "volume": "3 x 1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "triplicate": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": "25% glut",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to each tube": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cryovials in cryocanes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "flash freeze": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until analysis",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "sample aliquot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for viruses": true,
+            "immediately after thawing": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "thawed sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "aliquot",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for host cell counts": true,
+            "while virus sample is incubating": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "in 0.02-\u00b5m-filtered 1X TE buffer": true,
+            "according to Dilution Table": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "1.7 mL microcentrifuge tube",
+          "reagent": "100X SYBR Green I nucleic acid stain",
+          "volume": "2.5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for staining": true,
+            "can be pre-aliquoted and kept in the dark at room temperature": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "staining tube",
+          "reagent": "diluted sample",
+          "volume": "497.5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "0.5X SYBR Green I"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "staining tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting and gentle vortexing",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "staining tube",
+          "reagent": "diluted/stained sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "stained sample",
+          "volume": "480 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "3\u00b0 Grn beads",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "4\u00b0 YG beads",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "stained sample with beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "HIGH voltage settings",
+          "other": {
+            "settings": {
+              "Trigger": "520",
+              "TFSC": "40",
+              "PFSC": "27",
+              "SSC": "40",
+              "520": "40",
+              "572": "40",
+              "692": "40"
+            }
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-4 min",
+          "speed": null,
+          "other": {
+            "depending on concentration": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "back-flush",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "unstained aliquot",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for host cell counts": true,
+            "while virus sample is incubating": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "3\u00b0 Grn beads, 4\u00b0 YG beads",
+          "volume": "10 \u00b5L each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "sample",
+          "volume": "50 or 100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "depending on host cell concentration": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "1X PBS",
+          "volume": "430 or 380 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "bring volume up to 500 \u00b5L": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "5 mL round bottom tube",
+          "reagent": "sample with beads and PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "LOW voltage settings",
+          "other": {
+            "settings": {
+              "Trigger": "TFSC",
+              "TFSC": "27",
+              "PFSC": "19",
+              "SSC": "40",
+              "520": "40",
+              "572": "40",
+              "692": "40"
+            }
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-4 min",
+          "speed": null,
+          "other": {
+            "depending on concentration": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "back-flush",
+        "parameters": {
+          "container": "flow cytometer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: fix (container: cryovial tube, reagent: culture sample, TE buffer, other: {'description': 'as described below'})\n\n### AUTOMATED SECTION ###\ntransfer(container='sterile 1.2 mL cryovial tube', reagent='culture sample', volume='600 \u00b5L')\nadd(container='cryovial tube', reagent='25% glutaraldehyde', volume='6 \u00b5L', final concentration='0.25%')\nmix(container='cryovial tube', speed='gentle vortex')\naliquot(container='cryovial', reagent='fixed sample', volume='200 \u00b5L', destination='two additional cryovials (triplicate samples)')\ntransfer(container='sterile 1.2 mL cryovials', reagent='0.02-\u00b5m-filtered TE buffer', volume='3 x 1 mL', triplicate=True)\nadd(container='cryovial tube', reagent='25% glut', volume='10 \u00b5L', to each tube=True)\nmix(container='cryovial tube', speed='gentle vortex')\nincubate(container='cryovials in cryocanes', temperature='4\u00b0C', duration='30 minutes', in the dark=True)\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: cryovials, temperature: liquid nitrogen, other: {'flash freeze': True})\n# MANUAL: store (container: cryovials, temperature: -80\u00b0C, duration: until analysis, other: {})\n\n### AUTOMATED SECTION ###\ndilute(reagent='sample aliquot', for viruses=True, immediately after thawing=True)\n\n### MANUAL SECTION ###\n# MANUAL: store (container: thawed sample, temperature: on ice, other: {})\n# MANUAL: run (container: aliquot, other: {'for host cell counts': True, 'while virus sample is incubating': True})\n\n### AUTOMATED SECTION ###\ndilute(reagent='sample', in 0.02-\u00b5m-filtered 1X TE buffer=True, according to Dilution Table=True)\nprepare(container='1.7 mL microcentrifuge tube', reagent='100X SYBR Green I nucleic acid stain', volume='2.5 \u00b5L', for staining=True, can be pre-aliquoted and kept in the dark at room temperature=True)\nadd(container='staining tube', reagent='diluted sample', volume='497.5 \u00b5L', final concentration='0.5X SYBR Green I')\nmix(container='staining tube', speed='pipetting and gentle vortexing')\nincubate(container='staining tube', reagent='diluted/stained sample', temperature='room temperature', duration='15 minutes', in the dark=True)\ntransfer(container='5 mL round bottom tube', reagent='stained sample', volume='480 \u00b5L')\nadd(container='5 mL round bottom tube', reagent='3\u00b0 Grn beads', volume='10 \u00b5L')\nadd(container='5 mL round bottom tube', reagent='4\u00b0 YG beads', volume='10 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: 5 mL round bottom tube, reagent: stained sample with beads, speed: HIGH voltage settings, other: {'settings': {'Trigger': '520', 'TFSC': '40', 'PFSC': '27', 'SSC': '40', '520': '40', '572': '40', '692': '40'}})\n# MANUAL: load (container: flow cytometer, reagent: sample, duration: 2 min, other: {})\n# MANUAL: run (container: flow cytometer, reagent: sample, duration: 2-4 min, other: {'depending on concentration': True})\n# MANUAL: back-flush (container: flow cytometer, duration: 2 min, other: {})\n# MANUAL: run (container: unstained aliquot, other: {'for host cell counts': True, 'while virus sample is incubating': True})\n\n### AUTOMATED SECTION ###\nprepare(container='5 mL round bottom tube', reagent='3\u00b0 Grn beads, 4\u00b0 YG beads', volume='10 \u00b5L each')\nadd(container='5 mL round bottom tube', reagent='sample', volume='50 or 100 \u00b5L', depending on host cell concentration=True)\nadd(container='5 mL round bottom tube', reagent='1X PBS', volume='430 or 380 \u00b5L', bring volume up to 500 \u00b5L=True)\n\n### MANUAL SECTION ###\n# MANUAL: run (container: 5 mL round bottom tube, reagent: sample with beads and PBS, speed: LOW voltage settings, other: {'settings': {'Trigger': 'TFSC', 'TFSC': '27', 'PFSC': '19', 'SSC': '40', '520': '40', '572': '40', '692': '40'}})\n# MANUAL: load (container: flow cytometer, reagent: sample, duration: 2 min, other: {})\n# MANUAL: run (container: flow cytometer, reagent: sample, duration: 2-4 min, other: {'depending on concentration': True})\n# MANUAL: back-flush (container: flow cytometer, duration: 2 min, other: {})",
+    "source_file": "protocol_362.txt"
+  }
+]

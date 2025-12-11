@@ -1,0 +1,169 @@
+[
+  {
+    "protocol": "Heald Lab  Margaritas\nSlice limes in half and squeeze out the juice. \nMeasure 1 liter in graduated cylinder. \nDiscard rinds. \nCombine in 4 liter receptacle: 1 part lime juice, 1 part triple sec, 1.5 parts tequila. \nMix well with sterile pipette.\nSalt glass rims by turning upside down and placing on a plate of lime juice, then on a plate of salt.\nFill glasses with ice Pour margarita into glasses. \nDrink and enjoy.",
+    "actions": [
+      {
+        "action": "slice",
+        "parameters": {
+          "container": null,
+          "reagent": "limes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "squeeze",
+        "parameters": {
+          "container": null,
+          "reagent": "lime halves",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "output": "lime juice"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "graduated cylinder",
+          "reagent": "lime juice",
+          "volume": "1 liter",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "rinds",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "4 liter receptacle",
+          "reagent": "lime juice, triple sec, tequila",
+          "volume": "1 part lime juice, 1 part triple sec, 1.5 parts tequila",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "4 liter receptacle",
+          "reagent": "combined liquids",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "sterile pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "salt",
+        "parameters": {
+          "container": "glass rims",
+          "reagent": "lime juice, salt",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "turn upside down, place on plate of lime juice, then plate of salt"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "glasses",
+          "reagent": "ice",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "glasses",
+          "reagent": "margarita",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "drink",
+        "parameters": {
+          "container": "glasses",
+          "reagent": "margarita",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "enjoy",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: slice (reagent: limes, other: {})\n# MANUAL: squeeze (reagent: lime halves, other: {'output': 'lime juice'})\n\n### AUTOMATED SECTION ###\nmeasure(container='graduated cylinder', reagent='lime juice', volume='1 liter')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: rinds, other: {})\n\n### AUTOMATED SECTION ###\ncombine(container='4 liter receptacle', reagent='lime juice, triple sec, tequila', volume='1 part lime juice, 1 part triple sec, 1.5 parts tequila')\nmix(container='4 liter receptacle', reagent='combined liquids', instrument='sterile pipette')\n\n### MANUAL SECTION ###\n# MANUAL: salt (container: glass rims, reagent: lime juice, salt, other: {'method': 'turn upside down, place on plate of lime juice, then plate of salt'})\n# MANUAL: fill (container: glasses, reagent: ice, other: {})\n\n### AUTOMATED SECTION ###\npour(container='glasses', reagent='margarita')\n\n### MANUAL SECTION ###\n# MANUAL: drink (container: glasses, reagent: margarita, other: {})\n# MANUAL: enjoy (other: {})",
+    "source_file": "protocol_419.txt"
+  }
+]

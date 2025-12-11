@@ -1,0 +1,253 @@
+[
+  {
+    "protocol": "Transform Stratagene's XL-10 Gold Ultracompetent cells\nPre-chill 14mL sterile culture tubes on ice.\nPre-heat 0.9mL of NZY+ broth to 42\u00b0C.\nThaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed.\nAliquot cells into pre-chilled sterile culture tubes.\nAdd beta-mercaptoethanol Swirl tube gently then incubate on ice for 10 minutes swirling gently every 2 minutes.\nAdd 0.1-50ng of DNA or 2uL of ligation product.\nSwirl gently then incubate on ice for 30 minutes.\nHeat pulse tube at 42\u00b0C for exactly 30 seconds.\nThe duration of the heat pulse is critical.\nIncubate cells on ice for 2 minutes.\nAdd 0.9mL of pre-heated NZY+ broth to each tube.\nIncubate at 37\u00b0C for 1 hour with shaking at 225-250 rpm.\nPlate no more than 200uL of transformation mixture per LB-agar plate with antibiotic selection.\nIncubate plates at 37\u00b0C overnight.",
+    "actions": [
+      {
+        "action": "pre-chill",
+        "parameters": {
+          "container": "14mL sterile culture tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-heat",
+        "parameters": {
+          "container": null,
+          "reagent": "NZY+ broth",
+          "volume": "0.9mL",
+          "temperature": "42\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "XL-10 Gold Ultracompetent cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "XL-10 Gold Ultracompetent cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "after": "completely thawed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "pre-chilled sterile culture tubes",
+          "reagent": "XL-10 Gold Ultracompetent cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "beta-mercaptoethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "swirl_interval": "every 2 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA or ligation product",
+          "volume": "0.1-50ng or 2uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "step": "heat pulse"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "pre-heated NZY+ broth",
+          "volume": "0.9mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": "shaking at 225-250 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "LB-agar plate with antibiotic selection",
+          "reagent": "transformation mixture",
+          "volume": "\u2264200uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: pre-chill (container: 14mL sterile culture tubes, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\npre-heat(reagent='NZY+ broth', volume='0.9mL', temperature='42\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: XL-10 Gold Ultracompetent cells, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nmix(reagent='XL-10 Gold Ultracompetent cells', speed='gently', after='completely thawed')\naliquot(container='pre-chilled sterile culture tubes', reagent='XL-10 Gold Ultracompetent cells')\nadd(reagent='beta-mercaptoethanol')\nswirl(container='tube', speed='gently')\nincubate(container='tube', temperature='on ice', duration='10 minutes', swirl_interval='every 2 minutes')\nadd(reagent='DNA or ligation product', volume='0.1-50ng or 2uL')\nswirl(container='tube', speed='gently')\nincubate(container='tube', temperature='on ice', duration='30 minutes')\nheat(container='tube', temperature='42\u00b0C', duration='30 seconds', step='heat pulse')\nincubate(container='cells', temperature='on ice', duration='2 minutes')\nadd(container='each tube', reagent='pre-heated NZY+ broth', volume='0.9mL')\nincubate(temperature='37\u00b0C', duration='1 hour', speed='shaking at 225-250 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: LB-agar plate with antibiotic selection, reagent: transformation mixture, volume: \u2264200uL, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plates', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_108.txt"
+  }
+]

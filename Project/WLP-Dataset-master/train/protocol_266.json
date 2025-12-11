@@ -1,0 +1,480 @@
+[
+  {
+    "protocol": "Dissecting and Immunostaining Drosophila melanogaster Egg Chambers\nThe fix: \u00a04% Paraformaldehyde,\u00a0 1X PBS.\nPlace 10 ml of 1X PBS in the microwave just to boil.\nAdd the .4 paraformaldehyde.\nAdd 4 drops of 2M NaCl ( make sure that Paraphormaldehyde is completely dissolved).\nAdd one drop 12ml HCL to adjust the PH (7.5-8).\nThe block :10 ml of 1X PBS 10\u00b5l/ml Normal Donkey Serum 10\u00b5l/ml 10X Triton. \nSet up the dissection microscopy.\nPut the depression slide on it. \nPut three drops of 1X PBS on the slide to maintain the PH and keep the egg chambers hydrated.\nAnesthetize the flies by using CO2 bed.\nHold the fly from its wings with a size 5 tweezer. \nPlace it on the slide.\nWith your left hand hold the fly from its thorax and with your right hand gently grap the tip of the abdomen and pull it out ( be sure to not damage the ovaries).\nSqueeze the abdomen gently until the pair of the ovaries comes out.\nTransfer the ovaries from the depression slide into the fix using transfer piptte.\nWash the ovaries 3X with 1X PBS using transfer piptte.\nTransfer the ovaries into the block using the transfer piptte.\nAfter blocking the ovaries, transfer them into a microtube that is filled with fresh block add the primary antibody over night at 4C.\nNext morning: \nRemove the block. \nWash the ovaries 3X 1X PBS.\u00a0\nAdd block\u00a0Rock at RT for 20 mins. \nAfter 30 mins. \nRemove the block. \nWash one time with 1X PBS. \nAdd block.\nAdd secondry antibodiy.\nBe sure to cover the tube with foil to prevent the interaction between 2nd antibody with the light.\nRock at RT for 2-4 hours. \nAfter secondray staining: \nRemove the block. \nWash 3X with 1X PBS. \nAdd block.\nRock for 30 mins at RT After washing the non-specific secondary antibody:\nWash one time with 1X PBS. \nBy using glass piptte, transfer the ovaries into a regular slide.\nTry to remove most of the PBS but leave a little to keep the egg chamber moisturized.\nPut three drops of mounting media and place the cover slip on top of the ovaries.\nHeal the edges of the cover slip with a nail polish.\u00a0 \nThe ovaries are ready to be visualized.",
+    "actions": [
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "microwave-safe container",
+          "reagent": "1X PBS",
+          "volume": "10 ml",
+          "temperature": "boiling",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microwave-safe container",
+          "reagent": "paraformaldehyde",
+          "volume": "0.4 (assumed grams or ml, unclear)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microwave-safe container",
+          "reagent": "2M NaCl",
+          "volume": "4 drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microwave-safe container",
+          "reagent": "12ml HCl",
+          "volume": "1 drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "adjust pH to 7.5-8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "block solution container",
+          "reagent": "Normal Donkey Serum",
+          "volume": "10 \u00b5l/ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solution": "10 ml 1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "block solution container",
+          "reagent": "10X Triton",
+          "volume": "10 \u00b5l/ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solution": "10 ml 1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "depression slide",
+          "reagent": "1X PBS",
+          "volume": "3 drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "maintain pH and hydration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fix solution",
+          "reagent": "ovaries",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "transfer pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "fix solution",
+          "reagent": "ovaries",
+          "volume": "3X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash solution": "1X PBS",
+            "tool": "transfer pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "block solution",
+          "reagent": "ovaries",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "transfer pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microtube with fresh block",
+          "reagent": "ovaries",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "primary antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "temperature": "4C"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "ovaries",
+          "volume": "3X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash solution": "1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 mins",
+          "speed": null,
+          "other": {
+            "temperature": "RT",
+            "action": "rock"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "ovaries",
+          "volume": "1X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash solution": "1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "secondary antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "microtube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "foil",
+            "purpose": "prevent light interaction"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "microtube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "2-4 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "ovaries",
+          "volume": "3X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash solution": "1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "microtube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "30 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "microtube",
+          "reagent": "ovaries",
+          "volume": "1X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash solution": "1X PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "regular slide",
+          "reagent": "ovaries",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "glass pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "regular slide",
+          "reagent": "PBS",
+          "volume": "most",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave": "a little to keep egg chamber moisturized"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "regular slide",
+          "reagent": "mounting media",
+          "volume": "3 drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "regular slide",
+          "reagent": "cover slip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on top of": "ovaries"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "cover slip edges",
+          "reagent": "nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nheat(container='microwave-safe container', reagent='1X PBS', volume='10 ml', temperature='boiling')\nadd(container='microwave-safe container', reagent='paraformaldehyde', volume='0.4 (assumed grams or ml, unclear)')\nadd(container='microwave-safe container', reagent='2M NaCl', volume='4 drops')\nadd(container='microwave-safe container', reagent='12ml HCl', volume='1 drop', purpose='adjust pH to 7.5-8')\nadd(container='block solution container', reagent='Normal Donkey Serum', volume='10 \u00b5l/ml', solution='10 ml 1X PBS')\nadd(container='block solution container', reagent='10X Triton', volume='10 \u00b5l/ml', solution='10 ml 1X PBS')\ndispense(container='depression slide', reagent='1X PBS', volume='3 drops', purpose='maintain pH and hydration')\ntransfer(container='fix solution', reagent='ovaries', tool='transfer pipette')\nwash(container='fix solution', reagent='ovaries', volume='3X', wash solution='1X PBS', tool='transfer pipette')\ntransfer(container='block solution', reagent='ovaries', tool='transfer pipette')\ntransfer(container='microtube with fresh block', reagent='ovaries')\nadd(container='microtube', reagent='primary antibody', duration='overnight', temperature='4C')\nremove(container='microtube', reagent='block')\nwash(container='microtube', reagent='ovaries', volume='3X', wash solution='1X PBS')\nadd(container='microtube', reagent='block', duration='20 mins', temperature='RT', action='rock')\nremove(container='microtube', reagent='block')\nwash(container='microtube', reagent='ovaries', volume='1X', wash solution='1X PBS')\nadd(container='microtube', reagent='block')\nadd(container='microtube', reagent='secondary antibody')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: microtube, other: {'material': 'foil', 'purpose': 'prevent light interaction'})\n\n### AUTOMATED SECTION ###\nrock(container='microtube', temperature='RT', duration='2-4 hours')\nremove(container='microtube', reagent='block')\nwash(container='microtube', reagent='ovaries', volume='3X', wash solution='1X PBS')\nadd(container='microtube', reagent='block')\nrock(container='microtube', temperature='RT', duration='30 mins')\nwash(container='microtube', reagent='ovaries', volume='1X', wash solution='1X PBS')\ntransfer(container='regular slide', reagent='ovaries', tool='glass pipette')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: regular slide, reagent: PBS, volume: most, other: {'leave': 'a little to keep egg chamber moisturized'})\n\n### AUTOMATED SECTION ###\ndispense(container='regular slide', reagent='mounting media', volume='3 drops')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: regular slide, reagent: cover slip, other: {'on top of': 'ovaries'})\n# MANUAL: seal (container: cover slip edges, reagent: nail polish, other: {})",
+    "source_file": "protocol_266.txt"
+  }
+]

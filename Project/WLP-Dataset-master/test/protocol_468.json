@@ -1,0 +1,649 @@
+[
+  {
+    "protocol": "Viral DNA Miniprep Procedure\nInfect 60 mL of chlorella with 200\u00a0\u00b5L of viral single plaque isolates.\nIncubate the samples at 25\u00b0C for 24-72 hours, with continuous light and shaking.\nCentrifuge 30 mL of the lysates in the Sorvall SS34 rotor at 5,000 rpm (3,000 rcf), 5 min, 4\u00b0C.\nSave the supernatants.\nSave the unused portion of the lysates.\nAdd 10% NP-40 (or Triton X-100) to the lysate supernatants to a final concentration of 1%.\nCentrifuge the material in Beckman Ti50.2 rotors at 15,000 rpm (~27,000 rcfmax), 75 min, 4\u00b0C.\nDiscard the supernatants.\nResuspend the virus pellets with 1.0 mL of 50 mM Tris-HCl, pH 7.5, 10 mM MgCl2.\nTransfer 350\u00a0\u00b5L of the resuspended virus to 1.5 mL screw-cap microfuge tubes and adjust the final volume to 500\u00a0\u00b5L with 50 mM Tris-HCl, pH 7.5, 10 mM MgCl2.\nAdd 8.8 \u00b5L of DNAse I and mix.\nIncubate at room temperature for 60 min.\nAdd 6.0 \u00b5L of 500 mM EDTA, pH 8.0 to the samples and mix.\nAdd 56.6 \u00b5L of proteinase K and 29.0 \u00b5L of 10% Na sarcosyl and mix.\nIncubate the samples at 60-65\u00b0C for 60 min.\nAdd 300 \u00b5L of buffer-saturated phenol and 300 \u00b5L of CHCl3:Isoamyl alcohol (24:1) to the tubes.\nMix by inversion.\nCentrifuge in the microfuge at maximum speed for 5 min at 4\u00b0C.\nRemove the upper aqueous layers to clean tubes.\nAdd 600 \u00b5L of CHCl3:Isoamyl alcohol (24:1) to the tubes.\nMix by inversion and centrifuge for 5 min at 4\u00b0C in the microfuge.\nRemove the upper aqueous layers to clean tubes and repeat the CHCl3:Isoamyl alcohol extraction 1X.\nPlace the last extraction into 2.0 mL microfuge tubes.\nAdd 66 \u00b5L of 3 M NaOAc to each tube.\nPrecipitate the DNAs with 2X volumes (approximately 1350 \u00b5L) of 100% EtOH.\nMix well and hold at -20\u00b0C overnight.\nCentrifuge the tubes in the microfuge for 10-15 min at 4\u00b0C to pellet the DNAs.\nDiscard the supernatants.\nWash the DNA pellets 1X with 1000 \u00b5L of 70% EtOH in the microfuge for 5 min at 4\u00b0C.\nDry the pellets briefly (10-15 min) in the vacuum desiccator or the speed vac (5 min) to remove the EtOH.\nResuspend the DNAs with approximately 60 \u00b5L of 1X TE buffer.\nIf the DNA doesn\u2019t go into solution overnight, centrifuge in the microfuge for 15 min at 4\u00b0C and remove the supernatants to clean tubes.\nDiscard the pellets.\nStore the DNAs at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "infect",
+        "parameters": {
+          "container": "chlorella culture (60 mL)",
+          "reagent": "viral single plaque isolates",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "24-72 hours",
+          "speed": "continuous shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "lysates (30 mL)",
+          "reagent": null,
+          "volume": "30 mL",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm (3,000 rcf)",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "unused portion of lysates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "lysate supernatants",
+          "reagent": "10% NP-40 (or Triton X-100)",
+          "volume": "to final concentration of 1%",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "material",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "75 min",
+          "speed": "15,000 rpm (~27,000 rcfmax)",
+          "other": {
+            "rotor": "Beckman Ti50.2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "virus pellets",
+          "reagent": "50 mM Tris-HCl, pH 7.5, 10 mM MgCl2",
+          "volume": "1.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 mL screw-cap microfuge tubes",
+          "reagent": "resuspended virus",
+          "volume": "350 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "1.5 mL screw-cap microfuge tubes",
+          "reagent": "50 mM Tris-HCl, pH 7.5, 10 mM MgCl2",
+          "volume": "to final volume of 500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "DNAse I",
+          "volume": "8.8 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "500 mM EDTA, pH 8.0",
+          "volume": "6.0 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "proteinase K",
+          "volume": "56.6 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "10% Na sarcosyl",
+          "volume": "29.0 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60-65\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "buffer-saturated phenol",
+          "volume": "300 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "CHCl3:Isoamyl alcohol (24:1)",
+          "volume": "300 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "by inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "maximum speed",
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper aqueous layers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "CHCl3:Isoamyl alcohol (24:1)",
+          "volume": "600 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "by inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper aqueous layers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "CHCl3:Isoamyl alcohol extraction",
+          "volume": "1X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "last extraction",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "2.0 mL microfuge tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "3 M NaOAc",
+          "volume": "66 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "DNAs",
+          "reagent": "100% EtOH",
+          "volume": "2X volumes (approx. 1350 \u00b5L)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "DNA pellets",
+          "reagent": "70% EtOH",
+          "volume": "1000 \u00b5L",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "pellets",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10-15 min (vacuum desiccator) or 5 min (speed vac)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "DNAs",
+          "reagent": "1X TE buffer",
+          "volume": "approx. 60 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNAs (if not dissolved overnight)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "pellets",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "DNAs",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: infect (container: chlorella culture (60 mL), reagent: viral single plaque isolates, volume: 200 \u00b5L, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='samples', temperature='25\u00b0C', duration='24-72 hours', speed='continuous shaking', light='continuous')\ncentrifuge(container='lysates (30 mL)', volume='30 mL', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm (3,000 rcf)', rotor='Sorvall SS34')\n\n### MANUAL SECTION ###\n# MANUAL: save (container: supernatants, other: {})\n# MANUAL: save (container: unused portion of lysates, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='lysate supernatants', reagent='10% NP-40 (or Triton X-100)', volume='to final concentration of 1%')\ncentrifuge(container='material', temperature='4\u00b0C', duration='75 min', speed='15,000 rpm (~27,000 rcfmax)', rotor='Beckman Ti50.2')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='virus pellets', reagent='50 mM Tris-HCl, pH 7.5, 10 mM MgCl2', volume='1.0 mL')\ntransfer(container='1.5 mL screw-cap microfuge tubes', reagent='resuspended virus', volume='350 \u00b5L')\nadjust(container='1.5 mL screw-cap microfuge tubes', reagent='50 mM Tris-HCl, pH 7.5, 10 mM MgCl2', volume='to final volume of 500 \u00b5L')\nadd(container='samples', reagent='DNAse I', volume='8.8 \u00b5L')\nmix(container='samples')\nincubate(container='samples', temperature='room temperature', duration='60 min')\nadd(container='samples', reagent='500 mM EDTA, pH 8.0', volume='6.0 \u00b5L')\nmix(container='samples')\nadd(container='samples', reagent='proteinase K', volume='56.6 \u00b5L')\nadd(container='samples', reagent='10% Na sarcosyl', volume='29.0 \u00b5L')\nmix(container='samples')\nincubate(container='samples', temperature='60-65\u00b0C', duration='60 min')\nadd(container='tubes', reagent='buffer-saturated phenol', volume='300 \u00b5L')\nadd(container='tubes', reagent='CHCl3:Isoamyl alcohol (24:1)', volume='300 \u00b5L')\nmix(container='tubes', speed='by inversion')\ncentrifuge(container='tubes', temperature='4\u00b0C', duration='5 min', speed='maximum speed', instrument='microfuge')\nremove(container='upper aqueous layers', destination='clean tubes')\nadd(container='tubes', reagent='CHCl3:Isoamyl alcohol (24:1)', volume='600 \u00b5L')\nmix(container='tubes', speed='by inversion')\ncentrifuge(container='tubes', temperature='4\u00b0C', duration='5 min', instrument='microfuge')\nremove(container='upper aqueous layers', destination='clean tubes')\nrepeat(container='tubes', reagent='CHCl3:Isoamyl alcohol extraction', volume='1X')\nplace(container='last extraction', destination='2.0 mL microfuge tubes')\nadd(container='each tube', reagent='3 M NaOAc', volume='66 \u00b5L')\nprecipitate(container='DNAs', reagent='100% EtOH', volume='2X volumes (approx. 1350 \u00b5L)')\nmix(container='tubes', speed='well')\nhold(container='tubes', temperature='-20\u00b0C', duration='overnight')\ncentrifuge(container='tubes', temperature='4\u00b0C', duration='10-15 min', instrument='microfuge')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='DNA pellets', reagent='70% EtOH', volume='1000 \u00b5L', temperature='4\u00b0C', duration='5 min', instrument='microfuge')\ndry(container='pellets', duration='10-15 min (vacuum desiccator) or 5 min (speed vac)')\nresuspend(container='DNAs', reagent='1X TE buffer', volume='approx. 60 \u00b5L')\ncentrifuge(container='DNAs (if not dissolved overnight)', temperature='4\u00b0C', duration='15 min', instrument='microfuge')\nremove(container='supernatants', destination='clean tubes')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: pellets, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='DNAs', temperature='4\u00b0C')",
+    "source_file": "protocol_468.txt"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "protocol": "NEBuilder HiFi DNA Assembly Reaction (E2621). \nSet up the following reaction on ice (to 20\u03bcl total volume):\u00a0Recommended Amount of Fragments Used for Assembly2\u20133 Fragment Assembly*4\u20136 Fragment Assembly**Positive Control\u271dRecommended DNA Ratiovector:insert = 1:2vector:insert = 1:1\u00a0Total Amount of Fragments0.03\u20130.2 pmols*X \u03bcl0.2\u20130.5 pmols**X \u03bcl10 \u03bclNEBuilderHiFi DNA Assembly Master Mix10 \u03bcl10 \u03bcl10 \u03bclDeionized H2O10-X \u03bcl10-X \u03bcl0Total Volume20 \u03bcl\u271d\u271d20 \u03bcl\u271d\u271d20 \u03bcl. \nIncubate samples in a thermocycler at 50\u00b0C for 15 minutes (when 2 or 3 fragments are being assembled) or 60 minutes (when 4\u20136 fragments are being assembled).\nFollowing incubation, store samples on ice or at \u201320\u00b0C for subsequent transformation.\nTransform NEB 5-alpha Competent\u00a0E. coli\u00a0cells (provided in the cloning kit or purchased separately from NEB) with 2 \u03bcl of the assembled product, following the\u00a0transformation protocol.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "DNA fragments (vector and insert)",
+          "volume": "X \u03bcl (to achieve 0.03\u20130.2 pmols for 2\u20133 fragments or 0.2\u20130.5 pmols for 4\u20136 fragments)",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "vector:insert = 1:2 (2\u20133 fragments), 1:1 (4\u20136 fragments)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "NEBuilder HiFi DNA Assembly Master Mix",
+          "volume": "10 \u03bcl",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Deionized H2O",
+          "volume": "10-X \u03bcl (for 2\u20136 fragment assembly), 0 \u03bcl (for positive control)",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": "20 \u03bcl total",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "assembled reaction",
+          "volume": "20 \u03bcl",
+          "temperature": "50\u00b0C (2\u20133 fragments) or 50\u00b0C/60\u00b0C (4\u20136 fragments)",
+          "duration": "15 minutes (2\u20133 fragments) or 60 minutes (4\u20136 fragments)",
+          "speed": null,
+          "other": {
+            "device": "thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "assembled reaction",
+          "volume": "20 \u03bcl",
+          "temperature": "on ice or \u201320\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "subsequent transformation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": "transformation tube",
+          "reagent": "NEB 5-alpha Competent E. coli cells, assembled product",
+          "volume": "2 \u03bcl (assembled product)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "transformation protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='reaction tube', reagent='DNA fragments (vector and insert)', volume='X \u03bcl (to achieve 0.03\u20130.2 pmols for 2\u20133 fragments or 0.2\u20130.5 pmols for 4\u20136 fragments)', temperature='on ice', ratio='vector:insert = 1:2 (2\u20133 fragments), 1:1 (4\u20136 fragments)')\npipette(container='reaction tube', reagent='NEBuilder HiFi DNA Assembly Master Mix', volume='10 \u03bcl', temperature='on ice')\npipette(container='reaction tube', reagent='Deionized H2O', volume='10-X \u03bcl (for 2\u20136 fragment assembly), 0 \u03bcl (for positive control)', temperature='on ice')\nmix(container='reaction tube', volume='20 \u03bcl total', temperature='on ice')\nincubate(container='reaction tube', reagent='assembled reaction', volume='20 \u03bcl', temperature='50\u00b0C (2\u20133 fragments) or 50\u00b0C/60\u00b0C (4\u20136 fragments)', duration='15 minutes (2\u20133 fragments) or 60 minutes (4\u20136 fragments)', device='thermocycler')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: reaction tube, reagent: assembled reaction, volume: 20 \u03bcl, temperature: on ice or \u201320\u00b0C, other: {'purpose': 'subsequent transformation'})\n# MANUAL: transform (container: transformation tube, reagent: NEB 5-alpha Competent E. coli cells, assembled product, volume: 2 \u03bcl (assembled product), other: {'protocol': 'transformation protocol'})",
+    "source_file": "protocol_602.txt"
+  }
+]

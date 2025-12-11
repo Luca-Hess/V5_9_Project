@@ -1,0 +1,159 @@
+[
+  {
+    "protocol": "Ligation of Sticky Ends with T4\nThaw the T4 DNA Ligase Buffer and resuspended at room temperature.\nSet up the following reaction mixture at room temp:10x, T4 DNA Ligase Buffer; 2 ul, Vector DNA; 0.020, pmol.\nInsert DNA, 0.060 pmol; Nuclease-free Water to 20 ul; T4 DNA Ligase, 1 ul. \nGently mix the reaction by pipetting up and down and microfuge briefly.\nFor sticky\u00a0ends, incubate at\u00a022 C for 10 minutes.\nHeat inactivate at 65 degrees C for 10 minutes.\nChill on ice and transform 1-5 \u03bcl of the reaction into 50 \u03bcl competent cells.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "T4 DNA Ligase Buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            {
+              "name": "10x T4 DNA Ligase Buffer",
+              "volume": null
+            },
+            {
+              "name": "Vector DNA",
+              "volume": "2 ul",
+              "amount": "0.020 pmol"
+            },
+            {
+              "name": "Insert DNA",
+              "volume": null,
+              "amount": "0.060 pmol"
+            },
+            {
+              "name": "Nuclease-free Water",
+              "volume": "to 20 ul"
+            },
+            {
+              "name": "T4 DNA Ligase",
+              "volume": "1 ul"
+            }
+          ],
+          "volume": "20 ul (final)",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {
+            "type": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "22 C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "type": "for sticky ends"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "65 C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            {
+              "name": "reaction mixture",
+              "volume": "1-5 ul"
+            },
+            {
+              "name": "competent cells",
+              "volume": "50 ul"
+            }
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: T4 DNA Ligase Buffer, temperature: room temperature, other: {})\n\n### AUTOMATED SECTION ###\nset up(reagent=[{'name': '10x T4 DNA Ligase Buffer', 'volume': None}, {'name': 'Vector DNA', 'volume': '2 ul', 'amount': '0.020 pmol'}, {'name': 'Insert DNA', 'volume': None, 'amount': '0.060 pmol'}, {'name': 'Nuclease-free Water', 'volume': 'to 20 ul'}, {'name': 'T4 DNA Ligase', 'volume': '1 ul'}], volume='20 ul (final)', temperature='room temperature')\nmix(reagent='reaction mixture', method='pipetting up and down')\ncentrifuge(reagent='reaction mixture', duration='briefly', type='microfuge')\nincubate(reagent='reaction mixture', temperature='22 C', duration='10 minutes', type='for sticky ends')\nheat inactivate(reagent='reaction mixture', temperature='65 C', duration='10 minutes')\nchill(reagent='reaction mixture', temperature='on ice')\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: [{'name': 'reaction mixture', 'volume': '1-5 ul'}, {'name': 'competent cells', 'volume': '50 ul'}], other: {})",
+    "source_file": "protocol_259.txt"
+  }
+]

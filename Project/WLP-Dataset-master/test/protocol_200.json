@@ -1,0 +1,290 @@
+[
+  {
+    "protocol": "Isolation of Haloviruses from Natural Waters\nSalt lake samples are collected from hypersaline waters, which typically range from 15% w/v total salt, up to saturation (ca 35%).\nSamples are collected in sterile 5\u201310 mL vessels and may be stored for several weeks at room temperature.\nIn the laboratory, cells and cellular debris are removed by centrifugation (5,000g, 10 min, room temperature).\nThe supernatant is then screened directly for viruses by plaque assay.\nThe choice of host strains depends on the experimental objectives, and includes well-characterized members of the Halobacteriaceae, such as Hbt.\nsalinarum (host for \u03a6H and several others) or Har.\nhispanica (host for SH1, His1, His2, and others), or natural isolates from the same source, such as Hrr.\ncoriense (host for HF2).\nBase and overlay plates (90 mm) are made with MGM (see guidelines), solidified using 15% w/v agar.\nA range of salt water concentrations should be examined, because salt concentration seems to greatly affect the size and clarity of plaques.\nPlates can be stored indefinitely at 4\u00b0C (wrapped in plastic to prevent dessication), but should be warmed to room temperature or warmer for use.\nFor virus isolation, 100\u2013500 \u00b5l of the cleared water sample is mixed with 150 \u00b5l of exponentially growing host cells.\nThen, 3\u20134 mL of molten (50\u00b0C) top-layer MGM (with 0.7% w/v agar) is added, and the solution mixed gently and poured evenly over the plate.\nAfter setting on a level surface for 5\u201310 min, plates are incubated aerobically, inverted in airtight containers at 30\u00b0C and 37\u00b0C for 1\u20134 d, and checked every day for plaques.\nAny visible plaques are picked using sterile glass Pasteur pipettes, or sterile plastic micropipette tips.\nThese agar plugs are then transferred to tubes containing 500 \u00b5l of halovirus diluent: 2.47 M, NaCl; 90 mM, MgCl2; 90 mM, MgSO4; 60 mM, KCl; 3 mM, CaCl2; 10 mM, Tris-HCl, pH 7.5;\nThey are then vortexed to homogenize the sample.\nThese suspensions are then replaqued on overlay plates to purify the isolates and to eliminate \u201cfalse plaques\u201d caused by artifacts in the agar overlay or contaminants in the water sample.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "sterile 5\u201310 mL vessels",
+          "reagent": "salt lake samples",
+          "volume": "5\u201310 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "hypersaline waters"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "sterile 5\u201310 mL vessels",
+          "reagent": "salt lake samples",
+          "volume": "5\u201310 mL",
+          "temperature": "room temperature",
+          "duration": "several weeks",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "salt lake samples",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": "5,000g",
+          "other": {
+            "purpose": "remove cells and cellular debris"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "screen",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "plaque assay"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": "90 mm plates",
+          "reagent": "MGM with 15% w/v agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "base and overlay plates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "indefinitely",
+          "speed": null,
+          "other": {
+            "wrapped": "plastic to prevent dessication"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature or warmer",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "for use"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "100\u2013500 \u00b5l cleared water sample",
+            "150 \u00b5l exponentially growing host cells"
+          ],
+          "volume": "100\u2013500 \u00b5l + 150 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "3\u20134 mL molten (50\u00b0C) top-layer MGM (with 0.7% w/v agar)",
+          "volume": "3\u20134 mL",
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "solution (water sample, host cells, top-layer MGM)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plate",
+          "reagent": "mixed solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "evenly",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5\u201310 min",
+          "speed": null,
+          "other": {
+            "purpose": "setting on level surface"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates (inverted in airtight containers)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C and 37\u00b0C",
+          "duration": "1\u20134 d",
+          "speed": null,
+          "other": {
+            "atmosphere": "aerobic"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every day",
+          "speed": null,
+          "other": {
+            "purpose": "for plaques"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "plates",
+          "reagent": "visible plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile glass Pasteur pipettes or sterile plastic micropipette tips"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "agar plugs",
+          "volume": "500 \u00b5l halovirus diluent",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent composition": "2.47 M NaCl; 90 mM MgCl2; 90 mM MgSO4; 60 mM KCl; 3 mM CaCl2; 10 mM Tris-HCl, pH 7.5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "agar plugs in halovirus diluent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "homogenize sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "replaqued",
+        "parameters": {
+          "container": "overlay plates",
+          "reagent": "suspensions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "purify isolates and eliminate false plaques"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: sterile 5\u201310 mL vessels, reagent: salt lake samples, volume: 5\u201310 mL, other: {'source': 'hypersaline waters'})\n# MANUAL: store (container: sterile 5\u201310 mL vessels, reagent: salt lake samples, volume: 5\u201310 mL, temperature: room temperature, duration: several weeks)\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='salt lake samples', temperature='room temperature', duration='10 min', speed='5,000g', purpose='remove cells and cellular debris')\n\n### MANUAL SECTION ###\n# MANUAL: screen (reagent: supernatant, other: {'method': 'plaque assay'})\n# MANUAL: make (container: 90 mm plates, reagent: MGM with 15% w/v agar, other: {'type': 'base and overlay plates'})\n# MANUAL: store (container: plates, temperature: 4\u00b0C, duration: indefinitely, other: {'wrapped': 'plastic to prevent dessication'})\n\n### AUTOMATED SECTION ###\nwarm(container='plates', temperature='room temperature or warmer', purpose='for use')\nmix(reagent=['100\u2013500 \u00b5l cleared water sample', '150 \u00b5l exponentially growing host cells'], volume='100\u2013500 \u00b5l + 150 \u00b5l')\nadd(reagent='3\u20134 mL molten (50\u00b0C) top-layer MGM (with 0.7% w/v agar)', volume='3\u20134 mL', temperature='50\u00b0C')\nmix(reagent='solution (water sample, host cells, top-layer MGM)', speed='gently')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plate, reagent: mixed solution, speed: evenly)\n\n### AUTOMATED SECTION ###\nwait(container='plate', duration='5\u201310 min', purpose='setting on level surface')\nincubate(container='plates (inverted in airtight containers)', temperature='30\u00b0C and 37\u00b0C', duration='1\u20134 d', atmosphere='aerobic')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: plates, duration: every day, other: {'purpose': 'for plaques'})\n# MANUAL: pick (container: plates, reagent: visible plaques, other: {'tool': 'sterile glass Pasteur pipettes or sterile plastic micropipette tips'})\n\n### AUTOMATED SECTION ###\ntransfer(container='tubes', reagent='agar plugs', volume='500 \u00b5l halovirus diluent', diluent composition='2.47 M NaCl; 90 mM MgCl2; 90 mM MgSO4; 60 mM KCl; 3 mM CaCl2; 10 mM Tris-HCl, pH 7.5')\nvortex(container='tubes', reagent='agar plugs in halovirus diluent', purpose='homogenize sample')\n\n### MANUAL SECTION ###\n# MANUAL: replaqued (container: overlay plates, reagent: suspensions, other: {'purpose': 'purify isolates and eliminate false plaques'})",
+    "source_file": "protocol_200.txt"
+  }
+]

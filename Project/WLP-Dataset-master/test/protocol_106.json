@@ -1,0 +1,403 @@
+[
+  {
+    "protocol": "Pierce Silver Stain Kit\nWash gel in ultra pure water for 5 minutes.\nReplace the water and wash for another 5 minutes.\nFix gel in 30% ethanol:10% acetic acid solution (i.e., 6:3:1 water:ethanol:acetic acid) for 15 minutes.\nReplace the solution and fix for another 15 minutes.\nNote: Gel may be kept in fixing solution overnight without affecting stain performance.\nWash gel in 10% ethanol solution for 5 minutes.\nReplace solution and wash for another 5 minutes.\nWash gel in ultrapure water for 5 minutes.\nReplace water and wash for another 5 minutes.\nPrepare Sensitizer Working Solution by mixing 1 part Silver Stain Sensitizer with 500 parts ultrapure water (e.g., mix 50\u00b5L Sensitizer with 25mL water).\nIncubate gel in Sensitizer Working Solution for exactly 1 minute, then wash with two changes of ultrapure water for 1 minute each.\nPrepare Stain Working Solution by mixing 1 part Silver Stain Enhancer with 50 parts Silver Stain (e.g., 0.5mL of Enhancer with 25mL Stain).\nIncubate gel in Stain Working Solution for 30 minutes.\nNote: Gel may be incubated in Stain Working Solution for as short as 5 minutes or as long as overnight without affecting stain performance.\nPrepare Developer Working Solution by mixing 1 part Silver Stain Enhancer with 50 parts Silver Stain Developer (e.g., mix 0.5mL of Enhancer with 25mL Developer).\nPrepare 5% acetic acid solution as a Stop Solution.\nQuickly wash gel with two changes of ultrapure water for 20 seconds each.\nImmediately add Developer Working Solution and incubate until protein bands appear (2-3 minutes).\nNote: Protein bands will begin to appear within 30 seconds and then continue to develop.\nBetween 2 and 3 minutes, protein detection vs. background is optimal.\nAfter 3 minutes, lane background signal may increase to undesirable levels.\nWhen the desired band intensity is reached, replace Developer Working Solution with prepared Stop Solution (5% acetic acid).\nWash gel briefly, then replace Stop Solution and incubate for 10 minutes.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "after wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "gel",
+          "reagent": "30% ethanol:10% acetic acid solution (6:3:1 water:ethanol:acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "30% ethanol:10% acetic acid solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "after fix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "gel",
+          "reagent": "30% ethanol:10% acetic acid solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "10% ethanol solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "10% ethanol solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "after wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "10% ethanol solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "after wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Sensitizer Working Solution",
+          "volume": "e.g., 50\u00b5L Sensitizer + 25mL ultrapure water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:500"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Sensitizer Working Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "changes": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Stain Working Solution",
+          "volume": "e.g., 0.5mL Enhancer + 25mL Stain",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:50"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Stain Working Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "min_duration": "5 minutes",
+            "max_duration": "overnight"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Developer Working Solution",
+          "volume": "e.g., 0.5mL Enhancer + 25mL Developer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:50"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "5% acetic acid solution (Stop Solution)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "ultrapure water",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 seconds",
+          "speed": null,
+          "other": {
+            "changes": 2,
+            "quickly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Developer Working Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "immediately": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Developer Working Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-3 minutes",
+          "speed": null,
+          "other": {
+            "until": "protein bands appear"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Stop Solution (5% acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "when": "desired band intensity is reached"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Stop Solution (5% acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Stop Solution (5% acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "after brief wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "Stop Solution (5% acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwash(container='gel', reagent='ultrapure water', duration='5 minutes')\nreplace(container='gel', reagent='ultrapure water', step='after wash')\nwash(container='gel', reagent='ultrapure water', duration='5 minutes')\nfix(container='gel', reagent='30% ethanol:10% acetic acid solution (6:3:1 water:ethanol:acetic acid)', duration='15 minutes')\nreplace(container='gel', reagent='30% ethanol:10% acetic acid solution', step='after fix')\nfix(container='gel', reagent='30% ethanol:10% acetic acid solution', duration='15 minutes')\nwash(container='gel', reagent='10% ethanol solution', duration='5 minutes')\nreplace(container='gel', reagent='10% ethanol solution', step='after wash')\nwash(container='gel', reagent='10% ethanol solution', duration='5 minutes')\nwash(container='gel', reagent='ultrapure water', duration='5 minutes')\nreplace(container='gel', reagent='ultrapure water', step='after wash')\nwash(container='gel', reagent='ultrapure water', duration='5 minutes')\nprepare(reagent='Sensitizer Working Solution', volume='e.g., 50\u00b5L Sensitizer + 25mL ultrapure water', ratio='1:500')\nincubate(container='gel', reagent='Sensitizer Working Solution', duration='1 minute')\nwash(container='gel', reagent='ultrapure water', duration='1 minute', changes=2)\nprepare(reagent='Stain Working Solution', volume='e.g., 0.5mL Enhancer + 25mL Stain', ratio='1:50')\nincubate(container='gel', reagent='Stain Working Solution', duration='30 minutes', min_duration='5 minutes', max_duration='overnight')\nprepare(reagent='Developer Working Solution', volume='e.g., 0.5mL Enhancer + 25mL Developer', ratio='1:50')\nprepare(reagent='5% acetic acid solution (Stop Solution)')\nwash(container='gel', reagent='ultrapure water', duration='20 seconds', changes=2, quickly=True)\nadd(container='gel', reagent='Developer Working Solution', immediately=True)\nincubate(container='gel', reagent='Developer Working Solution', duration='2-3 minutes', until='protein bands appear')\nreplace(container='gel', reagent='Stop Solution (5% acetic acid)', when='desired band intensity is reached')\nwash(container='gel', reagent='Stop Solution (5% acetic acid)', duration='briefly')\nreplace(container='gel', reagent='Stop Solution (5% acetic acid)', step='after brief wash')\nincubate(container='gel', reagent='Stop Solution (5% acetic acid)', duration='10 minutes')",
+    "source_file": "protocol_106.txt"
+  }
+]

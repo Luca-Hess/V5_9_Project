@@ -1,0 +1,296 @@
+[
+  {
+    "protocol": "Determining Genome Targeting Efficiency using T7 Endonuclease I (M0302)\nSet up a 50 \u00b5l PCR reaction using ~100 ng of genomic DNA as a template.\nFor each amplicon set up 3 PCR reactions (positive, negative, no-template control). \nGently mix the reaction.\nCollect all liquid to the bottom of the tube by a quick spin if necessary.\nTransfer PCR tubes to a PCR machine and begin thermocycling.\nAnalyze a small amount of the of the PCR product to verify size and appropriate amplification.\nPurify the PCR reaction using 90 \u00b5l of Ampure XP beads following the manufacturer\u2019s recommendations.\nElute PCR products in 30 \u00b5l of water, recovering 25 \u00b5l.\nMeasure the concentration of the purified PCR products.\nAssemble reactions as follows: Anneal the PCR products in a thermocycler (see guidelines for conditions). \nAdd 1 \u00b5l\u00a0of the T7 Endonuclease I to the annealed PCR products. \nIncubate at\u00a037\u00b0C for 15 minutes. \nStop the reaction by adding 1.5 \u00b5l of 0.25 M EDTA.\nPurify the reaction using 36 \u00b5l of Ampure XP beads according to the manufacturer\u2019s suggestion.\nElute the DNA fragments in 20 \u00b5l of water, recovering 15 \u00b5l.\nAnalyze the fragmented PCR products and determine the percent of nuclease-specific cleavage products (fraction cleaved). \nCalculate the estimated gene modification using the following formula:\u00a0% gene modification = 100 x (1 \u2013 (1- fraction cleaved)1/2)",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "genomic DNA (~100 ng), PCR reagents",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "template": "genomic DNA (~100 ng)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "PCR reagents",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amplicon_sets": "positive, negative, no-template control",
+            "number_of_reactions": "3 per amplicon"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PCR machine",
+          "reagent": "PCR tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "begin thermocycling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR product",
+          "volume": "small amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "verify size and amplification"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "Ampure XP beads",
+          "volume": "90 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "PCR reaction",
+            "protocol": "manufacturer\u2019s recommendations"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "water",
+          "volume": "30 \u00b5l (recovering 25 \u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "PCR products"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "purified PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "property": "concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "anneal in thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "anneal",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": "PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "see guidelines for conditions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "T7 Endonuclease I",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "annealed PCR products"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "sample": "PCR products + T7 Endonuclease I"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "0.25 M EDTA",
+          "volume": "1.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "Ampure XP beads",
+          "volume": "36 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "reaction",
+            "protocol": "manufacturer\u2019s suggestion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "water",
+          "volume": "20 \u00b5l (recovering 15 \u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "DNA fragments"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "fragmented PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine percent of nuclease-specific cleavage products"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "formula": "% gene modification = 100 x (1 \u2013 (1- fraction cleaved)1/2)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nset up(container='PCR tube', reagent='genomic DNA (~100 ng), PCR reagents', volume='50 \u00b5l', template='genomic DNA (~100 ng)')\nset up(container='PCR tube', reagent='PCR reagents', volume='50 \u00b5l', amplicon_sets='positive, negative, no-template control', number_of_reactions='3 per amplicon')\nmix(container='PCR tube', speed='gentle')\ncentrifuge(container='PCR tube', duration='quick spin')\ntransfer(container='PCR machine', reagent='PCR tubes', purpose='begin thermocycling')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (reagent: PCR product, volume: small amount, other: {'purpose': 'verify size and amplification'})\n\n### AUTOMATED SECTION ###\npurify(reagent='Ampure XP beads', volume='90 \u00b5l', sample='PCR reaction', protocol='manufacturer\u2019s recommendations')\nelute(reagent='water', volume='30 \u00b5l (recovering 25 \u00b5l)', sample='PCR products')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: purified PCR products, other: {'property': 'concentration'})\n\n### AUTOMATED SECTION ###\nassemble(reagent='PCR products', purpose='anneal in thermocycler')\nanneal(container='thermocycler', reagent='PCR products', protocol='see guidelines for conditions')\nadd(reagent='T7 Endonuclease I', volume='1 \u00b5l', to='annealed PCR products')\nincubate(temperature='37\u00b0C', duration='15 minutes', sample='PCR products + T7 Endonuclease I')\nadd(reagent='0.25 M EDTA', volume='1.5 \u00b5l', to='reaction')\npurify(reagent='Ampure XP beads', volume='36 \u00b5l', sample='reaction', protocol='manufacturer\u2019s suggestion')\nelute(reagent='water', volume='20 \u00b5l (recovering 15 \u00b5l)', sample='DNA fragments')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (reagent: fragmented PCR products, other: {'purpose': 'determine percent of nuclease-specific cleavage products'})\n# MANUAL: calculate (other: {'formula': '% gene modification = 100 x (1 \u2013 (1- fraction cleaved)1/2)'})",
+    "source_file": "protocol_322.txt"
+  }
+]

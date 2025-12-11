@@ -1,0 +1,622 @@
+[
+  {
+    "protocol": "Nutrient deplete/replete algal culture for elemental analysis\nCulture Preparation/GrowthComparative measurements depend on having well-characterized culture growth.\nInitiate an experimental culture to allow for at least 7 generations of characterized exponential growth (10 generations is the gold standard) prior to centrifugation and resuspension.\nMonitor growth daily, including transfer/dilution to pre-determined mid-exponential density (i.e., semi-continuous culture) until target biomass is reached.\nA safe estimate for the target biomass is to assume ~10% recovery of cells after centrifugation and washing (this is strain dependent).\nEnsure cell density remains within the exponential range by increasing culture volume (not cell density) when ramping up to target biomass.\nExample Ostreococcus lucimarinus (CCMP2972A) culture preparation:\nGrowth conditions: 18\u00b0C, 14:10 hour light:dark cycle, light irradiance of ~100 \u00b5E m-2 s-1.\nGrowth media: L1 with natural seawater base.\nExponential range: 7x105 \u2013 2x107 cells/mL\u00a0Day12345678910.\nInitial density (mL-1)3x107Skip1.5x1071x1079x1068x1061x1079x1061x1071.4x107.\nGrowth Rate\u00a0\u00a0 (d-1)NA0.5270.6280.5580.3840.7200.6390.5540.261.\nDilution/ TransferTransDilDilTransDilDilDilNA.\u00a0\nFinal density (mL-1)5x1065x1065x1065x1065x1065x1065x1061x107.\u00a0\nVolume (mL)30x386x3172x380x9125x9257x9401x9401x93.6 L (use!)~7 generations of growth prior to centrifugation.\nNOTE: Extra-large volumes used for omics experiment Concentration and Resuspension.\nWhen target culture biomass has been reached, split volume evenly among 2 or 4 acid-cleaned and autoclaved centrifuge bottles.\nWeigh and balance bottles by removing volume until bottle pairs are within 0.01 g of each other.\nOnly open bottles in hood to maintain axenicity!\nCarry bottles over to Sorvall RC 26 Plus centrifuge.\nFit centrifuge with large rotor (accomodates 4 centrifuge bottles).\nMake sure pins are offset when rotor is placed into the centrifuge.\nPlace paired bottles opposite of each other in the rotor and tighten the lid.\nSpin at the following settings: Rotor = GS-3 (choose option code \u201c03\u201d), Speed = 7300 RPM (equivalent to 10,000 rcf with this large rotor), Time = 0:32 minutes (includes 2 minute ramp up), *strain specificTemp = +20/+25\u00b0C, (will try to maintain lower temp, and shut down at max temp).\nAfter the spin, carefully transport the bottles back to hood, taking care not to resuspend the cell pellets/smears.\nGently pour off the supernatant into a waste container, trying to disturb the cell smear as little as possible.\nResuspend/wash cells with a volume of nutrient deplete medium equivalent to the initial culture volume in each bottle.\nRepeat 2-8.Resuspend cells with a volume of nutrient deplete medium that is ~5% of the initial culture volume in each bottle.\nRun a sample of the cell concentrate in the Accuri to determine density.\nStore cells at normal growth conditions during Accuri run and calculations.\nExperimental Culture Initiation.\nCalculate appropriate volume based on Accuri measurement to inoculate experimental nutrient replete and deplete culture flasks from the cell concentrate at a starting density corresponding to early-exponential growth.\nNOTE: It helps to have some amount of media pre-aliquoted to experimental flasks.\nAdjust as needed to achieve target density and volume.\nOnce all experimental cultures have been inoculated, mix and sample for FCM and Accuri measurements to monitor growth daily.\nWhen the average daily growth rate of the nutrient deplete cultures (GRDEP), is reduced to half or less of the growth rate of the replete cultures (GRDEP/GRREP < 0.5), collect samples for FCM (i.e., cell counts) and elemental analyses (i.e., particulate carbon/nitrogen and phosphorus, as well as dissolved nutrients).\nSample CollectionFlow Cytometry (FCM, for cell counts).\nTransfer 1 mL of culture to a sterile 1.2 mL cryovial tube.\nAdd 10 \u00b5L 25% glutaraldehyde (0.25% final conc) and gently vortex to mix.\nAliquot 500 \u00b5L to a duplicate cryovial.\nSnap cryovials into cryocanes and incubate at 4\u00b0C for 30 minutes in the dark.\nFlash freeze in liquid nitrogen.\nStore at -80\u00b0C until analysis.\nDissolved and Particulate Elemental Analysis (EA, for cellular elemental composition & dissolved nutrient concentrations).\nNOTE: Separate filters are needed from each sample for POC/N and POP analyses!\nAdditional filters must be collected if you want technical replicates for each sample type.\nSet up an acid-cleaned and autoclaved glass filter unit with pre-combusted 25mm Advantec glass fiber filter.\n*Use ethanol-cleaned forceps in hood!\nApply 20-40 mL of media or culture to the filter funnel and turn on the vacuum until the filter is dry.\nUse ethanol-cleaned forceps to fold filter in half and collect in a 12-well plate or piece of combusted aluminum foil.\nPour filtrate into an acid-cleaned 50 mL conical tube.\nRepeat for sample duplicate.\nRinse filter tower with MilliQ between samples.\nStore filters and filtrate at -20\u00b0C until further processing.\nDAPI (for microscopy to assess axenicity).\nTransfer 1 mL of culture to sterile 1.2 mL cryovial tube.\nIn the chemical hood, add 100 \u00b5L of 37% formaldehyde (3.7% final conc) and mix by inverting.\nDo not vortex.\nSnap cryovials into cryocanes and incubate at room temp for 15 minutes (in the dark).\nStore at 4\u00b0C until analysis (can be stored for several days or flash frozen in liquid nitrogen and stored at -80\u00b0C).\nSample Processing.\nSamples for elemental analysis should be sent to Analytical Services at Horn Point Laboratory (University of Maryland Center for Environmental Science, UMCES).",
+    "actions": [
+      {
+        "action": "split",
+        "parameters": {
+          "container": "acid-cleaned and autoclaved centrifuge bottles",
+          "reagent": "culture biomass",
+          "volume": "evenly among 2 or 4 bottles",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": null,
+          "volume": "remove volume until bottle pairs are within 0.01 g of each other",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "carry",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "Sorvall RC 26 Plus centrifuge"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fit",
+        "parameters": {
+          "container": "centrifuge",
+          "reagent": "large rotor",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "paired bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "rotor"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tighten",
+        "parameters": {
+          "container": "rotor lid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "culture biomass",
+          "volume": null,
+          "temperature": "+20/+25\u00b0C",
+          "duration": "32 minutes (includes 2 minute ramp up)",
+          "speed": "7300 RPM (10,000 rcf)",
+          "other": {
+            "rotor": "GS-3",
+            "option_code": "03"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transport",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "hood"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste container"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "nutrient deplete medium",
+          "volume": "equivalent to initial culture volume in each bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "nutrient deplete medium",
+          "volume": "equivalent to initial culture volume in each bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2-8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "nutrient deplete medium",
+          "volume": "~5% of initial culture volume in each bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "Accuri",
+          "reagent": "cell concentrate sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine density"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cell concentrate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "normal growth conditions",
+          "duration": "during Accuri run and calculations",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "appropriate volume based on Accuri measurement",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "inoculate experimental nutrient replete and deplete culture flasks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "experimental nutrient replete and deplete culture flasks",
+          "reagent": "cell concentrate",
+          "volume": "calculated to achieve starting density corresponding to early-exponential growth",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "experimental culture flasks",
+          "reagent": null,
+          "volume": "as needed to achieve target density and volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "experimental cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": "experimental cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "FCM and Accuri measurements"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "monitor",
+        "parameters": {
+          "container": "experimental cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "daily",
+          "speed": null,
+          "other": {
+            "purpose": "growth"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "experimental cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "FCM (cell counts) and elemental analyses"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 1.2 mL cryovial tube",
+          "reagent": "culture",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": "25% glutaraldehyde",
+          "volume": "10 \u00b5L (0.25% final conc)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "duplicate cryovial",
+          "reagent": "mixed sample",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flash freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until analysis",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "acid-cleaned and autoclaved glass filter unit",
+          "reagent": "pre-combusted 25mm Advantec glass fiber filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "filter funnel",
+          "reagent": "media or culture",
+          "volume": "20-40 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vacuum",
+        "parameters": {
+          "container": "filter funnel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until filter is dry",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fold",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "ethanol-cleaned forceps"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "12-well plate or combusted aluminum foil",
+          "reagent": "folded filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "acid-cleaned 50 mL conical tube",
+          "reagent": "filtrate",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "filter tower",
+          "reagent": "MilliQ",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "between": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "filters and filtrate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "until further processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 1.2 mL cryovial tube",
+          "reagent": "culture",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": "37% formaldehyde",
+          "volume": "100 \u00b5L (3.7% final conc)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "chemical hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cryovial tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until analysis (can be stored for several days or flash frozen in liquid nitrogen and stored at -80\u00b0C)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsplit(container='acid-cleaned and autoclaved centrifuge bottles', reagent='culture biomass', volume='evenly among 2 or 4 bottles')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: centrifuge bottles, volume: remove volume until bottle pairs are within 0.01 g of each other, other: {})\n# MANUAL: carry (container: centrifuge bottles, other: {'location': 'Sorvall RC 26 Plus centrifuge'})\n# MANUAL: fit (container: centrifuge, reagent: large rotor, other: {})\n# MANUAL: place (container: paired bottles, other: {'location': 'rotor'})\n# MANUAL: tighten (container: rotor lid, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge bottles', reagent='culture biomass', temperature='+20/+25\u00b0C', duration='32 minutes (includes 2 minute ramp up)', speed='7300 RPM (10,000 rcf)', rotor='GS-3', option_code='03')\n\n### MANUAL SECTION ###\n# MANUAL: transport (container: centrifuge bottles, other: {'location': 'hood'})\n\n### AUTOMATED SECTION ###\npour(container='centrifuge bottles', reagent='supernatant', volume='all', destination='waste container')\nresuspend(container='centrifuge bottles', reagent='nutrient deplete medium', volume='equivalent to initial culture volume in each bottle')\nrepeat(container='centrifuge bottles', reagent='nutrient deplete medium', volume='equivalent to initial culture volume in each bottle', times='2-8')\nresuspend(container='centrifuge bottles', reagent='nutrient deplete medium', volume='~5% of initial culture volume in each bottle')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: Accuri, reagent: cell concentrate sample, other: {'purpose': 'determine density'})\n\n### AUTOMATED SECTION ###\nstore(container='cell concentrate', temperature='normal growth conditions', duration='during Accuri run and calculations')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (volume: appropriate volume based on Accuri measurement, other: {'purpose': 'inoculate experimental nutrient replete and deplete culture flasks'})\n# MANUAL: inoculate (container: experimental nutrient replete and deplete culture flasks, reagent: cell concentrate, volume: calculated to achieve starting density corresponding to early-exponential growth, other: {})\n# MANUAL: adjust (container: experimental culture flasks, volume: as needed to achieve target density and volume, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='experimental cultures')\nsample(container='experimental cultures', purpose='FCM and Accuri measurements')\n\n### MANUAL SECTION ###\n# MANUAL: monitor (container: experimental cultures, duration: daily, other: {'purpose': 'growth'})\n# MANUAL: collect (container: experimental cultures, other: {'purpose': 'FCM (cell counts) and elemental analyses'})\n\n### AUTOMATED SECTION ###\ntransfer(container='sterile 1.2 mL cryovial tube', reagent='culture', volume='1 mL')\nadd(container='cryovial tube', reagent='25% glutaraldehyde', volume='10 \u00b5L (0.25% final conc)')\nvortex(container='cryovial tube', speed='gentle', purpose='mix')\naliquot(container='duplicate cryovial', reagent='mixed sample', volume='500 \u00b5L')\nincubate(container='cryovials', temperature='4\u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: cryovials, temperature: liquid nitrogen, other: {'method': 'flash freeze'})\n\n### AUTOMATED SECTION ###\nstore(container='cryovials', temperature='-80\u00b0C', duration='until analysis')\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: acid-cleaned and autoclaved glass filter unit, reagent: pre-combusted 25mm Advantec glass fiber filter, other: {})\n\n### AUTOMATED SECTION ###\napply(container='filter funnel', reagent='media or culture', volume='20-40 mL')\nvacuum(container='filter funnel', duration='until filter is dry')\n\n### MANUAL SECTION ###\n# MANUAL: fold (container: filter, other: {'tool': 'ethanol-cleaned forceps'})\n# MANUAL: collect (container: 12-well plate or combusted aluminum foil, reagent: folded filter, other: {})\n\n### AUTOMATED SECTION ###\npour(container='acid-cleaned 50 mL conical tube', reagent='filtrate', volume='all')\nrinse(container='filter tower', reagent='MilliQ', between='samples')\nstore(container='filters and filtrate', temperature='-20\u00b0C', duration='until further processing')\ntransfer(container='sterile 1.2 mL cryovial tube', reagent='culture', volume='1 mL')\nadd(container='cryovial tube', reagent='37% formaldehyde', volume='100 \u00b5L (3.7% final conc)', location='chemical hood')\nmix(container='cryovial tube', method='inverting')\nincubate(container='cryovials', temperature='room temp', duration='15 minutes', light='dark')\nstore(container='cryovials', temperature='4\u00b0C', duration='until analysis (can be stored for several days or flash frozen in liquid nitrogen and stored at -80\u00b0C)')",
+    "source_file": "protocol_304.txt"
+  }
+]

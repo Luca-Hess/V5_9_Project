@@ -1,0 +1,457 @@
+[
+  {
+    "protocol": "Wet-mount Method for Enumeration of Aquatic Viruses\nPlace 1 mL of sample into a 1.5 mL microcentrifuge tube.\nAdd 1 \u03bcL Iron Chloride Solution and vortex to mix.\nCentrifuge the sample at ~14K RCF for 20 minutes.\nRemove supernatant using a pipette, leaving a small, undisturbed pellet of Fe oxyhydroxides behind (Figure 2).\nDissolve the pellet in 10 \u03bcL of Ascorbic-EDTA Buffer, creating a 100-fold concentration of the original sample.\nVortex and then pipette up and down to ensure complete dissolution.\nVortex and then pipette up and down to ensure complete dissolution.\nCombine 10 \u03bcL sample (concentrated or unconcentrated) and 2 \u03bcL SYBR Gold Working Stock, vortex to mix, and place in dark for 15 minutes.\nIf sample is unconcentrated, add 1 \u03bcL of Ascorbic Acid Antifade Solution.\nAdd 5 \u03bcL of glycerol to stained sample and vortex to mix.\nAdd 2 \u00b5L Working Bead Solution to sample.\nClean glass slides and cover slips with isopropanol and Kimwipes.\nThoroughly mix the sample/bead mixture by pipetting up and down, then immediately pipette 10 \u03bcL of it onto a glass microscope slide.\nPlace a coverslip over the mixture and avoid trapping air under the coverslip.\nPlace a coverslip over the mixture and avoid trapping air under the coverslip.\nView viruses under ~495 nm excitation at 1000X magnification using an epifluorescence microscope.\nCount the number of viruses in one defined field of view.\nOnce complete, switch off the excitation and turn on the white light of the microscope to count the beads in the same field of view (Figure 3).\nRepeat Step 14\u00a0& 15\u00a0by counting viruses and beads in multiple fields until at least 100 of each have been counted.\nThe concentration of viruses can then be determined with the following equation\nPrepared samples can be stored at -20\u00baC either in the microcentrifuge tube (i.e., after completing Step 4) or after mounted on slides (i.e., after completing Steps\u00a012&13) with no significant change in the calculated virus concentration.",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "sample",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "Iron Chloride Solution",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "~14,000 RCF",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": "all but pellet",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave_pellet_undisturbed": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "Ascorbic-EDTA Buffer",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {
+            "purpose": "dissolve pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipette up and down",
+          "other": {
+            "purpose": "ensure complete dissolution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {
+            "purpose": "ensure complete dissolution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipette up and down",
+          "other": {
+            "purpose": "ensure complete dissolution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": "sample (10 \u03bcL, concentrated or unconcentrated) and SYBR Gold Working Stock (2 \u03bcL)",
+          "volume": "10 \u03bcL sample, 2 \u03bcL SYBR Gold Working Stock",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "dark",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "Ascorbic Acid Antifade Solution",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if sample is unconcentrated"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "glycerol",
+          "volume": "5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "stained sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "Working Bead Solution",
+          "volume": "2 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "glass slides and cover slips",
+          "reagent": "isopropanol and Kimwipes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipette up and down",
+          "other": {
+            "target": "sample/bead mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "sample/bead mixture",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid_trapping_air": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid_trapping_air": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "view",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "excitation": "~495 nm",
+            "magnification": "1000X",
+            "instrument": "epifluorescence microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "viruses",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field_of_view": "one defined"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "switch",
+        "parameters": {
+          "container": "microscope",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "excitation",
+            "to": "white light"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "field_of_view": "same as viruses"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "viruses and beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat_until": "at least 100 of each counted",
+            "fields": "multiple"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "virus concentration",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "equation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microcentrifuge tube or glass slide",
+          "reagent": "prepared sample",
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after_step": "4 or 12&13"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='1.5 mL microcentrifuge tube', reagent='sample', volume='1 mL')\ndispense(container='1.5 mL microcentrifuge tube', reagent='Iron Chloride Solution', volume='1 \u03bcL')\nmix(container='1.5 mL microcentrifuge tube', speed='vortex')\ncentrifuge(container='1.5 mL microcentrifuge tube', duration='20 minutes', speed='~14,000 RCF')\naspirate(container='1.5 mL microcentrifuge tube', reagent='supernatant', volume='all but pellet', leave_pellet_undisturbed=True)\ndispense(container='1.5 mL microcentrifuge tube', reagent='Ascorbic-EDTA Buffer', volume='10 \u03bcL', target='pellet')\nmix(container='1.5 mL microcentrifuge tube', speed='vortex', purpose='dissolve pellet')\nmix(container='1.5 mL microcentrifuge tube', speed='pipette up and down', purpose='ensure complete dissolution')\nmix(container='1.5 mL microcentrifuge tube', speed='vortex', purpose='ensure complete dissolution')\nmix(container='1.5 mL microcentrifuge tube', speed='pipette up and down', purpose='ensure complete dissolution')\ncombine(reagent='sample (10 \u03bcL, concentrated or unconcentrated) and SYBR Gold Working Stock (2 \u03bcL)', volume='10 \u03bcL sample, 2 \u03bcL SYBR Gold Working Stock')\nmix(speed='vortex')\nincubate(temperature='dark', duration='15 minutes')\ndispense(reagent='Ascorbic Acid Antifade Solution', volume='1 \u03bcL', condition='if sample is unconcentrated')\ndispense(reagent='glycerol', volume='5 \u03bcL', target='stained sample')\nmix(speed='vortex')\ndispense(reagent='Working Bead Solution', volume='2 \u03bcL', target='sample')\n\n### MANUAL SECTION ###\n# MANUAL: clean (container: glass slides and cover slips, reagent: isopropanol and Kimwipes, other: {})\n\n### AUTOMATED SECTION ###\nmix(speed='pipette up and down', target='sample/bead mixture')\ndispense(container='glass microscope slide', reagent='sample/bead mixture', volume='10 \u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: glass microscope slide, reagent: coverslip, other: {'avoid_trapping_air': True})\n# MANUAL: place (container: glass microscope slide, reagent: coverslip, other: {'avoid_trapping_air': True})\n# MANUAL: view (container: glass microscope slide, reagent: viruses, other: {'excitation': '~495 nm', 'magnification': '1000X', 'instrument': 'epifluorescence microscope'})\n# MANUAL: count (container: glass microscope slide, reagent: viruses, other: {'field_of_view': 'one defined'})\n# MANUAL: switch (container: microscope, other: {'from': 'excitation', 'to': 'white light'})\n# MANUAL: count (container: glass microscope slide, reagent: beads, other: {'field_of_view': 'same as viruses'})\n# MANUAL: count (container: glass microscope slide, reagent: viruses and beads, other: {'repeat_until': 'at least 100 of each counted', 'fields': 'multiple'})\n# MANUAL: determine (reagent: virus concentration, other: {'method': 'equation'})\n# MANUAL: store (container: microcentrifuge tube or glass slide, reagent: prepared sample, temperature: -20\u00baC, other: {'after_step': '4 or 12&13'})",
+    "source_file": "protocol_109.txt"
+  }
+]

@@ -1,0 +1,882 @@
+[
+  {
+    "protocol": "Detection of protein-synthesizing microorganisms in the environment via bioorthogonal non-canonical amino acid tagging (BONCAT)\nDirectly add AHA or HPG using a sterile-filtered (0.2 \u03bcM), pH- adjusted (pH 7.0) stock solution yielding a final concentration of 1 nM to 1 mM.\nAdditionally, perform replicate experiments and include replicated incubations without AHA/HPG.\nFor L-2-amino-4-azidobutanoic acid (L-azidohomoalanine, AHA): Dissolve in nano-pure water, adjust to pH 7.0, filter sterilize (0.2 \u03bcm), and store in the dark at 4 C.\nPrepare stock solutions of 1\u2013100 mM.\nFor L-2-amino-5-hexynoic acid (L-homopropargylglycine, HPG): Dissolve in nano-pure water, adjust to pH 7.0, filter sterilize (0.2 \u03bcm), and store in the dark at 4 C.\nPrepare stock solutions of 1\u2013100 mM.\nFix cells according to standard protocols [34] immediately after sampling either by (1) fixation in 3% formaldehyde (PFA) in PBS (See Steps 3-6)\u00a0or (2) by resuspending pelleted biomass in a 1:1 mix of PBS:EtOH.\n(See Step 7) For fixation with PFA, pellet the biomass, remove the supernatant (SN), and resuspend cells in 3% PFA in PBS.\nFor aqueous samples, directly add PFA to reach a final concentration of 3% PFA.\nFix for either 3 h on ice or 1 h at RT.\nAfter fixation, Pellet the biomass by centrifugation or filter onto 0.2 \u03bcm filters.\nWash with PBS to remove remaining PFA before resuspending biomass in 1:1 PBS: EtOH.\nStore at -20\u00b0C.\nMake sure to deposit PFA in the chemical waste.\nFor EtOH fixation, pellet biomass, remove supernatant, resuspend in 1:1 PBS:EtOH, and store at -20\u00b0C.\nImmobilize biomass either on glass slides or filters.\nDry at 46\u00b0C or, if not available, at 37\u00b0C or RT.\nDehydrate and permeabilize cells by sequentially placing slides or filters for 3 min into 50 mL tubes that contain 50, 80, and 96% ethanol.\nDry biomass using pressurized air.\nPellet sample via centrifugation (16,100g or max.\nsetting for 5 min at RT) and resuspend in 250 \u03bcL 80% EtOH.\nMix by vortex and incubate for 3 min at RT.\nAdd 1.5 mL 96% EtOH, mix by vortex, and incubate for 3 min at RT.\nAfterwards, pellet sample via centrifugation and resuspend in 221 \u03bcL PBS.\nRemoving small volumes of leftover EtOH is not necessary as it does not interfere with the click reaction.\nIf using immobilized biomass, after dehydration of the sample, prepare the dye premix by mixing 1.25\u03bcL of 20 mM CuSO4 solution with 2.50\u03bcL of 50 mM THPTA and 0.30\u03bcL of alkyne dye.\nAllow to react for 3 min at RT in the dark.\nWe recommend to perform Cu(I)-catalyzed click chemistry at a dye concentration of 1-5\u03bcM (final concentration) to guarantee for best signal-to-noise ratios, but substantially lower or higher concentrations can be used, if necessary.\nWe successfully tested concentrations as low as 10 nM and as high as 50\u03bcM.\nIf using immobilized biomass after dehydration, continue.\nOtherwise, skip to Step 18.\nAdd 12.5 \u03bcL of each 100 mM sodium ascorbate and 100 mM aminoguanidine hydrochloride to 221 \u03bcL PBS.\nThen, add the dye premix and invert the tube once (do not mix by vortex to maintain reducing conditions).\nCover the sample with 20 \u03bcL of the click solution, transfer the slide into a humid chamber (water on tissue paper), and incubate in the dark at RT for 30 min.\nIncreasing the incubation time is possible, but typically does not increase fluorescence signal.\nWash the slide or filter three times for 3 min each in PBS-filled 50 mL tubes before dehydrating it by incubating it for 3 min in 50% EtOH at RT.\nIf the biomass is in solution, all reagents (sodium ascorbate and aminoguanidine, followed after 3 min by the dye premix, final concentrations as described above) are added directly to the sample.\nInvert tubes once and incubate in the dark at RT for 30 min.\nAfterwards, wash samples three times with PBS and then one time in 50% EtOH (RT).\nBetween washing steps, pellet samples via centrifugation for 5 min at 16,100g (or highest setting) at RT.\nFinally, resuspend biomass in a 1:1 mix of PBS:EtOH, transfer onto a glass slide, and air-dry",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "AHA or HPG (sterile-filtered, pH 7.0 stock solution)",
+          "volume": "to yield final concentration of 1 nM to 1 mM",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sterile_filter": "0.2 \u03bcm",
+            "pH": "7.0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "AHA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "nano-pure water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "AHA solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "AHA solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "AHA solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "AHA stock solution",
+          "volume": "1\u2013100 mM",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "HPG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "nano-pure water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "HPG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "HPG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "HPG solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "HPG stock solution",
+          "volume": "1\u2013100 mM",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "sample",
+          "reagent": "3% formaldehyde (PFA) in PBS or 1:1 PBS:EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "immediately after sampling"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "biomass pellet",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "biomass pellet",
+          "reagent": "3% PFA in PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "aqueous sample",
+          "reagent": "PFA",
+          "volume": "to reach final concentration of 3% PFA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "fixed sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice or RT",
+          "duration": "3 h (on ice) or 1 h (RT)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "centrifugation or filtration onto 0.2 \u03bcm filters"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "biomass",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove remaining PFA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "biomass",
+          "reagent": "1:1 PBS:EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "deposit",
+        "parameters": {
+          "container": null,
+          "reagent": "PFA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "chemical waste"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "biomass pellet",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "biomass pellet",
+          "reagent": "1:1 PBS:EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "immobilize",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "surface": "glass slides or filters"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": "46\u00b0C or 37\u00b0C or RT",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "slides or filters",
+          "reagent": "ethanol (50%, 80%, 96%)",
+          "volume": "50 mL tubes",
+          "temperature": null,
+          "duration": "3 min each",
+          "speed": null,
+          "other": {
+            "sequence": "sequentially"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pressurized air"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "5 min",
+          "speed": "16,100g or max setting",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "250 \u03bcL 80% EtOH",
+          "volume": "250 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "1.5 mL 96% EtOH",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "221 \u03bcL PBS",
+          "volume": "221 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "dye premix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": {
+              "CuSO4": "1.25 \u03bcL of 20 mM",
+              "THPTA": "2.50 \u03bcL of 50 mM",
+              "alkyne dye": "0.30 \u03bcL"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "react",
+        "parameters": {
+          "container": "dye premix",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "221 \u03bcL PBS",
+          "reagent": "12.5 \u03bcL of each 100 mM sodium ascorbate and 100 mM aminoguanidine hydrochloride",
+          "volume": "12.5 \u03bcL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "dye premix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "do not mix by vortex"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "slide",
+          "reagent": "20 \u03bcL click solution",
+          "volume": "20 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "humid chamber (water on tissue paper)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide or filter",
+          "reagent": "PBS",
+          "volume": "50 mL tubes",
+          "temperature": null,
+          "duration": "3 min each, 3 times",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "slide or filter",
+          "reagent": "50% EtOH",
+          "volume": null,
+          "temperature": "RT",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample (biomass in solution)",
+          "reagent": "sodium ascorbate and aminoguanidine",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "followed after 3 min by dye premix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sample",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sample",
+          "reagent": "50% EtOH",
+          "volume": null,
+          "temperature": "RT",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "5 min",
+          "speed": "16,100g or highest setting",
+          "other": {
+            "between": "washing steps"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "biomass",
+          "reagent": "1:1 PBS:EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "biomass",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "glass slide"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "biomass on glass slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "air-dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='sample', reagent='AHA or HPG (sterile-filtered, pH 7.0 stock solution)', volume='to yield final concentration of 1 nM to 1 mM', sterile_filter='0.2 \u03bcm', pH='7.0')\n\n### MANUAL SECTION ###\n# MANUAL: dissolve (reagent: AHA, other: {'solvent': 'nano-pure water'})\n# MANUAL: adjust (reagent: AHA solution, other: {'pH': '7.0'})\n\n### AUTOMATED SECTION ###\nfilter(reagent='AHA solution', filter_size='0.2 \u03bcm')\n\n### MANUAL SECTION ###\n# MANUAL: store (reagent: AHA solution, temperature: 4\u00b0C, other: {'light': 'dark'})\n# MANUAL: prepare (reagent: AHA stock solution, volume: 1\u2013100 mM, other: {})\n# MANUAL: dissolve (reagent: HPG, other: {'solvent': 'nano-pure water'})\n# MANUAL: adjust (reagent: HPG solution, other: {'pH': '7.0'})\n\n### AUTOMATED SECTION ###\nfilter(reagent='HPG solution', filter_size='0.2 \u03bcm')\n\n### MANUAL SECTION ###\n# MANUAL: store (reagent: HPG solution, temperature: 4\u00b0C, other: {'light': 'dark'})\n# MANUAL: prepare (reagent: HPG stock solution, volume: 1\u2013100 mM, other: {})\n# MANUAL: fix (container: sample, reagent: 3% formaldehyde (PFA) in PBS or 1:1 PBS:EtOH, other: {'method': 'immediately after sampling'})\n\n### AUTOMATED SECTION ###\npellet(container='biomass')\nremove(container='biomass pellet', reagent='supernatant')\nresuspend(container='biomass pellet', reagent='3% PFA in PBS')\nadd(container='aqueous sample', reagent='PFA', volume='to reach final concentration of 3% PFA')\nincubate(container='fixed sample', temperature='on ice or RT', duration='3 h (on ice) or 1 h (RT)')\npellet(container='biomass', method='centrifugation or filtration onto 0.2 \u03bcm filters')\nwash(container='biomass', reagent='PBS', purpose='remove remaining PFA')\nresuspend(container='biomass', reagent='1:1 PBS:EtOH')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: biomass, temperature: -20\u00b0C, other: {})\n# MANUAL: deposit (reagent: PFA, other: {'location': 'chemical waste'})\n\n### AUTOMATED SECTION ###\npellet(container='biomass')\nremove(container='biomass pellet', reagent='supernatant')\nresuspend(container='biomass pellet', reagent='1:1 PBS:EtOH')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: biomass, temperature: -20\u00b0C, other: {})\n# MANUAL: immobilize (container: biomass, other: {'surface': 'glass slides or filters'})\n\n### AUTOMATED SECTION ###\ndry(container='biomass', temperature='46\u00b0C or 37\u00b0C or RT')\ndehydrate(container='slides or filters', reagent='ethanol (50%, 80%, 96%)', volume='50 mL tubes', duration='3 min each', sequence='sequentially')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: biomass, other: {'method': 'pressurized air'})\n\n### AUTOMATED SECTION ###\npellet(container='sample', temperature='RT', duration='5 min', speed='16,100g or max setting')\nresuspend(container='pellet', reagent='250 \u03bcL 80% EtOH', volume='250 \u03bcL')\nmix(container='sample', speed='vortex')\nincubate(container='sample', temperature='RT', duration='3 min')\nadd(container='sample', reagent='1.5 mL 96% EtOH', volume='1.5 mL')\nmix(container='sample', speed='vortex')\nincubate(container='sample', temperature='RT', duration='3 min')\npellet(container='sample')\nresuspend(container='pellet', reagent='221 \u03bcL PBS', volume='221 \u03bcL')\nprepare(reagent='dye premix', components={'CuSO4': '1.25 \u03bcL of 20 mM', 'THPTA': '2.50 \u03bcL of 50 mM', 'alkyne dye': '0.30 \u03bcL'})\nreact(container='dye premix', temperature='RT', duration='3 min', light='dark')\nadd(container='221 \u03bcL PBS', reagent='12.5 \u03bcL of each 100 mM sodium ascorbate and 100 mM aminoguanidine hydrochloride', volume='12.5 \u03bcL each')\nadd(container='tube', reagent='dye premix')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: tube, other: {'note': 'do not mix by vortex'})\n# MANUAL: cover (container: slide, reagent: 20 \u03bcL click solution, volume: 20 \u03bcL, other: {})\n# MANUAL: transfer (container: slide, other: {'destination': 'humid chamber (water on tissue paper)'})\n\n### AUTOMATED SECTION ###\nincubate(container='slide', temperature='RT', duration='30 min', light='dark')\nwash(container='slide or filter', reagent='PBS', volume='50 mL tubes', duration='3 min each, 3 times')\ndehydrate(container='slide or filter', reagent='50% EtOH', temperature='RT', duration='3 min')\nadd(container='sample (biomass in solution)', reagent='sodium ascorbate and aminoguanidine', timing='followed after 3 min by dye premix')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: tube, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='tube', temperature='RT', duration='30 min', light='dark')\nwash(container='sample', reagent='PBS', times='3')\nwash(container='sample', reagent='50% EtOH', temperature='RT', times='1')\npellet(container='sample', temperature='RT', duration='5 min', speed='16,100g or highest setting', between='washing steps')\nresuspend(container='biomass', reagent='1:1 PBS:EtOH')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: biomass, other: {'destination': 'glass slide'})\n# MANUAL: dry (container: biomass on glass slide, other: {'method': 'air-dry'})",
+    "source_file": "protocol_147.txt"
+  }
+]

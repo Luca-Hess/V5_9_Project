@@ -1,0 +1,150 @@
+[
+  {
+    "protocol": "Protein Expression Using BL21(DE3) (C2527)\nTransform expression plasmid into BL21(DE3).\nPlate on antibiotic selection plates.\nIncubate overnight at 37\u00b0C.\nResuspend a single colony in 10 ml liquid culture with antibiotic.\nIncubate at 37\u00b0C until OD600\u00a0reaches 0.4\u20130.8.\nInduce with 4 or 40 \u00b5l of a 100 mM stock of IPTG (final concentration of 40 or 400 \u00b5M)\u00a0 Induce for 3 to 5 hours at 37\u00b0C.\nCheck for expression either by Coomassie stained protein gel, Western Blot or activity assay.\nCheck expression in both the total cell extract (soluble + insoluble) and the soluble fraction only.",
+    "actions": [
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "expression plasmid, BL21(DE3) cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "antibiotic selection plates",
+          "reagent": "transformed BL21(DE3) cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "antibiotic selection plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "liquid culture tube or flask",
+          "reagent": "single colony, liquid culture with antibiotic",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "liquid culture tube or flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "until OD600 reaches 0.4\u20130.8",
+          "speed": null,
+          "other": {
+            "monitor_OD600": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "induce",
+        "parameters": {
+          "container": "liquid culture tube or flask",
+          "reagent": "IPTG (100 mM stock)",
+          "volume": "4 or 40 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "40 or 400 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "liquid culture tube or flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "3 to 5 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "methods": [
+              "Coomassie stained protein gel",
+              "Western Blot",
+              "activity assay"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fractions": [
+              "total cell extract (soluble + insoluble)",
+              "soluble fraction only"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: expression plasmid, BL21(DE3) cells, other: {})\n# MANUAL: plate (container: antibiotic selection plates, reagent: transformed BL21(DE3) cells, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='antibiotic selection plates', temperature='37\u00b0C', duration='overnight')\nresuspend(container='liquid culture tube or flask', reagent='single colony, liquid culture with antibiotic', volume='10 ml')\nincubate(container='liquid culture tube or flask', temperature='37\u00b0C', duration='until OD600 reaches 0.4\u20130.8', monitor_OD600=True)\ninduce(container='liquid culture tube or flask', reagent='IPTG (100 mM stock)', volume='4 or 40 \u00b5l', final_concentration='40 or 400 \u00b5M')\nincubate(container='liquid culture tube or flask', temperature='37\u00b0C', duration='3 to 5 hours')\n\n### MANUAL SECTION ###\n# MANUAL: check (other: {'methods': ['Coomassie stained protein gel', 'Western Blot', 'activity assay']})\n# MANUAL: check (other: {'fractions': ['total cell extract (soluble + insoluble)', 'soluble fraction only']})",
+    "source_file": "protocol_113.txt"
+  }
+]

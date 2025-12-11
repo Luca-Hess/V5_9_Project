@@ -1,0 +1,521 @@
+[
+  {
+    "protocol": "CviJI Purification From IL-3A Virus Infected NC64A Chlorella\nPrepare Buffer A: \nPrepare Buffer B: \nPrepare Buffer B, pH 8.5: \nPrepare Storage Buffer: \nPrepare 1X CviJI Assay Buffer: \nStore the enzyme at -20\u00b0C.\nThaw 7 hour IL-3A virus infected NC64A chlorella and suspend in MSK flasks with Buffer A.\nRecover the homogenate to clean tubes.\nAdjust the homogenate supernatant to 70% saturation with (NH4)2SO4 at 4\u00b0C with gentle stirring.\nCentrifuge the material in the Sorvall SS34 rotor at 10,000 rpm 10 min, 4\u00b0C.\nSuspend the pellets with Buffer A.\nCentrifuge the material in the Sorvall SS34 rotor at 10,000 rpm, 10 min, 4\u00b0C.\nDilute the supernatant with 10-15 volumes of Buffer B to reduce the NaCl concentration.\nElute the Heparin-Sepharose column with Buffer B using a 0-2.0 M KOAc gradient.\nElute the Blue-Sepharose column with Buffer B using a 0-2.0 M KOAc gradient.\nDilute the pooled fractions with 10-15 volumes of Buffer B, pH 8.5 to reduce the salt concentration.\nElute the Q-Sepharose column with Buffer B, pH 8.5 using a 0-2.0 M KOAc gradient.\nConcentrate the pooled enzyme by dialysis overnight into storage buffer at 4\u00b0C.\nHomogenize the cells in the MSK mechanical homogenizer with 15 gm of 0.3 mm glass beads at 4,000 rpm for 90 sec (2 X 45 sec) with CO2 cooling.\nWash the glass beads 3X with 5 mL of Buffer A and combine with the homogenate.\nCentrifuge the homogenate in the Sorvall SS34 rotor at 10,000 rpm, 20 min, 4\u00b0C.\nSave the supernatant.\nIncubate at 4\u00b0C for 60-90 min without stirring.\nSave the pellet.\nPer mL of suspension add: 0.45 mL of 4 M NaCl and 0.45 mL of 28% PEG 8000 (heated to 65\u00b0C).\nMix gently by inversion for 5-10 min.\nSave the supernatant.\nLoad the material overnight onto a Heparin-Sepharose column equilibrated with Buffer B in the cold room.\nAssay the column fractions and pool the active fractions.\nDilute the pooled fractions with 10-15 volumes of Buffer B to reduce the salt concentration.\nLoad the material overnight onto a Blue-Sepharose column equilibrated with Buffer B in the cold room.\nAssay the column fractions and pool the active fractions.\nLoad the material overnight onto a Q-Sepharose column equilibrated with Buffer B, pH 8.5 in the cold room.\nAssay the column fractions and pool the active fractions.\nAdd BSA (10 mg/mL) to a final concentration of 100 \u00b5g/mL.",
+    "actions": [
+      {
+        "action": "store",
+        "parameters": {
+          "container": "enzyme storage tube",
+          "reagent": "enzyme",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "MSK flask",
+          "reagent": "7 hour IL-3A virus infected NC64A chlorella",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "MSK flask",
+          "reagent": "Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "clean tubes",
+          "reagent": "homogenate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "homogenate supernatant",
+          "reagent": "(NH4)2SO4",
+          "volume": "to 70% saturation",
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": "gentle stirring",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "pellets",
+          "reagent": "Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": "Buffer B",
+          "volume": "10-15 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "reduce NaCl concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "Heparin-Sepharose column",
+          "reagent": "Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gradient": "0-2.0 M KOAc"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "Blue-Sepharose column",
+          "reagent": "Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gradient": "0-2.0 M KOAc"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "pooled fractions",
+          "reagent": "Buffer B, pH 8.5",
+          "volume": "10-15 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "reduce salt concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "Q-Sepharose column",
+          "reagent": "Buffer B, pH 8.5",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gradient": "0-2.0 M KOAc"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "pooled enzyme",
+          "reagent": "storage buffer",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "method": "dialysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "MSK mechanical homogenizer",
+          "reagent": "cells, 15 gm of 0.3 mm glass beads",
+          "volume": null,
+          "temperature": "CO2 cooling",
+          "duration": "90 sec (2 x 45 sec)",
+          "speed": "4,000 rpm",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "glass beads",
+          "reagent": "Buffer A",
+          "volume": "5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "3X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "homogenate",
+          "reagent": "washed glass beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "homogenate",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "60-90 min",
+          "speed": "without stirring",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "suspension",
+          "reagent": "0.45 mL of 4 M NaCl and 0.45 mL of 28% PEG 8000 (heated to 65\u00b0C)",
+          "volume": "per mL of suspension",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": "gently by inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Heparin-Sepharose column",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "equilibrated_with": "Buffer B"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": "column fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "active fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "pooled fractions",
+          "reagent": "Buffer B",
+          "volume": "10-15 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "reduce salt concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Blue-Sepharose column",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "equilibrated_with": "Buffer B"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": "column fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "active fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Q-Sepharose column",
+          "reagent": "material",
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "equilibrated_with": "Buffer B, pH 8.5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": "column fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "active fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "BSA (10 mg/mL)",
+          "volume": "to final concentration of 100 \u00b5g/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: store (container: enzyme storage tube, reagent: enzyme, temperature: -20\u00b0C, other: {})\n# MANUAL: thaw (container: MSK flask, reagent: 7 hour IL-3A virus infected NC64A chlorella, other: {})\n\n### AUTOMATED SECTION ###\nsuspend(container='MSK flask', reagent='Buffer A')\n\n### MANUAL SECTION ###\n# MANUAL: recover (container: clean tubes, reagent: homogenate, other: {})\n\n### AUTOMATED SECTION ###\nadjust(container='homogenate supernatant', reagent='(NH4)2SO4', volume='to 70% saturation', temperature='4\u00b0C', speed='gentle stirring')\ncentrifuge(container='Sorvall SS34 rotor', reagent='material', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm')\nsuspend(container='pellets', reagent='Buffer A')\ncentrifuge(container='Sorvall SS34 rotor', reagent='material', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm')\ndilute(container='supernatant', reagent='Buffer B', volume='10-15 volumes', purpose='reduce NaCl concentration')\nelute(container='Heparin-Sepharose column', reagent='Buffer B', gradient='0-2.0 M KOAc')\nelute(container='Blue-Sepharose column', reagent='Buffer B', gradient='0-2.0 M KOAc')\ndilute(container='pooled fractions', reagent='Buffer B, pH 8.5', volume='10-15 volumes', purpose='reduce salt concentration')\nelute(container='Q-Sepharose column', reagent='Buffer B, pH 8.5', gradient='0-2.0 M KOAc')\n\n### MANUAL SECTION ###\n# MANUAL: concentrate (container: pooled enzyme, reagent: storage buffer, temperature: 4\u00b0C, duration: overnight, other: {'method': 'dialysis'})\n# MANUAL: homogenize (container: MSK mechanical homogenizer, reagent: cells, 15 gm of 0.3 mm glass beads, temperature: CO2 cooling, duration: 90 sec (2 x 45 sec), speed: 4,000 rpm, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='glass beads', reagent='Buffer A', volume='5 mL', times='3X')\n\n### MANUAL SECTION ###\n# MANUAL: combine (container: homogenate, reagent: washed glass beads, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall SS34 rotor', reagent='homogenate', temperature='4\u00b0C', duration='20 min', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nincubate(temperature='4\u00b0C', duration='60-90 min', speed='without stirring')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: pellet, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='suspension', reagent='0.45 mL of 4 M NaCl and 0.45 mL of 28% PEG 8000 (heated to 65\u00b0C)', volume='per mL of suspension')\nmix(duration='5-10 min', speed='gently by inversion')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: supernatant, other: {})\n# MANUAL: load (container: Heparin-Sepharose column, reagent: material, temperature: cold room, duration: overnight, other: {'equilibrated_with': 'Buffer B'})\n# MANUAL: assay (container: column fractions, other: {})\n# MANUAL: pool (container: active fractions, other: {})\n\n### AUTOMATED SECTION ###\ndilute(container='pooled fractions', reagent='Buffer B', volume='10-15 volumes', purpose='reduce salt concentration')\n\n### MANUAL SECTION ###\n# MANUAL: load (container: Blue-Sepharose column, reagent: material, temperature: cold room, duration: overnight, other: {'equilibrated_with': 'Buffer B'})\n# MANUAL: assay (container: column fractions, other: {})\n# MANUAL: pool (container: active fractions, other: {})\n# MANUAL: load (container: Q-Sepharose column, reagent: material, temperature: cold room, duration: overnight, other: {'equilibrated_with': 'Buffer B, pH 8.5'})\n# MANUAL: assay (container: column fractions, other: {})\n# MANUAL: pool (container: active fractions, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='BSA (10 mg/mL)', volume='to final concentration of 100 \u00b5g/mL')",
+    "source_file": "protocol_394.txt"
+  }
+]

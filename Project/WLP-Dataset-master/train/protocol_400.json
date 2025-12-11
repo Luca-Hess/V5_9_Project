@@ -1,0 +1,357 @@
+[
+  {
+    "protocol": "Phenol-chloroform extraction with ethanol precipitation\nTo the viral suspension (\u22640.6 mL per 2-mL microcentrifuge tube, scale up for larger volumes) add an equal volume of PCI and shake to emulsify.\nCentrifuge at 10,000g for 5 min to facilitate separation of the organic and aqueous phases.\nTransfer the DNA-containing aqueous phase (upper) to a new tube by aspiration with a pipette, being careful to avoid material at the interface.\nRepeat steps 1\u20133 as needed until the interface appears to be free of extracted material (one extraction may suffice for relatively pure viral preparations).\nAdd an equal volume of CI to the aqueous phase and shake to emulsify.\nCentrifuge as in step 2 to separate phases.\nTransfer the aqueous phase (upper) to a new tube.\nAdd 1 \u00b5L polyacryl carrier.\nAdd 1/10 of a volume of sodium acetate and invert tube or vortex to mix.\nAdd 2 volumes of ethanol and invert tube to mix.\nIncubate sample on ice for 10 min.\nCentrifuge for 10 to 30 min, at 0\u20134\u00b0C if possible.\nAspirate or decant the supernatant, being careful not to disturb the pellet.\nAdd 500 \u00b5L ice-cold 70% ethanol.\nCentrifuge at 10,000g for 10 min.\nDecant or aspirate supernatant as completely as possible, being careful not to disturb the pellet.\nAllow residual liquid in the tube to evaporate by air-drying with the cap open and the tube upside down or by placing briefly in a centrifugal vacuum concentrator (e.g., SpeedVac concentrator, Thermo Scientific; Concentrator plus, Eppendorf).\nResuspend the dried pellet in a small volume of Tris (10 mM, pH 8) or TE buffer.\nThe purified, solubilized DNA may be stored at 4\u00b0C for short periods of time, at \u201320\u00b0C for long periods of time, and at \u201380\u00b0C indefinitely.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2-mL microcentrifuge tube (with viral suspension \u22640.6 mL)",
+          "reagent": "PCI (phenol:chloroform:isoamyl alcohol)",
+          "volume": "equal volume to viral suspension",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "2-mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to emulsify"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2-mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "10,000g",
+          "other": {
+            "purpose": "facilitate separation of organic and aqueous phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "2-mL microcentrifuge tube",
+          "reagent": "DNA-containing aqueous phase (upper)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new tube",
+            "note": "avoid material at interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "1\u20133",
+            "condition": "until interface appears free of extracted material"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with aqueous phase",
+          "reagent": "CI (chloroform:isoamyl alcohol)",
+          "volume": "equal volume to aqueous phase",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "tube with aqueous phase and CI",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to emulsify"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with aqueous phase and CI",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as in step 2 (5 min)",
+          "speed": "10,000g",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "aqueous phase (upper)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with aqueous phase",
+          "reagent": "polyacryl carrier",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with aqueous phase and polyacryl carrier",
+          "reagent": "sodium acetate",
+          "volume": "1/10 of volume of solution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with sodium acetate added",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube or vortex"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ethanol",
+          "volume": "2 volumes (relative to solution)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with ethanol added",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "0\u20134\u00b0C if possible",
+          "duration": "10 to 30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "do not disturb pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "ice-cold 70% ethanol",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": "as completely as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "do not disturb pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "evaporate",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "residual liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "air-drying with cap open and tube upside down or centrifugal vacuum concentrator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with dried pellet",
+          "reagent": "Tris (10 mM, pH 8) or TE buffer",
+          "volume": "small volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube with purified DNA",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C (short), \u201320\u00b0C (long), \u201380\u00b0C (indefinite)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='2-mL microcentrifuge tube (with viral suspension \u22640.6 mL)', reagent='PCI (phenol:chloroform:isoamyl alcohol)', volume='equal volume to viral suspension')\nshake(container='2-mL microcentrifuge tube', purpose='to emulsify')\ncentrifuge(container='2-mL microcentrifuge tube', duration='5 min', speed='10,000g', purpose='facilitate separation of organic and aqueous phases')\naspirate(container='2-mL microcentrifuge tube', reagent='DNA-containing aqueous phase (upper)', destination='new tube', note='avoid material at interface')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'steps': '1\u20133', 'condition': 'until interface appears free of extracted material'})\n\n### AUTOMATED SECTION ###\nadd(container='tube with aqueous phase', reagent='CI (chloroform:isoamyl alcohol)', volume='equal volume to aqueous phase')\nshake(container='tube with aqueous phase and CI', purpose='to emulsify')\ncentrifuge(container='tube with aqueous phase and CI', duration='as in step 2 (5 min)', speed='10,000g', purpose='separate phases')\naspirate(container='tube after centrifugation', reagent='aqueous phase (upper)', destination='new tube')\nadd(container='tube with aqueous phase', reagent='polyacryl carrier', volume='1 \u00b5L')\nadd(container='tube with aqueous phase and polyacryl carrier', reagent='sodium acetate', volume='1/10 of volume of solution')\nmix(container='tube with sodium acetate added', method='invert tube or vortex')\nadd(container='tube', reagent='ethanol', volume='2 volumes (relative to solution)')\nmix(container='tube with ethanol added', method='invert tube')\nincubate(container='tube', temperature='on ice', duration='10 min')\ncentrifuge(container='tube', temperature='0\u20134\u00b0C if possible', duration='10 to 30 min')\naspirate(container='tube after centrifugation', reagent='supernatant', volume='as much as possible', note='do not disturb pellet')\nadd(container='tube with pellet', reagent='ice-cold 70% ethanol', volume='500 \u00b5L')\ncentrifuge(container='tube', duration='10 min', speed='10,000g')\naspirate(container='tube after centrifugation', reagent='supernatant', volume='as completely as possible', note='do not disturb pellet')\nevaporate(container='tube with pellet', reagent='residual liquid', method='air-drying with cap open and tube upside down or centrifugal vacuum concentrator')\nresuspend(container='tube with dried pellet', reagent='Tris (10 mM, pH 8) or TE buffer', volume='small volume')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube with purified DNA, temperature: 4\u00b0C (short), \u201320\u00b0C (long), \u201380\u00b0C (indefinite), other: {})",
+    "source_file": "protocol_400.txt"
+  }
+]

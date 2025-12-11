@@ -1,0 +1,163 @@
+[
+  {
+    "protocol": "Spot-on-lawn (halo) assay for screening enrichment cultures and isolates for viruses\nGelrite plates are preincubated ca.\n10 min at 80\u02daC to dry.\n10 mL of Sulfolobus medium with ca. 0.2 % (w/v) Gelrite is boiled to dissolve the Gelrite.\nThis \u201csoftlayer\u201d is allowed to cool slightly (to ca. 80\u02daC).\nApproximately 3 mL of softlayer are added to ca. 0.2 mL of exponentially growing host cells, generally Sulfolobus solfataricus, and spread on a plate by swirling.\nAfter the Gelrite solidifies, 1\u20132 \u00b5L of culture or supernatant to be screened is spotted on the plate.\nFor a positive control, 1 \u00b5L of a 0.01% (v/v) Triton X-100 solution is spotted.\nPlates are incubated as above for 2\u20133 d and plates examined for clearing around spots (Fig. 1D in guidelines).",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Gelrite plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u02daC",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "Sulfolobus medium with Gelrite",
+          "reagent": "Sulfolobus medium with ca. 0.2 % (w/v) Gelrite",
+          "volume": "10 mL",
+          "temperature": "boiling",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dissolve Gelrite"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "softlayer (Sulfolobus medium with Gelrite)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ca. 80\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "host cell suspension",
+          "reagent": "softlayer",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "recipient_volume": "0.2 mL",
+            "recipient_reagent": "exponentially growing host cells (Sulfolobus solfataricus)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "plate",
+          "reagent": "softlayer + host cells",
+          "volume": "total ca. 3.2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spread by swirling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until Gelrite solidifies",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate",
+          "reagent": "culture or supernatant to be screened",
+          "volume": "1\u20132 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spot"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate",
+          "reagent": "0.01% (v/v) Triton X-100 solution",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "positive control",
+            "method": "spot"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "as above (likely 80\u02daC)",
+          "duration": "2\u20133 d",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "examine for clearing around spots"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='Gelrite plates', temperature='80\u02daC', duration='10 min')\nheat(container='Sulfolobus medium with Gelrite', reagent='Sulfolobus medium with ca. 0.2 % (w/v) Gelrite', volume='10 mL', temperature='boiling', purpose='to dissolve Gelrite')\ncool(container='softlayer (Sulfolobus medium with Gelrite)', temperature='ca. 80\u02daC')\ndispense(container='host cell suspension', reagent='softlayer', volume='3 mL', recipient_volume='0.2 mL', recipient_reagent='exponentially growing host cells (Sulfolobus solfataricus)')\nmix(container='plate', reagent='softlayer + host cells', volume='total ca. 3.2 mL', method='spread by swirling')\nwait(container='plate', duration='until Gelrite solidifies')\ndispense(container='plate', reagent='culture or supernatant to be screened', volume='1\u20132 \u00b5L', method='spot')\ndispense(container='plate', reagent='0.01% (v/v) Triton X-100 solution', volume='1 \u00b5L', purpose='positive control', method='spot')\nincubate(container='plates', temperature='as above (likely 80\u02daC)', duration='2\u20133 d')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: plates, other: {'purpose': 'examine for clearing around spots'})",
+    "source_file": "protocol_217.txt"
+  }
+]

@@ -1,0 +1,257 @@
+[
+  {
+    "protocol": "Protein Coomassie Blue Staining\nSubmerge protein acrylamide gel in coomassie blue stain and shake at room temperature for two hours.\nPour off stain into a bottle (you can reuse it a few times), wash gel with water, then pour more stain on and shake at room temperature for another two hours.\nPour off stain into a bottle, wash gel with water, you should be able to see a little something at this point so take a picture, then pour more stain on and shake at room temperature overnight.\nPour off stain and take a picture of the protein bands.\nSubmerge gel in destain buffer (50 mL Acetic Acid, 100 mL Methanol, 350 mL Water) for an hour and shake at room temperature.\nWash with water then repeat step 5 until you can clearly see the protein bands distinct from the background of the gel.",
+    "actions": [
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "protein acrylamide gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "gel in coomassie blue stain",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "bottle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "gel in coomassie blue stain",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "bottle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "take picture",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "gel in coomassie blue stain",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "gel",
+          "reagent": "coomassie blue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "bottle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "take picture",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "protein bands"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "gel",
+          "reagent": "destain buffer",
+          "volume": "500 mL (50 mL Acetic Acid, 100 mL Methanol, 350 mL Water)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "gel in destain buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "gel",
+          "reagent": "destain buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "shake in destain buffer for 1 hour at room temperature"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: submerge (container: protein acrylamide gel, reagent: coomassie blue stain, other: {})\n\n### AUTOMATED SECTION ###\nshake(container='gel in coomassie blue stain', temperature='room temperature', duration='2 hours')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: gel, reagent: coomassie blue stain, other: {'destination': 'bottle'})\n\n### AUTOMATED SECTION ###\nwash(container='gel', reagent='water')\npour(container='gel', reagent='coomassie blue stain')\nshake(container='gel in coomassie blue stain', temperature='room temperature', duration='2 hours')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: gel, reagent: coomassie blue stain, other: {'destination': 'bottle'})\n\n### AUTOMATED SECTION ###\nwash(container='gel', reagent='water')\n\n### MANUAL SECTION ###\n# MANUAL: take picture (container: gel, other: {})\n\n### AUTOMATED SECTION ###\npour(container='gel', reagent='coomassie blue stain')\nshake(container='gel in coomassie blue stain', temperature='room temperature', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: gel, reagent: coomassie blue stain, other: {'destination': 'bottle'})\n# MANUAL: take picture (container: gel, other: {'target': 'protein bands'})\n# MANUAL: submerge (container: gel, reagent: destain buffer, volume: 500 mL (50 mL Acetic Acid, 100 mL Methanol, 350 mL Water), other: {})\n\n### AUTOMATED SECTION ###\nshake(container='gel in destain buffer', temperature='room temperature', duration='1 hour')\nwash(container='gel', reagent='water')\nrepeat(container='gel', reagent='destain buffer', step='shake in destain buffer for 1 hour at room temperature')",
+    "source_file": "protocol_228.txt"
+  }
+]

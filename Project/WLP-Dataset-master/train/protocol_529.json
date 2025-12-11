@@ -1,0 +1,343 @@
+[
+  {
+    "protocol": "Making your own electrocompetent cells\nInnoculate 1 colony from a fresh plate of the strain to be made electrocompetent into 10 ml of SOB in a 125 ml flask. \nIncubate for 16-18 hours at 37\u00b0C\u00a0and 250 rpm. \nPre-warm 2, 1 L flasks containing 250 ml each of SOB. \nAdd two drops of the overnight culture to each of the pre-warmed 250 ml flasks. \nShake at 37\u00b0C and 250 rpm until the cultures reach an OD600 of 0.5-0.7. \nTurn on centrifuge and cool rotor to 4\u00b0C well in advance of harvesting cells. \nPlace 1 L of 10% glycerol on ice well in advance of harvesting cells. \nPlace cultures on ice for 15 minutes.\nFrom this point on the cultures must be kept ice cold. \nPour each 250 ml culture into chilled 500 ml (or 1000 ml) centrifuge bottles. \nCentrifuge at 5000 rpm for 10 min. \u00a0\nPour off the supernatant and aspirate any residual broth. \nAdd 250 ml of glycerol to each of the centrifuge bottles and completely suspend the cells by pipetting up and down. \nCentrifuge at 5000 rpm for 10 min. \u00a0\nPour off the supernatant, it is not necessary to aspirate. \nAdd\u00a0250 ml\u00a0of glycerol to each of the centrifuge bottles and completely suspend the cells by pipetting up and down. \nPour off the supernatant and suspend the cells in the residual glycerol by pipetting up and down. \nTo freeze, add 100\u00a0\u00b5l of the culture to microcentrifuge tubes on ice. \nOnce you have used all of the culture, transfer the tubes to dry ice for 10 minutes. \nOnce the cultures are frozen, transfer them to a -80\u00b0C freezer",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "125 ml flask",
+          "reagent": "1 colony from fresh plate, 10 ml SOB",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "strain": "to be made electrocompetent"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "125 ml flask",
+          "reagent": null,
+          "volume": "10 ml",
+          "temperature": "37\u00b0C",
+          "duration": "16-18 hours",
+          "speed": "250 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pre-warm",
+        "parameters": {
+          "container": "2 x 1 L flasks",
+          "reagent": "250 ml SOB each",
+          "volume": "250 ml each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pre-warmed 250 ml flasks",
+          "reagent": "overnight culture",
+          "volume": "two drops each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "pre-warmed 250 ml flasks",
+          "reagent": "culture",
+          "volume": "250 ml each",
+          "temperature": "37\u00b0C",
+          "duration": "until OD600 0.5-0.7",
+          "speed": "250 rpm",
+          "other": {
+            "endpoint": "OD600 0.5-0.7"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "centrifuge",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cool rotor to 4\u00b0C",
+          "duration": "well in advance of harvesting",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1 L bottle",
+          "reagent": "10% glycerol",
+          "volume": "1 L",
+          "temperature": "on ice",
+          "duration": "well in advance of harvesting",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "chilled 500 ml or 1000 ml centrifuge bottles",
+          "reagent": "250 ml culture",
+          "volume": "250 ml",
+          "temperature": "chilled",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "culture",
+          "volume": "250 ml",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "residual broth",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "glycerol",
+          "volume": "250 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "cell suspension in glycerol",
+          "volume": "up and down to completely suspend",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "cell suspension in glycerol",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "not necessary to aspirate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "glycerol",
+          "volume": "250 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "cell suspension in glycerol",
+          "volume": "up and down to completely suspend",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "centrifuge bottles",
+          "reagent": "cells in residual glycerol",
+          "volume": "up and down to suspend",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tubes on ice",
+          "reagent": "culture",
+          "volume": "100 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "to dry ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "to -80\u00b0C freezer",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 125 ml flask, reagent: 1 colony from fresh plate, 10 ml SOB, volume: 10 ml, other: {'strain': 'to be made electrocompetent'})\n\n### AUTOMATED SECTION ###\nincubate(container='125 ml flask', volume='10 ml', temperature='37\u00b0C', duration='16-18 hours', speed='250 rpm')\npre-warm(container='2 x 1 L flasks', reagent='250 ml SOB each', volume='250 ml each')\nadd(container='pre-warmed 250 ml flasks', reagent='overnight culture', volume='two drops each')\nshake(container='pre-warmed 250 ml flasks', reagent='culture', volume='250 ml each', temperature='37\u00b0C', duration='until OD600 0.5-0.7', speed='250 rpm', endpoint='OD600 0.5-0.7')\nturn on(container='centrifuge', temperature='cool rotor to 4\u00b0C', duration='well in advance of harvesting')\nplace(container='1 L bottle', reagent='10% glycerol', volume='1 L', temperature='on ice', duration='well in advance of harvesting')\nplace(container='cultures', temperature='on ice', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: chilled 500 ml or 1000 ml centrifuge bottles, reagent: 250 ml culture, volume: 250 ml, temperature: chilled, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge bottles', reagent='culture', volume='250 ml', duration='10 min', speed='5000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: centrifuge bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\naspirate(container='centrifuge bottles', reagent='residual broth')\nadd(container='centrifuge bottles', reagent='glycerol', volume='250 ml')\npipette(container='centrifuge bottles', reagent='cell suspension in glycerol', volume='up and down to completely suspend', method='up and down')\ncentrifuge(container='centrifuge bottles', reagent='cell suspension in glycerol', duration='10 min', speed='5000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: centrifuge bottles, reagent: supernatant, other: {'note': 'not necessary to aspirate'})\n\n### AUTOMATED SECTION ###\nadd(container='centrifuge bottles', reagent='glycerol', volume='250 ml')\npipette(container='centrifuge bottles', reagent='cell suspension in glycerol', volume='up and down to completely suspend', method='up and down')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: centrifuge bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\npipette(container='centrifuge bottles', reagent='cells in residual glycerol', volume='up and down to suspend', method='up and down')\nadd(container='microcentrifuge tubes on ice', reagent='culture', volume='100 \u00b5l', temperature='on ice')\ntransfer(container='microcentrifuge tubes', temperature='to dry ice', duration='10 minutes')\ntransfer(container='microcentrifuge tubes', temperature='to -80\u00b0C freezer')",
+    "source_file": "protocol_529.txt"
+  }
+]

@@ -1,0 +1,429 @@
+[
+  {
+    "protocol": "NC64A virus purification\nInoculate flasks with Chlorella and incubate at 25\u00b0C with continuous light and shaking until the cells are in the actively growing phase.\nInoculate flasks with Chlorella NC64A in MBBM (or Micractinium Pbi in FES) and incubate at 250C with continuous light and shaking until the cells are in the actively growing phase (about 1-2 X 107 cells/ml).\nInfect the flasks of chlorella with virus at an moi of 0.01 to 0.001.\nIncubate the flasks for 48-72 hours at 25\u00b0C with continuous light and shaking.\nThis material is now termed \u201clysate\u201d.\nCentrifuge the lysate in the Sorvall GSA rotor in 250 ml bottles at 5,000 rpm (4,000 rcf), 5 min, 4\u00b0C.\nDiscard the pellets.\nAdd Triton X-100 to the lysate supernatants for a final concentration of 1% (from a 10 or 20% stock).\nCentrifuge the lysate in the Beckman Type 19 225 mL ultracentrifuge rotor at 17,000 rpm (43,000 rcf), 50 min, at 4\u00b0C.\nDiscard the supernatants.\nResuspend the virus pellets with a small volume of 50 mM Tris-HCl, pH 7.8 (approximately 1.0 mL per 100 mL of original lysate).\nLayer the virus suspension onto 100-400 mg/mL (10-40%) linear sucrose density gradients equilibrated with 50 mM Tris-HCl, pH 7.8, made up in Beckman SW28 rotor tubes (layer approximately 3-4 mL per gradient).\nCentrifuge the gradients in a Beckman SW28 rotor at 20,000 rpm (72,000 rcfmax), 20 min, 4\u00b0C.\nRemove the virus bands from the gradients with sterile bent needles and transfer to oak ridge 30 mL polypropylene centrifuge tubes.\nSplit the virus from 3 gradients between 2 tubes.\nSlowly dilute the virus to the tube volume with 50 mM Tris-HCl, pH 7.8.\nCentrifuge the tubes in Beckman Ti 50.2 rotor at 27,000 rpm (~44,000 rcfmax), 3 hours, 4\u00b0C.\nAlternatively, dilute the virus from the gradients ~10-fold with Tris buffer and centrifuge in the Type 19 rotor for 1 hour, 17,000 rpm, 4 C. \nA GSA type high speed rotor can be used for at 2 hours, 12,000 rpm.\nDiscard the supernatants.\nResuspend the virus pellets with a small volume of 50 mM Tris-HCl, pH 7.8.\nStore the virus at 4\u00b0C.\nDo not freeze.\nFilter sterilizition using a 0.45 \u00b5m cellulose acetate or other low protein binding\u00a0filter is recommended.\nGently wash the pellet and bottle with some 50 mM Tris, pH 7.8 buffer to wash residual sucrose away.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "Chlorella",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "continuous",
+            "shaking": "yes",
+            "growth_phase": "actively growing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "Chlorella",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "until actively growing phase",
+          "speed": "shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "Chlorella NC64A in MBBM or Micractinium Pbi in FES",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "continuous",
+            "shaking": "yes",
+            "growth_phase": "actively growing (1-2 x 10^7 cells/ml)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "Chlorella NC64A in MBBM or Micractinium Pbi in FES",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "until actively growing phase (about 1-2 x 10^7 cells/ml)",
+          "speed": "shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "infect",
+        "parameters": {
+          "container": "flasks",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "0.01 to 0.001"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "48-72 hours",
+          "speed": "shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "250 ml bottles",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm (4,000 rcf)",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "pellets",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "lysate supernatants",
+          "reagent": "Triton X-100",
+          "volume": "to final concentration 1% (from 10 or 20% stock)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "225 mL bottles",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "50 min",
+          "speed": "17,000 rpm (43,000 rcf)",
+          "other": {
+            "rotor": "Beckman Type 19"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "virus pellets",
+          "reagent": "50 mM Tris-HCl, pH 7.8",
+          "volume": "approximately 1.0 mL per 100 mL original lysate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "Beckman SW28 rotor tubes",
+          "reagent": "virus suspension onto 100-400 mg/mL (10-40%) linear sucrose density gradients equilibrated with 50 mM Tris-HCl, pH 7.8",
+          "volume": "approximately 3-4 mL per gradient",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Beckman SW28 rotor tubes",
+          "reagent": "gradients",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "20,000 rpm (72,000 rcfmax)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gradients",
+          "reagent": "virus bands",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile bent needles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "oak ridge 30 mL polypropylene centrifuge tubes",
+          "reagent": "virus bands",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "split",
+        "parameters": {
+          "container": "2 tubes",
+          "reagent": "virus from 3 gradients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "oak ridge tubes",
+          "reagent": "virus",
+          "volume": "to tube volume",
+          "temperature": null,
+          "duration": "slowly",
+          "speed": null,
+          "other": {
+            "buffer": "50 mM Tris-HCl, pH 7.8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Beckman Ti 50.2 rotor tubes",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "3 hours",
+          "speed": "27,000 rpm (~44,000 rcfmax)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "Type 19 rotor tubes",
+          "reagent": "virus from gradients",
+          "volume": "~10-fold with Tris buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Type 19 rotor tubes",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": "17,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "GSA type high speed rotor tubes",
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 hours",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "virus pellets",
+          "reagent": "50 mM Tris-HCl, pH 7.8",
+          "volume": "small volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.45 \u00b5m cellulose acetate or other low protein binding"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "pellet and bottle",
+          "reagent": "50 mM Tris, pH 7.8 buffer",
+          "volume": "some",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "wash residual sucrose away"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: flasks, reagent: Chlorella, other: {'light': 'continuous', 'shaking': 'yes', 'growth_phase': 'actively growing'})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', reagent='Chlorella', temperature='25\u00b0C', duration='until actively growing phase', speed='shaking', light='continuous')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: flasks, reagent: Chlorella NC64A in MBBM or Micractinium Pbi in FES, other: {'light': 'continuous', 'shaking': 'yes', 'growth_phase': 'actively growing (1-2 x 10^7 cells/ml)'})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', reagent='Chlorella NC64A in MBBM or Micractinium Pbi in FES', temperature='25\u00b0C', duration='until actively growing phase (about 1-2 x 10^7 cells/ml)', speed='shaking', light='continuous')\n\n### MANUAL SECTION ###\n# MANUAL: infect (container: flasks, reagent: virus, other: {'MOI': '0.01 to 0.001'})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', temperature='25\u00b0C', duration='48-72 hours', speed='shaking', light='continuous')\ncentrifuge(container='250 ml bottles', reagent='lysate', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm (4,000 rcf)', rotor='Sorvall GSA')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: pellets, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='lysate supernatants', reagent='Triton X-100', volume='to final concentration 1% (from 10 or 20% stock)')\ncentrifuge(container='225 mL bottles', reagent='lysate', temperature='4\u00b0C', duration='50 min', speed='17,000 rpm (43,000 rcf)', rotor='Beckman Type 19')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='virus pellets', reagent='50 mM Tris-HCl, pH 7.8', volume='approximately 1.0 mL per 100 mL original lysate')\nlayer(container='Beckman SW28 rotor tubes', reagent='virus suspension onto 100-400 mg/mL (10-40%) linear sucrose density gradients equilibrated with 50 mM Tris-HCl, pH 7.8', volume='approximately 3-4 mL per gradient')\ncentrifuge(container='Beckman SW28 rotor tubes', reagent='gradients', temperature='4\u00b0C', duration='20 min', speed='20,000 rpm (72,000 rcfmax)')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gradients, reagent: virus bands, other: {'tool': 'sterile bent needles'})\n\n### AUTOMATED SECTION ###\ntransfer(container='oak ridge 30 mL polypropylene centrifuge tubes', reagent='virus bands')\n\n### MANUAL SECTION ###\n# MANUAL: split (container: 2 tubes, reagent: virus from 3 gradients, other: {})\n\n### AUTOMATED SECTION ###\ndilute(container='oak ridge tubes', reagent='virus', volume='to tube volume', duration='slowly', buffer='50 mM Tris-HCl, pH 7.8')\ncentrifuge(container='Beckman Ti 50.2 rotor tubes', reagent='virus', temperature='4\u00b0C', duration='3 hours', speed='27,000 rpm (~44,000 rcfmax)')\ndilute(container='Type 19 rotor tubes', reagent='virus from gradients', volume='~10-fold with Tris buffer')\ncentrifuge(container='Type 19 rotor tubes', reagent='virus', temperature='4\u00b0C', duration='1 hour', speed='17,000 rpm')\ncentrifuge(container='GSA type high speed rotor tubes', reagent='virus', duration='2 hours', speed='12,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='virus pellets', reagent='50 mM Tris-HCl, pH 7.8', volume='small volume')\nstore(reagent='virus', temperature='4\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (reagent: virus, other: {})\n\n### AUTOMATED SECTION ###\nfilter(reagent='virus', filter_type='0.45 \u00b5m cellulose acetate or other low protein binding')\nwash(container='pellet and bottle', reagent='50 mM Tris, pH 7.8 buffer', volume='some', speed='gently', purpose='wash residual sucrose away')",
+    "source_file": "protocol_207.txt"
+  }
+]

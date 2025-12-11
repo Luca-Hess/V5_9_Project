@@ -1,0 +1,341 @@
+[
+  {
+    "protocol": "Iron Chloride Precipitation of Viruses from Seawater\nAssemble two 142mm filtering towers and attach the filter apparatus to a peristaltic pump with a pressure gauge (maximum pressure = 15 psi).\nPre-filter 20L of seawater using a 150mm Whatman GF/A filter.\nFilter again to remove bacteria using a 0.22um, 142mm Millipore Express Plus filter.\nTreat the virus fraction (0.22\u03bcm filtrate) with FeCl3 to precipitate the viruses by adding 1ml of 10g/L Fe Stock Solution to each 20L of filtrate.\nShake vigorously for 1 minute.\nAdd an additional 1ml of 10g/L Fe stock solution to each 20L of filtrate (for a total of 2ml Fe Stock Solution per 20L filtrate).\nShake vigorously for 1 minute.\nLet the FeCl3 treated filtrate sit for 1 hour at room temperature.\nFilter the FeCl3 treated filtrate using a 1.0\u03bcm, 142mm, polycarbonate (PC) membrane filter on top of a 0.8\u03bcm, 142mm, support filter and attaching the filter apparatus to a peristaltic pump with a pressure gauge (maximum pressure = 15 psi).\nPlace all of the polycarbonate filters from the 20L into a 50ml centrifuge tube being careful not to scrape off any of the FeCl3 on the edge of the tube (having precipitate facing out aids in dissolving the precipitate).\nDiscard the Supor support filter.\nPrepare fresh 0.1M EDTA; 0.2M MgCl2; 0.2M Ascorbate Buffer, pH6.5.\nAdd 1ml buffer for each 1mg Fe, which is 20ml of 1x buffer for the 20L seawater precipitate (10ml of a 2X concentrated buffer).\nShake the tube vigorously.\nPlace tubes on a rotator and rotate at 4\u00b0C overnight.\nLeave stored at 4\u00b0C until ready to analyze or further purify the viral fraction.\nTo collect the resuspended precipitate, open the tube and collect liquid into a fresh tube.\nUsing a sterile pipet, applicator stick, or bleached and rinsed forceps pull an edge of the filter onto the tube edge so it is caught in the lid when secured.\nCentrifuge at low speed (less than 1000 rpm) for 3-5 minutes to recover more buffer.\nIf the filter has precipitate on it, add more buffer, incubate again for a couple hours, and collect liquid as stated above.",
+    "actions": [
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "142mm filtering towers",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "apparatus": "filter apparatus, peristaltic pump, pressure gauge (max 15 psi)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pre-filter",
+        "parameters": {
+          "container": "filter apparatus",
+          "reagent": "seawater",
+          "volume": "20L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "150mm Whatman GF/A"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filter apparatus",
+          "reagent": "pre-filtered seawater",
+          "volume": "20L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "0.22um, 142mm Millipore Express Plus"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "virus fraction (0.22\u03bcm filtrate)",
+          "reagent": "FeCl3 (1ml of 10g/L Fe Stock Solution)",
+          "volume": "1ml per 20L filtrate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "virus fraction (0.22\u03bcm filtrate)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "vigorously",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "virus fraction (0.22\u03bcm filtrate)",
+          "reagent": "FeCl3 (1ml of 10g/L Fe Stock Solution)",
+          "volume": "1ml per 20L filtrate (total 2ml Fe Stock Solution per 20L)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "virus fraction (0.22\u03bcm filtrate)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "vigorously",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "FeCl3 treated filtrate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filter apparatus",
+          "reagent": "FeCl3 treated filtrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "1.0\u03bcm, 142mm polycarbonate membrane filter on top of 0.8\u03bcm, 142mm support filter",
+            "apparatus": "peristaltic pump, pressure gauge (max 15 psi)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "50ml centrifuge tube",
+          "reagent": "polycarbonate filters from 20L",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "do not scrape off FeCl3 on edge; precipitate facing out"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "Supor support filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh 0.1M EDTA; 0.2M MgCl2; 0.2M Ascorbate Buffer, pH6.5",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with filters",
+          "reagent": "buffer (1ml per 1mg Fe, 20ml of 1x buffer for 20L seawater precipitate, or 10ml of 2X buffer)",
+          "volume": "20ml (1x) or 10ml (2x)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until ready to analyze or further purify",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "liquid (resuspended precipitate)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "opened tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pull",
+        "parameters": {
+          "container": "tube",
+          "reagent": "filter edge",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile pipet, applicator stick, or bleached/rinsed forceps",
+            "note": "caught in lid when secured"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3-5 minutes",
+          "speed": "low speed (<1000 rpm)",
+          "other": {
+            "purpose": "recover more buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with filter and precipitate",
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if filter has precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with filter and buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "couple hours",
+          "speed": null,
+          "other": {
+            "condition": "if filter has precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "tube after incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: assemble (container: 142mm filtering towers, other: {'apparatus': 'filter apparatus, peristaltic pump, pressure gauge (max 15 psi)'})\n\n### AUTOMATED SECTION ###\npre-filter(container='filter apparatus', reagent='seawater', volume='20L', filter='150mm Whatman GF/A')\nfilter(container='filter apparatus', reagent='pre-filtered seawater', volume='20L', filter='0.22um, 142mm Millipore Express Plus')\nadd(container='virus fraction (0.22\u03bcm filtrate)', reagent='FeCl3 (1ml of 10g/L Fe Stock Solution)', volume='1ml per 20L filtrate')\nshake(container='virus fraction (0.22\u03bcm filtrate)', duration='1 minute', speed='vigorously')\nadd(container='virus fraction (0.22\u03bcm filtrate)', reagent='FeCl3 (1ml of 10g/L Fe Stock Solution)', volume='1ml per 20L filtrate (total 2ml Fe Stock Solution per 20L)')\nshake(container='virus fraction (0.22\u03bcm filtrate)', duration='1 minute', speed='vigorously')\nincubate(container='FeCl3 treated filtrate', temperature='room temperature', duration='1 hour')\nfilter(container='filter apparatus', reagent='FeCl3 treated filtrate', filter='1.0\u03bcm, 142mm polycarbonate membrane filter on top of 0.8\u03bcm, 142mm support filter', apparatus='peristaltic pump, pressure gauge (max 15 psi)')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: 50ml centrifuge tube, reagent: polycarbonate filters from 20L, other: {'note': 'do not scrape off FeCl3 on edge; precipitate facing out'})\n# MANUAL: discard (reagent: Supor support filter)\n# MANUAL: prepare (reagent: fresh 0.1M EDTA; 0.2M MgCl2; 0.2M Ascorbate Buffer, pH6.5)\n\n### AUTOMATED SECTION ###\nadd(container='tube with filters', reagent='buffer (1ml per 1mg Fe, 20ml of 1x buffer for 20L seawater precipitate, or 10ml of 2X buffer)', volume='20ml (1x) or 10ml (2x)')\nshake(container='tube', speed='vigorously')\nrotate(container='tube', temperature='4\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube, temperature: 4\u00b0C, duration: until ready to analyze or further purify)\n\n### AUTOMATED SECTION ###\ncollect(container='fresh tube', reagent='liquid (resuspended precipitate)', from='opened tube')\n\n### MANUAL SECTION ###\n# MANUAL: pull (container: tube, reagent: filter edge, other: {'tool': 'sterile pipet, applicator stick, or bleached/rinsed forceps', 'note': 'caught in lid when secured'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube', duration='3-5 minutes', speed='low speed (<1000 rpm)', purpose='recover more buffer')\nadd(container='tube with filter and precipitate', reagent='buffer', condition='if filter has precipitate')\nincubate(container='tube with filter and buffer', duration='couple hours', condition='if filter has precipitate')\ncollect(container='fresh tube', reagent='liquid', from='tube after incubation')",
+    "source_file": "protocol_136.txt"
+  }
+]

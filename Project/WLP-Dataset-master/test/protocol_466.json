@@ -1,0 +1,343 @@
+[
+  {
+    "protocol": "Artificial Seawater Based AMP1 Medium\nDissolve each salt completely before adding the next one. \nDispense into 500 ml acid-washed polycarbonate bottles.\u00a0 \nAutoclave 30 min. pH NaH2PO4 to 7.5 using 1M NaOH. \nFilter sterilize each solution using 0.2 \u00b5m syringe filter into new, sterile 50ml centrifuge tubes or acid washed and sterile polycarbonate bottles. \nStore at 4\u00b0C pH HEPES to 7.5 using 1M NaOH.\u00a0 \nFilter sterilize each solution using 0.2 \u00b5m syringe filter into new, sterile 15 or 50 ml centrifuge tubes or acid washed and sterile polycarbonate bottles. \nStore at 4\u00b0C. \nDispense 5 ml of NaHCO3 and 0.5 ml HEPES per 500 ml bottle of Turk's Island Salt Mix when preparing final medium. \nWeigh out 0.2175 g Na2EDTA\u00b72H2O using dust free paper. \nTransfer to acid washed 50 ml volumetric flask filled with 40 ml MQ-water. \nDissolve EDTA by inverting flask several times. \nWeigh out 0.16 g FeCl3\u00b76H2O using dust free paper. \nDissolve iron chloride into same volumetric flask by inverting several times. \nIndividually add and dissolve 50 \u00b5l each of the ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, and NiCl2 Primary Trace Metal Stocks. \nAdjust volume to 50 ml mark with MQ-water. \nFilter through a 0.2 \u00b5m syringe filter into sterile, acid washed container in laminar flow hood. \nStore sterile stock at 4\u00b0C. \nDispense 5 \u00b5l Stock Trace Metal Mix to 500 ml bottle of Turk's Island Salt Mix when preparing final medium.",
+    "actions": [
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "each salt",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "completely before adding next salt"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "500 ml acid-washed polycarbonate bottles",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "NaH2PO4",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.5",
+            "adjustment_reagent": "1M NaOH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "new, sterile 50ml centrifuge tubes or acid washed and sterile polycarbonate bottles",
+          "reagent": "each solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u00b5m syringe filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "HEPES",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "7.5",
+            "adjustment_reagent": "1M NaOH"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "new, sterile 15 or 50 ml centrifuge tubes or acid washed and sterile polycarbonate bottles",
+          "reagent": "each solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u00b5m syringe filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "500 ml bottle of Turk's Island Salt Mix",
+          "reagent": "NaHCO3",
+          "volume": "5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "500 ml bottle of Turk's Island Salt Mix",
+          "reagent": "HEPES",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "dust free paper",
+          "reagent": "Na2EDTA\u00b72H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.2175 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "acid washed 50 ml volumetric flask filled with 40 ml MQ-water",
+          "reagent": "Na2EDTA\u00b72H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "acid washed 50 ml volumetric flask",
+          "reagent": "EDTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting flask several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "dust free paper",
+          "reagent": "FeCl3\u00b76H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.16 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.98
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "same volumetric flask",
+          "reagent": "iron chloride",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, NiCl2 Primary Trace Metal Stocks",
+          "volume": "50 \u00b5l each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "individually"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, NiCl2 Primary Trace Metal Stocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "acid washed 50 ml volumetric flask",
+          "reagent": "solution",
+          "volume": "to 50 ml mark",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "MQ-water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "sterile, acid washed container in laminar flow hood",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u00b5m syringe filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile stock",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "500 ml bottle of Turk's Island Salt Mix",
+          "reagent": "Stock Trace Metal Mix",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndissolve(reagent='each salt', order='completely before adding next salt')\ndispense(container='500 ml acid-washed polycarbonate bottles', reagent='solution')\n\n### MANUAL SECTION ###\n# MANUAL: autoclave (duration: 30 min, other: {})\n\n### AUTOMATED SECTION ###\nadjust(reagent='NaH2PO4', pH='7.5', adjustment_reagent='1M NaOH')\nfilter(container='new, sterile 50ml centrifuge tubes or acid washed and sterile polycarbonate bottles', reagent='each solution', filter_type='0.2 \u00b5m syringe filter')\nstore(reagent='solution', temperature='4\u00b0C')\nadjust(reagent='HEPES', pH='7.5', adjustment_reagent='1M NaOH')\nfilter(container='new, sterile 15 or 50 ml centrifuge tubes or acid washed and sterile polycarbonate bottles', reagent='each solution', filter_type='0.2 \u00b5m syringe filter')\nstore(reagent='solution', temperature='4\u00b0C')\ndispense(container=\"500 ml bottle of Turk's Island Salt Mix\", reagent='NaHCO3', volume='5 ml')\ndispense(container=\"500 ml bottle of Turk's Island Salt Mix\", reagent='HEPES', volume='0.5 ml')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: dust free paper, reagent: Na2EDTA\u00b72H2O, other: {'mass': '0.2175 g'})\n\n### AUTOMATED SECTION ###\ntransfer(container='acid washed 50 ml volumetric flask filled with 40 ml MQ-water', reagent='Na2EDTA\u00b72H2O')\ndissolve(container='acid washed 50 ml volumetric flask', reagent='EDTA', method='inverting flask several times')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: dust free paper, reagent: FeCl3\u00b76H2O, other: {'mass': '0.16 g'})\n\n### AUTOMATED SECTION ###\ndissolve(container='same volumetric flask', reagent='iron chloride', method='inverting several times')\nadd(reagent='ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, NiCl2 Primary Trace Metal Stocks', volume='50 \u00b5l each', method='individually')\ndissolve(reagent='ZnSO4, CoCl2, MnCl2, Na2MoO4, NaSeO3, NiCl2 Primary Trace Metal Stocks')\nadjust(container='acid washed 50 ml volumetric flask', reagent='solution', volume='to 50 ml mark', solvent='MQ-water')\nfilter(container='sterile, acid washed container in laminar flow hood', reagent='solution', filter_type='0.2 \u00b5m syringe filter')\nstore(reagent='sterile stock', temperature='4\u00b0C')\ndispense(container=\"500 ml bottle of Turk's Island Salt Mix\", reagent='Stock Trace Metal Mix', volume='5 \u00b5l')",
+    "source_file": "protocol_466.txt"
+  }
+]

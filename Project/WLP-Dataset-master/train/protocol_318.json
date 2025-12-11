@@ -1,0 +1,641 @@
+[
+  {
+    "protocol": "DNA Extraction from sorted cells\nPrepare 2x lysis buffer and add to the volume of sample so that its final concentration is 1x.\nFilter-sterilize through 0.2 \u03bcm.\nPrepare 2x Lysis buffer with Lysozyme & RNase (1): right before use add to 1 ml aliquot of lysis buffer: \nShake to dissolve thoroughly, then filter-sterilize again.\nDilute the 2x lysis buffer 1:1 with MQ water.\nWeigh out minimum amount of ProtK, then add the appropriate amount of lysis buffer.\nFilter sterilize again.\nAdd 1 volume of 2x Lysis buffer with Lysozyme & RNase to 1 volume of sorted cells.\nNote down volumes and resulting volume V1.\nIncubate at 37\u00b0C for 30 min, rotating end-over-end at angle (OR: in the shaking incubator @ 100 rpm, vertical), for optimal mixing with minimal frothing; alternatively, shake vertically @ 100 rpm on shaking incubator and invert 10 times every 10 min.\nAdd V1*0.07 \u03bcl of ProtK lysis buffer (2) to a final concentration of 0.65 mg/ml.\nNote down volumes, including resulting volume V2.\nAdd V2/9 \u03bcl of 10% SDS to a final concentration of 1%.\nNote down volumes.\nIncubate at 55\u00b0C for 2 hours, rotating end-over-end at angle (OR: in the shaking incubator @ 100 rpm, vertical; invert every 20 min 10 times). \nAdd 600 \u03bcl buffer AL (= buffer without the EtOH). \nMix thoroughly by vortexing. \nIncubate at 70\u00b0C for 10 min (for heat block use 1.5 ml tubes!)\nAdd 600 \u03bcl of 96-100% EtOH Mix by vortexing vigorously. \nCheck pH of lysate, must be <7 to get max. binding efficiency. \nPipette max. possible volume onto spin columns. \nSpin 3 min at 8000xg; discard flow-through. \nPipette additional lysate onto spin columns. \nSpin 1 min at 8000xg; discard flow-through and collection tube, transfer column to new collection tube. \nAdd 500 \u03bcl of buffer  \nAW1 Spin 2 min at 8000xg; discard flow-through. \nAdd 500 \u03bcl of buffer. \nAW2 Spin 3 min at 8000xg; discard flow-through and collection tube, To dry columns, spin at 8000xg for 3 min. \nDiscard potential flow-through; transfer column to new collection tube. \nAdd 200 \u03bcl pre-heated 70\u00b0C buffer AE or water. \nIncubate 1 min at room temp.\nSpin at 8000xg for 2 min to elute. \nRepeat with second 200 \u03bcl.\nTransfer eluted DNA to the Amicon Ultra 30 K. \nCentrifuge at 10,000xg for 10 min. \nRinse DNA with 500 \u03bcl PCR water. \nCentrifuge at 10,000xg for 10 min. \nAdd 20 \u03bcl dilute TE, pipette up and down 20 times and transfer to clean tube for storage. \nCentrifuge at 1000xg for 3 min upside down, in fresh tube to retrieve (Optional: repeat with another 20 \u03bcl to ensure all retrieved)",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "2x lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1x"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "2x lysis buffer",
+          "volume": "to achieve 1x final concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter-sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "2x lysis buffer with Lysozyme & RNase",
+          "volume": "1 ml aliquot",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "add_right_before_use": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dissolve thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter-sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "2x lysis buffer",
+          "volume": "1:1 with MQ water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "ProtK",
+          "volume": "minimum amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "ProtK",
+          "volume": "appropriate amount of lysis buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter-sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sorted cells",
+          "reagent": "2x Lysis buffer with Lysozyme & RNase",
+          "volume": "1 volume to 1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 min",
+          "speed": "100 rpm (shaking incubator, vertical)",
+          "other": {
+            "mixing": "rotate end-over-end at angle or invert 10 times every 10 min"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "ProtK lysis buffer (2)",
+          "volume": "V1*0.07 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.65 mg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10% SDS",
+          "volume": "V2/9 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": "2 hours",
+          "speed": "100 rpm (shaking incubator, vertical)",
+          "other": {
+            "invert": "every 20 min 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer AL (without EtOH)",
+          "volume": "600 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortexing",
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "96-100% EtOH",
+          "volume": "600 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortexing vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "<7"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "lysate",
+          "volume": "max possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": "8000xg",
+          "other": {
+            "discard_flow_through": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "additional lysate",
+          "volume": "remaining",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "8000xg",
+          "other": {
+            "discard_flow_through": true,
+            "transfer_column": "new collection tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "buffer AW1",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "8000xg",
+          "other": {
+            "discard_flow_through": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "buffer AW2",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": "8000xg",
+          "other": {
+            "discard_flow_through": true,
+            "transfer_column": "new collection tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": "8000xg",
+          "other": {
+            "purpose": "dry columns"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "pre-heated buffer AE or water",
+          "volume": "200 \u03bcl",
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "8000xg",
+          "other": {
+            "purpose": "elute"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin columns",
+          "reagent": "pre-heated buffer AE or water",
+          "volume": "200 \u03bcl",
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Amicon Ultra 30 K",
+          "reagent": "eluted DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Amicon Ultra 30 K",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Amicon Ultra 30 K",
+          "reagent": "PCR water",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rinse DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Amicon Ultra 30 K",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "dilute TE",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA in TE",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": "up and down 20 times",
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "DNA in TE",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "fresh tube (upside down)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": "1000xg",
+          "other": {
+            "purpose": "retrieve DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 2x lysis buffer, other: {'final_concentration': '1x'})\n\n### AUTOMATED SECTION ###\nadd(container='sample', reagent='2x lysis buffer', volume='to achieve 1x final concentration')\nfilter-sterilize(filter_size='0.2 \u03bcm')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 2x lysis buffer with Lysozyme & RNase, volume: 1 ml aliquot, other: {'add_right_before_use': True})\n\n### AUTOMATED SECTION ###\nshake(purpose='dissolve thoroughly')\nfilter-sterilize()\ndilute(reagent='2x lysis buffer', volume='1:1 with MQ water')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: ProtK, volume: minimum amount, other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='ProtK', volume='appropriate amount of lysis buffer')\nfilter-sterilize()\nadd(container='sorted cells', reagent='2x Lysis buffer with Lysozyme & RNase', volume='1 volume to 1 volume')\nincubate(temperature='37\u00b0C', duration='30 min', speed='100 rpm (shaking incubator, vertical)', mixing='rotate end-over-end at angle or invert 10 times every 10 min')\nadd(reagent='ProtK lysis buffer (2)', volume='V1*0.07 \u03bcl', final_concentration='0.65 mg/ml')\nadd(reagent='10% SDS', volume='V2/9 \u03bcl', final_concentration='1%')\nincubate(temperature='55\u00b0C', duration='2 hours', speed='100 rpm (shaking incubator, vertical)', invert='every 20 min 10 times')\nadd(reagent='buffer AL (without EtOH)', volume='600 \u03bcl')\nmix(speed='vortexing', thoroughly=True)\nincubate(container='1.5 ml tubes', temperature='70\u00b0C', duration='10 min')\nadd(reagent='96-100% EtOH', volume='600 \u03bcl')\nmix(speed='vortexing vigorously')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: lysate, other: {'pH': '<7'})\n\n### AUTOMATED SECTION ###\npipette(container='spin columns', reagent='lysate', volume='max possible')\ncentrifuge(container='spin columns', duration='3 min', speed='8000xg', discard_flow_through=True)\npipette(container='spin columns', reagent='additional lysate', volume='remaining')\ncentrifuge(container='spin columns', duration='1 min', speed='8000xg', discard_flow_through=True, transfer_column='new collection tube')\nadd(container='spin columns', reagent='buffer AW1', volume='500 \u03bcl')\ncentrifuge(container='spin columns', duration='2 min', speed='8000xg', discard_flow_through=True)\nadd(container='spin columns', reagent='buffer AW2', volume='500 \u03bcl')\ncentrifuge(container='spin columns', duration='3 min', speed='8000xg', discard_flow_through=True, transfer_column='new collection tube')\ncentrifuge(container='spin columns', duration='3 min', speed='8000xg', purpose='dry columns')\nadd(container='spin columns', reagent='pre-heated buffer AE or water', volume='200 \u03bcl', temperature='70\u00b0C')\nincubate(container='spin columns', temperature='room temp', duration='1 min')\ncentrifuge(container='spin columns', duration='2 min', speed='8000xg', purpose='elute')\nadd(container='spin columns', reagent='pre-heated buffer AE or water', volume='200 \u03bcl', temperature='70\u00b0C', repeat=True)\ntransfer(container='Amicon Ultra 30 K', reagent='eluted DNA')\ncentrifuge(container='Amicon Ultra 30 K', duration='10 min', speed='10,000xg')\nadd(container='Amicon Ultra 30 K', reagent='PCR water', volume='500 \u03bcl', purpose='rinse DNA')\ncentrifuge(container='Amicon Ultra 30 K', duration='10 min', speed='10,000xg')\nadd(reagent='dilute TE', volume='20 \u03bcl')\npipette(reagent='DNA in TE', volume='20 \u03bcl', speed='up and down 20 times', purpose='mix')\ntransfer(container='clean tube', reagent='DNA in TE', volume='20 \u03bcl', purpose='storage')\ncentrifuge(container='fresh tube (upside down)', duration='3 min', speed='1000xg', purpose='retrieve DNA')",
+    "source_file": "protocol_318.txt"
+  }
+]

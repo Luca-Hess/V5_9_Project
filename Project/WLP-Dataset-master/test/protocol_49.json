@@ -1,0 +1,252 @@
+[
+  {
+    "protocol": "Bacteriophage isolation by spotting on target host cells\nThe host cells are grown overnight in liquid cultures containing an appropriate growth medium for the organism.\nMeasure optical density spectrophotometrically at 525 nm (OD525) and adjust OD to 0.3\u20130.5 with growth medium.\nSoft agar (0.5 to 0.6% agar in media of choice) is melted in a water bath or a microwave oven.\nAliquot 4mL of soft agar into sterile tubes and keep just above solidification temperature until use.\n200\u2013300 \u00b5L bacterial culture is added to the 4 mL tubes with melted soft agar.\nThe bacteria-soft agar mixture is then vortexed and immediately poured onto an agar plate with an agar that supports growth of the host bacterium.\nDistribute\u00a0bacteria-soft agar mixture evenly on the plate, which is placed on a flat surface.\nWhen the soft agar containing the target bacteria has solidified, triplicate aliquots of 5\u201310 \u00b5L of each of the environmental water samples from which phages should be isolated are spotted on top of the soft agar.\nAs a negative control 5\u201310 \u00b5L phage buffer (e.g., SM buffer: 450 mM NaCl, 50 mM MgSO4, 50 mM Tris, 0.01 % Gelatin, pH = 8) or 0.02 \u00b5m filtered sample water is spotted in triplicate on the soft agar.\nThe plates are incubated for 1\u20133 d depending on the growth rate of the bacteria, and the presence of lytic phages in the sample is detected as a clearing zone (plaque) in the spotted area of the lawn of bacteria that develops over time on the plate.\nIf clearing zones appear in the spotted area, this indicates the presence of lytic phages, which can be isolated and purified.\nOnce detected as clearings in the spotting zone, phages are further isolated and purified from the plates.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "liquid culture flask or tube",
+          "reagent": "host cells in growth medium",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "growth medium": "appropriate for organism"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "spectrophotometer cuvette",
+          "reagent": "host cell culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "525 nm",
+            "measurement": "optical density (OD525)"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "liquid culture flask or tube",
+          "reagent": "growth medium",
+          "volume": "as needed",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_OD": "0.3\u20130.5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": "soft agar bottle or tube",
+          "reagent": "soft agar (0.5 to 0.6% agar in media of choice)",
+          "volume": null,
+          "temperature": "water bath or microwave oven (above melting point)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "sterile tubes",
+          "reagent": "melted soft agar",
+          "volume": "4 mL",
+          "temperature": "just above solidification temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "4 mL tubes with melted soft agar",
+          "reagent": "bacterial culture",
+          "volume": "200\u2013300 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube with bacteria-soft agar mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "immediately",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": "bacteria-soft agar mixture",
+          "volume": "entire tube contents",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "agar type": "supports growth of host bacterium"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "distribute",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": "bacteria-soft agar mixture",
+          "volume": "entire plate surface",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "surface": "flat"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "solidify",
+        "parameters": {
+          "container": "agar plate",
+          "reagent": "soft agar containing target bacteria",
+          "volume": null,
+          "temperature": "room temperature or below melting point",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spot",
+        "parameters": {
+          "container": "agar plate (solidified soft agar)",
+          "reagent": "environmental water samples",
+          "volume": "5\u201310 \u00b5L (triplicate aliquots per sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_spots": "triplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spot",
+        "parameters": {
+          "container": "agar plate (solidified soft agar)",
+          "reagent": "phage buffer or 0.02 \u00b5m filtered sample water (negative control)",
+          "volume": "5\u201310 \u00b5L (triplicate aliquots per control)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_spots": "triplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20133 days",
+          "speed": null,
+          "other": {
+            "dependent_on": "growth rate of bacteria"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "detect",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "indicator": "clearing zone (plaque) in spotted area"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": "phages from clearing zones",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": "phages from clearing zones",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: liquid culture flask or tube, reagent: host cells in growth medium, duration: overnight, other: {'growth medium': 'appropriate for organism'})\n# MANUAL: measure (container: spectrophotometer cuvette, reagent: host cell culture, other: {'wavelength': '525 nm', 'measurement': 'optical density (OD525)'})\n\n### AUTOMATED SECTION ###\nadjust(container='liquid culture flask or tube', reagent='growth medium', volume='as needed', target_OD='0.3\u20130.5')\nmelt(container='soft agar bottle or tube', reagent='soft agar (0.5 to 0.6% agar in media of choice)', temperature='water bath or microwave oven (above melting point)')\naliquot(container='sterile tubes', reagent='melted soft agar', volume='4 mL', temperature='just above solidification temperature')\nadd(container='4 mL tubes with melted soft agar', reagent='bacterial culture', volume='200\u2013300 \u00b5L')\nvortex(container='tube with bacteria-soft agar mixture', duration='immediately')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: agar plate, reagent: bacteria-soft agar mixture, volume: entire tube contents, other: {'agar type': 'supports growth of host bacterium'})\n# MANUAL: distribute (container: agar plate, reagent: bacteria-soft agar mixture, volume: entire plate surface, other: {'surface': 'flat'})\n\n### AUTOMATED SECTION ###\nsolidify(container='agar plate', reagent='soft agar containing target bacteria', temperature='room temperature or below melting point')\nspot(container='agar plate (solidified soft agar)', reagent='environmental water samples', volume='5\u201310 \u00b5L (triplicate aliquots per sample)', number_of_spots='triplicate')\nspot(container='agar plate (solidified soft agar)', reagent='phage buffer or 0.02 \u00b5m filtered sample water (negative control)', volume='5\u201310 \u00b5L (triplicate aliquots per control)', number_of_spots='triplicate')\nincubate(container='agar plates', duration='1\u20133 days', dependent_on='growth rate of bacteria')\n\n### MANUAL SECTION ###\n# MANUAL: detect (container: agar plates, other: {'indicator': 'clearing zone (plaque) in spotted area'})\n# MANUAL: isolate (container: agar plates, reagent: phages from clearing zones, other: {})\n# MANUAL: purify (container: agar plates, reagent: phages from clearing zones, other: {})",
+    "source_file": "protocol_49.txt"
+  }
+]

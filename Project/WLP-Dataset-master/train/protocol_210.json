@@ -1,0 +1,302 @@
+[
+  {
+    "protocol": "Luminex Bead Coupling\nVortex the bead stock suspension to yield a homogeneous bead suspension.\nDissolve approximately 10 mg each of EDC and S-NHS into 2 microcentrifuge tubes and resuspend in deionized water at 50 mg/mL.\nCentrifuge the 100 \u03bcl bead suspension at 10,000 x g. \nCarefully remove and discard the supernatant.\nResuspend the beads in 80 \u03bcl activation buffer.\nAdd 10 \u03bcl of S-NHS solution and 10 \u03bcl of EDC solution to the bead suspension.\nIncubate with agitation at room temperature in the dark at roughly 900 rpm.\nDilute your protein stock solution with coupling buffer to a concentration of 0.1 mg/ml in a volume of 100 \u03bcl.\nOptimal coupling may occur at a concentration within 25-250 \u03bcg/ml.\nNote the protein stock cannot have any other amine groups present.\nCentrifuge the beads at 10,000 x g. \nCarefully remove and discard the supernatant.\nAdd the diluted protein solution.\nAgitate the tube with activated beads and protein solution overnight at 4C at roughly 900 rpm in the dark (wrapped in foil).\nCentrifuge the beads at 10,000 x g. \nDiscard supernatant.\nWash the beads three times with PBS/1% BSA.\nResuspend the bead pellet in 1 ml PBS/1% BSA.\nDetermine bead concentration using Luminex and adjust amount of stock used accordingly.",
+    "actions": [
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "bead stock suspension tube",
+          "reagent": "bead stock suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "goal": "homogeneous bead suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "2 microcentrifuge tubes",
+          "reagent": "EDC (10 mg), S-NHS (10 mg)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "deionized water",
+            "final concentration": "50 mg/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "100 \u03bcl bead suspension",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": "10,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "carefully"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "beads",
+          "volume": "80 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "activation buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "S-NHS solution",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "EDC solution",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "beads + S-NHS + EDC",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": "900 rpm",
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "protein stock solution",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "coupling buffer",
+            "final concentration": "0.1 mg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "10,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "carefully"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "diluted protein solution",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "tube with activated beads and protein solution",
+          "reagent": "activated beads + protein solution",
+          "volume": null,
+          "temperature": "4C",
+          "duration": "overnight",
+          "speed": "900 rpm",
+          "other": {
+            "light": "in the dark (wrapped in foil)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "10,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "PBS/1% BSA",
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "bead suspension tube",
+          "reagent": "bead pellet",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "PBS/1% BSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "bead concentration",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Luminex"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "amount of stock used",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "based on": "bead concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nvortex(container='bead stock suspension tube', reagent='bead stock suspension', goal='homogeneous bead suspension')\ndissolve(container='2 microcentrifuge tubes', reagent='EDC (10 mg), S-NHS (10 mg)', solvent='deionized water', final concentration='50 mg/mL')\ncentrifuge(container='bead suspension tube', reagent='100 \u03bcl bead suspension', volume='100 \u03bcl', speed='10,000 x g')\nremove(container='bead suspension tube', reagent='supernatant', method='carefully')\nresuspend(container='bead suspension tube', reagent='beads', volume='80 \u03bcl', buffer='activation buffer')\nadd(container='bead suspension tube', reagent='S-NHS solution', volume='10 \u03bcl')\nadd(container='bead suspension tube', reagent='EDC solution', volume='10 \u03bcl')\nincubate(container='bead suspension tube', reagent='beads + S-NHS + EDC', temperature='room temperature', speed='900 rpm', light='in the dark')\ndilute(reagent='protein stock solution', volume='100 \u03bcl', buffer='coupling buffer', final concentration='0.1 mg/ml')\ncentrifuge(container='bead suspension tube', reagent='beads', speed='10,000 x g')\nremove(container='bead suspension tube', reagent='supernatant', method='carefully')\nadd(container='bead suspension tube', reagent='diluted protein solution', volume='100 \u03bcl')\nagitate(container='tube with activated beads and protein solution', reagent='activated beads + protein solution', temperature='4C', duration='overnight', speed='900 rpm', light='in the dark (wrapped in foil)')\ncentrifuge(container='bead suspension tube', reagent='beads', speed='10,000 x g')\ndiscard(container='bead suspension tube', reagent='supernatant')\nwash(container='bead suspension tube', reagent='beads', buffer='PBS/1% BSA', times=3)\nresuspend(container='bead suspension tube', reagent='bead pellet', volume='1 ml', buffer='PBS/1% BSA')\n\n### MANUAL SECTION ###\n# MANUAL: determine (reagent: bead concentration, other: {'instrument': 'Luminex'})\n# MANUAL: adjust (reagent: amount of stock used, other: {'based on': 'bead concentration'})",
+    "source_file": "protocol_210.txt"
+  }
+]

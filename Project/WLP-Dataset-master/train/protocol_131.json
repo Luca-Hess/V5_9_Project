@@ -1,0 +1,289 @@
+[
+  {
+    "protocol": "Trypsin Digestion\nMake 6M Urea solution by adding 108.11 mg of Urea to 300 \u00b5L of 50mM ammonium bicarbonate (NH4HCO3) containing protein.\nAdd 20 \u00b5L of 1.5 M Tris pH 8.8.\nAdd 7.5 \u00b5L of 200mM TCEP and incubate for\u00a01 hour at 37\u00b0C.\nAdd 60 \u00b5L of 200mM iodoacetamide and vortex.\nIncubate for one hour at room temperature in a dark area.\nAdd 60 \u00b5L of 200mM DTT and vortex.\nIncubate for one hour at room temperature.\nAliquot 150 \u00b5L each into three 1.5 mL centrifuge tubes.\nAdd 800 \u00b5L of 25mM ammonium bicarbonate to each tube to dilute the urea.\nAdd 200 \u00b5L of MeOH to each tube.\nAdd Trypsin to protein at a ratio of 50 protein to 1 trypsin and incubate overnight at room temperature.\nSpeedvac until dry.\nAdd 200 \u00b5L of molecular biology grade water to tubes three times and speedvac to reduce the ammonium bicarbonate.\nStore at -80\u00b0C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "protein solution in 300 \u00b5L of 50mM ammonium bicarbonate",
+          "reagent": "Urea",
+          "volume": "108.11 mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "6M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": "1.5 M Tris pH 8.8",
+          "volume": "20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": "200mM TCEP",
+          "volume": "7.5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": "200mM iodoacetamide",
+          "volume": "60 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "light condition": "dark area"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": "200mM DTT",
+          "volume": "60 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": "150 \u00b5L each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "three 1.5 mL centrifuge tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": "25mM ammonium bicarbonate",
+          "volume": "800 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dilute the urea"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": "MeOH",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": "Trypsin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "50 protein to 1 trypsin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "speedvac",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until dry",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": "molecular biology grade water",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "three times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "speedvac",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to reduce the ammonium bicarbonate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "each 1.5 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='protein solution in 300 \u00b5L of 50mM ammonium bicarbonate', reagent='Urea', volume='108.11 mg', final concentration='6M')\nadd(container='protein solution', reagent='1.5 M Tris pH 8.8', volume='20 \u00b5L')\nadd(container='protein solution', reagent='200mM TCEP', volume='7.5 \u00b5L')\nincubate(container='protein solution', temperature='37\u00b0C', duration='1 hour')\nadd(container='protein solution', reagent='200mM iodoacetamide', volume='60 \u00b5L')\nvortex(container='protein solution')\nincubate(container='protein solution', temperature='room temperature', duration='1 hour', light condition='dark area')\nadd(container='protein solution', reagent='200mM DTT', volume='60 \u00b5L')\nvortex(container='protein solution')\nincubate(container='protein solution', temperature='room temperature', duration='1 hour')\naliquot(container='protein solution', volume='150 \u00b5L each', destination='three 1.5 mL centrifuge tubes')\nadd(container='each 1.5 mL centrifuge tube', reagent='25mM ammonium bicarbonate', volume='800 \u00b5L', purpose='to dilute the urea')\nadd(container='each 1.5 mL centrifuge tube', reagent='MeOH', volume='200 \u00b5L')\nadd(container='each 1.5 mL centrifuge tube', reagent='Trypsin', ratio='50 protein to 1 trypsin')\nincubate(container='each 1.5 mL centrifuge tube', temperature='room temperature', duration='overnight')\nspeedvac(container='each 1.5 mL centrifuge tube', duration='until dry')\nadd(container='each 1.5 mL centrifuge tube', reagent='molecular biology grade water', volume='200 \u00b5L', repeat='three times')\nspeedvac(container='each 1.5 mL centrifuge tube', purpose='to reduce the ammonium bicarbonate')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: each 1.5 mL centrifuge tube, temperature: -80\u00b0C, other: {})",
+    "source_file": "protocol_131.txt"
+  }
+]

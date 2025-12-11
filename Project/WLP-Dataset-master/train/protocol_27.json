@@ -1,0 +1,888 @@
+[
+  {
+    "protocol": "Immunohistochemistry - Drosophila Embryo\nTime collection of embryos to obtain the correct stage desired for analysis.\nCollection is completed using apple juice agar plates with a small amount of yeast paste applied to surface.\nOur collections are typically conducted at 25 degrees C, unless otherwise specified in published materials and methods.\nWash embryos from apple juice agar plate and into an embryo wash basket using a small paintbrush and embryo wash solution.\nPlace wash basket into a small tray and pour household bleach on top of the embryos until completely covered.\nLet sit for 3 minutes to remove chorion.\nRinse bleach from wash basket and embryos.\nOnce bleach is removed, transfer embryos to container with 50:50 4% paraformaldehyde and heptane.Shake on orbital rotator at 150rpm for 20 mins.\nAllow solution to heptane and PFA to separate.\nRemove bottom phase (PFA) and dispose of as required.\nBe sure to not disturb or remove the embryos that are trapped in the interface.Add Methanol in equal volume to the remaining heptane.\nShake vigorously for 20 seconds and allow embryos to settle to the bottom of the container.\nRemove heptane from the top layer and most of the methanol.\nAdd methanol and remove two more times.Transfer embryos in methanol to disposable culture tubes (flint glass) and allow to settle.Remove methanol without disturbing the embryos at the bottom of the tube.\nRinse embryos with 750ul of blocking solution, once.Allow embryos to settle to the bottom of tube.\nRemove blocking solution and rinse twice with 1X PBS.Remove 1X PBS and add 750ul of blocking solution.Seal tube with parafilm and rock gently for 30 minutes.\nRemove blocking solution and rinse once with 1X PBS.\nRemove 1X PBS and add blocking solution.\nAdd primary antibodies in optimized concentrations.\n(See Optimized Concentrations for Developmental Studies Hybridoma Bank Antibodies for use with Drosophila Embryos).Wrap tube with parafilm and rock overnight at 4 degrees Celsius.\nRemove blocking solution with primary antibodies.Rinse three times with 1X PBS.\nRemove 1X PBS and add 750ul of blocking solution.\nWrap tube with parafilm and rock at room temperature for 30 minutes.\nRemove blocking solution and rinse once with 1X PBS.\nRemove 1X PBS and add new blocking solution.\nAdd secondary antibodies at optimized concentrations.\nOur studies used concentrations of 1:1000.Wrap tube with parafilm and foil.\nRock gently for 2-3 hours at room temperature.\nRemove blocking solution with secondary antibodies.\nRinse three times with 1X PBS.\nAdd 750ul of blocking solution.Wrap tube with parafilm and foil.\nRock for 30 minutes.\nRemove blocking solution and rinse once with 1X PBS.Carefully remove embryos with a glass pipette that has been rinsed with blocking solution and transfer to a microscope slide.Using Whatman's paper, carefully wick away excess 1X PBS.Add 35ul of mounting media and cover with coverslip.\nSeal with nail polish if desired.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "embryo wash basket",
+          "reagent": "embryo wash solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "apple juice agar plate",
+            "tool": "small paintbrush"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "small tray with wash basket",
+          "reagent": "household bleach",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverage": "until embryos completely covered"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wash basket in tray",
+          "reagent": "household bleach",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "remove chorion"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "wash basket and embryos",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "container with 50:50 4% paraformaldehyde and heptane",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "container with embryos, 4% paraformaldehyde and heptane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "150 rpm",
+          "other": {
+            "device": "orbital rotator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "container with heptane and PFA solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phases": "heptane and PFA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "container with separated phases",
+          "reagent": "bottom phase (PFA)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dispose": "as required"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "container with remaining heptane",
+          "reagent": "methanol",
+          "volume": "equal volume to remaining heptane",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "container with embryos, heptane, methanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 seconds",
+          "speed": "vigorous",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "settle",
+        "parameters": {
+          "container": "container with embryos",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "allow embryos to settle to bottom"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "container with embryos, heptane, methanol",
+          "reagent": "heptane (top layer) and most of the methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "container with embryos",
+          "reagent": "methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "two more times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "container with embryos",
+          "reagent": "methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "two more times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "disposable culture tubes (flint glass)",
+          "reagent": "embryos in methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "settle",
+        "parameters": {
+          "container": "culture tubes with embryos",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": "methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "do not disturb": "embryos at bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tubes with embryos",
+          "reagent": "blocking solution",
+          "volume": "750 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "settle",
+        "parameters": {
+          "container": "culture tubes with embryos",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tubes with embryos",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": "blocking solution",
+          "volume": "750 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "primary antibodies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "optimized"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 degrees Celsius",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution with primary antibodies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "three times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": "750 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wrap_with": "foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "new": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "secondary antibodies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1:1000"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wrap_with": "foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2-3 hours",
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution with secondary antibodies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "three times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": "750 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wrap_with": "foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "glass pipette rinsed with blocking solution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wick",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "excess 1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "Whatman's paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "mounting media",
+          "volume": "35 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwash(container='embryo wash basket', reagent='embryo wash solution', source='apple juice agar plate', tool='small paintbrush')\npour(container='small tray with wash basket', reagent='household bleach', coverage='until embryos completely covered')\nincubate(container='wash basket in tray', reagent='household bleach', duration='3 minutes', purpose='remove chorion')\nrinse(container='wash basket and embryos')\ntransfer(container='container with 50:50 4% paraformaldehyde and heptane', reagent='embryos')\nshake(container='container with embryos, 4% paraformaldehyde and heptane', duration='20 minutes', speed='150 rpm', device='orbital rotator')\n\n### MANUAL SECTION ###\n# MANUAL: separate (container: container with heptane and PFA solution, other: {'phases': 'heptane and PFA'})\n\n### AUTOMATED SECTION ###\nremove(container='container with separated phases', reagent='bottom phase (PFA)', dispose='as required')\nadd(container='container with remaining heptane', reagent='methanol', volume='equal volume to remaining heptane')\nshake(container='container with embryos, heptane, methanol', duration='20 seconds', speed='vigorous')\n\n### MANUAL SECTION ###\n# MANUAL: settle (container: container with embryos, other: {'purpose': 'allow embryos to settle to bottom'})\n\n### AUTOMATED SECTION ###\nremove(container='container with embryos, heptane, methanol', reagent='heptane (top layer) and most of the methanol')\nadd(container='container with embryos', reagent='methanol', repeat='two more times')\nremove(container='container with embryos', reagent='methanol', repeat='two more times')\ntransfer(container='disposable culture tubes (flint glass)', reagent='embryos in methanol')\n\n### MANUAL SECTION ###\n# MANUAL: settle (container: culture tubes with embryos)\n\n### AUTOMATED SECTION ###\nremove(container='culture tubes', reagent='methanol', do not disturb='embryos at bottom')\nrinse(container='culture tubes with embryos', reagent='blocking solution', volume='750 ul', repeat='once')\n\n### MANUAL SECTION ###\n# MANUAL: settle (container: culture tubes with embryos)\n\n### AUTOMATED SECTION ###\nremove(container='culture tubes', reagent='blocking solution')\nrinse(container='culture tubes with embryos', reagent='1X PBS', repeat='twice')\nremove(container='culture tubes', reagent='1X PBS')\nadd(container='culture tubes', reagent='blocking solution', volume='750 ul')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: culture tube, reagent: parafilm)\n\n### AUTOMATED SECTION ###\nrock(container='culture tube', duration='30 minutes', speed='gently')\nremove(container='culture tube', reagent='blocking solution')\nrinse(container='culture tube', reagent='1X PBS', repeat='once')\nremove(container='culture tube', reagent='1X PBS')\nadd(container='culture tube', reagent='blocking solution')\nadd(container='culture tube', reagent='primary antibodies', concentration='optimized')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: culture tube, reagent: parafilm)\n\n### AUTOMATED SECTION ###\nrock(container='culture tube', temperature='4 degrees Celsius', duration='overnight')\nremove(container='culture tube', reagent='blocking solution with primary antibodies')\nrinse(container='culture tube', reagent='1X PBS', repeat='three times')\nremove(container='culture tube', reagent='1X PBS')\nadd(container='culture tube', reagent='blocking solution', volume='750 ul')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: culture tube, reagent: parafilm, other: {'wrap_with': 'foil'})\n\n### AUTOMATED SECTION ###\nrock(container='culture tube', temperature='room temperature', duration='30 minutes')\nremove(container='culture tube', reagent='blocking solution')\nrinse(container='culture tube', reagent='1X PBS', repeat='once')\nremove(container='culture tube', reagent='1X PBS')\nadd(container='culture tube', reagent='blocking solution', new=True)\nadd(container='culture tube', reagent='secondary antibodies', concentration='1:1000')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: culture tube, reagent: parafilm, other: {'wrap_with': 'foil'})\n\n### AUTOMATED SECTION ###\nrock(container='culture tube', temperature='room temperature', duration='2-3 hours', speed='gently')\nremove(container='culture tube', reagent='blocking solution with secondary antibodies')\nrinse(container='culture tube', reagent='1X PBS', repeat='three times')\nadd(container='culture tube', reagent='blocking solution', volume='750 ul')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: culture tube, reagent: parafilm, other: {'wrap_with': 'foil'})\n\n### AUTOMATED SECTION ###\nrock(container='culture tube', duration='30 minutes')\nremove(container='culture tube', reagent='blocking solution')\nrinse(container='culture tube', reagent='1X PBS', repeat='once')\nremove(container='culture tube', reagent='1X PBS')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: culture tube, reagent: embryos, other: {'tool': 'glass pipette rinsed with blocking solution'})\n# MANUAL: transfer (container: microscope slide, reagent: embryos)\n# MANUAL: wick (container: microscope slide, reagent: excess 1X PBS, other: {'tool': \"Whatman's paper\"})\n\n### AUTOMATED SECTION ###\nadd(container='microscope slide', reagent='mounting media', volume='35 ul')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: microscope slide, reagent: coverslip)\n# MANUAL: seal (container: microscope slide, reagent: nail polish, other: {'optional': True})",
+    "source_file": "protocol_27.txt"
+  }
+]

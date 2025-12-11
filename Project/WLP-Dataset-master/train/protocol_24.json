@@ -1,0 +1,258 @@
+[
+  {
+    "protocol": "Extracting DNA from bananas\nMush the banana in the resealable bag for about a minute until it has a pudding-like consistency and all lumps are gone.\nFill a cup with the hot water and salt.\nPour the saltwater mix into the bag, and close the bag.\nGently mix and slosh the saltwater and mashed banana together for 30 to 45 seconds.\nAdd dishwashing soap into the bag and gently mix the contents.\nYou do not want the mixture to become too foamy.\nPlace the coffee filter in a clear glass cup, securing the top of the filter around the lip of the cup.\nPour the contents of the bag into the filter and let it sit until all of the liquid has dripped down into the cup.\nRemove and discard the used coffee filter.\nTilt the glass and slowly add cold alcohol down the side of the cup until there is a layer that is 2.5-5cm (1-2in) thick.\nKeep the alcohol and liquefied banana as separate as possible.\nLet this two-layered mixture sit for eight minutes.\nThe longer you wait, the more defined this layer becomes.\nThis is the DNA pieces clumping together.\nStick the wooden stirrer into the cup.\nSpin it in place so that cloudy layer spools around it.\nRemove the stirrer.\nThe substance that you see on the stirrer is DNA!.",
+    "actions": [
+      {
+        "action": "mush",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": "banana",
+          "volume": null,
+          "temperature": null,
+          "duration": "about a minute",
+          "speed": null,
+          "other": {
+            "consistency": "pudding-like",
+            "lumps": "gone"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "cup",
+          "reagent": "hot water and salt",
+          "volume": null,
+          "temperature": "hot",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": "saltwater mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": "saltwater and mashed banana",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 to 45 seconds",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": "dishwashing soap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "resealable bag",
+          "reagent": "contents (banana, saltwater, soap)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "clear glass cup",
+          "reagent": "coffee filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "secure": "top of filter around lip of cup"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "coffee filter in glass cup",
+          "reagent": "contents of bag",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "coffee filter in glass cup",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until all liquid has dripped down",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "coffee filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": "used coffee filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tilt",
+        "parameters": {
+          "container": "glass cup",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "glass cup",
+          "reagent": "cold alcohol",
+          "volume": "2.5-5cm layer",
+          "temperature": "cold",
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "down side of cup": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "glass cup",
+          "reagent": "two-layered mixture (alcohol and liquefied banana)",
+          "volume": null,
+          "temperature": null,
+          "duration": "eight minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stick",
+        "parameters": {
+          "container": "cup",
+          "reagent": "wooden stirrer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "cup",
+          "reagent": "wooden stirrer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cloudy layer spools around stirrer": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "cup",
+          "reagent": "wooden stirrer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: mush (container: resealable bag, reagent: banana, duration: about a minute, other: {'consistency': 'pudding-like', 'lumps': 'gone'})\n\n### AUTOMATED SECTION ###\nfill(container='cup', reagent='hot water and salt', temperature='hot')\npour(container='resealable bag', reagent='saltwater mix')\n\n### MANUAL SECTION ###\n# MANUAL: close (container: resealable bag, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='resealable bag', reagent='saltwater and mashed banana', duration='30 to 45 seconds', speed='gently')\nadd(container='resealable bag', reagent='dishwashing soap')\nmix(container='resealable bag', reagent='contents (banana, saltwater, soap)', speed='gently')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: clear glass cup, reagent: coffee filter, other: {'secure': 'top of filter around lip of cup'})\n\n### AUTOMATED SECTION ###\npour(container='coffee filter in glass cup', reagent='contents of bag')\nwait(container='coffee filter in glass cup', duration='until all liquid has dripped down')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: coffee filter, other: {'discard': 'used coffee filter'})\n# MANUAL: tilt (container: glass cup, speed: slowly, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='glass cup', reagent='cold alcohol', volume='2.5-5cm layer', temperature='cold', speed='slowly', down side of cup=True)\nwait(container='glass cup', reagent='two-layered mixture (alcohol and liquefied banana)', duration='eight minutes')\n\n### MANUAL SECTION ###\n# MANUAL: stick (container: cup, reagent: wooden stirrer, other: {})\n# MANUAL: spin (container: cup, reagent: wooden stirrer, other: {'cloudy layer spools around stirrer': True})\n# MANUAL: remove (container: cup, reagent: wooden stirrer, other: {})",
+    "source_file": "protocol_24.txt"
+  }
+]

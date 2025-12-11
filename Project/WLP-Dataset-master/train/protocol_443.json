@@ -1,0 +1,55 @@
+[
+  {
+    "protocol": "Fixing solution to SEM\nPut Milonig's phosphate buffer in a becker. \nAdd Tannic Acid to the becker with the previous solution. \nAdd 6 mL of Glutarandehyde to the previous solution",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "Milonig's phosphate buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "Tannic Acid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "previous_solution": "Milonig's phosphate buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "Glutaraldehyde",
+          "volume": "6 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "previous_solution": "Milonig's phosphate buffer + Tannic Acid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='beaker', reagent=\"Milonig's phosphate buffer\")\nadd(container='beaker', reagent='Tannic Acid', previous_solution=\"Milonig's phosphate buffer\")\nadd(container='beaker', reagent='Glutaraldehyde', volume='6 mL', previous_solution=\"Milonig's phosphate buffer + Tannic Acid\")",
+    "source_file": "protocol_443.txt"
+  }
+]

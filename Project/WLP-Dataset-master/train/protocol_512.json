@@ -1,0 +1,149 @@
+[
+  {
+    "protocol": "Quick Ligation Protocol (M2200)\nCombine 50 ng of vector with a 3-fold molar excess of insert.\nAdjust volume to 10\u03bcl with dH2O.\nAdd 10 \u03bcl of 2X Quick Ligation Buffer and mix.\nAdd 1\u03bcl of Quick T4 DNA Ligase and mix thoroughly.\nCentrifuge briefly and incubate at room temperature (25\u00b0C) for 5 minutes.\nChill on ice, then transform or store at -20\u00b0C.",
+    "actions": [
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": "vector, insert",
+          "volume": "50 ng vector, 3-fold molar excess insert",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "dH2O",
+          "volume": "to 10 \u03bcl total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "2X Quick Ligation Buffer",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Quick T4 DNA Ligase",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncombine(reagent='vector, insert', volume='50 ng vector, 3-fold molar excess insert')\nadjust(reagent='dH2O', volume='to 10 \u03bcl total')\nadd(reagent='2X Quick Ligation Buffer', volume='10 \u03bcl')\nmix()\nadd(reagent='Quick T4 DNA Ligase', volume='1 \u03bcl')\nmix(speed='thoroughly')\ncentrifuge(duration='briefly')\nincubate(temperature='25\u00b0C', duration='5 minutes')\nchill(temperature='on ice')\nstore(temperature='-20\u00b0C')",
+    "source_file": "protocol_512.txt"
+  }
+]

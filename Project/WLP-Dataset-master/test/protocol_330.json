@@ -1,0 +1,358 @@
+[
+  {
+    "protocol": "Most Probable Number (MPN) Counts of Cyanophages\nLabel the dilution preparation plate using example in guidelines.\u00a0 \nLabel the sample plates with the date, host, phage name, and any other applicable information (e.g. the light level).\u00a0 \nUsing a 8x1500 \u00b5L multi-channel pipettor, put 270 \u00b5L of Pro99 or SN medium in all wells of dilution plate. \nUsing a 100 \u00b5L pipettor, dispense 30 \u00b5L of virus sample into row H of the dilution plate.\u00a0 \nRepeat this for each of the virus samples. \nUsing a 12x300 \u00b5L multi-channel pipettor set at 30 \u00b5L with 12 tips attached, pipette row H up and down to mix the dilution. \nReplace the tips and pipette 30 \u00b5L from row H into row A (the 10-2 row). \nPipette up and down several times to mix. \nReplace the tips and transfer 30 \u00b5L into row B (10-3 row). \nRepeat this mixing, replacing tips and transferring 4 more times until you are at row F (10-7 row). \u00a0 \nUsing a 12x300 \u00b5L multi-channel pipettor set to 30 \u00b5L with 8 tips attached, pipet 30 \u00b5L host cells into all appropriate wells of the sample plate.\u00a0 \nReset the pipettor to dispense 20 \u00b5L, put on 8 fresh tips and transfer 20 \u00b5L from the virus dilution plate to the same corresponding column in the sample test plate. \t\nPut the lids on the sample test plates and place in incubator under appropriate light and temperature conditions for each host, and let the virus adsorb to the host for 1 hr. \nUsing the 8x1500 \u00b5L multi-channel pipettor set to step 6x200 \u00b5L, add 200 \u00b5L of Pro99 or SN medium to all wells in all sample plates. \u00a0\nSeal each plate with parafilm and return plates to the incubator",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "dilution preparation plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labeling_details": "example in guidelines"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "sample plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labeling_details": "date, host, phage name, light level"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "dilution plate (all wells)",
+          "reagent": "Pro99 or SN medium",
+          "volume": "270 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "8x1500 \u00b5L multi-channel pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "dilution plate (row H)",
+          "reagent": "virus sample",
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "100 \u00b5L pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "dilution plate (row H)",
+          "reagent": "virus samples",
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "100 \u00b5L pipettor",
+            "for_each": "virus sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "dilution plate (row H)",
+          "reagent": null,
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "tips": "12"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "tips"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "dilution plate (row H to row A)",
+          "reagent": null,
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "destination": "row A (10-2 row)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "dilution plate (row A)",
+          "reagent": null,
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "times": "several"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "tips"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "dilution plate (row A to row B)",
+          "reagent": null,
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "destination": "row B (10-3 row)"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "dilution plate (rows B to F)",
+          "reagent": null,
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "mixing": "several times",
+            "replacing_tips": "each transfer",
+            "transfers": "4 more times",
+            "destination": "row F (10-7 row)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sample plate (all appropriate wells)",
+          "reagent": "host cells",
+          "volume": "30 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "tips": "8"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "reset",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "tips",
+            "tips": "8 fresh"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "virus dilution plate to sample test plate (corresponding column)",
+          "reagent": null,
+          "volume": "20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12x300 \u00b5L multi-channel pipettor",
+            "destination": "corresponding column in sample test plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "sample test plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "item": "lids"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample test plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "appropriate for each host",
+          "duration": "1 hr",
+          "speed": null,
+          "other": {
+            "light": "appropriate for each host"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "all wells in all sample plates",
+          "reagent": "Pro99 or SN medium",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "8x1500 \u00b5L multi-channel pipettor",
+            "step": "6x200 \u00b5L"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "each plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "parafilm"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "appropriate for each host",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: dilution preparation plate, other: {'labeling_details': 'example in guidelines'})\n# MANUAL: label (container: sample plates, other: {'labeling_details': 'date, host, phage name, light level'})\n\n### AUTOMATED SECTION ###\ndispense(container='dilution plate (all wells)', reagent='Pro99 or SN medium', volume='270 \u00b5L', instrument='8x1500 \u00b5L multi-channel pipettor')\ndispense(container='dilution plate (row H)', reagent='virus sample', volume='30 \u00b5L', instrument='100 \u00b5L pipettor')\nrepeat(container='dilution plate (row H)', reagent='virus samples', volume='30 \u00b5L', instrument='100 \u00b5L pipettor', for_each='virus sample')\nmix(container='dilution plate (row H)', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', tips='12')\nreplace(item='tips')\ntransfer(container='dilution plate (row H to row A)', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', destination='row A (10-2 row)')\nmix(container='dilution plate (row A)', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', times='several')\nreplace(item='tips')\ntransfer(container='dilution plate (row A to row B)', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', destination='row B (10-3 row)')\nrepeat(container='dilution plate (rows B to F)', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', mixing='several times', replacing_tips='each transfer', transfers='4 more times', destination='row F (10-7 row)')\ndispense(container='sample plate (all appropriate wells)', reagent='host cells', volume='30 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', tips='8')\nreset(volume='20 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor')\nreplace(item='tips', tips='8 fresh')\ntransfer(container='virus dilution plate to sample test plate (corresponding column)', volume='20 \u00b5L', instrument='12x300 \u00b5L multi-channel pipettor', destination='corresponding column in sample test plate')\ncover(container='sample test plates', item='lids')\nincubate(container='sample test plates', temperature='appropriate for each host', duration='1 hr', light='appropriate for each host')\ndispense(container='all wells in all sample plates', reagent='Pro99 or SN medium', volume='200 \u00b5L', instrument='8x1500 \u00b5L multi-channel pipettor', step='6x200 \u00b5L')\nseal(container='each plate', material='parafilm')\nincubate(container='plates', temperature='appropriate for each host', location='incubator')",
+    "source_file": "protocol_330.txt"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "protocol": "Transformation and Storage Solution (TSS)\nChemicalVolume/MassFinal Conc.PEG 8000 or PEG 335020 g20%\u00a0(w/v)DMSO10 ml10% (w/v)MgCl2\u00a0* H2O2.03 g100 mMLB Mediumadd 100 ml (pH 6.5).\nPrepare 2x TSS without DMSO and autoclave.\nAdd sterile DMSO after autoclaving.\nDivide in 10 ml aliquots and store at 4 \u00b0C.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "2x TSS without DMSO",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "Preparation details not specified"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": "2x TSS without DMSO",
+          "volume": null,
+          "temperature": "autoclave standard (e.g., 121\u00b0C)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile DMSO",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "autoclaved 2x TSS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": null,
+          "reagent": "TSS solution",
+          "volume": "10 ml aliquots",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "TSS aliquots",
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 2x TSS without DMSO, other: {'note': 'Preparation details not specified'})\n\n### AUTOMATED SECTION ###\nautoclave(reagent='2x TSS without DMSO', temperature='autoclave standard (e.g., 121\u00b0C)')\nadd(reagent='sterile DMSO', to='autoclaved 2x TSS')\ndivide(reagent='TSS solution', volume='10 ml aliquots')\nstore(reagent='TSS aliquots', temperature='4 \u00b0C')",
+    "source_file": "protocol_47.txt"
+  }
+]

@@ -1,0 +1,342 @@
+[
+  {
+    "protocol": "One-step growth curves for Cellulophaga phages\nInoculate a new culture; ie, pick a colony into a new flask containing 10 ml of MLB media.\u00a0 \nImmediately after the transfer, take a \u2018time 0\u2019 growth reading. \nContinue taking readings as performed in step 2 periodically. \nDo a plaque assay to determine the PFU/ml of the lysate you plan to use. \nCalculate the volume needed for 107 phages. \nDetermine the concentration of your culture at the time you want to start the infection.\u00a0 \nCalculate the volume of host culture needed for 108 cells. \nPipet this amount into a 1.5 ml tube. \nAdd 107 phages to the tube and start your timer for 15 minutes to allow the phages to adsorb to the host cells. \nAfter 15 minutes, dilute the infection 1:1000 in MLB media in a 250 ml flask. \nTake a sample immediately after dilution \u2013 this is \u2018time 0\u2019. \nSteps for centrifuged sample: \nSteps for samples that are not centrifuged:\u00a0 \nContinue sampling in this way for 8 hours. \u00a0 \nStore the filtered samples at 4\u00b0C. \nThe next day, count the plaques on all plates that have a countable number of them.\u00a0 \nDecide which dilution gives the best count at each time point for the next time you do this same phage-host pair. \nThe next day, count any new plaques that have appeared and add these to your original count. \nCount again on the third day. \nCalculate PFU/ml at each time point for both the centrifuged (free phage only) and not centrifuged (total phage) samples Graph the results. \nCalculate burst size.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "flask",
+          "reagent": "MLB media",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "colony"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "growth reading",
+            "time": "immediately after transfer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "growth reading",
+            "frequency": "periodically"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "do",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "plaque assay",
+            "purpose": "determine PFU/ml of lysate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "phages",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "volume needed for 10^7 phages"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "concentration at infection start"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "host culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "volume needed for 10^8 cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "host culture",
+          "volume": "calculated amount for 10^8 cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "10^7 phages",
+          "volume": "calculated amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "allow phages to adsorb to host cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "250 ml flask",
+          "reagent": "MLB media",
+          "volume": "1:1000 dilution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "infection mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "sample",
+            "time": "immediately after dilution",
+            "label": "time 0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "8 hours",
+          "speed": null,
+          "other": {
+            "frequency": "periodically"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered samples",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "countable number"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "decide",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "best dilution for count at each time point"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "new plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "next day",
+          "speed": null,
+          "other": {
+            "add_to_original_count": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "third day",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "PFU/ml at each time point for centrifuged and not centrifuged samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "graph",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "results"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "burst size"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: flask, reagent: MLB media, volume: 10 ml, other: {'source': 'colony'})\n# MANUAL: take (other: {'type': 'growth reading', 'time': 'immediately after transfer'})\n# MANUAL: take (other: {'type': 'growth reading', 'frequency': 'periodically'})\n# MANUAL: do (other: {'type': 'plaque assay', 'purpose': 'determine PFU/ml of lysate'})\n# MANUAL: calculate (reagent: phages, other: {'target': 'volume needed for 10^7 phages'})\n# MANUAL: determine (reagent: culture, other: {'target': 'concentration at infection start'})\n# MANUAL: calculate (reagent: host culture, other: {'target': 'volume needed for 10^8 cells'})\n\n### AUTOMATED SECTION ###\npipette(container='1.5 ml tube', reagent='host culture', volume='calculated amount for 10^8 cells')\nadd(container='1.5 ml tube', reagent='10^7 phages', volume='calculated amount')\nwait(container='1.5 ml tube', duration='15 minutes', purpose='allow phages to adsorb to host cells')\ndilute(container='250 ml flask', reagent='MLB media', volume='1:1000 dilution', source='infection mixture')\n\n### MANUAL SECTION ###\n# MANUAL: take (other: {'type': 'sample', 'time': 'immediately after dilution', 'label': 'time 0'})\n# MANUAL: sample (duration: 8 hours, other: {'frequency': 'periodically'})\n\n### AUTOMATED SECTION ###\nstore(reagent='filtered samples', temperature='4\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: plates, reagent: plaques, other: {'criteria': 'countable number'})\n# MANUAL: decide (other: {'target': 'best dilution for count at each time point'})\n# MANUAL: count (container: plates, reagent: new plaques, duration: next day, other: {'add_to_original_count': True})\n# MANUAL: count (container: plates, reagent: plaques, duration: third day)\n# MANUAL: calculate (other: {'target': 'PFU/ml at each time point for centrifuged and not centrifuged samples'})\n# MANUAL: graph (other: {'target': 'results'})\n# MANUAL: calculate (other: {'target': 'burst size'})",
+    "source_file": "protocol_584.txt"
+  }
+]

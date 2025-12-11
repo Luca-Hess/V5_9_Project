@@ -1,0 +1,148 @@
+[
+  {
+    "protocol": "Lethal Phase - Immunohistochemistry\nWash embryos and place into wash basket.\nDechorionate by pouring bleach directly onto embryos.\nLet sit for three minutes.\nRinse embryos in basket with ddH2O until bleach is completely washed away.\nPlace embryos into glass vial containing 6ml of Heptane and 6ml of 0.4% Paraformaldehyde.\nShake on orbital rotator at 150rpm for 20 minutes.\nUpon completion of 20 minute fixation, allow heptane and parformaldehyde to seperate.\nEmbyos will be trapped at the interface between the two solutions.\nUse a glass pipette to remove the bottom (parafomaldehyde) layer be sure to not disrupt the embryos at the interface.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "wash basket",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "wash basket",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dechorionate",
+        "parameters": {
+          "container": null,
+          "reagent": "bleach",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pour directly onto embryos"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "basket",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "bleach is completely washed away"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "6ml Heptane and 6ml 0.4% Paraformaldehyde"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "150 rpm",
+          "other": {
+            "instrument": "orbital rotator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "heptane and paraformaldehyde separate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass vial",
+          "reagent": "bottom (paraformaldehyde) layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "glass pipette",
+            "note": "do not disrupt embryos at interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwash(container='wash basket', reagent='embryos')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: wash basket, reagent: embryos, other: {})\n# MANUAL: dechorionate (reagent: bleach, other: {'method': 'pour directly onto embryos'})\n\n### AUTOMATED SECTION ###\nincubate(duration='3 minutes')\nrinse(container='basket', reagent='ddH2O', until='bleach is completely washed away')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: glass vial, reagent: embryos, other: {'with': '6ml Heptane and 6ml 0.4% Paraformaldehyde'})\n\n### AUTOMATED SECTION ###\nshake(container='glass vial', duration='20 minutes', speed='150 rpm', instrument='orbital rotator')\nwait(until='heptane and paraformaldehyde separate')\nremove(container='glass vial', reagent='bottom (paraformaldehyde) layer', tool='glass pipette', note='do not disrupt embryos at interface')",
+    "source_file": "protocol_511.txt"
+  }
+]

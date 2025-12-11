@@ -1,0 +1,111 @@
+[
+  {
+    "protocol": "How to Make a 0.5M TCEP Stock Solution\nWeigh 5.73 g of TCEP.\nAdd 35 ml of cold molecular biology grade water to the vial, and dissolve the TCEP.\nThis resulting solution is very acidic, with an approximate pH of 2.5.\nBring the solution to pH 7.0 with 10 N NaOH or 10 N KOH.\nBring the resulting solution to 40 ml with molecular biology grade water.\nAliquot into 1 ml volumes in freezer tubes and store at -20\u00b0C.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "vial",
+          "reagent": "TCEP",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "5.73 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cold molecular biology grade water",
+          "volume": "35 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "vial",
+          "reagent": "TCEP",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "vial",
+          "reagent": "10 N NaOH or 10 N KOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_pH": "7.0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": "vial",
+          "reagent": "molecular biology grade water",
+          "volume": "40 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "freezer tubes",
+          "reagent": "TCEP solution",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "freezer tubes",
+          "reagent": "TCEP solution",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: vial, reagent: TCEP, other: {'mass': '5.73 g'})\n\n### AUTOMATED SECTION ###\nadd(container='vial', reagent='cold molecular biology grade water', volume='35 ml', temperature='cold')\ndissolve(container='vial', reagent='TCEP')\nadjust(container='vial', reagent='10 N NaOH or 10 N KOH', target_pH='7.0')\nbring(container='vial', reagent='molecular biology grade water', volume='40 ml')\naliquot(container='freezer tubes', reagent='TCEP solution', volume='1 ml')\nstore(container='freezer tubes', reagent='TCEP solution', temperature='-20\u00b0C')",
+    "source_file": "protocol_30.txt"
+  }
+]

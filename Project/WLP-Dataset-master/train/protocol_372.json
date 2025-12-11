@@ -1,0 +1,181 @@
+[
+  {
+    "protocol": "Yeast DAPI Staining\nGrow up yeast in liquid medium overnight.\nAdd 333 \u03bcL (or 1 volume) yeast culture to a 1.5 mL microcentrifuge tube.\nAdd 666\u00a0\u03bcL (or 2 volume) of 100% Ethanol to the 1.5 mL microcentrifuge tube.\nLet the yeast ethanol mixture sit at room temperature for 30-60 minutes.\nSpin down yeast cells for 1 minute at 2500 RPM.\nPour out the supernatant and resuspend the pellet in 1mL of 1 x PBS, then centrifuge for 1 minute at 2500 RPM.\nPour out the supernatant and resuspend the pellet in 200 \u03bcL of a\u00a01 x PBS / 1:2000 Dilution DAPI mixture.\nAdd one drop of the yeast suspended in the PBS / DAPI mixture onto a microscope slide, add a coverslip on top, and go observe the stained yeast.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "yeast culture",
+          "volume": "333 \u03bcL (or 1 volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "100% Ethanol",
+          "volume": "666 \u03bcL (or 2 volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "yeast ethanol mixture",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "yeast ethanol mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "2500 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "1 mL of 1 x PBS",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pellet": "yeast cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "yeast cells in PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "2500 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "1 x PBS / 1:2000 Dilution DAPI mixture",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pellet": "yeast cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "yeast suspended in PBS / DAPI mixture",
+          "volume": "one drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "stained yeast",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5 mL microcentrifuge tube', reagent='yeast culture', volume='333 \u03bcL (or 1 volume)')\nadd(container='1.5 mL microcentrifuge tube', reagent='100% Ethanol', volume='666 \u03bcL (or 2 volume)')\nincubate(container='1.5 mL microcentrifuge tube', reagent='yeast ethanol mixture', temperature='room temperature', duration='30-60 minutes')\ncentrifuge(container='1.5 mL microcentrifuge tube', reagent='yeast ethanol mixture', duration='1 minute', speed='2500 RPM')\naspirate(container='1.5 mL microcentrifuge tube', reagent='supernatant', volume='all')\nresuspend(container='1.5 mL microcentrifuge tube', reagent='1 mL of 1 x PBS', volume='1 mL', pellet='yeast cells')\ncentrifuge(container='1.5 mL microcentrifuge tube', reagent='yeast cells in PBS', duration='1 minute', speed='2500 RPM')\naspirate(container='1.5 mL microcentrifuge tube', reagent='supernatant', volume='all')\nresuspend(container='1.5 mL microcentrifuge tube', reagent='1 x PBS / 1:2000 Dilution DAPI mixture', volume='200 \u03bcL', pellet='yeast cells')\ndispense(container='microscope slide', reagent='yeast suspended in PBS / DAPI mixture', volume='one drop')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: microscope slide, reagent: coverslip, other: {})\n# MANUAL: observe (container: microscope slide, reagent: stained yeast, other: {})",
+    "source_file": "protocol_372.txt"
+  }
+]

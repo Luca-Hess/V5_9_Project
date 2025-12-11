@@ -1,0 +1,296 @@
+[
+  {
+    "protocol": "Subcellular Fractionation from Animal Cells (FOCUS\u2122 SubCell Kit)\nOPTIONAL: Add appropriate protease inhibitor cocktail (e.g.\nG\u2010Biosciences\u2019 ProteaseArrest, Cat. # 786\u2010108) to SubCell Buffer\u2010I immediately prior to use.\nUse fresh cells only.\nPellet the harvested cells by centrifugation at ~800 x g for 1 minute.\nCarefully remove and discard the supernatant.\nGently vortex to suspend the cells and incubate on ice for 10 minutes.\nAdd 500\u00b5l of ice cold SubCell Buffer\u2010I.\nPerform this lysis step on ice.\nUsing a narrow opening (20 gauge) syringe needle, gently pull the suspension up and down 10\u201030 times.\nAdd 250\u00b5l 3X SubCell Buffer\u2010II (350\u00b5l if Dounce homogenizer is used) and mix by inverting.\nCentrifuge the tube at 700x g for 10 minutes to pellet the nuclei.\nTransfer the supernatant to a new tube.\nCentrifuge supernatant at 12,000x g for 15 minutes.\nTransfer the supernatant (post mitochondria) to a new tube for further processing.\nThe pellet contains mitochondria.\nAdd 500\u00b5l 1X SubCell Buffer\u2010II to the pellet, and centrifuge again at 12,000 x g for 5 minutes.\nDiscard the supernatant.\nResuspend the mitochondrial pellet with 50\u2010100\u00b5l Working Mitochondria Storage Buffer and keep the suspension on ice before downstream processing.\nEnrichment of other cell organelles: The post mitochondria supernatant from steps 8-9 can be further fractionated using a variety of gradient and differential centrifugations.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SubCell Buffer-I",
+          "reagent": "protease inhibitor cocktail (e.g. ProteaseArrest)",
+          "volume": "appropriate (not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "immediately prior to use"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "harvested cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "800 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "cell pellet tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "cell pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "purpose": "suspend cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": "SubCell Buffer-I",
+          "volume": "500\u00b5l",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "lysis step"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pull up and down 10-30 times with 20 gauge syringe needle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": "3X SubCell Buffer-II",
+          "volume": "250\u00b5l (350\u00b5l if Dounce homogenizer is used)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "700 x g",
+          "other": {
+            "purpose": "pellet nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": "12,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "supernatant (post mitochondria)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new tube",
+            "purpose": "further processing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "mitochondrial pellet",
+          "reagent": "1X SubCell Buffer-II",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "mitochondrial pellet with buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "12,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "mitochondrial pellet",
+          "reagent": "Working Mitochondria Storage Buffer",
+          "volume": "50-100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mitochondrial suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "before downstream processing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='SubCell Buffer-I', reagent='protease inhibitor cocktail (e.g. ProteaseArrest)', volume='appropriate (not specified)', timing='immediately prior to use')\ncentrifuge(container='harvested cells', duration='1 minute', speed='800 x g')\nremove(container='cell pellet tube', reagent='supernatant', discard=True)\nvortex(container='cell pellet', speed='gentle', purpose='suspend cells')\nincubate(container='cell suspension', temperature='on ice', duration='10 minutes')\nadd(container='cell suspension', reagent='SubCell Buffer-I', volume='500\u00b5l', temperature='ice cold')\nincubate(container='cell suspension', temperature='on ice', purpose='lysis step')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: cell suspension, other: {'method': 'pull up and down 10-30 times with 20 gauge syringe needle'})\n\n### AUTOMATED SECTION ###\nadd(container='cell suspension', reagent='3X SubCell Buffer-II', volume='250\u00b5l (350\u00b5l if Dounce homogenizer is used)')\nmix(container='cell suspension', method='invert')\ncentrifuge(container='tube', duration='10 minutes', speed='700 x g', purpose='pellet nuclei')\ntransfer(container='tube', reagent='supernatant', destination='new tube')\ncentrifuge(container='supernatant', duration='15 minutes', speed='12,000 x g')\ntransfer(container='supernatant (post mitochondria)', destination='new tube', purpose='further processing')\nadd(container='mitochondrial pellet', reagent='1X SubCell Buffer-II', volume='500\u00b5l')\ncentrifuge(container='mitochondrial pellet with buffer', duration='5 minutes', speed='12,000 x g')\ndiscard(container='tube', reagent='supernatant')\nresuspend(container='mitochondrial pellet', reagent='Working Mitochondria Storage Buffer', volume='50-100\u00b5l')\nincubate(container='mitochondrial suspension', temperature='on ice', purpose='before downstream processing')",
+    "source_file": "protocol_398.txt"
+  }
+]

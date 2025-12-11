@@ -1,0 +1,323 @@
+[
+  {
+    "protocol": "DNA Extraction of Cesium Chloride-Purified Viruses using Wizard Prep Columns\nPrepare 2 labeled 1.5ml microfuge tubes per sample and make sure resin is at room temperature.\nShake resin vigorously to resuspend particles.\nMix 1ml DNA Purification Resin with 0.5ml CsCl sample.\nAttach minicolumn to bottom of 3ml or 5ml sterile syringe that has had plunger removed.\nAdd resin with sample to the syringe and push through the solution.\nRemove minicolumn from the syringe and pull out plunger.\nReattach minicolumn to the syringe and 2ml of 80% isopropanol to the syringe.\nUsing the plunger push through the isopropanol to wash the resin.\nRemove minicolumn from syringe and place in a sterile 1.5ml centrifuge tube.\nCentrifuge 10,000 g for 2min to remove any residual liquid.\nPlace minicolumn in new sterile 1.5ml centrifuge tube.\nAdd 100\u03bcl 80\u00b0C TE buffer to top of minicolumn.\nPlace tube lid over top of column and vortex gently for 10 seconds.\nWait 1 minute.\nCentrifuge at 10,000 g for 30 sec to elute DNA.\nQuantify DNA by Quant-iT PicoGreen dsDNA assay kit.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "1.5ml microfuge tubes",
+          "reagent": null,
+          "volume": "2 per sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "labeled"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA Purification Resin",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA Purification Resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "purpose": "resuspend particles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA Purification Resin, CsCl sample",
+          "volume": "1ml DNA Purification Resin, 0.5ml CsCl sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "minicolumn, 3ml or 5ml sterile syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plunger": "removed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "resin with sample",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "syringe"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "resin with sample",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "through": "solution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "minicolumn, syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plunger": "pull out"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "reattach",
+        "parameters": {
+          "container": "minicolumn, syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "80% isopropanol",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "isopropanol",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "wash resin"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "minicolumn, syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "minicolumn, sterile 1.5ml centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2min",
+          "speed": "10,000 g",
+          "other": {
+            "purpose": "remove residual liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "minicolumn, new sterile 1.5ml centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "top of minicolumn",
+          "reagent": "TE buffer",
+          "volume": "100\u03bcl",
+          "temperature": "80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "tube lid, column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube with column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": "10,000 g",
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "Quant-iT PicoGreen dsDNA assay kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "analyte": "DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 1.5ml microfuge tubes, volume: 2 per sample, other: {'label': 'labeled'})\n# MANUAL: equilibrate (reagent: DNA Purification Resin, temperature: room temperature, other: {})\n\n### AUTOMATED SECTION ###\nshake(reagent='DNA Purification Resin', speed='vigorously', purpose='resuspend particles')\nmix(reagent='DNA Purification Resin, CsCl sample', volume='1ml DNA Purification Resin, 0.5ml CsCl sample')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: minicolumn, 3ml or 5ml sterile syringe, other: {'plunger': 'removed'})\n\n### AUTOMATED SECTION ###\ndispense(container='syringe', reagent='resin with sample', volume='1.5ml', destination='syringe')\n\n### MANUAL SECTION ###\n# MANUAL: push (container: syringe, reagent: resin with sample, volume: 1.5ml, other: {'through': 'solution'})\n# MANUAL: remove (container: minicolumn, syringe, other: {'plunger': 'pull out'})\n# MANUAL: reattach (container: minicolumn, syringe, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='syringe', reagent='80% isopropanol', volume='2ml')\n\n### MANUAL SECTION ###\n# MANUAL: push (container: syringe, reagent: isopropanol, volume: 2ml, other: {'purpose': 'wash resin'})\n# MANUAL: remove (container: minicolumn, syringe, other: {})\n# MANUAL: place (container: minicolumn, sterile 1.5ml centrifuge tube, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge tube', duration='2min', speed='10,000 g', purpose='remove residual liquid')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: minicolumn, new sterile 1.5ml centrifuge tube, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='top of minicolumn', reagent='TE buffer', volume='100\u03bcl', temperature='80\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: tube lid, column, other: {})\n\n### AUTOMATED SECTION ###\nvortex(container='tube with column', duration='10 seconds', speed='gently')\nwait(duration='1 minute')\ncentrifuge(container='tube with column', duration='30 sec', speed='10,000 g', purpose='elute DNA')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (reagent: Quant-iT PicoGreen dsDNA assay kit, other: {'analyte': 'DNA'})",
+    "source_file": "protocol_20.txt"
+  }
+]

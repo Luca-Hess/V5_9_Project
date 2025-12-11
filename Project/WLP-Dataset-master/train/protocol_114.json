@@ -1,0 +1,428 @@
+[
+  {
+    "protocol": "XIT\u2122 Genomic DNA Blood Kit Protocol for Purificaton of DNA from Amniotic Fluid\nAdd 1\u20103ml Amniotic fluid to a 1.5ml centrifuge tube.\nCentrifuge 14,000xg for 5 seconds then remove supernatant carefully without disturbing the pellet.\nRemove supernatant leaving 10\u201020\u00b5l residual liquid in the tube.\nVortex the tube to resuspend the cells in the residual liquid.\nAdd 400\u00b5l of XIT\u2122 Lysis Buffer to the resuspended cells and vortex vigorously to lyse the cells.\nUsually no incubation is required; however, if cell clumps are visible after mixing, incubate at 37\u00b0C for 5\u201010 minutes or until the solution is homogenous.\nPlace the tube on ice for 1 minute to rapidly cool to room temperature.\nAdd 90\u00b5l XIT\u2122 Protein Precipitation Buffer to the sample and mix by inverting the tube 10\u201020 times.\nCentrifuge at 16,000g for 5 minutes.\nCarefully, transfer the supernatant to a new tube.\nAdd 400\u00b5l isopropanol and 5\u00b5l Glycogen Solution to the supernatant and mix by gently inverting the sample at least 20\u201025 times.\nCentrifuge at 14,000rpm for 5 minutes.\nDiscard the supernatant and use a pipette to carefully remove remaining liquid without disturbing the DNA pellet.\nAdd 200\u00b5l 70% ethanol and invert the tube twice to wash the pellet.\nCentrifuge at 14,000rpm for 5 minutes.\nDiscard the supernatant and drain the tube on a piece of clean absorbent paper.\nAllow to air dry for 15 minutes.\nAdd 50\u00b5l TE buffer to dissolve the DNA.\nRehydrate the genomic DNA by incubating at 55\u201065\u00b0C for one hour.\nIncubate overnight\u00a0at room temperature to ensure complete genomic DNA hydration.\nStore DNA at 4\u00b0C, for long term storage store at\u00a0\u201020 or\u00a0\u201080\u00b0C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "Amniotic fluid",
+          "volume": "1-3ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 seconds",
+          "speed": "14,000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "supernatant",
+          "volume": "all but 10-20\u00b5l residual liquid",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "careful": true,
+            "do_not_disturb_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "cells in residual liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "XIT\u2122 Lysis Buffer",
+          "volume": "400\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "resuspended cells with lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "purpose": "lyse cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "cell mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "5-10 minutes or until solution is homogenous",
+          "speed": null,
+          "other": {
+            "conditional": "if cell clumps are visible after mixing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "cell lysate",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "purpose": "rapidly cool to room temperature"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "XIT\u2122 Protein Precipitation Buffer",
+          "volume": "90\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "sample with precipitation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "invert 10-20 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "16,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "careful": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "isopropanol",
+          "volume": "400\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "Glycogen Solution",
+          "volume": "5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant with isopropanol and glycogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "invert at least 20-25 times, gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "14,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "remaining liquid",
+          "volume": "remaining",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "careful": true,
+            "do_not_disturb_DNA_pellet": true,
+            "tool": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "70% ethanol",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "pellet with ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "invert twice",
+          "other": {
+            "purpose": "wash pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "14,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "new tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "on clean absorbent paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "new tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "air dry",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "TE buffer",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dissolve DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "genomic DNA in TE buffer",
+          "volume": null,
+          "temperature": "55-65\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "purpose": "rehydrate genomic DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "genomic DNA in TE buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "ensure complete genomic DNA hydration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "4\u00b0C (short term), -20\u00b0C or -80\u00b0C (long term)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5ml centrifuge tube', reagent='Amniotic fluid', volume='1-3ml')\ncentrifuge(container='1.5ml centrifuge tube', duration='5 seconds', speed='14,000xg')\nremove(container='1.5ml centrifuge tube', reagent='supernatant', volume='all but 10-20\u00b5l residual liquid', careful=True, do_not_disturb_pellet=True)\nvortex(container='1.5ml centrifuge tube', reagent='cells in residual liquid', purpose='resuspend cells')\nadd(container='1.5ml centrifuge tube', reagent='XIT\u2122 Lysis Buffer', volume='400\u00b5l')\nvortex(container='1.5ml centrifuge tube', reagent='resuspended cells with lysis buffer', speed='vigorously', purpose='lyse cells')\nincubate(container='1.5ml centrifuge tube', reagent='cell mixture', temperature='37\u00b0C', duration='5-10 minutes or until solution is homogenous', conditional='if cell clumps are visible after mixing')\ncool(container='1.5ml centrifuge tube', reagent='cell lysate', temperature='on ice', duration='1 minute', purpose='rapidly cool to room temperature')\nadd(container='1.5ml centrifuge tube', reagent='XIT\u2122 Protein Precipitation Buffer', volume='90\u00b5l')\nmix(container='1.5ml centrifuge tube', reagent='sample with precipitation buffer', speed='invert 10-20 times')\ncentrifuge(container='1.5ml centrifuge tube', duration='5 minutes', speed='16,000g')\ntransfer(container='new tube', reagent='supernatant', volume='all', careful=True)\nadd(container='new tube', reagent='isopropanol', volume='400\u00b5l')\nadd(container='new tube', reagent='Glycogen Solution', volume='5\u00b5l')\nmix(container='new tube', reagent='supernatant with isopropanol and glycogen', speed='invert at least 20-25 times, gently')\ncentrifuge(container='new tube', duration='5 minutes', speed='14,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: new tube, reagent: supernatant, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nremove(container='new tube', reagent='remaining liquid', volume='remaining', careful=True, do_not_disturb_DNA_pellet=True, tool='pipette')\nadd(container='new tube', reagent='70% ethanol', volume='200\u00b5l')\nmix(container='new tube', reagent='pellet with ethanol', speed='invert twice', purpose='wash pellet')\ncentrifuge(container='new tube', duration='5 minutes', speed='14,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: new tube, reagent: supernatant, volume: all, other: {})\n# MANUAL: drain (container: new tube, other: {'method': 'on clean absorbent paper'})\n# MANUAL: dry (container: new tube, temperature: air dry, duration: 15 minutes, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='new tube', reagent='TE buffer', volume='50\u00b5l', purpose='dissolve DNA')\nincubate(container='new tube', reagent='genomic DNA in TE buffer', temperature='55-65\u00b0C', duration='1 hour', purpose='rehydrate genomic DNA')\nincubate(container='new tube', reagent='genomic DNA in TE buffer', temperature='room temperature', duration='overnight', purpose='ensure complete genomic DNA hydration')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: new tube, reagent: DNA, temperature: 4\u00b0C (short term), -20\u00b0C or -80\u00b0C (long term), other: {})",
+    "source_file": "protocol_114.txt"
+  }
+]

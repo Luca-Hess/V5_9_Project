@@ -1,0 +1,304 @@
+[
+  {
+    "protocol": "Immunopurification \u2014 Small Scale using Epitope Tag Affinity Matrices\nCombine affinity matrix and IP Buffer in a microfuge tube at a 1:5 dilution.\nAdd tagged protein to mixture.\nGently rock aliquots for one hour at 4\u00b0C.\nCentrifuge mixture at 10,000g for 20 seconds at 4\u00b0C.\nRemove supernatant without disturbing beads.\nAdd anequal volume of IP Wash Buffer to the beads and re-suspend matrix.\nGently rock aliquots for 20 min.\nat 4\u00b0C.Keep a portion of the supernatant from each rinse step to use in Western blot analysis.\nRepeat step 2 four times.\nElute the bound protein with the appropriate epitope peptide at 1 mg/ml concentration in 50 mm Tris HCl(pH 7.5), 50 mM NaCl, 1 mM EDTA (pH 8.0).\nResuspend beads, incubate, centrifuge and withdrawsupernatant as in step 2, repeating for a total of four elutions.\nRecover as much of the eluate as possibleat each stage.\nFor each elution sample, prepare at 1:1 dilution with reducing gel loading buffer.\nBoil tubes for 3 min.\nAnalyze the supernatant samples by Western blot.",
+    "actions": [
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "affinity matrix and IP Buffer",
+          "volume": "1:5 dilution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "tagged protein",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "aliquots",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 seconds",
+          "speed": "10,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "without_disturbing": "beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "IP Wash Buffer",
+          "volume": "equal volume to beads",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "matrix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rock",
+        "parameters": {
+          "container": "aliquots",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": null,
+          "reagent": "portion of supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "Western blot analysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "2",
+            "times": "4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "epitope peptide",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1 mg/ml",
+            "buffer": "50 mM Tris HCl (pH 7.5), 50 mM NaCl, 1 mM EDTA (pH 8.0)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "withdraw",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "elution",
+            "times": "4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": null,
+          "reagent": "eluate",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "elution sample",
+          "reagent": "reducing gel loading buffer",
+          "volume": "1:1 dilution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "supernatant samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Western blot"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncombine(container='microfuge tube', reagent='affinity matrix and IP Buffer', volume='1:5 dilution')\nadd(container='microfuge tube', reagent='tagged protein')\nrock(container='aliquots', temperature='4\u00b0C', duration='1 hour', speed='gently')\ncentrifuge(container='mixture', temperature='4\u00b0C', duration='20 seconds', speed='10,000g')\nremove(container='microfuge tube', reagent='supernatant', without_disturbing='beads')\nadd(container='microfuge tube', reagent='IP Wash Buffer', volume='equal volume to beads')\nresuspend(container='microfuge tube', reagent='matrix')\nrock(container='aliquots', temperature='4\u00b0C', duration='20 min', speed='gently')\n\n### MANUAL SECTION ###\n# MANUAL: keep (reagent: portion of supernatant, other: {'purpose': 'Western blot analysis'})\n\n### AUTOMATED SECTION ###\nrepeat(step='2', times='4')\nelute(reagent='epitope peptide', concentration='1 mg/ml', buffer='50 mM Tris HCl (pH 7.5), 50 mM NaCl, 1 mM EDTA (pH 8.0)')\nresuspend(reagent='beads')\nincubate()\ncentrifuge()\nwithdraw(reagent='supernatant')\nrepeat(step='elution', times='4')\n\n### MANUAL SECTION ###\n# MANUAL: recover (reagent: eluate, volume: as much as possible, other: {})\n\n### AUTOMATED SECTION ###\nprepare(container='elution sample', reagent='reducing gel loading buffer', volume='1:1 dilution')\nboil(container='tubes', duration='3 min')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: supernatant samples, other: {'method': 'Western blot'})",
+    "source_file": "protocol_226.txt"
+  }
+]

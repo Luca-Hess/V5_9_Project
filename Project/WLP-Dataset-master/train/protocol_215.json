@@ -1,0 +1,89 @@
+[
+  {
+    "protocol": "Digestion for BioBrick Assembly Kit (E0546)\nDigest Upstream Part with EcoRI-HF\u2122 and SpeI.\nDigest Downstream Part with XbaI and PstI.\nDigest the Destination Plasmid with EcoRI-HF\u2122\u00a0\u00a0and PstI.\nIncubate all three restriction digest reactions at 37\u00b0C for 10 minutes\u00a0 Heat inactivate at 80\u00b0C for 20 minutes.",
+    "actions": [
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "EcoRI-HF\u2122, SpeI",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "Upstream Part"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "XbaI, PstI",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "Downstream Part"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "EcoRI-HF\u2122, PstI",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "Destination Plasmid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "samples": "all three restriction digest reactions"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "samples": "all three restriction digest reactions"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndigest(reagent='EcoRI-HF\u2122, SpeI', sample='Upstream Part')\ndigest(reagent='XbaI, PstI', sample='Downstream Part')\ndigest(reagent='EcoRI-HF\u2122, PstI', sample='Destination Plasmid')\nincubate(temperature='37\u00b0C', duration='10 minutes', samples='all three restriction digest reactions')\nheat inactivate(temperature='80\u00b0C', duration='20 minutes', samples='all three restriction digest reactions')",
+    "source_file": "protocol_215.txt"
+  }
+]

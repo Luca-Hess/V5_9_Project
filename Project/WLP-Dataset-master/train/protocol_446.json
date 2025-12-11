@@ -1,0 +1,356 @@
+[
+  {
+    "protocol": "Dimethylglyoxime reagent for cobalt analyses\nDissolve 0.2232 g of EDTA into 600 mL of Milli-Q for a final concentration of 10-3\u00a0mol L-1\u00a0EDTA.\nWeigh out approximately 1.2 g of DMG (dimethylglyoxime)\u00a0onto a weigh boat, and combine it into the EDTA solution.\nWeigh what is left on the weigh boat (DMG is very sticky so not all of it will pour into the EDTA solution) and record the final weight that was placed into the EDTA solution.\nHeat this solution in a microwave at 50% power until the DMG is fully dissolved, stirring it carefully in between microwaving, and trying to prevent it from boiling.\nThis takes up to 30 minutes, so be patient and heat it slowly and carefully.\nPut the solution on ice and let it recrystallize overnight in a refrigerator.\nAfter it has recrystallized, pour off (or slowly pipette off) the supernatant until there is as little liquid as possible.\nThen pour the remaining crystals into a clean, dry weigh boat (that you have weighed and noted the weight for later use) and let the remaining liquid evaporate overnight inside a laminar flow hood.\nAfter all the liquid has evaporated, measure the weight boat again to get an approximate measurement of the amount of DMG you have recrystallized.\nCalculate how much methanol is needed to add to the DMG in order to get a final concentration of 0.1 mol L-1\u00a0DMG, and obtain a trace metal clean bottle of the appropriate size.\nWeigh the clean bottle, and then carefully transfer the recrystallized DMG into this clean bottle and re-weigh (not all the DMG is easily transferred into the clean bottle, so the re-weigh is necessary).\nNow recalculate the amount of optima methanol needed to get the desired concentration of 0.1 mol L-1, and add that amount of optima methanol.\nMake sure to test the reagent before use.",
+    "actions": [
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA",
+          "volume": "600 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.2232 g",
+            "solvent": "Milli-Q water",
+            "final_concentration": "10^-3 mol L^-1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "weigh boat",
+          "reagent": "DMG (dimethylglyoxime)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "approximately 1.2 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": "DMG (dimethylglyoxime)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "EDTA solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "weigh boat",
+          "reagent": "remaining DMG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "record final weight placed into EDTA solution"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microwave",
+            "power": "50%",
+            "endpoint": "until DMG is fully dissolved"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "in between microwaving"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "prevent",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "event": "boiling"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "up to 30 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "allow DMG to dissolve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA + DMG solution",
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "recrystallize"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "recrystallized solution",
+            "purpose": "remove supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "clean, dry weigh boat",
+          "reagent": "remaining crystals",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "original container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "evaporate",
+        "parameters": {
+          "container": "weigh boat",
+          "reagent": "remaining liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "location": "laminar flow hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "weigh boat",
+          "reagent": "recrystallized DMG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "measure amount of DMG recrystallized"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine volume needed for 0.1 mol L^-1 DMG"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "obtain",
+        "parameters": {
+          "container": "trace metal clean bottle",
+          "reagent": null,
+          "volume": "appropriate size",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "clean bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean bottle",
+          "reagent": "recrystallized DMG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "clean bottle",
+          "reagent": "recrystallized DMG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "measure transferred DMG"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "optima methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine volume needed for 0.1 mol L^-1 DMG"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean bottle",
+          "reagent": "optima methanol",
+          "volume": "calculated amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "test",
+        "parameters": {
+          "container": null,
+          "reagent": "reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "before use"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndissolve(reagent='EDTA', volume='600 mL', mass='0.2232 g', solvent='Milli-Q water', final_concentration='10^-3 mol L^-1')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: weigh boat, reagent: DMG (dimethylglyoxime), other: {'mass': 'approximately 1.2 g'})\n\n### AUTOMATED SECTION ###\ncombine(reagent='DMG (dimethylglyoxime)', destination='EDTA solution')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: weigh boat, reagent: remaining DMG, other: {'purpose': 'record final weight placed into EDTA solution'})\n\n### AUTOMATED SECTION ###\nheat(reagent='EDTA + DMG solution', method='microwave', power='50%', endpoint='until DMG is fully dissolved')\nstir(reagent='EDTA + DMG solution', frequency='in between microwaving')\n\n### MANUAL SECTION ###\n# MANUAL: prevent (reagent: EDTA + DMG solution, other: {'event': 'boiling'})\n\n### AUTOMATED SECTION ###\nwait(reagent='EDTA + DMG solution', duration='up to 30 minutes', purpose='allow DMG to dissolve')\ncool(reagent='EDTA + DMG solution', temperature='on ice')\nincubate(reagent='EDTA + DMG solution', temperature='refrigerator', duration='overnight', purpose='recrystallize')\npipette(reagent='supernatant', volume='as much as possible', source='recrystallized solution', purpose='remove supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: clean, dry weigh boat, reagent: remaining crystals, other: {'source': 'original container'})\n\n### AUTOMATED SECTION ###\nevaporate(container='weigh boat', reagent='remaining liquid', duration='overnight', location='laminar flow hood')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: weigh boat, reagent: recrystallized DMG, other: {'purpose': 'measure amount of DMG recrystallized'})\n# MANUAL: calculate (reagent: methanol, other: {'purpose': 'determine volume needed for 0.1 mol L^-1 DMG'})\n# MANUAL: obtain (container: trace metal clean bottle, volume: appropriate size)\n# MANUAL: weigh (container: clean bottle)\n\n### AUTOMATED SECTION ###\ntransfer(container='clean bottle', reagent='recrystallized DMG')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: clean bottle, reagent: recrystallized DMG, other: {'purpose': 'measure transferred DMG'})\n# MANUAL: calculate (reagent: optima methanol, other: {'purpose': 'determine volume needed for 0.1 mol L^-1 DMG'})\n\n### AUTOMATED SECTION ###\nadd(container='clean bottle', reagent='optima methanol', volume='calculated amount')\n\n### MANUAL SECTION ###\n# MANUAL: test (reagent: reagent, other: {'purpose': 'before use'})",
+    "source_file": "protocol_446.txt"
+  }
+]

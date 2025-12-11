@@ -1,0 +1,367 @@
+[
+  {
+    "protocol": "Filtering for Cell Collection Pump \u2192\u00a0Steel filter tank \u2192 A/E filter \u2192 Durapore \u2192 DI rinsed cubie container (the one the sample was in).  \nClamp all tubes to manifolds and filter tanks.  \nMake sure bleeder valves are on top. \nTurn on pump and then bleed A/E then Durapore and the A/E again.\u00a0 \nKeep cubie container on ice- water will be used for viral concentration. \u00a0 \nPlace \u201cout\u201d tube from Durapore onto a filter flask that is attached to the vacuum side of the pump.\u00a0 \nWait until water stops moving towards the vacuum and only bubbles are coming through.\u00a0  \nOpen steel filter tank lid and slowly open tank bleeder valve to depressurize (SLOWLY). \nWhen pressure has dropped significantly push in steel tank lid, allow a few more minutes for water to drain through.  \nDisconnect clamp from bottom side of A/E filter, remove tube from \u201cout\u201d side of A/E.  \nPlace Durapore on knees and swirl gently so all water goes into the filter flask. \nOnce water is out, open manifold slowly, fold up filter and place in whirlpack. \nRemove Durapore \u201cout\u201d tube from filter flask, place A/E \u201cout\u201d tube onto filter flask.\u00a0  \nPlace A/E on knees, let water drain out into the filter flask as before. \nOpen manifold slowly, peel off ring of filter, discard, fold filter and place in whirlpack. \nOkay to turn off pump now.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "Steel filter tank, A/E filter, Durapore, DI rinsed cubie container",
+          "reagent": "sample water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sequence": "Pump \u2192 Steel filter tank \u2192 A/E filter \u2192 Durapore \u2192 DI rinsed cubie container"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "tubes, manifolds, filter tanks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "bleeder valves",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "on top"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "bleed",
+        "parameters": {
+          "container": "A/E filter, Durapore",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sequence": "A/E \u2192 Durapore \u2192 A/E"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "cubie container",
+          "reagent": "ice",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "water will be used for viral concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "\u201cout\u201d tube from Durapore, filter flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "attachment": "filter flask attached to vacuum side of pump"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until water stops moving towards vacuum and only bubbles are coming through",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "steel filter tank lid, tank bleeder valve",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "purpose": "depressurize"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "push_in",
+        "parameters": {
+          "container": "steel tank lid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "when pressure has dropped significantly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "a few more minutes for water to drain through",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "disconnect",
+        "parameters": {
+          "container": "clamp from bottom side of A/E filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube from \u201cout\u201d side of A/E",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "Durapore",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "all water goes into filter flask"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fold",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "whirlpack"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Durapore \u201cout\u201d tube from filter flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "A/E \u201cout\u201d tube onto filter flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "A/E on knees",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "let water drain out into filter flask"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "peel",
+        "parameters": {
+          "container": "ring of filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "ring of filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fold",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "whirlpack"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn_off",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='Steel filter tank, A/E filter, Durapore, DI rinsed cubie container', reagent='sample water', sequence='Pump \u2192 Steel filter tank \u2192 A/E filter \u2192 Durapore \u2192 DI rinsed cubie container')\n\n### MANUAL SECTION ###\n# MANUAL: clamp (container: tubes, manifolds, filter tanks)\n# MANUAL: check (container: bleeder valves, other: {'position': 'on top'})\n\n### AUTOMATED SECTION ###\nturn_on(container='pump')\n\n### MANUAL SECTION ###\n# MANUAL: bleed (container: A/E filter, Durapore, other: {'sequence': 'A/E \u2192 Durapore \u2192 A/E'})\n\n### AUTOMATED SECTION ###\nkeep(container='cubie container', reagent='ice', temperature='on ice', purpose='water will be used for viral concentration')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: \u201cout\u201d tube from Durapore, filter flask, other: {'attachment': 'filter flask attached to vacuum side of pump'})\n\n### AUTOMATED SECTION ###\nwait(duration='until water stops moving towards vacuum and only bubbles are coming through')\n\n### MANUAL SECTION ###\n# MANUAL: open (container: steel filter tank lid, tank bleeder valve, speed: slowly, other: {'purpose': 'depressurize'})\n# MANUAL: push_in (container: steel tank lid, other: {'condition': 'when pressure has dropped significantly'})\n\n### AUTOMATED SECTION ###\nwait(duration='a few more minutes for water to drain through')\n\n### MANUAL SECTION ###\n# MANUAL: disconnect (container: clamp from bottom side of A/E filter)\n# MANUAL: remove (container: tube from \u201cout\u201d side of A/E)\n\n### AUTOMATED SECTION ###\nswirl(container='Durapore', speed='gently', purpose='all water goes into filter flask')\n\n### MANUAL SECTION ###\n# MANUAL: open (container: manifold, speed: slowly)\n# MANUAL: fold (container: filter, other: {'destination': 'whirlpack'})\n# MANUAL: remove (container: Durapore \u201cout\u201d tube from filter flask)\n# MANUAL: place (container: A/E \u201cout\u201d tube onto filter flask)\n# MANUAL: place (container: A/E on knees, other: {'purpose': 'let water drain out into filter flask'})\n# MANUAL: open (container: manifold, speed: slowly)\n# MANUAL: peel (container: ring of filter)\n# MANUAL: discard (container: ring of filter)\n# MANUAL: fold (container: filter, other: {'destination': 'whirlpack'})\n\n### AUTOMATED SECTION ###\nturn_off(container='pump')",
+    "source_file": "protocol_612.txt"
+  }
+]

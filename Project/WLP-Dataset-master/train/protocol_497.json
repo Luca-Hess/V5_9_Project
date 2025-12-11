@@ -1,0 +1,357 @@
+[
+  {
+    "protocol": "Cloning shRNA Oligos into pLKO.1\nResuspend oligos in ddH2O to a concentration of 20 \u03bcM.\nAdd 5ul Forward oligo. \nAdd 5ul Reverse oligo. \nAdd 5 \u03bcL\t10x NEB buffer 2. \nAdd 35 \u03bcL ddH2O. \nIncubate for 4 minutes at 95\u00b0C in a PCR machine or in a beaker of boiling water.\nIncubate the sample at 70\u00b0C for 10 minutes in a PCR machine.\nSlowly cool to room temperature over the period of several hours.\nMix: 6 \u03bcg pLKO.1 TRC-cloning vector (maxiprep or miniprep DNA) with 5 \u03bcL\t10x NEB buffer 1 with 1 \u03bcL\tAgeI bring to 50 \u03bcL\tddH2O. \nIncubate at 37\u00b0C for 2 hours.\nPurify with Qiaquick gel extraction kit, eluting in 30 \u03bcL of ddH2O.\nDigest eluate with EcoRI by mixing: 30 \u03bcL pLKO.1 TRC-cloning vector digested with AgeI with 5 \u03bcL\t10x NEB buffer for EcoRI with 1 \u03bcL\tEcoRI and 14 \u03bcL\tddH2O. \nIncubate at 37\u00b0C for 2 hours.\nRun digested DNA on 0.8% low melting point agarose gel until you can distinctly see 2 bands, one 7kb and one 1.9kb.\nCut out the 7kb band and place in a sterile microcentrifuge tube.\nPurify the DNA using a Qiaquick gel extraction kit.\nElute in 30 \u03bcL of ddH2O.\nMeasure the DNA concentration.\nUse your ligation method of choice.\nFor a standard T4 ligation, mix: 2 \u03bcL\tannealed oligo from \"Annealing Oligos\" section above.\nWith 20 ng digested pLKO.1 TRC-cloning vector from the \"Digesting pLKO.1 TRC Cloning Vector\" section above.\nWith 2 \u03bcL\t10x NEB T4 DNA ligase buffer With 1 \u03bcL\tNEB T4 DNA ligase Bring up to 20ul with ddH2O. \nIncubate at 16\u00b0C for 4-20 hours.\nTransform 2 \u03bcL of ligation mix into 25 \u03bcL competent DH5 alpha cells, following manufacturer\u2019s protocol.\nPlate on LB agar plates containing 100 \u03bcg/mL ampicillin or carbenicillin (an ampicillin analog).",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "oligos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "ddH2O",
+            "concentration": "20 \u03bcM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Forward oligo",
+          "volume": "5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Reverse oligo",
+          "volume": "5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10x NEB buffer 2",
+          "volume": "5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "ddH2O",
+          "volume": "35 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "4 minutes",
+          "speed": null,
+          "other": {
+            "device": "PCR machine or beaker of boiling water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "device": "PCR machine"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "several hours",
+          "speed": "slowly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "6 \u03bcg pLKO.1 TRC-cloning vector (maxiprep or miniprep DNA)",
+            "5 \u03bcL 10x NEB buffer 1",
+            "1 \u03bcL AgeI",
+            "ddH2O (to 50 \u03bcL total volume)"
+          ],
+          "volume": "50 \u03bcL (final)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiaquick gel extraction kit",
+            "elution_volume": "30 \u03bcL ddH2O"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "30 \u03bcL pLKO.1 TRC-cloning vector digested with AgeI",
+            "5 \u03bcL 10x NEB buffer for EcoRI",
+            "1 \u03bcL EcoRI",
+            "14 \u03bcL ddH2O"
+          ],
+          "volume": "50 \u03bcL (final)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "digested DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gel": "0.8% low melting point agarose",
+            "bands": "7kb and 1.9kb"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "7kb band",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiaquick gel extraction kit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "30 \u03bcL ddH2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parameter": "concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "2 \u03bcL annealed oligo",
+            "20 ng digested pLKO.1 TRC-cloning vector",
+            "2 \u03bcL 10x NEB T4 DNA ligase buffer",
+            "1 \u03bcL NEB T4 DNA ligase",
+            "ddH2O (to 20 \u03bcL total volume)"
+          ],
+          "volume": "20 \u03bcL (final)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "16\u00b0C",
+          "duration": "4-20 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "2 \u03bcL ligation mix",
+            "25 \u03bcL competent DH5 alpha cells"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "manufacturer\u2019s protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "LB agar plates",
+          "reagent": "transformed cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotic": "100 \u03bcg/mL ampicillin or carbenicillin"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(reagent='oligos', solvent='ddH2O', concentration='20 \u03bcM')\nadd(reagent='Forward oligo', volume='5 \u03bcL')\nadd(reagent='Reverse oligo', volume='5 \u03bcL')\nadd(reagent='10x NEB buffer 2', volume='5 \u03bcL')\nadd(reagent='ddH2O', volume='35 \u03bcL')\nincubate(temperature='95\u00b0C', duration='4 minutes', device='PCR machine or beaker of boiling water')\nincubate(reagent='sample', temperature='70\u00b0C', duration='10 minutes', device='PCR machine')\ncool(temperature='room temperature', duration='several hours', speed='slowly')\nmix(reagent=['6 \u03bcg pLKO.1 TRC-cloning vector (maxiprep or miniprep DNA)', '5 \u03bcL 10x NEB buffer 1', '1 \u03bcL AgeI', 'ddH2O (to 50 \u03bcL total volume)'], volume='50 \u03bcL (final)')\nincubate(temperature='37\u00b0C', duration='2 hours')\n\n### MANUAL SECTION ###\n# MANUAL: purify (other: {'kit': 'Qiaquick gel extraction kit', 'elution_volume': '30 \u03bcL ddH2O'})\n\n### AUTOMATED SECTION ###\nmix(reagent=['30 \u03bcL pLKO.1 TRC-cloning vector digested with AgeI', '5 \u03bcL 10x NEB buffer for EcoRI', '1 \u03bcL EcoRI', '14 \u03bcL ddH2O'], volume='50 \u03bcL (final)')\nincubate(temperature='37\u00b0C', duration='2 hours')\n\n### MANUAL SECTION ###\n# MANUAL: run (reagent: digested DNA, other: {'gel': '0.8% low melting point agarose', 'bands': '7kb and 1.9kb'})\n# MANUAL: cut (container: sterile microcentrifuge tube, reagent: 7kb band)\n# MANUAL: purify (reagent: DNA, other: {'kit': 'Qiaquick gel extraction kit'})\n\n### AUTOMATED SECTION ###\nelute(volume='30 \u03bcL ddH2O')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: DNA, other: {'parameter': 'concentration'})\n\n### AUTOMATED SECTION ###\nmix(reagent=['2 \u03bcL annealed oligo', '20 ng digested pLKO.1 TRC-cloning vector', '2 \u03bcL 10x NEB T4 DNA ligase buffer', '1 \u03bcL NEB T4 DNA ligase', 'ddH2O (to 20 \u03bcL total volume)'], volume='20 \u03bcL (final)')\nincubate(temperature='16\u00b0C', duration='4-20 hours')\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: ['2 \u03bcL ligation mix', '25 \u03bcL competent DH5 alpha cells'], other: {'protocol': 'manufacturer\u2019s protocol'})\n# MANUAL: plate (container: LB agar plates, reagent: transformed cells, other: {'antibiotic': '100 \u03bcg/mL ampicillin or carbenicillin'})",
+    "source_file": "protocol_497.txt"
+  }
+]

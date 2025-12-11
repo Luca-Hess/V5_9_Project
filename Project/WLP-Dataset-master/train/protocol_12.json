@@ -1,0 +1,129 @@
+[
+  {
+    "protocol": "RNAlater Recipe\nPrepare 0.5 M EDTA.\nPrepare 1 M Sodium citrate.\nIn a 2 or 3 L flask mix 1,400 mL MilliQ water with 60 mL 0.5M EDTA and 37.5 mL 1M sodium citrate with stirring.\nWhile continuing to stir the solution, add 1.05 kg (= 1,050 g) Ammonium sulfate in 100 g amounts.\nStir ~30 min on hot plate set to low.\nAllow solution to cool at room temperature for at least 30min, but overnight on bench is best.\nFilter solution through 0.2\u00a0\u03bcm filter to remove particles.\nStore at room temp or at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.5 M EDTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1 M Sodium citrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 or 3 L flask",
+          "reagent": "MilliQ water, 0.5M EDTA, 1M sodium citrate",
+          "volume": "1,400 mL MilliQ water, 60 mL 0.5M EDTA, 37.5 mL 1M sodium citrate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stirring": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 or 3 L flask",
+          "reagent": "Ammonium sulfate",
+          "volume": "1.05 kg (= 1,050 g), in 100 g amounts",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stirring": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "2 or 3 L flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "hot plate set to low",
+          "duration": "~30 min",
+          "speed": "low",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "2 or 3 L flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "at least 30 min, but overnight is best",
+          "speed": null,
+          "other": {
+            "location": "bench"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "solution",
+          "volume": null,
+          "temperature": "room temp or 4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 0.5 M EDTA, other: {})\n# MANUAL: prepare (reagent: 1 M Sodium citrate, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='2 or 3 L flask', reagent='MilliQ water, 0.5M EDTA, 1M sodium citrate', volume='1,400 mL MilliQ water, 60 mL 0.5M EDTA, 37.5 mL 1M sodium citrate', stirring=True)\nadd(container='2 or 3 L flask', reagent='Ammonium sulfate', volume='1.05 kg (= 1,050 g), in 100 g amounts', stirring=True)\nstir(container='2 or 3 L flask', temperature='hot plate set to low', duration='~30 min', speed='low')\ncool(container='2 or 3 L flask', temperature='room temperature', duration='at least 30 min, but overnight is best', location='bench')\nfilter(reagent='solution', filter_size='0.2 \u03bcm')\nstore(reagent='solution', temperature='room temp or 4\u00b0C')",
+    "source_file": "protocol_12.txt"
+  }
+]

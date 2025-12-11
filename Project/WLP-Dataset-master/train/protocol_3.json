@@ -1,0 +1,189 @@
+[
+  {
+    "protocol": "Standard RNA Synthesis (E2050)\nThaw the necessary kit components.\nMix and pulse-spin in microfuge to collect solutions to the bottoms of tubes.\nKeep on ice.\nAssemble the reaction at room temperature in the following order:.\nMix thoroughly and pulse-spin in a microfuge.\nIncubate at 37\u00b0C for 2 hours.\nOptional step: DNase treatment to remove DNA template.\nTo remove template DNA, add 30 \u03bcl nuclease-free water to each 20 \u03bcl reaction, followed by 2 \u03bcl of DNase I (RNase-free), mix and incubate for 15 minutes at 37\u00b0C.\nProceed with purification of synthesized RNA or analysis of transcription\u00a0products by gel electrophoresis.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "kit components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "solutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pulse-spin in microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "solutions",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": "reaction components",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "specified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pulse-spin in microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "nuclease-free water",
+          "volume": "30 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "DNase treatment"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "DNase I (RNase-free)",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "DNase treatment"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture with DNase I",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture with DNase I",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "synthesized RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "transcription products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gel electrophoresis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: kit components, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='tubes', reagent='solutions', method='pulse-spin in microfuge')\nkeep(container='tubes', reagent='solutions', temperature='on ice')\nassemble(reagent='reaction components', temperature='room temperature', order='specified')\nmix(container='reaction tube', reagent='reaction mixture', method='pulse-spin in microfuge')\nincubate(container='reaction tube', reagent='reaction mixture', temperature='37\u00b0C', duration='2 hours')\nadd(container='reaction tube', reagent='nuclease-free water', volume='30 \u03bcl', step='DNase treatment')\nadd(container='reaction tube', reagent='DNase I (RNase-free)', volume='2 \u03bcl', step='DNase treatment')\nmix(container='reaction tube', reagent='reaction mixture with DNase I')\nincubate(container='reaction tube', reagent='reaction mixture with DNase I', temperature='37\u00b0C', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: purify (reagent: synthesized RNA, other: {})\n# MANUAL: analyze (reagent: transcription products, other: {'method': 'gel electrophoresis'})",
+    "source_file": "protocol_3.txt"
+  }
+]

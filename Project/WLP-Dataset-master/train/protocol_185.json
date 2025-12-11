@@ -1,0 +1,69 @@
+[
+  {
+    "protocol": "How to make a 25-50 mg/ml Chloramphenicol Stock Solution\nWeigh 0.25-0.5 g of Chloramphenicol. \nAdd 10 ml of 95% EtOH (70% may also be used).\nDissolve completely.\nStock may be kept at -20\u00b0C for 1 year.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "Chloramphenicol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "0.25-0.5 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "95% EtOH (or 70% EtOH)",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "Chloramphenicol in EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "completion": "completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "Chloramphenicol stock solution",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "1 year",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: Chloramphenicol, other: {'mass': '0.25-0.5 g'})\n\n### AUTOMATED SECTION ###\nadd(reagent='95% EtOH (or 70% EtOH)', volume='10 ml')\ndissolve(reagent='Chloramphenicol in EtOH', completion='completely')\n\n### MANUAL SECTION ###\n# MANUAL: store (reagent: Chloramphenicol stock solution, temperature: -20\u00b0C, duration: 1 year)",
+    "source_file": "protocol_185.txt"
+  }
+]

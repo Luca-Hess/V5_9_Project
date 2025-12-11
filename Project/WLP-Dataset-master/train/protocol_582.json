@@ -1,0 +1,484 @@
+[
+  {
+    "protocol": "Electroporation of Cas9 RNP (ribonucleoprotein) into adherent cells using the Neon\u00ae Electroporation\nSeed the cells so that they will be around 70-90% confluent on the day of transfection.\nSet up the RNP formation reaction as follows below:\nComponent7 \u00b5l reactionResuspension Buffer R5.8 \u00b5lEnGen Cas9-NLS (20 \u00b5M)0.6 \u00b5lsgRNA (20 \u00b5M)0.6 \u00b5l. \nGently mix the reaction and incubate at room temperature for 20 minutes.\nDuring the incubation, trypsinize the cells, washing once to remove any traces of trypsin.\nRemove 1-2 x 106 cells to a sterile microfuge tube.\n(One tube of cells should be enough for 10 transfections).\nResuspend the cells in 10 ml of media and count.\nPellet for 5 min at 500 x g. \u00a0 \nWash the cells once with 1X PBS.\nResuspend the cells in 50 \u00b5l of Resuspension Buffer R. \nPrepare a 24-well plate by adding 500 \u00b5l growth medium to the appropriate number of wells.\nAdd 5 \u00b5l of cells to each 7 \u00b5l RNP reaction.\nAspirate 10 \u00b5l of the RNP/cells mix into a 10 \u00b5l Neon tip.\nElectroporate the cells under the following conditions: 1700V, 20 ms, 1 pulse.\nImmediately transfer the cells to the prepared 24-well plate.\nIncubate the cells in a humidified 37 \u00b0C, 5% C02 incubator for 48-72 hours.\nGently aspirate the media from the cells.\nAdd 75 \u00b5l of Epicentre QuickExtract\u2122 DNA Extraction Solution and shake/vortex for 5 minutes.\nTransfer the solution to a PCR plate or tubes and place in a thermocycler, running the following program:\n65\u00b0C for 15 min95\u00b0C for 15 minHold at 4\u00b0C. \nDilute the DNA 1:10 in nuclease-free water. \nFollow the protocol detailed in the EnGen Mutation Detection Kit (E3321S)\u00a0manual Pellet for 5 min at 500 x g. \u00a0 \nWash with 100 \u00b5l 1X PBS. (1/2) \nWash with 100 \u00b5l 1X PBS. (2/2)",
+    "actions": [
+      {
+        "action": "seed",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_confluency": "70-90%",
+            "day": "day of transfection"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": null,
+          "reagent": "RNP formation reaction",
+          "volume": "7 \u00b5l total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": [
+              {
+                "name": "Resuspension Buffer R",
+                "volume": "5.8 \u00b5l"
+              },
+              {
+                "name": "EnGen Cas9-NLS (20 \u00b5M)",
+                "volume": "0.6 \u00b5l"
+              },
+              {
+                "name": "sgRNA (20 \u00b5M)",
+                "volume": "0.6 \u00b5l"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "RNP reaction",
+          "volume": "7 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "RNP reaction",
+          "volume": "7 \u00b5l",
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "trypsinize",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove traces of trypsin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "cells",
+          "volume": "1-2 x 10^6 cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "media"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "500 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "1X PBS",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "Resuspension Buffer R"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "growth medium",
+          "volume": "500 \u00b5l per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_wells": "appropriate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNP reaction",
+          "reagent": "cells",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each 7 \u00b5l RNP reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "Neon tip",
+          "reagent": "RNP/cells mix",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "electroporate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 ms",
+          "speed": null,
+          "other": {
+            "voltage": "1700V",
+            "pulses": "1"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "Neon tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37\u00b0C, 5% CO2, humidified",
+          "duration": "48-72 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": null,
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "from": "cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Epicentre QuickExtract DNA Extraction Solution",
+          "volume": "75 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "alternative": "vortex"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PCR plate or tubes",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "step": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "step": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "hold",
+          "speed": null,
+          "other": {
+            "step": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": "1:10",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "nuclease-free water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "follow",
+        "parameters": {
+          "container": null,
+          "reagent": "EnGen Mutation Detection Kit (E3321S)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manual": "protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "500 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: seed (reagent: cells, other: {'target_confluency': '70-90%', 'day': 'day of transfection'})\n\n### AUTOMATED SECTION ###\nset up(reagent='RNP formation reaction', volume='7 \u00b5l total', components=[{'name': 'Resuspension Buffer R', 'volume': '5.8 \u00b5l'}, {'name': 'EnGen Cas9-NLS (20 \u00b5M)', 'volume': '0.6 \u00b5l'}, {'name': 'sgRNA (20 \u00b5M)', 'volume': '0.6 \u00b5l'}])\nmix(reagent='RNP reaction', volume='7 \u00b5l', speed='gentle')\nincubate(reagent='RNP reaction', volume='7 \u00b5l', temperature='room temperature', duration='20 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: trypsinize (reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\nwash(reagent='cells', purpose='remove traces of trypsin')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: sterile microfuge tube, reagent: cells, volume: 1-2 x 10^6 cells, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', volume='10 ml', buffer='media')\n\n### MANUAL SECTION ###\n# MANUAL: count (reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='cells', duration='5 min', speed='500 x g')\nwash(reagent='cells', volume='1X PBS', times='once')\nresuspend(reagent='cells', volume='50 \u00b5l', buffer='Resuspension Buffer R')\nprepare(container='24-well plate', reagent='growth medium', volume='500 \u00b5l per well', number_of_wells='appropriate')\nadd(container='RNP reaction', reagent='cells', volume='5 \u00b5l', to='each 7 \u00b5l RNP reaction')\naspirate(container='Neon tip', reagent='RNP/cells mix', volume='10 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: electroporate (reagent: cells, duration: 20 ms, other: {'voltage': '1700V', 'pulses': '1'})\n\n### AUTOMATED SECTION ###\ntransfer(container='24-well plate', reagent='cells', from='Neon tip')\nincubate(container='24-well plate', reagent='cells', temperature='37\u00b0C, 5% CO2, humidified', duration='48-72 hours')\naspirate(reagent='media', speed='gentle', from='cells')\nadd(reagent='Epicentre QuickExtract DNA Extraction Solution', volume='75 \u00b5l', to='cells')\nshake(duration='5 minutes', alternative='vortex')\ntransfer(container='PCR plate or tubes', reagent='solution')\nincubate(container='thermocycler', temperature='65\u00b0C', duration='15 min', step='1')\nincubate(container='thermocycler', temperature='95\u00b0C', duration='15 min', step='2')\nincubate(container='thermocycler', temperature='4\u00b0C', duration='hold', step='3')\ndilute(reagent='DNA', volume='1:10', diluent='nuclease-free water')\n\n### MANUAL SECTION ###\n# MANUAL: follow (reagent: EnGen Mutation Detection Kit (E3321S), other: {'manual': 'protocol'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='5 min', speed='500 x g')\nwash(reagent='1X PBS', volume='100 \u00b5l', wash_number='1/2')\nwash(reagent='1X PBS', volume='100 \u00b5l', wash_number='2/2')",
+    "source_file": "protocol_582.txt"
+  }
+]

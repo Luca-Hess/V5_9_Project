@@ -1,0 +1,1104 @@
+[
+  {
+    "protocol": "Preparation of Custom Synthesized RNA Transcript Standard\nBriefly spin the tube to ensure the contents are on the bottom.  \nResuspend the sample in a volume of TE Buffer resulting in a stock concentration of 0.1 ug/uL.  \nTo prepare a working solution add 1 uL of the stock solution to 99 uL of water to reach a concentration of 1.0 ng/uL.  \nStore resuspended DNA at -20 \u00b0C. \nPlace frozen competent cells and pre-labeled tubes on ice. \nPre-warm a hot water bath to 42 \u00b0C. \nIn a tube on ice add 2 uL (~2 ng) of plasmid working solution to 100 uL of thawed competent cells, flick the tubes to gently mix.  \nIncubate the mixture on ice for 30 minutes.  \nHeat shock the tubes for 45 seconds in the 42 \u00b0C bath. \nImmediately place the tubes on ice for 2 minutes.  \nAdd 500 uL of SOC or LB to each tube and incubate the tubes at 37\u00b0C for 1 hour with shaking (~225 rpm).  \nPre-warm agar plates to 37\u00b0C in incubator.  \nTake 10 uL, 100 uL, and 200 uL and spread on LB-Amp agar plates.  \nPlace the plates upside down in 37\u00b0C incubator for 12-24 hours.  \nInoculate a 5 uL liquid LB-Amp culture by picking a single well-isolated colony from the LB-Amp plate grown overnight.  \nGrow liquid culture at 37\u00b0C for ~8 hours with vigorous shaking (~300 rpm).  Remove 850 uL of starter culture and place into a 2 mL freezer vial with 150 uL of sterilized 100% glycerol, mix thoroughly, and store at -80 \u00b0C.  \nDilute the starter culture 1/500 to 1/1000 into a larger volume of LB-Amp.  \nGrow the culture at 37\u00b0C with vigorous shaking (~300 rpm) for 12-16 hours.  \nHarvest the culture by centrifugation at 6000 x g for 15 min at 4\u00b0C.  \nDiscard supernatant.  \nRecover plasmid DNA using a commercial plasmid mini-prep and the corresponding protocol. \nIn a PCR tube combine in the order listed:\n12.8 uL Nuclease-free water\n2.00 uL NEBuffer 4 \n(10X)0.20 uL BSA \n(100X)4.00 uL Plasmid DNA (0.5 ug/uL). \nIn a thermocycler incubate the mixture for 1 hour at 37 \u00b0C. \nInactivate the enzyme by incubating at 65 \u00b0C for 20 minutes. \nBring the reaction to 100 uL by adding TE buffer.  \nAdd 100 uL of Phenol:Chloroform:Isoamyl alcohol (25:24:1).  \nVortex Centrifuge for 5 minutes at 11,000 rpm.  \nTransfer the aqueous phase to a new tube.  \nAdd 0.1 volumes (10 uL) of 3M Sodium Acetate and 0.7 volumes (70 uL) of Isopropanol to the aqueous phase.  \nMix and incubate for 10\u00a0minutes at room temperature. \nSpin for 30 minutes at 11,000 rpm at 4 degrees Celsius.  \nDiscard the supernatant.  \nWash the pellet with 200 uL of ice cold 70% ethanol.  \nCentrifuge for 5 minutes.  \nAir dry the pellet.  \nResuspend in 5 uL of nuclease-free water.  \nTransfer 2 uL of linearized plasmid prep into a new tube.  \nAdd 2 uL sterile water to the 2uL sample.  \nUse 1 uL of the diluted sample to check the concentration of the plasmid prep.  \nRun remaining 3 uL of diluted plasmid prep on a 1% agarose gel to check for complete digestion. \nIn a tube combine the following at room temperature\u00a0(Ambion MEGAscript T7 kit): Mix Thoroughly by flicking. \nIncubate mixture at 37 degrees Celsius for 16 hours. \nAdd 1 uL Turbo DNase to a concentration.  \nIncubate for 15 minutes at 37\u00b0 Celsius.  \nExtract with 1 volume of citrate-saturated (pH 4.7) phenol:chloroform:isoamyl alcohol (25:24:1).  \nVortex for 1 minute. \nCentrifuge for 2 minutes at 12,000 x g. \nTransfer the upper, aqueous phase to a fresh tube.  \nAdd 1 volume chloroform:isoamyl alcohol (24:1).  \nVortex for 1 minute. \nCentrifuge for 2 minutes at 12,000 x g. \nTransfer the upper aqueous phase to a fresh tube.  \nAdd 0.1 volumes of 3.0 M sodium acetate and 0.7 volumes of isopropanol.  \nMix and incubate at room temperature for 10 minutes.  \nCentrifuge for 30 minutes at 4 \u00b0C. \nCarefully discard supernatant.  \nWash pellet with 200 uL of 70% ethanol.  \nDry the pellet under vacuum.  \nResuspend the RNA pellet in 50 uL of water.  \nStore at -70\u00b0 Celsius.  \nQuantify RNA using nanodrop.  \nCheck transcript size using Experion/Bioanalyzer",
+    "actions": [
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TE Buffer",
+          "volume": "to achieve 0.1 ug/uL stock concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "stock solution",
+          "volume": "1 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "99 uL water"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "resuspended DNA",
+          "volume": null,
+          "temperature": "-20 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "frozen competent cells and pre-labeled tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pre-warm",
+        "parameters": {
+          "container": "hot water bath",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube on ice",
+          "reagent": "plasmid working solution",
+          "volume": "2 uL (~2 ng)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "100 uL thawed competent cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "method": "flick"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42 \u00b0C",
+          "duration": "45 seconds",
+          "speed": null,
+          "other": {
+            "bath": "hot water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "SOC or LB",
+          "volume": "500 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": "225 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pre-warm",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "LB-Amp agar plates",
+          "reagent": null,
+          "volume": "10 uL, 100 uL, 200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "culture"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "12-24 hours",
+          "speed": null,
+          "other": {
+            "orientation": "upside down",
+            "location": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "liquid LB-Amp culture",
+          "reagent": "single well-isolated colony",
+          "volume": "5 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "LB-Amp plate grown overnight"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "liquid culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "~8 hours",
+          "speed": "300 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "starter culture",
+          "reagent": null,
+          "volume": "850 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 mL freezer vial",
+          "reagent": "starter culture",
+          "volume": "850 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "add": "150 uL sterilized 100% glycerol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "freezer vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "freezer vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "starter culture",
+          "reagent": "LB-Amp",
+          "volume": "1/500 to 1/1000",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "larger volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "12-16 hours",
+          "speed": "300 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": "6000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plasmid DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "commercial plasmid mini-prep"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": [
+            "12.8 uL Nuclease-free water",
+            "2.00 uL NEBuffer 4 (10X)",
+            "0.20 uL BSA (100X)",
+            "4.00 uL Plasmid DNA (0.5 ug/uL)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "listed"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "device": "thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "65 \u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "enzyme inactivation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "TE buffer",
+          "volume": "to bring to 100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Phenol:Chloroform:Isoamyl alcohol (25:24:1)",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "11,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "3M Sodium Acetate",
+          "volume": "0.1 volumes (10 uL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Isopropanol",
+          "volume": "0.7 volumes (70 uL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": "11,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ice cold 70% ethanol",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "air dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nuclease-free water",
+          "volume": "5 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "linearized plasmid prep",
+          "volume": "2 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sterile water",
+          "volume": "2 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "2 uL sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "diluted sample",
+          "volume": "1 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "concentration of plasmid prep"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "1% agarose gel",
+          "reagent": "diluted plasmid prep",
+          "volume": "3 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "check for complete digestion"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Ambion MEGAscript T7 kit components",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {
+            "method": "flick"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "16 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Turbo DNase",
+          "volume": "1 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "citrate-saturated (pH 4.7) phenol:chloroform:isoamyl alcohol (25:24:1)",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "upper, aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform:isoamyl alcohol (24:1)",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "upper aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": [
+            "3.0 M sodium acetate (0.1 volumes)",
+            "isopropanol (0.7 volumes)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "70% ethanol",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "under vacuum",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "water",
+          "volume": "50 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "RNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-70\u00b0 Celsius",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "RNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "transcript",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Experion/Bioanalyzer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nspin(container='tube', duration='briefly')\nresuspend(container='tube', reagent='TE Buffer', volume='to achieve 0.1 ug/uL stock concentration')\nadd(container='tube', reagent='stock solution', volume='1 uL', destination='99 uL water')\nstore(container='tube', reagent='resuspended DNA', temperature='-20 \u00b0C')\nplace(container='frozen competent cells and pre-labeled tubes', temperature='on ice')\npre-warm(container='hot water bath', temperature='42 \u00b0C')\nadd(container='tube on ice', reagent='plasmid working solution', volume='2 uL (~2 ng)', destination='100 uL thawed competent cells')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube, speed: gentle, other: {'method': 'flick'})\n\n### AUTOMATED SECTION ###\nincubate(container='tube', reagent='mixture', temperature='on ice', duration='30 minutes')\nheat shock(container='tube', temperature='42 \u00b0C', duration='45 seconds', bath='hot water bath')\nplace(container='tube', temperature='on ice', duration='2 minutes')\nadd(container='tube', reagent='SOC or LB', volume='500 uL')\nincubate(container='tube', temperature='37\u00b0C', duration='1 hour', speed='225 rpm')\npre-warm(container='agar plates', temperature='37\u00b0C', location='incubator')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: LB-Amp agar plates, volume: 10 uL, 100 uL, 200 uL, other: {'source': 'culture'})\n\n### AUTOMATED SECTION ###\nplace(container='plates', temperature='37\u00b0C', duration='12-24 hours', orientation='upside down', location='incubator')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: liquid LB-Amp culture, reagent: single well-isolated colony, volume: 5 uL, other: {'source': 'LB-Amp plate grown overnight'})\n\n### AUTOMATED SECTION ###\ngrow(container='liquid culture', temperature='37\u00b0C', duration='~8 hours', speed='300 rpm')\nremove(container='starter culture', volume='850 uL')\nplace(container='2 mL freezer vial', reagent='starter culture', volume='850 uL', add='150 uL sterilized 100% glycerol')\nmix(container='freezer vial', speed='thoroughly')\nstore(container='freezer vial', temperature='-80 \u00b0C')\ndilute(container='starter culture', reagent='LB-Amp', volume='1/500 to 1/1000', destination='larger volume')\ngrow(container='culture', temperature='37\u00b0C', duration='12-16 hours', speed='300 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: harvest (container: culture, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='culture', temperature='4\u00b0C', duration='15 min', speed='6000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube, reagent: supernatant, other: {})\n# MANUAL: recover (container: tube, reagent: plasmid DNA, other: {'method': 'commercial plasmid mini-prep'})\n\n### AUTOMATED SECTION ###\ncombine(container='PCR tube', reagent=['12.8 uL Nuclease-free water', '2.00 uL NEBuffer 4 (10X)', '0.20 uL BSA (100X)', '4.00 uL Plasmid DNA (0.5 ug/uL)'], order='listed')\nincubate(container='PCR tube', reagent='mixture', temperature='37 \u00b0C', duration='1 hour', device='thermocycler')\nincubate(container='PCR tube', reagent='mixture', temperature='65 \u00b0C', duration='20 minutes', purpose='enzyme inactivation')\nadd(container='PCR tube', reagent='TE buffer', volume='to bring to 100 uL')\nadd(container='PCR tube', reagent='Phenol:Chloroform:Isoamyl alcohol (25:24:1)', volume='100 uL')\nvortex(container='PCR tube')\ncentrifuge(container='PCR tube', duration='5 minutes', speed='11,000 rpm')\ntransfer(container='new tube', reagent='aqueous phase')\nadd(container='tube', reagent='3M Sodium Acetate', volume='0.1 volumes (10 uL)')\nadd(container='tube', reagent='Isopropanol', volume='0.7 volumes (70 uL)')\nmix(container='tube')\nincubate(container='tube', temperature='room temperature', duration='10 minutes')\ncentrifuge(container='tube', temperature='4\u00b0C', duration='30 minutes', speed='11,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='tube', reagent='ice cold 70% ethanol', volume='200 uL')\ncentrifuge(container='tube', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: air dry (container: tube, reagent: pellet, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='tube', reagent='nuclease-free water', volume='5 uL')\ntransfer(container='new tube', reagent='linearized plasmid prep', volume='2 uL')\nadd(container='tube', reagent='sterile water', volume='2 uL', destination='2 uL sample')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: diluted sample, volume: 1 uL, other: {'purpose': 'concentration of plasmid prep'})\n# MANUAL: run (container: 1% agarose gel, reagent: diluted plasmid prep, volume: 3 uL, other: {'purpose': 'check for complete digestion'})\n\n### AUTOMATED SECTION ###\ncombine(container='tube', reagent='Ambion MEGAscript T7 kit components', temperature='room temperature')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube, speed: thoroughly, other: {'method': 'flick'})\n\n### AUTOMATED SECTION ###\nincubate(container='tube', reagent='mixture', temperature='37\u00b0C', duration='16 hours')\nadd(container='tube', reagent='Turbo DNase', volume='1 uL', to='concentration')\nincubate(container='tube', temperature='37\u00b0C', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: extract (container: tube, reagent: citrate-saturated (pH 4.7) phenol:chloroform:isoamyl alcohol (25:24:1), volume: 1 volume, other: {})\n\n### AUTOMATED SECTION ###\nvortex(container='tube', duration='1 minute')\ncentrifuge(container='tube', duration='2 minutes', speed='12,000 x g')\ntransfer(container='fresh tube', reagent='upper, aqueous phase')\nadd(container='tube', reagent='chloroform:isoamyl alcohol (24:1)', volume='1 volume')\nvortex(container='tube', duration='1 minute')\ncentrifuge(container='tube', duration='2 minutes', speed='12,000 x g')\ntransfer(container='fresh tube', reagent='upper aqueous phase')\nadd(container='tube', reagent=['3.0 M sodium acetate (0.1 volumes)', 'isopropanol (0.7 volumes)'])\nmix(container='tube')\nincubate(container='tube', temperature='room temperature', duration='10 minutes')\ncentrifuge(container='tube', temperature='4 \u00b0C', duration='30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube, reagent: supernatant, other: {'carefully': True})\n\n### AUTOMATED SECTION ###\nwash(container='tube', reagent='70% ethanol', volume='200 uL', target='pellet')\ndry(container='tube', reagent='pellet', temperature='under vacuum')\nresuspend(container='tube', reagent='water', volume='50 uL', target='RNA pellet')\nstore(container='tube', temperature='-70\u00b0 Celsius', target='RNA')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (reagent: RNA, other: {'method': 'nanodrop'})\n# MANUAL: check (reagent: transcript, other: {'method': 'Experion/Bioanalyzer'})",
+    "source_file": "protocol_390.txt"
+  }
+]

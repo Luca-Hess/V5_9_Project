@@ -1,0 +1,898 @@
+[
+  {
+    "protocol": "Seamless editing of the C. elegans genome using CRISPR/Cas9\nDesign the sgRNAs and order the primers (see the guidelines).\nClone the sgRNAs in pDD162 using Q5 mutagenesis kit (NEB).\nMix together the following: Prepare a negative control mix without the Forward primer.\nDigest away pDD162 for\u00a05min at RT with: 1ul of Q5 PCR 5ul of KLD 2X buffer 1ul of KLD 10X enzyme 3ul of H2O.\nAdd 5ul of the digested reaction to 50ul of kit\u2010provided competent cells. \nHeat shock at 42\u00b0C for 30s. \nAdd 950ul of SOC medium and shake for 1h at 37\u00b0C.\nPlate 25ul on Carb plate.\nCentrifuge the remaining 975ul for 3min at 5K and also plate the pellet.\nOne half (or more) of the colonies will have the correct insertion.\nPick 6 colonies to grow each in 2ml of bacterial culture.\nMiniprep (Qiagen kit, include the PB wash, elute in 50ul of H2O) and send to sequencing using the forward sequencing primer in the guidelines.\nDesign and order the repair ssODNs as described in the guidelines.\nReconstitute oligo at 1ug/ul according to the amount provided by the manufacturer.\nAmplify the GFP plasmid pCM1.53 (available at Addgene) with primers containing the desired flanking regions (~30\u201060 bp), mutations in the sgRNA site(s) and GFP sequence.\nPCRs are performed using Phusion taq 2X Master Mix (NEB), 45s elongation step, 30 cycles, 50ul reaction.\nAnnealing step is done using a gradient from 60\u00b0C to 72\u00b0C.\nRun PCR reactions on agarose gel to confirm the amplification. \nPool positive PCRs (typically three reactions) and purify using a minelute PCR purification kit (Qiagen, elution with 10ul of H2O).\nPool the reactions and purify them using one minelute PCR purification column and measure the concentration.\nThe DNA concentration should be >500ng/ul (at this concentration, the amount of PCR oligo remaining in the mixture will be low enough\u00a0to avoid any toxicity).\nWe use pRF4 roller plasmid at 120ng/ul, but you can use any marker that you find convenient.\nMiniprep from 3ml of bacterial culture, as for the Cas9/sgRNA plasmid.\nDo not let cultures grow for more than 16 hours.\nAdd H2O to 15ul Centrifuge at 13K for 15min on tabletop centrifuge.\nLoad injection needles with the injection mix.\nBleach a large plate of worms \nWashA: wash with M9.\nWashB: wash with M9.\nPlate embryos (less than 2000) on NA22 large plate.\n(NOT completely covered with NA22 bacteria) Incubate multiple plates at different temperatures to ensure to have at least one with young adults (few embryos /one embryo row) on the day of injection.\nPick hermaphrodites with a sharp pick from areas of the plate where there are no bacteria and place on injection pad.\nInject 30\u201040 worms.\nAddingM9 #1:\u00a0add 5ul of M9 (Start adding M9 every 5-10 minutes, about 1h after the worms have been put in recovery buffer).\nAddingM9 #2:\u00a0add 5ul of M9.\nAddingM9 #3:\u00a0add 5ul of M9.\nAddingM9 #4:\u00a0add 10ul of M9. \nAddingM9 #5:\u00a0add 10ul of M9.\nAddingM9 #6:\u00a0add 15ul of M9.\nAddingM9 #7:\u00a0add 15ul of M9.\nAddingM9 #8:\u00a0add 15ul of M9.\nAddingM9 #9:\u00a0add 20ul of M9.\nAddingM9 #10:\u00a0add 20ul of M9. \nPut a drop of 20ul of M9 on a new OP50 plate, outside the bacteria layer.\nWith a pick, transfer 5 to 10 injected worms from the recovery buffer to the M9 drop and push them away from the M9 drop towards the food.\nRepeat until all the worms are transferred.\nEven if the worms look inert at this or the next step, they are worth transferring as they may yield edited progeny.\nLeave the injected worms on OP50 plates at room temperature for 5h and then transfer each worm (P0) to a new OP50 plate (1 P0 per plate).\nAllow the P0s to lay eggs at 20\u00b0C for 1 or 2 days.\nTransfer the P0s to fresh OP50 plates between the first and second day.\nLet the F1s grow at 20\u00b0C.\nWhen all the F1s have reached the young adult stage (4 days at 20\u00b0C), check for rollers.\nGFP fusions: if you know what you are looking for, it is possible to screen directly for GFP expression in the F1 (or F2) animals.\nPCR screening: Transfer the F1 rollers and their non\u2010roller F1 siblings to new plates (2 to 8 F1s per plate).\nPCR Screening:\u00a0Let the F1 lay eggs for 24h at 20\u00b0C.\nLyse the F1s for PCR: In each 10 uL tube of lysis buffer, put 2 to 8 F1s.\nWe recommend testing each gene\u2010specific PCR assay before starting the injections.\nSee the guidelines for PCR Screening details.\nClone the F2/3s from positive F1 plates.\nIt is useful to let the worms crawl on a no\u2010bacteria plate before picking to avoid accidental transfer of siblings.\nIf 2 F1s were pooled per plate, clone 16 F2s.\nIf 8 F1s were pooled per plate, chunk the starved plate if necessary and clone 24 to 32 F2/F3s.\nLyse and PCR F2/3s using the same methods as for the F1s.\nEXCEPT: When looking for homozygous GFP worms, use primers that flank the GFP fusion.\nUse the PCR product for sequencing: Clean 25ul of the PCR reaction using Qiagen Minelute kit, elute with 10ul of H2O.\nUse 7ul for this elution as a template and use a primer inside the PCR product for sequencing.\nOnce a homozygous F2/3 plate is identified, it is recommended to clone 4 worms again to new plates and to verify their genotype to ensure that the line is truly homozygous.\nFreeze the worms.\nWe recommend freezing at least two independent lines (derived from different P0s if possible or different F1s) for each type of edit.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Q5 PCR, KLD 2X buffer, KLD 10X enzyme, H2O",
+          "volume": "1ul Q5 PCR, 5ul KLD 2X buffer, 1ul KLD 10X enzyme, 3ul H2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "Prepare a negative control mix without the Forward primer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "pDD162",
+          "volume": null,
+          "temperature": "RT",
+          "duration": "5min",
+          "speed": null,
+          "other": {
+            "enzymes": "KLD 10X enzyme"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "kit\u2010provided competent cells",
+          "reagent": "digested reaction",
+          "volume": "5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "kit\u2010provided competent cells",
+          "reagent": "SOC medium",
+          "volume": "950ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "competent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30s",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "competent cells + SOC medium",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1h",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "Carb plate",
+          "reagent": "cells",
+          "volume": "25ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "remaining 975ul",
+          "reagent": "cells",
+          "volume": "975ul",
+          "temperature": null,
+          "duration": "3min",
+          "speed": "5K",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "Carb plate",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "bacterial culture",
+          "reagent": "colonies",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "6 colonies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "miniprep",
+        "parameters": {
+          "container": null,
+          "reagent": "bacterial culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiagen",
+            "PB wash": true,
+            "elution": "50ul H2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "send",
+        "parameters": {
+          "container": null,
+          "reagent": "miniprep DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "sequencing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": null,
+          "reagent": "oligo",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1ug/ul"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "GFP plasmid pCM1.53",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "primers": "with desired flanking regions, mutations, GFP sequence"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "PCR",
+        "parameters": {
+          "container": null,
+          "reagent": "Phusion taq 2X Master Mix",
+          "volume": "50ul",
+          "temperature": null,
+          "duration": "45s elongation step, 30 cycles",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "anneal",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "gradient 60\u00b0C to 72\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "PCR reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "confirm amplification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "positive PCRs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "typically three reactions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "pooled PCRs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "minelute PCR purification kit (Qiagen)",
+            "elution": "10ul H2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "purified DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parameter": "concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "miniprep",
+        "parameters": {
+          "container": null,
+          "reagent": "bacterial culture",
+          "volume": "3ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "as for Cas9/sgRNA plasmid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "H2O",
+          "volume": "15ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15min",
+          "speed": "13K",
+          "other": {
+            "instrument": "tabletop centrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "injection needles",
+          "reagent": "injection mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "bleach",
+        "parameters": {
+          "container": "large plate of worms",
+          "reagent": "bleach",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "WashA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "WashB"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "NA22 large plate",
+          "reagent": "embryos",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "less than 2000"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "multiple plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "different temperatures",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "ensure young adults on day of injection"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "10ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "10ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "15ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #6"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "15ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #7"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "15ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "20ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #9"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "M9",
+          "volume": "20ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "AddingM9 #10"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new OP50 plate",
+          "reagent": "M9",
+          "volume": "20ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "outside bacteria layer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "OP50 plates with injected worms",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5h",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "OP50 plate",
+          "reagent": "worm (P0)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "1 P0 per plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "OP50 plates with P0s",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": "1 or 2 days",
+          "speed": null,
+          "other": {
+            "purpose": "allow P0s to lay eggs"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh OP50 plates",
+          "reagent": "P0s",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "between first and second day"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "OP50 plates with F1s",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "let F1s grow"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "OP50 plates with F1s",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": "4 days",
+          "speed": null,
+          "other": {
+            "purpose": "reach young adult stage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new plates",
+          "reagent": "F1 rollers and non-roller F1 siblings",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "2 to 8 F1s per plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates with F1s",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": "24h",
+          "speed": null,
+          "other": {
+            "purpose": "let F1 lay eggs"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "10ul tube of lysis buffer",
+          "reagent": "2 to 8 F1s",
+          "volume": "10ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "PCR",
+        "parameters": {
+          "container": null,
+          "reagent": "F1 lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "screening"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clone",
+        "parameters": {
+          "container": "new plates",
+          "reagent": "F2/3s",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "positive F1 plates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": null,
+          "reagent": "F2/3s",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "same as F1s"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "PCR",
+        "parameters": {
+          "container": null,
+          "reagent": "F2/3 lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "screening"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR reaction",
+          "volume": "25ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiagen Minelute",
+            "elution": "10ul H2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "elution (7ul)",
+          "volume": "7ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "template for sequencing",
+            "primer": "inside PCR product"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clone",
+        "parameters": {
+          "container": "new plates",
+          "reagent": "4 worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "verify genotype"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": "worms",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "at least two independent lines"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='Q5 PCR, KLD 2X buffer, KLD 10X enzyme, H2O', volume='1ul Q5 PCR, 5ul KLD 2X buffer, 1ul KLD 10X enzyme, 3ul H2O', note='Prepare a negative control mix without the Forward primer')\ndigest(reagent='pDD162', temperature='RT', duration='5min', enzymes='KLD 10X enzyme')\nadd(container='kit\u2010provided competent cells', reagent='digested reaction', volume='5ul')\nadd(container='kit\u2010provided competent cells', reagent='SOC medium', volume='950ul')\nheat shock(container='competent cells', temperature='42\u00b0C', duration='30s')\nshake(container='competent cells + SOC medium', temperature='37\u00b0C', duration='1h')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: Carb plate, reagent: cells, volume: 25ul)\n\n### AUTOMATED SECTION ###\ncentrifuge(container='remaining 975ul', reagent='cells', volume='975ul', duration='3min', speed='5K')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: Carb plate, reagent: pellet)\n# MANUAL: grow (container: bacterial culture, reagent: colonies, volume: 2ml, other: {'number': '6 colonies'})\n\n### AUTOMATED SECTION ###\nminiprep(reagent='bacterial culture', kit='Qiagen', PB wash=True, elution='50ul H2O')\n\n### MANUAL SECTION ###\n# MANUAL: send (reagent: miniprep DNA, other: {'destination': 'sequencing'})\n\n### AUTOMATED SECTION ###\nreconstitute(reagent='oligo', concentration='1ug/ul')\namplify(reagent='GFP plasmid pCM1.53', primers='with desired flanking regions, mutations, GFP sequence')\nPCR(reagent='Phusion taq 2X Master Mix', volume='50ul', duration='45s elongation step, 30 cycles')\nanneal(temperature='gradient 60\u00b0C to 72\u00b0C')\nrun(container='agarose gel', reagent='PCR reactions', purpose='confirm amplification')\npool(reagent='positive PCRs', number='typically three reactions')\npurify(reagent='pooled PCRs', kit='minelute PCR purification kit (Qiagen)', elution='10ul H2O')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: purified DNA, other: {'parameter': 'concentration'})\n\n### AUTOMATED SECTION ###\nminiprep(reagent='bacterial culture', volume='3ml', note='as for Cas9/sgRNA plasmid')\nadd(reagent='H2O', volume='15ul')\ncentrifuge(duration='15min', speed='13K', instrument='tabletop centrifuge')\n\n### MANUAL SECTION ###\n# MANUAL: load (container: injection needles, reagent: injection mix)\n# MANUAL: bleach (container: large plate of worms, reagent: bleach)\n\n### AUTOMATED SECTION ###\nwash(reagent='M9', step='WashA')\nwash(reagent='M9', step='WashB')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: NA22 large plate, reagent: embryos, other: {'number': 'less than 2000'})\n\n### AUTOMATED SECTION ###\nincubate(container='multiple plates', temperature='different temperatures', purpose='ensure young adults on day of injection')\nadd(reagent='M9', volume='5ul', step='AddingM9 #1')\nadd(reagent='M9', volume='5ul', step='AddingM9 #2')\nadd(reagent='M9', volume='5ul', step='AddingM9 #3')\nadd(reagent='M9', volume='10ul', step='AddingM9 #4')\nadd(reagent='M9', volume='10ul', step='AddingM9 #5')\nadd(reagent='M9', volume='15ul', step='AddingM9 #6')\nadd(reagent='M9', volume='15ul', step='AddingM9 #7')\nadd(reagent='M9', volume='15ul', step='AddingM9 #8')\nadd(reagent='M9', volume='20ul', step='AddingM9 #9')\nadd(reagent='M9', volume='20ul', step='AddingM9 #10')\nadd(container='new OP50 plate', reagent='M9', volume='20ul', location='outside bacteria layer')\nincubate(container='OP50 plates with injected worms', temperature='room temperature', duration='5h')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: OP50 plate, reagent: worm (P0), other: {'number': '1 P0 per plate'})\n\n### AUTOMATED SECTION ###\nincubate(container='OP50 plates with P0s', temperature='20\u00b0C', duration='1 or 2 days', purpose='allow P0s to lay eggs')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: fresh OP50 plates, reagent: P0s, other: {'timing': 'between first and second day'})\n\n### AUTOMATED SECTION ###\nincubate(container='OP50 plates with F1s', temperature='20\u00b0C', purpose='let F1s grow')\nincubate(container='OP50 plates with F1s', temperature='20\u00b0C', duration='4 days', purpose='reach young adult stage')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: new plates, reagent: F1 rollers and non-roller F1 siblings, other: {'number': '2 to 8 F1s per plate'})\n\n### AUTOMATED SECTION ###\nincubate(container='plates with F1s', temperature='20\u00b0C', duration='24h', purpose='let F1 lay eggs')\nlyse(container='10ul tube of lysis buffer', reagent='2 to 8 F1s', volume='10ul')\nPCR(reagent='F1 lysate', purpose='screening')\n\n### MANUAL SECTION ###\n# MANUAL: clone (container: new plates, reagent: F2/3s, other: {'source': 'positive F1 plates'})\n\n### AUTOMATED SECTION ###\nlyse(reagent='F2/3s', method='same as F1s')\nPCR(reagent='F2/3 lysate', purpose='screening')\nclean(reagent='PCR reaction', volume='25ul', kit='Qiagen Minelute', elution='10ul H2O')\nuse(reagent='elution (7ul)', volume='7ul', purpose='template for sequencing', primer='inside PCR product')\n\n### MANUAL SECTION ###\n# MANUAL: clone (container: new plates, reagent: 4 worms, other: {'purpose': 'verify genotype'})\n# MANUAL: freeze (reagent: worms, other: {'number': 'at least two independent lines'})",
+    "source_file": "protocol_365.txt"
+  }
+]

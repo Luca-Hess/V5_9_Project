@@ -1,0 +1,241 @@
+[
+  {
+    "protocol": "Silver Development protocol (silver stain) for 0.75mm polyacrylamide gels\nAgitate gel twice with 50% MeOH, 10% acetic acid (Fixer 1) for 15 min ea.\nRinse (1 min) with 200 ml DW.\nAgitate in 10% EtOH, 5% glacial acetic acid (Fixer 2) for 6 min.\nAgitate in distilled water.\nAgitate twice (9 min each) with 500 ml DW.\nAgitate in 500 ml of 20 mg/L Na2S2O4 (hydrosulfite [dithionite], make fresh) in distilled, deionized water (DDW) for 9min (sensitization).\nPour off solution.\nAgitate for 9 min.\nRinse 30 sec with DDW to remove excess AgNO3.\nAdd 200 ml image developer (1ml 37% formaldehyde per liter of 3% sodium carbonate) mixed with 200 ml 10g/L sodium thiosulfate.\nPour off developer.\nAdd 80 ml of stop solution (50 g tris, 25 ml glacial acetic per liter of distilled water).\nStore gel in 10% glycerol with bacteriostat (0.02% NaN3 ).\nWithout rinsing,\u00a0add 200 ml, 0.1% AgNO3 (200 mg) in DDW.\nAdd 150 ml 37% formaldehyde.\nAgitate to desired staining intensity (3 to 6 min).",
+    "actions": [
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "50% MeOH, 10% acetic acid (Fixer 1)",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min each (twice)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "gel",
+          "reagent": "distilled water (DW)",
+          "volume": "200 ml",
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "10% EtOH, 5% glacial acetic acid (Fixer 2)",
+          "volume": null,
+          "temperature": null,
+          "duration": "6 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "distilled water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "distilled water (DW)",
+          "volume": "500 ml",
+          "temperature": null,
+          "duration": "9 min each (twice)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "20 mg/L Na2S2O4 in distilled, deionized water (DDW)",
+          "volume": "500 ml",
+          "temperature": null,
+          "duration": "9 min",
+          "speed": null,
+          "other": {
+            "note": "make fresh"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "gel",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "9 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "gel",
+          "reagent": "distilled, deionized water (DDW)",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {
+            "purpose": "remove excess AgNO3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel",
+          "reagent": "image developer (1ml 37% formaldehyde per liter of 3% sodium carbonate) mixed with 10g/L sodium thiosulfate",
+          "volume": "200 ml image developer + 200 ml sodium thiosulfate solution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": "gel",
+          "reagent": "developer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel",
+          "reagent": "stop solution (50 g tris, 25 ml glacial acetic per liter of distilled water)",
+          "volume": "80 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "gel",
+          "reagent": "10% glycerol with bacteriostat (0.02% NaN3)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel",
+          "reagent": "0.1% AgNO3 (200 mg) in DDW",
+          "volume": "200 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "without rinsing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel",
+          "reagent": "37% formaldehyde",
+          "volume": "150 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 to 6 min",
+          "speed": null,
+          "other": {
+            "purpose": "to desired staining intensity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nagitate(container='gel', reagent='50% MeOH, 10% acetic acid (Fixer 1)', duration='15 min each (twice)')\nrinse(container='gel', reagent='distilled water (DW)', volume='200 ml', duration='1 min')\nagitate(container='gel', reagent='10% EtOH, 5% glacial acetic acid (Fixer 2)', duration='6 min')\nagitate(container='gel', reagent='distilled water')\nagitate(container='gel', reagent='distilled water (DW)', volume='500 ml', duration='9 min each (twice)')\nagitate(container='gel', reagent='20 mg/L Na2S2O4 in distilled, deionized water (DDW)', volume='500 ml', duration='9 min', note='make fresh')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: gel, reagent: solution, other: {})\n\n### AUTOMATED SECTION ###\nagitate(container='gel', duration='9 min')\nrinse(container='gel', reagent='distilled, deionized water (DDW)', duration='30 sec', purpose='remove excess AgNO3')\nadd(container='gel', reagent='image developer (1ml 37% formaldehyde per liter of 3% sodium carbonate) mixed with 10g/L sodium thiosulfate', volume='200 ml image developer + 200 ml sodium thiosulfate solution')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (container: gel, reagent: developer, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='gel', reagent='stop solution (50 g tris, 25 ml glacial acetic per liter of distilled water)', volume='80 ml')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: gel, reagent: 10% glycerol with bacteriostat (0.02% NaN3), other: {})\n\n### AUTOMATED SECTION ###\nadd(container='gel', reagent='0.1% AgNO3 (200 mg) in DDW', volume='200 ml', note='without rinsing')\nadd(container='gel', reagent='37% formaldehyde', volume='150 ml')\nagitate(container='gel', duration='3 to 6 min', purpose='to desired staining intensity')",
+    "source_file": "protocol_253.txt"
+  }
+]

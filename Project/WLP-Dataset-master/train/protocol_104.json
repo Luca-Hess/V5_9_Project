@@ -1,0 +1,260 @@
+[
+  {
+    "protocol": "Immunofluorescent Staining of Whole Blood\nAdd predetermined optimum concentrations of desired fluorochrome conjugated, biotinylated, orpurified primary antibodies to 100 \u03bcl of anti-coagulated whole blood.\nIncubate at room temperature for 15-20 minutes in the dark.\nDilute 10X Red Blood Cell (RBC) Lysis Buffer (BioLegend Cat.\nNo.\n420301) to 1X working concentrationwith DI water.\nWarm to room temperature prior to use.\nAdd 2 ml of 1X RBC lysis solution to wholeblood/antibody mixture.\nIncubate at room temperature for 10 minutes.\nCentrifuge at 350 X g for 5 minutes, discard the supernatant.\nWash 1X with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes.\nIf using a purified primary antibody, resuspend pellet in residual buffer and add a previously determinedoptimum concentration of anti-species immunoglobulin fluorochrome conjugated secondary antibody(e.g.\nFITC anti-mouse Ig) and incubate in the dark for 15-20 minutes.\nWash 1X with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes.\nResuspend cells in 0.5 ml Cell Staining Buffer or 0.5 ml 2% paraformaldehyde-PBS fixation buffer.\nAnalyze with a Flow Cytometer.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "100 \u03bcl anti-coagulated whole blood",
+          "reagent": "fluorochrome conjugated, biotinylated, or purified primary antibodies",
+          "volume": "predetermined optimum concentrations",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "whole blood with antibodies",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X RBC Lysis Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "1X RBC Lysis Buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "whole blood/antibody mixture",
+          "reagent": "1X RBC lysis solution",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "whole blood/antibody/RBC lysis mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "whole blood/antibody/RBC lysis mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "washed pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "residual buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pellet in residual buffer",
+          "reagent": "anti-species immunoglobulin fluorochrome conjugated secondary antibody (e.g. FITC anti-mouse Ig)",
+          "volume": "predetermined optimum concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "pellet with secondary antibody",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "washed pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cells",
+          "reagent": "Cell Staining Buffer or 2% paraformaldehyde-PBS fixation buffer",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "cells in buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Flow Cytometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='100 \u03bcl anti-coagulated whole blood', reagent='fluorochrome conjugated, biotinylated, or purified primary antibodies', volume='predetermined optimum concentrations')\nincubate(container='whole blood with antibodies', temperature='room temperature', duration='15-20 minutes', light_condition='in the dark')\ndilute(reagent='10X RBC Lysis Buffer', diluent='DI water', final_concentration='1X')\nwarm(container='1X RBC Lysis Buffer', temperature='room temperature')\nadd(container='whole blood/antibody mixture', reagent='1X RBC lysis solution', volume='2 ml')\nincubate(container='whole blood/antibody/RBC lysis mixture', temperature='room temperature', duration='10 minutes')\ncentrifuge(container='whole blood/antibody/RBC lysis mixture', duration='5 minutes', speed='350 x g')\ndiscard(container='supernatant')\nwash(container='pellet', reagent='Cell Staining Buffer', volume='at least 2 ml', times='1X')\ncentrifuge(container='washed pellet', duration='5 minutes', speed='350 x g')\nresuspend(container='pellet', reagent='residual buffer')\nadd(container='pellet in residual buffer', reagent='anti-species immunoglobulin fluorochrome conjugated secondary antibody (e.g. FITC anti-mouse Ig)', volume='predetermined optimum concentration')\nincubate(container='pellet with secondary antibody', duration='15-20 minutes', light_condition='in the dark')\nwash(container='pellet', reagent='Cell Staining Buffer', volume='at least 2 ml', times='1X')\ncentrifuge(container='washed pellet', duration='5 minutes', speed='350 x g')\nresuspend(container='cells', reagent='Cell Staining Buffer or 2% paraformaldehyde-PBS fixation buffer', volume='0.5 ml')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: cells in buffer, other: {'instrument': 'Flow Cytometer'})",
+    "source_file": "protocol_104.txt"
+  }
+]

@@ -1,0 +1,51 @@
+[
+  {
+    "protocol": "A-Tailing with Taq Polymerase\nClean-up the amplified DNA from the PCR components. \nSet-up the reaction by adding the following components: \nIncubate the reaction at 72\u00a0\u00b0C\u00a0for 20 minutes",
+    "actions": [
+      {
+        "action": "clean-up",
+        "parameters": {
+          "container": "amplified DNA from PCR",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube or well",
+          "reagent": "reaction components (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: clean-up (container: amplified DNA from PCR, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='reaction tube or well', reagent='reaction components (unspecified)')\nincubate(container='reaction', temperature='72\u00b0C', duration='20 minutes')",
+    "source_file": "protocol_431.txt"
+  }
+]

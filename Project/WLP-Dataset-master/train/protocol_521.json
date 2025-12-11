@@ -1,0 +1,667 @@
+[
+  {
+    "protocol": "Flex-T\u2122 HLA Class I ELISA Protocol\nPrepare the substrate solution approximately 10 minutes before use:\n10.34ml DI water1.2ml of Substrate Buffer 10X concentrate240\u03bcl of ABTS stock solution120\u03bcl of Hydrogen peroxide solution.\nVortex to mix well.\nThe substrate solution should be at room temperature (18-25\u00b0C) for optimal reproducible results.\nDilute the 5X Coating Buffer to 1X with DI water Prepare Streptavidin solution to coat the plate:\n-24\u03bcl of Streptavidin solution\n-11.976 ml 1X Coating Buffer. \nCalculate the amount of 1X Dilution Buffer required and prepare the solution by diluting the 10X concentrated buffer 10 times in DI water before use.\nThe 1X Dilution Buffer can be stored for up to oneweek at 2-8\u00b0C.\nPrepare Wash Buffer; dilute the 20X wash buffer with DI water, at least 300ml per plate.\nDilute concentrated HRP-conjugated antibody to 0.3\u03bcg/ml in 1X Dilution Buffer just before use.\nPrepare12ml per plate.\nDilute the Flex-T\u2122 ELISA Positive Control to prepare a 2.7\u03bcM solution:\n-5\u03bcl of Flex-T\u2122 ELISA Positive Control at 0.2mg/ml\n-2.9\u03bcl of 1X Dilution Buffer Coat the wells of the plate with Streptavidin.\nAdd 100\u03bcl of Streptavidin solution to all wells.\nSeal theplate and incubate overnight (16-18 hrs) at room temperature (18-25\u00b0C).\nDiscard the coating solution and wash the plate 3 times with at least 300\u03bcl Wash Buffer per well and blot residual buffer by firmly tapping plate upside down on absorbent paper.\nAll subsequent washesshould be performed similarly.\nTo block non-specific binding and reduce background, add 300\u03bcl of 1X Dilution Buffer to all wells.\nSeal the plate and incubate for 30 minutes at room temperature (18-25\u00b0C).\nPrepare three dilutions of the HLA control by serial dilution in 1X Dilution Buffer.\nPrepare the controls fresh and keep them on melting ice until usage.\nTo evaluate the outcome of UV-mediated HLA peptide exchange, dilute a small aliquot of the exchange reaction mixture 300-fold in 1X Dilution Buffer (refer to the peptide exchange step in Protocol for fluorescent Flex-T\u2122 generation and antigen specific CD8+ T cell staining).\nMix thoroughly.\nDiscard the Dilution Buffer from the plate and blot the residual buffer.\nPipette 100\u03bcl of 1X Dilution Buffer (blank), diluted ELISA controls (H, M, L, positive, negative, and UV only), or exchange reaction mixture dilutions, into the appropriate wells (recommended in duplicate, see plate map).\nSeal the plates and incubate for 1 hour at 37\u00b0C.\nDiscard the liquid from the wells and wash 3 times with 300\u03bcl of wash buffer per well.\nAdd 100\u03bcl of diluted HRP-conjugated antibody.\nSeal the plates and incubate for 1 hour at 37\u00b0C.\nDiscard the liquid from the wells and wash 3 times with 300\u03bcl of wash buffer per well.\nAdd 100\u03bcl of substrate solution.\nIncubate for 8 minutes at room temperature (18-25\u00b0C) in the dark on a plate shaker at 400-500 rpm.\nAdd 50\u03bcl of Stop Solution to all wells and read at 414nm in an ELISA reader within 30 minutes.\nView BioLegend website for Representative Data, and Appendix 1.",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube or bottle",
+          "reagent": "DI water",
+          "volume": "10.34 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube or bottle",
+          "reagent": "Substrate Buffer 10X concentrate",
+          "volume": "1.2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube or bottle",
+          "reagent": "ABTS stock solution",
+          "volume": "240 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube or bottle",
+          "reagent": "Hydrogen peroxide solution",
+          "volume": "120 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube or bottle",
+          "reagent": "substrate solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "substrate solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (18-25\u00b0C)",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "5X Coating Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Streptavidin solution",
+          "volume": "24 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1X Coating Buffer",
+          "volume": "11.976 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Dilution Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "20X Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final_concentration": "1X",
+            "minimum_volume": "300 ml per plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "concentrated HRP-conjugated antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1X Dilution Buffer",
+            "final_concentration": "0.3 \u03bcg/ml",
+            "preparation_time": "just before use"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube",
+          "reagent": "diluted HRP-conjugated antibody",
+          "volume": "12 ml per plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Flex-T\u2122 ELISA Positive Control at 0.2 mg/ml",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1X Dilution Buffer",
+            "diluent_volume": "2.9 \u03bcl",
+            "final_concentration": "2.7 \u03bcM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Streptavidin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Streptavidin solution",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (18-25\u00b0C)",
+          "duration": "16-18 hours (overnight)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "coating solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Wash Buffer",
+          "volume": "\u2265300 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "tap upside down on absorbent paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "1X Dilution Buffer",
+          "volume": "300 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (18-25\u00b0C)",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "HLA control",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "serial dilution",
+            "diluent": "1X Dilution Buffer",
+            "number_of_dilutions": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "controls",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on melting ice",
+          "duration": "until usage",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "exchange reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1X Dilution Buffer",
+            "dilution_factor": "300-fold"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "exchange reaction mixture dilution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Dilution Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "tap upside down on absorbent paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "1X Dilution Buffer (blank), diluted ELISA controls, or exchange reaction mixture dilutions",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "duplicate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Wash Buffer",
+          "volume": "300 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "diluted HRP-conjugated antibody",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Wash Buffer",
+          "volume": "300 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "substrate solution",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (18-25\u00b0C)",
+          "duration": "8 minutes",
+          "speed": "400-500 rpm (plate shaker)",
+          "other": {
+            "light_condition": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "plate wells",
+          "reagent": "Stop Solution",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "within 30 minutes",
+          "speed": null,
+          "other": {
+            "wavelength": "414 nm",
+            "instrument": "ELISA reader"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='tube or bottle', reagent='DI water', volume='10.34 ml')\ndispense(container='tube or bottle', reagent='Substrate Buffer 10X concentrate', volume='1.2 ml')\ndispense(container='tube or bottle', reagent='ABTS stock solution', volume='240 \u03bcl')\ndispense(container='tube or bottle', reagent='Hydrogen peroxide solution', volume='120 \u03bcl')\nmix(container='tube or bottle', reagent='substrate solution', speed='vortex')\nincubate(container='substrate solution', temperature='room temperature (18-25\u00b0C)', duration='10 minutes')\ndilute(reagent='5X Coating Buffer', diluent='DI water', final_concentration='1X')\ndispense(container='tube', reagent='Streptavidin solution', volume='24 \u03bcl')\ndispense(container='tube', reagent='1X Coating Buffer', volume='11.976 ml')\ndilute(reagent='10X Dilution Buffer', diluent='DI water', final_concentration='1X')\ndilute(reagent='20X Wash Buffer', diluent='DI water', final_concentration='1X', minimum_volume='300 ml per plate')\ndilute(reagent='concentrated HRP-conjugated antibody', diluent='1X Dilution Buffer', final_concentration='0.3 \u03bcg/ml', preparation_time='just before use')\ndispense(container='tube', reagent='diluted HRP-conjugated antibody', volume='12 ml per plate')\ndilute(reagent='Flex-T\u2122 ELISA Positive Control at 0.2 mg/ml', volume='5 \u03bcl', diluent='1X Dilution Buffer', diluent_volume='2.9 \u03bcl', final_concentration='2.7 \u03bcM')\n\n### MANUAL SECTION ###\n# MANUAL: coat (container: plate wells, reagent: Streptavidin, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='plate wells', reagent='Streptavidin solution', volume='100 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='room temperature (18-25\u00b0C)', duration='16-18 hours (overnight)')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: plate wells, reagent: coating solution, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='plate wells', reagent='Wash Buffer', volume='\u2265300 \u03bcl per well', cycles='3')\n\n### MANUAL SECTION ###\n# MANUAL: blot (container: plate, other: {'method': 'tap upside down on absorbent paper'})\n\n### AUTOMATED SECTION ###\ndispense(container='plate wells', reagent='1X Dilution Buffer', volume='300 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='room temperature (18-25\u00b0C)', duration='30 minutes')\ndilute(reagent='HLA control', method='serial dilution', diluent='1X Dilution Buffer', number_of_dilutions='3')\n\n### MANUAL SECTION ###\n# MANUAL: keep (container: controls, temperature: on melting ice, duration: until usage, other: {})\n\n### AUTOMATED SECTION ###\ndilute(reagent='exchange reaction mixture', diluent='1X Dilution Buffer', dilution_factor='300-fold')\nmix(container='tube', reagent='exchange reaction mixture dilution', speed='thoroughly')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: plate wells, reagent: Dilution Buffer, other: {})\n# MANUAL: blot (container: plate, other: {'method': 'tap upside down on absorbent paper'})\n\n### AUTOMATED SECTION ###\ndispense(container='plate wells', reagent='1X Dilution Buffer (blank), diluted ELISA controls, or exchange reaction mixture dilutions', volume='100 \u03bcl', replicates='duplicate')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: plate wells, reagent: liquid, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='plate wells', reagent='Wash Buffer', volume='300 \u03bcl per well', cycles='3')\ndispense(container='plate wells', reagent='diluted HRP-conjugated antibody', volume='100 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: plate wells, reagent: liquid, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='plate wells', reagent='Wash Buffer', volume='300 \u03bcl per well', cycles='3')\ndispense(container='plate wells', reagent='substrate solution', volume='100 \u03bcl')\nincubate(container='plate', temperature='room temperature (18-25\u00b0C)', duration='8 minutes', speed='400-500 rpm (plate shaker)', light_condition='dark')\ndispense(container='plate wells', reagent='Stop Solution', volume='50 \u03bcl')\nread(container='plate', duration='within 30 minutes', wavelength='414 nm', instrument='ELISA reader')",
+    "source_file": "protocol_521.txt"
+  }
+]

@@ -1,0 +1,695 @@
+[
+  {
+    "protocol": "Hybridized Chain Reaction Fluorescent in situ Hybridization (HCR-FISH)\n[1.1] Collect juvenile squid from hatching table (refer to colonization protocol as needed) and isolate into collection cups.\nColonize with desired V. fischeri strain.\n[1.2] Anesthetize squid for 2 min by placing into 2% ethanol in filtered seawater.\n[1.3] Under dissecting scope, split and peel back mantle on anterior side.\nThen carefully pull back the funnel to expose the light organ.\n[1.4] Place dissected squid into 4% paraformaldehyde (PFA) and incubate overnight at 4 \u00b0C on shaker to fix.\nThe best vessels to use are 1.5mL screw-cap vials, to prevent leaking at later wash steps.\nPermeabilization by Proteinase KUse RNase-free equipment and solutions throughout the remainder of the protocol.\nPerform all treatments, hybridizations, and washes in a 500-\u03bcL volume, on a rotator/shaker, unless otherwise noted.\n[2.1] Wash each sample five times (5 min per wash) with Permeabilization Buffer at room temperature (RT).\n[2.2] Treat with 0.01 mg/mL Proteinase K Permeabilization Buffer at RT for 15-20 minutes.\nDo not place on shaker or rotator.\n[2.3] Stop the proteinase K digestion with two washes of 2 mg/mL glycine in Permeabilization Buffer.\n[2.4] Post-fix in Permeabilization Buffer with 4% PFA for 1 h at RT on the shaker.\n[2.5] Wash with Permeabilization Buffer five times (5 min per wash).\nNote: Permeabilized juveniles can be used immediately, or stored for no longer than 1 week at 4 \u00b0C in Permeabilization Buffer.\nPre-hybridization for Probes.\n[3.1] Remove as much of the Permeabilization Buffer as possible from the sample.\nIncubate sample in 500 \u03bcL of 50% Hyb Buffer at 65 \u00b0C for 30 min.\n[3.2] Change sample into 500 \u03bcL of fresh 50% Hyb Buffer, and incubate at 65 \u00b0C for 2.5 h.\nNote: Prevent drying during prolonged incubations.\nWhen using petri plates, place them in a humidified chamber or seal the cover of the plate with a strip of parafilm.\nProbe Hybridization.\nTo identify possible artifacts and confounding effects, the following alternate sample preparations should be performed:\nAutofluorescence (AF) \u2013 Follow protocol but do not add probes (step 4) or hairpins (step 7).\nNon-Specific Amplification of hairpins (NSA) \u2013 Sample incubated without probes (step 4) but with hairpins included.\nNon-Specific Detection of targets (NSD) \u2013 This control is applicable only for (i) transgenic (non-endogenous) targets, where a wild-type sample missing the target transcript is treated using the same protocol, and with the test probes and hairpins; or (ii) non-ubiquitous endogenous target transcript, where the locus of expression is known beforehand, and for which surrounding tissue can give an estimate of NSD in the same sample after treatment.\n[4.1] Mix 1 pmol of each probe in 500 \u03bcL of 50% Hyb buffer at 45 \u00b0C for 30 min (this step should be coordinated with step [3.2] so that they are completed at the same time).\n[4.2] Remove the 50% Hyb buffer from [3.2], and add this probe solution to samples for overnight (16 h) incubation at 45 \u00b0C.\nProbe Washes.\nAll solutions used here must be pre-warmed to 45 \u00b0C.\nProbe solution is not reused, and hence discarded at the start of the washes.\n[5.1] Wash samples in 500 \u03bcL Probe Wash Buffer for 15 min at 45 \u00b0C.\n[5.2] Wash samples in 500 \u03bcL (75% of Probe Wash Buffer + 25% of 5X SSC) for 15 min at 45 \u00b0C.\n[5.3] Wash samples in 500 \u03bcL (50% of Probe Wash Buffer + 50% of 5X SSC) for 15 min at 45 \u00b0C.\n[5.4] Wash samples in 500 \u03bcL (25% of Probe Wash Buffer + 75% of 5X SSC) for 15 min at 45 \u00b0C.\n[5.5] Wash samples 2 times, in 500 \u03bcL of 5X SSC for 15 min at 45 \u00b0C.\n[5.6] Wash samples 2 times, in 500 \u03bcL of 5X SSC for 30 min at 45 \u00b0C.\nPre-hybridization for Hairpins [6.1] Incubate samples in 500 \u03bcL of DNA Amplification Buffer at RT for 30 min.\n[6.2] Incubate samples in fresh 500 \u03bcL of DNA Amplification Buffer at RT for 30 min.\n[6.3] Aliquot 6 pmol (for every 100 \u03bcL of DNA Amplification Buffer) of each hairpin in a separate PCR tube.\n[6.4] Heat the hairpins to 95 \u00b0C for 90 sec (e.g., using a PCR machine/thermal cycler).\n[6.5] Store the heated hairpins in the dark for 30 min at RT (keep hairpins unmixed).\n[6.6] Prepare 100 \u03bcL of fresh DNA Amplification Buffer equilibrated at RT.\nNote: (Steps [6.2] through [6.6] should be coordinated so that they are completed at the same time for all samples).\nHairpin Amplification.\n[7.1] Mix all hairpins in 100 \u03bcL of pre-equilibrated DNA Amplification Buffer at RT.\n(Final concentration of each hairpin is 60 nM.)\nNote: The volume of this incubation can be scaled up if needed (i.e., for high-abundance squid transcripts); however, the hairpin concentration must be kept constant.\n[7.2] Remove final wash solution from [6.2] and add the hairpin solution to the samples for an overnight (16 h) incubation at RT.\n[7.3] Wrap the sample tubes (or incubation oven) in aluminum foil to keep light out.\nHairpin Washes.\nNote: All solutions used here must be pre-equilibrated to RT.\n[8.1] Wash samples 4 times, in 500 \u03bcL of 5X SSCTw for 5 min each at RT.\n[8.2] Wash samples 2 times, in 500 \u03bcL of 5X SSCTw for 30 min each at RT.\nImaging.\n[9.1] Samples can be imaged directly in 5X SSCTw, or stored in 5X SSCTw at 4 \u00b0C.\nNote: The processed samples can be counterstained with phalloidin or wheat germ agglutinin following standard protocols.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "collection cups",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "juvenile squid",
+            "source": "hatching table"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": "collection cups",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "juvenile squid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "colonize",
+        "parameters": {
+          "container": null,
+          "reagent": "V. fischeri strain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "juvenile squid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "anesthetize",
+        "parameters": {
+          "container": null,
+          "reagent": "2% ethanol in filtered seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "organism": "juvenile squid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": null,
+          "reagent": "2% ethanol in filtered seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "organism": "juvenile squid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "split",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "mantle on anterior side"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "peel",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "mantle on anterior side"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pull",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "funnel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1.5mL screw-cap vials",
+          "reagent": "4% paraformaldehyde (PFA)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "organism": "dissected squid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5mL screw-cap vials",
+          "reagent": "4% paraformaldehyde (PFA)",
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "overnight",
+          "speed": "on shaker",
+          "other": {
+            "organism": "dissected squid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Permeabilization Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "5 min per wash",
+          "speed": "on rotator/shaker",
+          "other": {
+            "repeat": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "0.01 mg/mL Proteinase K Permeabilization Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "15-20 min",
+          "speed": null,
+          "other": {
+            "do_not_shake": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "2 mg/mL glycine in Permeabilization Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": "on rotator/shaker",
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "post-fix",
+        "parameters": {
+          "container": null,
+          "reagent": "Permeabilization Buffer with 4% PFA",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "1 h",
+          "speed": "on shaker",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Permeabilization Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "5 min per wash",
+          "speed": "on rotator/shaker",
+          "other": {
+            "repeat": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "Permeabilization Buffer",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "50% Hyb Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "65 \u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "sample": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "change",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh 50% Hyb Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "65 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh 50% Hyb Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "65 \u00b0C",
+          "duration": "2.5 h",
+          "speed": null,
+          "other": {
+            "sample": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "1 pmol of each probe in 500 \u03bcL of 50% Hyb buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "50% Hyb buffer",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "probe solution",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "probe solution",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "overnight (16 h)",
+          "speed": null,
+          "other": {
+            "samples": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "Probe Wash Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "75% Probe Wash Buffer + 25% 5X SSC",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "50% Probe Wash Buffer + 50% 5X SSC",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "25% Probe Wash Buffer + 75% 5X SSC",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSC",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSC",
+          "volume": "500 \u03bcL",
+          "temperature": "45 \u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA Amplification Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh DNA Amplification Buffer",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "hairpins",
+          "volume": "6 pmol per 100 \u03bcL DNA Amplification Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "hairpins",
+          "volume": null,
+          "temperature": "95 \u00b0C",
+          "duration": "90 sec",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "heated hairpins",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "in_dark": true,
+            "unmixed": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "fresh DNA Amplification Buffer",
+          "volume": "100 \u03bcL",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equilibrated": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "all hairpins in pre-equilibrated DNA Amplification Buffer",
+          "volume": "100 \u03bcL",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "60 nM each hairpin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "final wash solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "hairpin solution",
+          "volume": "100 \u03bcL",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "hairpin solution",
+          "volume": "100 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "overnight (16 h)",
+          "speed": null,
+          "other": {
+            "samples": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "sample tubes or incubation oven",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "aluminum foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSCTw",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "5 min per wash",
+          "speed": null,
+          "other": {
+            "repeat": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSCTw",
+          "volume": "500 \u03bcL",
+          "temperature": "room temperature",
+          "duration": "30 min per wash",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "image",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSCTw",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "samples": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "5X SSCTw",
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "samples": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: collection cups, other: {'organism': 'juvenile squid', 'source': 'hatching table'})\n# MANUAL: isolate (container: collection cups, other: {'organism': 'juvenile squid'})\n# MANUAL: colonize (reagent: V. fischeri strain, other: {'organism': 'juvenile squid'})\n# MANUAL: anesthetize (reagent: 2% ethanol in filtered seawater, duration: 2 min, other: {'organism': 'juvenile squid'})\n# MANUAL: place (reagent: 2% ethanol in filtered seawater, duration: 2 min, other: {'organism': 'juvenile squid'})\n# MANUAL: split (other: {'organism': 'mantle on anterior side'})\n# MANUAL: peel (other: {'organism': 'mantle on anterior side'})\n# MANUAL: pull (other: {'organism': 'funnel'})\n# MANUAL: place (container: 1.5mL screw-cap vials, reagent: 4% paraformaldehyde (PFA), other: {'organism': 'dissected squid'})\n\n### AUTOMATED SECTION ###\nincubate(container='1.5mL screw-cap vials', reagent='4% paraformaldehyde (PFA)', temperature='4 \u00b0C', duration='overnight', speed='on shaker', organism='dissected squid')\nwash(reagent='Permeabilization Buffer', volume='500 \u03bcL', temperature='room temperature', duration='5 min per wash', speed='on rotator/shaker', repeat=5)\ntreat(reagent='0.01 mg/mL Proteinase K Permeabilization Buffer', volume='500 \u03bcL', temperature='room temperature', duration='15-20 min', do_not_shake=True)\nwash(reagent='2 mg/mL glycine in Permeabilization Buffer', volume='500 \u03bcL', temperature='room temperature', speed='on rotator/shaker', repeat=2)\npost-fix(reagent='Permeabilization Buffer with 4% PFA', volume='500 \u03bcL', temperature='room temperature', duration='1 h', speed='on shaker')\nwash(reagent='Permeabilization Buffer', volume='500 \u03bcL', temperature='room temperature', duration='5 min per wash', speed='on rotator/shaker', repeat=5)\nremove(reagent='Permeabilization Buffer', volume='as much as possible', from='sample')\nincubate(reagent='50% Hyb Buffer', volume='500 \u03bcL', temperature='65 \u00b0C', duration='30 min', sample=True)\nchange(reagent='fresh 50% Hyb Buffer', volume='500 \u03bcL', temperature='65 \u00b0C', sample=True)\nincubate(reagent='fresh 50% Hyb Buffer', volume='500 \u03bcL', temperature='65 \u00b0C', duration='2.5 h', sample=True)\nmix(reagent='1 pmol of each probe in 500 \u03bcL of 50% Hyb buffer', volume='500 \u03bcL', temperature='45 \u00b0C', duration='30 min')\nremove(reagent='50% Hyb buffer', volume='500 \u03bcL', from='samples')\nadd(reagent='probe solution', volume='500 \u03bcL', temperature='45 \u00b0C', to='samples')\nincubate(reagent='probe solution', volume='500 \u03bcL', temperature='45 \u00b0C', duration='overnight (16 h)', samples=True)\nwash(reagent='Probe Wash Buffer', volume='500 \u03bcL', temperature='45 \u00b0C', duration='15 min')\nwash(reagent='75% Probe Wash Buffer + 25% 5X SSC', volume='500 \u03bcL', temperature='45 \u00b0C', duration='15 min')\nwash(reagent='50% Probe Wash Buffer + 50% 5X SSC', volume='500 \u03bcL', temperature='45 \u00b0C', duration='15 min')\nwash(reagent='25% Probe Wash Buffer + 75% 5X SSC', volume='500 \u03bcL', temperature='45 \u00b0C', duration='15 min')\nwash(reagent='5X SSC', volume='500 \u03bcL', temperature='45 \u00b0C', duration='15 min', repeat=2)\nwash(reagent='5X SSC', volume='500 \u03bcL', temperature='45 \u00b0C', duration='30 min', repeat=2)\nincubate(reagent='DNA Amplification Buffer', volume='500 \u03bcL', temperature='room temperature', duration='30 min')\nincubate(reagent='fresh DNA Amplification Buffer', volume='500 \u03bcL', temperature='room temperature', duration='30 min')\naliquot(container='PCR tube', reagent='hairpins', volume='6 pmol per 100 \u03bcL DNA Amplification Buffer')\nheat(container='PCR tube', reagent='hairpins', temperature='95 \u00b0C', duration='90 sec')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: PCR tube, reagent: heated hairpins, temperature: room temperature, duration: 30 min, other: {'in_dark': True, 'unmixed': True})\n\n### AUTOMATED SECTION ###\nprepare(reagent='fresh DNA Amplification Buffer', volume='100 \u03bcL', temperature='room temperature', equilibrated=True)\nmix(reagent='all hairpins in pre-equilibrated DNA Amplification Buffer', volume='100 \u03bcL', temperature='room temperature', final_concentration='60 nM each hairpin')\nremove(reagent='final wash solution', from='samples')\nadd(reagent='hairpin solution', volume='100 \u03bcL', temperature='room temperature', to='samples')\nincubate(reagent='hairpin solution', volume='100 \u03bcL', temperature='room temperature', duration='overnight (16 h)', samples=True)\n\n### MANUAL SECTION ###\n# MANUAL: wrap (container: sample tubes or incubation oven, other: {'material': 'aluminum foil'})\n\n### AUTOMATED SECTION ###\nwash(reagent='5X SSCTw', volume='500 \u03bcL', temperature='room temperature', duration='5 min per wash', repeat=4)\nwash(reagent='5X SSCTw', volume='500 \u03bcL', temperature='room temperature', duration='30 min per wash', repeat=2)\n\n### MANUAL SECTION ###\n# MANUAL: image (reagent: 5X SSCTw, other: {'samples': True})\n\n### AUTOMATED SECTION ###\nstore(reagent='5X SSCTw', temperature='4 \u00b0C', samples=True)",
+    "source_file": "protocol_176.txt"
+  }
+]

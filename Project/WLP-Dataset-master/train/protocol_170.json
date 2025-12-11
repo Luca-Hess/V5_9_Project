@@ -1,0 +1,317 @@
+[
+  {
+    "protocol": "Hemolysis Assay\nWash and concentrate blood, prepare 2% blood solution.\nAdd 3 mL rabbit blood to 14 mL PBS pH 5.7 and mix.\nCentrifuge 10 min 500g 4C.\nRemove supernatant.\u00a0\nRepeat steps for a total of 4 washes.\u00a0\nAfter the final wash, remove 200 uL blood from the bottom of the vial and add to 9.8 mL PBS pH 5.7.\nPrepare endosomal disruptor solutions.\nPrepare 100 uL solutions of endosomal disruptors at different concentrations (Ex serial 10x dilutions of TritonX from 15 mg/mL to .0015 mg/mL).\nAdd blood to endosomal disruptors and incubate.\nAdd 50 uL blood solution to 100 uL endosomal disruptor solutions.\u00a0\nIncubate at 37C for 30 min, starting timer as soon as last solution added.\nMake positive control.\nMake a positive control (known lysis) by adding 50 uL blood solution to 100 uL diH2O and freeze-thaw cycling 3 times (freeze in -80C freezer).\nCentrifuge and place in plate.\nCentrifuge in tabletop centrifuge at 2500g for 6 min.\u00a0\nCarefully collect 75 uL of supernatant from each tube and place in 96 well plate.\u00a0\n**Solutions bubble easily so be very carefully not to introduce any air**.\nDisrupting bottom pellet creates false positives.\nTake absorbance.\nTake absorbance at 541 nm.\u00a0\nCan also do absorbance scan if worried about side reactions",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (assumed tube or vial)",
+          "reagent": "rabbit blood",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "14 mL PBS pH 5.7"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "unknown (assumed tube or vial)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "unknown (assumed tube or vial)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": "10 min",
+          "speed": "500g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "unknown (assumed tube or vial)",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "4 washes total"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vial",
+          "reagent": "blood",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "bottom of vial"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "unknown (assumed tube or vial)",
+          "reagent": "200 uL blood",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "9.8 mL PBS pH 5.7"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "endosomal disruptor solutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "endosomal disruptors",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentrations": "serial 10x dilutions of TritonX from 15 mg/mL to 0.0015 mg/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "blood",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "endosomal disruptors"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "blood solution",
+          "volume": "50 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "100 uL endosomal disruptor solutions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "start": "as soon as last solution added"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "positive control (known lysis)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "blood solution",
+          "volume": "50 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "100 uL diH2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "3 times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "6 min",
+          "speed": "2500g",
+          "other": {
+            "instrument": "tabletop centrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": "75 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place_in": "96 well plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "absorbance at 541 nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scan",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "absorbance scan"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='unknown (assumed tube or vial)', reagent='rabbit blood', volume='3 mL', to='14 mL PBS pH 5.7')\nmix(container='unknown (assumed tube or vial)')\ncentrifuge(container='unknown (assumed tube or vial)', temperature='4C', duration='10 min', speed='500g')\nremove(container='unknown (assumed tube or vial)', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'times': '4 washes total'})\n\n### AUTOMATED SECTION ###\nremove(container='vial', reagent='blood', volume='200 uL', from='bottom of vial')\nadd(container='unknown (assumed tube or vial)', reagent='200 uL blood', volume='200 uL', to='9.8 mL PBS pH 5.7')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: endosomal disruptor solutions)\n\n### AUTOMATED SECTION ###\nprepare(reagent='endosomal disruptors', volume='100 uL', concentrations='serial 10x dilutions of TritonX from 15 mg/mL to 0.0015 mg/mL')\nadd(reagent='blood', to='endosomal disruptors')\nincubate()\nadd(reagent='blood solution', volume='50 uL', to='100 uL endosomal disruptor solutions')\nincubate(temperature='37C', duration='30 min', start='as soon as last solution added')\n\n### MANUAL SECTION ###\n# MANUAL: make (reagent: positive control (known lysis))\n\n### AUTOMATED SECTION ###\nadd(reagent='blood solution', volume='50 uL', to='100 uL diH2O')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (temperature: -80C, other: {'cycles': '3 times'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='6 min', speed='2500g', instrument='tabletop centrifuge')\ncollect(container='tube', reagent='supernatant', volume='75 uL', place_in='96 well plate')\ntake(container='96 well plate', measurement='absorbance at 541 nm')\nscan(container='96 well plate', measurement='absorbance scan')",
+    "source_file": "protocol_170.txt"
+  }
+]

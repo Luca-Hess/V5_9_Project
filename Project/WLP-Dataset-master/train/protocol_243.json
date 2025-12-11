@@ -1,0 +1,329 @@
+[
+  {
+    "protocol": "Qiagen QIAprep Spin Miniprep Kit (27104 or 27106) with a microcentrifuge\nResuspend pelleted bacterial cells in 250\u03bcl Buffer P1 and transfer to a micro-centrifuge tube.\nAdd 250 \u03bcl Buffer P2 and mix thoroughly by inverting the tube 4\u20136 times.\nAdd 350 \u03bcl Buffer N3 and mix immediately and thoroughly by inverting the tube 4\u20136 times.\nCentrifuge for 10 min at 13,000 rpm (~17,900 x g) in a table-top microcentrifuge.\nApply the supernatants from step 4 to the QIAprep spin column by decanting or pipetting.\nCentrifuge for 30\u201360 s. \nDiscard the flow-through.\nWash the QIAprep spin column by adding 0.5 ml Buffer PB and centrifuging for 30\u201360 s. \nDiscard the flow-through.\nWash QIAprep spin column by adding 0.75 ml Buffer PE and centrifuging for 30\u201360 s. \nDiscard the flow-through, and centrifuge at full speed for an additional 1 min to remove residual wash buffer. \nPlace the QIAprep column in a clean 1.5 ml microcentrifuge tube.\nCentrifuge for 1 min.\nLet stand 1 minute. \nAdd 50\u00a0\u03bcl buffer EB or water to the center of each QIAprep spin column. \nCentrifuge 1-5mL bacterial overnight culture at >6800g for 3 minutes at room temperature.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pelleted bacterial cells in microcentrifuge tube",
+          "reagent": "Buffer P1",
+          "volume": "250 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "resuspended cells",
+          "volume": "250 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Buffer P2",
+          "volume": "250 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube 4\u20136 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Buffer N3",
+          "volume": "350 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube 4\u20136 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "13,000 rpm (~17,900 x g)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": "supernatant from step 4",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "decanting or pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30\u201360 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": "Buffer PB",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30\u201360 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": "Buffer PE",
+          "volume": "0.75 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30\u201360 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "full speed",
+          "other": {
+            "purpose": "remove residual wash buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "QIAprep column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean 1.5 ml microcentrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAprep column in microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAprep spin column",
+          "reagent": "buffer EB or water",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of column"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bacterial overnight culture",
+          "reagent": null,
+          "volume": "1-5 mL",
+          "temperature": "room temperature",
+          "duration": "3 min",
+          "speed": ">6800g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='pelleted bacterial cells in microcentrifuge tube', reagent='Buffer P1', volume='250 \u03bcl')\ntransfer(container='microcentrifuge tube', reagent='resuspended cells', volume='250 \u03bcl')\nadd(container='microcentrifuge tube', reagent='Buffer P2', volume='250 \u03bcl')\nmix(container='microcentrifuge tube', method='invert tube 4\u20136 times')\nadd(container='microcentrifuge tube', reagent='Buffer N3', volume='350 \u03bcl')\nmix(container='microcentrifuge tube', method='invert tube 4\u20136 times')\ncentrifuge(container='microcentrifuge tube', duration='10 min', speed='13,000 rpm (~17,900 x g)')\napply(container='QIAprep spin column', reagent='supernatant from step 4', method='decanting or pipetting')\ncentrifuge(container='QIAprep spin column', duration='30\u201360 s')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='QIAprep spin column', reagent='Buffer PB', volume='0.5 ml')\ncentrifuge(container='QIAprep spin column', duration='30\u201360 s')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='QIAprep spin column', reagent='Buffer PE', volume='0.75 ml')\ncentrifuge(container='QIAprep spin column', duration='30\u201360 s')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='QIAprep spin column', duration='1 min', speed='full speed', purpose='remove residual wash buffer')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: QIAprep column, other: {'destination': 'clean 1.5 ml microcentrifuge tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='QIAprep column in microcentrifuge tube', duration='1 min')\nwait(duration='1 min')\nadd(container='QIAprep spin column', reagent='buffer EB or water', volume='50 \u03bcl', location='center of column')\ncentrifuge(container='bacterial overnight culture', volume='1-5 mL', temperature='room temperature', duration='3 min', speed='>6800g')",
+    "source_file": "protocol_243.txt"
+  }
+]

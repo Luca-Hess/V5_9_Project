@@ -1,0 +1,892 @@
+[
+  {
+    "protocol": "Cesium Chloride Protocol for Phage\nFilter cesium solutions with 0.02\u00b5m filter. \nMark top of first gradient layer with pen before adding next layers. \nSet up gradient as (from top to bottom):\u00a01ml of 1.7 g/ml, mark top of layer\u00a01ml of 1.5 g/ml, mark top of layer\u00a01ml of 1.35 g/ml\u00a08.5ml of 1.15 g/ml - this is phage concentrate.\nAdd CsCl to your sample.\nCheck balance of tubes.\nCentrifuge at 22,000 rpm for 2 hours at 4\u00b0C, approximately 60-80,000xg.\nPierce tube at 1.7/1.5 g/ml interface.\nBevel up, and collect 1.5 mls (should include 1.5 g/ml step and 1.5 to 1.35 interface).  \nCheck with slides for virus particles, etc.\nUse 20 \u00b5l from [viral] fraction and 500 \u00b5l from \"upper\" layers.\nStore in fridge at 4\u00b0C until ready to extract.\nAdd 0.2 vol chloroform, mix and incubate 10 min. at room temperature. \nSpin at 4000 rpm in table Beckman for 10 minutes to separate phases.\nSave and transfer top phase to new 15 ml tubes.\nAdd 10-15 \u00b5l DNase I (1 mg/ml in H2O) to phage sample (1.2-1.5ml). \nIncubate 15 minutes at 37\u00b0C.\nTreat with RNase if RNA is to be extracted.\nInactivate for\u00a015 minutes at 65\u00b0C.\nTransfer all to new \"oak ridge\" tube for faster centrifugation later.\nAdd 0.1 volume 2 M TrisHCL (pH 8.5)/0.2 M EDTA. \nAdd 100 \u00b5l 0.5 M EDTA per 10ml. \nAdd 1 volume of formamide. \nAdd 10 Fl glycogen Incubate at room temperature for 30 minutes.\nAdd 2 volumes of room temperature 100% ethanol.\nPellet in Sorvall (12,000 rpm for 20 minutes). \nWash with 70% ethanol, two times.\nResuspend into 567 \u00b5l TE and continue with CTAB extraction.\nResuspend pellet in 567 \u00b5l TE.\nAdd 30 \u00b5l of 10% SDS and 3 \u00b5l of 20 \u00b5g/ml proteinase K. \nMix.\nIncubate 1 hour at 37\u00b0C - 56\u00b0C. \nAdd 100 \u00b5l of 5 M NaCl and mix thoroughly.\nAdd 80 \u00b5l CTAB/NaCl solution.\nMix.\nIncubate 10 minutes at 65\u00b0C.\nAdd equal volume of chloroform; mix.\nMicrocentrifuge for 2 minutes.\nTransfer supernatant to separate tube.\nAdd equal volume of phenol/chloroform to the supernatant fraction; mix.\nMicrocentrifuge for 2 minutes.\nTransfer supernatant to separate tube.\nAdd equal volume of chloroform to the supernatant fraction; mix.\nMicrocentrifuge for 2 minutes.\nTransfer supernatant to separate tube.\nAdd 0.7 volume isopropanol to the supernatant fraction.\nMix gently until DNA precipitates.\nCentrifuge 15 minutes in cold.\nWash with 70% ethanol.\nResuspend in 50 \u00b5l Sigma water Check O.D.\nusing the Nanodrop",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "cesium solutions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.02\u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "first gradient layer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pen"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "gradient tube",
+          "reagent": "cesium chloride solutions",
+          "volume": "1ml (1.7 g/ml), 1ml (1.5 g/ml), 1ml (1.35 g/ml), 8.5ml (1.15 g/ml)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "layer_order": "top to bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "top of each gradient layer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pen"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "CsCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "balance"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "gradient tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "2 hours",
+          "speed": "22,000 rpm (~60-80,000xg)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "pierce",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "1.7/1.5 g/ml interface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": "1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "interface": "1.5 g/ml step and 1.5 to 1.35 interface",
+            "bevel": "up"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "virus particles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "[viral] fraction, 'upper' layers",
+          "volume": "20 \u00b5l (viral fraction), 500 \u00b5l (upper layers)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until ready to extract",
+          "speed": null,
+          "other": {
+            "location": "fridge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chloroform",
+          "volume": "0.2 vol",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "4000 rpm",
+          "other": {
+            "instrument": "table Beckman"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "top phase",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 15 ml tubes",
+          "reagent": "top phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "phage sample (1.2-1.5ml)",
+          "reagent": "DNase I (1 mg/ml in H2O)",
+          "volume": "10-15 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if RNA is to be extracted"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 'oak ridge' tube",
+          "reagent": "all",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "faster centrifugation later"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "2 M TrisHCL (pH 8.5)/0.2 M EDTA",
+          "volume": "0.1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "0.5 M EDTA",
+          "volume": "100 \u00b5l per 10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "formamide",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "glycogen",
+          "volume": "10 Fl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "100% ethanol",
+          "volume": "2 volumes",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "12,000 rpm",
+          "other": {
+            "purpose": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "two"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "TE",
+          "volume": "567 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "continue",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "next_step": "CTAB extraction"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "TE",
+          "volume": "567 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10% SDS",
+          "volume": "30 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "20 \u00b5g/ml proteinase K",
+          "volume": "3 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C - 56\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "5 M NaCl",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "CTAB/NaCl solution",
+          "volume": "80 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chloroform",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "microcentrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "separate tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "phenol/chloroform",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "supernatant fraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "microcentrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "separate tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chloroform",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "supernatant fraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "microcentrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "separate tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "isopropanol",
+          "volume": "0.7 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "supernatant fraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "until": "DNA precipitates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "Sigma water",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "O.D. using Nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='cesium solutions', filter_size='0.02\u00b5m')\n\n### MANUAL SECTION ###\n# MANUAL: mark (container: first gradient layer, other: {'tool': 'pen'})\n\n### AUTOMATED SECTION ###\nset up(container='gradient tube', reagent='cesium chloride solutions', volume='1ml (1.7 g/ml), 1ml (1.5 g/ml), 1ml (1.35 g/ml), 8.5ml (1.15 g/ml)', layer_order='top to bottom')\n\n### MANUAL SECTION ###\n# MANUAL: mark (container: top of each gradient layer, other: {'tool': 'pen'})\n\n### AUTOMATED SECTION ###\nadd(container='sample', reagent='CsCl')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: tubes, other: {'purpose': 'balance'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='gradient tubes', temperature='4\u00b0C', duration='2 hours', speed='22,000 rpm (~60-80,000xg)')\n\n### MANUAL SECTION ###\n# MANUAL: pierce (container: tube, other: {'location': '1.7/1.5 g/ml interface'})\n\n### AUTOMATED SECTION ###\ncollect(container='tube', volume='1.5 ml', interface='1.5 g/ml step and 1.5 to 1.35 interface', bevel='up')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: slides, other: {'purpose': 'virus particles'})\n\n### AUTOMATED SECTION ###\nuse(reagent=\"[viral] fraction, 'upper' layers\", volume='20 \u00b5l (viral fraction), 500 \u00b5l (upper layers)')\nstore(temperature='4\u00b0C', duration='until ready to extract', location='fridge')\nadd(reagent='chloroform', volume='0.2 vol')\nmix()\nincubate(temperature='room temperature', duration='10 min')\ncentrifuge(duration='10 minutes', speed='4000 rpm', instrument='table Beckman')\nsave(container='top phase')\ntransfer(container='new 15 ml tubes', reagent='top phase')\nadd(container='phage sample (1.2-1.5ml)', reagent='DNase I (1 mg/ml in H2O)', volume='10-15 \u00b5l')\nincubate(temperature='37\u00b0C', duration='15 minutes')\ntreat(reagent='RNase', condition='if RNA is to be extracted')\ninactivate(temperature='65\u00b0C', duration='15 minutes')\ntransfer(container=\"new 'oak ridge' tube\", reagent='all', purpose='faster centrifugation later')\nadd(reagent='2 M TrisHCL (pH 8.5)/0.2 M EDTA', volume='0.1 volume')\nadd(reagent='0.5 M EDTA', volume='100 \u00b5l per 10ml')\nadd(reagent='formamide', volume='1 volume')\nadd(reagent='glycogen', volume='10 Fl')\nincubate(temperature='room temperature', duration='30 minutes')\nadd(reagent='100% ethanol', volume='2 volumes', temperature='room temperature')\ncentrifuge(container='Sorvall', duration='20 minutes', speed='12,000 rpm', purpose='pellet')\nwash(reagent='70% ethanol', times='two')\nresuspend(reagent='TE', volume='567 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: continue (other: {'next_step': 'CTAB extraction'})\n\n### AUTOMATED SECTION ###\nresuspend(container='pellet', reagent='TE', volume='567 \u00b5l')\nadd(reagent='10% SDS', volume='30 \u00b5l')\nadd(reagent='20 \u00b5g/ml proteinase K', volume='3 \u00b5l')\nmix()\nincubate(temperature='37\u00b0C - 56\u00b0C', duration='1 hour')\nadd(reagent='5 M NaCl', volume='100 \u00b5l', mix='thoroughly')\nadd(reagent='CTAB/NaCl solution', volume='80 \u00b5l')\nmix()\nincubate(temperature='65\u00b0C', duration='10 minutes')\nadd(reagent='chloroform', volume='equal volume')\nmix()\nmicrocentrifuge(duration='2 minutes')\ntransfer(container='separate tube', reagent='supernatant')\nadd(reagent='phenol/chloroform', volume='equal volume', to='supernatant fraction')\nmix()\nmicrocentrifuge(duration='2 minutes')\ntransfer(container='separate tube', reagent='supernatant')\nadd(reagent='chloroform', volume='equal volume', to='supernatant fraction')\nmix()\nmicrocentrifuge(duration='2 minutes')\ntransfer(container='separate tube', reagent='supernatant')\nadd(reagent='isopropanol', volume='0.7 volume', to='supernatant fraction')\nmix(speed='gently', until='DNA precipitates')\ncentrifuge(temperature='cold', duration='15 minutes')\nwash(reagent='70% ethanol')\nresuspend(reagent='Sigma water', volume='50 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: check (other: {'method': 'O.D. using Nanodrop'})",
+    "source_file": "protocol_371.txt"
+  }
+]

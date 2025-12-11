@@ -1,0 +1,351 @@
+[
+  {
+    "protocol": "RNA Extraction from Drosophila Tissues using TRIzol Reagent\nAdd 1 mL TRIzol Reagent to 50-100 mg of frozen\u00a0Drosophila tissue in a 1.5 mL microcentrifuge tube, and homogenize immediately with a disposable plastic pestle.\nCentifuge the sample at 12,000 x\u00a0g for 10 minutes at 4\u02daC.\n*Pellet contains ECM, polysaccharides, and high molecular weight DNA; supernatant contains the RNA.\nIn high fat samples, a layer of fat collects above the supernatant.\nRemove and discard the fatty layer.\nTransfer the cleared supernatant to a new tube.\nIncubate the sample for 5 minutes at room temperature.\nAdd 0.2 mL of chloroform, and cap the tube securely.\nShake the tube vigorously\u00a0by hand for\u00a015 seconds.\nIncubate for 2-3 minutes at room temperature.\nCentrifuge the sample at 12,000 x\u00a0g for 15 minutes at 4\u02daC.\n*The mixture separates into a lower red phenol-chloroform phase, an interphase, and a colorless upper aqueous phase.\nRNA remains in colorless aqueous phase (~50% of the total volume).\nRemove the aqueous phase of the sample by angling the tube at 45\u02da and pipetting the solution out.\nPlace the aqueous phase into a\u00a0new tube.\n*Avoid drawing any of the interphase or organic layer into the pipette.\n*The interphase and organic phenol-chloroform phases can be saved for DNA or protein isolation if desired (saved overnight at 4\u02daC); however, the protocols for these procedures will not be discussed here.\nPlease refer to the manufacturer's TRIzol Reagent manual.\nAdd 0.5 mL of 100% isopropanol to the aqueous phase.\nIncubate sample at room temperature for 10 minutes.\nCentrifuge at 12,000 x\u00a0g for 10 minutes at 4\u02daC.\n*RNA is often visible prior to centrifugation, and forms a gel-like pellet on the side and bottom of tube.\nRemove all\u00a0supernatant from the tube, leaving the RNA pellet.\nWash the pellet with 1 mL\u00a075% ethanol.\n*RNA can be stored in 75% ethanol at least 1 year at -20\u02daC, or at least 1 week at 4\u02daC.\nBriefly\u00a0vortex the sample.Centrifuge the tube at 7,500 x\u00a0g for 5 minutes at 4\u02daC.Discard the wash.\nVacuum or air dry the RNA pellet for 5-10 minutes.\n*Do not dry the pellet by vacuum centrifuge.\n*Do not allow the RNA to dry completely.\nResuspend\u00a0the RNA pellet in RNase-free water\u00a0by passing the solution up and down several times through a pipette tip.\nIncubate in a water bath or heat block set at 55-60\u02daC for 10-15 minutes.\nProceed to downstream applications, such as DNase treatment or cDNA synthesis, or store at -70\u02daC",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "TRIzol Reagent",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "50-100 mg frozen Drosophila tissue"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "disposable plastic pestle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": "10 minutes",
+          "speed": "12,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "fatty layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "discard"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "cleared supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with supernatant",
+          "reagent": "chloroform",
+          "volume": "0.2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "cap tube securely"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "tube with chloroform",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": "vigorously",
+          "other": {
+            "method": "by hand"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with chloroform",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2-3 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with chloroform mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": "15 minutes",
+          "speed": "12,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette at 45\u02da angle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with aqueous phase",
+          "reagent": "100% isopropanol",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with isopropanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with isopropanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": "10 minutes",
+          "speed": "12,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave": "RNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube with RNA pellet",
+          "reagent": "75% ethanol",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube with RNA pellet and ethanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with RNA pellet and ethanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": "5 minutes",
+          "speed": "7,500 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube after ethanol wash",
+          "reagent": "wash (ethanol supernatant)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube with RNA pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "method": "vacuum or air dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with dried RNA pellet",
+          "reagent": "RNase-free water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pass up and down through pipette tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with resuspended RNA",
+          "reagent": null,
+          "volume": null,
+          "temperature": "55-60\u02daC",
+          "duration": "10-15 minutes",
+          "speed": null,
+          "other": {
+            "device": "water bath or heat block"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1.5 mL microcentrifuge tube', reagent='TRIzol Reagent', volume='1 mL', sample='50-100 mg frozen Drosophila tissue')\n\n### MANUAL SECTION ###\n# MANUAL: homogenize (container: 1.5 mL microcentrifuge tube, other: {'tool': 'disposable plastic pestle'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='1.5 mL microcentrifuge tube', temperature='4\u02daC', duration='10 minutes', speed='12,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 1.5 mL microcentrifuge tube, reagent: fatty layer, other: {'action': 'discard'})\n\n### AUTOMATED SECTION ###\ntransfer(container='new tube', reagent='cleared supernatant')\nincubate(container='tube with supernatant', temperature='room temperature', duration='5 minutes')\nadd(container='tube with supernatant', reagent='chloroform', volume='0.2 mL', action='cap tube securely')\nshake(container='tube with chloroform', duration='15 seconds', speed='vigorously', method='by hand')\nincubate(container='tube with chloroform', temperature='room temperature', duration='2-3 minutes')\ncentrifuge(container='tube with chloroform mixture', temperature='4\u02daC', duration='15 minutes', speed='12,000 x g')\nremove(container='tube after centrifugation', reagent='aqueous phase', method='pipette at 45\u02da angle')\ntransfer(container='new tube', reagent='aqueous phase')\nadd(container='tube with aqueous phase', reagent='100% isopropanol', volume='0.5 mL')\nincubate(container='tube with isopropanol', temperature='room temperature', duration='10 minutes')\ncentrifuge(container='tube with isopropanol', temperature='4\u02daC', duration='10 minutes', speed='12,000 x g')\nremove(container='tube after centrifugation', reagent='supernatant', volume='all', leave='RNA pellet')\nwash(container='tube with RNA pellet', reagent='75% ethanol', volume='1 mL')\nvortex(container='tube with RNA pellet and ethanol', duration='briefly')\ncentrifuge(container='tube with RNA pellet and ethanol', temperature='4\u02daC', duration='5 minutes', speed='7,500 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube after ethanol wash, reagent: wash (ethanol supernatant))\n# MANUAL: dry (container: tube with RNA pellet, duration: 5-10 minutes, other: {'method': 'vacuum or air dry'})\n\n### AUTOMATED SECTION ###\nresuspend(container='tube with dried RNA pellet', reagent='RNase-free water', method='pass up and down through pipette tip')\nincubate(container='tube with resuspended RNA', temperature='55-60\u02daC', duration='10-15 minutes', device='water bath or heat block')",
+    "source_file": "protocol_223.txt"
+  }
+]

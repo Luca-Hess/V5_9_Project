@@ -1,0 +1,195 @@
+[
+  {
+    "protocol": "Yeast Crude Protein Extraction\nGrow cells to mid-exponential phase in liquid medium.\nNormalize cells to an OD600 of 2-3 in 1 mL of H2O.\nCentrifuge 1 mL of H2O containing your cells at 9000 RPM for two minutes.\nResuspend pelleted cells in 100 uL 0.2 M NaOH and incubate on ice for 15 minutes.\nCentrifuge cells at 9000 RPM for two minutes.\nResuspend the pellet in 100 uL of Yeast Protein Extraction Sample Buffer.\nAdd 0.4 uL 2-mercaptoethanol to the mixture.\nBoil cells in sample buffer for 5 minutes at 95 C.\nCan store at -80 C or load supernatant into a gel.\nVortex briefly then centrifuge at 10,000 RPM for 3 minutes.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "liquid medium",
+          "reagent": "yeast cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phase": "mid-exponential"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "normalize",
+        "parameters": {
+          "container": "1 mL H2O",
+          "reagent": "yeast cells",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD600": "2-3"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with 1 mL H2O containing cells",
+          "reagent": null,
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "9000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with pelleted cells",
+          "reagent": "0.2 M NaOH",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with resuspended cells in NaOH",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "9000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "Yeast Protein Extraction Sample Buffer",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with mixture",
+          "reagent": "2-mercaptoethanol",
+          "volume": "0.4 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "tube with cells in sample buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95 C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": "10,000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: liquid medium, reagent: yeast cells, other: {'phase': 'mid-exponential'})\n# MANUAL: normalize (container: 1 mL H2O, reagent: yeast cells, volume: 1 mL, other: {'OD600': '2-3'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube with 1 mL H2O containing cells', volume='1 mL', duration='2 minutes', speed='9000 RPM')\nresuspend(container='tube with pelleted cells', reagent='0.2 M NaOH', volume='100 uL')\nincubate(container='tube with resuspended cells in NaOH', temperature='on ice', duration='15 minutes')\ncentrifuge(container='tube with cells', duration='2 minutes', speed='9000 RPM')\nresuspend(container='tube with pellet', reagent='Yeast Protein Extraction Sample Buffer', volume='100 uL')\nadd(container='tube with mixture', reagent='2-mercaptoethanol', volume='0.4 uL')\nboil(container='tube with cells in sample buffer', temperature='95 C', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube, temperature: -80 C, other: {})\n# MANUAL: load (container: gel, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nvortex(container='tube', duration='briefly')\ncentrifuge(container='tube', duration='3 minutes', speed='10,000 RPM')",
+    "source_file": "protocol_346.txt"
+  }
+]

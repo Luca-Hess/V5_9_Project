@@ -1,0 +1,235 @@
+[
+  {
+    "protocol": "Immunofluorescence Microscopy Protocol with Methanol Fixed Cells\nGrow cultured cells on cover slips or chamber slides overnight or add appropriate amount of cells to poly\u2010L\u2010lysine coated chamber slides and incubate at least 30 minutes at 37\u00b0C.\nAt thetime of fixation cells should be ~50% confluent.\nRinse cells briefly in 1X PBS.\nFix cells by incubation with cold 100% methanol for 5\u201015 minutes at \u201020\u00b0C.\nRinse three times in 1X PBS, 5 minutes each.\nBlock samples in 5% FBS/PBS for 1 hour at room temperature.\nDilute the primary antibody to the recommended concentration/dilution in 5% FBS/PBS.\nFor 8 well chamber slides, add 200\u03bcl per well and incubate 2\u20103 hours at room temperature or overnight at 4\u00b0C.\nRinse three times in 1X PBS, 5 minutes each.\nNOTE: If using primary antibodies directly conjugated with fluorophores, skip to step 7.\nPrepare fluorophore\u2010conjugated secondary antibody in 5% FBS/PBS according to therecommended manufacturer specification data sheet and add 200\u03bcl per well (8 wells) to thechamber slides.\nIncubate the samples for 1 hour at room temperature in the dark.\nRinse three times in 1X PBS, 5 minutes each.\nCoverslip with anti\u2010fade mounting medium.\nSeal the edges of the coverslip to the slide to prevent movement of the coverslip while imaging.\nOne sealant that is recommended is a 1:1:1 ratio mixture of vasoline, lanolin and paraffin.\nChamber slides and coverslips Fixation solution: 100% methanol stored at \u201020\u00b0C for at least two hours before use.\nAntibody dilution solution: 5% FBS in 1X PBS.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cover slips or chamber slides",
+          "reagent": "cultured cells",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "at least 30 minutes",
+          "speed": null,
+          "other": {
+            "coating": "poly-L-lysine (if chamber slides)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "cover slips or chamber slides",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cover slips or chamber slides",
+          "reagent": "cold 100% methanol",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "5-15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "cover slips or chamber slides",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes each",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cover slips or chamber slides",
+          "reagent": "5% FBS/PBS (blocking solution)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "primary antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "5% FBS/PBS",
+            "concentration": "recommended concentration/dilution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "diluted primary antibody in 5% FBS/PBS",
+          "volume": "200\u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "diluted primary antibody",
+          "volume": null,
+          "temperature": "room temperature or 4\u00b0C",
+          "duration": "2-3 hours at room temperature or overnight at 4\u00b0C",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes each",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "fluorophore-conjugated secondary antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "5% FBS/PBS",
+            "specification": "manufacturer specification data sheet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "diluted fluorophore-conjugated secondary antibody",
+          "volume": "200\u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "diluted fluorophore-conjugated secondary antibody",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "8 well chamber slides",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes each",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "coverslip",
+        "parameters": {
+          "container": "slide",
+          "reagent": "anti-fade mounting medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "edges of coverslip to slide",
+          "reagent": "sealant (1:1:1 vasoline, lanolin, paraffin)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='cover slips or chamber slides', reagent='cultured cells', temperature='37\u00b0C', duration='at least 30 minutes', coating='poly-L-lysine (if chamber slides)')\nrinse(container='cover slips or chamber slides', reagent='1X PBS', duration='briefly')\nincubate(container='cover slips or chamber slides', reagent='cold 100% methanol', temperature='-20\u00b0C', duration='5-15 minutes')\nrinse(container='cover slips or chamber slides', reagent='1X PBS', duration='5 minutes each', repeat=3)\nincubate(container='cover slips or chamber slides', reagent='5% FBS/PBS (blocking solution)', temperature='room temperature', duration='1 hour')\ndilute(reagent='primary antibody', diluent='5% FBS/PBS', concentration='recommended concentration/dilution')\ndispense(container='8 well chamber slides', reagent='diluted primary antibody in 5% FBS/PBS', volume='200\u03bcl per well')\nincubate(container='8 well chamber slides', reagent='diluted primary antibody', temperature='room temperature or 4\u00b0C', duration='2-3 hours at room temperature or overnight at 4\u00b0C')\nrinse(container='8 well chamber slides', reagent='1X PBS', duration='5 minutes each', repeat=3)\ndilute(reagent='fluorophore-conjugated secondary antibody', diluent='5% FBS/PBS', specification='manufacturer specification data sheet')\ndispense(container='8 well chamber slides', reagent='diluted fluorophore-conjugated secondary antibody', volume='200\u03bcl per well')\nincubate(container='8 well chamber slides', reagent='diluted fluorophore-conjugated secondary antibody', temperature='room temperature', duration='1 hour', condition='in the dark')\nrinse(container='8 well chamber slides', reagent='1X PBS', duration='5 minutes each', repeat=3)\n\n### MANUAL SECTION ###\n# MANUAL: coverslip (container: slide, reagent: anti-fade mounting medium, other: {})\n# MANUAL: seal (container: edges of coverslip to slide, reagent: sealant (1:1:1 vasoline, lanolin, paraffin), other: {})",
+    "source_file": "protocol_294.txt"
+  }
+]

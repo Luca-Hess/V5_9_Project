@@ -1,0 +1,514 @@
+[
+  {
+    "protocol": "Transformation of supercompetent cells\nInoculate two separate 1.5mls of LB medium with Invitrogen (Inv\u03b1F') cells.\nAlso include an uninoculated negative control tube.\nShake at 250 rpm overnight at 37\u02daC.\nInoculate with 500ul of overnight E. coli culture two 50ml tubes each containing 25mls of sterile SOB media.\nShake at 250 rpm for 4 hours. \nIce the tubes of cells for 15 mins. \nPellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant. \nResuspend each\u00a0pellet of cells in 8 mls of cold TFB by washing gently, then sucking up and down, with a wide-bore 10ml pipette tip. \nIce the tubes of cells for 15 mins. \nPellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant. \nResuspend one pellet of cells in 2 mls of cold TFB and use this liquid to resuspend the second pellet.\nYou should now have all cells in a single aliquot of 2mls cold TFB.\nAdd 105ul of DMSO swirl and ice for 5 mins.\nAdd 80ul of 100mM DTT, swirl, and ice for 10 mins.\nAdd 105ul of DMSO swirl and ice for 5 mins.\nAliquot 180ul of cells into pre-chilled, labelled 5ml polypropylene growth tubes with loose-cap lids.\nInclude positive and negative controls.\nAdd ligation DNA to each sample (in ~10ul volume) and ice for 30 mins. \nHeat pulse tubes at exactly 42\u02daC for exactly 90 secs.\nIce for 2 mins. \nAdd 400ul of 37\u02daC SOC to each tube and incubate at 37\u02daC for 10 mins. \nIncubate a further 45 mins at 37\u02daC shaking at 225 rpm. \nPlace tubes in ice to halt\u00a0growth. \nTransfer the cells from each tube to a labelled individual 1.5ml microfuge tube. \nGive the microfuge tubes a very short (5 sec) spin to very loosely pellet the cells and then remove and discard 370ul of the supernatant. \nPlate 40ul of the cell solution onto LB/ Amp+/ Xgal plates and\u00a0grow\u00a0overnight\u00a0at 37\u02daC",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "LB medium with Invitrogen (Inv\u03b1F') cells",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_tubes": 2
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "include",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "LB medium (uninoculated)",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "control_type": "negative"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u02daC",
+          "duration": "overnight",
+          "speed": "250 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "overnight E. coli culture",
+          "volume": "500ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_tubes": 2,
+            "media": "25ml sterile SOB"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "4 hours",
+          "speed": "250 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "3000 rpm",
+          "other": {
+            "purpose": "pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cold TFB",
+          "volume": "8ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "wash gently, then pipette up and down with wide-bore 10ml tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "3000 rpm",
+          "other": {
+            "purpose": "pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "cold TFB",
+          "volume": "2ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "use this liquid to resuspend second pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": "DMSO",
+          "volume": "105ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix_method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": "100mM DTT",
+          "volume": "80ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix_method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": "DMSO",
+          "volume": "105ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix_method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "single aliquot (2ml cold TFB)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "5ml polypropylene growth tube (pre-chilled, labelled, loose-cap lid)",
+          "reagent": "cells in cold TFB",
+          "volume": "180ul",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "include",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": "positive and negative controls",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": "ligation DNA",
+          "volume": "10ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u02daC",
+          "duration": "90 secs",
+          "speed": null,
+          "other": {
+            "method": "heat pulse"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": "SOC",
+          "volume": "400ul",
+          "temperature": "37\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u02daC",
+          "duration": "10 mins",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u02daC",
+          "duration": "45 mins",
+          "speed": "225 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "5ml polypropylene growth tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "halt growth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5ml microfuge tube (labelled, individual)",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "5ml polypropylene growth tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml microfuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 sec",
+          "speed": null,
+          "other": {
+            "purpose": "loosely pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "1.5ml microfuge tube",
+          "reagent": "supernatant",
+          "volume": "370ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "LB/Amp+/Xgal plate",
+          "reagent": "cell solution",
+          "volume": "40ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "LB/Amp+/Xgal plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u02daC",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 1.5ml tube, reagent: LB medium with Invitrogen (Inv\u03b1F') cells, volume: 1.5ml, other: {'number_of_tubes': 2})\n# MANUAL: include (container: 1.5ml tube, reagent: LB medium (uninoculated), volume: 1.5ml, other: {'control_type': 'negative'})\n\n### AUTOMATED SECTION ###\nshake(container='1.5ml tube', temperature='37\u02daC', duration='overnight', speed='250 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 50ml tube, reagent: overnight E. coli culture, volume: 500ul, other: {'number_of_tubes': 2, 'media': '25ml sterile SOB'})\n\n### AUTOMATED SECTION ###\nshake(container='50ml tube', duration='4 hours', speed='250 rpm')\ncool(container='50ml tube', reagent='cells', temperature='on ice', duration='15 mins')\ncentrifuge(container='50ml tube', reagent='cells', duration='5 min', speed='3000 rpm', purpose='pellet cells')\ndiscard(container='50ml tube', reagent='supernatant')\nresuspend(container='50ml tube', reagent='cold TFB', volume='8ml', temperature='cold', method='wash gently, then pipette up and down with wide-bore 10ml tip')\ncool(container='50ml tube', reagent='cells', temperature='on ice', duration='15 mins')\ncentrifuge(container='50ml tube', reagent='cells', duration='5 min', speed='3000 rpm', purpose='pellet cells')\ndiscard(container='50ml tube', reagent='supernatant')\nresuspend(container='50ml tube', reagent='cold TFB', volume='2ml', temperature='cold', method='use this liquid to resuspend second pellet')\nadd(container='single aliquot (2ml cold TFB)', reagent='DMSO', volume='105ul', mix_method='swirl')\ncool(container='single aliquot (2ml cold TFB)', temperature='on ice', duration='5 mins')\nadd(container='single aliquot (2ml cold TFB)', reagent='100mM DTT', volume='80ul', mix_method='swirl')\ncool(container='single aliquot (2ml cold TFB)', temperature='on ice', duration='10 mins')\nadd(container='single aliquot (2ml cold TFB)', reagent='DMSO', volume='105ul', mix_method='swirl')\ncool(container='single aliquot (2ml cold TFB)', temperature='on ice', duration='5 mins')\naliquot(container='5ml polypropylene growth tube (pre-chilled, labelled, loose-cap lid)', reagent='cells in cold TFB', volume='180ul', temperature='cold')\n\n### MANUAL SECTION ###\n# MANUAL: include (container: 5ml polypropylene growth tube, reagent: positive and negative controls)\n\n### AUTOMATED SECTION ###\nadd(container='5ml polypropylene growth tube', reagent='ligation DNA', volume='10ul')\ncool(container='5ml polypropylene growth tube', temperature='on ice', duration='30 mins')\nheat(container='5ml polypropylene growth tube', temperature='42\u02daC', duration='90 secs', method='heat pulse')\ncool(container='5ml polypropylene growth tube', temperature='on ice', duration='2 mins')\nadd(container='5ml polypropylene growth tube', reagent='SOC', volume='400ul', temperature='37\u02daC')\nincubate(container='5ml polypropylene growth tube', temperature='37\u02daC', duration='10 mins')\nincubate(container='5ml polypropylene growth tube', temperature='37\u02daC', duration='45 mins', speed='225 rpm')\ncool(container='5ml polypropylene growth tube', temperature='on ice', purpose='halt growth')\ntransfer(container='1.5ml microfuge tube (labelled, individual)', reagent='cells', from='5ml polypropylene growth tube')\ncentrifuge(container='1.5ml microfuge tube', reagent='cells', duration='5 sec', purpose='loosely pellet cells')\ndiscard(container='1.5ml microfuge tube', reagent='supernatant', volume='370ul')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: LB/Amp+/Xgal plate, reagent: cell solution, volume: 40ul)\n\n### AUTOMATED SECTION ###\nincubate(container='LB/Amp+/Xgal plate', temperature='37\u02daC', duration='overnight')",
+    "source_file": "protocol_300.txt"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "protocol": "Picking colonies\nNumber and annotate (color/size) 95 isolated colonies on SPOT 0m 10ml plates.\nIn 2ml deep 96 well plates add 1ml of Zobell broth to all wells using 8 channel pipet Using autoclaved/sterile 200ul pipet tips (full box) pick all 95 colonies.\nUse pipet tip to pick up an entire isolated colony and place pipet tip into well.\nPick colonies 1-95 in column 1 A through H, column 2 1 through H and so on.\nIn well 96 (12 H) place the final unused pipet tip as a Negative.\nAfter all 96 wells have pipet tips in them, using a 12 channel pipet, attach each row of tips and pipet up and down at least 3 times to dislodge colony.\nRemove tips after each row.\nPlace pore film over plate and seal well.\nLabel plate Place on shaker for at least 48 hours to grow",
+    "actions": [
+      {
+        "action": "annotate",
+        "parameters": {
+          "container": "SPOT 0m 10ml plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_colonies": "95",
+            "annotation": "color/size"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "2ml deep 96 well plates",
+          "reagent": "Zobell broth",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wells": "all wells",
+            "pipet_type": "8 channel pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "SPOT 0m 10ml plates",
+          "reagent": "isolated colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_colonies": "95",
+            "pipet_tip_type": "autoclaved/sterile 200ul pipet tips (full box)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2ml deep 96 well plates",
+          "reagent": "isolated colony (on pipet tip)",
+          "volume": "entire colony (not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_well": "corresponding well"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2ml deep 96 well plate, well 96 (12 H)",
+          "reagent": "unused pipet tip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "Negative control"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": "colony (on pipet tip in well)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pipet_type": "12 channel pipet",
+            "rows": "each row",
+            "cycles": "at least 3 times up and down",
+            "purpose": "dislodge colony"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": "pipet tips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after": "each row"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": "pore film",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "place over plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "at least 48 hours",
+          "speed": null,
+          "other": {
+            "purpose": "grow"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: annotate (container: SPOT 0m 10ml plates, other: {'number_of_colonies': '95', 'annotation': 'color/size'})\n\n### AUTOMATED SECTION ###\ndispense(container='2ml deep 96 well plates', reagent='Zobell broth', volume='1ml', wells='all wells', pipet_type='8 channel pipet')\n\n### MANUAL SECTION ###\n# MANUAL: pick (container: SPOT 0m 10ml plates, reagent: isolated colonies, other: {'number_of_colonies': '95', 'pipet_tip_type': 'autoclaved/sterile 200ul pipet tips (full box)'})\n# MANUAL: transfer (container: 2ml deep 96 well plates, reagent: isolated colony (on pipet tip), volume: entire colony (not specified), other: {'destination_well': 'corresponding well'})\n# MANUAL: place (container: 2ml deep 96 well plate, well 96 (12 H), reagent: unused pipet tip, other: {'purpose': 'Negative control'})\n\n### AUTOMATED SECTION ###\npipette(container='2ml deep 96 well plate', reagent='colony (on pipet tip in well)', pipet_type='12 channel pipet', rows='each row', cycles='at least 3 times up and down', purpose='dislodge colony')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 2ml deep 96 well plate, reagent: pipet tips, other: {'after': 'each row'})\n\n### AUTOMATED SECTION ###\nseal(container='2ml deep 96 well plate', reagent='pore film', method='place over plate')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 2ml deep 96 well plate)\n\n### AUTOMATED SECTION ###\nshake(container='2ml deep 96 well plate', duration='at least 48 hours', purpose='grow')",
+    "source_file": "protocol_421.txt"
+  }
+]

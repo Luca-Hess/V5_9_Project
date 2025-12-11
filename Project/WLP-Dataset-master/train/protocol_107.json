@@ -1,0 +1,235 @@
+[
+  {
+    "protocol": "Transformation of competent E.coli cells with plasmid DNA\nThaw the appropriate amount of competent cells on ice.\nPre-chill the required number of empty 1.5 ml microcentrifuge tubes.\nPipette 50 \u00b5l aliquots of cells into the pre-chilled tubes.\nAdd 5-10 \u00b5l of a ligation reaction mix or 5 ng of pure plasmid DNA to each tube.\nMix gently!\nIncubate the tubes of ice for 30 min.\nHeat shock the cells for 45 sec at 42\u00b0C.\nPlace the tubes immediately on ice for at least 2 min.\nAdd 800 \u00b5l of SOC medium to each tube and incubate for 1 hour at 37\u00b0C.\nTransfer the cultures to 1.5 ml microcentrifuge tubes and spin for 1 min at 6000 rpm.\nRemove 800 \u00b5l of the supernatant and resuspend the pellet.\nPlate out the suspension on a LB agar plate containing the appropriate antibiotic.\nIncubate the plates overnight at 37\u00b0C.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "competent cell aliquots",
+          "reagent": "competent E.coli cells",
+          "volume": "appropriate amount",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pre-chill",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tubes",
+          "reagent": null,
+          "volume": "required number",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "pre-chilled 1.5 ml microcentrifuge tubes",
+          "reagent": "competent E.coli cells",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "ligation reaction mix or pure plasmid DNA",
+          "volume": "5-10 \u00b5l (ligation mix) or 5 ng (plasmid DNA)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "45 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "at least 2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "SOC medium",
+          "volume": "800 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tubes",
+          "reagent": "cultures",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "6000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tubes",
+          "reagent": "supernatant",
+          "volume": "800 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tubes",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "LB agar plate",
+          "reagent": "suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotic": "appropriate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: competent cell aliquots, reagent: competent E.coli cells, volume: appropriate amount, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\npre-chill(container='1.5 ml microcentrifuge tubes', volume='required number', temperature='on ice')\npipette(container='pre-chilled 1.5 ml microcentrifuge tubes', reagent='competent E.coli cells', volume='50 \u00b5l')\nadd(container='each tube', reagent='ligation reaction mix or pure plasmid DNA', volume='5-10 \u00b5l (ligation mix) or 5 ng (plasmid DNA)')\nmix(container='each tube', speed='gently')\nincubate(container='tubes', temperature='on ice', duration='30 min')\nheat shock(container='tubes', reagent='cells', temperature='42\u00b0C', duration='45 sec')\nincubate(container='tubes', temperature='on ice', duration='at least 2 min')\nadd(container='each tube', reagent='SOC medium', volume='800 \u00b5l')\nincubate(container='each tube', temperature='37\u00b0C', duration='1 hour')\ntransfer(container='1.5 ml microcentrifuge tubes', reagent='cultures')\ncentrifuge(container='1.5 ml microcentrifuge tubes', duration='1 min', speed='6000 rpm')\nremove(container='1.5 ml microcentrifuge tubes', reagent='supernatant', volume='800 \u00b5l')\nresuspend(container='1.5 ml microcentrifuge tubes', reagent='pellet')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: LB agar plate, reagent: suspension, other: {'antibiotic': 'appropriate'})\n\n### AUTOMATED SECTION ###\nincubate(container='plates', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_107.txt"
+  }
+]

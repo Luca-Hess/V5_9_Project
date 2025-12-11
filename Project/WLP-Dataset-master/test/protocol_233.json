@@ -1,0 +1,608 @@
+[
+  {
+    "protocol": "A degenerate primer reverse transcriptionpolymerase chain reaction protocol to determine the diversity of picorna-like viruses\nWhole seawater (if intracellular viruses are to be included in the analysis) or 0.22-filtered seawater (if only the free virus community is targeted) is gently filtered (7 mmHg) through a 0.02 \u00b5m aluminum oxide filter (Anotop, Whatman).\nFiltration should continue until the rate slows dramatically or drops to zero.\nUse pumped air to remove as much residual sample as possible.\nOnce dry, seal the filter inlets and outlets with parafilm.\nLabel the filter.\nFlash-freeze the filter in liquid nitrogen.\nStore it at \u201380\u00b0C until extraction.\nTotal nucleic acids are extracted from the aluminum oxide filters using a Masterpure complete DNA and RNA Purification kit (Epicenter, Biotechnologies).\nRemove contaminating DNA from RNA preparations with the Turbo DNA-free kit (Applied Biosystems) as described in the protocol provided with the kit.\nEach cDNA reaction contains 11 \u00b5L of extracted Turbo DNA-free\u2013treated RNA template, 0.2 mM of each dNTP, and 100 ng of N6 primer in a total volume of 13 \u00b5L.\nDenaturation and annealing of the primers to the RNA template occurs by heating the sample to 65\u00b0C for 5 min and then cooling it on ice.\nWhile still on ice, DTT (0.5 mM final conc.) is added to the reaction as an enzyme stabilization reagent with 40 U RNase OUT (Invitrogen) to protect the sample from RNAse activity.\nThe complementary DNA strand is synthesized with 200 U Superscript III (Invitrogen) Reverse Transcriptase.\nThe final reaction volume should be 20 \u00b5L.\nThe reaction is incubated initially at 25\u00b0C for 5 min so that the relatively unstable hexamer primers remain annealed to the template while cDNA synthesis commences.\nThe temperature is then increased to 50\u00b0C, the temperature at which Superscript III\u2019s processivity is highest, for 60 min.\nThe activity of the enzyme is terminated by incubating the reaction at 85\u00b0C for 5 min.\nAfter cDNA synthesis, add 1 \u00b5L (2 U) of RNase H (Invitrogen) to the reaction and incubate at 37\u00b0C for 20 min to digest the RNA template from the cDNA:RNA molecule.\nPCR can be performed with the RdRp, Mpl.sc1, Mpl.sc2, Mplsc3, and Mpl.cdh primer sets listed in Table 1 and the cDNA synthesized in the previous step.\nIn a 0.2 mL nuclease-free PCR tube, add reaction components to achieve final concentrations of 1\u00d7 Platinum Taq buffer, 3 mM MgCl2, 0.2 mM of each dNTP, 1 \u00b5M of each primer, and 1 unit of Platinum Taq DNA polymerase (Invitrogen).\nIncubate the reactions with the following thermal cycling conditions: 94\u00b0C for 75 s (this is necessary to activate the enzyme and ensures complete initial denaturation of template), followed by 35 cycles of denaturation at 94\u00b0C for 45 s, annealing at a primer-specific temperature (Table 1) for 45 s, and extension at 72\u00b0C for 45 s. \nComplete the cycle with a single final extension step of 9 min 15 s at 72\u00b0C.\nBefore gel separation, we purify and concentrate the PCR reactions with a MinElute PCR cleanup column (Qiagen) as described by the manufacturer.\nPurified PCR products are loaded onto a 1% agarose gel containing 1\u00d7 SYBR safe stain (Invitrogen) and 0.5\u00d7 TBE buffer.\nBands of DNA of the appropriate size (approximately 500 bp) are excised and purified with a MinElute Gel Extraction kit (Qiagen) according to the manufacturer\u2019s instructions.\nWe recommend eluting DNA from the column with three washes of 10 \u00b5L nuclease-free water in preparation for the end repair reaction.\nIn preparation for ligation, PCR products are polished and phosphorylated with the PCRTerminator End Repair kit (Lucigen) as described by the manufacturer.\nAfter a 15-min incubation at room temperature the reaction is purified and concentrated with a MinElute Reaction Cleanup column (Qiagen).\nThe eluted PCR products are subsequently ligated into the pSMART-HCKan vector (Lucigen) according to the manufacturer.\nAfter terminating the ligation reaction by incubating for 15 min at 70\u00b0C, 2 \u00b5L of the ligation reaction is transformed into Ecloni 10G Supreme cells (Lucigen) via electroporation.\nBefore initiating a large-scale sequencing effort, we recommend screening 10 to 20 colonies for inserts by PCR amplification with the primers SL1 and SR2 (Table 1) to assess the quality of the library.\nColony PCR products can be visualized on a gel and the products in the correct size range purified and sequenced.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "aluminum oxide filter (Anotop, Whatman)",
+          "reagent": "whole seawater or 0.22-filtered seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": "until rate slows dramatically or drops to zero",
+          "speed": "7 mmHg",
+          "other": {
+            "filter_pore_size": "0.02 \u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "aluminum oxide filter",
+          "reagent": "residual sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pumped air"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "filter inlets and outlets",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "filter",
+          "reagent": "liquid nitrogen",
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flash-freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until extraction",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "aluminum oxide filters",
+          "reagent": "Masterpure complete DNA and RNA Purification kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "RNA preparations",
+          "reagent": "Turbo DNA-free kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contaminant": "DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": [
+            "11 \u00b5L extracted Turbo DNA-free\u2013treated RNA template",
+            "0.2 mM of each dNTP",
+            "100 ng of N6 primer"
+          ],
+          "volume": "total 13 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "denaturation and annealing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cDNA reaction tube (on ice)",
+          "reagent": [
+            "DTT (0.5 mM final conc.)",
+            "40 U RNase OUT"
+          ],
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "enzyme stabilization and RNAse protection"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": "200 U Superscript III Reverse Transcriptase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "complementary DNA strand synthesis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": "final 20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "primer annealing and cDNA synthesis initiation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "purpose": "cDNA synthesis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "85\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "terminate enzyme activity"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": "1 \u00b5L (2 U) RNase H",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "digest RNA template"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cDNA reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "purpose": "digest RNA template"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "0.2 mL nuclease-free PCR tube",
+          "reagent": [
+            "1\u00d7 Platinum Taq buffer",
+            "3 mM MgCl2",
+            "0.2 mM of each dNTP",
+            "1 \u00b5M of each primer",
+            "1 unit Platinum Taq DNA polymerase",
+            "cDNA template"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "75 s",
+          "speed": null,
+          "other": {
+            "purpose": "enzyme activation and template denaturation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cycle",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": [
+            "94\u00b0C (denaturation)",
+            "primer-specific (annealing)",
+            "72\u00b0C (extension)"
+          ],
+          "duration": [
+            "45 s (denaturation)",
+            "45 s (annealing)",
+            "45 s (extension)"
+          ],
+          "speed": null,
+          "other": {
+            "cycles": 35
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "9 min 15 s",
+          "speed": null,
+          "other": {
+            "purpose": "final extension"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "PCR reaction",
+          "reagent": "MinElute PCR cleanup column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "1% agarose gel",
+          "reagent": "purified PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "stain": "1\u00d7 SYBR safe",
+            "buffer": "0.5\u00d7 TBE"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "excise",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "DNA bands (~500 bp)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "excised gel bands",
+          "reagent": "MinElute Gel Extraction kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "MinElute column",
+          "reagent": "nuclease-free water",
+          "volume": "3 \u00d7 10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "preparation for end repair"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "polish",
+        "parameters": {
+          "container": "PCR products",
+          "reagent": "PCRTerminator End Repair kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "end repair and phosphorylation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "end repair reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "end repair reaction",
+          "reagent": "MinElute Reaction Cleanup column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "ligate",
+        "parameters": {
+          "container": "PCR products",
+          "reagent": "pSMART-HCKan vector",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ligation reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "purpose": "terminate ligation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": "Ecloni 10G Supreme cells",
+          "reagent": "2 \u00b5L ligation reaction",
+          "volume": "2 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "electroporation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "screen",
+        "parameters": {
+          "container": "colonies",
+          "reagent": "PCR amplification with SL1 and SR2 primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "10-20 colonies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "visualize",
+        "parameters": {
+          "container": "gel",
+          "reagent": "colony PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "colony PCR products (correct size range)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "sequencing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": "purified colony PCR products",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='aluminum oxide filter (Anotop, Whatman)', reagent='whole seawater or 0.22-filtered seawater', duration='until rate slows dramatically or drops to zero', speed='7 mmHg', filter_pore_size='0.02 \u00b5m')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: aluminum oxide filter, reagent: residual sample, other: {'method': 'pumped air'})\n# MANUAL: seal (container: filter inlets and outlets, reagent: parafilm, other: {})\n# MANUAL: label (container: filter, other: {})\n# MANUAL: freeze (container: filter, reagent: liquid nitrogen, temperature: liquid nitrogen, other: {'method': 'flash-freeze'})\n\n### AUTOMATED SECTION ###\nstore(container='filter', temperature='-80\u00b0C', duration='until extraction')\n\n### MANUAL SECTION ###\n# MANUAL: extract (container: aluminum oxide filters, reagent: Masterpure complete DNA and RNA Purification kit, other: {})\n# MANUAL: remove (container: RNA preparations, reagent: Turbo DNA-free kit, other: {'contaminant': 'DNA'})\n\n### AUTOMATED SECTION ###\nadd(container='cDNA reaction tube', reagent=['11 \u00b5L extracted Turbo DNA-free\u2013treated RNA template', '0.2 mM of each dNTP', '100 ng of N6 primer'], volume='total 13 \u00b5L')\nheat(container='cDNA reaction tube', temperature='65\u00b0C', duration='5 min', purpose='denaturation and annealing')\ncool(container='cDNA reaction tube', temperature='ice')\nadd(container='cDNA reaction tube (on ice)', reagent=['DTT (0.5 mM final conc.)', '40 U RNase OUT'], temperature='on ice', purpose='enzyme stabilization and RNAse protection')\n\n### MANUAL SECTION ###\n# MANUAL: synthesize (container: cDNA reaction tube, reagent: 200 U Superscript III Reverse Transcriptase, other: {'purpose': 'complementary DNA strand synthesis'})\n\n### AUTOMATED SECTION ###\nadjust(container='cDNA reaction tube', volume='final 20 \u00b5L')\nincubate(container='cDNA reaction tube', temperature='25\u00b0C', duration='5 min', purpose='primer annealing and cDNA synthesis initiation')\nincubate(container='cDNA reaction tube', temperature='50\u00b0C', duration='60 min', purpose='cDNA synthesis')\nincubate(container='cDNA reaction tube', temperature='85\u00b0C', duration='5 min', purpose='terminate enzyme activity')\nadd(container='cDNA reaction tube', reagent='1 \u00b5L (2 U) RNase H', volume='1 \u00b5L', purpose='digest RNA template')\nincubate(container='cDNA reaction tube', temperature='37\u00b0C', duration='20 min', purpose='digest RNA template')\nadd(container='0.2 mL nuclease-free PCR tube', reagent=['1\u00d7 Platinum Taq buffer', '3 mM MgCl2', '0.2 mM of each dNTP', '1 \u00b5M of each primer', '1 unit Platinum Taq DNA polymerase', 'cDNA template'])\nincubate(container='PCR tube', temperature='94\u00b0C', duration='75 s', purpose='enzyme activation and template denaturation')\ncycle(container='PCR tube', temperature=['94\u00b0C (denaturation)', 'primer-specific (annealing)', '72\u00b0C (extension)'], duration=['45 s (denaturation)', '45 s (annealing)', '45 s (extension)'], cycles=35)\nincubate(container='PCR tube', temperature='72\u00b0C', duration='9 min 15 s', purpose='final extension')\n\n### MANUAL SECTION ###\n# MANUAL: purify (container: PCR reaction, reagent: MinElute PCR cleanup column, other: {})\n# MANUAL: load (container: 1% agarose gel, reagent: purified PCR products, other: {'stain': '1\u00d7 SYBR safe', 'buffer': '0.5\u00d7 TBE'})\n# MANUAL: excise (container: agarose gel, reagent: DNA bands (~500 bp), other: {})\n# MANUAL: purify (container: excised gel bands, reagent: MinElute Gel Extraction kit, other: {})\n\n### AUTOMATED SECTION ###\nelute(container='MinElute column', reagent='nuclease-free water', volume='3 \u00d7 10 \u00b5L', purpose='preparation for end repair')\n\n### MANUAL SECTION ###\n# MANUAL: polish (container: PCR products, reagent: PCRTerminator End Repair kit, other: {'purpose': 'end repair and phosphorylation'})\n\n### AUTOMATED SECTION ###\nincubate(container='end repair reaction', temperature='room temperature', duration='15 min')\n\n### MANUAL SECTION ###\n# MANUAL: purify (container: end repair reaction, reagent: MinElute Reaction Cleanup column, other: {})\n# MANUAL: ligate (container: PCR products, reagent: pSMART-HCKan vector, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ligation reaction', temperature='70\u00b0C', duration='15 min', purpose='terminate ligation')\n\n### MANUAL SECTION ###\n# MANUAL: transform (container: Ecloni 10G Supreme cells, reagent: 2 \u00b5L ligation reaction, volume: 2 \u00b5L, other: {'method': 'electroporation'})\n# MANUAL: screen (container: colonies, reagent: PCR amplification with SL1 and SR2 primers, other: {'number': '10-20 colonies'})\n# MANUAL: visualize (container: gel, reagent: colony PCR products, other: {})\n# MANUAL: purify (container: colony PCR products (correct size range), other: {'purpose': 'sequencing'})\n# MANUAL: sequence (container: purified colony PCR products, other: {})",
+    "source_file": "protocol_233.txt"
+  }
+]

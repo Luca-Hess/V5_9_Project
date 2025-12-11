@@ -1,0 +1,657 @@
+[
+  {
+    "protocol": "RNA Isolation from Viral-infected Chlorella NC64A\nGrow NC64A to mid-log phase.\nConcentrate to 1 x 108 cells/ml.\nUse 30 ml concentrated cells per time point (3 x 109 cells~91 mg cells wet weight).\nInfect with virus at m.o.i.=5 for appropriate time.\nHarvest infected cells by centrifugation at 5000 rpm, 5 min., 4\u00b0C.\nDiscard supernatant and flash freeze pellet in liquid nitrogen.\nStore at -80\u00b0C until ready to proceed to step #8.\nTake 1 to 2 samples from the freezer at a time (keep on ice), break pellets loose with spatula, and add 1 ml TRIZOL reagent to each tube.\nWork as quickly as possible to prevent RNA degradation.\nBreak pellets up with spatula and vortexing.\nPipet into 2 ml microcentrifuge tube(s) containing 250 mg of 0.25-0.30 mm baked glass beads.\nImmediately vortex at highest speed 5 min., 4\u00b0C.\nPlace at -80\u00b0C overnight.\nRepeat steps #8-12 for the remaining samples.\nThaw samples and vortex another 5 minutes.\nAdd 250 \u00b5l chloroform to samples, then vortex briefly.\nLet stand at room temp. 3 min.\nCentrifuge samples at 12,000 x g, 15 min., 4\u00b0C.\nWithdraw the RNA-containing aqueous upper phase and deliver to fresh microcentrifuge tube.\nAdd 500 \u00b5l isopropanol.\nLet stand 10 min. at room temp.\nCentrifuge at 12,000 x g, 10 min., 4\u00b0C.\nDiscard supernatant.\nWash pellet with 75% EtOH with vortexing.\nCentrifuge 12,000 x g, 5 min., 4\u00b0C.\nDry pellets in vacuum dessicator 5-10 min.\nDO NOT DRY COMPLETELY.\nDNAse each sample by resuspending each pellet in 250 \u00b5l dd-H20.\nAdd 250 \u00b5l of 2X MOPS, 20mM MgCl2 (2X), and 100-200 U RNAse-free DNAse I. \nIncubate 1-2 h on ice.\nExtract with equal volume of phenol:chloroform (500 \u00b5l).\nCentrifuge at 12,000 x g, 5 min., 4\u00b0C.\nWithdraw aqueous phase, add NaOAc to 0.3 M.   \nAdd 1 ml isopropanol.\nLet stand 10 min., room temp.\nCentrifuge up to\u00a012,000 x g, 10 min., 4\u00b0C.\nDiscard supernatant.\nWash pellet with 75 % EtOH with vortexing.\nCentrifuge 12,000 x g, 5 min., 4\u00b0C.\nDry pellets in vacuum dessicator 5-10 min.\nDo not dry completely.\nResuspend pellets in 40-50 \u00b5l water.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "NC64A cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phase": "mid-log"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": null,
+          "reagent": "NC64A cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1 x 10^8 cells/ml"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "concentrated cells",
+          "volume": "30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per_time_point": true,
+            "cell_count": "3 x 10^9 cells",
+            "wet_weight": "91 mg"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "infect",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": "appropriate time",
+          "speed": null,
+          "other": {
+            "moi": "5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "infected cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": "flash",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until ready",
+          "speed": null,
+          "other": {
+            "step": 8
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "freezer",
+          "reagent": "samples",
+          "volume": "1 to 2",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "break",
+        "parameters": {
+          "container": null,
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "spatula"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TRIZOL reagent",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "break",
+        "parameters": {
+          "container": null,
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spatula and vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "glass_beads": "250 mg of 0.25-0.30 mm baked"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "highest",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform",
+          "volume": "250 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "withdraw",
+        "parameters": {
+          "container": "tube",
+          "reagent": "RNA-containing aqueous upper phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "fresh microcentrifuge tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "isopropanol",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "75% EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "with vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {
+            "method": "vacuum dessicator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellet",
+          "volume": "250 \u00b5l dd-H2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "2X MOPS, 20mM MgCl2 (2X), 100-200 U RNAse-free DNAse I",
+          "volume": "250 \u00b5l 2X MOPS, 20mM MgCl2 (2X), 100-200 U DNAse I",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "1-2 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol:chloroform",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "equal volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "withdraw",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "NaOAc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.3 M"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "isopropanol",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "up to 12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "75% EtOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "with vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "12,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {
+            "method": "vacuum dessicator"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pellets",
+          "volume": "40-50 \u00b5l water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (reagent: NC64A cells, other: {'phase': 'mid-log'})\n# MANUAL: concentrate (reagent: NC64A cells, other: {'final_concentration': '1 x 10^8 cells/ml'})\n# MANUAL: use (reagent: concentrated cells, volume: 30 ml, other: {'per_time_point': True, 'cell_count': '3 x 10^9 cells', 'wet_weight': '91 mg'})\n# MANUAL: infect (reagent: virus, duration: appropriate time, other: {'moi': '5'})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='infected cells', temperature='4\u00b0C', duration='5 min', speed='5000 rpm')\ndiscard(reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (reagent: pellet, temperature: liquid nitrogen, duration: flash, other: {})\n# MANUAL: store (reagent: pellet, temperature: -80\u00b0C, duration: until ready, other: {'step': 8})\n# MANUAL: take (container: freezer, reagent: samples, volume: 1 to 2, temperature: on ice, other: {})\n# MANUAL: break (reagent: pellets, other: {'tool': 'spatula'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='TRIZOL reagent', volume='1 ml')\nbreak(reagent='pellets', method='spatula and vortexing')\npipette(container='2 ml microcentrifuge tube', reagent='sample', glass_beads='250 mg of 0.25-0.30 mm baked')\nvortex(container='tube', reagent='sample', temperature='4\u00b0C', duration='5 min', speed='highest')\nplace(container='tube', reagent='sample', temperature='-80\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: tube, reagent: sample, other: {})\n\n### AUTOMATED SECTION ###\nvortex(container='tube', reagent='sample', duration='5 min')\nadd(container='tube', reagent='chloroform', volume='250 \u00b5l')\nvortex(container='tube', reagent='sample', duration='briefly')\nwait(container='tube', reagent='sample', temperature='room temp', duration='3 min')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='15 min', speed='12,000 x g')\nwithdraw(container='tube', reagent='RNA-containing aqueous upper phase', destination='fresh microcentrifuge tube')\nadd(container='tube', reagent='isopropanol', volume='500 \u00b5l')\nwait(container='tube', reagent='sample', temperature='room temp', duration='10 min')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='10 min', speed='12,000 x g')\ndiscard(container='tube', reagent='supernatant')\nwash(container='tube', reagent='75% EtOH', method='with vortexing')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='5 min', speed='12,000 x g')\ndry(container='tube', reagent='pellets', duration='5-10 min', method='vacuum dessicator')\nresuspend(container='tube', reagent='pellet', volume='250 \u00b5l dd-H2O')\nadd(container='tube', reagent='2X MOPS, 20mM MgCl2 (2X), 100-200 U RNAse-free DNAse I', volume='250 \u00b5l 2X MOPS, 20mM MgCl2 (2X), 100-200 U DNAse I')\nincubate(container='tube', reagent='sample', temperature='on ice', duration='1-2 h')\nextract(container='tube', reagent='phenol:chloroform', volume='500 \u00b5l', ratio='equal volume')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='5 min', speed='12,000 x g')\nwithdraw(container='tube', reagent='aqueous phase')\nadd(container='tube', reagent='NaOAc', final_concentration='0.3 M')\nadd(container='tube', reagent='isopropanol', volume='1 ml')\nwait(container='tube', reagent='sample', temperature='room temp', duration='10 min')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='10 min', speed='up to 12,000 x g')\ndiscard(container='tube', reagent='supernatant')\nwash(container='tube', reagent='75% EtOH', method='with vortexing')\ncentrifuge(container='tube', reagent='sample', temperature='4\u00b0C', duration='5 min', speed='12,000 x g')\ndry(container='tube', reagent='pellets', duration='5-10 min', method='vacuum dessicator')\nresuspend(container='tube', reagent='pellets', volume='40-50 \u00b5l water')",
+    "source_file": "protocol_196.txt"
+  }
+]

@@ -1,0 +1,779 @@
+[
+  {
+    "protocol": "Bead Beating RNA extraction from 25 mm filter\nTurn on 4\u00b0C centrifuge. \nThaw internal standards on ice. \nSet up 2.0 ml tube adaptor on Mo Bio Vortex Genie 2.\nFor each sample, prepare a 2.0 ml tube with the following 3-bead mixture: 200 \u03bcl 0.1 mm zirconium beads, 100 \u03bcl 0.4-0.6 mm glass beads, 100 \u03bcl 0.5 mm zirconium beads. \nAdd Ambion Denaturation Solution to each tube. \nTo each bead tube, add internal standards to reach ~0.5% of expected RNA yield. \nPlace one 25 mm sample filter into each bead tube using RNase-free forceps. \nPlace sample tubes on vortex adaptor and beat for 5 min. \nSwitch tube positions and beat another 5 min.\nCentrifuge sample tubes for 1 min at 5000 rpm at 4\u00b0C. \nTransfer as much of the RNA lysate as possible to a new 1.5 ml centrifuge tube (Can carryover some beads). \nCentrifuge RNA tubes for 5 min at 5000 rpm at 4\u00b0C. \nTransfer lysate to new 2.0 ml tube (Do not carry over any beads).\nAdd 1 volume of 100% ethanol to the lysate. \nDraw the RNA lysate up into a 3.0 ml syringe with a 21g1 gauge needle and pass it back out 8 times to shear RNA. \nApply 700 \u03bcL of RNA lysate to RNeasy mini column. \nClose tube gently and centrifuge 15 sec at 13000 rpm. \nDiscard flow-through.\nRepeat steps 16-18 until entire sample has been applied to column.\nAdd 700 \u03bcl Buffer RW1 to RNeasy Mini spin column.\nCentrifuge for 15 sec at 13000 rpm.\nDiscard the flow-through.\nAdd 500 \u03bcl Buffer RPE to RNeasy spin column.\nCentrifuge for 15 sec at 13000 rpm.\nDiscard flow-through.\nAdd 500 \u03bcl Buffer RPE to RNeasy spin column.\nCentrifuge for 2 min at 13000 rpm. \nPlace column in new 2.0 ml collection tube.\nCentrifuge for 1 min at 13000 rpm. \nPlace column in a new 1.5 ml sterile tube. \nAdd 35 \u03bcl RNase-free water directly onto filter and close the lid.\nIncubate tube for 1 min at room temperature. \nCentrifuge for 1 min at 13000 rpm.\nAdd another 35 \u03bcl RNase-free water into same column/tube. \nIncubate for 1 min at room temperature. \nCentrifuge for 1 min at 13000 rpm. \nDiscard column and place tube with RNA on ice. \nQuantify extracted RNA with Nanodrop (2 \u03bcl). \nMix the following in a 1.5 ml tube:\ncomponentamountextracted sample50 \u03bclRNase-free water40 \u03bclDNase reaction buffer10 \u03bclTurbo DNase3 \u03bcl. \nIncubate for 20 min at 37 \u00b0C. \nAdd 3 \u03bcl more Turbo DNase to sample. \nIncubate an additional 20 min at 37 \u00b0C. \nAdd 20 \u03bcl inactivation solution to sample (make sure solution is well mixed).\nVortex on and off for ~4 min. \nSpin for 1 min at 13000 rpm. \nCarefully, without disturbing inactivation reagent, remove supernatant (~100 \u03bcl) into a new 1.5 ml tube and place on ice. \nQuantify DNased RNA with Nanodrop (2 \u03bcl) \nOptional: Clean and concentrate DNased RNA using Zymo RNA Clean & Concentrator-5 according to manufacturer protocol. \nStore RNA at -80 \u00b0C",
+    "actions": [
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "centrifuge",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "internal standards",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "2.0 ml tube adaptor",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Mo Bio Vortex Genie 2"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "2.0 ml tube",
+          "reagent": "3-bead mixture",
+          "volume": "200 \u03bcl 0.1 mm zirconium beads, 100 \u03bcl 0.4-0.6 mm glass beads, 100 \u03bcl 0.5 mm zirconium beads",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2.0 ml tube",
+          "reagent": "Ambion Denaturation Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bead tube",
+          "reagent": "internal standards",
+          "volume": "~0.5% of expected RNA yield",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "bead tube",
+          "reagent": "25 mm sample filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "RNase-free forceps"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "vortex adaptor",
+          "reagent": "sample tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "beat",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "Vortex Genie 2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "switch",
+        "parameters": {
+          "container": "tube positions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "beat",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "Vortex Genie 2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 1.5 ml centrifuge tube",
+          "reagent": "RNA lysate",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "Can carryover some beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNA tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 2.0 ml tube",
+          "reagent": "lysate",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "Do not carry over any beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "lysate",
+          "reagent": "100% ethanol",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "draw",
+        "parameters": {
+          "container": "3.0 ml syringe with 21g1 gauge needle",
+          "reagent": "RNA lysate",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "8 times",
+            "purpose": "shear RNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "RNeasy mini column",
+          "reagent": "RNA lysate",
+          "volume": "700 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "gently"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy mini column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "16-18",
+            "until": "entire sample has been applied to column"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy Mini spin column",
+          "reagent": "Buffer RW1",
+          "volume": "700 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy Mini spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RPE",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RPE",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "new 2.0 ml collection tube",
+          "reagent": "column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column in 2.0 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "new 1.5 ml sterile tube",
+          "reagent": "column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column in 1.5 ml sterile tube",
+          "reagent": "RNase-free water",
+          "volume": "35 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "directly onto filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "same column/tube",
+          "reagent": "RNase-free water",
+          "volume": "35 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube with RNA",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": "Nanodrop",
+          "reagent": "extracted RNA",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "extracted sample, RNase-free water, DNase reaction buffer, Turbo DNase",
+          "volume": "50 \u03bcl extracted sample, 40 \u03bcl RNase-free water, 10 \u03bcl DNase reaction buffer, 3 \u03bcl Turbo DNase",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "Turbo DNase",
+          "volume": "3 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "inactivation solution",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "make sure solution is well mixed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "~4 min (on and off)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "new 1.5 ml tube",
+          "reagent": "supernatant",
+          "volume": "~100 \u03bcl",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "without disturbing inactivation reagent"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": "Nanodrop",
+          "reagent": "DNased RNA",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "Zymo RNA Clean & Concentrator-5",
+          "reagent": "DNased RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "according to manufacturer protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube with RNA",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: turn on (container: centrifuge, temperature: 4\u00b0C, other: {})\n# MANUAL: thaw (reagent: internal standards, temperature: on ice, other: {})\n# MANUAL: set up (container: 2.0 ml tube adaptor, other: {'instrument': 'Mo Bio Vortex Genie 2'})\n# MANUAL: prepare (container: 2.0 ml tube, reagent: 3-bead mixture, volume: 200 \u03bcl 0.1 mm zirconium beads, 100 \u03bcl 0.4-0.6 mm glass beads, 100 \u03bcl 0.5 mm zirconium beads, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='2.0 ml tube', reagent='Ambion Denaturation Solution')\nadd(container='bead tube', reagent='internal standards', volume='~0.5% of expected RNA yield')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: bead tube, reagent: 25 mm sample filter, other: {'tool': 'RNase-free forceps'})\n\n### AUTOMATED SECTION ###\nplace(container='vortex adaptor', reagent='sample tubes')\nbeat(container='sample tubes', duration='5 min', instrument='Vortex Genie 2')\n\n### MANUAL SECTION ###\n# MANUAL: switch (container: tube positions, other: {})\n\n### AUTOMATED SECTION ###\nbeat(container='sample tubes', duration='5 min', instrument='Vortex Genie 2')\ncentrifuge(container='sample tubes', temperature='4\u00b0C', duration='1 min', speed='5000 rpm')\ntransfer(container='new 1.5 ml centrifuge tube', reagent='RNA lysate', volume='as much as possible', note='Can carryover some beads')\ncentrifuge(container='RNA tubes', temperature='4\u00b0C', duration='5 min', speed='5000 rpm')\ntransfer(container='new 2.0 ml tube', reagent='lysate', volume='all', note='Do not carry over any beads')\nadd(container='lysate', reagent='100% ethanol', volume='1 volume')\n\n### MANUAL SECTION ###\n# MANUAL: draw (container: 3.0 ml syringe with 21g1 gauge needle, reagent: RNA lysate, volume: all, other: {'repeat': '8 times', 'purpose': 'shear RNA'})\n\n### AUTOMATED SECTION ###\napply(container='RNeasy mini column', reagent='RNA lysate', volume='700 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: close (container: tube, other: {'note': 'gently'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='RNeasy mini column', duration='15 sec', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n# MANUAL: repeat (other: {'steps': '16-18', 'until': 'entire sample has been applied to column'})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy Mini spin column', reagent='Buffer RW1', volume='700 \u03bcl')\ncentrifuge(container='RNeasy Mini spin column', duration='15 sec', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy spin column', reagent='Buffer RPE', volume='500 \u03bcl')\ncentrifuge(container='RNeasy spin column', duration='15 sec', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy spin column', reagent='Buffer RPE', volume='500 \u03bcl')\ncentrifuge(container='RNeasy spin column', duration='2 min', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: new 2.0 ml collection tube, reagent: column, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='column in 2.0 ml collection tube', duration='1 min', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: new 1.5 ml sterile tube, reagent: column, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='column in 1.5 ml sterile tube', reagent='RNase-free water', volume='35 \u03bcl', note='directly onto filter')\nincubate(container='tube', temperature='room temperature', duration='1 min')\ncentrifuge(container='tube', duration='1 min', speed='13000 rpm')\nadd(container='same column/tube', reagent='RNase-free water', volume='35 \u03bcl')\nincubate(container='tube', temperature='room temperature', duration='1 min')\ncentrifuge(container='tube', duration='1 min', speed='13000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: column, other: {})\n# MANUAL: place (container: tube with RNA, temperature: on ice, other: {})\n# MANUAL: quantify (container: Nanodrop, reagent: extracted RNA, volume: 2 \u03bcl, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='1.5 ml tube', reagent='extracted sample, RNase-free water, DNase reaction buffer, Turbo DNase', volume='50 \u03bcl extracted sample, 40 \u03bcl RNase-free water, 10 \u03bcl DNase reaction buffer, 3 \u03bcl Turbo DNase')\nincubate(container='1.5 ml tube', temperature='37\u00b0C', duration='20 min')\nadd(container='sample', reagent='Turbo DNase', volume='3 \u03bcl')\nincubate(container='sample', temperature='37\u00b0C', duration='20 min')\nadd(container='sample', reagent='inactivation solution', volume='20 \u03bcl', note='make sure solution is well mixed')\nvortex(container='sample', duration='~4 min (on and off)')\nspin(container='sample', duration='1 min', speed='13000 rpm')\nremove(container='new 1.5 ml tube', reagent='supernatant', volume='~100 \u03bcl', temperature='on ice', note='without disturbing inactivation reagent')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (container: Nanodrop, reagent: DNased RNA, volume: 2 \u03bcl, other: {})\n# MANUAL: clean (container: Zymo RNA Clean & Concentrator-5, reagent: DNased RNA, other: {'note': 'according to manufacturer protocol'})\n# MANUAL: store (container: tube with RNA, temperature: -80\u00b0C, other: {})",
+    "source_file": "protocol_489.txt"
+  }
+]

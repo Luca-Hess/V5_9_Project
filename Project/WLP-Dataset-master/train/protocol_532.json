@@ -1,0 +1,191 @@
+[
+  {
+    "protocol": "Ethanol Fixation Protocol\nPrepare 70% Ethanol and chill to -20\u00b0C(NOTE: Do not freeze ethanol for long-term storage).\nPrepare target cells of interest and wash 2X with PBS, centrifuging at 350xg for 5 minutes.\nDiscard supernatant and loosen the cell pellet by vortexing.\nAdd 3 ml cold 70% ethanol drop by drop to the cell pellet while vortexing.\nContinue vortexing for 30 seconds.\nIncubate at -20\u00b0C for 1 hour. \nWash 2X with BioLegend Cell Staining Buffer (Cat.#420201) and resuspend cells at 0.5-1.0 x 107 cells/ml.\nUse 100 \u03bcl cell suspension/staining tube.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "70% Ethanol",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "Do not freeze ethanol for long-term storage"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "target cells of interest",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "loosen cell pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "cold 70% ethanol",
+          "volume": "3 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "drop by drop",
+            "target": "cell pellet",
+            "while": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "BioLegend Cell Staining Buffer (Cat.#420201)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "0.5-1.0 x 10^7 cells/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": "staining tube",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 70% Ethanol, temperature: -20\u00b0C, other: {'note': 'Do not freeze ethanol for long-term storage'})\n# MANUAL: prepare (reagent: target cells of interest, other: {})\n\n### AUTOMATED SECTION ###\nwash(reagent='PBS', times='2X')\ncentrifuge(duration='5 minutes', speed='350xg')\ndiscard(reagent='supernatant')\nvortex(reagent='cell pellet', purpose='loosen cell pellet')\nadd(reagent='cold 70% ethanol', volume='3 ml', method='drop by drop', target='cell pellet', while='vortexing')\nvortex(duration='30 seconds')\nincubate(temperature='-20\u00b0C', duration='1 hour')\nwash(reagent='BioLegend Cell Staining Buffer (Cat.#420201)', times='2X')\nresuspend(reagent='cells', concentration='0.5-1.0 x 10^7 cells/ml')\nuse(container='staining tube', reagent='cell suspension', volume='100 \u03bcl')",
+    "source_file": "protocol_532.txt"
+  }
+]

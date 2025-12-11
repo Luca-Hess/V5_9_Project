@@ -1,0 +1,101 @@
+[
+  {
+    "protocol": "Electron Microscopy of Haloviruses\nA sample of virus is placed on a sterile surface and the grid, plastic-coated side down, placed on the droplet for 1.5\u20132 min.\nThe grid is then placed, for 1\u20131.5 min, on a drop of freshly filtered 2% w/v uranyl acetate and excess stain removed with filter paper.\nAfter air drying, grids may be examined by transmission electron microscopy, as described in guidelines (Fig. 3A, B, and C in guidelines).",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "sterile surface",
+          "reagent": "virus sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": null
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "grid (plastic-coated side down)",
+          "reagent": "virus sample droplet",
+          "volume": null,
+          "temperature": null,
+          "duration": "1.5\u20132 min",
+          "speed": null,
+          "other": {
+            "surface": "sterile surface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "grid",
+          "reagent": "freshly filtered 2% w/v uranyl acetate drop",
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20131.5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "grid",
+          "reagent": "excess stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "filter paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "grid",
+          "reagent": null,
+          "volume": null,
+          "temperature": "air",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "grid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "transmission electron microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: sterile surface, reagent: virus sample, other: {'orientation': None})\n# MANUAL: place (container: grid (plastic-coated side down), reagent: virus sample droplet, duration: 1.5\u20132 min, other: {'surface': 'sterile surface'})\n# MANUAL: place (container: grid, reagent: freshly filtered 2% w/v uranyl acetate drop, duration: 1\u20131.5 min)\n# MANUAL: remove (container: grid, reagent: excess stain, other: {'method': 'filter paper'})\n# MANUAL: dry (container: grid, temperature: air)\n# MANUAL: examine (container: grid, other: {'instrument': 'transmission electron microscope'})",
+    "source_file": "protocol_257.txt"
+  }
+]

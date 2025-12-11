@@ -1,0 +1,347 @@
+[
+  {
+    "protocol": "Gel DNA Recovery\nExcise up to 200 mg gel slice containing the DNA fragment using a clean scalpel or\u00a0razor blade.\nCut as close to the DNA as possible to minimize the gel volume.\nPlace\u00a0the gel slice into a 1.5 mL tube.\nAdd 200 \u00b5L of Extraction Buffer.\nMix thoroughly by pippeting.\nIncubate the gel mixture at 50-58\u00b0C for 10 minutes or until the gel slice is\u00a0completely dissolved.\nMix the tube by inversion every few minutes to facilitate the\u00a0melting process.\nEnsure that the gel is completely dissolved. \nAdd 200 \u00b5L of ethanol (96-100%) and mix by pipetting.\nTransfer the mixture to the DNA Purification Micro Column preassembled with a\u00a0collection tube.\nCentrifuge the column for 1 minute\u00a0at 14,000 \u00d7 g. \nDiscard the\u00a0flow-through.\nPlace the DNA Purification Micro Column back into the collection tube.\nAdd 200 \u00b5L of Prewash Buffer (supplemented with ethanol, see p. 3) to the DNA\u00a0Purification Micro Column and centrifuge for 1 minute\u00a0at\u00a014,000 \u00d7 g. \nDiscard the flow-through and place the purification column back into the\u00a0collection tube.\nAdd 700 \u00b5L of Wash Buffer (supplemented with ethanol, see p. 3) to the DNA\u00a0Purification Micro Column and centrifuge for 1 minute\u00a0at 14,000 \u00d7 g.\nDiscard\u00a0the flow-through and place the purification column back into the collection tube.\nRepeat step 7 Centrifuge the empty DNA Purification Micro Column for an additional\u00a01 minute at 14,000 \u00d7 g to completely remove residual Wash Buffer.\nTransfer the DNA Purification Micro Column into a clean 1.8 mL microcentrifugetube Add 10 \u00b5L of Elution Buffer to the DNA Purification Micro Column.\nCentrifuge for 1\u00a0minute at 14,000 \u00d7 g to elute DNA.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "gel slice containing DNA fragment",
+          "volume": "up to 200 mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "Extraction Buffer",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "gel mixture",
+          "volume": null,
+          "temperature": "50-58\u00b0C",
+          "duration": "10 minutes or until gel slice is completely dissolved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every few minutes during incubation",
+          "speed": null,
+          "other": {
+            "method": "inversion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "ethanol (96-100%)",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "DNA Purification Micro Column preassembled with collection tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA Purification Micro Column with collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000 \u00d7 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "collection tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": "Prewash Buffer (supplemented with ethanol)",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA Purification Micro Column with collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000 \u00d7 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "collection tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": "Wash Buffer (supplemented with ethanol)",
+          "volume": "700 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA Purification Micro Column with collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000 \u00d7 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "collection tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA Purification Micro Column (empty) with collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000 \u00d7 g",
+          "other": {
+            "purpose": "remove residual Wash Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean 1.8 mL microcentrifuge tube",
+          "reagent": "DNA Purification Micro Column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA Purification Micro Column",
+          "reagent": "Elution Buffer",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA Purification Micro Column in 1.8 mL microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000 \u00d7 g",
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nplace(container='1.5 mL tube', reagent='gel slice containing DNA fragment', volume='up to 200 mg')\nadd(container='1.5 mL tube', reagent='Extraction Buffer', volume='200 \u00b5L')\nmix(container='1.5 mL tube', method='pipetting')\nincubate(container='1.5 mL tube', reagent='gel mixture', temperature='50-58\u00b0C', duration='10 minutes or until gel slice is completely dissolved')\nmix(container='1.5 mL tube', duration='every few minutes during incubation', method='inversion')\nadd(container='1.5 mL tube', reagent='ethanol (96-100%)', volume='200 \u00b5L')\nmix(container='1.5 mL tube', method='pipetting')\ntransfer(container='DNA Purification Micro Column preassembled with collection tube', reagent='mixture')\ncentrifuge(container='DNA Purification Micro Column with collection tube', duration='1 minute', speed='14,000 \u00d7 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='DNA Purification Micro Column', into='collection tube')\nadd(container='DNA Purification Micro Column', reagent='Prewash Buffer (supplemented with ethanol)', volume='200 \u00b5L')\ncentrifuge(container='DNA Purification Micro Column with collection tube', duration='1 minute', speed='14,000 \u00d7 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='DNA Purification Micro Column', into='collection tube')\nadd(container='DNA Purification Micro Column', reagent='Wash Buffer (supplemented with ethanol)', volume='700 \u00b5L')\ncentrifuge(container='DNA Purification Micro Column with collection tube', duration='1 minute', speed='14,000 \u00d7 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='DNA Purification Micro Column', into='collection tube')\ncentrifuge(container='DNA Purification Micro Column (empty) with collection tube', duration='1 minute', speed='14,000 \u00d7 g', purpose='remove residual Wash Buffer')\ntransfer(container='clean 1.8 mL microcentrifuge tube', reagent='DNA Purification Micro Column')\nadd(container='DNA Purification Micro Column', reagent='Elution Buffer', volume='10 \u00b5L')\ncentrifuge(container='DNA Purification Micro Column in 1.8 mL microcentrifuge tube', duration='1 minute', speed='14,000 \u00d7 g', purpose='elute DNA')",
+    "source_file": "protocol_317.txt"
+  }
+]

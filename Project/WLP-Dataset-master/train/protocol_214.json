@@ -1,0 +1,115 @@
+[
+  {
+    "protocol": "Internal Genomic DNA Standard for Quantitative Metagenome Analysis\nSuspend genomic DNA in a volume of nuclease-free water to produce a stock concentration of 0.1 \u03bcg/\u03bcL.\nIncubate rehydrated DNA overnight at 4\u00b0C while rocking, and then incubate for 1\u00a0h at 65\u00b0C.\nPrepare working solution by adding 1 \u03bcL of the stock solution to 99\u00a0\u03bcL of nuclease-free water to produce a final concentration of 1\u00a0ng/\u03bcL.\nCheck the DNA concentration of stocks fluorometrically using Quant-iT\u2122 PicoGreen\u00ae dsDNA Assay Kit Genomic DNA can be stored at \u221220\u00a0\u00b0C.\nJust prior to sample DNA extraction, add enough standard DNA to each sample to reach ~0.1-1.0% of expected total reads.\nFollowing sequencing, quantify the number of genomic standard reads (steps 8 and 9).\nUsing a bit score cutoff of 50, identify standard reads by BLASTn homology search aganst the internal standard genome.\nUsing the results from step 8 and a bit score cutoff of 40, perform a BLASTx against the RefSeq Protein database to identify all protein encoding reads derived from the internal standard genome.\nQuantify recovered standard DNA reads and remove from dataset.\nCalculate the number of molecules of internal standard recovered from sequencing: Sr=SS/SPSr\u00a0= number of molecules of internal standard genome recovered from sequencingSS\u00a0= number of protein encoding internal standard reads in the sequence librarySP\u00a0= number of protein encoding genes in the internal standard reference genome. \nCalculate the community gene pool size: Pg=Ps*(Sa/Sr)Pg\u00a0=\u00a0total number of protein encoding genes in the samplePs\u00a0= number of protein encoding sequences in the metagenome librarySa\u00a0= number of molecules of internal standard genome added to the sampleSr\u00a0= number of molecules of internal standard genome recovered from sequencing. \nCalculate individual gene abundances for genes of interest: Ga=Gs*(Pg/Ps)Ga\u00a0= number of molecules of any particular gene category in the sample.\nThis can then be divided by the mass or volume of sample collected to calculate the gene abundance per volume or weightGs = number of genes of interest in the sequence libraryPg\u00a0=\u00a0total number of protein encoding genes in the samplePs\u00a0= number of protein encoding sequences in the metagenome library",
+    "actions": [
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": null,
+          "reagent": "genomic DNA",
+          "volume": "to produce a stock concentration of 0.1 \u03bcg/\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "nuclease-free water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "rehydrated DNA",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": "rocking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "rehydrated DNA",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "1 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "working solution",
+          "volume": "1 \u03bcL stock solution + 99 \u03bcL nuclease-free water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "1 ng/\u03bcL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA stocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "fluorometrically using Quant-iT\u2122 PicoGreen\u00ae dsDNA Assay Kit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "genomic DNA",
+          "volume": null,
+          "temperature": "\u221220\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "standard DNA",
+          "volume": "enough to reach ~0.1-1.0% of expected total reads",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "just prior to sample DNA extraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsuspend(reagent='genomic DNA', volume='to produce a stock concentration of 0.1 \u03bcg/\u03bcL', solvent='nuclease-free water')\nincubate(reagent='rehydrated DNA', temperature='4\u00b0C', duration='overnight', speed='rocking')\nincubate(reagent='rehydrated DNA', temperature='65\u00b0C', duration='1 h')\nprepare(reagent='working solution', volume='1 \u03bcL stock solution + 99 \u03bcL nuclease-free water', final concentration='1 ng/\u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: DNA stocks, other: {'method': 'fluorometrically using Quant-iT\u2122 PicoGreen\u00ae dsDNA Assay Kit'})\n# MANUAL: store (reagent: genomic DNA, temperature: \u221220\u00b0C, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='sample', reagent='standard DNA', volume='enough to reach ~0.1-1.0% of expected total reads', timing='just prior to sample DNA extraction')",
+    "source_file": "protocol_214.txt"
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "protocol": "Gibson Assembly\u00ae Protocol (E5510)\nIncubate samples in a thermocycler at 50\u00b0C for 15 minutes when 2 or 3 fragments are being assembled or 60 minutes when 4-6 fragments are being assembled.\nStore samples on ice or at \u201320\u00b0C for subsequent transformation.\nTransform NEB 5-alpha Competent E. coli cells (provided with the kit) with 2 \u03bcl of the assembly reaction, following the transformation protocol.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "15 minutes (2 or 3 fragments) or 60 minutes (4-6 fragments)",
+          "speed": null,
+          "other": {
+            "equipment": "thermocycler",
+            "fragment_count": "2-3 fragments: 15 min; 4-6 fragments: 60 min"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice or at \u201320\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "subsequent transformation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": "NEB 5-alpha Competent E. coli cells",
+          "reagent": "assembly reaction",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "transformation protocol",
+            "cells_provided": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='samples', temperature='50\u00b0C', duration='15 minutes (2 or 3 fragments) or 60 minutes (4-6 fragments)', equipment='thermocycler', fragment_count='2-3 fragments: 15 min; 4-6 fragments: 60 min')\nstore(container='samples', temperature='on ice or at \u201320\u00b0C', purpose='subsequent transformation')\n\n### MANUAL SECTION ###\n# MANUAL: transform (container: NEB 5-alpha Competent E. coli cells, reagent: assembly reaction, volume: 2 \u03bcl, other: {'protocol': 'transformation protocol', 'cells_provided': True})",
+    "source_file": "protocol_306.txt"
+  }
+]

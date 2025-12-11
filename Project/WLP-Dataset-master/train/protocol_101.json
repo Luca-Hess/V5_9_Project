@@ -1,0 +1,339 @@
+[
+  {
+    "protocol": "Building an HPC blast pipeline\nLogin to the hpc (at the University of Arizona) with\u00a0your\u00a0user name Create a directory for the pipeline Go to the hpc-blast directory and create sub directories to hold std-err, std-out, data, blastdb, blast-results and scripts.\nGo to the blastdb directory and create the blast database.\nCopy the input files over from iPlant.\nWe will be using the day/night transcriptomes we discussed last week.\nYou will use two of the\u00a0Perl scripts from the homework\u00a0in the hpc pipeline.\nPut these into the scripts directory.\nconfig.sh: Now we need to create the config.sh script.\nThis script will contain all of the environmental variables that the user will be able to modify for running blast.\nThe idea of this script is to give the user one place to make any changes they need to run their particular blast job.\nThe user should not have to go in and change any of the scripts in the 'scripts' directory.\nInstead, we will capture all of these variable here.\n* note the the config.sh script is in the hpc-blast directory (in the first part of the pipeline), where it is easy for the user to modify it.\nblast-pipeline.sh:Now we will create the \"driver script\", the script that is used to run each part of the pipeline.\nrun-fasta-splitter.sh.\nCreate a shell script that runs the fasta splitter perl code.\nrun-blast.sh: Create a shell script that runs blast on a compute node.\nrun-parse-blast.sh:Create a shell script to parse the blast output that runs on a compute node on the cluster.\n04-blast-search.pl: modify the blast search script.Update the e-value to be less stringent.Modify the Perl script 04-blast-search.pl\u00a0to include additional information about the hit.\nMake all of the scripts executable and then run the pipeline.If you don't get any errors, the pipeline will take <1 day to run.\nCheck to see if the pipeline is running Once the pipeline is finished running (and you don't see the jobs listed under qstat), check for std-errors and std-out.Note you can check while the pipeline is running too.\nNow you try.See if you can update the pipeline to add one final step that puts all of the parsed blast output into a single file for each of the original fasta files.Note that you can comment out the parts of the blast-pipeline.sh that you have already run in the steps above, to test your code.\nOtherwise, these will run again.Also, before you run this final step, make sure the blast parsing is complete.Can this run on the head node, or should we run this on a compute node?The complete pipeline can be found in github here.\nCommit your code to your own github abe487 repository using the directory:hpc-blast",
+    "actions": [
+      {
+        "action": "login",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "system": "hpc (University of Arizona)",
+            "user_name": "user's own"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "directory",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "name": "pipeline"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "sub directories",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parent_directory": "hpc-blast",
+            "names": [
+              "std-err",
+              "std-out",
+              "data",
+              "blastdb",
+              "blast-results",
+              "scripts"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "blast database",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "directory": "blastdb"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "copy",
+        "parameters": {
+          "container": "input files",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "iPlant",
+            "destination": null
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "scripts directory",
+          "reagent": "Perl scripts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "scripts": "from homework"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "config.sh script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "directory": "hpc-blast"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "blast-pipeline.sh script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "driver script"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "run-fasta-splitter.sh script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "run fasta splitter perl code"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "run-blast.sh script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "run blast on compute node"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "run-parse-blast.sh script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "parse blast output on compute node"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "modify",
+        "parameters": {
+          "container": "04-blast-search.pl script",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "modifications": [
+              "update e-value to be less stringent",
+              "include additional information about hit"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "make_executable",
+        "parameters": {
+          "container": "all scripts",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "pipeline",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "<1 day",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "pipeline",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "status": "running"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "std-errors and std-out",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "when": "pipeline finished running"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "update",
+        "parameters": {
+          "container": "pipeline",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "add final step to put all parsed blast output into single file for each original fasta file"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "comment_out",
+        "parameters": {
+          "container": "blast-pipeline.sh",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "parts": "already run steps"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "final step",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "precondition": "blast parsing is complete"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "commit",
+        "parameters": {
+          "container": "code",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repository": "github abe487",
+            "directory": "hpc-blast"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: login (other: {'system': 'hpc (University of Arizona)', 'user_name': \"user's own\"})\n# MANUAL: create (container: directory, other: {'name': 'pipeline'})\n# MANUAL: create (container: sub directories, other: {'parent_directory': 'hpc-blast', 'names': ['std-err', 'std-out', 'data', 'blastdb', 'blast-results', 'scripts']})\n# MANUAL: create (container: blast database, other: {'directory': 'blastdb'})\n# MANUAL: copy (container: input files, other: {'source': 'iPlant', 'destination': None})\n# MANUAL: put (container: scripts directory, reagent: Perl scripts, other: {'scripts': 'from homework'})\n# MANUAL: create (container: config.sh script, other: {'directory': 'hpc-blast'})\n# MANUAL: create (container: blast-pipeline.sh script, other: {'purpose': 'driver script'})\n# MANUAL: create (container: run-fasta-splitter.sh script, other: {'purpose': 'run fasta splitter perl code'})\n# MANUAL: create (container: run-blast.sh script, other: {'purpose': 'run blast on compute node'})\n# MANUAL: create (container: run-parse-blast.sh script, other: {'purpose': 'parse blast output on compute node'})\n# MANUAL: modify (container: 04-blast-search.pl script, other: {'modifications': ['update e-value to be less stringent', 'include additional information about hit']})\n# MANUAL: make_executable (container: all scripts)\n# MANUAL: run (container: pipeline, duration: <1 day)\n# MANUAL: check (container: pipeline, other: {'status': 'running'})\n# MANUAL: check (container: std-errors and std-out, other: {'when': 'pipeline finished running'})\n# MANUAL: update (container: pipeline, other: {'step': 'add final step to put all parsed blast output into single file for each original fasta file'})\n# MANUAL: comment_out (container: blast-pipeline.sh, other: {'parts': 'already run steps'})\n# MANUAL: run (container: final step, other: {'precondition': 'blast parsing is complete'})\n# MANUAL: commit (container: code, other: {'repository': 'github abe487', 'directory': 'hpc-blast'})",
+    "source_file": "protocol_101.txt"
+  }
+]

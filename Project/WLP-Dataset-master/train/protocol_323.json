@@ -1,0 +1,763 @@
+[
+  {
+    "protocol": "SPOT\u00a0DNA\u00a0Extraction\u00a0from\u00a0142mm Durapore\u00a00.22\u00b5m Filters\nPrepare a boiling water bath; this MUST be a rolling boil.\nPlace 50ml falcon tube with 142mm filter on dry ice.\nUsing the bottom of an untouched STERILE 15ml polypropylene falcon tube as a pestle, vigorously crush the 142mm filter while in the 50ml falcon until it has been pulverized and the filter material is BELOW the 10ml line.\nAdd 9mls of 1X STE directly to the crushed filter pieces.\nVortex for 10 seconds.\nAdd 1ml of 10% SDS drop\u2010wise while swirling.\nSpin briefly in Eppendorf 5810R centrifuge at 15\u201025\u00baC by spinning up to 4000 rpm (3220xg) and immediately stopping.\nPlace in rolling, boiling water bath for 2 minutes.\nSpin at 4000 rpm (Eppendorf 5810R) for 10 minutes at 15\u00baC to separate filter and debris.\nAdd 3mls of 10.5M NH4OAC to an Oak Ridge tube for each filter.\nPour supernatant (only) from 50ml falcon tube into Oak Ridge tube (38ml capacity).\nUse 1ml pipette to transfer any remaining supernatant to Oak Ridge tube: ~0.5\u20101ml.\nRemove any large filter pieces using STERILE 1ml serological pipette to reach the bottom and drag the filter pieces up the sides.\nAdd 28mls of 200 proof (100%) EtOH (molecular grade).\nInvert to mix thoroughly.\nStore at \u201020\u00b0C overnight.\nPellet DNA in Sorvall RC5\u2010B at 4\u00baC using the HB\u20104 rotor by spinning at max speed of 13,000RPM (27,900xg) for at least 2 hours.\nGently pour out supernatant and dry pellet upside\u2010down in fume hood for at least 2 hours.\nResuspend in 500ul 1X TE (pH 8.0) for 2 hours at 37\u00baC.\nTransfer to 2ml non\u2010LoBind tube.\nAdd 500\u00b5l phenol.\nMix 5 times by gentle inversion.\nSpin 2 min at 12000 rpm (13,000xg) to separate organic and inorganic phases (Beckman, beige). \nRemove and discard bottom (phenol) layer.\nLEAVE\u00a0INTERFACE.\nAdd 300\u00b5l phenol and 300\u00b5l SEVAG (CHCl3:IsoamylOH 24:1 v/v) to aqueous phase.\nMix by gentle inversion 5 times.\nSpin 2 min at 12000 rpm (13,000xg).\nRemove and discard bottom layer.\nLEAVE INTERFACE.\nAdd 500\u00b5l SEVAG (CHCl3:IsoamylOH 24:1 v/v).\nMix by gentle inversion.\nSpin 2 min at 12000 rpm (13,000xg).\nRemove TOP layer (YOUR DNA) and transfer to new 2ml non\u2010LoBind tube.\nLEAVE\u00a0INTERFACE\u00a0BEHIND.\nThis\u00a0top\u00a0layer\u00a0is\u00a0your\u00a0DNA!!!\nAdd 125\u00b5l 10.5M NH4OAC.\nMix by inversion 5\u201010 times.\n* Add 1375 \u00b5l ice\u2010cold 100% EtOH (200 proof, molecular grade).\n* Mix by inversion 5\u201010 times.\nPrecipitate overnight at \u201020\u00baC.\nSpin at max speed (approximately 13,750RPM, 12,535xg) in Beckman Microfuge E with horizontal rotor at 4\u00baC (cold room) for 30 minutes to pellet most DNA in the center/bottom of tube.\nTo pellet the rest of the DNA, spin the same tube for at least 90 minutes at 14,000 rpm (20,800xg) at 4\u00baC (Eppendorf 5810R) .\nGently pour off supernatant.\nDry pellet for at least 2 hrs by leaving open and upside\u2010down.\nResuspend 5m and CMAX samples in 50\u00b5l of 1X TE and 150m, 500m, and 890m samples in 30ul 1X TE for 2 hours at 37\u00baC.\nTransfer all re\u2010suspended extract to 1.5ml Eppendorf LoBind DNA tube.\nAliquot 10\u00b5l of extract to an additional 1.5ml Eppendorf LoBind DNA tube for archiving.\nAfter re\u2010suspension, immediately quantify using PICO Green (Invitrogen).\nPrepare 2ng/\u00b5l dilution for a working stock using no more than 1\u00b5l of extract.\nStore dilution, extract, and archive at \u201080\u00baC",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "boiling water bath",
+          "volume": null,
+          "temperature": "rolling boil",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "50ml falcon tube with 142mm filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "dry ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "crush",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": "142mm filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "tool": "bottom of sterile 15ml polypropylene falcon tube as pestle",
+            "until": "filter material is below 10ml line"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": "1X STE",
+          "volume": "9ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "crushed filter pieces"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": "10% SDS",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "drop-wise",
+          "other": {
+            "while": "swirling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "15-25\u00baC",
+          "duration": "briefly",
+          "speed": "up to 4000 rpm (3220xg)",
+          "other": {
+            "instrument": "Eppendorf 5810R",
+            "immediately_stop": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "rolling, boiling water bath",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "15\u00baC",
+          "duration": "10 minutes",
+          "speed": "4000 rpm (3220xg)",
+          "other": {
+            "instrument": "Eppendorf 5810R"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "10.5M NH4OAC",
+          "volume": "3ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for_each": "filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "50ml falcon tube",
+            "to": "Oak Ridge tube (38ml capacity)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "remaining supernatant",
+          "volume": "~0.5-1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "1ml pipette",
+            "from": "50ml falcon tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "large filter pieces",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "STERILE 1ml serological pipette",
+            "method": "reach bottom and drag up sides"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "200 proof (100%) EtOH (molecular grade)",
+          "volume": "28ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "invert to mix thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "at least 2 hours",
+          "speed": "max speed 13,000RPM (27,900xg)",
+          "other": {
+            "instrument": "Sorvall RC5-B",
+            "rotor": "HB-4"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "to": "discard",
+            "method": "dry pellet upside-down in fume hood for at least 2 hours"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "at least 2 hours",
+          "speed": null,
+          "other": {
+            "method": "upside-down in fume hood"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "Oak Ridge tube",
+          "reagent": "1X TE (pH 8.0)",
+          "volume": "500ul",
+          "temperature": null,
+          "duration": "2 hours",
+          "speed": null,
+          "other": {
+            "at": "37\u00baC"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "resuspended DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "phenol",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle inversion",
+          "other": {
+            "times": "5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "12000 rpm (13,000xg)",
+          "other": {
+            "instrument": "Beckman, beige"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "bottom (phenol) layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "phenol",
+          "volume": "300\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "SEVAG (CHCl3:IsoamylOH 24:1 v/v)",
+          "volume": "300\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "aqueous phase"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle inversion",
+          "other": {
+            "times": "5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "12000 rpm (13,000xg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "bottom layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "SEVAG (CHCl3:IsoamylOH 24:1 v/v)",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "12000 rpm (13,000xg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "TOP layer (YOUR DNA)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new 2ml non-LoBind tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "10.5M NH4OAC",
+          "volume": "125\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "inversion",
+          "other": {
+            "times": "5-10"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "ice-cold 100% EtOH (200 proof, molecular grade)",
+          "volume": "1375\u00b5l",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "inversion",
+          "other": {
+            "times": "5-10"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC (cold room)",
+          "duration": "30 minutes",
+          "speed": "max speed (approx. 13,750RPM, 12,535xg)",
+          "other": {
+            "instrument": "Beckman Microfuge E",
+            "rotor": "horizontal"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "at least 90 minutes",
+          "speed": "14,000 rpm (20,800xg)",
+          "other": {
+            "instrument": "Eppendorf 5810R"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "to": "discard"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "at least 2 hrs",
+          "speed": null,
+          "other": {
+            "method": "leave open and upside-down"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "2ml non-LoBind tube",
+          "reagent": "1X TE",
+          "volume": "50\u00b5l (for 5m and CMAX samples), 30\u00b5l (for 150m, 500m, 890m samples)",
+          "temperature": null,
+          "duration": "2 hours",
+          "speed": null,
+          "other": {
+            "at": "37\u00baC"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5ml Eppendorf LoBind DNA tube",
+          "reagent": "all re-suspended extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "1.5ml Eppendorf LoBind DNA tube",
+          "reagent": "extract",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "additional tube for archiving"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "PICO Green (Invitrogen)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after": "re-suspension"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "2ng/\u00b5l dilution for working stock",
+          "volume": "no more than 1\u00b5l extract",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "dilution, extract, archive",
+          "volume": null,
+          "temperature": "-80\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: boiling water bath, temperature: rolling boil, other: {})\n# MANUAL: place (container: 50ml falcon tube with 142mm filter, temperature: dry ice, other: {})\n# MANUAL: crush (container: 50ml falcon tube, reagent: 142mm filter, speed: vigorously, other: {'tool': 'bottom of sterile 15ml polypropylene falcon tube as pestle', 'until': 'filter material is below 10ml line'})\n\n### AUTOMATED SECTION ###\nadd(container='50ml falcon tube', reagent='1X STE', volume='9ml', to='crushed filter pieces')\nvortex(container='50ml falcon tube', duration='10 seconds')\nadd(container='50ml falcon tube', reagent='10% SDS', volume='1ml', speed='drop-wise', while='swirling')\ncentrifuge(container='50ml falcon tube', temperature='15-25\u00baC', duration='briefly', speed='up to 4000 rpm (3220xg)', instrument='Eppendorf 5810R', immediately_stop=True)\nincubate(container='50ml falcon tube', temperature='rolling, boiling water bath', duration='2 minutes')\ncentrifuge(container='50ml falcon tube', temperature='15\u00baC', duration='10 minutes', speed='4000 rpm (3220xg)', instrument='Eppendorf 5810R')\nadd(container='Oak Ridge tube', reagent='10.5M NH4OAC', volume='3ml', for_each='filter')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: Oak Ridge tube, reagent: supernatant, other: {'from': '50ml falcon tube', 'to': 'Oak Ridge tube (38ml capacity)'})\n\n### AUTOMATED SECTION ###\ntransfer(container='Oak Ridge tube', reagent='remaining supernatant', volume='~0.5-1ml', tool='1ml pipette', from='50ml falcon tube')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Oak Ridge tube, reagent: large filter pieces, other: {'tool': 'STERILE 1ml serological pipette', 'method': 'reach bottom and drag up sides'})\n\n### AUTOMATED SECTION ###\nadd(container='Oak Ridge tube', reagent='200 proof (100%) EtOH (molecular grade)', volume='28ml')\nmix(container='Oak Ridge tube', speed='invert to mix thoroughly')\nstore(container='Oak Ridge tube', temperature='-20\u00b0C', duration='overnight')\ncentrifuge(container='Oak Ridge tube', temperature='4\u00baC', duration='at least 2 hours', speed='max speed 13,000RPM (27,900xg)', instrument='Sorvall RC5-B', rotor='HB-4')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: Oak Ridge tube, reagent: supernatant, speed: gently, other: {'to': 'discard', 'method': 'dry pellet upside-down in fume hood for at least 2 hours'})\n# MANUAL: dry (container: Oak Ridge tube, reagent: pellet, duration: at least 2 hours, other: {'method': 'upside-down in fume hood'})\n\n### AUTOMATED SECTION ###\nresuspend(container='Oak Ridge tube', reagent='1X TE (pH 8.0)', volume='500ul', duration='2 hours', at='37\u00baC')\ntransfer(container='2ml non-LoBind tube', reagent='resuspended DNA')\nadd(container='2ml non-LoBind tube', reagent='phenol', volume='500\u00b5l')\nmix(container='2ml non-LoBind tube', speed='gentle inversion', times='5')\ncentrifuge(container='2ml non-LoBind tube', duration='2 min', speed='12000 rpm (13,000xg)', instrument='Beckman, beige')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 2ml non-LoBind tube, reagent: bottom (phenol) layer, other: {'discard': True})\n\n### AUTOMATED SECTION ###\nadd(container='2ml non-LoBind tube', reagent='phenol', volume='300\u00b5l')\nadd(container='2ml non-LoBind tube', reagent='SEVAG (CHCl3:IsoamylOH 24:1 v/v)', volume='300\u00b5l', to='aqueous phase')\nmix(container='2ml non-LoBind tube', speed='gentle inversion', times='5')\ncentrifuge(container='2ml non-LoBind tube', duration='2 min', speed='12000 rpm (13,000xg)')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 2ml non-LoBind tube, reagent: bottom layer, other: {'discard': True})\n\n### AUTOMATED SECTION ###\nadd(container='2ml non-LoBind tube', reagent='SEVAG (CHCl3:IsoamylOH 24:1 v/v)', volume='500\u00b5l')\nmix(container='2ml non-LoBind tube', speed='gentle inversion')\ncentrifuge(container='2ml non-LoBind tube', duration='2 min', speed='12000 rpm (13,000xg)')\nremove(container='2ml non-LoBind tube', reagent='TOP layer (YOUR DNA)', transfer_to='new 2ml non-LoBind tube')\nadd(container='2ml non-LoBind tube', reagent='10.5M NH4OAC', volume='125\u00b5l')\nmix(container='2ml non-LoBind tube', speed='inversion', times='5-10')\nadd(container='2ml non-LoBind tube', reagent='ice-cold 100% EtOH (200 proof, molecular grade)', volume='1375\u00b5l', temperature='ice-cold')\nmix(container='2ml non-LoBind tube', speed='inversion', times='5-10')\nstore(container='2ml non-LoBind tube', temperature='-20\u00baC', duration='overnight', purpose='precipitate')\ncentrifuge(container='2ml non-LoBind tube', temperature='4\u00baC (cold room)', duration='30 minutes', speed='max speed (approx. 13,750RPM, 12,535xg)', instrument='Beckman Microfuge E', rotor='horizontal')\ncentrifuge(container='2ml non-LoBind tube', temperature='4\u00baC', duration='at least 90 minutes', speed='14,000 rpm (20,800xg)', instrument='Eppendorf 5810R')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: 2ml non-LoBind tube, reagent: supernatant, speed: gently, other: {'to': 'discard'})\n# MANUAL: dry (container: 2ml non-LoBind tube, reagent: pellet, duration: at least 2 hrs, other: {'method': 'leave open and upside-down'})\n\n### AUTOMATED SECTION ###\nresuspend(container='2ml non-LoBind tube', reagent='1X TE', volume='50\u00b5l (for 5m and CMAX samples), 30\u00b5l (for 150m, 500m, 890m samples)', duration='2 hours', at='37\u00baC')\ntransfer(container='1.5ml Eppendorf LoBind DNA tube', reagent='all re-suspended extract')\naliquot(container='1.5ml Eppendorf LoBind DNA tube', reagent='extract', volume='10\u00b5l', to='additional tube for archiving')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (reagent: PICO Green (Invitrogen), other: {'after': 're-suspension'})\n# MANUAL: prepare (reagent: 2ng/\u00b5l dilution for working stock, volume: no more than 1\u00b5l extract, other: {})\n\n### AUTOMATED SECTION ###\nstore(reagent='dilution, extract, archive', temperature='-80\u00baC')",
+    "source_file": "protocol_323.txt"
+  }
+]

@@ -1,0 +1,703 @@
+[
+  {
+    "protocol": "Isolation Of Total DNA From NC64A Chlorella\nInoculate 500 mL flasks with NC64A chlorella, each flask to contain 360 mL of cells at 1.2 X 106 cells/mL in MBBM.\nIncubate the flasks at 25\u00b0C for 72 hours, with continuous light and shaking.\nCount the cells.\nConcentrate aliquots of NC64A chlorella, each aliquot to contain 6.0 X 109 cells.\nIf the cells are to be infected with virus, infection should be at an moi (multiplicity of infection) of 3-5.\nCentrifuge the samples in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4\u00b0C to harvest the cells.\nWash the cells 1X with sterile d-H2O in the Sorvall HB-4 rotor at 5,000 rpm, 5 min, 4\u00b0C.\nQuick freeze the cells pellets with liquid N2 and store the frozen pellets at -80\u00b0C until ready for processing.\nResuspend each frozen sample with 5.0 mL of 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.\nHeat the samples at 65\u00b0C for 30 min (leave in the MSK flasks during the heating).\nBreak the samples a second time in the MSK for 30 sec with CO2 cooling.\nRecover the homogenates to clean tubes (SS34 plastic tubes).\nRemove a 0.3 mL aliquot from each sample to microfuge tubes for determination of the \t\t\toriginal DNA concentration for each sample (use the fluorometric procedure).\nTreat each sample with 500 \u00b5L of proteinase K for 60 min at 37\u00b0C (add 200 \u00b5L/sample).\nHeat the samples at 65\u00b0C for 5 min.\nAdd 20% SDS to each sample to a final concentration of 1% (add 500 \u00b5L/sample).\nAdd 2.7 mL of 5 M KOAc to each sample, mix well (a final concentration of 1 M).\nIncubate the samples in the cold room for 30 min.\nTreat the samples with RNAse at 200 \u00b5g/mL for 2 hours at 37\u00b0C (add 200 \u00b5L/sample).\nPrecipitate the DNAs in the samples by adding 2X volumes of 100% EtOH (approximately 30 mL/sample).\nCentrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 15 min, 4\u00b0C.\nResuspend each DNA sample with 3.5 mL of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.\nDialyze the samples overnight at 4\u00b0C against several changes of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.\nAdd 375 \u00b5L of 3 M NaOAc to each sample.\nCentrifuge the samples in the Sorvall SS34 rotor at 10,000 rpm, 20 min, 4\u00b0C.\nWash the DNA pellets 1X with 10 mL of 70% EtOH in the Sorvall SS34 rotor at 10,000 rpm, 5 min, 4\u00b0C.\nDry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.\nDetermine the DNA concentration of the samples using the fluorometric procedure.\nRun CsCl gradients.\nCentrifuge the required volume of cells for each aliquot in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4\u00b0C.\nResuspend each aliquot with 160 mL of fresh MBBM.\nIncubate the flasks for 45-60 min at 25\u00b0C for the cells to acclimate to the new media.\nIncubate the flasks for the desired length of time at 25\u00b0C with continuous light and shaking.\nDiscard the supernatants.\nBreak the cells in the MSK mechanical homogenizer with 5.0 gm of 0.3 mm glass beads for 60 sec, with CO2 cooling.\nWash the glass beads with 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.\nAdd the washes to the homogenates.\nCentrifuge the sample in the Sorvall SS34 rotor at 14,000 rpm, 20 min, 4\u00b0C.\nDecant the supernatants to clean tubes.\nStore at -20\u00b0C for 2-3 hours.\nDiscard the supernatants.\nPrecipitate the DNAs by adding an equal volume of isopropanol to each tube.\nMix well and hold at room temperature for 30 min.\nDiscard the supernatants.\nResuspend the pellets with 2.0 mL of 1X TE buffer.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "500 mL flasks",
+          "reagent": "NC64A chlorella in MBBM",
+          "volume": "360 mL per flask",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_concentration": "1.2 x 10^6 cells/mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "72 hours",
+          "speed": "continuous shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": null,
+          "reagent": "NC64A chlorella aliquots",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count_per_aliquot": "6.0 x 10^9 cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "sterile d-H2O",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall HB-4",
+            "times": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "cell pellets",
+          "reagent": "liquid N2",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "frozen pellets",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until ready for processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "frozen sample",
+          "reagent": "50 mM NaHPO4, pH 7.4, 2.0 M NaCl",
+          "volume": "5.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "samples (in MSK flasks)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "break",
+        "parameters": {
+          "container": "samples (in MSK)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {
+            "cooling": "CO2"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "homogenates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean SS34 plastic tubes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": "0.3 mL aliquot",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "microfuge tubes",
+            "purpose": "DNA concentration determination"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": "samples",
+          "reagent": "proteinase K",
+          "volume": "500 \u00b5L (add 200 \u00b5L/sample)",
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "20% SDS",
+          "volume": "500 \u00b5L/sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "5 M KOAc",
+          "volume": "2.7 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1 M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": "samples",
+          "reagent": "RNAse",
+          "volume": "200 \u00b5L/sample",
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {
+            "concentration": "200 \u00b5g/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "samples",
+          "reagent": "100% EtOH",
+          "volume": "2X sample volume (~30 mL/sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall HB-4"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "DNA sample",
+          "reagent": "50 mM Tris-HCl, pH 8.0, 10 mM EDTA",
+          "volume": "3.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "samples",
+          "reagent": "50 mM Tris-HCl, pH 8.0, 10 mM EDTA",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "buffer_changes": "several"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "samples",
+          "reagent": "3 M NaOAc",
+          "volume": "375 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "DNA pellets",
+          "reagent": "70% EtOH",
+          "volume": "10 mL",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34",
+            "times": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "pellets",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "method": "vacuum desiccator"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "fluorometric procedure",
+            "analyte": "DNA concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "CsCl gradients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "required volume of cells for each aliquot",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "aliquot",
+          "reagent": "fresh MBBM",
+          "volume": "160 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "45-60 min",
+          "speed": null,
+          "other": {
+            "purpose": "cells to acclimate to new media"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "desired length of time",
+          "speed": "continuous shaking",
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "break",
+        "parameters": {
+          "container": "cells (in MSK mechanical homogenizer)",
+          "reagent": "0.3 mm glass beads",
+          "volume": "5.0 gm beads",
+          "temperature": null,
+          "duration": "60 sec",
+          "speed": null,
+          "other": {
+            "cooling": "CO2"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "glass beads",
+          "reagent": "50 mM NaHPO4, pH 7.4, 2.0 M NaCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "homogenates",
+          "reagent": "washes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "14,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean tubes"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "2-3 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "DNAs",
+          "reagent": "isopropanol",
+          "volume": "equal volume to each tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellets",
+          "reagent": "1X TE buffer",
+          "volume": "2.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 500 mL flasks, reagent: NC64A chlorella in MBBM, volume: 360 mL per flask, other: {'cell_concentration': '1.2 x 10^6 cells/mL'})\n\n### AUTOMATED SECTION ###\nincubate(container='flasks', temperature='25\u00b0C', duration='72 hours', speed='continuous shaking', light='continuous')\n\n### MANUAL SECTION ###\n# MANUAL: count (reagent: cells, other: {})\n# MANUAL: concentrate (reagent: NC64A chlorella aliquots, other: {'cell_count_per_aliquot': '6.0 x 10^9 cells'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='samples', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall GSA')\nwash(container='cells', reagent='sterile d-H2O', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall HB-4', times='1X')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: cell pellets, reagent: liquid N2, other: {})\n# MANUAL: store (container: frozen pellets, temperature: -80\u00b0C, duration: until ready for processing, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='frozen sample', reagent='50 mM NaHPO4, pH 7.4, 2.0 M NaCl', volume='5.0 mL')\nheat(container='samples (in MSK flasks)', temperature='65\u00b0C', duration='30 min')\n\n### MANUAL SECTION ###\n# MANUAL: break (container: samples (in MSK), duration: 30 sec, other: {'cooling': 'CO2'})\n# MANUAL: recover (container: homogenates, other: {'destination': 'clean SS34 plastic tubes'})\n\n### AUTOMATED SECTION ###\nremove(container='samples', volume='0.3 mL aliquot', destination='microfuge tubes', purpose='DNA concentration determination')\ntreat(container='samples', reagent='proteinase K', volume='500 \u00b5L (add 200 \u00b5L/sample)', temperature='37\u00b0C', duration='60 min')\nheat(container='samples', temperature='65\u00b0C', duration='5 min')\nadd(container='samples', reagent='20% SDS', volume='500 \u00b5L/sample', final_concentration='1%')\nadd(container='samples', reagent='5 M KOAc', volume='2.7 mL', final_concentration='1 M')\nmix(container='samples')\nincubate(container='samples', temperature='cold room', duration='30 min')\ntreat(container='samples', reagent='RNAse', volume='200 \u00b5L/sample', temperature='37\u00b0C', duration='2 hours', concentration='200 \u00b5g/mL')\nprecipitate(container='samples', reagent='100% EtOH', volume='2X sample volume (~30 mL/sample)')\ncentrifuge(container='tubes', temperature='4\u00b0C', duration='15 min', speed='10,000 rpm', rotor='Sorvall HB-4')\nresuspend(container='DNA sample', reagent='50 mM Tris-HCl, pH 8.0, 10 mM EDTA', volume='3.5 mL')\n\n### MANUAL SECTION ###\n# MANUAL: dialyze (container: samples, reagent: 50 mM Tris-HCl, pH 8.0, 10 mM EDTA, temperature: 4\u00b0C, duration: overnight, other: {'buffer_changes': 'several'})\n\n### AUTOMATED SECTION ###\nadd(container='samples', reagent='3 M NaOAc', volume='375 \u00b5L')\ncentrifuge(container='samples', temperature='4\u00b0C', duration='20 min', speed='10,000 rpm', rotor='Sorvall SS34')\nwash(container='DNA pellets', reagent='70% EtOH', volume='10 mL', temperature='4\u00b0C', duration='5 min', speed='10,000 rpm', rotor='Sorvall SS34', times='1X')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: pellets, duration: 10-15 min, other: {'method': 'vacuum desiccator'})\n# MANUAL: determine (container: samples, other: {'method': 'fluorometric procedure', 'analyte': 'DNA concentration'})\n# MANUAL: run (reagent: CsCl gradients, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='required volume of cells for each aliquot', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall GSA')\nresuspend(container='aliquot', reagent='fresh MBBM', volume='160 mL')\nincubate(container='flasks', temperature='25\u00b0C', duration='45-60 min', purpose='cells to acclimate to new media')\nincubate(container='flasks', temperature='25\u00b0C', duration='desired length of time', speed='continuous shaking', light='continuous')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n# MANUAL: break (container: cells (in MSK mechanical homogenizer), reagent: 0.3 mm glass beads, volume: 5.0 gm beads, duration: 60 sec, other: {'cooling': 'CO2'})\n\n### AUTOMATED SECTION ###\nwash(container='glass beads', reagent='50 mM NaHPO4, pH 7.4, 2.0 M NaCl')\nadd(container='homogenates', reagent='washes')\ncentrifuge(container='sample', temperature='4\u00b0C', duration='20 min', speed='14,000 rpm', rotor='Sorvall SS34')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: supernatants, other: {'destination': 'clean tubes'})\n# MANUAL: store (temperature: -20\u00b0C, duration: 2-3 hours, other: {})\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nprecipitate(container='DNAs', reagent='isopropanol', volume='equal volume to each tube')\nmix(temperature='room temperature', duration='30 min')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatants, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='pellets', reagent='1X TE buffer', volume='2.0 mL')",
+    "source_file": "protocol_103.txt"
+  }
+]

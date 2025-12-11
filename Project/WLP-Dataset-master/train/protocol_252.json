@@ -1,0 +1,255 @@
+[
+  {
+    "protocol": "Cleaning for new teflon (PFA/FEP/PTFE)\nSoak in citrad (~couple of hours).\nRinse thoroughly UPW.\nImmerse completely (in 1 L jars or bottles) in 50% v/v distilled HNO3 for >=48hrs.\u00a0 \nRinse thoroughly UPW.\nImmerse completely (in 1 L jars or bottles) in 50% v/v distilled HCl for >=48hrs.\u00a0 \nRinse thoroughly UPW.\nImmerse completely (in 1 L jars or bottles) in 0.1% v/v distilled HNO3 for >=48hrs.\u00a0 \nRinse thoroughly UPW.\nImmerse completely (in 1 L jars or bottles) in 1-3M v/v distilled HNO3 for >=48hrs.\u00a0 \nRinse thoroughly UPW.\nFill and store with ~0.1% v/v distilled HNO3 For already-cleaned teflon for Geotraces.\u00a0\u00a0\nRinse with UPW.\nFill with 1-3M v/v distilled HNO3 for 24-48hrs.\nRinse thoroughly with UPW.\nFill with ~0.1% v/v seastar Nitric/distilled acid for as long as possible before use (minimum recommended a few hours).",
+    "actions": [
+      {
+        "action": "soak",
+        "parameters": {
+          "container": null,
+          "reagent": "citrad",
+          "volume": null,
+          "temperature": null,
+          "duration": "couple of hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "1 L jars or bottles",
+          "reagent": "50% v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": ">=48hrs",
+          "speed": null,
+          "other": {
+            "completely": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "1 L jars or bottles",
+          "reagent": "50% v/v distilled HCl",
+          "volume": null,
+          "temperature": null,
+          "duration": ">=48hrs",
+          "speed": null,
+          "other": {
+            "completely": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "1 L jars or bottles",
+          "reagent": "0.1% v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": ">=48hrs",
+          "speed": null,
+          "other": {
+            "completely": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "1 L jars or bottles",
+          "reagent": "1-3M v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": ">=48hrs",
+          "speed": null,
+          "other": {
+            "completely": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": null,
+          "reagent": "~0.1% v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "~0.1% v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "already-cleaned teflon for Geotraces"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": null,
+          "reagent": "1-3M v/v distilled HNO3",
+          "volume": null,
+          "temperature": null,
+          "duration": "24-48hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "UPW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thoroughly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": null,
+          "reagent": "~0.1% v/v seastar Nitric/distilled acid",
+          "volume": null,
+          "temperature": null,
+          "duration": "minimum recommended a few hours (as long as possible before use)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: soak (reagent: citrad, duration: couple of hours, other: {})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW', thoroughly=True)\n\n### MANUAL SECTION ###\n# MANUAL: immerse (container: 1 L jars or bottles, reagent: 50% v/v distilled HNO3, duration: >=48hrs, other: {'completely': True})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW', thoroughly=True)\n\n### MANUAL SECTION ###\n# MANUAL: immerse (container: 1 L jars or bottles, reagent: 50% v/v distilled HCl, duration: >=48hrs, other: {'completely': True})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW', thoroughly=True)\n\n### MANUAL SECTION ###\n# MANUAL: immerse (container: 1 L jars or bottles, reagent: 0.1% v/v distilled HNO3, duration: >=48hrs, other: {'completely': True})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW', thoroughly=True)\n\n### MANUAL SECTION ###\n# MANUAL: immerse (container: 1 L jars or bottles, reagent: 1-3M v/v distilled HNO3, duration: >=48hrs, other: {'completely': True})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW', thoroughly=True)\nfill(reagent='~0.1% v/v distilled HNO3')\n\n### MANUAL SECTION ###\n# MANUAL: store (reagent: ~0.1% v/v distilled HNO3, other: {'for': 'already-cleaned teflon for Geotraces'})\n\n### AUTOMATED SECTION ###\nrinse(reagent='UPW')\nfill(reagent='1-3M v/v distilled HNO3', duration='24-48hrs')\nrinse(reagent='UPW', thoroughly=True)\nfill(reagent='~0.1% v/v seastar Nitric/distilled acid', duration='minimum recommended a few hours (as long as possible before use)')",
+    "source_file": "protocol_252.txt"
+  }
+]

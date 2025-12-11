@@ -1,0 +1,495 @@
+[
+  {
+    "protocol": "Qiagen MinElute Gel Extraction\nExcise the DNA fragment from the agarose gel with a clean, sharp scalpel.\nWeigh the gel slice in a colorless tube.\nAdd 3 volumes Buffer QG to 1 volume gel (100 mg ~ 100 \u03bcl).\nFor >2% agarose gels, add 6 volumes Buffer QG.\nIncubate at 50\u00b0C for 10 min (or until the gel slice has completely dissolved).\nVortex the tube every 2\u20133 min to help dissolve gel.\nAfter the gel slice has dissolved completely, check that the color of the mixture is yellow (similar to Buffer QG without dissolved agarose).\nIf the color of the mixture is orange or violet, add 10 \u03bcl 3 M sodium acetate, pH 5.0, and mix.\nThe color of the mixture will turn yellow.\nAdd 1 gel volume of isopropanol to the sample and mix.\nPlace a QIAquick spin column into a provided 2 ml collection tube.\nTo bind DNA, apply the sample to the QIAquick column and centrifuge for 1 min.\nDiscard flow-through and place the QIAquick column back into the same tube.\nFor sample volumes of >800 \u03bcl, load and spin/apply vacuum again.\nIf the DNA will subsequently be used for sequencing, in vitro transcription, or microinjection, add 0.5 ml Buffer QG to the QIAquick column and centrifuge for 1 min.\nDiscard flow-through and place the QIAquick column back into the same tube.\nTo wash, add 0.75 ml Buffer PE to QIAquick column and centrifuge for 1 min.\nNote: If the DNA will be used for salt-sensitive applications (e.g., sequencing, blunt-ended ligation), let the column stand 2\u20135 min after addition of Buffer PE.\nCentrifuge the QIAquick column once more in the provided 2 ml collection tube for 1 min at 17,900 x g (13,000 rpm) to remove residual wash buffer.\nPlace QIAquick column into a clean 1.5 ml microcentrifuge tube.\nTo elute DNA, add 10 \u00b5l of Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water to the center of the membrane, let the column stand for 1 min, and then centrifuge for 1 min.\nIMPORTANT: Ensure that the elution buffer is dispensed directly onto the center of the membrane for complete elution of bound DNA.\nThe average eluate volume is 9 \u00b5l from 10 \u00b5l elution buffer volume.Elution efficiency is dependent on pH.\nThe maximum elution efficiency is achieved between pH 7.0 and 8.5.\nWhen using water, make sure that the pH value is within this range, and store DNA at \u201320\u00b0C as DNA may degrade in the absence of a buffering agent.\nThe purified DNA can also be eluted in TE buffer (10 mM Tris\u00b7Cl, 1 mM EDTA, pH 8.0), but the EDTA may inhibit subsequent enzymatic reactions.\nIf the purified DNA is to be analyzed on a gel, add 1 volume of Loading Dye to 5 volumes of purified DNA.\nMix the solution by pipetting up and down before loading the gel.\nLoading dye contains 3 marker dyes (bromophenol blue, xylene cyanol, and orange G) that facilitate estimation of DNA migration distance and optimization of agarose gel run time.\nRefer to Table 3 (page 15) to identify the dyes according to migration distance and agarose gel percentage and type.",
+    "actions": [
+      {
+        "action": "excise",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "DNA fragment",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "clean, sharp scalpel"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "gel slice",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "Buffer QG",
+          "volume": "3 volumes per 1 volume gel (100 mg ~ 100 \u03bcl)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "Buffer QG",
+          "volume": "6 volumes per 1 volume gel (for >2% agarose gels)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": ">2% agarose gels"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "gel slice + Buffer QG",
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "10 min (or until gel slice dissolved)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "gel slice + Buffer QG",
+          "volume": null,
+          "temperature": null,
+          "duration": "every 2\u20133 min during incubation",
+          "speed": null,
+          "other": {
+            "purpose": "help dissolve gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "property": "color is yellow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "3 M sodium acetate, pH 5.0",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if mixture color is orange or violet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "isopropanol",
+          "volume": "1 gel volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "colorless tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "QIAquick spin column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "QIAquick spin column",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "bind DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick spin column in 2 ml collection tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "QIAquick column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "QIAquick spin column",
+          "reagent": "sample",
+          "volume": ">800 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if sample volume >800 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick spin column in 2 ml collection tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "condition": "if sample volume >800 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": "Buffer QG",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if DNA will be used for sequencing, in vitro transcription, or microinjection"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick spin column in 2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "condition": "if DNA will be used for sequencing, in vitro transcription, or microinjection"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "QIAquick column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": "Buffer PE",
+          "volume": "0.75 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick spin column in 2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2\u20135 min",
+          "speed": null,
+          "other": {
+            "condition": "after addition of Buffer PE for salt-sensitive applications"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in 2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "17,900 x g (13,000 rpm)",
+          "other": {
+            "purpose": "remove residual wash buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "QIAquick column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "elution"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": "Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "purpose": "elution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in 1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "purpose": "elution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Loading Dye",
+          "volume": "1 volume per 5 volumes purified DNA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "gel analysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "solution (purified DNA + Loading Dye)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: excise (container: agarose gel, reagent: DNA fragment, other: {'tool': 'clean, sharp scalpel'})\n# MANUAL: weigh (container: colorless tube, reagent: gel slice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='colorless tube', reagent='Buffer QG', volume='3 volumes per 1 volume gel (100 mg ~ 100 \u03bcl)')\nadd(container='colorless tube', reagent='Buffer QG', volume='6 volumes per 1 volume gel (for >2% agarose gels)', condition='>2% agarose gels')\nincubate(container='colorless tube', reagent='gel slice + Buffer QG', temperature='50\u00b0C', duration='10 min (or until gel slice dissolved)')\nvortex(container='colorless tube', reagent='gel slice + Buffer QG', duration='every 2\u20133 min during incubation', purpose='help dissolve gel')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: colorless tube, reagent: mixture, other: {'property': 'color is yellow'})\n\n### AUTOMATED SECTION ###\nadd(container='colorless tube', reagent='3 M sodium acetate, pH 5.0', volume='10 \u03bcl', condition='if mixture color is orange or violet')\nmix(container='colorless tube', reagent='mixture')\nadd(container='colorless tube', reagent='isopropanol', volume='1 gel volume')\nmix(container='colorless tube', reagent='sample')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: 2 ml collection tube, reagent: QIAquick spin column, other: {})\n\n### AUTOMATED SECTION ###\napply(container='QIAquick spin column', reagent='sample', purpose='bind DNA')\ncentrifuge(container='QIAquick spin column in 2 ml collection tube', reagent='sample', duration='1 min')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 2 ml collection tube, reagent: flow-through, other: {})\n# MANUAL: place (container: 2 ml collection tube, reagent: QIAquick column, other: {})\n\n### AUTOMATED SECTION ###\nload(container='QIAquick spin column', reagent='sample', volume='>800 \u03bcl', condition='if sample volume >800 \u03bcl')\ncentrifuge(container='QIAquick spin column in 2 ml collection tube', reagent='sample', duration='1 min', condition='if sample volume >800 \u03bcl')\nadd(container='QIAquick column', reagent='Buffer QG', volume='0.5 ml', condition='if DNA will be used for sequencing, in vitro transcription, or microinjection')\ncentrifuge(container='QIAquick spin column in 2 ml collection tube', duration='1 min', condition='if DNA will be used for sequencing, in vitro transcription, or microinjection')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 2 ml collection tube, reagent: flow-through, other: {})\n# MANUAL: place (container: 2 ml collection tube, reagent: QIAquick column, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='QIAquick column', reagent='Buffer PE', volume='0.75 ml', purpose='wash')\ncentrifuge(container='QIAquick spin column in 2 ml collection tube', duration='1 min')\nwait(container='QIAquick column', duration='2\u20135 min', condition='after addition of Buffer PE for salt-sensitive applications')\ncentrifuge(container='QIAquick column in 2 ml collection tube', duration='1 min', speed='17,900 x g (13,000 rpm)', purpose='remove residual wash buffer')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: 1.5 ml microcentrifuge tube, reagent: QIAquick column, other: {'purpose': 'elution'})\n\n### AUTOMATED SECTION ###\nadd(container='QIAquick column', reagent='Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water', volume='10 \u00b5l', location='center of membrane')\nwait(container='QIAquick column', duration='1 min', purpose='elution')\ncentrifuge(container='QIAquick column in 1.5 ml microcentrifuge tube', duration='1 min', purpose='elution')\nadd(reagent='Loading Dye', volume='1 volume per 5 volumes purified DNA', purpose='gel analysis')\nmix(reagent='solution (purified DNA + Loading Dye)', method='pipetting up and down')",
+    "source_file": "protocol_248.txt"
+  }
+]

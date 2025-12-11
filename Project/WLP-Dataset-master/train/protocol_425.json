@@ -1,0 +1,275 @@
+[
+  {
+    "protocol": "Q5\u00ae Site-Directed Mutagenesis (E0552)\nAssemble the following reagents in a thin-walled PCR tube.\nMix reagents completely.\nTransfer to a thermocycler and perform the following cycling conditions:\nAssemble the following reagents: Mix well by pipetting up and down.\nIncubate at room temperature for 5 minutes.\nThaw a 50 \u03bcl aliquot of chemically competent\u00a0E. coli\u00a0cells on ice.\nAdd 5 \u03bcl of the KLD mix from the \"KLD Section\" above to the tube of thawed cells.\nCarefully flick the tube 4-5 times to mix.\nDo not vortex.\nPlace the mixture on ice for 30 minutes.\nHeat shock at 42\u00b0C for 30 seconds.\nPlace on ice for 5 minutes.\nPipette 950 \u03bcl of room temperature SOC into the mixture.\nIncubate at 37\u00b0C for 60 minutes with shaking (250 rpm).\nMix the cells thoroughly by flicking the tube and inverting.\nSpread 50-100 \u03bcl onto a selection plate.\nIncubate overnight at 37\u00b0C",
+    "actions": [
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "PCR reagents (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "PCR reagents (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "PCR reaction mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cycle",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "PCR reaction mix",
+          "volume": null,
+          "temperature": "cycling conditions (unspecified)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": "reagents (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "reagents (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "tube",
+          "reagent": "50 \u03bcl aliquot of chemically competent E. coli cells",
+          "volume": "50 \u03bcl",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube of thawed cells",
+          "reagent": "KLD mix",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "\"KLD Section\""
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell/KLD mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick tube 4-5 times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "mixture tube",
+          "reagent": "SOC",
+          "volume": "950 \u03bcl",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "mixture tube",
+          "reagent": "cells in SOC",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": "250 rpm",
+          "other": {
+            "method": "shaking"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flicking and inverting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": "cells",
+          "volume": "50-100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: assemble (container: thin-walled PCR tube, reagent: PCR reagents (unspecified), other: {})\n\n### AUTOMATED SECTION ###\nmix(container='thin-walled PCR tube', reagent='PCR reagents (unspecified)', method='completely')\ntransfer(container='thin-walled PCR tube', reagent='PCR reaction mix', destination='thermocycler')\ncycle(container='thin-walled PCR tube', reagent='PCR reaction mix', temperature='cycling conditions (unspecified)')\n\n### MANUAL SECTION ###\n# MANUAL: assemble (reagent: reagents (unspecified), other: {})\n\n### AUTOMATED SECTION ###\nmix(reagent='reagents (unspecified)', method='pipetting up and down')\nincubate(temperature='room temperature', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: tube, reagent: 50 \u03bcl aliquot of chemically competent E. coli cells, volume: 50 \u03bcl, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube of thawed cells', reagent='KLD mix', volume='5 \u03bcl', source='\"KLD Section\"')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube, reagent: cell/KLD mix, other: {'method': 'flick tube 4-5 times'})\n\n### AUTOMATED SECTION ###\nplace(container='tube', reagent='mixture', temperature='on ice', duration='30 minutes')\nheat shock(container='tube', reagent='mixture', temperature='42\u00b0C', duration='30 seconds')\nplace(container='tube', reagent='mixture', temperature='on ice', duration='5 minutes')\npipette(container='mixture tube', reagent='SOC', volume='950 \u03bcl', temperature='room temperature')\nincubate(container='mixture tube', reagent='cells in SOC', temperature='37\u00b0C', duration='60 minutes', speed='250 rpm', method='shaking')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube, reagent: cells, other: {'method': 'flicking and inverting'})\n# MANUAL: spread (container: selection plate, reagent: cells, volume: 50-100 \u03bcl, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='selection plate', reagent='cells', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_425.txt"
+  }
+]

@@ -1,0 +1,201 @@
+[
+  {
+    "protocol": "High Efficiency Transformation Protocol (C2987H). \nThaw a tube of NEB 5-alpha Competent E. coli cells on ice for 10 minutes.\nAdd 1-5 \u00b5l containing 1 pg-100 ng of plasmid DNA to the cell mixture.\nCarefully flick the tube 4-5 times to mix cells and DNA.\nDo not vortex.\nPlace the mixture on ice for 30 minutes.\nDo not mix.\nHeat shock at exactly 42\u00b0C for exactly 30 seconds.\nDo not mix.\nPlace on ice for 5 minutes.\nDo not mix.\nPipette 950 \u00b5l of room temperature SOC into the mixture.\nPlace at 37\u00b0C for 60 minutes., shaking vigorously (250 rpm) or rotating.\nWarm selection plates to 37\u00b0C.\nMix the cells thoroughly by flicking the tube and inverting.\nPerform several 10-fold serial dilutions in SOC.\nSpread 50-100 \u00b5l of each dilution onto a selection plate Incubate overnight at 37\u00b0C",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "tube",
+          "reagent": "NEB 5-alpha Competent E. coli cells",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube (cell mixture)",
+          "reagent": "plasmid DNA",
+          "volume": "1-5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "DNA amount": "1 pg-100 ng"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells and DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick tube 4-5 times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube (mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "tube (mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube (mixture)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "tube (mixture)",
+          "reagent": "SOC",
+          "volume": "950 \u00b5l",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.99
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube (mixture with SOC)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": "250 rpm (shaking) or rotating",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "selection plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "warm plates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube (cells)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flicking and inverting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "cells in SOC",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "10-fold serial dilutions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": "diluted cells",
+          "volume": "50-100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: tube, reagent: NEB 5-alpha Competent E. coli cells, temperature: on ice, duration: 10 minutes, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube (cell mixture)', reagent='plasmid DNA', volume='1-5 \u00b5l', DNA amount='1 pg-100 ng')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube, reagent: cells and DNA, other: {'method': 'flick tube 4-5 times'})\n\n### AUTOMATED SECTION ###\nincubate(container='tube (mixture)', temperature='on ice', duration='30 minutes')\nheat shock(container='tube (mixture)', temperature='42\u00b0C', duration='30 seconds')\nincubate(container='tube (mixture)', temperature='on ice', duration='5 minutes')\npipette(container='tube (mixture)', reagent='SOC', volume='950 \u00b5l', temperature='room temperature')\nincubate(container='tube (mixture with SOC)', temperature='37\u00b0C', duration='60 minutes', speed='250 rpm (shaking) or rotating')\nheat(container='selection plates', temperature='37\u00b0C', purpose='warm plates')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube (cells), other: {'method': 'flicking and inverting'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='cells in SOC', method='10-fold serial dilutions')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: selection plate, reagent: diluted cells, volume: 50-100 \u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='selection plate', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_617.txt"
+  }
+]

@@ -1,0 +1,588 @@
+[
+  {
+    "protocol": "FlowCam Standard Operating Procedure\nTurn on FlowCamPush silver button on the left of machine face to turn on computer and machine.\nInstal flow cell into the flow cell holderSelect desired flow cell tubing based on application.\n(In general we use the\u00a0100 um x 1 mm flow cell).Use a kimwipe or lens paper to gently clean\u00a0the glass portion of the flow cell.Insert glass portion of the flow cell into the\u00a0flow cell holder.Secure flow cell by gently screwing the male threaded holder until the flow cell is stationary.\nBe careful not to screw too tightly at the risk of breaking the fragile flow cell.\nNote: \u00a0Since there are multiple projects using the FlowCam be sure to select the flow cell labeled for each specific project.\nInstal the flow cell holder into the FLowCamMake sure that the objective lens and collimator are compatible with each other.\nFor example, when using the 10X lens, use the corresponding 10X collimator.Use a kimwipe or lens paper to gently clean the objective lens and collimnator.Install flow cell holder (screw pointing up) into the flow cell holder mount located in the middle of the camera apparatus.\nTighten screw on top of holder to secure it to the mount.Insert tubing on top of flow cell into the bottom of sample funnel.\nInsert bottom tubing into tip of syringe.\nInsert syringe-out tubing into small beaker for collecting waste.\nFlush Flow CellMake sure to flush the flow cell before beginning to prevent any previous cellular material or debris from showing up in your sample.1.\nLoad the funnel with ddH2O.2.\nOn the top menu bar, click\u00a0Setup\u00a0-> Pump\u00a0-> Flush\u00a0\u00a03.\nSet to 4-5 cycles.4.\nClick Start Load Sample1.\nUse pipet to draw\u00a0sample from your container.\nUsually about 0.2-0.5 mL\u00a0of homogenized sample is sufficient.\nFor dense cultures, a dilution may be appropiate (Be sure to note this in your files).\nSieving is great for raw samples that might have detritus or zooplankton.\n2.\nLower tip of pipet into bottom of P1000 sample funnel.\nForcibly squeeze pipet to ensure that sample ends up as one liquid mass and doesn't stick to the walls of the funnel.\n3.\nOn the top menu bar, click\u00a0Setup\u00a0-> Pump\u00a0->\u00a0Prime -> Aspirate 0.500mL from Flow Cell\u00a0\u00a0\u00a04.\nClick Stop Pump when the sample volume has reached the flow cell Run Context\u00a0Click on\u00a0Context.\nA window with several tabs will pop up.\nNotes Tab - any relevant metadata.\nThere is a file on the\u00a0Desktop\u00a0that can be pasted and modified as needed.\nThis file includes lines for date, experiment, strain, species, magnification, flow cell, syringe, dilution, etc.Fluidics tab - Adjust here the\u00a0sample volume (usually 1 mL), relative to the\u00a0stop rule (see below).\nAlso, make sure the\u00a0efficiency\u00a0is near 25%.Flow cell tab - Adjust the tube length below the flow cell.\nBy default it is at\u00a00 cm.\nOur flow cells are cut to have 10 cm tubing above and\u00a020 cm tubing below.\nStop tab - Stop rule for terminating the run.\nUsually after\u00a0100 uL (0.1 mL) of sample has been imaged.\nThis works well with 1 mL of sample and a short priming step (see Setup and Focus below).Reports tab - Check the\u00a0export data and\u00a0export summary data checkboxes.\nThis saves the measurements of all captured particles.\nThe\u00a0list\u00a0file with collages of images are saved by default upon starting a run.You can save these settings and load them as needed.\nSetup and Focus1.\nClick\u00a0Setup/Focus.\nA window will pop up with a live camera view of the flow cell.2.\nUse the X-axis and Y-axis adjustment knobs to center the\u00a0flow cell.3.\nUse the Coarse and Fine adjustment knobs to bring the sample into focus.\nRun Sample1.\nClick\u00a0Autoimage.2.\nA pop-up with your\u00a0Notes and\u00a0Stop rule (Context) will show up.\nYou can either enter a value to automatically stop the run (e.g.\n# of events, volume or time) or leave the 'Stop when user terminates...' button checked and manually stop.3.\nA window to create a folder for the run will pop up next.\nMake an informative folder name with sample info in the title (date, strain info, magnification, flow cell size, dilution, etc.)\nand click save.\nOnce folder has been named, the sample run will begin.4.\nThe sample will run until the criteria\u00a0of the set Stop Conditions\u00a0are reached or the user terminates the run by pressing the\u00a0Autoimage\u00a0button which will now display a red stop symbol.\nData\u00a0The data will be displayed for each filter on the Visual Spreadsheet page.Select your data (either by clicking on the desired filter\u00a0or highlighting\u00a0portions of the graphs\u00a0and selecting\u00a0Open View\u00a0to evaluate the images.Adjust for any dilution used in\u00a0Context -> Fluidics and checking the\u00a0Sample Dilution box.\nEnter in the ratio of the dilution used (volume of sample / total volume) \u00a0Particles / mL is the cell count\u00a0Make sure the Efficiency is within the range of the flow cell being used.\nNote:\u00a0Be sure to flush the flow cell between samples.\nFlush Flow CellMake sure to flush the flow cell between samples\u00a0to prevent any previous cellular material or debris from showing up in your sample.1.\nLoad the funnel with ddH2O.2.\nOn the top menu bar, click\u00a0Setup\u00a0-> Pump\u00a0-> Flush\u00a0\u00a03.\nSet to 4-5 cycles.4.\nClick Start Continue running or Shut down\u00a0To continue running samples repeat steps 5 - 10 (skip steps 6 & 7 as the settings are already\u00a0saved).To shut down continue to step 12.\nDissasembly1.\nRemove the tubing from the syringe tip and the sample funnel.\n2.\nLoosen the flow cell holder screw and remove\u00a0the flow cell holder and flow cell.\n3.\nRemove the flow cell from the flow cell holder.4.\nPut the flow cell back in its protective tube.5.\nClose the program and shut down computer.",
+    "actions": [
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "FlowCam machine",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "button": "silver button on left of machine face"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "install",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "flow cell holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "flow cell tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "application"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": "kimwipe or lens paper",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "portion": "glass portion"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "flow cell holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "secure",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "screwing male threaded holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "install",
+        "parameters": {
+          "container": "flow cell holder",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "FlowCam"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "objective lens and collimator",
+          "reagent": "kimwipe or lens paper",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "install",
+        "parameters": {
+          "container": "flow cell holder",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "flow cell holder mount"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "tighten",
+        "parameters": {
+          "container": "screw on top of holder",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "secure to mount"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "top of flow cell",
+            "to": "bottom of sample funnel"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "bottom tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "tip of syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "syringe-out tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "small beaker for waste"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "4-5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "funnel",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "sample container",
+          "reagent": "homogenized sample",
+          "volume": "0.2-0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lower",
+        "parameters": {
+          "container": "pipet tip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom of P1000 sample funnel"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sample funnel",
+          "reagent": "homogenized sample",
+          "volume": "0.2-0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "forcibly squeeze",
+          "other": {
+            "purpose": "ensure sample ends up as one liquid mass"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prime",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": "0.500 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "aspirate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "sample volume has reached flow cell"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "fluidics tab",
+          "reagent": null,
+          "volume": "1 mL (sample volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "efficiency": "near 25%"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "flow cell tab",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tube length below flow cell": "default 0 cm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "reports tab",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "checkboxes": [
+              "export data",
+              "export summary data"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "settings",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "settings",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "center",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "X-axis and Y-axis adjustment knobs"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "focus",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Coarse and Fine adjustment knobs"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "Stop Conditions or manual termination"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycles": "4-5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "funnel",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": [
+              "syringe tip",
+              "sample funnel"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "loosen",
+        "parameters": {
+          "container": "flow cell holder screw",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "flow cell holder and flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "flow cell holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "flow cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "protective tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "program",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "shut down",
+        "parameters": {
+          "container": "computer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: turn on (container: FlowCam machine, other: {'button': 'silver button on left of machine face'})\n# MANUAL: install (container: flow cell, other: {'location': 'flow cell holder'})\n# MANUAL: select (container: flow cell tubing, other: {'criteria': 'application'})\n# MANUAL: clean (container: flow cell, reagent: kimwipe or lens paper, other: {'portion': 'glass portion'})\n# MANUAL: insert (container: flow cell, other: {'location': 'flow cell holder'})\n# MANUAL: secure (container: flow cell, other: {'method': 'screwing male threaded holder'})\n# MANUAL: install (container: flow cell holder, other: {'location': 'FlowCam'})\n# MANUAL: clean (container: objective lens and collimator, reagent: kimwipe or lens paper)\n# MANUAL: install (container: flow cell holder, other: {'location': 'flow cell holder mount'})\n# MANUAL: tighten (container: screw on top of holder, other: {'purpose': 'secure to mount'})\n# MANUAL: insert (container: tubing, other: {'from': 'top of flow cell', 'to': 'bottom of sample funnel'})\n# MANUAL: insert (container: bottom tubing, other: {'to': 'tip of syringe'})\n# MANUAL: insert (container: syringe-out tubing, other: {'to': 'small beaker for waste'})\n\n### AUTOMATED SECTION ###\nflush(container='flow cell', reagent='ddH2O', cycles='4-5')\nload(container='funnel', reagent='ddH2O')\npipette(container='sample container', reagent='homogenized sample', volume='0.2-0.5 mL')\n\n### MANUAL SECTION ###\n# MANUAL: lower (container: pipet tip, other: {'location': 'bottom of P1000 sample funnel'})\n\n### AUTOMATED SECTION ###\ndispense(container='sample funnel', reagent='homogenized sample', volume='0.2-0.5 mL', speed='forcibly squeeze', purpose='ensure sample ends up as one liquid mass')\nprime(container='flow cell', volume='0.500 mL', method='aspirate')\nstop(container='pump', criteria='sample volume has reached flow cell')\n\n### MANUAL SECTION ###\n# MANUAL: adjust (container: fluidics tab, volume: 1 mL (sample volume), other: {'efficiency': 'near 25%'})\n# MANUAL: adjust (container: flow cell tab, other: {'tube length below flow cell': 'default 0 cm'})\n# MANUAL: check (container: reports tab, other: {'checkboxes': ['export data', 'export summary data']})\n# MANUAL: save (container: settings)\n# MANUAL: load (container: settings)\n# MANUAL: center (container: flow cell, other: {'method': 'X-axis and Y-axis adjustment knobs'})\n# MANUAL: focus (container: sample, other: {'method': 'Coarse and Fine adjustment knobs'})\n\n### AUTOMATED SECTION ###\nrun(container='sample', criteria='Stop Conditions or manual termination')\nflush(container='flow cell', reagent='ddH2O', cycles='4-5')\nload(container='funnel', reagent='ddH2O')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: tubing, other: {'from': ['syringe tip', 'sample funnel']})\n# MANUAL: loosen (container: flow cell holder screw)\n# MANUAL: remove (container: flow cell holder and flow cell)\n# MANUAL: remove (container: flow cell, other: {'from': 'flow cell holder'})\n# MANUAL: put (container: flow cell, other: {'location': 'protective tube'})\n# MANUAL: close (container: program)\n# MANUAL: shut down (container: computer)",
+    "source_file": "protocol_102.txt"
+  }
+]

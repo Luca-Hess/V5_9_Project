@@ -1,0 +1,134 @@
+[
+  {
+    "protocol": "Red Blood Cell Lysis Protocol: Method II\nDilute the 10X RBC Lysis Buffer to 1X working concentration with deionized water.\nWarm the 1X solution to room temperature prior to use.\nAdd 2.0 ml of 1X RBC Lysis Buffer to each tube containing up to 100 \u03bcl of whole blood.\nGently vortex each tube immediately after adding the lysing solution.\nIncubate at room temperature, protected from light, for 10-15 minutes.\nCentrifuge 350 x g for 5 minutes.\nAspirate supernatant without disturbing pellet, and resuspend the pellet in the appropriate buffer (e.g., BioLegendCell Staining Buffer, Cat. No. 420201.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X RBC Lysis Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "deionized water",
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "1X RBC Lysis Buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prior_to_use": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube containing up to 100 \u03bcl whole blood",
+          "reagent": "1X RBC Lysis Buffer",
+          "volume": "2.0 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "immediately_after_adding": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10-15 minutes",
+          "speed": null,
+          "other": {
+            "protected_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "without_disturbing_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "appropriate buffer (e.g., BioLegend Cell Staining Buffer, Cat. No. 420201)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='10X RBC Lysis Buffer', diluent='deionized water', final_concentration='1X')\nwarm(reagent='1X RBC Lysis Buffer', temperature='room temperature', prior_to_use=True)\nadd(container='tube containing up to 100 \u03bcl whole blood', reagent='1X RBC Lysis Buffer', volume='2.0 ml')\nvortex(container='each tube', speed='gently', immediately_after_adding=True)\nincubate(container='each tube', temperature='room temperature', duration='10-15 minutes', protected_from_light=True)\ncentrifuge(container='each tube', duration='5 minutes', speed='350 x g')\naspirate(container='each tube', reagent='supernatant', without_disturbing_pellet=True)\nresuspend(container='each tube', reagent='appropriate buffer (e.g., BioLegend Cell Staining Buffer, Cat. No. 420201)', target='pellet')",
+    "source_file": "protocol_559.txt"
+  }
+]

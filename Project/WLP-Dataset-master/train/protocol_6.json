@@ -1,0 +1,179 @@
+[
+  {
+    "protocol": "DNA extraction from fungal mycelium using Extract-n-Amp\nTurn heat block on and preheat to 95C.\nWorking at the lab bench, add \u00bd scoop of the 1.0 mm zirconium oxide beads to a sterile 1.5 ml tube.\nClose the lid and label the top and side of each tube with the sample name (e.g., AK0013).\nIn either the laminar flow hood or biosafety cabinet, remove a small piece (no bigger than 0.5 cm2) of mycelium from the culture tube/plate and transfer to the corresponding labeled 1.5 ml tube.\nTry to minimize the amount of agar.\n***This step must be donin a sterile environment to ensure the cultures are not contaminated, but the remaining steps can be done on the lab bench.\nAdd 100 ul of Extraction Buffer (making sure the mycelium is completely submerged in the liquid; you may need to centrifuge) and firmly close tube lids.\nPlace tubes in the bead beater.\nIf using the Bullet Blender Storm make sure the lid is for the 1.5 ml tubes not the screwcap tubes.\nClose the lid, and bead beat for 1 minute on speed 10.\n(Alternatively you can grind the tissue with a sterile blue pestle.)\n**Use ear protection when using the bead beater.\nBriefly (<30 sec) centrifuge to remove liquid from the lid of the tube.\n***Do not leave samples in the Extraction Buffer >25 minutes before proceeding to the heating step.\nPlace tubes in heat block at 95\u00b0C for 10 minutes; then briefly centrifuge after incubation to remove condensation.\nAdd 100 ul of Dilution Buffer and vortex to mix.\nStore the DNA at 2-8\u00b0C for short-term use and -20\u00b0 to -80\u00b0 for long-term storage.",
+    "actions": [
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "heat block"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sterile 1.5 ml tube",
+          "reagent": "1.0 mm zirconium oxide beads",
+          "volume": "\u00bd scoop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "labeled 1.5 ml tube",
+          "reagent": "mycelium",
+          "volume": "small piece (\u22640.5 cm2)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "culture tube/plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "Extraction Buffer",
+          "volume": "100 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "ensure mycelium is submerged"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "brief (<30 sec)",
+          "speed": null,
+          "other": {
+            "purpose": "remove liquid from lid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "bead beat",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10",
+          "other": {
+            "device": "Bullet Blender Storm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "brief",
+          "speed": null,
+          "other": {
+            "purpose": "remove condensation after incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "device": "heat block"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "Dilution Buffer",
+          "volume": "100 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortex"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "2-8\u00b0C (short-term), -20\u00b0 to -80\u00b0C (long-term)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nheat(temperature='95\u00b0C', device='heat block')\n\n### MANUAL SECTION ###\n# MANUAL: dispense (container: sterile 1.5 ml tube, reagent: 1.0 mm zirconium oxide beads, volume: \u00bd scoop, other: {})\n# MANUAL: dispense (container: labeled 1.5 ml tube, reagent: mycelium, volume: small piece (\u22640.5 cm2), other: {'source': 'culture tube/plate'})\n\n### AUTOMATED SECTION ###\ndispense(container='1.5 ml tube', reagent='Extraction Buffer', volume='100 ul', note='ensure mycelium is submerged')\ncentrifuge(container='1.5 ml tube', duration='brief (<30 sec)', purpose='remove liquid from lid')\n\n### MANUAL SECTION ###\n# MANUAL: bead beat (container: 1.5 ml tube, duration: 1 minute, speed: 10, other: {'device': 'Bullet Blender Storm'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='1.5 ml tube', duration='brief', purpose='remove condensation after incubation')\nincubate(container='1.5 ml tube', temperature='95\u00b0C', duration='10 minutes', device='heat block')\ndispense(container='1.5 ml tube', reagent='Dilution Buffer', volume='100 ul')\nmix(container='1.5 ml tube', method='vortex')\nstore(reagent='DNA', temperature='2-8\u00b0C (short-term), -20\u00b0 to -80\u00b0C (long-term)')",
+    "source_file": "protocol_6.txt"
+  }
+]

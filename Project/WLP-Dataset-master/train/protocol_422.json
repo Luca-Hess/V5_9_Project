@@ -1,0 +1,214 @@
+[
+  {
+    "protocol": "Th17 Polarization of Mouse CD4+ Cells\nHarvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.\nTease lymph nodes through a sterile 70-\u00b5m nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).\nResuspend cells in complete medium and use your favorite method to isolate CD4+ cells.\nCheckout Biocompare.com to find useful kits.\nOn day 0, coat 60 \u00d7 15 mm of plastic petri dishes with anti-mouse CD3\u03b5, clone 145-2C11 (5 \u00b5g/ml).\nIncubate\u00a0at 37\u00b0C for 2 hours.\n(Alternatively, incubate at 4\u00b0C overnight.)\nAseptically decant antibody solution from the plate.\nWash plate with sterile PBS (wash 1/3).\nWash plate with sterile PBS (wash 2/3).\nWash plate with sterile PBS (wash 3/3).\nDiscard liquid.\nPlate CD4+ cells at 1.0 x 106 /1ml/well.\nCulture cells for 4 days in the presence of anti-mouse CD28, clone 37.51 (5 \u00b5g/mL), recombinant mouse IL-6 (50 ng/mL), recombinant human TGF-\u03b21 (1 ng/mL), recombinant mouse IL-23 (5 ng/ml), anti-mouse IL-4 (10 \u00b5g/mL), and anti-mouse IFN-\u03b3 (10 \u00b5g/mL).\nOn day 3, slowly add 5 ml of fresh media along with same the concentration of antibodies/cytokines as used on day 0.\nOn day 4, wash cells once and then restimulate in complete medium with 500 ng/ml PMA and 500 ng/mL ionomycin, in the presence of Brefeldin A (If you are looking for IL-21 production, use monensin) for 4 - 5 hours.\nAfter harvesting, the cells are ready for staining.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plastic petri dishes (60 \u00d7 15 mm)",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11 (5 \u00b5g/ml)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plastic petri dishes (60 \u00d7 15 mm)",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11 (5 \u00b5g/ml)",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "plate",
+          "reagent": "antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "aseptic": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "plate",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "well",
+          "reagent": "CD4+ cells",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "1.0 x 10^6"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "well",
+          "reagent": [
+            "anti-mouse CD28, clone 37.51 (5 \u00b5g/mL)",
+            "recombinant mouse IL-6 (50 ng/mL)",
+            "recombinant human TGF-\u03b21 (1 ng/mL)",
+            "recombinant mouse IL-23 (5 ng/ml)",
+            "anti-mouse IL-4 (10 \u00b5g/mL)",
+            "anti-mouse IFN-\u03b3 (10 \u00b5g/mL)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": "4 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": [
+            "fresh media (5 ml)",
+            "anti-mouse CD28, clone 37.51 (5 \u00b5g/mL)",
+            "recombinant mouse IL-6 (50 ng/mL)",
+            "recombinant human TGF-\u03b21 (1 ng/mL)",
+            "recombinant mouse IL-23 (5 ng/ml)",
+            "anti-mouse IL-4 (10 \u00b5g/mL)",
+            "anti-mouse IFN-\u03b3 (10 \u00b5g/mL)"
+          ],
+          "volume": "5 ml (media)",
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "day": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "day": 4,
+            "times": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "restimulate",
+        "parameters": {
+          "container": "cells",
+          "reagent": [
+            "complete medium",
+            "PMA (500 ng/ml)",
+            "ionomycin (500 ng/ml)",
+            "Brefeldin A (or monensin for IL-21 production)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": "4-5 hours",
+          "speed": null,
+          "other": {
+            "day": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='plastic petri dishes (60 \u00d7 15 mm)', reagent='anti-mouse CD3\u03b5, clone 145-2C11 (5 \u00b5g/ml)', temperature='37\u00b0C', duration='2 hours')\nincubate(container='plastic petri dishes (60 \u00d7 15 mm)', reagent='anti-mouse CD3\u03b5, clone 145-2C11 (5 \u00b5g/ml)', temperature='4\u00b0C', duration='overnight')\ndecant(container='plate', reagent='antibody solution', aseptic=True)\nwash(container='plate', reagent='sterile PBS', wash_number=1)\nwash(container='plate', reagent='sterile PBS', wash_number=2)\nwash(container='plate', reagent='sterile PBS', wash_number=3)\ndiscard(container='plate', reagent='liquid')\nplate(container='well', reagent='CD4+ cells', volume='1 ml', cell_count='1.0 x 10^6')\nculture(container='well', reagent=['anti-mouse CD28, clone 37.51 (5 \u00b5g/mL)', 'recombinant mouse IL-6 (50 ng/mL)', 'recombinant human TGF-\u03b21 (1 ng/mL)', 'recombinant mouse IL-23 (5 ng/ml)', 'anti-mouse IL-4 (10 \u00b5g/mL)', 'anti-mouse IFN-\u03b3 (10 \u00b5g/mL)'], duration='4 days')\nadd(container='well', reagent=['fresh media (5 ml)', 'anti-mouse CD28, clone 37.51 (5 \u00b5g/mL)', 'recombinant mouse IL-6 (50 ng/mL)', 'recombinant human TGF-\u03b21 (1 ng/mL)', 'recombinant mouse IL-23 (5 ng/ml)', 'anti-mouse IL-4 (10 \u00b5g/mL)', 'anti-mouse IFN-\u03b3 (10 \u00b5g/mL)'], volume='5 ml (media)', speed='slowly', day=3)\nwash(container='cells', day=4, times=1)\nrestimulate(container='cells', reagent=['complete medium', 'PMA (500 ng/ml)', 'ionomycin (500 ng/ml)', 'Brefeldin A (or monensin for IL-21 production)'], duration='4-5 hours', day=4)",
+    "source_file": "protocol_422.txt"
+  }
+]

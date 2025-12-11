@@ -1,0 +1,151 @@
+[
+  {
+    "protocol": "First Strand Synthesis with Reverse Transcriptase\nIn a sterile microfuge tube add the following: \nHeat for 3-5 minutes at 65-80\u00b0C.\nSpin briefly and place promptly on ice.\nAdd 10X RT Buffer. \nAdd\u00a0RNAse inhibitor 1 \u00b5L.\u00a0 \nAdd\u00a0M-MuLV Reverse Transcriptase 1 \u00b5L.\u00a0 \nIncubate at 42\u00b0C for one hour.\nInactivate enzyme at 90\u00b0C for 10 minutes.\nStore products at -20\u00b0C or proceed to next step(s).",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "unspecified (protocol does not list specific reagents in this step)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65-80\u00b0C",
+          "duration": "3-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "promptly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "10X RT Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "RNAse inhibitor",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "M-MuLV Reverse Transcriptase",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "90\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "inactivate enzyme"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "products",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='sterile microfuge tube', reagent='unspecified (protocol does not list specific reagents in this step)')\nheat(container='microfuge tube', temperature='65-80\u00b0C', duration='3-5 minutes')\ncentrifuge(container='microfuge tube', duration='briefly')\ncool(container='microfuge tube', temperature='ice', duration='promptly')\nadd(container='microfuge tube', reagent='10X RT Buffer')\nadd(container='microfuge tube', reagent='RNAse inhibitor', volume='1 \u00b5L')\nadd(container='microfuge tube', reagent='M-MuLV Reverse Transcriptase', volume='1 \u00b5L')\nincubate(container='microfuge tube', temperature='42\u00b0C', duration='1 hour')\nheat(container='microfuge tube', temperature='90\u00b0C', duration='10 minutes', purpose='inactivate enzyme')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: microfuge tube, reagent: products, temperature: -20\u00b0C, other: {})",
+    "source_file": "protocol_520.txt"
+  }
+]

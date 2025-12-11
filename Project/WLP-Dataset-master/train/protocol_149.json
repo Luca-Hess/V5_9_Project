@@ -1,0 +1,57 @@
+[
+  {
+    "protocol": "Restriction Digest of DNA\nSelect restriction enzymes to digest your plasmid.\nDetermine an appropriate reaction buffer by reading the instructions for your enzyme.\nIn a 1.5mL tube combine the following:  DNA (all amounts are for a typical reaction; your amount may vary depending on the enzymes).\nTypical mixture for single digest: Nuclease-free Water, 16 ul; 10X Buffer EcoRI2 ulDNA (0.5/1 ug/ul), 1 ul; EcoRI0. 5-2 ul;\nTypical Mixture for Double Digest: Nuclease-free Water, 15 ul; 10X Buffer, 02 ul; DNA (0.5-1 ug/ul), 1 ul; EcoRI, 1 ul; PstI,\u00a01 ul;\nMix gently by pipetting.\nIncubate tube at appropriate temperature (usually 37\u00b0C) for 1 hour.",
+    "actions": [
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "1.5mL tube",
+          "reagent": "Nuclease-free Water, 10X Buffer, DNA, EcoRI, PstI (as per single/double digest)",
+          "volume": "variable (see protocol: single digest - Water 16 ul, Buffer 2 ul, DNA 1 ul, EcoRI 0.5-2 ul; double digest - Water 15 ul, Buffer 2 ul, DNA 1 ul, EcoRI 1 ul, PstI 1 ul)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "digest_type": "single or double"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently by pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "note": "appropriate temperature (usually 37\u00b0C)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncombine(container='1.5mL tube', reagent='Nuclease-free Water, 10X Buffer, DNA, EcoRI, PstI (as per single/double digest)', volume='variable (see protocol: single digest - Water 16 ul, Buffer 2 ul, DNA 1 ul, EcoRI 0.5-2 ul; double digest - Water 15 ul, Buffer 2 ul, DNA 1 ul, EcoRI 1 ul, PstI 1 ul)', digest_type='single or double')\nmix(container='1.5mL tube', method='gently by pipetting')\nincubate(container='1.5mL tube', temperature='37\u00b0C', duration='1 hour', note='appropriate temperature (usually 37\u00b0C)')",
+    "source_file": "protocol_149.txt"
+  }
+]

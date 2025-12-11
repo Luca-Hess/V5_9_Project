@@ -1,0 +1,220 @@
+[
+  {
+    "protocol": "Nuclear Factor Fixation and Permeabilization Staining Protocol\nPrepare target cells of interest and perform surface staining as described in BioLegend's Cell Surface Immunofluorescence Staining Protocol. \nFix the cells with 1 ml/tube BioLegend's Nuclear Factor Fixation Buffer, at room temperature in the dark for 20 minutes.\nCentrifuge at 250 x g for 5 minutes; discard supernatant.\nWash once with 1 ml Biolegend's Nuclear Factor Permeabilization Buffer (1x).\nResuspend cells in 1 ml BioLegend's Nuclear Factor Permabilization Buffer (1x), incubate at room temperature in the dark for 20 minutes, spin down cells and discard the supernatant; then resuspend the pellet in 100 ul of BioLegend's Nucelar Factor Permeabilization Buffer (1x).\nAdd appropriate amount of flurochrome-conjugated antibodies for nuclear target of interest, and incubate at room temperature in the dark for 30 minutes.\nWash twice with Cell Staining Buffer, and resuspend in 0.5 ml Cell Staining Buffer, then analyze with flow cytometer with appropriate instrument settings.",
+    "actions": [
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "BioLegend's Nuclear Factor Fixation Buffer",
+          "volume": "1 ml",
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "250 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "BioLegend's Nuclear Factor Permeabilization Buffer (1x)",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "BioLegend's Nuclear Factor Permeabilization Buffer (1x)",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "description": "spin down cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "BioLegend's Nuclear Factor Permeabilization Buffer (1x)",
+          "volume": "100 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fluorochrome-conjugated antibodies for nuclear target",
+          "volume": "appropriate amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "flow cytometer",
+            "settings": "appropriate instrument settings"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfix(container='tube', reagent=\"BioLegend's Nuclear Factor Fixation Buffer\", volume='1 ml', temperature='room temperature', duration='20 minutes', light_condition='in the dark')\ncentrifuge(container='tube', duration='5 minutes', speed='250 x g')\ndiscard(container='tube', reagent='supernatant')\nwash(container='tube', reagent=\"BioLegend's Nuclear Factor Permeabilization Buffer (1x)\", volume='1 ml', times='1')\nresuspend(container='tube', reagent=\"BioLegend's Nuclear Factor Permeabilization Buffer (1x)\", volume='1 ml')\nincubate(container='tube', temperature='room temperature', duration='20 minutes', light_condition='in the dark')\ncentrifuge(container='tube', description='spin down cells')\ndiscard(container='tube', reagent='supernatant')\nresuspend(container='tube', reagent=\"BioLegend's Nuclear Factor Permeabilization Buffer (1x)\", volume='100 ul')\nadd(container='tube', reagent='fluorochrome-conjugated antibodies for nuclear target', volume='appropriate amount')\nincubate(container='tube', temperature='room temperature', duration='30 minutes', light_condition='in the dark')\nwash(container='tube', reagent='Cell Staining Buffer', times='2')\nresuspend(container='tube', reagent='Cell Staining Buffer', volume='0.5 ml')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: tube, other: {'instrument': 'flow cytometer', 'settings': 'appropriate instrument settings'})",
+    "source_file": "protocol_212.txt"
+  }
+]

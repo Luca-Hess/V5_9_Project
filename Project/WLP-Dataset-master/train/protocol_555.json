@@ -1,0 +1,294 @@
+[
+  {
+    "protocol": "Methyltransferase Assay\nSet up the assays, to contain 50.0 \u00b5L total per assay with 3 \u00b5g of DNA and 2 \u00b5Ci of Adenosyl-L-Methionine, S-Methyl (3H), and the enzyme to be tested.\nIncubate the assays at 37\u00b0C for 2 hours.\nAdd 30 \u00b5L (60 \u00b5g) of proteinase K to each assay.\nIncubate at 65\u00b0C for 20 min.\nAdd 4 \u00b5L (20 \u00b5g) of ss salmon sperm DNA as a carrier.\nAdd an equal volume (84 \u00b5L) of 20% TCA and incubate at 4\u00b0C for 10 min to precipitate the samples.\nCentrifuge the assays in the microfuge for 5 min at 4\u00b0C.\nDiscard the supernatants.\nWash the pellets 2X with 200 \u00b5L of 5% TCA in the microfuge for 5 min at 4\u00b0C.\nResuspend the pellets with 500 \u00b5L each of 500 mM NaOH.\nIncubate the assays at 65\u00b0C for 20 min.\nPrecipitate the samples with 500 \u00b5L of 20% TCA for 10 min at 4\u00b0C.\nCentrifuge the samples in the microfuge for 5 min at 4\u00b0C.\nWash the pellets 2X with 200 \u00b5L of 5% TCA in the microfuge for 5 min at 4\u00b0C.\nResuspend the pellet with 500 \u00b5L of 5% TCA.\nIncubate in boiling water for 30 min (loosen the caps or puncture the caps of the tubes).\nCentrifuge the samples in the microfuge for 5 min at 4\u00b0C to remove the insoluble material.\nCount the supernatants in 10 mL of triton-toluene counting solution.",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "DNA (3 \u00b5g), Adenosyl-L-Methionine, S-Methyl (3H) (2 \u00b5Ci), enzyme to be tested",
+          "volume": "50.0 \u00b5L total per assay",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "proteinase K",
+          "volume": "30 \u00b5L (60 \u00b5g)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "ss salmon sperm DNA",
+          "volume": "4 \u00b5L (20 \u00b5g)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "carrier"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "20% TCA",
+          "volume": "84 \u00b5L (equal volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "precipitate samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "5% TCA",
+          "volume": "200 \u00b5L",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "times": "2X",
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "500 mM NaOH",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "20% TCA",
+          "volume": "500 \u00b5L",
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "5% TCA",
+          "volume": "200 \u00b5L",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "times": "2X",
+            "instrument": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": "5% TCA",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boiling water",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "note": "loosen or puncture caps"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "assay tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "instrument": "microfuge",
+            "purpose": "remove insoluble material"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": "triton-toluene counting solution",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: assay tube, reagent: DNA (3 \u00b5g), Adenosyl-L-Methionine, S-Methyl (3H) (2 \u00b5Ci), enzyme to be tested, volume: 50.0 \u00b5L total per assay, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='assay tube', temperature='37\u00b0C', duration='2 hours')\nadd(container='assay tube', reagent='proteinase K', volume='30 \u00b5L (60 \u00b5g)')\nincubate(container='assay tube', temperature='65\u00b0C', duration='20 min')\nadd(container='assay tube', reagent='ss salmon sperm DNA', volume='4 \u00b5L (20 \u00b5g)', purpose='carrier')\nadd(container='assay tube', reagent='20% TCA', volume='84 \u00b5L (equal volume)')\nincubate(container='assay tube', temperature='4\u00b0C', duration='10 min', purpose='precipitate samples')\ncentrifuge(container='assay tube', temperature='4\u00b0C', duration='5 min', instrument='microfuge')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: assay tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='assay tube', reagent='5% TCA', volume='200 \u00b5L', temperature='4\u00b0C', duration='5 min', times='2X', instrument='microfuge')\nresuspend(container='assay tube', reagent='500 mM NaOH', volume='500 \u00b5L')\nincubate(container='assay tube', temperature='65\u00b0C', duration='20 min')\nprecipitate(container='assay tube', reagent='20% TCA', volume='500 \u00b5L', temperature='4\u00b0C', duration='10 min')\ncentrifuge(container='assay tube', temperature='4\u00b0C', duration='5 min', instrument='microfuge')\nwash(container='assay tube', reagent='5% TCA', volume='200 \u00b5L', temperature='4\u00b0C', duration='5 min', times='2X', instrument='microfuge')\nresuspend(container='assay tube', reagent='5% TCA', volume='500 \u00b5L')\nincubate(container='assay tube', temperature='boiling water', duration='30 min', note='loosen or puncture caps')\ncentrifuge(container='assay tube', temperature='4\u00b0C', duration='5 min', instrument='microfuge', purpose='remove insoluble material')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: supernatant, reagent: triton-toluene counting solution, volume: 10 mL, other: {})",
+    "source_file": "protocol_555.txt"
+  }
+]

@@ -1,0 +1,273 @@
+[
+  {
+    "protocol": "Generating CB-X\u2122 Tables and standard curves for CB-X Protein Assay Optimization\nPrepare duplicate standards of choice in your buffer of choice at the following concentrations: 0, 0.2, 0.4, 0.6, 0.8, 1.0\u00b5g/\u00b5l. \nTransfer 50\u00b5l protein standard to 1.5ml centrifuge tubes.\nPrepare a standard calibration plot for the determination of protein concentration of the unknown samples.\nUse the line equation to generate your own CB-X\u2122 Tables.\nThis CB-X\u2122 Table will allow all your future protein estimations to be performed without using protein standards, allowing you to carry out rapid, single protein estimations.\nAdd 1ml pre-chilled (-20\u00b0C) CB-X\u2122 and vortex to mix.\nCentrifuge at 16,000xg for 5 minutes and carefully remove all the supernatant without disturbing the protein pellet.\nAdd 50\u00b5l CB-X\u2122 Solubilization Buffer-I and 50\u00b5l CB-X\u2122 Solubilization Buffer-II to the tube and vortex to dissolve the protein pellet.\nInvert the CB-X\u2122 Assay Dye 2-3 times to mix and add 1ml CB-X\u2122 Assay Dye to the tube and vortex briefly.\nIncubate for 5 minutes at room temperature.\nRead the absorbance at 595nm against deionized water using either a 1cm path length cuvette or transfer 200\u00b5l assay solution to a microtiter well.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "protein standards in buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentrations": [
+              "0",
+              "0.2",
+              "0.4",
+              "0.6",
+              "0.8",
+              "1.0 \u00b5g/\u00b5l"
+            ],
+            "duplicates": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "protein standard",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "standard calibration plot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determination of protein concentration of unknown samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "generate",
+        "parameters": {
+          "container": null,
+          "reagent": "CB-X\u2122 Table",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "using line equation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "pre-chilled (-20\u00b0C) CB-X\u2122",
+          "volume": "1ml",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "16,000xg",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "without disturbing protein pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "CB-X\u2122 Solubilization Buffer-I",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "CB-X\u2122 Solubilization Buffer-II",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dissolve protein pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "CB-X\u2122 Assay Dye bottle",
+          "reagent": "CB-X\u2122 Assay Dye",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2-3"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "CB-X\u2122 Assay Dye",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "cuvette or microtiter well",
+          "reagent": "assay solution",
+          "volume": "200\u00b5l (if microtiter well)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "595nm",
+            "reference": "deionized water",
+            "path length": "1cm (if cuvette)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microtiter well",
+          "reagent": "assay solution",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: protein standards in buffer, other: {'concentrations': ['0', '0.2', '0.4', '0.6', '0.8', '1.0 \u00b5g/\u00b5l'], 'duplicates': True})\n\n### AUTOMATED SECTION ###\ntransfer(container='1.5ml centrifuge tube', reagent='protein standard', volume='50\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: standard calibration plot, other: {'purpose': 'determination of protein concentration of unknown samples'})\n# MANUAL: generate (reagent: CB-X\u2122 Table, other: {'method': 'using line equation'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='pre-chilled (-20\u00b0C) CB-X\u2122', volume='1ml', temperature='-20\u00b0C')\nvortex(container='tube', purpose='mix')\ncentrifuge(container='tube', duration='5 minutes', speed='16,000xg')\nremove(container='tube', reagent='supernatant', volume='all', note='without disturbing protein pellet')\nadd(container='tube', reagent='CB-X\u2122 Solubilization Buffer-I', volume='50\u00b5l')\nadd(container='tube', reagent='CB-X\u2122 Solubilization Buffer-II', volume='50\u00b5l')\nvortex(container='tube', purpose='dissolve protein pellet')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: CB-X\u2122 Assay Dye bottle, reagent: CB-X\u2122 Assay Dye, other: {'times': '2-3'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='CB-X\u2122 Assay Dye', volume='1ml')\nvortex(container='tube', duration='briefly')\nincubate(container='tube', temperature='room temperature', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: read (container: cuvette or microtiter well, reagent: assay solution, volume: 200\u00b5l (if microtiter well), other: {'wavelength': '595nm', 'reference': 'deionized water', 'path length': '1cm (if cuvette)'})\n\n### AUTOMATED SECTION ###\ntransfer(container='microtiter well', reagent='assay solution', volume='200\u00b5l')",
+    "source_file": "protocol_574.txt"
+  }
+]

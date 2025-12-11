@@ -1,0 +1,316 @@
+[
+  {
+    "protocol": "RNA sequencing library construction for Illumina GA II\nFragment 400ng of amplified mRNA to 10\u2010200nt using 10x RNA fragmentation buffer (Ambion). \nPurify using regular ethanol precipitation method with 0.35\u03bcl of GlycoBlue (Ambion).\nDephosphorylate the 3\u2019 end the RNA samples using 10x Antarctic Phosphatase Buffer and 0.5\u00a0\u03bcl Antarctic Phosphatase (NEB) at 37 \u00b0C for 20 minutes.\nHeat inactivate at 75\u00b0C for 10 minutes.\nPhosphorylate the 5\u2019 end of RNA samples was using 10x T4 DNA ligase buffer (it has 1mM ATP final) and T4 PNK (NEB) at 37 \u00b0C for 30 minutes.\nPurify the RNAs in the reactions using ammonium acetate and ethanol precipitation with 2\u03bcl of GlycoBlue (Ambion).\nLigate the\u00a0RNA samples at 37 \u00b0C for one hour to 3\u2019 linker (5\u2019\u2010/5rApp/CTG TAG GCA CCA TCA AT/3ddC/\u20103\u2019) (synthesized by IDT) using: T4 RNA ligase 1 (NEB), 5X ATP\u2010free T4 RNA ligase buffer (16.5 mM DTT, 41.5% glycerol, 250 mM HEPES\u2010KOH, pH8.3, 50 mM MgCl2, 50\u00a0\u03bcg/ml acetylated BSA), and 10% DMSO .\nPurify the RNAs\u00a0in the reactions using ammonium acetate and ethanol precipitation with 2\u03bcl of GlycoBlue (Ambion).\nRun the RNA samples on 6% TBE\u2010Urea PAGE Gel (Invitrogen).\nCut\u00a0100\u2010200nt bands and elute overnight with 400\u03bcl stop solution (1M ammonium acetate and 10mM EDTA) at 4\u00b0C.\nPurify the\u00a0RNAs in the supernatant using regular ethanol precipitation method with 2\u03bcl of GlycoBlue (Ambion).\nLigate the RNA samples at 37\u00b0C for 1 hour\u00a0to 5\u2019 linker (with bar code) using: T4 RNA ligase 1 (NEB), 10x T4 RNA ligase 1 buffer (NEB), and 10% DMSO .\nPurify the RNAs by ammonium acetate and ethanol precipitation and gel purification as described in steps 8-11.\nReverse transcribe cDNA of the RNA samples using SuperScript III (Invitrogen) following manufacture\u2019s protocol.\nThe primer sequence used for reverse transcription is 5\u2019\u2010ATT GAT GGT GCC TAC AG\u20103\u2019.\nAmplify the cDNA samples using Taq (NEB) following manufacture\u2019s protocol.\nPurify the PCR products (200\u2010300nt) using Qiagen PCR purification kit.\nDilute the\u00a0purified PCR samples to 10nM and sequence\u00a0using Illumina GA II sequencing system.",
+    "actions": [
+      {
+        "action": "fragment",
+        "parameters": {
+          "container": null,
+          "reagent": "10x RNA fragmentation buffer (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "400ng amplified mRNA",
+            "fragment_size": "10-200nt"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "ethanol, 0.35\u03bcl GlycoBlue (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "regular ethanol precipitation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dephosphorylate",
+        "parameters": {
+          "container": null,
+          "reagent": "10x Antarctic Phosphatase Buffer, 0.5\u03bcl Antarctic Phosphatase (NEB)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "sample": "RNA samples",
+            "site": "3\u2019 end"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "phosphorylate",
+        "parameters": {
+          "container": null,
+          "reagent": "10x T4 DNA ligase buffer (1mM ATP final), T4 PNK (NEB)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "sample": "RNA samples",
+            "site": "5\u2019 end"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "ammonium acetate, ethanol, 2\u03bcl GlycoBlue (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "ethanol precipitation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "ligate",
+        "parameters": {
+          "container": null,
+          "reagent": "T4 RNA ligase 1 (NEB), 5X ATP\u2010free T4 RNA ligase buffer, 10% DMSO, 3\u2019 linker (IDT)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "sample": "RNA samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "ammonium acetate, ethanol, 2\u03bcl GlycoBlue (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "ethanol precipitation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "6% TBE\u2010Urea PAGE Gel (Invitrogen)",
+          "reagent": "RNA samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "bands": "100\u2010200nt"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "400\u03bcl stop solution (1M ammonium acetate and 10mM EDTA)",
+          "volume": "400\u03bcl",
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "ethanol, 2\u03bcl GlycoBlue (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "ethanol precipitation",
+            "source": "supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "ligate",
+        "parameters": {
+          "container": null,
+          "reagent": "T4 RNA ligase 1 (NEB), 10x T4 RNA ligase 1 buffer (NEB), 10% DMSO, 5\u2019 linker (with bar code)",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "sample": "RNA samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "ammonium acetate, ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "ethanol precipitation and gel purification",
+            "reference_steps": "steps 8-11"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "reverse transcribe",
+        "parameters": {
+          "container": null,
+          "reagent": "SuperScript III (Invitrogen)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "RNA samples",
+            "protocol": "manufacturer\u2019s protocol",
+            "primer_sequence": "5\u2019\u2010ATT GAT GGT GCC TAC AG\u20103\u2019"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "Taq (NEB)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "cDNA samples",
+            "protocol": "manufacturer\u2019s protocol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "Qiagen PCR purification kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "PCR products (200\u2010300nt)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "purified PCR samples",
+            "final_concentration": "10nM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": "Illumina GA II sequencing system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "diluted PCR samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfragment(reagent='10x RNA fragmentation buffer (Ambion)', sample='400ng amplified mRNA', fragment_size='10-200nt')\npurify(reagent='ethanol, 0.35\u03bcl GlycoBlue (Ambion)', method='regular ethanol precipitation')\ndephosphorylate(reagent='10x Antarctic Phosphatase Buffer, 0.5\u03bcl Antarctic Phosphatase (NEB)', temperature='37\u00b0C', duration='20 minutes', sample='RNA samples', site='3\u2019 end')\nheat inactivate(temperature='75\u00b0C', duration='10 minutes')\nphosphorylate(reagent='10x T4 DNA ligase buffer (1mM ATP final), T4 PNK (NEB)', temperature='37\u00b0C', duration='30 minutes', sample='RNA samples', site='5\u2019 end')\npurify(reagent='ammonium acetate, ethanol, 2\u03bcl GlycoBlue (Ambion)', method='ethanol precipitation')\nligate(reagent='T4 RNA ligase 1 (NEB), 5X ATP\u2010free T4 RNA ligase buffer, 10% DMSO, 3\u2019 linker (IDT)', temperature='37\u00b0C', duration='1 hour', sample='RNA samples')\npurify(reagent='ammonium acetate, ethanol, 2\u03bcl GlycoBlue (Ambion)', method='ethanol precipitation')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: 6% TBE\u2010Urea PAGE Gel (Invitrogen), reagent: RNA samples)\n# MANUAL: cut (other: {'bands': '100\u2010200nt'})\n\n### AUTOMATED SECTION ###\nelute(reagent='400\u03bcl stop solution (1M ammonium acetate and 10mM EDTA)', volume='400\u03bcl', temperature='4\u00b0C', duration='overnight')\npurify(reagent='ethanol, 2\u03bcl GlycoBlue (Ambion)', method='ethanol precipitation', source='supernatant')\nligate(reagent='T4 RNA ligase 1 (NEB), 10x T4 RNA ligase 1 buffer (NEB), 10% DMSO, 5\u2019 linker (with bar code)', temperature='37\u00b0C', duration='1 hour', sample='RNA samples')\n\n### MANUAL SECTION ###\n# MANUAL: purify (reagent: ammonium acetate, ethanol, other: {'method': 'ethanol precipitation and gel purification', 'reference_steps': 'steps 8-11'})\n\n### AUTOMATED SECTION ###\nreverse transcribe(reagent='SuperScript III (Invitrogen)', sample='RNA samples', protocol='manufacturer\u2019s protocol', primer_sequence='5\u2019\u2010ATT GAT GGT GCC TAC AG\u20103\u2019')\namplify(reagent='Taq (NEB)', sample='cDNA samples', protocol='manufacturer\u2019s protocol')\npurify(reagent='Qiagen PCR purification kit', sample='PCR products (200\u2010300nt)')\ndilute(sample='purified PCR samples', final_concentration='10nM')\nsequence(container='Illumina GA II sequencing system', sample='diluted PCR samples')",
+    "source_file": "protocol_308.txt"
+  }
+]

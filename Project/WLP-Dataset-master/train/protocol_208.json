@@ -1,0 +1,440 @@
+[
+  {
+    "protocol": "Cell Surface Immunofluorescence Staining Protocol\nObtain desired tissue (e.g. spleen, lymph node, thymus, bone marrow) and prepare a single cell suspension in Cell Staining Buffer (BioLegend Cat. No. 420201).\nAdd Cell Staining Buffer up to ~15 ml and centrifuge at 350 x g for 5 minutes, discard supernatant.\nIf necessary (e.g. spleen), dilute 10X Red Blood Cell (RBC) Lysis Buffer (BioLegend Cat. No. 420301) to 1X working concentration with DI water and resuspend pellet in 3 ml 1X RBC Lysis Buffer.\nIncubate on ice for 5 minutes.\nStop cell lysis by adding 10 ml Cell Staining Buffer to the tube.\nCentrifuge for 5 minutes at 350 x g and discard supernatant.\nAdd Cell Staining Buffer up to ~15 ml and centrifuge at 350 x g for 5 minutes, discard supernatant.\nCount viable cells and resuspend in Cell Staining Buffer at 5-10 x 106 cells/ml and distribute 100 \u03bcl/tube of cell suspension (5-10 x 105 cells/tube) into 12 x 75 mm plastic tubes.\nAdd appropriately conjugated fluorescent, biotinylated, or purified primary antibodies at predetermined optimum concentrations (e.g. anti-CD3-FITC, anti-CD4-Biotin, and anti-CD8-APC) and incubate on ice for 15-20 minutes in the dark.\nWash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (1/2). \nIf using a purified primary antibody, resuspend pellet in residual buffer and add previously determined optimum concentrations of anti-species immunoglobulin fluorochrome conjugated secondary antibody (e.g. FITC anti-mouse Ig) and incubate on ice in the dark for 15-20 minutes.\nWash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (1/2). \nResuspend cell pellet in 0.5 ml of Cell Staining Buffer and add 5 \u03bcl (0.25 \u03bcg)/million cells of 7-AAD Viability Staining Solution (BioLegend Cat. No. 420403) to exclude dead cells.\nIncubate on ice for 3-5 minutes in the dark.\nAnalyze with a Flow Cytometer.\nWash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (2/2). \nWash with at least 2 ml of Cell Staining Buffer by centrifugation at 350 x g for 5 minutes. (2/2).",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "desired tissue (e.g. spleen, lymph node, thymus, bone marrow), Cell Staining Buffer",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "output": "single cell suspension"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "Cell Staining Buffer",
+          "volume": "~15 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "10X RBC Lysis Buffer",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "DI water",
+            "final concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "pellet, 3 ml 1X RBC Lysis Buffer",
+          "volume": "3 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "stop cell lysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "Cell Staining Buffer",
+          "volume": "~15 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "viable cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "Cell Staining Buffer",
+          "volume": "to achieve 5-10 x 10^6 cells/ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "distribute",
+        "parameters": {
+          "container": "12 x 75 mm plastic tubes",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcl/tube (5-10 x 10^5 cells/tube)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "primary antibodies (e.g. anti-CD3-FITC, anti-CD4-Biotin, anti-CD8-APC)",
+          "volume": "predetermined optimum concentrations",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "centrifugation at 350 x g for 5 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "pellet in residual buffer",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "secondary antibody (e.g. FITC anti-mouse Ig)",
+          "volume": "predetermined optimum concentrations",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "centrifugation at 350 x g for 5 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "Cell Staining Buffer",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "not specified",
+          "reagent": "7-AAD Viability Staining Solution",
+          "volume": "5 \u03bcl (0.25 \u03bcg)/million cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "exclude dead cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "3-5 minutes",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "not specified",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Flow Cytometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "centrifugation at 350 x g for 5 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "at least 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "centrifugation at 350 x g for 5 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: not specified, reagent: desired tissue (e.g. spleen, lymph node, thymus, bone marrow), Cell Staining Buffer, volume: not specified, other: {'output': 'single cell suspension'})\n\n### AUTOMATED SECTION ###\nadd(container='not specified', reagent='Cell Staining Buffer', volume='~15 ml')\ncentrifuge(container='not specified', duration='5 minutes', speed='350 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: not specified, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\ndilute(container='not specified', reagent='10X RBC Lysis Buffer', volume='not specified', diluent='DI water', final concentration='1X')\nresuspend(container='not specified', reagent='pellet, 3 ml 1X RBC Lysis Buffer', volume='3 ml')\nincubate(container='not specified', temperature='on ice', duration='5 minutes')\nadd(container='tube', reagent='Cell Staining Buffer', volume='10 ml', purpose='stop cell lysis')\ncentrifuge(container='not specified', duration='5 minutes', speed='350 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: not specified, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='not specified', reagent='Cell Staining Buffer', volume='~15 ml')\ncentrifuge(container='not specified', duration='5 minutes', speed='350 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: not specified, reagent: supernatant, other: {})\n# MANUAL: count (container: not specified, reagent: viable cells, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='not specified', reagent='Cell Staining Buffer', volume='to achieve 5-10 x 10^6 cells/ml')\ndistribute(container='12 x 75 mm plastic tubes', reagent='cell suspension', volume='100 \u03bcl/tube (5-10 x 10^5 cells/tube)')\nadd(container='tube', reagent='primary antibodies (e.g. anti-CD3-FITC, anti-CD4-Biotin, anti-CD8-APC)', volume='predetermined optimum concentrations')\nincubate(container='tube', temperature='on ice', duration='15-20 minutes', light='in the dark')\nwash(container='tube', reagent='Cell Staining Buffer', volume='at least 2 ml', method='centrifugation at 350 x g for 5 minutes')\nresuspend(container='not specified', reagent='pellet in residual buffer', volume='not specified')\nadd(container='not specified', reagent='secondary antibody (e.g. FITC anti-mouse Ig)', volume='predetermined optimum concentrations')\nincubate(container='not specified', temperature='on ice', duration='15-20 minutes', light='in the dark')\nwash(container='tube', reagent='Cell Staining Buffer', volume='at least 2 ml', method='centrifugation at 350 x g for 5 minutes')\nresuspend(container='not specified', reagent='Cell Staining Buffer', volume='0.5 ml')\nadd(container='not specified', reagent='7-AAD Viability Staining Solution', volume='5 \u03bcl (0.25 \u03bcg)/million cells', purpose='exclude dead cells')\nincubate(container='not specified', temperature='on ice', duration='3-5 minutes', light='in the dark')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: not specified, other: {'instrument': 'Flow Cytometer'})\n\n### AUTOMATED SECTION ###\nwash(container='tube', reagent='Cell Staining Buffer', volume='at least 2 ml', method='centrifugation at 350 x g for 5 minutes')\nwash(container='tube', reagent='Cell Staining Buffer', volume='at least 2 ml', method='centrifugation at 350 x g for 5 minutes')",
+    "source_file": "protocol_208.txt"
+  }
+]

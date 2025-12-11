@@ -1,0 +1,127 @@
+[
+  {
+    "protocol": "How to make a 1M DTT Stock Solution\nWeigh 1.54 g of Dithiothreitol (DTT). \nAdd 10 ml of sterile dH2O.\nDissolve completely.\nPrewet a 0.2 \u00b5m syringe filter by drawing through 5-10 ml of sterile H2O\u00a0and discard water.\nSterilize DTT Stock through the prepared 0.2 \u00b5m syringe filter.\nAliquot into 2 ml tubes and store at -20\u00b0C.\nStocks may be kept for 1 year.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "Dithiothreitol (DTT)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "1.54 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile dH2O",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "DTT in dH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "prewet",
+        "parameters": {
+          "container": "0.2 \u00b5m syringe filter",
+          "reagent": "sterile H2O",
+          "volume": "5-10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "drawing through"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "sterilize",
+        "parameters": {
+          "container": "prepared 0.2 \u00b5m syringe filter",
+          "reagent": "DTT Stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "2 ml tubes",
+          "reagent": "DTT Stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "2 ml tubes",
+          "reagent": "DTT Stock",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: Dithiothreitol (DTT), other: {'mass': '1.54 g'})\n\n### AUTOMATED SECTION ###\nadd(reagent='sterile dH2O', volume='10 ml')\ndissolve(reagent='DTT in dH2O')\n\n### MANUAL SECTION ###\n# MANUAL: prewet (container: 0.2 \u00b5m syringe filter, reagent: sterile H2O, volume: 5-10 ml, other: {'method': 'drawing through'})\n# MANUAL: discard (reagent: water)\n# MANUAL: sterilize (container: prepared 0.2 \u00b5m syringe filter, reagent: DTT Stock, other: {'method': 'filter'})\n\n### AUTOMATED SECTION ###\naliquot(container='2 ml tubes', reagent='DTT Stock')\nstore(container='2 ml tubes', reagent='DTT Stock', temperature='-20\u00b0C')",
+    "source_file": "protocol_241.txt"
+  }
+]

@@ -1,0 +1,241 @@
+[
+  {
+    "protocol": "Isotopic Labeling of Cyanobacteria and DNA Analysis\nPrepare Pro99, SN, SNAX or Amp1 medium according to directions, but use 15N ammonium chloride which will provide the heavy isotope.\n15 NH4Cl is available from Cambridge Isotope Laboratories, Inc. (#NLM-467-1).\nGrow cyanobacteria in the medium with heavy nitrogen and transfer at least 3 times before use.\nHarvest the bacteria grown in heavy nitrogen.\nExtract bacterial DNA using standard methods.\nQuantify the DNA using Quant-iT Pico Green.\nUse at least 10 \u00b5g of DNA for density gradient centrifugation.\nFor density gradient centrifugation, a Beckman VTi 65 vertical rotor was used with 13x48 mm OptiSeal polyallomer tubes (4.9 ml capacity).\nMix the DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6) to a final volume of 0.9 ml.\nMix the DNA with 4ml of CsCl prepared in TE to a density of p1.8 (measure the density of the final solutions, they should be p1.7).\nDispense 4.9 ml of the DNA sample in CsCl into the OptiSeal tube and plug with the black caps.\nLoad the tubes into the rotor and put caps on all carriers.\nCentrifuge at 44,000 rpm (=184,678.5 g) in a Beckman L70 or L80 ultracentrifuge for 48 hr at 18\u00b0C.\nCollect 0.2-0.25 ml fractions.\nCalculate amount of DNA in each fraction using Quant-iT Pico Green (perform in duplicate) and measure the density of each fraction.\nDetermine the density of the fractions with DNA (plot ng of DNA versus CsCl density).",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Pro99, SN, SNAX or Amp1 medium with 15N ammonium chloride",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instructions": "according to directions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "cyanobacteria in medium with heavy nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_times": "at least 3 times before use"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": null,
+          "reagent": "bacteria grown in heavy nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "bacterial DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "standard methods"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Quant-iT Pico Green"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": "at least 10 \u00b5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "application": "density gradient centrifugation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6)",
+          "volume": "final volume of 0.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA with 4 ml CsCl prepared in TE",
+          "volume": "4 ml CsCl, final density p1.8 (should be p1.7)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "density": "p1.8 (should be p1.7)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "OptiSeal tube (13x48 mm, 4.9 ml capacity)",
+          "reagent": "DNA sample in CsCl",
+          "volume": "4.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plug": "black caps"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "rotor",
+          "reagent": "OptiSeal tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "caps": "all carriers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Beckman VTi 65 vertical rotor",
+          "reagent": "OptiSeal tubes with DNA sample in CsCl",
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "48 hr",
+          "speed": "44,000 rpm (=184,678.5 g)",
+          "other": {
+            "instrument": "Beckman L70 or L80 ultracentrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "fractions",
+          "volume": "0.2-0.25 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA in each fraction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Quant-iT Pico Green (perform in duplicate)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "density of each fraction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "density of the fractions with DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "plot ng of DNA versus CsCl density"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Pro99, SN, SNAX or Amp1 medium with 15N ammonium chloride, other: {'instructions': 'according to directions'})\n# MANUAL: grow (reagent: cyanobacteria in medium with heavy nitrogen, other: {'transfer_times': 'at least 3 times before use'})\n# MANUAL: harvest (reagent: bacteria grown in heavy nitrogen, other: {})\n# MANUAL: extract (reagent: bacterial DNA, other: {'method': 'standard methods'})\n# MANUAL: quantify (reagent: DNA, other: {'method': 'Quant-iT Pico Green'})\n# MANUAL: use (reagent: DNA, volume: at least 10 \u00b5g, other: {'application': 'density gradient centrifugation'})\n\n### AUTOMATED SECTION ###\nmix(reagent='DNA with TE buffer (10mM Tris, 1mM EDTA, pH7.6)', volume='final volume of 0.9 ml')\nmix(reagent='DNA with 4 ml CsCl prepared in TE', volume='4 ml CsCl, final density p1.8 (should be p1.7)', density='p1.8 (should be p1.7)')\ndispense(container='OptiSeal tube (13x48 mm, 4.9 ml capacity)', reagent='DNA sample in CsCl', volume='4.9 ml', plug='black caps')\n\n### MANUAL SECTION ###\n# MANUAL: load (container: rotor, reagent: OptiSeal tubes, other: {'caps': 'all carriers'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Beckman VTi 65 vertical rotor', reagent='OptiSeal tubes with DNA sample in CsCl', temperature='18\u00b0C', duration='48 hr', speed='44,000 rpm (=184,678.5 g)', instrument='Beckman L70 or L80 ultracentrifuge')\ncollect(reagent='fractions', volume='0.2-0.25 ml')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (reagent: DNA in each fraction, other: {'method': 'Quant-iT Pico Green (perform in duplicate)'})\n# MANUAL: measure (reagent: density of each fraction, other: {})\n# MANUAL: determine (reagent: density of the fractions with DNA, other: {'method': 'plot ng of DNA versus CsCl density'})",
+    "source_file": "protocol_414.txt"
+  }
+]

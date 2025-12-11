@@ -1,0 +1,183 @@
+[
+  {
+    "protocol": "Frying Chips for Frying Oil Studies (Food Science)\nFill Fry Daddy with 900 g liquid soybean (or other edible) oil.\nPlug in Fry Daddy and heat to frying temperature (180 C).\nUse a temperature controller if necessary.\nLog temperature data using a computer if desired.\nWeigh chips initially (approximately 40 g, or 20-25 chips).\nFry chips in the basket provided for 2 minutes.\nLift the basket, drain the chips well, and dump onto a paper towel to drain and cool.\nSpread chips out so that they all have contact with the paper towel.\nWait for them to dry a bit.\nTurn chips on the paper towels if necessary to get rid of any pooled oil.\nPut chips back into weigh boats and record a final weight.\nStore chips covered in an airtight container.",
+    "actions": [
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "Fry Daddy",
+          "reagent": "liquid soybean (or other edible) oil",
+          "volume": "900 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "Fry Daddy",
+          "reagent": "oil",
+          "volume": null,
+          "temperature": "180 C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "chips",
+          "reagent": null,
+          "volume": "approximately 40 g, or 20-25 chips",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fry",
+        "parameters": {
+          "container": "basket (provided)",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": "180 C",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "lift",
+        "parameters": {
+          "container": "basket",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "basket/paper towel",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "dump onto paper towel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "paper towel",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "chips on paper towel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until dry a bit",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "turn",
+        "parameters": {
+          "container": "chips on paper towel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "get rid of pooled oil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "weigh boats",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": "chips in weigh boats",
+          "reagent": null,
+          "volume": "final weight",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "airtight container",
+          "reagent": "chips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "covered": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfill(container='Fry Daddy', reagent='liquid soybean (or other edible) oil', volume='900 g')\nheat(container='Fry Daddy', reagent='oil', temperature='180 C')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: chips, volume: approximately 40 g, or 20-25 chips, other: {})\n\n### AUTOMATED SECTION ###\nfry(container='basket (provided)', reagent='chips', temperature='180 C', duration='2 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: lift (container: basket, reagent: chips, other: {})\n# MANUAL: drain (container: basket/paper towel, reagent: chips, other: {'method': 'dump onto paper towel'})\n# MANUAL: spread (container: paper towel, reagent: chips, other: {})\n\n### AUTOMATED SECTION ###\nwait(container='chips on paper towel', duration='until dry a bit')\n\n### MANUAL SECTION ###\n# MANUAL: turn (container: chips on paper towel, other: {'purpose': 'get rid of pooled oil'})\n# MANUAL: put (container: weigh boats, reagent: chips, other: {})\n# MANUAL: record (container: chips in weigh boats, volume: final weight, other: {})\n# MANUAL: store (container: airtight container, reagent: chips, other: {'covered': True})",
+    "source_file": "protocol_383.txt"
+  }
+]

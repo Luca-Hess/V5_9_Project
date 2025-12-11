@@ -1,0 +1,561 @@
+[
+  {
+    "protocol": "Conjugation of Thalassiosira pseudonana\nPick bacterial colonies from your Gent+Kan plates and inoculate 10 mL LB medium.\nGrow overnight.\nMeasure OD600 and start a 150 mL LB subculture (recommended starting OD600 either 0.05 or 0.1).\nGrow at 37oC until OD600 reaches 0.3-0.4.\nCentrifuge at 4,000 rpm, 10oC, for 10 min.\nDecant supernatant and resuspend in 800 \u00b5L SOC.\nTp\u00a0was cultured in L1 medium as\u00a0described in the 'Before start' section.\nSpin down 2 x 108 cells at 4000 rpm, 10oC, for 10 min.\nDecant supernatant and resuspend pellet in 1 mL L1 medium.\nMix 200 \u00b5L T. pseudonana cells and 200 \u00b5L E. coli cells in a 1.5 mL tube.\nPipette up and down a few times.\nPlate on 1/2xL1 1% agar plates w/ 5% LB.\nIncubate in dark at 30oC for 90 minutes.\nMove plates to your standard Tp\u00a0growth conditions - in my case 18oC and constant light - for 4 hours.\nAdd 1 mL L1 medium and scrape with a cell scraper or L spreader.\nExpect to recover ~500 \u00b5L co-culture suspension after scraping.\nPlate 200 \u00b5L of the resulting suspension on pre-dried 1/2xL1 1% agar plates w/ 100 \u00b5g/mL nourseothricin.\nLeave at 18oC and constant light until colonies appear - ~2 weeks.\nHere are a few ways to confirm the presence and expression of your heterologous gene in resulting colonies:\nGrowth under selection pressure.\nMake sure colonies are able to grow in liquid L1 medium with 100 \u00b5g/mL nourseothricin (Nou100).\nPick colonies with a small tip or better a toothpick and inoculate ~0.5 mL L1 medium.\nOnce you observe growth subculture in larger volume.\nPCR- Use 1 \u00b5L of diatom culture as a template to amplify your expression cassette.\n- Confirm the absence of donor DNA by amplifying\u00a0E. coli-specific genes.\nNOTE:I used primers to amplify the\u00a0corC\u00a0gene.\nMake sure you always run\u00a0E. coli EPI300\u00a0posititve control.\n- Confirm the absence of live donor cells by plating some diatom culture on LB plates w/o antibiotics.\nNOTE: Any remaining donors cells and donor DNA are gone after a few liquid subcultures.\nYou can also patch colonies on fresh 1/2xL1 Nou100 plates.\nRT-PCR- Purify total RNA from Nou100 diatom culture, convert it to cDNA and use it to run a PCR with heterologous gene-specific primers.\n- An example of my result with controls can be found here.\nEpisome recovery- Perform a diatom miniprep as described by Karas et al.\n(2015).\n- Transform E. coli\u00a0with diatom-derived DNA.\n- Select on LB agar plates with 50\u00a0\u00b5g/mL kanamycin.\n- Miniprep, digest and analyze on a gel.\nNOTE:You will learn more about the state of your episome from this analysis.\nWestern blot\nProtein-specific assays- enzymatic assay,\u00a0microscopy etc.\nI've had success with 1, 2 and 3; tried 4, 5 and 6 without success.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "10 mL LB medium",
+          "reagent": "bacterial colonies from Gent+Kan plates",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "LB medium",
+          "reagent": "bacterial culture",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "bacterial culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "OD600"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": "150 mL LB subculture",
+          "reagent": "bacterial culture",
+          "volume": "150 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "starting_OD600": "0.05 or 0.1"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "LB subculture",
+          "reagent": "bacterial culture",
+          "volume": "150 mL",
+          "temperature": "37\u00b0C",
+          "duration": "until OD600 reaches 0.3-0.4",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bacterial culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "10\u00b0C",
+          "duration": "10 min",
+          "speed": "4000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuged tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuged tube",
+          "reagent": "SOC",
+          "volume": "800 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Tp culture",
+          "reagent": "2 x 10^8 cells",
+          "volume": null,
+          "temperature": "10\u00b0C",
+          "duration": "10 min",
+          "speed": "4000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuged tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuged tube",
+          "reagent": "L1 medium",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "200 \u00b5L T. pseudonana cells and 200 \u00b5L E. coli cells",
+          "volume": "400 \u00b5L total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "cell mixture",
+          "volume": "variable (up and down a few times)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "a few times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "1/2xL1 1% agar plates w/ 5% LB",
+          "reagent": "cell mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": "plated cells",
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "90 min",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "4 hours",
+          "speed": null,
+          "other": {
+            "light": "constant light"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plates",
+          "reagent": "L1 medium",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "plates",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "cell scraper or L spreader"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "pre-dried 1/2xL1 1% agar plates w/ 100 \u00b5g/mL nourseothricin",
+          "reagent": "co-culture suspension",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": "plated suspension",
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "~2 weeks (until colonies appear)",
+          "speed": null,
+          "other": {
+            "light": "constant light"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "~0.5 mL L1 medium",
+          "reagent": "colonies",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "small tip or toothpick"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "subculture",
+        "parameters": {
+          "container": "larger volume",
+          "reagent": "grown colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "PCR",
+        "parameters": {
+          "container": null,
+          "reagent": "1 \u00b5L diatom culture",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "template": "expression cassette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "E. coli-specific genes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "E. coli EPI300 positive control",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "LB plates w/o antibiotics",
+          "reagent": "diatom culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "patch",
+        "parameters": {
+          "container": "fresh 1/2xL1 Nou100 plates",
+          "reagent": "colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "total RNA from Nou100 diatom culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "convert",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA to cDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR with heterologous gene-specific primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "miniprep",
+        "parameters": {
+          "container": null,
+          "reagent": "diatom culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "E. coli with diatom-derived DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "LB agar plates with 50 \u00b5g/mL kanamycin",
+          "reagent": "transformed E. coli",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "miniprep",
+        "parameters": {
+          "container": null,
+          "reagent": "selected E. coli",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": null,
+          "reagent": "miniprep DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "gel",
+          "reagent": "digested DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "western blot",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": null,
+          "reagent": "protein-specific",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "enzymatic assay, microscopy etc."
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 10 mL LB medium, reagent: bacterial colonies from Gent+Kan plates, volume: 10 mL, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='LB medium', reagent='bacterial culture', volume='10 mL', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: bacterial culture, other: {'measurement': 'OD600'})\n# MANUAL: start (container: 150 mL LB subculture, reagent: bacterial culture, volume: 150 mL, other: {'starting_OD600': '0.05 or 0.1'})\n\n### AUTOMATED SECTION ###\nincubate(container='LB subculture', reagent='bacterial culture', volume='150 mL', temperature='37\u00b0C', duration='until OD600 reaches 0.3-0.4')\ncentrifuge(container='bacterial culture', temperature='10\u00b0C', duration='10 min', speed='4000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuged tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='centrifuged tube', reagent='SOC', volume='800 \u00b5L')\nspin(container='Tp culture', reagent='2 x 10^8 cells', temperature='10\u00b0C', duration='10 min', speed='4000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuged tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='centrifuged tube', reagent='L1 medium', volume='1 mL')\nmix(container='1.5 mL tube', reagent='200 \u00b5L T. pseudonana cells and 200 \u00b5L E. coli cells', volume='400 \u00b5L total')\npipette(container='1.5 mL tube', reagent='cell mixture', volume='variable (up and down a few times)', repeat='a few times')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: 1/2xL1 1% agar plates w/ 5% LB, reagent: cell mixture, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='agar plates', reagent='plated cells', temperature='30\u00b0C', duration='90 min', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: move (container: plates, temperature: 18\u00b0C, duration: 4 hours, other: {'light': 'constant light'})\n\n### AUTOMATED SECTION ###\nadd(container='plates', reagent='L1 medium', volume='1 mL')\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: plates, reagent: cells, other: {'tool': 'cell scraper or L spreader'})\n# MANUAL: plate (container: pre-dried 1/2xL1 1% agar plates w/ 100 \u00b5g/mL nourseothricin, reagent: co-culture suspension, volume: 200 \u00b5L, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='agar plates', reagent='plated suspension', temperature='18\u00b0C', duration='~2 weeks (until colonies appear)', light='constant light')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: ~0.5 mL L1 medium, reagent: colonies, volume: 0.5 mL, other: {'tool': 'small tip or toothpick'})\n# MANUAL: subculture (container: larger volume, reagent: grown colonies, other: {})\n\n### AUTOMATED SECTION ###\nPCR(reagent='1 \u00b5L diatom culture', volume='1 \u00b5L', template='expression cassette')\namplify(reagent='E. coli-specific genes')\nrun(reagent='E. coli EPI300 positive control')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: LB plates w/o antibiotics, reagent: diatom culture, other: {})\n# MANUAL: patch (container: fresh 1/2xL1 Nou100 plates, reagent: colonies, other: {})\n\n### AUTOMATED SECTION ###\npurify(reagent='total RNA from Nou100 diatom culture')\nconvert(reagent='RNA to cDNA')\nrun(reagent='PCR with heterologous gene-specific primers')\nminiprep(reagent='diatom culture')\ntransform(reagent='E. coli with diatom-derived DNA')\n\n### MANUAL SECTION ###\n# MANUAL: select (container: LB agar plates with 50 \u00b5g/mL kanamycin, reagent: transformed E. coli, other: {})\n\n### AUTOMATED SECTION ###\nminiprep(reagent='selected E. coli')\ndigest(reagent='miniprep DNA')\nanalyze(container='gel', reagent='digested DNA')\nwestern blot()\nassay(reagent='protein-specific', type='enzymatic assay, microscopy etc.')",
+    "source_file": "protocol_440.txt"
+  }
+]

@@ -1,0 +1,186 @@
+[
+  {
+    "protocol": "Th9 Polarization of Mouse CD4+ Cells\nHarvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.\nTease lymph nodes through a sterile 70-\u03bcm nylon cell strainer to obtain single-cell suspensions in IMDM containing 10% FCS (complete medium).\nResuspend cells in complete medium and use your favorite method to isolate CD4+ cells.\nCheck out Biocompare.com to find useful kits.\nOn day 0, coat 60 \u00d7 15 mm of plastic petri dishes with anti-mouse CD3\u03b5, clone 145-2C11 (5 \u03bcg/ml).\nIncubate at 37\u00b0C for 2 hours or 4\u02daC overnight.\nAseptically decant antibody solution from the plate.\nWash plate 3 times with sterile PBS.\nDiscard liquid.\nPlate CD4+ cells at 10 x106/5 ml/dish.\nCulture cells for 3 days in the presence of anti-mouse CD28, clone 37.51 (5 \u03bcg/mL), recombinant human TGF-\u03b21 (10 ng/mL), recombinant mouse IL-4(10 ng/mL), recombinant mouse IL-2 (20 ng/ml), and anti-mouse IFN-\u03b3, clone XMG1.2 (10 \u03bcg/mL).\nOn day 3, wash cells once and then restimulate in complete medium with 500 ng/ml PMA and 500 ng/mL ionomycin, in the presence of monensin for 6 hours.\nAfter harvesting, the cells are ready for staining..",
+    "actions": [
+      {
+        "action": "tease",
+        "parameters": {
+          "container": "70-\u03bcm nylon cell strainer",
+          "reagent": "lymph nodes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "IMDM containing 10% FCS (complete medium)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "complete medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "plastic petri dishes (60 \u00d7 15 mm)",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "5 \u03bcg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plastic petri dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C or 4\u00b0C",
+          "duration": "2 hours or overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "plate",
+          "reagent": "antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "dish",
+          "reagent": "CD4+ cells",
+          "volume": "5 ml/dish",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_number": "10 x 10^6"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "dish",
+          "reagent": [
+            "anti-mouse CD28, clone 37.51 (5 \u03bcg/mL)",
+            "recombinant human TGF-\u03b21 (10 ng/mL)",
+            "recombinant mouse IL-4 (10 ng/mL)",
+            "recombinant mouse IL-2 (20 ng/ml)",
+            "anti-mouse IFN-\u03b3, clone XMG1.2 (10 \u03bcg/mL)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": "3 days",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "restimulate",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "complete medium",
+            "PMA (500 ng/ml)",
+            "ionomycin (500 ng/mL)",
+            "monensin"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": "6 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: tease (container: 70-\u03bcm nylon cell strainer, reagent: lymph nodes, other: {'medium': 'IMDM containing 10% FCS (complete medium)'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', medium='complete medium')\ncoat(container='plastic petri dishes (60 \u00d7 15 mm)', reagent='anti-mouse CD3\u03b5, clone 145-2C11', concentration='5 \u03bcg/ml')\nincubate(container='plastic petri dishes', temperature='37\u00b0C or 4\u00b0C', duration='2 hours or overnight')\ndecant(container='plate', reagent='antibody solution')\nwash(container='plate', reagent='sterile PBS', times='3')\ndiscard(reagent='liquid')\nplate(container='dish', reagent='CD4+ cells', volume='5 ml/dish', cell_number='10 x 10^6')\nculture(container='dish', reagent=['anti-mouse CD28, clone 37.51 (5 \u03bcg/mL)', 'recombinant human TGF-\u03b21 (10 ng/mL)', 'recombinant mouse IL-4 (10 ng/mL)', 'recombinant mouse IL-2 (20 ng/ml)', 'anti-mouse IFN-\u03b3, clone XMG1.2 (10 \u03bcg/mL)'], duration='3 days')\nwash(times='1')\nrestimulate(reagent=['complete medium', 'PMA (500 ng/ml)', 'ionomycin (500 ng/mL)', 'monensin'], duration='6 hours')",
+    "source_file": "protocol_404.txt"
+  }
+]

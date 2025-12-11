@@ -1,0 +1,226 @@
+[
+  {
+    "protocol": "Transcriptomics During One-Step Growth Curves for Cellulophaga Phages\nDo a plaque assay to determine the PFU/ml of the lysate you plan to use Inoculate a new culture; i.e., pick a colony into a 125 ml flask containing MLB media. \nThe next day, transfer 10 ml of this culture to 500 ml of new media in a Fernbach flask (short and fat 2800 ml). \nInoculate enough 500 ml cultures for your experiment. \nImmediately after the transfer, take a 'time 0' growth reading. \nContinue taking readings in this way periodically.\u00a0 \nGraph the results as you go!\nDetermine the concentration of your culture at the time you want to start the infection. \nCalculate the total number of cells in each of your 500 ml cultures.\u00a0\nCalculate how many phages you should add for MOI 3.\u00a0 \nAdd phages to the experimental flask and an equal volume of MSM to the control flask and start your timer. \nImmediately, dilute the infection 1:1 in MLB media; i.e., add 500 ml fresh media to each flask and swirl to mix.\u00a0 \nTake a sample immediately after dilution Steps for centrifuged plaque assay:\u00a0 \nSteps for non-centrifuged plaque assay:\u00a0 \nSteps for RNA samples: \nThe next day, count the plaques on all plates that have a countable number of them\u00a0 The next day, count any new plaques that have appeared; add these to your original count.\u00a0 \nCount again on the third day. \nContinue sampling in this way for 8 hours. \nCalculate PFU/ml at each time point for both the centrifuged (free phage only) and not centrifuged (total phage) samples.\u00a0 \nGraph the results. \nCalculate burst size.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "125 ml flask",
+          "reagent": "MLB media",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "colony": "picked"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Fernbach flask (2800 ml)",
+          "reagent": "culture",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_media_volume": "500 ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "Fernbach flask (2800 ml)",
+          "reagent": "culture",
+          "volume": "500 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_cultures": "enough for experiment"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": null,
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "growth reading",
+            "time": "immediately after transfer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "culture flask",
+          "reagent": null,
+          "volume": "not specified",
+          "temperature": null,
+          "duration": "periodically",
+          "speed": null,
+          "other": {
+            "type": "growth reading"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "experimental flask",
+          "reagent": "phages",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "control flask",
+          "reagent": "MSM",
+          "volume": "equal to phage addition",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "flask",
+          "reagent": "MLB media",
+          "volume": "500 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_ratio": "1:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "flask",
+          "reagent": "sample",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": "immediately after dilution",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "next day",
+          "speed": null,
+          "other": {
+            "criteria": "countable number"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "new plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "next day",
+          "speed": null,
+          "other": {
+            "add_to_original_count": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "third day",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": "flask",
+          "reagent": null,
+          "volume": "not specified",
+          "temperature": null,
+          "duration": "continue for 8 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 125 ml flask, reagent: MLB media, volume: not specified, other: {'colony': 'picked'})\n\n### AUTOMATED SECTION ###\ntransfer(container='Fernbach flask (2800 ml)', reagent='culture', volume='10 ml', destination_media_volume='500 ml')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: Fernbach flask (2800 ml), reagent: culture, volume: 500 ml, other: {'number_of_cultures': 'enough for experiment'})\n# MANUAL: take (container: culture flask, volume: not specified, other: {'type': 'growth reading', 'time': 'immediately after transfer'})\n# MANUAL: take (container: culture flask, volume: not specified, duration: periodically, other: {'type': 'growth reading'})\n\n### AUTOMATED SECTION ###\nadd(container='experimental flask', reagent='phages', volume='not specified', MOI='3')\nadd(container='control flask', reagent='MSM', volume='equal to phage addition')\ndilute(container='flask', reagent='MLB media', volume='500 ml', dilution_ratio='1:1')\nmix(container='flask', method='swirl')\ntake(container='flask', reagent='sample', volume='not specified', duration='immediately after dilution')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: plates, reagent: plaques, duration: next day, other: {'criteria': 'countable number'})\n# MANUAL: count (container: plates, reagent: new plaques, duration: next day, other: {'add_to_original_count': True})\n# MANUAL: count (container: plates, reagent: plaques, duration: third day, other: {})\n\n### AUTOMATED SECTION ###\nsample(container='flask', volume='not specified', duration='continue for 8 hours')",
+    "source_file": "protocol_435.txt"
+  }
+]

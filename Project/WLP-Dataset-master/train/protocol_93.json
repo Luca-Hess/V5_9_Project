@@ -1,0 +1,847 @@
+[
+  {
+    "protocol": "HERP: Haploid Engineering and Replacement Protocol for Saccharomyces\nAdd the following components to a 2\u2010L Erlenmeyer flask: Mix to dissolve as much as possible (agar and sulfanilamide won't dissolve until heated).\nAutoclave for no more than 20 minutes on a liquid cycle.\nOnce autoclaved, cool to 50\u00b0 in a water bath, then add the following and mix: \u20105 g thymidine \u2010200 mg methotrexate \u2010100 mL 50% (v/v) glycerol, sterilized Pour ~20 mL into plastic petri dishes and allow to set.\nYou have now made YPGly +AF media.\nIn a 2\u2010L Erlenmeyer flask, make 1 L of Synthetic Complete agar using your favorite provider's formulation.\nAutoclave then cool to 50\u00b0 in a water bath.\nDissolve 55 mg of FUdR into 1.1 mL of ddH2O and filter sterilize Add 1 mL of FUdR solution to cooled SC agar and mix.\nPour ~20 mL into plastic petri dishes and allow to set.\nYou have now made SC +FUdR agar.\nDesign primers with overhangs that target the cassette to your desired locus.\n(See the guidelines for details.)\nAmplify the HERP cassette of choice using your targeting primers and a high\u2010fidelity polymerase such as New England Biolab's Phusion system.\nIf your reaction makes use of DMSO or other harsh chemicals, clean your PCR product with a column before proceeding.\nCulture your strain of choice by inoculating 50 mL of YPD media with enough overnight culture of your strain to bring the OD600 to 0.2\u20100.25.\nShake at the optimal temperature for your strain or species until the culture's OD600 reaches 0.85\u20101.0.\nShake at the optimal temperature for your strain or species until the culture's OD600 reaches 0.85\u20101.0.\nHarvest the cells by centrifugation in a 50\u2010mL conical vial at 3000 RPM for 5 minutes.\nRemove supernatant, wash with 25 mL water, and spin at 3000 RPM for 5 minutes.\nRemove supernatant and suspend cells in 1 mL of water.\nAliquot 100\u00a0\u03bcL cell suspension to microcentrifuge tubes, spin for 30 seconds at max speed in a microcentrifuge, and remove supernatant.\nAdd the following reagents to each cell pellet IN ORDER: Suspend cell pellet in transformation mixture and heat shock.\nOnce heat\u2010shocking has been completed, spin the reactions for 30 seconds at max speed, remove the supernatant, and suspend the cells in 600\u00a0\u03bcL of YPD.\nTransfer to glass culture tubes and spin in a culture wheel for 3 hours at the strain's or species' optimal temperature.\nSpread 200\u00a0\u03bcL of recovered cells to each of three YPGly +AF plates.\nOnly one 200\u00a0\u03bcL volume of control reaction, however, needs to be plated.\nOnce all the liquid has been absorbed, store agar up at the optimal temperature.\nColonies will appear in 3\u201010 days.\nStreak colonies out to fresh YPGly +AF plates.\nAnalyze by amplifying target locus via PCR and/or sequencing across the insertion junction.\nOnce you have molecularly confirmed the insertion of the HERP cassette, phenotypically confirm its sensitivity to FUdR by spotting ~1,000 cells onto SC +FUdR plates multiple times.\nSensitive strains should exhibit no growth, while insensitive strains will rapidly grow.\nOnce your HERP insertion is confirmed and you have established FUdR sensitivity, begin by inoculating the strain in 50 mL of 2X YPA100 +4% galactose (see main text) to an OD600 of 0.2\u20100.25 and culture at the optimal temperature.\nOnce an OD600 of 0.85\u20101.0 is reached, repeat steps C4 to C6, except replace the HERP cassette PCR product in C6 with your desired replacement PCR product.\nOnce the heat shock is completed, remove the supernatant and suspend in 600\u00a0\u03bcL water.\nSpread 200\u00a0\u03bcL onto each of three SC plates.\nIncubate at optimal temperature for 24 hours.\nAfter 24 hours, incubate plates at 4\u00b0 for one hour.\nLightly replicate plates to SC +FUdR plates.\nRe\u2010replicate to fresh FUdR plates no more than once a day to reduce background growth.\nColonies will appear in 2\u20105 days, longer if glucose is replaced by glycerol.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": "components (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": "components (unspecified)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "mix to dissolve as much as possible"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "cycle": "liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": [
+            "5 g thymidine",
+            "200 mg methotrexate",
+            "100 mL 50% (v/v) glycerol, sterilized"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "add after cooling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plastic petri dishes",
+          "reagent": "YPGly +AF media",
+          "volume": "20 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "plastic petri dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "allow to set"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": "Synthetic Complete agar",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "use provider's formulation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "2-L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "55 mg FUdR",
+          "volume": "1.1 mL ddH2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter sterilize",
+        "parameters": {
+          "container": null,
+          "reagent": "FUdR solution",
+          "volume": "1.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cooled SC agar",
+          "reagent": "FUdR solution",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cooled SC agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plastic petri dishes",
+          "reagent": "SC +FUdR agar",
+          "volume": "20 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "plastic petri dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "allow to set"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "HERP cassette",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "primers": "targeting primers",
+            "polymerase": "high-fidelity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR product",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "column",
+            "condition": "if DMSO or harsh chemicals used"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "50 mL YPD media",
+          "reagent": "overnight culture of strain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD600": "0.2-0.25"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "optimal for strain/species",
+          "duration": "until OD600 reaches 0.85-1.0",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "3000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "water",
+          "volume": "25 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "3000 RPM",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "50-mL conical vial",
+          "reagent": "cells",
+          "volume": "1 mL water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "transformation mixture (multiple reagents, in order)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "add to cell pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixture": "transformation mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells in transformation mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells",
+          "volume": "600 \u03bcL YPD",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "glass culture tubes",
+          "reagent": "cells in YPD",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "glass culture tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "optimal for strain/species",
+          "duration": "3 hours",
+          "speed": null,
+          "other": {
+            "device": "culture wheel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "YPGly +AF plates",
+          "reagent": "recovered cells",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number of plates": "three"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "YPGly +AF plate (control)",
+          "reagent": "control reaction",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "only one plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "YPGly +AF plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "until liquid absorbed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "optimal for strain/species",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "agar up"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "streak",
+        "parameters": {
+          "container": "fresh YPGly +AF plates",
+          "reagent": "colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "target locus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "PCR"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": null,
+          "reagent": "insertion junction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spot",
+        "parameters": {
+          "container": "SC +FUdR plates",
+          "reagent": "cells (~1,000)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number of times": "multiple"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "50 mL 2X YPA100 +4% galactose",
+          "reagent": "strain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD600": "0.2-0.25"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "flask",
+          "reagent": "strain",
+          "volume": "50 mL",
+          "temperature": "optimal for strain/species",
+          "duration": "until OD600 reaches 0.85-1.0",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "cells",
+          "volume": "600 \u03bcL water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "SC plates",
+          "reagent": "cells",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number of plates": "three"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "SC plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "optimal for strain/species",
+          "duration": "24 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replicate",
+        "parameters": {
+          "container": "SC +FUdR plates",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "lightly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "replicate",
+        "parameters": {
+          "container": "fresh FUdR plates",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "no more than once a day"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='2-L Erlenmeyer flask', reagent='components (unspecified)')\nmix(container='2-L Erlenmeyer flask', reagent='components (unspecified)', note='mix to dissolve as much as possible')\nautoclave(container='2-L Erlenmeyer flask', duration='20 minutes', cycle='liquid')\ncool(container='2-L Erlenmeyer flask', temperature='50\u00b0C', method='water bath')\nadd(container='2-L Erlenmeyer flask', reagent=['5 g thymidine', '200 mg methotrexate', '100 mL 50% (v/v) glycerol, sterilized'], note='add after cooling')\nmix(container='2-L Erlenmeyer flask')\npour(container='plastic petri dishes', reagent='YPGly +AF media', volume='20 mL')\nwait(container='plastic petri dishes', note='allow to set')\nadd(container='2-L Erlenmeyer flask', reagent='Synthetic Complete agar', volume='1 L', note=\"use provider's formulation\")\nautoclave(container='2-L Erlenmeyer flask')\ncool(container='2-L Erlenmeyer flask', temperature='50\u00b0C', method='water bath')\ndissolve(reagent='55 mg FUdR', volume='1.1 mL ddH2O')\nfilter sterilize(reagent='FUdR solution', volume='1.1 mL')\nadd(container='cooled SC agar', reagent='FUdR solution', volume='1 mL')\nmix(container='cooled SC agar')\npour(container='plastic petri dishes', reagent='SC +FUdR agar', volume='20 mL')\nwait(container='plastic petri dishes', note='allow to set')\namplify(reagent='HERP cassette', primers='targeting primers', polymerase='high-fidelity')\nclean(reagent='PCR product', method='column', condition='if DMSO or harsh chemicals used')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 50 mL YPD media, reagent: overnight culture of strain, other: {'OD600': '0.2-0.25'})\n\n### AUTOMATED SECTION ###\nshake(temperature='optimal for strain/species', duration='until OD600 reaches 0.85-1.0')\ncentrifuge(container='50-mL conical vial', reagent='cells', duration='5 minutes', speed='3000 RPM')\nremove(container='50-mL conical vial', reagent='supernatant')\nwash(container='50-mL conical vial', reagent='water', volume='25 mL')\ncentrifuge(container='50-mL conical vial', reagent='cells', duration='5 minutes', speed='3000 RPM')\nremove(container='50-mL conical vial', reagent='supernatant')\nsuspend(container='50-mL conical vial', reagent='cells', volume='1 mL water')\naliquot(container='microcentrifuge tubes', reagent='cell suspension', volume='100 \u03bcL')\ncentrifuge(container='microcentrifuge tubes', reagent='cells', duration='30 seconds', speed='max speed')\nremove(container='microcentrifuge tubes', reagent='supernatant')\nadd(container='microcentrifuge tubes', reagent='transformation mixture (multiple reagents, in order)', note='add to cell pellet')\nsuspend(container='microcentrifuge tubes', reagent='cell pellet', mixture='transformation mixture')\nheat shock(container='microcentrifuge tubes', reagent='cells in transformation mixture')\ncentrifuge(container='microcentrifuge tubes', reagent='cells', duration='30 seconds', speed='max speed')\nremove(container='microcentrifuge tubes', reagent='supernatant')\nsuspend(container='microcentrifuge tubes', reagent='cells', volume='600 \u03bcL YPD')\ntransfer(container='glass culture tubes', reagent='cells in YPD')\nspin(container='glass culture tubes', reagent='cells', temperature='optimal for strain/species', duration='3 hours', device='culture wheel')\nspread(container='YPGly +AF plates', reagent='recovered cells', volume='200 \u03bcL', number of plates='three')\nspread(container='YPGly +AF plate (control)', reagent='control reaction', volume='200 \u03bcL', note='only one plate')\nwait(container='YPGly +AF plates', note='until liquid absorbed')\nstore(container='agar plates', temperature='optimal for strain/species', orientation='agar up')\n\n### MANUAL SECTION ###\n# MANUAL: streak (container: fresh YPGly +AF plates, reagent: colonies, other: {})\n\n### AUTOMATED SECTION ###\namplify(reagent='target locus', method='PCR')\nsequence(reagent='insertion junction')\nspot(container='SC +FUdR plates', reagent='cells (~1,000)', number of times='multiple')\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 50 mL 2X YPA100 +4% galactose, reagent: strain, other: {'OD600': '0.2-0.25'})\n\n### AUTOMATED SECTION ###\nculture(container='flask', reagent='strain', volume='50 mL', temperature='optimal for strain/species', duration='until OD600 reaches 0.85-1.0')\ncentrifuge(container='microcentrifuge tubes', reagent='cells', duration='30 seconds', speed='max speed')\nremove(container='microcentrifuge tubes', reagent='supernatant')\nsuspend(container='microcentrifuge tubes', reagent='cells', volume='600 \u03bcL water')\nspread(container='SC plates', reagent='cells', volume='200 \u03bcL', number of plates='three')\nincubate(container='SC plates', temperature='optimal for strain/species', duration='24 hours')\nincubate(container='plates', temperature='4\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: replicate (container: SC +FUdR plates, reagent: cells, other: {'method': 'lightly'})\n# MANUAL: replicate (container: fresh FUdR plates, reagent: cells, other: {'frequency': 'no more than once a day'})",
+    "source_file": "protocol_93.txt"
+  }
+]

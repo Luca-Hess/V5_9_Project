@@ -1,0 +1,512 @@
+[
+  {
+    "protocol": "Concentration of Phage Lysate using Vivaflow Tangential/Crossflow Filtration Cassette\nTo filter 4-8 L of phage lysate, set up one Vivaflow50 cassette per 4 L of sample (this was the capacity successfully tested by our lab).\nIf two cassettes are needed for a phage sample, set these up in parallel with separate tubing lines, using the double tubing pump head.\nRefer to the Sartorius user manual and online videos for tubing attachment and flow set-up.\nFor all tubing, keep the ends to be placed in the sample and filtrate as clean as possible once removing from the packaging.\nTo adapt the smaller cassette tubing to our lab\u2019s pump head size, make sure to attach the size 25 Masterflex tubing first.\nKeep clean/sterile the end to be placed in the phage sample.\nIf running more than one phage sample simultaneously, make sure to label all input and output tubing, cassettes and bottles or flasks with sample ID\u2019s, and keep separate to prevent any phage cross contamination.\nPer the Sartorius manual, prepare the cassette (aka: module) before use by pre-rinsing the system at full pressure to remove trace amounts of glycerine and sodium azide and check for any leaks at the tubing connections.\nPlace the input tubing into the 1 L bottle of 0.2 um filtered, sterile nanopure water.\nPlace the output return tubing in the same bottle and pump liquid through the system to purge any air pockets.\nYou will need ~500 ml of water per cassette, and you can set up two parallel cassettes to use the same bottle.\nThe recirculation rate should be in the range of 200-400 ml/min and suitable flow should exit the filtrate line.\nIf used, the pressure indicator should read approximately 2.5 bar.\nThis corresponds to a pump setting of around 60.\nAllow 400 ml per cassette to pass into the filtrate collection.\nCheck for any leaks at connections.\nFinally, drain the system and empty the filtrate flask.\nTo concentrate the phage sample, place the input and output lines into the initial lysate container (usually a 1L bottle).\nIf the container lid is off, place a piece of parafilm over the opening to minimize contamination and secure the tubing in place.\nPump the liquid through the system at the same rate and pressure as specified for the rinsing step above.\nFor two cassettes filtering one sample, a pump setting of around 60 corresponds to a filtrate production of about 250 ml per 14 min initially, but which may slow some as more concentrated sample is added to the recirculation.\nMonitor the sample level and stop the pumping when volume reaches 100-200 ml to refill the bottle with more sample.\nAlso monitor the filtrate flask to prevent overflowing and discard (or keep, if desired) the filtrate down the sink (this should be free of phage!).\nStop adding phage sample after you have concentrated 4 L to between 175 and 200 ml.\nNote that about 15-20 ml are left in the system.\nWhen the desired volume has been reached, reduce the recirculation rate to 20-40 ml/min (pump setting around 10) and recirculate the concentrated sample for 1-2 minutes to maximize recovery.\nStop adding phage sample after you have concentrated 4 L to between 175 and 200 ml.\nNote that about 15-20 ml are left in the system.\nWhen the desired volume has been reached, reduce the recirculation rate to 20-40 ml/min (pump setting around 10) and recirculate the concentrated sample for 1-2 minutes to maximize recovery.\nIf there are > 4 L of sample to concentrate, begin the next fraction: place the input and return tubes into the next lysate sample bottle, parafilm cover, and repeat the concentration process (steps 5-8).\nThen transfer the concentrated sample into a second 250 ml bottle and drain the remaining sample completely from the system.\nTo collect a final rinse from the filters for a more complete sample recovery, place 100 ml ASW salts into a clean 250 ml bottle.\nPlace the input and return tubing into the bottle, cover the top with parafilm and recirculate on lower speed until the volume is reduced to about 20 ml.\nThen drain the system as before and collect the remaining rinse fraction into the bottle.\nEven though the Vivaflow 50 cassettes are not reusable, they were kept until the concentration of phage sample was determined.\nTo store the cassettes, load them with ASW salts and keep at 4 \u00b0C.\nPlace 50 ml ASW salts into a sterile 50 ml tube and recirculate this through the filter and tubing to remove air bubbles.\nThen either leave the open tubing ends in the media tube and cover with parafilm, or seal the tubing ends with tape.\nFor phage concentration analysis via SYBR slide preparation, collect 0.5 ml of each of the following samples.\nSample Fractions #1, #2 and Rinse.\nFiltrate from beginning of the first 4 L concentration.\nFiltrate from end of the first 4 L concentration.\u00a0\nFootnotes: \u00a01) In Feb 2016 experiments, sample fractions concentrations were determined before combining the two fractions for the next step.\nThe second fraction was more concentrated for both phage samples.\nThe rinse sample was not counted or used.\n2) In all previous Vivaflow concentration trials, no particles were seen on SYBR slides for the filtrate samples, as should be expected.",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "Vivaflow50 cassette",
+          "reagent": null,
+          "volume": "4 L per cassette",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "phage lysate",
+            "configuration": "parallel setup if two cassettes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "pump head",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tubing": "size 25 Masterflex tubing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "input and output tubing, cassettes, bottles or flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "sample ID"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "cassette/module",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "full pressure",
+          "other": {
+            "step": "pre-rinse to remove glycerine and sodium azide"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "tubing connections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "leaks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "input tubing",
+          "reagent": "0.2 um filtered, sterile nanopure water",
+          "volume": "1 L bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "output return tubing",
+          "reagent": "same bottle as input",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pump",
+        "parameters": {
+          "container": "system",
+          "reagent": "nanopure water",
+          "volume": "~500 ml per cassette",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "purge air pockets"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "200-400 ml/min (setting ~60)",
+          "other": {
+            "pressure": "2.5 bar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "filtrate collection",
+          "reagent": null,
+          "volume": "400 ml per cassette",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "filtrate flask"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "input and output lines",
+          "reagent": "initial lysate container (usually 1L bottle)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "container opening",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "minimize contamination"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pump",
+        "parameters": {
+          "container": "system",
+          "reagent": "phage lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "200-400 ml/min (setting ~60)",
+          "other": {
+            "pressure": "2.5 bar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "monitor",
+        "parameters": {
+          "container": "sample level",
+          "reagent": null,
+          "volume": "100-200 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "stop pumping when volume reaches threshold"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "monitor",
+        "parameters": {
+          "container": "filtrate flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "prevent overflowing"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "filtrate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "sink"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "phage sample addition",
+          "reagent": null,
+          "volume": "after 4 L concentrated to 175-200 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "reduce",
+        "parameters": {
+          "container": "recirculation rate",
+          "reagent": null,
+          "volume": "20-40 ml/min",
+          "temperature": null,
+          "duration": null,
+          "speed": "pump setting ~10",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "concentrated sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 min",
+          "speed": "20-40 ml/min",
+          "other": {
+            "purpose": "maximize recovery"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "concentrated sample",
+          "reagent": null,
+          "volume": "to second 250 ml bottle",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "remaining sample into bottle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "input and return tubing",
+          "reagent": "clean 250 ml bottle with 100 ml ASW salts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "bottle top",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "ASW salts",
+          "reagent": null,
+          "volume": "until reduced to ~20 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "lower speed",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "remaining rinse fraction into bottle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Vivaflow 50 cassettes",
+          "reagent": "ASW salts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Vivaflow 50 cassettes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "input and output tubing",
+          "reagent": "sterile 50 ml tube with 50 ml ASW salts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "ASW salts",
+          "reagent": null,
+          "volume": "50 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove air bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "media tube",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tubing ends": "left open in media tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "tubing ends",
+          "reagent": "tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "sample fractions",
+          "reagent": null,
+          "volume": "0.5 ml each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fractions": "#1, #2, Rinse, filtrate from beginning and end of first 4 L concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: Vivaflow50 cassette, volume: 4 L per cassette, other: {'sample': 'phage lysate', 'configuration': 'parallel setup if two cassettes'})\n# MANUAL: attach (container: pump head, other: {'tubing': 'size 25 Masterflex tubing'})\n# MANUAL: label (container: input and output tubing, cassettes, bottles or flasks, other: {'sample': 'sample ID'})\n\n### AUTOMATED SECTION ###\nprepare(container='cassette/module', speed='full pressure', step='pre-rinse to remove glycerine and sodium azide')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: tubing connections, other: {'for': 'leaks'})\n# MANUAL: place (container: input tubing, reagent: 0.2 um filtered, sterile nanopure water, volume: 1 L bottle)\n# MANUAL: place (container: output return tubing, reagent: same bottle as input)\n\n### AUTOMATED SECTION ###\npump(container='system', reagent='nanopure water', volume='~500 ml per cassette', purpose='purge air pockets')\nset(container='pump', speed='200-400 ml/min (setting ~60)', pressure='2.5 bar')\nallow(container='filtrate collection', volume='400 ml per cassette')\ndrain(container='system', target='filtrate flask')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: input and output lines, reagent: initial lysate container (usually 1L bottle))\n# MANUAL: cover (container: container opening, reagent: parafilm, other: {'purpose': 'minimize contamination'})\n\n### AUTOMATED SECTION ###\npump(container='system', reagent='phage lysate', speed='200-400 ml/min (setting ~60)', pressure='2.5 bar')\n\n### MANUAL SECTION ###\n# MANUAL: monitor (container: sample level, volume: 100-200 ml, other: {'action': 'stop pumping when volume reaches threshold'})\n# MANUAL: monitor (container: filtrate flask, other: {'action': 'prevent overflowing'})\n# MANUAL: discard (container: filtrate, other: {'destination': 'sink'})\n# MANUAL: stop (container: phage sample addition, volume: after 4 L concentrated to 175-200 ml)\n\n### AUTOMATED SECTION ###\nreduce(container='recirculation rate', volume='20-40 ml/min', speed='pump setting ~10')\nrecirculate(container='concentrated sample', duration='1-2 min', speed='20-40 ml/min', purpose='maximize recovery')\ntransfer(container='concentrated sample', volume='to second 250 ml bottle')\ndrain(container='system', target='remaining sample into bottle')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: input and return tubing, reagent: clean 250 ml bottle with 100 ml ASW salts)\n# MANUAL: cover (container: bottle top, reagent: parafilm)\n\n### AUTOMATED SECTION ###\nrecirculate(container='ASW salts', volume='until reduced to ~20 ml', speed='lower speed')\ndrain(container='system', target='remaining rinse fraction into bottle')\nload(container='Vivaflow 50 cassettes', reagent='ASW salts', purpose='storage')\nstore(container='Vivaflow 50 cassettes', temperature='4 \u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: input and output tubing, reagent: sterile 50 ml tube with 50 ml ASW salts)\n\n### AUTOMATED SECTION ###\nrecirculate(container='ASW salts', volume='50 ml', purpose='remove air bubbles')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: media tube, reagent: parafilm, other: {'tubing ends': 'left open in media tube'})\n# MANUAL: seal (container: tubing ends, reagent: tape)\n\n### AUTOMATED SECTION ###\ncollect(container='sample fractions', volume='0.5 ml each', fractions='#1, #2, Rinse, filtrate from beginning and end of first 4 L concentration')",
+    "source_file": "protocol_167.txt"
+  }
+]

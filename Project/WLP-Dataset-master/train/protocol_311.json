@@ -1,0 +1,179 @@
+[
+  {
+    "protocol": "Preparation of NC64A \u201cGhosts\u201d\nCentrifuge the NC64A chlorella in the Sorvall centrifuge at 5,000 rpm, 5 min, 4\u00b0C if fresh cells are used.\nIf frozen cells are used, thaw the pellets and suspend with 50 mM Tris-HCl, pH 7.8.\nCentrifuge the cells in the Sorvall SS34 rotor or HB-4 rotor at 5,000 rpm, 5 min, 4\u00b0C.\nDecant the supernatants.\nCentrifuge the cells in the Sorvall SS34 rotor or HB-4 rotor at 5,000 rpm, 5 min, 4\u00b0C.\nRepeat the 70% methanol washes 5-6 times or until the desired amount of pigment has been removed from the cells.\nStore the chlorella \u201cghosts\u201d at 4\u00b0C in 70% methanol.\nAdd 10-15 mL of 70% methanol to the chlorella pellets and resuspend the cells completely.\nDecant the supernatants.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall centrifuge",
+          "reagent": "NC64A chlorella",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "cell_state": "fresh"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "NC64A chlorella pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_state": "frozen"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": null,
+          "reagent": "50 mM Tris-HCl, pH 7.8",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "thawed pellets"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor or HB-4 rotor",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor or HB-4 rotor",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "70% methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "5-6 times",
+            "endpoint": "until desired pigment removal"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "chlorella ghosts",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "storage_medium": "70% methanol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "70% methanol",
+          "volume": "10-15 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "chlorella pellets"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "cells",
+            "requirement": "completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall centrifuge', reagent='NC64A chlorella', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', cell_state='fresh')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: NC64A chlorella pellets, other: {'cell_state': 'frozen'})\n\n### AUTOMATED SECTION ###\nsuspend(reagent='50 mM Tris-HCl, pH 7.8', target='thawed pellets')\ncentrifuge(container='Sorvall SS34 rotor or HB-4 rotor', reagent='cells', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (reagent: supernatant)\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Sorvall SS34 rotor or HB-4 rotor', reagent='cells', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm')\nwash(reagent='70% methanol', repeat='5-6 times', endpoint='until desired pigment removal')\n\n### MANUAL SECTION ###\n# MANUAL: store (reagent: chlorella ghosts, temperature: 4\u00b0C, other: {'storage_medium': '70% methanol'})\n\n### AUTOMATED SECTION ###\nadd(reagent='70% methanol', volume='10-15 mL', target='chlorella pellets')\nresuspend(target='cells', requirement='completely')\n\n### MANUAL SECTION ###\n# MANUAL: decant (reagent: supernatant)",
+    "source_file": "protocol_311.txt"
+  }
+]

@@ -1,0 +1,171 @@
+[
+  {
+    "protocol": "Whole protein extraction from tissues\nPre-cool lysis buffer on ice.\nAdd protease inhibitors just before using.\nAdd 10 fold lysis buffer to tissues (1ml lysis buffer / 100mg tissue).\nHomogenize tissues with dispenser ( working time 10s / rest time 20s, repeat 5 times) until no visible tissue blocks.\nMix samples on a rotating mixer at 4 \u00b0C\u00a0for 2h.\nSpin @ 16,000g, 10min, 4\u00b0C.\nIf necessary, centrifuge again.\nSave supernatant.\nDetermine protein conc.\nMake aliquots and store in -80\u00b0C.",
+    "actions": [
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "lysis buffer container",
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "lysis buffer container",
+          "reagent": "protease inhibitors",
+          "volume": null,
+          "temperature": null,
+          "duration": "just before using",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tissue sample container",
+          "reagent": "lysis buffer",
+          "volume": "1ml lysis buffer / 100mg tissue (10 fold)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "tissue sample container",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "working time 10s / rest time 20s, repeat 5 times",
+          "speed": null,
+          "other": {
+            "until": "no visible tissue blocks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "2h",
+          "speed": "rotating mixer",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10min",
+          "speed": "16,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "if necessary": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "supernatant tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "supernatant tubes",
+          "reagent": "protein",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "protein concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": "aliquot tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "operation": "aliquot"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "aliquot tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncool(container='lysis buffer container', reagent='lysis buffer', temperature='on ice')\nadd(container='lysis buffer container', reagent='protease inhibitors', duration='just before using')\nadd(container='tissue sample container', reagent='lysis buffer', volume='1ml lysis buffer / 100mg tissue (10 fold)')\n\n### MANUAL SECTION ###\n# MANUAL: homogenize (container: tissue sample container, duration: working time 10s / rest time 20s, repeat 5 times, other: {'until': 'no visible tissue blocks'})\n\n### AUTOMATED SECTION ###\nmix(container='sample tubes', temperature='4\u00b0C', duration='2h', speed='rotating mixer')\ncentrifuge(container='sample tubes', temperature='4\u00b0C', duration='10min', speed='16,000g')\ncentrifuge(container='sample tubes', if necessary=True)\n\n### MANUAL SECTION ###\n# MANUAL: save (container: supernatant tubes, reagent: supernatant, other: {})\n# MANUAL: determine (container: supernatant tubes, reagent: protein, other: {'measurement': 'protein concentration'})\n# MANUAL: make (container: aliquot tubes, reagent: supernatant, other: {'operation': 'aliquot'})\n\n### AUTOMATED SECTION ###\nstore(container='aliquot tubes', temperature='-80\u00b0C')",
+    "source_file": "protocol_125.txt"
+  }
+]

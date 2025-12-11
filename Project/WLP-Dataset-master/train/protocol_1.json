@@ -1,0 +1,113 @@
+[
+  {
+    "protocol": "Super simple In vivo Hoechst staining of unicellular protists\nAdd 1/1000 Hoechst dye (1 uL into 1 mL volume of cells).Keep cells with dye protected from light.\nIncubate at room temperature for 10 minutes.Keep cells with dye protected from light.\nCentrifuge cells at 1000g for 5 minutes.\nResuspend with fresh growing medium.\nUse minimum volume of medium in order to plate in to\u00a0the slide immediately.\nMount your slide and ready for observation under microscope.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "cell suspension tube or well",
+          "reagent": "Hoechst dye",
+          "volume": "1 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "1 mL cell suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cell suspension with Hoechst dye",
+          "reagent": null,
+          "volume": "1 mL",
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "protected_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cell suspension",
+          "reagent": null,
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cell pellet",
+          "reagent": "fresh growing medium",
+          "volume": "minimum volume (sufficient for plating)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "slide",
+          "reagent": "cell suspension in medium",
+          "volume": "minimum volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "slide",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "mounted slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='cell suspension tube or well', reagent='Hoechst dye', volume='1 uL', destination='1 mL cell suspension')\nincubate(container='cell suspension with Hoechst dye', volume='1 mL', temperature='room temperature', duration='10 minutes', protected_from_light=True)\ncentrifuge(container='cell suspension', volume='1 mL', duration='5 minutes', speed='1000g')\nresuspend(container='cell pellet', reagent='fresh growing medium', volume='minimum volume (sufficient for plating)')\ndispense(container='slide', reagent='cell suspension in medium', volume='minimum volume')\n\n### MANUAL SECTION ###\n# MANUAL: mount (container: slide, reagent: cell suspension, other: {})\n# MANUAL: observe (container: mounted slide, other: {'instrument': 'microscope'})",
+    "source_file": "protocol_1.txt"
+  }
+]

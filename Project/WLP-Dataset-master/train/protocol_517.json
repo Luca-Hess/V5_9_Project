@@ -1,0 +1,446 @@
+[
+  {
+    "protocol": "Q5\u00ae Site-Directed Mutagenesis Kit Quick Protocol (E0554)\nAssemble the following reagents in a thin-walled PCR tube.\n25 \u03bcl RXNFINAL CONC.Q5 Hot Start High-Fidelity 2X Master Mix12.5 \u03bcl1X10 \u03bcM Forward Primer1.25 \u03bcl0.5 \u03bcM10 \u03bcM Reverse Primer1.25 \u03bcl0.5 \u03bcMTemplate DNA (1\u201325 ng/\u03bcl)1 \u03bcl1-25 ngNuclease-free water9.0 \u03bcl.\u00a0 \nMix reagents completely.\nTransfer to a thermocycler and perform the following cycling conditions:\nThermocycling Conditions for a Routine PCR:STEPTEMPTIMEInitial Denaturation98\u00b0C30 seconds25 Cycles98\u00b0C10 seconds50\u201372\u00b0C*10\u201330 seconds72\u00b0C20\u201330 seconds/kbFinal Extension72\u00b0C2 minutesHold4\u201310\u00b0C.\u00a0\nAssemble the following reagents:\u00a0\nVOLUMEFINAL CONC.PCR Product1 \u03bcl\u00a02X KLD Reaction Buffer5 \u03bcl1X10X KLD Enzyme Mix1 \u03bcl1XNuclease-free Water3 \u03bcl.\u00a0\nMix well by pipetting up and down.\nIncubate at room temperature for 5 minutes.\nAdd 5 \u03bcl of the KLD mix from the \"KLD Section\" above to\u00a050 \u03bcl of chemically-competent cells.\nCarefully flick the tube 4-5 times to mix.\nDo not vortex.\nPlace the mixture on ice for 30 minutes.\nHeat shock at 42\u00b0C for 30 seconds.\nPlace on ice for 5 minutes.\nPipette 950 \u03bcl of room temperature SOC into the mixture.\nIncubate at 37\u00b0C for 60 minutes with shaking (250 rpm).\nMix the cells thoroughly by flicking the tube and inverting.\nSpread 40\u2013100 \u03bcl onto appropriate selection plate. \nIncubate overnight at 37\u00b0C",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "Q5 Hot Start High-Fidelity 2X Master Mix",
+          "volume": "12.5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "10 \u03bcM Forward Primer",
+          "volume": "1.25 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u03bcM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "10 \u03bcM Reverse Primer",
+          "volume": "1.25 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u03bcM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "Template DNA (1\u201325 ng/\u03bcl)",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "1-25 ng"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": "Nuclease-free water",
+          "volume": "9.0 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "98\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "step": "Initial Denaturation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "98\u00b0C",
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {
+            "step": "Denaturation",
+            "cycles": "25"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u201372\u00b0C",
+          "duration": "10\u201330 seconds",
+          "speed": null,
+          "other": {
+            "step": "Annealing",
+            "cycles": "25"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "20\u201330 seconds/kb",
+          "speed": null,
+          "other": {
+            "step": "Extension",
+            "cycles": "25"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "step": "Final Extension"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thin-walled PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u201310\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "Hold"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR Product",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "2X KLD Reaction Buffer",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "10X KLD Enzyme Mix",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "Nuclease-free Water",
+          "volume": "3 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "tube with competent cells",
+          "reagent": "KLD mix",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "\"KLD Section\" above",
+            "destination_volume": "50 \u03bcl",
+            "destination": "chemically-competent cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with competent cells and KLD mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick tube 4-5 times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with competent cells and KLD mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with competent cells and KLD mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "step": "heat shock"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with competent cells and KLD mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "tube with competent cells and KLD mix",
+          "reagent": "SOC",
+          "volume": "950 \u03bcl",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with competent cells, KLD mix, and SOC",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes",
+          "speed": "250 rpm",
+          "other": {
+            "method": "shaking"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with competent cells, KLD mix, and SOC",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flicking and inverting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": "cells mixture",
+          "volume": "40\u2013100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spread"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "selection plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='thin-walled PCR tube', reagent='Q5 Hot Start High-Fidelity 2X Master Mix', volume='12.5 \u03bcl', final_concentration='1X')\npipette(container='thin-walled PCR tube', reagent='10 \u03bcM Forward Primer', volume='1.25 \u03bcl', final_concentration='0.5 \u03bcM')\npipette(container='thin-walled PCR tube', reagent='10 \u03bcM Reverse Primer', volume='1.25 \u03bcl', final_concentration='0.5 \u03bcM')\npipette(container='thin-walled PCR tube', reagent='Template DNA (1\u201325 ng/\u03bcl)', volume='1 \u03bcl', amount='1-25 ng')\npipette(container='thin-walled PCR tube', reagent='Nuclease-free water', volume='9.0 \u03bcl')\nmix(container='thin-walled PCR tube', method='completely')\nincubate(container='thin-walled PCR tube', temperature='98\u00b0C', duration='30 seconds', step='Initial Denaturation')\nincubate(container='thin-walled PCR tube', temperature='98\u00b0C', duration='10 seconds', step='Denaturation', cycles='25')\nincubate(container='thin-walled PCR tube', temperature='50\u201372\u00b0C', duration='10\u201330 seconds', step='Annealing', cycles='25')\nincubate(container='thin-walled PCR tube', temperature='72\u00b0C', duration='20\u201330 seconds/kb', step='Extension', cycles='25')\nincubate(container='thin-walled PCR tube', temperature='72\u00b0C', duration='2 minutes', step='Final Extension')\nincubate(container='thin-walled PCR tube', temperature='4\u201310\u00b0C', step='Hold')\npipette(reagent='PCR Product', volume='1 \u03bcl')\npipette(reagent='2X KLD Reaction Buffer', volume='5 \u03bcl', final_concentration='1X')\npipette(reagent='10X KLD Enzyme Mix', volume='1 \u03bcl', final_concentration='1X')\npipette(reagent='Nuclease-free Water', volume='3 \u03bcl')\nmix(method='pipetting up and down')\nincubate(temperature='room temperature', duration='5 minutes')\npipette(container='tube with competent cells', reagent='KLD mix', volume='5 \u03bcl', source='\"KLD Section\" above', destination_volume='50 \u03bcl', destination='chemically-competent cells')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube with competent cells and KLD mix, other: {'method': 'flick tube 4-5 times'})\n\n### AUTOMATED SECTION ###\nincubate(container='tube with competent cells and KLD mix', temperature='ice', duration='30 minutes')\nincubate(container='tube with competent cells and KLD mix', temperature='42\u00b0C', duration='30 seconds', step='heat shock')\nincubate(container='tube with competent cells and KLD mix', temperature='ice', duration='5 minutes')\npipette(container='tube with competent cells and KLD mix', reagent='SOC', volume='950 \u03bcl', temperature='room temperature')\nincubate(container='tube with competent cells, KLD mix, and SOC', temperature='37\u00b0C', duration='60 minutes', speed='250 rpm', method='shaking')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: tube with competent cells, KLD mix, and SOC, other: {'method': 'flicking and inverting'})\n\n### AUTOMATED SECTION ###\npipette(container='selection plate', reagent='cells mixture', volume='40\u2013100 \u03bcl', method='spread')\nincubate(container='selection plate', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_517.txt"
+  }
+]

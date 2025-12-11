@@ -1,0 +1,134 @@
+[
+  {
+    "protocol": "Basic electron microscopy of aquatic viruses\nFor high-resolution images, samples should be sterile and free from bacteria and other large particles.\nFilter\u00a0through membrane filters of 0.22\u20130.45 \u00b5m pore size.\nWash\u00a0in a buffer, e.g., 0.1 M ammonium acetate (pH 7), in an ultracentrifuge with a fixed-angle rotor (25,000g or 25,000 rpm for 1 h).\nDeposit a drop of virus suspension on a grid Leave for\u00a030s for adsorption of viruses. \nAdd a drop of stain. \nWithdraw liquid using\u00a0filter paper. \nOperate transmission electron microscopes (TEMs) at 60\u201380 kV. \nCool the\u00a0object stage with liquid nitrogen to limit contamination by hydrocarbon molecules present in the column (and hence loss of resolution).",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "membrane filter",
+            "pore_size": "0.22\u20130.45 \u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": "0.1 M ammonium acetate (pH 7)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": "25,000g or 25,000 rpm",
+          "other": {
+            "rotor_type": "fixed-angle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "deposit",
+        "parameters": {
+          "container": "grid",
+          "reagent": "virus suspension",
+          "volume": "a drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "grid",
+          "reagent": "virus suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 s",
+          "speed": null,
+          "other": {
+            "purpose": "adsorption of viruses"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "grid",
+          "reagent": "stain",
+          "volume": "a drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "withdraw",
+        "parameters": {
+          "container": "grid",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "filter paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "operate",
+        "parameters": {
+          "container": "transmission electron microscope (TEM)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "voltage": "60\u201380 kV"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "object stage",
+          "reagent": "liquid nitrogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "limit contamination by hydrocarbon molecules"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(filter_type='membrane filter', pore_size='0.22\u20130.45 \u00b5m')\nwash(container='ultracentrifuge tube', reagent='0.1 M ammonium acetate (pH 7)', duration='1 h', speed='25,000g or 25,000 rpm', rotor_type='fixed-angle')\ndeposit(container='grid', reagent='virus suspension', volume='a drop')\nincubate(container='grid', reagent='virus suspension', duration='30 s', purpose='adsorption of viruses')\nadd(container='grid', reagent='stain', volume='a drop')\n\n### MANUAL SECTION ###\n# MANUAL: withdraw (container: grid, reagent: liquid, other: {'method': 'filter paper'})\n# MANUAL: operate (container: transmission electron microscope (TEM), other: {'voltage': '60\u201380 kV'})\n\n### AUTOMATED SECTION ###\ncool(container='object stage', reagent='liquid nitrogen', purpose='limit contamination by hydrocarbon molecules')",
+    "source_file": "protocol_293.txt"
+  }
+]

@@ -1,0 +1,177 @@
+[
+  {
+    "protocol": "NATURAL SEAWATER-BASED PRO99 MEDIUM\nPrepare a glass filter funnel and flask by cleaning with acid and Milli-Q water. \nFilter raw seawater through 47mm Whatman GF/F stacked on top of a 47mm 0.2\u00b5m polycarbonate filter. \nAutoclave seawater in a Teflon bottle (60 minutes for 2L). \nAllow to cool overnight. \nPrepare\u00a00.5M NH4Cl solution. \nPrepare\u00a00.025M NaH2PO4\u00b7H2O solution. \nPrepare primary trace metal stocks. \nPrepare trace metal working stock. \nTo make up the media, add following volumes of sterile nutrients and trace metal stock to one liter of the autoclaved seawater.\nNutrientVolumeFiltered Seawater \u00a0\u00a01000.0mL0.5M NH4Cl \u00a0\u00a01.6mL0.025M NaH2PO4\u00b7H2O \u00a0 \u00a02.0mLTrace metal working stock \u00a0\u00a0100\u00b5L. \nStore at room temperature for up to one month.",
+    "actions": [
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "glass filter funnel and flask",
+          "reagent": "acid and Milli-Q water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "47mm Whatman GF/F stacked on top of 47mm 0.2\u00b5m polycarbonate filter",
+          "reagent": "raw seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "Teflon bottle",
+          "reagent": "seawater",
+          "volume": "2L",
+          "temperature": null,
+          "duration": "60 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Teflon bottle",
+          "reagent": "autoclaved seawater",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.5M NH4Cl solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "0.025M NaH2PO4\u00b7H2O solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "primary trace metal stocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "trace metal working stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved seawater (1L)",
+          "reagent": "0.5M NH4Cl",
+          "volume": "1.6mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved seawater (1L)",
+          "reagent": "0.025M NaH2PO4\u00b7H2O",
+          "volume": "2.0mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved seawater (1L)",
+          "reagent": "trace metal working stock",
+          "volume": "100\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "final media",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "up to one month",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: clean (container: glass filter funnel and flask, reagent: acid and Milli-Q water, other: {})\n\n### AUTOMATED SECTION ###\nfilter(container='47mm Whatman GF/F stacked on top of 47mm 0.2\u00b5m polycarbonate filter', reagent='raw seawater')\nautoclave(container='Teflon bottle', reagent='seawater', volume='2L', duration='60 minutes')\ncool(container='Teflon bottle', reagent='autoclaved seawater', temperature='room temperature', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 0.5M NH4Cl solution, other: {})\n# MANUAL: prepare (reagent: 0.025M NaH2PO4\u00b7H2O solution, other: {})\n# MANUAL: prepare (reagent: primary trace metal stocks, other: {})\n# MANUAL: prepare (reagent: trace metal working stock, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='autoclaved seawater (1L)', reagent='0.5M NH4Cl', volume='1.6mL')\nadd(container='autoclaved seawater (1L)', reagent='0.025M NaH2PO4\u00b7H2O', volume='2.0mL')\nadd(container='autoclaved seawater (1L)', reagent='trace metal working stock', volume='100\u00b5L')\nstore(container='final media', temperature='room temperature', duration='up to one month')",
+    "source_file": "protocol_485.txt"
+  }
+]

@@ -1,0 +1,431 @@
+[
+  {
+    "protocol": "Megabase DNA Extraction from Animal Blood\nCollect 3mL animal's blood in 5 mL EDTA anticoagulative tube, and store at 4 \u00b0C. \nMix blood by gently rocking for 10min at room temperature to ensure a homogenous WBC distribution.\nTransfer 3ml blood to 15ml screw cap tube containing 9ml RBC lysis solution (3 volumes), and mix by gently inverting 10x.\nIncubate 5 min at room temperature.\nGently mix by inverting at least once during incubation.\nSpin 5 min at 2000xg at 4\u2070C and carefully pipet out supernatant while not disturbing the pellet.\nResuspend cell pellet in 3ml PBS (1 blood volume): \nAdd 9ml rbc lysis sol (3 volumes), invert to mix and incubate 5 min at room temperature.\nSpin cell suspension for 5 min at 2000xg at 4\u2070C and carefully pipet out supernatant while not disturbing the pellet.\nRemove the last drop of liquid by tilting the tube and removing liquid with pipet tip.\nResuspend cell pellet in 580ul cell suspension buffer (Bio Rad plug lysis kit) until homogenous suspension.\nTransfer 375ul to a new microfuge tube and label (400).\nTransfer 187.5ul to another tube labeled (200); add 187.5ul cell suspension buffer, and pipet mix gently 5x.\nKeep both tubes on ice until ready to embed in agarose (section II).\nMelt 2% agarose (Bio Rad kit) by immersing in microwave-boiled water for 10-15min until agarose is completely melted.\nEquilibrate both tubes from step 11 section I in 43\u00b0C water bath/heat block for at least 5 min before use.\nAfter 5 min, prepare 5 plugs from one tube by performing the next steps rapidly to avoid solidification of the cell-agarose mixture before pipeting into plug mold: \nPlace plug cast on ice for at least 45min or until agarose has solidified.\nAlternatively, can place plug cast on inverted metal microfuge ice block on ice for 45min, to avoid potential contact of agarose with ice. \nWash away hemoglobin and cellular material with Proteinase K and Wash Buffer.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "5 mL EDTA anticoagulative tube",
+          "reagent": "animal blood",
+          "volume": "3 mL",
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "5 mL EDTA anticoagulative tube",
+          "reagent": "animal blood",
+          "volume": "3 mL",
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "5 mL EDTA anticoagulative tube",
+          "reagent": "animal blood",
+          "volume": "3 mL",
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": "gently rocking",
+          "other": {
+            "purpose": "homogenous WBC distribution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "blood",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination_contains": "9 mL RBC lysis solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "blood + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently inverting 10x",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "blood + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "blood + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently inverting at least once",
+          "other": {
+            "during": "incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "blood + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": "4 \u00b0C",
+          "duration": "5 min",
+          "speed": "2000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "supernatant",
+          "volume": "as much as possible without disturbing pellet",
+          "temperature": null,
+          "duration": null,
+          "speed": "carefully",
+          "other": {
+            "purpose": "remove supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "cell pellet",
+          "volume": "3 mL PBS",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1 blood volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "RBC lysis solution",
+          "volume": "9 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "3 volumes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "cell suspension + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "invert",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "cell suspension + RBC lysis solution",
+          "volume": "12 mL",
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "cell suspension",
+          "volume": "12 mL",
+          "temperature": "4 \u00b0C",
+          "duration": "5 min",
+          "speed": "2000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "supernatant",
+          "volume": "as much as possible without disturbing pellet",
+          "temperature": null,
+          "duration": null,
+          "speed": "carefully",
+          "other": {
+            "purpose": "remove supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "last drop of liquid",
+          "volume": "last drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "tilting tube and pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL screw cap tube",
+          "reagent": "cell pellet",
+          "volume": "580 ul cell suspension buffer (Bio Rad plug lysis kit)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "homogenous suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new microfuge tube",
+          "reagent": "cell suspension",
+          "volume": "375 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "400"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "another tube",
+          "reagent": "cell suspension",
+          "volume": "187.5 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "200"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube labeled 200",
+          "reagent": "cell suspension buffer",
+          "volume": "187.5 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube labeled 200",
+          "reagent": "cell suspension + buffer",
+          "volume": "375 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently pipet mix 5x",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "both tubes",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "until ready to embed in agarose",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": "2% agarose (Bio Rad kit)",
+          "reagent": "agarose",
+          "volume": null,
+          "temperature": "microwave-boiled water",
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "until": "completely melted"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "both tubes from step 11 section I",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": "43\u00b0C water bath/heat block",
+          "duration": "at least 5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "one tube",
+          "reagent": "cell-agarose mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "rapidly",
+          "other": {
+            "purpose": "avoid solidification before pipeting into plug mold"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plug cast",
+          "reagent": "cell-agarose mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "at least 45 min or until agarose solidified",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plug cast",
+          "reagent": "cell-agarose mixture",
+          "volume": null,
+          "temperature": "on inverted metal microfuge ice block on ice",
+          "duration": "45 min",
+          "speed": null,
+          "other": {
+            "purpose": "avoid contact of agarose with ice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "plug",
+          "reagent": "Proteinase K and Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "wash away hemoglobin and cellular material"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: 5 mL EDTA anticoagulative tube, reagent: animal blood, volume: 3 mL, temperature: 4 \u00b0C, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='5 mL EDTA anticoagulative tube', reagent='animal blood', volume='3 mL', temperature='4 \u00b0C')\nmix(container='5 mL EDTA anticoagulative tube', reagent='animal blood', volume='3 mL', temperature='room temperature', duration='10 min', speed='gently rocking', purpose='homogenous WBC distribution')\ntransfer(container='15 mL screw cap tube', reagent='blood', volume='3 mL', destination_contains='9 mL RBC lysis solution')\nmix(container='15 mL screw cap tube', reagent='blood + RBC lysis solution', volume='12 mL', speed='gently inverting 10x')\nincubate(container='15 mL screw cap tube', reagent='blood + RBC lysis solution', volume='12 mL', temperature='room temperature', duration='5 min')\nmix(container='15 mL screw cap tube', reagent='blood + RBC lysis solution', volume='12 mL', speed='gently inverting at least once', during='incubation')\ncentrifuge(container='15 mL screw cap tube', reagent='blood + RBC lysis solution', volume='12 mL', temperature='4 \u00b0C', duration='5 min', speed='2000xg')\npipette(container='15 mL screw cap tube', reagent='supernatant', volume='as much as possible without disturbing pellet', speed='carefully', purpose='remove supernatant')\nresuspend(container='15 mL screw cap tube', reagent='cell pellet', volume='3 mL PBS', ratio='1 blood volume')\nadd(container='15 mL screw cap tube', reagent='RBC lysis solution', volume='9 mL', ratio='3 volumes')\nmix(container='15 mL screw cap tube', reagent='cell suspension + RBC lysis solution', volume='12 mL', speed='invert')\nincubate(container='15 mL screw cap tube', reagent='cell suspension + RBC lysis solution', volume='12 mL', temperature='room temperature', duration='5 min')\ncentrifuge(container='15 mL screw cap tube', reagent='cell suspension', volume='12 mL', temperature='4 \u00b0C', duration='5 min', speed='2000xg')\npipette(container='15 mL screw cap tube', reagent='supernatant', volume='as much as possible without disturbing pellet', speed='carefully', purpose='remove supernatant')\nremove(container='15 mL screw cap tube', reagent='last drop of liquid', volume='last drop', method='tilting tube and pipet tip')\nresuspend(container='15 mL screw cap tube', reagent='cell pellet', volume='580 ul cell suspension buffer (Bio Rad plug lysis kit)', until='homogenous suspension')\ntransfer(container='new microfuge tube', reagent='cell suspension', volume='375 ul', label='400')\ntransfer(container='another tube', reagent='cell suspension', volume='187.5 ul', label='200')\nadd(container='tube labeled 200', reagent='cell suspension buffer', volume='187.5 ul')\nmix(container='tube labeled 200', reagent='cell suspension + buffer', volume='375 ul', speed='gently pipet mix 5x')\nkeep(container='both tubes', reagent='cell suspension', temperature='on ice', duration='until ready to embed in agarose')\n\n### MANUAL SECTION ###\n# MANUAL: melt (container: 2% agarose (Bio Rad kit), reagent: agarose, temperature: microwave-boiled water, duration: 10-15 min, other: {'until': 'completely melted'})\n\n### AUTOMATED SECTION ###\nequilibrate(container='both tubes from step 11 section I', reagent='cell suspension', temperature='43\u00b0C water bath/heat block', duration='at least 5 min')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: one tube, reagent: cell-agarose mixture, speed: rapidly, other: {'purpose': 'avoid solidification before pipeting into plug mold'})\n\n### AUTOMATED SECTION ###\nplace(container='plug cast', reagent='cell-agarose mixture', temperature='on ice', duration='at least 45 min or until agarose solidified')\nplace(container='plug cast', reagent='cell-agarose mixture', temperature='on inverted metal microfuge ice block on ice', duration='45 min', purpose='avoid contact of agarose with ice')\nwash(container='plug', reagent='Proteinase K and Wash Buffer', purpose='wash away hemoglobin and cellular material')",
+    "source_file": "protocol_522.txt"
+  }
+]

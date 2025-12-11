@@ -1,0 +1,152 @@
+[
+  {
+    "protocol": "Preparation of Denaturing Agarose Gel for RNA Analysis\nMelt 1.0 g agarose in 87 ml of DEPC water, by dispersing the agarose uniformly and heating in a microwave until all particles are dissolved.\nBring the melted agarose to 60 \u00b0C.\nAdd 10 ml 10X MOPS Buffer and 3 ml 37% formaldehyde.\nPour standard agarose gel gel.\nUSE A FUME HOOD!\nFORMALDEHYDE IS VOLATILE AND TOXIC.\nWORK IN A HOOD FROM THIS POINT FORWARD.\nAllow gel to set for 1 hour.\nRun gel in 1X MOPS Buffer.\nMix 40 \u00b5l sample buffer with 10 \u00b5l sample, heat to 55 \u00b0C 15 minutes.\nAdd 10\u00b5l of the following:  50% glycerol 1 mM EDTA 0.3% each bromophenol blue and 0.3% xylene cyanol.",
+    "actions": [
+      {
+        "action": "melt",
+        "parameters": {
+          "container": null,
+          "reagent": "1.0 g agarose in 87 ml DEPC water",
+          "volume": "87 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microwave",
+            "dispersion": "disperse agarose uniformly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "melted agarose",
+          "volume": null,
+          "temperature": "60 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10 ml 10X MOPS Buffer",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "3 ml 37% formaldehyde",
+          "volume": "3 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "standard agarose gel mold",
+          "reagent": "gel solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "gel mold",
+          "reagent": "agarose gel",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel box",
+          "reagent": "gel in 1X MOPS Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "40 \u00b5l sample buffer with 10 \u00b5l sample",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "sample mixture",
+          "volume": null,
+          "temperature": "55 \u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10 \u00b5l mixture of 50% glycerol, 1 mM EDTA, 0.3% bromophenol blue, 0.3% xylene cyanol",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmelt(reagent='1.0 g agarose in 87 ml DEPC water', volume='87 ml', method='microwave', dispersion='disperse agarose uniformly')\nheat(reagent='melted agarose', temperature='60 \u00b0C')\nadd(reagent='10 ml 10X MOPS Buffer', volume='10 ml')\nadd(reagent='3 ml 37% formaldehyde', volume='3 ml')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: standard agarose gel mold, reagent: gel solution, other: {})\n\n### AUTOMATED SECTION ###\nset(container='gel mold', reagent='agarose gel', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: gel box, reagent: gel in 1X MOPS Buffer, other: {})\n\n### AUTOMATED SECTION ###\nmix(reagent='40 \u00b5l sample buffer with 10 \u00b5l sample', volume='50 \u00b5l')\nheat(reagent='sample mixture', temperature='55 \u00b0C', duration='15 minutes')\nadd(reagent='10 \u00b5l mixture of 50% glycerol, 1 mM EDTA, 0.3% bromophenol blue, 0.3% xylene cyanol', volume='10 \u00b5l')",
+    "source_file": "protocol_528.txt"
+  }
+]

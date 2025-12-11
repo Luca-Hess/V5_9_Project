@@ -1,0 +1,862 @@
+[
+  {
+    "protocol": "Protocol for Pulsed Field Gel Electrophoresis\nA 15-20 liter natural seawater sample is passed through a glass fiber pre-filter (Gelman A/E) and a 0.22\u00a0\u03bcm pore size membrane (Durapore, Millipore).\nConcentrate to ca. 150-200 ml using 30 kD MWC Spiral Cartridge Concentrator (SCC).\nTransfer the SCC retentate to Centriprep 30\u2019s.\nStore balance of concentrate in refrigerator.\nCentrifuge in IEC-HN SE II at full speed for 15 minutes (in refrigerator if possible).\nEmpty central reservoir without refilling and repeat centrifugation step.\nEmpty and refill keeping volumes equal in order to maximize filtration area of Centripreps and balance rotor.\nContinue to spin and empty until no more water enters central chamber.\nRemove central insert from 2 of units, replace caps, and spin retentate chamber briefly to recover droplets from sides.\nCombine retentate into 2, and finally one Centriprep unit, by gentle pipetting.\nWhen all have been combined and spun, the final volume is ca. 500 \u03bcl.\nMake a 1% agarose gel by combining 1 g Bio-Rad Molecular Grade Agarose with 99ml 0.5x TBE, and heating until completely clear of unmelted material.\nAssemble mold with backing plate in place and pour in liquid.\nLet set.\nMeanwhile, fill electrophoresis chamber with 2 liters 0.5x TBE.\nTurn on pump and chiller, and set temperature to 14\u00b0C.\nWhen gel is set, remove comb and sides of mold, and slide backing plate, with gel attached, out of mold.\nPlace gel with backing plate into receiver in electrophoresis chamber, taking care not to dislodge gel from plate, with wells in rear and let chill.\nTransfer aliquots into Microcons (30 or 100 kD MWC).\nPlace each aliquot in a separate Microcon and spin at 1000 x g for 20 minutes (about 4000 RPM in Eppendorf Microfuge) to near\u00a0dryness (most of the Microcon membrane is dry, and only a small ring of liquid remains around edge).\nAs they reach the proper volume, smaller volume aliquots can be removed and stored in the refrigerator until the larger have been\u00a0reduced to the proper volume.\nWhen all samples have been reduced, add 50 \u03bcl 1:10 TE to each tube, taking care not to touch membrane with pipette tip, and spin\u00a0again to reduce volume as described above.\nRepeat step 22.\nRepeat step 22 again.\nNow add 20 \u03bcl 0.5x TBE to membrane to elute viruses, again taking care not to touch membrane.\nInvert cartridge, place in fresh tube, and spin for 5 minutes at 1000 x g to recover.\nPlace tubes containing recovered viruses in 60\u00b0C water bath for 10 minutes.\nRemove tubes and place immediately on ice for 2 minutes.\nTransfer to microfuge and spin briefly to recover condensation from walls of tubes.\nPrepare molecular weight markers by combining 100-200 ng of marker stock to 0.5x TBE to a final volume of 20 \u03bcl.\nAdd 10 \u03bcl PFGE loading buffer to each tube.\nMix by simultaneously inverting several times slowly, while rolling between index finger and thumb.\nTurn chiller and pump off.\nLoad samples.\nTurn pump on, then turn chiller on.\nClose lid and check connections to make sure all is in order.\nSet voltage to 6V.\nSet initial switch time to 1s.\nSet final switch time to 10s.\nSet run time to 18h.\nPush start.\nAfter 10 minutes, check to make sure actual temperature is holding between 14 and 16\u00b0C, and that timer is running down.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "glass fiber pre-filter (Gelman A/E), 0.22 \u03bcm pore size membrane (Durapore, Millipore)",
+          "reagent": "natural seawater sample",
+          "volume": "15-20 liters",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "30 kD MWC Spiral Cartridge Concentrator (SCC)",
+          "reagent": "filtered seawater",
+          "volume": "to ca. 150-200 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Centriprep 30\u2019s",
+          "reagent": "SCC retentate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "balance of concentrate",
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "IEC-HN SE II",
+          "reagent": "Centriprep 30\u2019s",
+          "volume": null,
+          "temperature": "refrigerator if possible",
+          "duration": "15 minutes",
+          "speed": "full speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "central reservoir",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "without_refilling": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "IEC-HN SE II",
+          "reagent": "Centriprep 30\u2019s",
+          "volume": null,
+          "temperature": "refrigerator if possible",
+          "duration": "15 minutes",
+          "speed": "full speed",
+          "other": {
+            "repeat": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "central reservoir",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "refill",
+        "parameters": {
+          "container": "central reservoir",
+          "reagent": null,
+          "volume": "keeping volumes equal",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "maximize_filtration_area": true,
+            "balance_rotor": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Centripreps",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "continue_until_no_more_water_enters_central_chamber": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "central insert from 2 units",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "caps",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "retentate chamber",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {
+            "recover_droplets_from_sides": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "2 Centriprep units, then one Centriprep unit",
+          "reagent": "retentate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "by_gentle_pipetting": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "final Centriprep unit",
+          "reagent": null,
+          "volume": "ca. 500 \u03bcl (final volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "1% agarose gel (1 g Bio-Rad Molecular Grade Agarose + 99 ml 0.5x TBE)",
+          "volume": "100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "heat_until_clear": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "mold with backing plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "mold",
+          "reagent": "liquid agarose gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "mold",
+          "reagent": "agarose gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "electrophoresis chamber",
+          "reagent": "0.5x TBE",
+          "volume": "2 liters",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "pump and chiller",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "chiller",
+          "reagent": null,
+          "volume": null,
+          "temperature": "14\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "comb and sides of mold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "slide",
+        "parameters": {
+          "container": "backing plate with gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "out_of_mold": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "electrophoresis chamber receiver",
+          "reagent": "gel with backing plate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wells_in_rear": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "electrophoresis chamber",
+          "reagent": "gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Microcons (30 or 100 kD MWC)",
+          "reagent": "aliquots",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Microcon",
+          "reagent": "aliquot",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "1000 x g (about 4000 RPM in Eppendorf Microfuge)",
+          "other": {
+            "to_near_dryness": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Microcon",
+          "reagent": "smaller volume aliquots",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "as_they_reach_proper_volume": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "refrigerator",
+          "reagent": "smaller volume aliquots",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "50 \u03bcl 1:10 TE",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "do_not_touch_membrane_with_pipette_tip": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reduce_volume_as_above": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": 22
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": 22
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "20 \u03bcl 0.5x TBE",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to_elute_viruses": true,
+            "do_not_touch_membrane": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place_in_fresh_tube": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1000 x g",
+          "other": {
+            "to_recover": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "water bath",
+          "reagent": "tubes containing recovered viruses",
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "water bath",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "ice",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microfuge",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "microfuge",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {
+            "recover_condensation_from_walls": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "molecular weight markers (100-200 ng marker stock + 0.5x TBE to 20 \u03bcl)",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "10 \u03bcl PFGE loading buffer",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "invert_several_times_slowly": true,
+            "roll_between_fingers": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_off",
+        "parameters": {
+          "container": "chiller and pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "chiller",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "lid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "connections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "all_in_order": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "6V",
+          "other": {
+            "voltage": "6V"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "initial_switch_time": "1s"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_switch_time": "10s"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "18h",
+          "speed": null,
+          "other": {
+            "run_time": "18h"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "14-16\u00b0C",
+          "duration": "after 10 minutes",
+          "speed": null,
+          "other": {
+            "timer_running_down": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='glass fiber pre-filter (Gelman A/E), 0.22 \u03bcm pore size membrane (Durapore, Millipore)', reagent='natural seawater sample', volume='15-20 liters')\nconcentrate(container='30 kD MWC Spiral Cartridge Concentrator (SCC)', reagent='filtered seawater', volume='to ca. 150-200 ml')\ntransfer(container='Centriprep 30\u2019s', reagent='SCC retentate')\nstore(reagent='balance of concentrate', temperature='refrigerator')\ncentrifuge(container='IEC-HN SE II', reagent='Centriprep 30\u2019s', temperature='refrigerator if possible', duration='15 minutes', speed='full speed')\n\n### MANUAL SECTION ###\n# MANUAL: empty (container: central reservoir, other: {'without_refilling': True})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='IEC-HN SE II', reagent='Centriprep 30\u2019s', temperature='refrigerator if possible', duration='15 minutes', speed='full speed', repeat=True)\n\n### MANUAL SECTION ###\n# MANUAL: empty (container: central reservoir, other: {})\n# MANUAL: refill (container: central reservoir, volume: keeping volumes equal, other: {'maximize_filtration_area': True, 'balance_rotor': True})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Centripreps', continue_until_no_more_water_enters_central_chamber=True)\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: central insert from 2 units, other: {})\n# MANUAL: replace (container: caps, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='retentate chamber', duration='briefly', recover_droplets_from_sides=True)\ncombine(container='2 Centriprep units, then one Centriprep unit', reagent='retentate', by_gentle_pipetting=True)\nspin(container='final Centriprep unit', volume='ca. 500 \u03bcl (final volume)')\nmake(reagent='1% agarose gel (1 g Bio-Rad Molecular Grade Agarose + 99 ml 0.5x TBE)', volume='100 ml', heat_until_clear=True)\n\n### MANUAL SECTION ###\n# MANUAL: assemble (container: mold with backing plate, other: {})\n\n### AUTOMATED SECTION ###\npour(container='mold', reagent='liquid agarose gel')\nset(container='mold', reagent='agarose gel')\nfill(container='electrophoresis chamber', reagent='0.5x TBE', volume='2 liters')\nturn_on(container='pump and chiller')\nset(container='chiller', temperature='14\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: comb and sides of mold, other: {})\n# MANUAL: slide (container: backing plate with gel, other: {'out_of_mold': True})\n# MANUAL: place (container: electrophoresis chamber receiver, reagent: gel with backing plate, other: {'wells_in_rear': True})\n\n### AUTOMATED SECTION ###\nchill(container='electrophoresis chamber', reagent='gel')\ntransfer(container='Microcons (30 or 100 kD MWC)', reagent='aliquots')\nspin(container='Microcon', reagent='aliquot', duration='20 minutes', speed='1000 x g (about 4000 RPM in Eppendorf Microfuge)', to_near_dryness=True)\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Microcon, reagent: smaller volume aliquots, other: {'as_they_reach_proper_volume': True})\n\n### AUTOMATED SECTION ###\nstore(container='refrigerator', reagent='smaller volume aliquots')\nadd(container='each tube', reagent='50 \u03bcl 1:10 TE', volume='50 \u03bcl', do_not_touch_membrane_with_pipette_tip=True)\nspin(container='each tube', reduce_volume_as_above=True)\nrepeat(step=22)\nrepeat(step=22)\nadd(container='membrane', reagent='20 \u03bcl 0.5x TBE', volume='20 \u03bcl', to_elute_viruses=True, do_not_touch_membrane=True)\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: cartridge, other: {'place_in_fresh_tube': True})\n\n### AUTOMATED SECTION ###\nspin(container='fresh tube', duration='5 minutes', speed='1000 x g', to_recover=True)\nplace(container='water bath', reagent='tubes containing recovered viruses', temperature='60\u00b0C', duration='10 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: water bath, reagent: tubes, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='ice', reagent='tubes', duration='2 minutes')\ntransfer(container='microfuge', reagent='tubes')\nspin(container='microfuge', reagent='tubes', duration='briefly', recover_condensation_from_walls=True)\nprepare(reagent='molecular weight markers (100-200 ng marker stock + 0.5x TBE to 20 \u03bcl)', volume='20 \u03bcl')\nadd(container='each tube', reagent='10 \u03bcl PFGE loading buffer', volume='10 \u03bcl')\nmix(container='each tube', invert_several_times_slowly=True, roll_between_fingers=True)\nturn_off(container='chiller and pump')\nload(container='gel', reagent='samples')\nturn_on(container='pump')\nturn_on(container='chiller')\n\n### MANUAL SECTION ###\n# MANUAL: close (container: lid, other: {})\n# MANUAL: check (container: connections, other: {'all_in_order': True})\n\n### AUTOMATED SECTION ###\nset(speed='6V', voltage='6V')\nset(initial_switch_time='1s')\nset(final_switch_time='10s')\nset(duration='18h', run_time='18h')\nstart()\n\n### MANUAL SECTION ###\n# MANUAL: check (temperature: 14-16\u00b0C, duration: after 10 minutes, other: {'timer_running_down': True})",
+    "source_file": "protocol_430.txt"
+  }
+]

@@ -1,0 +1,81 @@
+[
+  {
+    "protocol": "TAP Agar Plates\nPour 500mL of premade TAP into 1L erlenmeyer Agar is added to TAP at 15g per liter.\nFor 500mL, add 7.5g of agar Stir for 10 minutes.\nCover the lid with aluminum foil, autoclave tape, and autoclave in a liquid cycle for 90 minutes",
+    "actions": [
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "premade TAP",
+          "volume": "500mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "agar",
+          "volume": "7.5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": "aluminum foil, autoclave tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "1L Erlenmeyer flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "90 minutes",
+          "speed": null,
+          "other": {
+            "cycle": "liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npour(container='1L Erlenmeyer flask', reagent='premade TAP', volume='500mL')\nadd(container='1L Erlenmeyer flask', reagent='agar', volume='7.5g')\nstir(container='1L Erlenmeyer flask', duration='10 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: 1L Erlenmeyer flask, reagent: aluminum foil, autoclave tape, other: {})\n\n### AUTOMATED SECTION ###\nautoclave(container='1L Erlenmeyer flask', duration='90 minutes', cycle='liquid')",
+    "source_file": "protocol_159.txt"
+  }
+]

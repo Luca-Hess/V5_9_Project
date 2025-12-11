@@ -1,0 +1,84 @@
+[
+  {
+    "protocol": "Glycerol Stock\nAdd 600 uL of your inoculated liquid culture to a 2 mL screw top tube.\nAdd 200 uL autoclaved water to the screw top tube.\nAdd 200 uL glycerol to the screw top tube.\nScrew the top on the tube and mix by inversion several times so no layers are present in the mixture.\nPlace mixed screw top tube into a -80 C Freezer.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL screw top tube",
+          "reagent": "inoculated liquid culture",
+          "volume": "600 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL screw top tube",
+          "reagent": "autoclaved water",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL screw top tube",
+          "reagent": "glycerol",
+          "volume": "200 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 mL screw top tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion",
+            "until": "no layers are present"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "2 mL screw top tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "Freezer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='2 mL screw top tube', reagent='inoculated liquid culture', volume='600 uL')\nadd(container='2 mL screw top tube', reagent='autoclaved water', volume='200 uL')\nadd(container='2 mL screw top tube', reagent='glycerol', volume='200 uL')\nmix(container='2 mL screw top tube', method='inversion', until='no layers are present')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: 2 mL screw top tube, temperature: -80 C, other: {'location': 'Freezer'})",
+    "source_file": "protocol_240.txt"
+  }
+]

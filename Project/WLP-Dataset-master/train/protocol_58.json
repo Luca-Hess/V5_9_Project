@@ -1,0 +1,425 @@
+[
+  {
+    "protocol": "Cas9 RNP nucleofection for cell lines using Lonza 4D Nucleofector\nBring 100 pmol of Cas9 to a final volume of 5 \u00b5L using Cas9 buffer (20 mM HEPES-KOH pH 7.5, 150 mM KCl, 10% glycerol, 1 mM TCEP).\nFor 40 \u00b5M stock: 2.5 \u00b5L.\nBring 120 pmol sgRNA to a final volume of 5 \u00b5L using Cas9 buffer.\nThis means you will need a minimum sgRNA concentration of 24uM.\nAdd Cas9 to sgRNA slowly while swirling pipette tip, should take 30s to 1 minute.\nAllow RNP to form for 10-20 minutes.\nCount cells.\n(Trypsinize as needed.).\nFor each nucleofection, pipette 200k cells into a 15 mL conical.\nSpin 100 x g for 10 minutes to pellet cells softly.\nWhile the cells are spinning, prepare plate and cuvette.\nPrepare a 12-well-plate with 1mL media per well, and pre-warm in the incubator.\nPrepare and label wells on 20uL nucleofection strips.\nConfigure Lonza 4d using recommended cell-type program.\nPipette off media from cells, gently but completely, using a P200.\nThe pellet is very soft so be careful.\nResuspend cells in 20 \u00b5L of nucleofector solution (usually SF media) using a P200.\nAdd the entire 10 \u00b5L RNP mix to the 20 \u00b5L resuspension and mix.\nAdd 1uL of 100uM donor DNA (100 pmoles) and mix well.\nAdd nucleofection mixes to the multiwell cuvette, and cap.\nPay attention to the orientation of the cap and cuvette in the nucleofector, which is noted in the manufacturer\u2019s instructions.\nInsert cuvette into nucleofector and zap.\nAllow cells to sit in nucleofection strips for 10 minutes post-nucleofection.\nThis is supposed to increase efficiency.\nAdd 80uL of pre-warmed media to each well.\nPipette mixture out with a P200 into your pre-warmed 12-well plate.\nThis should get the vast majority of cells, but if you wish, you may wash out the rest with media from the same well, chemistry-style.\nAllow cells 24 hours to settle and recover before attempted downstream analysis.\nConsider including un-zapped controls to test viability.",
+    "actions": [
+      {
+        "action": "bring",
+        "parameters": {
+          "container": null,
+          "reagent": "Cas9",
+          "volume": "5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "100 pmol",
+            "buffer": "Cas9 buffer (20 mM HEPES-KOH pH 7.5, 150 mM KCl, 10% glycerol, 1 mM TCEP)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": null,
+          "reagent": "sgRNA",
+          "volume": "5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "120 pmol",
+            "buffer": "Cas9 buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Cas9",
+          "volume": null,
+          "temperature": null,
+          "duration": "30s to 1 minute",
+          "speed": null,
+          "other": {
+            "to": "sgRNA",
+            "method": "slowly while swirling pipette tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "RNP mix",
+          "volume": null,
+          "temperature": null,
+          "duration": "10-20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "trypsinize",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "cells",
+          "volume": "200k cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "100 x g",
+          "other": {
+            "purpose": "pellet cells softly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "plate and cuvette",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "media",
+          "volume": "1 mL per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "media",
+          "volume": "1 mL per well",
+          "temperature": "pre-warm (incubator)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "20uL nucleofection strips",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "label wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "configure",
+        "parameters": {
+          "container": "Lonza 4D Nucleofector",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "program": "recommended cell-type program"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "media from cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently but completely",
+            "instrument": "P200"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "cells",
+          "volume": "20 \u00b5L nucleofector solution (usually SF media)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "P200"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "10 \u00b5L RNP mix",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "20 \u00b5L cell resuspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "cell resuspension + RNP mix",
+          "volume": "30 \u00b5L total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "donor DNA",
+          "volume": "1 \u00b5L of 100 \u00b5M (100 pmoles)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL conical",
+          "reagent": "cell resuspension + RNP mix + donor DNA",
+          "volume": "31 \u00b5L total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "mix well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "multiwell cuvette",
+          "reagent": "nucleofection mixes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cap": "cap cuvette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "nucleofector"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "zap",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "nucleofector"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "nucleofection strips",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "post-nucleofection": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "nucleofection strips",
+          "reagent": "pre-warmed media",
+          "volume": "80 \u00b5L per well",
+          "temperature": "pre-warmed",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "mixture from nucleofection strips",
+          "volume": null,
+          "temperature": "pre-warmed",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "P200"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "nucleofection strips",
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "chemistry-style"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "24 hours",
+          "speed": null,
+          "other": {
+            "purpose": "settle and recover"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nbring(reagent='Cas9', volume='5 \u00b5L', amount='100 pmol', buffer='Cas9 buffer (20 mM HEPES-KOH pH 7.5, 150 mM KCl, 10% glycerol, 1 mM TCEP)')\nbring(reagent='sgRNA', volume='5 \u00b5L', amount='120 pmol', buffer='Cas9 buffer')\nadd(reagent='Cas9', duration='30s to 1 minute', to='sgRNA', method='slowly while swirling pipette tip')\nincubate(reagent='RNP mix', duration='10-20 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: count (reagent: cells, other: {})\n# MANUAL: trypsinize (reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\npipette(container='15 mL conical', reagent='cells', volume='200k cells')\ncentrifuge(container='15 mL conical', reagent='cells', duration='10 minutes', speed='100 x g', purpose='pellet cells softly')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: plate and cuvette, other: {})\n# MANUAL: prepare (container: 12-well plate, reagent: media, volume: 1 mL per well, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='12-well plate', reagent='media', volume='1 mL per well', temperature='pre-warm (incubator)')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 20uL nucleofection strips, other: {'label': 'label wells'})\n# MANUAL: configure (container: Lonza 4D Nucleofector, other: {'program': 'recommended cell-type program'})\n\n### AUTOMATED SECTION ###\npipette(container='15 mL conical', reagent='media from cells', method='gently but completely', instrument='P200')\nresuspend(container='15 mL conical', reagent='cells', volume='20 \u00b5L nucleofector solution (usually SF media)', instrument='P200')\nadd(container='15 mL conical', reagent='10 \u00b5L RNP mix', volume='10 \u00b5L', to='20 \u00b5L cell resuspension')\nmix(container='15 mL conical', reagent='cell resuspension + RNP mix', volume='30 \u00b5L total')\nadd(container='15 mL conical', reagent='donor DNA', volume='1 \u00b5L of 100 \u00b5M (100 pmoles)')\nmix(container='15 mL conical', reagent='cell resuspension + RNP mix + donor DNA', volume='31 \u00b5L total', method='mix well')\nadd(container='multiwell cuvette', reagent='nucleofection mixes', cap='cap cuvette')\n\n### MANUAL SECTION ###\n# MANUAL: insert (container: cuvette, other: {'instrument': 'nucleofector'})\n# MANUAL: zap (container: cuvette, reagent: cells, other: {'instrument': 'nucleofector'})\n\n### AUTOMATED SECTION ###\nincubate(container='nucleofection strips', reagent='cells', duration='10 minutes', post-nucleofection=True)\nadd(container='nucleofection strips', reagent='pre-warmed media', volume='80 \u00b5L per well', temperature='pre-warmed')\npipette(container='12-well plate', reagent='mixture from nucleofection strips', temperature='pre-warmed', instrument='P200')\nwash(container='nucleofection strips', reagent='media', method='chemistry-style')\nincubate(container='12-well plate', reagent='cells', duration='24 hours', purpose='settle and recover')",
+    "source_file": "protocol_58.txt"
+  }
+]

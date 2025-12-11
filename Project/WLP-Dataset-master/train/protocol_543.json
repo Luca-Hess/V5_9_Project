@@ -1,0 +1,333 @@
+[
+  {
+    "protocol": "Anti-BrdU Staining Protocols Using DNAse with Surface and Fluorescent Proteins\nPulse actively dividing cells with BrdU (in vitro, cell culture media can be pulsed by adding 10-40 \u03bcM of BrdU for 1-2 hours).\nHarvest cells and centrifuge for 5 minutes at 1200-1500 rpm (200-300 x g) Wash cells in Cell Staining Buffer (Cat. No. 420201) and centrifuge for 5 minutes at 1200-1500 rpm (200-300 x g).\nDiscard supernatant. \nAliquot 5 x 105- 1 x 106 cells per 12 x 75 mm tube. \nOptional: Stain cells for surface antigens if required, utilizing the Cell Surface Immunofluorescence Staining Protocol (see link). \nWash cells by adding 1 ml of Cell Staining Buffer to each tube and centrifuging for 5 minutes at 1200-1500 rpm (200-300 x g).\nDiscard supernatant. \nFix cells by adding 100 \u03bcl of 4% paraformaldehyde at room temperature for 20-30 minutes. \nWash cells by repeating step 6 twice.\n(Optional: Cells can be stored in FACS buffer at 4\u2070C for up to 72 hrs).\nPermeabilize cells by adding 500 \u03bcl of 0.5% Triton-X 100 in PBS for 15 minutes at room temperature. \nWash cells by repeating step 6 twice. \nTreat cells with 20 \u03bcg of DNAse (Cat. No. D4513, Sigma-Aldrich) diluted in DPBS with calcium and magnesium to each tube and incubate at 37\u2070C for 1 hour.\nWash cells by repeating step 6 twice. \nAdd 50 \u03bcl of Cell Staining Buffer to each tube then add the recommended concentration of anti-BrdU antibody to each tube.\nIncubate for 20 minutes at room temperature in the dark Repeat step 6.\nStain DNA by adding 1 \u03bcg of either 7-AAD (Cat. No. 420403) or DAPI (Cat. No. 422801).\nWait for 5 minutes prior to acquiring samples on flow cytometer.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell culture media",
+          "reagent": "BrdU",
+          "volume": "10-40 \u03bcM (final concentration)",
+          "temperature": null,
+          "duration": "1-2 hours",
+          "speed": null,
+          "other": {
+            "cells": "actively dividing cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1200-1500 rpm (200-300 x g)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "cells",
+          "reagent": "Cell Staining Buffer (Cat. No. 420201)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1200-1500 rpm (200-300 x g)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "12 x 75 mm tube",
+          "reagent": "cells",
+          "volume": "5 x 10^5 - 1 x 10^6 cells per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1200-1500 rpm (200-300 x g)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "4% paraformaldehyde",
+          "volume": "100 \u03bcl",
+          "temperature": "room temperature",
+          "duration": "20-30 minutes",
+          "speed": null,
+          "other": {
+            "cells": "fixed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "0.5% Triton-X 100 in PBS",
+          "volume": "500 \u03bcl",
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "cells": "permeabilized"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNAse (Cat. No. D4513, Sigma-Aldrich) diluted in DPBS with calcium and magnesium",
+          "volume": "20 \u03bcg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "anti-BrdU antibody (recommended concentration)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "light": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Cell Staining Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "7-AAD (Cat. No. 420403) or DAPI (Cat. No. 422801)",
+          "volume": "1 \u03bcg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "DNA stain": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='cell culture media', reagent='BrdU', volume='10-40 \u03bcM (final concentration)', duration='1-2 hours', cells='actively dividing cells')\ncentrifuge(container='cells', duration='5 minutes', speed='1200-1500 rpm (200-300 x g)')\nwash(container='cells', reagent='Cell Staining Buffer (Cat. No. 420201)')\ncentrifuge(container='cells', duration='5 minutes', speed='1200-1500 rpm (200-300 x g)')\ndiscard(container='supernatant')\naliquot(container='12 x 75 mm tube', reagent='cells', volume='5 x 10^5 - 1 x 10^6 cells per tube')\nwash(container='tube', reagent='Cell Staining Buffer', volume='1 ml')\ncentrifuge(container='tube', duration='5 minutes', speed='1200-1500 rpm (200-300 x g)')\ndiscard(container='supernatant')\nadd(container='tube', reagent='4% paraformaldehyde', volume='100 \u03bcl', temperature='room temperature', duration='20-30 minutes', cells='fixed')\nwash(container='tube', reagent='Cell Staining Buffer', volume='1 ml', repeat='twice')\nadd(container='tube', reagent='0.5% Triton-X 100 in PBS', volume='500 \u03bcl', temperature='room temperature', duration='15 minutes', cells='permeabilized')\nwash(container='tube', reagent='Cell Staining Buffer', volume='1 ml', repeat='twice')\nadd(container='tube', reagent='DNAse (Cat. No. D4513, Sigma-Aldrich) diluted in DPBS with calcium and magnesium', volume='20 \u03bcg')\nincubate(container='tube', temperature='37\u00b0C', duration='1 hour')\nwash(container='tube', reagent='Cell Staining Buffer', volume='1 ml', repeat='twice')\nadd(container='tube', reagent='Cell Staining Buffer', volume='50 \u03bcl')\nadd(container='tube', reagent='anti-BrdU antibody (recommended concentration)')\nincubate(container='tube', temperature='room temperature', duration='20 minutes', light='in the dark')\nwash(container='tube', reagent='Cell Staining Buffer', volume='1 ml')\nadd(container='tube', reagent='7-AAD (Cat. No. 420403) or DAPI (Cat. No. 422801)', volume='1 \u03bcg', DNA stain=True)\nwait(container='tube', duration='5 minutes')",
+    "source_file": "protocol_543.txt"
+  }
+]

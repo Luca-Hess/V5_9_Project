@@ -1,0 +1,190 @@
+[
+  {
+    "protocol": "Crude Membrane protein extraction from tissues\nThaw 20\u201350 mg of tissue or 15CM dish cells in 1 mL of high salt buffer.\nHomogenize tissues using an IKA Ultra Turbax blender at maximum speed ( \u223c25,000rpm) for 30 s. \nUltracentrifuge the suspension in Beckman MLA 130 at 100,000 g for 10 min.\nThe tubes should be balanced to a difference less than 50 mg.\nDiscard the supernatant and homogenize pellets in 1 mL of carbonate buffer as in step 2 .\nIncubate for 30 min with gentle mixing.\nCollect the non-soluble material by centrifugation as in step 3 (If the content of integral membrane proteins in the purified membranes is not at least 30\u201340% of total identified proteins, steps 4\u20136 can be repeated two to three times).\nDiscard supernatant and resuspend pellets in wash buffer as in step 2 .\nCollect the crude membranes by centrifugation as in step 3 .",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "20\u201350 mg tissue or cells from 15CM dish",
+            "buffer": "high salt buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 s",
+          "speed": "\u223c25,000 rpm (maximum speed)",
+          "other": {
+            "instrument": "IKA Ultra Turbax blender",
+            "sample": "tissues"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "100,000 g",
+          "other": {
+            "instrument": "Beckman MLA 130",
+            "sample": "suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "balance",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "difference": "< 50 mg"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "post-centrifugation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": null,
+          "reagent": "carbonate buffer",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "pellets",
+            "reference": "as in step 2"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "mixing": "gentle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as in step 3 (10 min)",
+          "speed": "as in step 3 (100,000 g)",
+          "other": {
+            "sample": "non-soluble material"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "post-centrifugation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "wash buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "pellets",
+            "reference": "as in step 2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as in step 3 (10 min)",
+          "speed": "as in step 3 (100,000 g)",
+          "other": {
+            "sample": "crude membranes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nthaw(volume='1 mL', sample='20\u201350 mg tissue or cells from 15CM dish', buffer='high salt buffer')\n\n### MANUAL SECTION ###\n# MANUAL: homogenize (duration: 30 s, speed: \u223c25,000 rpm (maximum speed), other: {'instrument': 'IKA Ultra Turbax blender', 'sample': 'tissues'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='10 min', speed='100,000 g', instrument='Beckman MLA 130', sample='suspension')\n\n### MANUAL SECTION ###\n# MANUAL: balance (container: tubes, other: {'difference': '< 50 mg'})\n\n### AUTOMATED SECTION ###\ndiscard(reagent='supernatant', sample='post-centrifugation')\n\n### MANUAL SECTION ###\n# MANUAL: homogenize (reagent: carbonate buffer, volume: 1 mL, other: {'sample': 'pellets', 'reference': 'as in step 2'})\n\n### AUTOMATED SECTION ###\nincubate(duration='30 min', mixing='gentle')\ncentrifuge(duration='as in step 3 (10 min)', speed='as in step 3 (100,000 g)', sample='non-soluble material')\ndiscard(reagent='supernatant', sample='post-centrifugation')\nresuspend(reagent='wash buffer', sample='pellets', reference='as in step 2')\ncentrifuge(duration='as in step 3 (10 min)', speed='as in step 3 (100,000 g)', sample='crude membranes')",
+    "source_file": "protocol_493.txt"
+  }
+]

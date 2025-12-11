@@ -1,0 +1,174 @@
+[
+  {
+    "protocol": "Preparation of Virus DNA from Seawater for Metagenomics\nPrecipitate 0.2\u00b5m filtered seawater with iron chloride and store the filters at 4\u00b0C. \nResuspend the precipitated virus in Mg-EDTA-Ascorbate (or Oxalate) buffer just prior to DNA extraction (also see Ferric Chloride Resuspension Buffer protocol). \nTreat the resuspended virus preparation with DNase I for 2 hours at room temperature. \nInactivate the enzyme with EDTA and EGTA.  \nConcentrate the resuspended virus preparation using centrifugal concentrators down to 3-5 ml total volume if performing CsCl cleanup or to 1-2 ml total volume if proceeding directly to DNA extraction.  \nRemove the concentrate to a fresh tube. \nRinse the membrane with an additional 0.5-1 ml resuspension buffer by pipetting up and down along the membrane.  \nPool with the concentrated sample.\nAt this point, either layer this onto premade CsCl gradients and isolate the virus fraction according to the protocol Cesium Chloride Purification of Viruses (or alternatively, Cesium Chloride DNA Extraction of Viruses using Wizard Prep Columns) or proceed directly to Wizard Prep purification of DNA.\nExtract the DNA using Wizard Prep columns and resin Calculate the amount of DNA recovered using Quant-iT dsDNA Pico Green assay kit following manufacturer\u2019s directions",
+    "actions": [
+      {
+        "action": "store",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "Mg-EDTA-Ascorbate (or Oxalate) buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {
+            "sample": "resuspended virus preparation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inactivate",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA and EGTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "enzyme"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "centrifugal concentrators",
+          "reagent": "resuspended virus preparation",
+          "volume": "down to 3-5 ml (CsCl cleanup) or 1-2 ml (DNA extraction)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "concentrate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "resuspension buffer",
+          "volume": "0.5-1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down along the membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "rinsed buffer and concentrated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "premade CsCl gradients",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "Wizard Prep columns",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "resin": "Wizard Prep resin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "Quant-iT dsDNA Pico Green assay kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "amount of DNA recovered",
+            "instructions": "follow manufacturer\u2019s directions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: store (container: filters, temperature: 4\u00b0C, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='Mg-EDTA-Ascorbate (or Oxalate) buffer')\ntreat(reagent='DNase I', temperature='room temperature', duration='2 hours', sample='resuspended virus preparation')\ninactivate(reagent='EDTA and EGTA', target='enzyme')\nconcentrate(container='centrifugal concentrators', reagent='resuspended virus preparation', volume='down to 3-5 ml (CsCl cleanup) or 1-2 ml (DNA extraction)')\nremove(container='fresh tube', reagent='concentrate')\nrinse(container='membrane', reagent='resuspension buffer', volume='0.5-1 ml', method='pipetting up and down along the membrane')\npool(reagent='rinsed buffer and concentrated sample')\nlayer(container='premade CsCl gradients', reagent='sample')\nextract(container='Wizard Prep columns', reagent='DNA', resin='Wizard Prep resin')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (reagent: Quant-iT dsDNA Pico Green assay kit, other: {'target': 'amount of DNA recovered', 'instructions': 'follow manufacturer\u2019s directions'})",
+    "source_file": "protocol_542.txt"
+  }
+]

@@ -1,0 +1,246 @@
+[
+  {
+    "protocol": "Direct delivery CRISPR-HDR editing protocol for C. elegans\nCas9::NLS can be purified from E. coli (see our protocol) or purchased from commercial sources.\nOrder tracrRNA and upon receipt, briefly spin the tubes.\nReconstitute tracrRNA at 4\u03bcg/\u03bcl (0.17nmol/\u03bcl): add 29.8\u03bcl of Tris pH 7.5 to the 5nmol provided (U\u2010002000\u201005).\nOrder your gene specific crRNA (see the guidelines for crRNA notes).\nUpon receipt, briefly spin the tubes.\nReconstitute crRNA at 8\u03bcg/\u03bcl (0.6nmol/\u03bcl): add 33.8\u03bcl of Tris pH 7.5 to the 20nmol provided.\nUse single\u2010stranded oligonucleotides (ssODNs, 200nt maximum size, 4nM ultramer, salt free) ordered from IDT.\n(this is for small edits <100nt; see the guidelines for large edits 100bp-2kb) Reconstitute ssODN at 1\u03bcg/\u03bcl according to the amount provided by the manufacturer.\n(this is for small edits <100nt; see the guidelines for large edits 100bp-2kb) Add each component of the injection mix in a 0.5ml tube (add Cas9 last).\n[this if for \"one locus editing\"] Place the 0.5ml tube in a 1.5ml eppendorf tube and spin for 2min at 13000rpm.\nIncubate at 37\u00b0C for 10\u201015min Immediately load the injection needles and process to injection.\nInject both arms of young adult hermaphrodites (with a few embryos).\nRecovery A.\nAdd\u00a01X M9.\n5\u03bcl (30min to 1h after injection, recover the injected hermaphrodites (P0s) as follows: Every 5\u201010min, add: 5\u03bcl / 5\u03bcl / 10\u03bcl /10\u03bcl /20\u03bcl /20\u03bcl/ 40\u03bcl of 1X M9)\nRecovery B: Add\u00a01X M9 5\u03bcl.\nRecovery C: Add\u00a01X M9: 10\u03bcl.\nRecovery D: Add\u00a01X M9: 10\u03bcl.\nRecovery E: Add\u00a01X M9: 20\u03bcl.\nRecovery F: Add\u00a01X M9: 20\u03bcl.\nRecovery G: Add\u00a01X M9: 40\u03bcl.\nClone out the P0s onto NNGM plates (1 P0 per plate, at 20\u00b0C).\nUse fresh NNGM plates with a thin layer of OP50 bacteria at the center to facilitate screening for Rollers.\nIt is important to avoid that the P0s touch the mineral oil on the injection pad because the oil will kill them.\nTransfer the P0s to second plate (again 1 P0 per plate).\nExamine the F1s for Rollers 4\u20105 days after cloning the P0s.\nDetermine the number of Roller F1s per P0 and select the 3 P0s giving the most Rollers.\nThese are your \u201cjackpot broods\u201d.\nClone all the Roller F1s (from the jackpot broods or from all broods if you do not have that many).\nSee the guidelines for:-Screening-Strain establishment -Special applications of this protocol",
+    "actions": [
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": "tracrRNA",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "tracrRNA",
+          "volume": "29.8\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "Tris pH 7.5",
+            "amount_provided": "5nmol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": "crRNA",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "crRNA",
+          "volume": "33.8\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "Tris pH 7.5",
+            "amount_provided": "20nmol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ssODN",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1\u03bcg/\u03bcl",
+            "manufacturer_instructions": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "0.5ml tube",
+          "reagent": "injection mix components (Cas9 last)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "0.5ml tube in 1.5ml eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2min",
+          "speed": "13000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "0.5ml tube",
+          "reagent": "injection mix",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "10-15min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "5\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "time_after_injection": "30min to 1h"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "5\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "interval": "every 5-10min"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "5\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "10\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "10\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "20\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "20\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "1X M9",
+          "volume": "40\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nspin(container='tube', reagent='tracrRNA', duration='briefly')\nreconstitute(container='tube', reagent='tracrRNA', volume='29.8\u03bcl', solvent='Tris pH 7.5', amount_provided='5nmol')\nspin(container='tube', reagent='crRNA', duration='briefly')\nreconstitute(container='tube', reagent='crRNA', volume='33.8\u03bcl', solvent='Tris pH 7.5', amount_provided='20nmol')\nreconstitute(container='tube', reagent='ssODN', concentration='1\u03bcg/\u03bcl', manufacturer_instructions=True)\nadd(container='0.5ml tube', reagent='injection mix components (Cas9 last)')\nspin(container='0.5ml tube in 1.5ml eppendorf tube', duration='2min', speed='13000rpm')\nincubate(container='0.5ml tube', reagent='injection mix', temperature='37\u00b0C', duration='10-15min')\nadd(reagent='1X M9', volume='5\u03bcl', time_after_injection='30min to 1h')\nadd(reagent='1X M9', volume='5\u03bcl', interval='every 5-10min')\nadd(reagent='1X M9', volume='5\u03bcl')\nadd(reagent='1X M9', volume='10\u03bcl')\nadd(reagent='1X M9', volume='10\u03bcl')\nadd(reagent='1X M9', volume='20\u03bcl')\nadd(reagent='1X M9', volume='20\u03bcl')\nadd(reagent='1X M9', volume='40\u03bcl')",
+    "source_file": "protocol_181.txt"
+  }
+]

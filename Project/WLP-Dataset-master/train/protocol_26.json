@@ -1,0 +1,348 @@
+[
+  {
+    "protocol": "Concentrating Viruses with an Amicon or Nanosep Centrifugal Ultrafiltration Device\nAdd your sample to the upper reservoir of the Amicon.\nCentrifuge at 1000 x g at 4\u00baC in a swinging-bucket rotor.\nCentrifuge time will depend on the volume of sample and the amount of material in the sample.\nContinue centrifuging until the sample is reduced to the desired volume.\nRemove the concentrated sample from the upper reservoir and place it in a tube of your choice.\nRemove the upper reservoir from the Amicon device.\nPlace a square of parafilm over the bottom of the upper reservoir (Figure 1).\nAdd enough liquid to cover the filter (~1.5 ml).\nVortex the upper reservoir (filter/parafilm side down) at a setting of 1200 for ~20s.\nRemove the liquid from the upper reservoir and add it to your recovered sample.\nRepeat steps 8-10 to fully recover your sample.\nAdd your sample to the upper reservoir of the Nanosep.\nCentrifuge at 1000 x g at 4\u00baC.\nCentrifuge time will depend on the volume of sample and the amount of material in the sample.\nContinue centrifuging until the sample is reduced to the desired volume.\nUse a pipettor to remove the concentrated sample from the upper reservoir and place it in a tube of your choice.\nAdd enough liquid to cover the filter (~10 \u00b5l).\nSwirl the liquid over the filter and stir it gently with a pipet tip.\nRemove the liquid from the upper reservoir and add it to your recovered sample.\nRepeat steps 17 to 19 to fully recover your sample.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "upper reservoir of the Amicon",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Amicon device (swinging-bucket rotor)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": null,
+          "speed": "1000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Amicon device",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until sample is reduced to desired volume",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "concentrated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube of your choice",
+          "reagent": "concentrated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Amicon device",
+          "reagent": "upper reservoir",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom of upper reservoir"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": "~1.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to cover the filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "upper reservoir (filter/parafilm side down)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "~20s",
+          "speed": "1200",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "recovered sample",
+          "reagent": "liquid from upper reservoir",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "8-10"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "upper reservoir of the Nanosep",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Nanosep device",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": null,
+          "speed": "1000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Nanosep device",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until sample is reduced to desired volume",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "concentrated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube of your choice",
+          "reagent": "concentrated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": "~10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to cover the filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "over the filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipet tip",
+            "gentle": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "upper reservoir",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "recovered sample",
+          "reagent": "liquid from upper reservoir",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "17-19"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='upper reservoir of the Amicon', reagent='sample')\ncentrifuge(container='Amicon device (swinging-bucket rotor)', temperature='4\u00baC', speed='1000 x g')\ncentrifuge(container='Amicon device', duration='until sample is reduced to desired volume')\nremove(container='upper reservoir', reagent='concentrated sample')\nadd(container='tube of your choice', reagent='concentrated sample')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Amicon device, reagent: upper reservoir, other: {})\n# MANUAL: place (container: upper reservoir, reagent: parafilm, other: {'location': 'bottom of upper reservoir'})\n\n### AUTOMATED SECTION ###\nadd(container='upper reservoir', reagent='liquid', volume='~1.5 ml', purpose='to cover the filter')\nvortex(container='upper reservoir (filter/parafilm side down)', duration='~20s', speed='1200')\nremove(container='upper reservoir', reagent='liquid')\nadd(container='recovered sample', reagent='liquid from upper reservoir')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'steps': '8-10'})\n\n### AUTOMATED SECTION ###\nadd(container='upper reservoir of the Nanosep', reagent='sample')\ncentrifuge(container='Nanosep device', temperature='4\u00baC', speed='1000 x g')\ncentrifuge(container='Nanosep device', duration='until sample is reduced to desired volume')\nremove(container='upper reservoir', reagent='concentrated sample', method='pipettor')\nadd(container='tube of your choice', reagent='concentrated sample')\nadd(container='upper reservoir', reagent='liquid', volume='~10 \u00b5l', purpose='to cover the filter')\n\n### MANUAL SECTION ###\n# MANUAL: swirl (container: upper reservoir, reagent: liquid, other: {'location': 'over the filter'})\n# MANUAL: stir (container: upper reservoir, reagent: liquid, other: {'method': 'pipet tip', 'gentle': True})\n\n### AUTOMATED SECTION ###\nremove(container='upper reservoir', reagent='liquid')\nadd(container='recovered sample', reagent='liquid from upper reservoir')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'steps': '17-19'})",
+    "source_file": "protocol_26.txt"
+  }
+]

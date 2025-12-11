@@ -1,0 +1,59 @@
+[
+  {
+    "protocol": "HiFi DNA Assembly (NEB)\nIncubate samples in a thermocycler at 50\u00b0C for 15 minutes (when 2 or 3 fragments are being assembled) or 60 minutes (when 4\u20136 fragments are being assembled).\nFollowing incubation, store samples on ice or at \u201320\u00b0C for subsequent transformation.\nTransform NEB 5-alpha Competent\u00a0E. coli\u00a0cells (provided in the cloning kit or purchased separately from NEB) with 2 \u03bcl of the assembled product, following the\u00a0transformation protocol.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C or 50\u00b0C/60\u00b0C (depending on fragment number)",
+          "duration": "15 minutes (2-3 fragments) or 60 minutes (4-6 fragments)",
+          "speed": null,
+          "other": {
+            "equipment": "thermocycler",
+            "fragment_number": "2-3 or 4-6"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice or at \u201320\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "subsequent transformation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": "NEB 5-alpha Competent E. coli cells",
+          "reagent": "assembled product",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "transformation protocol",
+            "source": "cloning kit or purchased separately from NEB"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='samples', temperature='50\u00b0C or 50\u00b0C/60\u00b0C (depending on fragment number)', duration='15 minutes (2-3 fragments) or 60 minutes (4-6 fragments)', equipment='thermocycler', fragment_number='2-3 or 4-6')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: samples, temperature: on ice or at \u201320\u00b0C, other: {'purpose': 'subsequent transformation'})\n# MANUAL: transform (container: NEB 5-alpha Competent E. coli cells, reagent: assembled product, volume: 2 \u03bcl, other: {'protocol': 'transformation protocol', 'source': 'cloning kit or purchased separately from NEB'})",
+    "source_file": "protocol_360.txt"
+  }
+]

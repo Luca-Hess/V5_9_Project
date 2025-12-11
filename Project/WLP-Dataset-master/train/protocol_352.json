@@ -1,0 +1,286 @@
+[
+  {
+    "protocol": "One-step growth experiments (cyanophages)\nSet up triplicate adsorption tubes (AT) in 1.5 mL microtubes.\nAdd phages of a known titer to the cyanobacteria host in exponential growth (cell concentration determined by microscopy; Cyanoinput) at an MOI of approximately 0.02.\nAllow the phages to adsorb to the hosts for 60 min.\nat room temperature and an illumination of 25\u00b5mol quanta m\u20132s\u20131.\nSet up control tubes (CT) as above, except: \na. positive controls: replace host cells with media (this gives input phage numbers).\nb. negative controls: omit virus After 60 min, remove unadsorbed phages (T = 0). \nPrepare nine 15-mL centrifuge tubes containing 10 mL algal growth media. \nAdd 100 \u00b5L from AT to FGT (10\u20132 dilution).\nMix and remove 0.1 mL sample for T = 0.\nPerform plaque assay immediately to determine total infective centers (TICT=0).\nAdd 100 \u00b5L from FGT to SGT (10\u20134 dilution).\nIncubate FGT and SGT tubes at room temperature and ca.\n25 \u00b5mol quanta m\u20132s\u20131 Remove 100 \u00b5L samples every 3 h from FGT (at 3, 6, 9, 12, 16 h) and SGT (from 12 h onwards) for ca. 30 h. \nDetermine the TIC via plaque assay.\nAdd 100 \u00b5L from positive control tube (CT) to FGT-control (10\u20132 dilution).\nDetermine the total phage input (Phageinput).",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "1.5 mL microtubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "triplicate",
+            "type": "adsorption tubes (AT)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microtubes (AT)",
+          "reagent": "phages of known titer to cyanobacteria host",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "0.02",
+            "host_state": "exponential growth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "adsorption tubes (AT)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "illumination": "25 \u00b5mol quanta m\u20132s\u20131"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "1.5 mL microtubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "control tubes (CT)",
+            "positive_control": "replace host cells with media",
+            "negative_control": "omit virus"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "adsorption tubes (AT)",
+          "reagent": "unadsorbed phages",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timepoint": "T = 0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "15-mL centrifuge tubes",
+          "reagent": "algal growth media",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "nine"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "FGT (15-mL centrifuge tube)",
+          "reagent": "sample from AT",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "10\u20132"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "FGT",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "FGT",
+          "reagent": "sample",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timepoint": "T = 0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assay": "plaque assay",
+            "purpose": "determine total infective centers (TICT=0)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SGT (15-mL centrifuge tube)",
+          "reagent": "sample from FGT",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "10\u20134"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "FGT and SGT tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "ca. 30 h",
+          "speed": null,
+          "other": {
+            "illumination": "25 \u00b5mol quanta m\u20132s\u20131"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "FGT",
+          "reagent": "sample",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timepoints": "3, 6, 9, 12, 16 h"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SGT",
+          "reagent": "sample",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timepoints": "from 12 h onwards for ca. 30 h"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assay": "plaque assay",
+            "purpose": "determine TIC"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "FGT-control (15-mL centrifuge tube)",
+          "reagent": "sample from positive control tube (CT)",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "10\u20132"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assay": "plaque assay",
+            "purpose": "determine total phage input (Phageinput)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: 1.5 mL microtubes, other: {'replicates': 'triplicate', 'type': 'adsorption tubes (AT)'})\n\n### AUTOMATED SECTION ###\nadd(container='1.5 mL microtubes (AT)', reagent='phages of known titer to cyanobacteria host', MOI='0.02', host_state='exponential growth')\nincubate(container='adsorption tubes (AT)', temperature='room temperature', duration='60 min', illumination='25 \u00b5mol quanta m\u20132s\u20131')\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: 1.5 mL microtubes, other: {'type': 'control tubes (CT)', 'positive_control': 'replace host cells with media', 'negative_control': 'omit virus'})\n\n### AUTOMATED SECTION ###\nremove(container='adsorption tubes (AT)', reagent='unadsorbed phages', timepoint='T = 0')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 15-mL centrifuge tubes, reagent: algal growth media, volume: 10 mL, other: {'number': 'nine'})\n\n### AUTOMATED SECTION ###\nadd(container='FGT (15-mL centrifuge tube)', reagent='sample from AT', volume='100 \u00b5L', dilution='10\u20132')\nmix(container='FGT')\nremove(container='FGT', reagent='sample', volume='0.1 mL', timepoint='T = 0')\n\n### MANUAL SECTION ###\n# MANUAL: perform (other: {'assay': 'plaque assay', 'purpose': 'determine total infective centers (TICT=0)'})\n\n### AUTOMATED SECTION ###\nadd(container='SGT (15-mL centrifuge tube)', reagent='sample from FGT', volume='100 \u00b5L', dilution='10\u20134')\nincubate(container='FGT and SGT tubes', temperature='room temperature', duration='ca. 30 h', illumination='25 \u00b5mol quanta m\u20132s\u20131')\nremove(container='FGT', reagent='sample', volume='100 \u00b5L', timepoints='3, 6, 9, 12, 16 h')\nremove(container='SGT', reagent='sample', volume='100 \u00b5L', timepoints='from 12 h onwards for ca. 30 h')\n\n### MANUAL SECTION ###\n# MANUAL: determine (other: {'assay': 'plaque assay', 'purpose': 'determine TIC'})\n\n### AUTOMATED SECTION ###\nadd(container='FGT-control (15-mL centrifuge tube)', reagent='sample from positive control tube (CT)', volume='100 \u00b5L', dilution='10\u20132')\n\n### MANUAL SECTION ###\n# MANUAL: determine (other: {'assay': 'plaque assay', 'purpose': 'determine total phage input (Phageinput)'})",
+    "source_file": "protocol_352.txt"
+  }
+]

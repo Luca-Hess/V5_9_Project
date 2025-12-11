@@ -1,0 +1,653 @@
+[
+  {
+    "protocol": "Treatments and Preservation of Seawater Samples for FISH\nAdd formaldehyde at a final concentration of 1-2% to filtrate.\nFix for 12-24 hr at 4\u00b0C.\nSetup frittered glass support (25mm diameter) in filtration manifold.\nPlace a drop of Milli Q water (~250-500\u00b5l) on support, float 0.45\u00b5m cellulose nitrate support filter (25mm diameter) on top, turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.\nTurn off vacuum and release pressure from chamber.\nAdd another drop of Milli Q to support filter, float 0.2\u00b5m polycarbonate membrane filter (25mm diameter) on support filter (shiny side facing up!).\nSave filter separator sheets for storage later.\nTurn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.\nLeave vacuum on.\nPlace filter tower on membrane and clamp.\nFilter 1ml of fixed sample by applying gentle vacuum (~5 inch Hg); filter 2 ml of the fixed sample onto a second filter.\nThe support filter may be utilized for both samples.\nRemove filter from filter holder and put it on Kimwipes to dry.\nCover, e.g. with the lid of a cryo box or a Petri dish.\nAllow to air-dry.\nLabel membrane filter with pencil; place membrane filter between separator sheets (will prevent the membrane filters from sticking to each other or to the Petri dish).\nSeal Petri dish with parafilm, prevent dish from opening with tape, and put Petri dishes into a Ziploc bag. \nStore at -20\u00b0C until processing.\nFilters can be stored frozen for several months without apparent loss of hybridization signal.\nSetup frittered glass (47mm diameter) support in filtration manifold.\nPlace a drop of Milli Q water (~1ml) on support, float 0.45\u00b5m cellulose nitrate support filter (47mm diameter) on top, turn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.\nTurn off vacuum and release pressure from chamber.\nAdd another drop of Milli Q to support filter, float 0.2\u00b5m polycarbonate membrane filter (47mm diameter) on support filter (shiny side facing up!).\nSave filter separator sheets for storage later.\nTurn on vacuum (~ 5 in of Hg) to lay filter flat with no air bubbles.\nLeave vacuum on.\nPlace filter tower on membrane and clamp.\nFilter appropriate volume (see Table I) of fixed sample by applying gentle vacuum (~5 inch Hg).\nThe support filter may be utilized for several samples.\nAfter complete sample filtration, wash filter and tower with 20-30 ml of sterile H2O; remove H2O by vacuum.\nRemove filter from filter holder and put it on Kimwipes to dry.\nCover, e.g.\nwith the lid of a cryo box or a Petri dish.\nAllow to air-dry.\nLabel membrane filter with pencil; place membrane filter between separator sheets (will prevent the membrane filters from sticking to each other or to the Petri dish).\nSeal Petri dish with parafilm, prevent dish from opening with tape, and put Petri dishes into a Ziploc bag. \nStore at -20\u00b0C until processing.\nFilters can be stored frozen for several months without apparent loss of hybridization signal.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filtrate",
+          "reagent": "formaldehyde",
+          "volume": "final concentration 1-2%",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "filtrate with formaldehyde",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "12-24 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "setup",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": "frittered glass support (25mm diameter)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "frittered glass support (25mm diameter)",
+          "reagent": "Milli Q water",
+          "volume": "250-500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "frittered glass support (25mm diameter) with Milli Q water",
+          "reagent": "0.45\u00b5m cellulose nitrate support filter (25mm diameter)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum (~5 in of Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn_off",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "release_pressure": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "support filter",
+          "reagent": "Milli Q water",
+          "volume": "drop (unspecified, likely ~250-500\u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "support filter with Milli Q water",
+          "reagent": "0.2\u00b5m polycarbonate membrane filter (25mm diameter, shiny side up)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "shiny side up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "filter separator sheets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage later"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum (~5 in of Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "leave_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "filter tower",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "clamp": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filter tower on membrane",
+          "reagent": "fixed sample",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vacuum (~5 in Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "second filter",
+          "reagent": "fixed sample",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vacuum (~5 in Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter holder",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Kimwipes to dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "filter on Kimwipes",
+          "reagent": "lid of cryo box or Petri dish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "membrane filter",
+          "reagent": "pencil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "separator sheets",
+          "reagent": "membrane filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent sticking"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prevent opening": "tape"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "Ziploc bag",
+          "reagent": "Petri dishes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Ziploc bag with Petri dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "until processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "setup",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": "frittered glass support (47mm diameter)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "frittered glass support (47mm diameter)",
+          "reagent": "Milli Q water",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "frittered glass support (47mm diameter) with Milli Q water",
+          "reagent": "0.45\u00b5m cellulose nitrate support filter (47mm diameter)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum (~5 in of Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn_off",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "release_pressure": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "support filter",
+          "reagent": "Milli Q water",
+          "volume": "drop (unspecified, likely ~1ml)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "support filter with Milli Q water",
+          "reagent": "0.2\u00b5m polycarbonate membrane filter (47mm diameter, shiny side up)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "shiny side up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "filter separator sheets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage later"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum (~5 in of Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "leave_on",
+        "parameters": {
+          "container": "filtration manifold",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vacuum",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "filter tower",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "clamp": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filter tower on membrane",
+          "reagent": "fixed sample",
+          "volume": "appropriate volume (see Table I)",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vacuum (~5 in Hg)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "filter and tower",
+          "reagent": "sterile H2O",
+          "volume": "20-30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter holder",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Kimwipes to dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "filter on Kimwipes",
+          "reagent": "lid of cryo box or Petri dish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "membrane filter",
+          "reagent": "pencil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "separator sheets",
+          "reagent": "membrane filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent sticking"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prevent opening": "tape"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "Ziploc bag",
+          "reagent": "Petri dishes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Ziploc bag with Petri dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "until processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='filtrate', reagent='formaldehyde', volume='final concentration 1-2%')\nincubate(container='filtrate with formaldehyde', temperature='4\u00b0C', duration='12-24 hr')\n\n### MANUAL SECTION ###\n# MANUAL: setup (container: filtration manifold, reagent: frittered glass support (25mm diameter), other: {})\n\n### AUTOMATED SECTION ###\nadd(container='frittered glass support (25mm diameter)', reagent='Milli Q water', volume='250-500\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: frittered glass support (25mm diameter) with Milli Q water, reagent: 0.45\u00b5m cellulose nitrate support filter (25mm diameter), other: {})\n\n### AUTOMATED SECTION ###\nturn_on(container='filtration manifold', speed='vacuum (~5 in of Hg)')\nturn_off(container='filtration manifold', release_pressure=True)\nadd(container='support filter', reagent='Milli Q water', volume='drop (unspecified, likely ~250-500\u00b5l)')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: support filter with Milli Q water, reagent: 0.2\u00b5m polycarbonate membrane filter (25mm diameter, shiny side up), other: {'orientation': 'shiny side up'})\n# MANUAL: save (reagent: filter separator sheets, other: {'purpose': 'storage later'})\n\n### AUTOMATED SECTION ###\nturn_on(container='filtration manifold', speed='vacuum (~5 in of Hg)')\nleave_on(container='filtration manifold', speed='vacuum')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: membrane, reagent: filter tower, other: {'clamp': True})\n\n### AUTOMATED SECTION ###\nfilter(container='filter tower on membrane', reagent='fixed sample', volume='1ml', speed='gentle vacuum (~5 in Hg)')\nfilter(container='second filter', reagent='fixed sample', volume='2ml', speed='gentle vacuum (~5 in Hg)')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter holder, reagent: filter, other: {'destination': 'Kimwipes to dry'})\n# MANUAL: cover (container: filter on Kimwipes, reagent: lid of cryo box or Petri dish, other: {})\n# MANUAL: air-dry (container: filter, other: {})\n# MANUAL: label (container: membrane filter, reagent: pencil, other: {})\n# MANUAL: place (container: separator sheets, reagent: membrane filter, other: {'purpose': 'prevent sticking'})\n# MANUAL: seal (container: Petri dish, reagent: parafilm, other: {'prevent opening': 'tape'})\n# MANUAL: put (container: Ziploc bag, reagent: Petri dishes, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='Ziploc bag with Petri dishes', temperature='-20\u00b0C', duration='until processing')\n\n### MANUAL SECTION ###\n# MANUAL: setup (container: filtration manifold, reagent: frittered glass support (47mm diameter), other: {})\n\n### AUTOMATED SECTION ###\nadd(container='frittered glass support (47mm diameter)', reagent='Milli Q water', volume='1ml')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: frittered glass support (47mm diameter) with Milli Q water, reagent: 0.45\u00b5m cellulose nitrate support filter (47mm diameter), other: {})\n\n### AUTOMATED SECTION ###\nturn_on(container='filtration manifold', speed='vacuum (~5 in of Hg)')\nturn_off(container='filtration manifold', release_pressure=True)\nadd(container='support filter', reagent='Milli Q water', volume='drop (unspecified, likely ~1ml)')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: support filter with Milli Q water, reagent: 0.2\u00b5m polycarbonate membrane filter (47mm diameter, shiny side up), other: {'orientation': 'shiny side up'})\n# MANUAL: save (reagent: filter separator sheets, other: {'purpose': 'storage later'})\n\n### AUTOMATED SECTION ###\nturn_on(container='filtration manifold', speed='vacuum (~5 in of Hg)')\nleave_on(container='filtration manifold', speed='vacuum')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: membrane, reagent: filter tower, other: {'clamp': True})\n\n### AUTOMATED SECTION ###\nfilter(container='filter tower on membrane', reagent='fixed sample', volume='appropriate volume (see Table I)', speed='gentle vacuum (~5 in Hg)')\nwash(container='filter and tower', reagent='sterile H2O', volume='20-30 ml')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter holder, reagent: filter, other: {'destination': 'Kimwipes to dry'})\n# MANUAL: cover (container: filter on Kimwipes, reagent: lid of cryo box or Petri dish, other: {})\n# MANUAL: air-dry (container: filter, other: {})\n# MANUAL: label (container: membrane filter, reagent: pencil, other: {})\n# MANUAL: place (container: separator sheets, reagent: membrane filter, other: {'purpose': 'prevent sticking'})\n# MANUAL: seal (container: Petri dish, reagent: parafilm, other: {'prevent opening': 'tape'})\n# MANUAL: put (container: Ziploc bag, reagent: Petri dishes, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='Ziploc bag with Petri dishes', temperature='-20\u00b0C', duration='until processing')",
+    "source_file": "protocol_504.txt"
+  }
+]

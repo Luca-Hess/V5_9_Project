@@ -1,0 +1,135 @@
+[
+  {
+    "protocol": "ESAW Media for Marine Phytoplankton. \nNa2SO4 NaCl KCL NaHCO3 KBr H3BO NaF\u00a0 (2.7 g/L stock). \nBring to 500 mL MilliQ water MgCl2-6H2O CaCl2-2H2O SrCl2-6H2O Tris-HCL (pH 7.8) (1.0 M stock) Fe-EDTA K2HPO4\u00a0 (10g/L stock) NaNO3\u00a0(550 mM stock) Selenite (10\u00a0\u03bcM stock). \nBring to 500 mL MilliQ water. \nAutoclave Solution I and Solution II separately. \nCombine Solution I and Solution II. \nAdd trace Metals Solutions Add Vitamin Solution",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "null",
+          "reagent": "Na2SO4, NaCl, KCl, NaHCO3, KBr, H3BO3, NaF (2.7 g/L stock)",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "null",
+          "reagent": "MilliQ water",
+          "volume": "500 mL",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "null",
+          "reagent": "MgCl2-6H2O, CaCl2-2H2O, SrCl2-6H2O, Tris-HCl (pH 7.8, 1.0 M stock), Fe-EDTA, K2HPO4 (10 g/L stock), NaNO3 (550 mM stock), Selenite (10 \u03bcM stock)",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "null",
+          "reagent": "MilliQ water",
+          "volume": "500 mL",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "Solution I",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "Solution II",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "Solution I and Solution II",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "null",
+          "reagent": "trace Metals Solutions",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "null",
+          "reagent": "Vitamin Solution",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='null', reagent='Na2SO4, NaCl, KCl, NaHCO3, KBr, H3BO3, NaF (2.7 g/L stock)', volume='null', temperature='null', duration='null', speed='null')\ndispense(container='null', reagent='MilliQ water', volume='500 mL', temperature='null', duration='null', speed='null')\npipette(container='null', reagent='MgCl2-6H2O, CaCl2-2H2O, SrCl2-6H2O, Tris-HCl (pH 7.8, 1.0 M stock), Fe-EDTA, K2HPO4 (10 g/L stock), NaNO3 (550 mM stock), Selenite (10 \u03bcM stock)', volume='null', temperature='null', duration='null', speed='null')\ndispense(container='null', reagent='MilliQ water', volume='500 mL', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: autoclave (container: Solution I, reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {})\n# MANUAL: autoclave (container: Solution II, reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\ncombine(container='Solution I and Solution II', reagent='null', volume='null', temperature='null', duration='null', speed='null')\nadd(container='null', reagent='trace Metals Solutions', volume='null', temperature='null', duration='null', speed='null')\nadd(container='null', reagent='Vitamin Solution', volume='null', temperature='null', duration='null', speed='null')",
+    "source_file": "protocol_601.txt"
+  }
+]

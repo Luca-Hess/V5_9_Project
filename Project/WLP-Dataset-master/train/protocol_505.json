@@ -1,0 +1,51 @@
+[
+  {
+    "protocol": "Binding Buffer (3M GuHCl, 3.75M NH4Ac pH 6)\nAdd 57.318g Guanidine Hydrochloride to an autoclaved bottle. \nAdd 50ml MilliQ. \nAdd 50ml 7.5M Ammonium Acetate",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "Guanidine Hydrochloride",
+          "volume": "57.318g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "MilliQ",
+          "volume": "50ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "7.5M Ammonium Acetate",
+          "volume": "50ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='autoclaved bottle', reagent='Guanidine Hydrochloride', volume='57.318g')\nadd(container='autoclaved bottle', reagent='MilliQ', volume='50ml')\nadd(container='autoclaved bottle', reagent='7.5M Ammonium Acetate', volume='50ml')",
+    "source_file": "protocol_505.txt"
+  }
+]

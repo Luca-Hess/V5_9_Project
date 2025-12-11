@@ -1,0 +1,289 @@
+[
+  {
+    "protocol": "Glass Bead Transformation of Chlamydomonas\nGrow cell culture to an OD750 of 0.15 to 0.4. \nCentrifuge at 400g for 5 minutes at room temperature. \nResuspend in 1/100th the original volume of TAP. \nAdd the following: 8000, PEG to 5% final conc., 3 ug of DNA, 0.3g of 500, micron glass beads 0.4mL, Chlamy cell suspension. \nMix with a pipette Vortex at max speed for 15 seconds. \nTake 25uL of the cell suspension and add to 100uL of TAP with an appropriate antibiotic. \nSpread on a TAP or YA plate, with an appropriate antibiotic, using large glass beads. \nAllow the liquid to dry while avoiding light. \nSeal the plates with parafilm. \nAllow the colonies to grow (colonies will appear in 1-3 weeks). \nTransfer the remaining cell/vortex culture to a 125mL flask with 20mL of TAP. \nw/o antibiotic Incubate for 6 hours on an orbital shaker at 70rpm. \nAdd antibiotic to an appropriate concentration. \nTake 50uL of the cell suspension and spread on a TAP or YA plate with an appropriate antibiotic with large glass beads",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "cell culture vessel",
+          "reagent": "Chlamydomonas cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD750_target": "0.15 to 0.4"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cell culture vessel",
+          "reagent": "Chlamydomonas cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "400g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "TAP",
+          "volume": "1/100th original volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "PEG",
+          "volume": "to 5% final concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "DNA",
+          "volume": "3 ug",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "500 micron glass beads",
+          "volume": "0.3g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "Chlamy cell suspension",
+          "volume": "0.4mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cell suspension",
+          "volume": "25uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TAP with appropriate antibiotic",
+          "volume": "100uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "TAP or YA plate",
+          "reagent": "cell suspension with antibiotic",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "large glass beads"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "TAP or YA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid_light": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1-3 weeks",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "125mL flask",
+          "reagent": "remaining cell/vortex culture",
+          "volume": "20mL TAP",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotic": "none"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "125mL flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "6 hours",
+          "speed": "70rpm",
+          "other": {
+            "method": "orbital shaker"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flask",
+          "reagent": "antibiotic",
+          "volume": "appropriate concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "TAP or YA plate",
+          "reagent": "50uL cell suspension with antibiotic",
+          "volume": "50uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "large glass beads"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: cell culture vessel, reagent: Chlamydomonas cells, other: {'OD750_target': '0.15 to 0.4'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='cell culture vessel', reagent='Chlamydomonas cells', temperature='room temperature', duration='5 minutes', speed='400g')\nresuspend(container='centrifuge tube', reagent='TAP', volume='1/100th original volume')\nadd(container='centrifuge tube', reagent='PEG', volume='to 5% final concentration')\nadd(container='centrifuge tube', reagent='DNA', volume='3 ug')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: centrifuge tube, reagent: 500 micron glass beads, volume: 0.3g, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='centrifuge tube', reagent='Chlamy cell suspension', volume='0.4mL')\nmix(container='centrifuge tube', method='pipette')\nvortex(container='centrifuge tube', duration='15 seconds', speed='max speed')\nadd(container='tube', reagent='cell suspension', volume='25uL')\nadd(container='tube', reagent='TAP with appropriate antibiotic', volume='100uL')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: TAP or YA plate, reagent: cell suspension with antibiotic, other: {'method': 'large glass beads'})\n# MANUAL: dry (container: TAP or YA plate, other: {'avoid_light': True})\n# MANUAL: seal (container: plate, reagent: parafilm, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', duration='1-3 weeks')\ntransfer(container='125mL flask', reagent='remaining cell/vortex culture', volume='20mL TAP', antibiotic='none')\nincubate(container='125mL flask', duration='6 hours', speed='70rpm', method='orbital shaker')\nadd(container='flask', reagent='antibiotic', volume='appropriate concentration')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: TAP or YA plate, reagent: 50uL cell suspension with antibiotic, volume: 50uL, other: {'method': 'large glass beads'})",
+    "source_file": "protocol_268.txt"
+  }
+]

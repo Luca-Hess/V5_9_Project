@@ -1,0 +1,83 @@
+[
+  {
+    "protocol": "First Strand cDNA Synthesis (M0368)\nIn a sterile microfuge tube add: \nAdd the following (bringing to 20 \u00b5L\u00a0\u00a0final volume): \nIncubate at 42\u00b0C for 30min-1hr.\nInactivate enzyme at 80\u00b0C for 5 minutes.\nStore products at -20\u00b0C or proceed to next step(s)",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "implied addition of reagents, details not specified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "all components for cDNA synthesis",
+          "volume": "to 20 \u00b5L final volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": null,
+          "volume": "20 \u00b5L",
+          "temperature": "42\u00b0C",
+          "duration": "30 min - 1 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": null,
+          "volume": "20 \u00b5L",
+          "temperature": "80\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "enzyme inactivation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "cDNA synthesis products",
+          "volume": "20 \u00b5L",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='sterile microfuge tube', note='implied addition of reagents, details not specified')\nadd(container='sterile microfuge tube', reagent='all components for cDNA synthesis', volume='to 20 \u00b5L final volume')\nincubate(container='sterile microfuge tube', volume='20 \u00b5L', temperature='42\u00b0C', duration='30 min - 1 hr')\nincubate(container='sterile microfuge tube', volume='20 \u00b5L', temperature='80\u00b0C', duration='5 min', purpose='enzyme inactivation')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: sterile microfuge tube, reagent: cDNA synthesis products, volume: 20 \u00b5L, temperature: -20\u00b0C, other: {})",
+    "source_file": "protocol_373.txt"
+  }
+]

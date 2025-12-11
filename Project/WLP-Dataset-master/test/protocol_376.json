@@ -1,0 +1,345 @@
+[
+  {
+    "protocol": "Schistocephalus solidus culturing\nFor each culture tube fill half way up with horse serum and then fill up with RPMI \u2013 leaving about 2 cm gap from the top.\nAdd 500\u00b5l of penicillium With a pair of blunt forceps gently open the top of dialysis membrane and place the worm into the membrane.\nScrew the top on to the tube \u2013 and loosen slightly and place into the shaking 40\u00b0C water bath \nCheck the worms each day \u2013 the worms may start to shed eggs after day 5 so can be collected after day 6 \u2013 if not collect eggs on day 7 \u2013 if the worms are left longer they may dissolve and the eggs will be difficult to collect cleanly\nRemove the dialysis membrane from the culture tube and cut it open above any visible eggs, flush out onto a petri dish using ddH20.\nFill the petri dish to about \u00bc full of ddH20\nUnder the stereo microscope with cold light source tilt the plate and the eggs should line up on the surface.\nCollect the egg layer with a glass pipette and transfer to fresh petri dishes \u2013 up to 4 depending on the number of eggs.\nFill all the plates up to about half full with ddH20 including the original petri dish.\nLabel each plate with an identification number/name\nWrap each plate individually in foil and label the outside with the same identification plus your initials.\nPlace the wrapped plates in the 20\u00b0C incubator and leave in there for at least 21 days before checking for hatching",
+    "actions": [
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "horse serum",
+          "volume": "halfway up",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "RPMI",
+          "volume": "to 2 cm below top",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "penicillium",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "dialysis membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "blunt forceps"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "dialysis membrane",
+          "reagent": "worm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "screw",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "top": "on, loosened slightly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": null,
+          "speed": "shaking",
+          "other": {
+            "bath": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "worms",
+          "volume": null,
+          "temperature": null,
+          "duration": "each day",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "eggs",
+          "volume": null,
+          "temperature": null,
+          "duration": "after day 6 or on day 7",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "dialysis membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "culture tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "dialysis membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "above visible eggs"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "dialysis membrane",
+          "reagent": "ddH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "onto": "petri dish"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "ddH2O",
+          "volume": "about 1/4 full",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "tilt",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "under": "stereo microscope with cold light source"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "egg layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "glass pipette"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh petri dishes",
+          "reagent": "egg layer",
+          "volume": "up to 4 dishes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "original petri dish"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "all petri dishes",
+          "reagent": "ddH2O",
+          "volume": "about half full",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "including": "original petri dish"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "each plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "identification": "number/name"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "each plate",
+          "reagent": "foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "outside of foil",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "identification": "same as plate plus initials"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "wrapped plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": "at least 21 days",
+          "speed": null,
+          "other": {
+            "location": "incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "after 21 days",
+          "speed": null,
+          "other": {
+            "for": "hatching"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfill(container='culture tube', reagent='horse serum', volume='halfway up')\nfill(container='culture tube', reagent='RPMI', volume='to 2 cm below top')\nadd(container='culture tube', reagent='penicillium', volume='500 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: open (container: dialysis membrane, other: {'tool': 'blunt forceps'})\n# MANUAL: place (container: dialysis membrane, reagent: worm, other: {})\n# MANUAL: screw (container: culture tube, other: {'top': 'on, loosened slightly'})\n\n### AUTOMATED SECTION ###\nplace(container='culture tube', temperature='40\u00b0C', speed='shaking', bath='water bath')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: culture tube, reagent: worms, duration: each day, other: {})\n# MANUAL: collect (container: culture tube, reagent: eggs, duration: after day 6 or on day 7, other: {})\n# MANUAL: remove (container: dialysis membrane, other: {'from': 'culture tube'})\n# MANUAL: cut (container: dialysis membrane, other: {'location': 'above visible eggs'})\n\n### AUTOMATED SECTION ###\nflush(container='dialysis membrane', reagent='ddH2O', onto='petri dish')\nfill(container='petri dish', reagent='ddH2O', volume='about 1/4 full')\n\n### MANUAL SECTION ###\n# MANUAL: tilt (container: petri dish, other: {'under': 'stereo microscope with cold light source'})\n# MANUAL: collect (container: petri dish, reagent: egg layer, other: {'tool': 'glass pipette'})\n\n### AUTOMATED SECTION ###\ntransfer(container='fresh petri dishes', reagent='egg layer', volume='up to 4 dishes', from='original petri dish')\nfill(container='all petri dishes', reagent='ddH2O', volume='about half full', including='original petri dish')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: each plate, other: {'identification': 'number/name'})\n# MANUAL: wrap (container: each plate, reagent: foil, other: {})\n# MANUAL: label (container: outside of foil, other: {'identification': 'same as plate plus initials'})\n\n### AUTOMATED SECTION ###\nplace(container='wrapped plates', temperature='20\u00b0C', duration='at least 21 days', location='incubator')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: plates, duration: after 21 days, other: {'for': 'hatching'})",
+    "source_file": "protocol_376.txt"
+  }
+]

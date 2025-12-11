@@ -1,0 +1,143 @@
+[
+  {
+    "protocol": "Release of nucleic acids with heat, chelator, and detergent\nConcentrate the viruses by centrifuging in the centrifugal ultrafiltration device at 1000g until only a small volume (ca. 10 \u00b5L) remains.\nAdd 100 \u00b5L TE (or TEGED).\nConcentrate the sample again to ca. 10 \u00b5L.\nRepeat steps 2 and 3 once more.\nRecover the final concentrate.\nRinse the membrane in the device by adding a small volume of TE or TEGED (5\u201310 \u00b5L).\nRecover the rinse and pool with the concentrate.\nOptional: If conducting electrophoresis on the sample, add SDS-EDTA loading dye to a final concentration of 1\u00d7.\nHeat the recovered sample (with or without loading buffer) to 60\u00b0C for 10 min to release the nucleic acid.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "virus sample",
+          "volume": "initial volume (unspecified)",
+          "temperature": null,
+          "duration": "until only ca. 10 \u00b5L remains",
+          "speed": "1000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "TE (or TEGED)",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "sample (with TE or TEGED)",
+          "volume": "ca. 10 \u00b5L",
+          "temperature": null,
+          "duration": "until ca. 10 \u00b5L remains",
+          "speed": "1000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "sample (with TE or TEGED)",
+          "volume": "ca. 10 \u00b5L",
+          "temperature": null,
+          "duration": "until ca. 10 \u00b5L remains",
+          "speed": "1000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "TE or TEGED",
+          "volume": "5\u201310 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rinse membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "final concentrate",
+          "volume": "ca. 10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "centrifugal ultrafiltration device",
+          "reagent": "rinse",
+          "volume": "5\u201310 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pool_with": "concentrate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "recovered sample",
+          "reagent": "SDS-EDTA loading dye",
+          "volume": "to final concentration of 1\u00d7",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "recovered sample (with or without loading buffer)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "release nucleic acid"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifugal ultrafiltration device', reagent='virus sample', volume='initial volume (unspecified)', duration='until only ca. 10 \u00b5L remains', speed='1000g')\nadd(container='centrifugal ultrafiltration device', reagent='TE (or TEGED)', volume='100 \u00b5L')\ncentrifuge(container='centrifugal ultrafiltration device', reagent='sample (with TE or TEGED)', volume='ca. 10 \u00b5L', duration='until ca. 10 \u00b5L remains', speed='1000g')\ncentrifuge(container='centrifugal ultrafiltration device', reagent='sample (with TE or TEGED)', volume='ca. 10 \u00b5L', duration='until ca. 10 \u00b5L remains', speed='1000g')\nadd(container='centrifugal ultrafiltration device', reagent='TE or TEGED', volume='5\u201310 \u00b5L', purpose='rinse membrane')\n\n### MANUAL SECTION ###\n# MANUAL: recover (container: centrifugal ultrafiltration device, reagent: final concentrate, volume: ca. 10 \u00b5L, other: {})\n# MANUAL: recover (container: centrifugal ultrafiltration device, reagent: rinse, volume: 5\u201310 \u00b5L, other: {'pool_with': 'concentrate'})\n\n### AUTOMATED SECTION ###\nadd(container='recovered sample', reagent='SDS-EDTA loading dye', volume='to final concentration of 1\u00d7', optional=True)\nheat(container='recovered sample (with or without loading buffer)', temperature='60\u00b0C', duration='10 min', purpose='release nucleic acid')",
+    "source_file": "protocol_348.txt"
+  }
+]

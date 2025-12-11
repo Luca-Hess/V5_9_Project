@@ -1,0 +1,271 @@
+[
+  {
+    "protocol": "Buccopharyngeal morphology of tadpoles in Scanning Electron Microscope\nWash quickly the specimens in tap water and dissect tadpoles following Wassersug (1976: p. 4-5).\nPrepare the fixing solution. \nFix the dissections in 4% Glutaraldehyde diluted in the fixing solution. \nPost fix the dissections in 1% Osmium tetroxide solution.\nDehydrate in an ascending series of acetones, starting at 30%. \nTransfer to\u00a0acetone 50%. \nTransfer to acetone 70%. \nTransfer to acetone 90%. \nTransfer to acetone 95%. \nTransfer to another solution of acetone 95%. \nTransfer to another solution of acetone 95%. \nTransfer to acetone 100%. \nTransfer to another solution of acetone 100%. \nNow take your specimens to a Critical Point Dryer. \nMount the specimens on stubs\u00a0and attach them with a double-sided tape. \nTake the specimens to the High Vaccum Coater and you're ready to analyze them.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "quickly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dissect",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "Wassersug (1976: p. 4-5)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "fixing solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": null,
+          "reagent": "4% Glutaraldehyde in fixing solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "post-fix",
+        "parameters": {
+          "container": null,
+          "reagent": "1% Osmium tetroxide solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone (ascending series)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "series": "starting at 30%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 50%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 70%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 90%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 95%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 95% (another solution)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 95% (another solution)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 100%",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "acetone 100% (another solution)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "specimens",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Critical Point Dryer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mount",
+        "parameters": {
+          "container": "stubs",
+          "reagent": "double-sided tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "specimens": "specimens"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "specimens",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "High Vacuum Coater"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "specimens",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwash(reagent='tap water', duration='quickly')\n\n### MANUAL SECTION ###\n# MANUAL: dissect (other: {'reference': 'Wassersug (1976: p. 4-5)'})\n# MANUAL: prepare (reagent: fixing solution, other: {})\n\n### AUTOMATED SECTION ###\nfix(reagent='4% Glutaraldehyde in fixing solution')\npost-fix(reagent='1% Osmium tetroxide solution')\ndehydrate(reagent='acetone (ascending series)', series='starting at 30%')\ntransfer(reagent='acetone 50%')\ntransfer(reagent='acetone 70%')\ntransfer(reagent='acetone 90%')\ntransfer(reagent='acetone 95%')\ntransfer(reagent='acetone 95% (another solution)')\ntransfer(reagent='acetone 95% (another solution)')\ntransfer(reagent='acetone 100%')\ntransfer(reagent='acetone 100% (another solution)')\n\n### MANUAL SECTION ###\n# MANUAL: take (container: specimens, other: {'destination': 'Critical Point Dryer'})\n# MANUAL: mount (container: stubs, reagent: double-sided tape, other: {'specimens': 'specimens'})\n# MANUAL: take (container: specimens, other: {'destination': 'High Vacuum Coater'})\n# MANUAL: analyze (container: specimens, other: {})",
+    "source_file": "protocol_426.txt"
+  }
+]

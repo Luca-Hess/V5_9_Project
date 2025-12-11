@@ -1,0 +1,99 @@
+[
+  {
+    "protocol": "PCR with Taq DNA Polymerase (M0273)\nSet up the following reaction on ice.\nGently mix the reaction.\nCollect all liquid to the bottom of the tube by a quick spin if necessary\u00a0and overlay the sample with mineral oil if using a PCR machine without a heated lid.\nTransfer PCR tubes from ice to a PCR machine with\u00a0the block preheated to 95\u00b0C and begin thermocycling.",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "PCR reaction mix (with Taq DNA Polymerase)",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "PCR reaction mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {
+            "purpose": "collect liquid to bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "mineral oil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if using PCR machine without heated lid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "from ice to PCR machine block preheated to 95\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C (thermocycling)",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "begin thermocycling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: PCR tube, reagent: PCR reaction mix (with Taq DNA Polymerase), temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='PCR tube', reagent='PCR reaction mix', speed='gentle')\ncentrifuge(container='PCR tube', duration='quick spin', purpose='collect liquid to bottom')\noverlay(container='PCR tube', reagent='mineral oil', condition='if using PCR machine without heated lid')\ntransfer(container='PCR tube', temperature='from ice to PCR machine block preheated to 95\u00b0C')\nincubate(container='PCR tube', temperature='95\u00b0C (thermocycling)', process='begin thermocycling')",
+    "source_file": "protocol_261.txt"
+  }
+]

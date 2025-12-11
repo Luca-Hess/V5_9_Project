@@ -1,0 +1,177 @@
+[
+  {
+    "protocol": "Purifying Viruses Using Sucrose Cushion\nPrepare sucrose (Molecular Biology Grade or higher) as 38% (weight to volume) in SM buffer (100mM NaCl, 8mM MgSO4, 50mM TrisJHCl, pH 7.5) that has been 0.2\u03bcm filtered.\nRinse SW40 tubes with SM buffer or sterile water.\nPlace the 9.5ml DNase I-treated sample into the rinsed ultracentrifuge tube.\nUsing a 3cc syringe and cannula,  slowly layer the 2.5 ml of 38% sucrose under the sample trying not to cause any mixing of sample and sucrose.\nCentrifuge at ~175,000g for 3.25 hr at 18\u00b0C.\nUsing a sterile transfer or serological pipet, pull off the 9.5 ml sample layer.\nPull off the interface and 2.5 ml sucrose, being careful not to disturb or suction off the pelleted sample at the bottom.\nKeep this  sucrose layer until virus counts from the pellets are completed.\nAir dry the pellets in a fume hood for 15-20 min.\nAdd a mixture of TE containing 0.1M each EDTA/EGTA to resuspend the pellets (500 \u03bcl is  recommended).\nPerform virus counts and then extract DNA",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "38% sucrose in SM buffer (100mM NaCl, 8mM MgSO4, 50mM Tris-HCl, pH 7.5)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "0.2\u03bcm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "SW40 tubes",
+          "reagent": "SM buffer or sterile water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "rinsed ultracentrifuge tube",
+          "reagent": "DNase I-treated sample",
+          "volume": "9.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": "38% sucrose",
+          "volume": "2.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "method": "using 3cc syringe and cannula",
+            "under": "sample",
+            "avoid_mixing": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "3.25 hr",
+          "speed": "~175,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": "sample layer",
+          "volume": "9.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile transfer or serological pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": "interface and sucrose layer",
+          "volume": "2.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid_disturbing_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "fume hood",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": "15-20 min",
+          "speed": null,
+          "other": {
+            "method": "air dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pellets",
+          "reagent": "mixture of TE containing 0.1M each EDTA/EGTA",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 38% sucrose in SM buffer (100mM NaCl, 8mM MgSO4, 50mM Tris-HCl, pH 7.5), other: {'filter': '0.2\u03bcm'})\n\n### AUTOMATED SECTION ###\nrinse(container='SW40 tubes', reagent='SM buffer or sterile water')\nplace(container='rinsed ultracentrifuge tube', reagent='DNase I-treated sample', volume='9.5 ml')\nlayer(container='ultracentrifuge tube', reagent='38% sucrose', volume='2.5 ml', speed='slowly', method='using 3cc syringe and cannula', under='sample', avoid_mixing=True)\ncentrifuge(container='ultracentrifuge tube', temperature='18\u00b0C', duration='3.25 hr', speed='~175,000g')\naspirate(container='ultracentrifuge tube', reagent='sample layer', volume='9.5 ml', tool='sterile transfer or serological pipet')\naspirate(container='ultracentrifuge tube', reagent='interface and sucrose layer', volume='2.5 ml', avoid_disturbing_pellet=True)\nwait(container='fume hood', reagent='pellets', duration='15-20 min', method='air dry')\nadd(container='pellets', reagent='mixture of TE containing 0.1M each EDTA/EGTA', volume='500 \u03bcl', purpose='resuspend')\n\n### MANUAL SECTION ###\n# MANUAL: count (reagent: virus, other: {})\n# MANUAL: extract (reagent: DNA, other: {})",
+    "source_file": "protocol_166.txt"
+  }
+]

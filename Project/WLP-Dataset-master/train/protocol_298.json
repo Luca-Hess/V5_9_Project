@@ -1,0 +1,260 @@
+[
+  {
+    "protocol": "Cloning with NEB Instant Sticky-end Ligase Master Mix (M0370)\nPlace master mix tube on ice and flick a few times to mix.\nCombine 20\u2013100 ng of vector with a 3-fold molar excess of insert and q.s. to 5\u03bcl with dH2O.\nAdd 5 \u03bcl of Instant Sticky-end Ligase Master Mix, mix thoroughly by pipetting up and down 7-10 times, and place on ice.\nThe sample is now ready to be used for transformation.\nThaw competent cells on ice.\nAliquot 50 \u03bcl of cells into a 1.5 ml microcentrifuge tube.\nAdd 2 \u03bcl of the ligation reaction to the cells and mix by finger-flicking.\nDo not vortex the tube.\nIncubate the tube on ice for 30 minutes.\nDo not mix.\nHeat shock at 42\u00b0C for 30 seconds. \nReturn tube to ice for 2 minutes.\nAdd 950 \u03bcl recovery media (e.g. SOC) to the tube.  \nIncubate for one hour at 37\u00b0C with rotation or shaking (200\u2013250 rpm).\nSpread 100 \u03bcl of the outgrowth (undiluted or diluted 1:5 with recovery media) onto appropriate antibiotic selection plates and incubate overnight at 37\u00b0C.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "master mix tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "master mix tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flick"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "vector (20\u2013100 ng)",
+            "insert (3-fold molar excess)",
+            "dH2O (q.s. to 5\u03bcl)"
+          ],
+          "volume": "5\u03bcl total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Instant Sticky-end Ligase Master Mix",
+          "volume": "5\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down",
+            "repetitions": "7-10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "competent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "competent cells",
+          "volume": "50\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "ligation reaction",
+          "volume": "2\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "finger-flicking"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat shock",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": "recovery media (e.g. SOC)",
+          "volume": "950\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": "200\u2013250 rpm",
+          "other": {
+            "method": "rotation or shaking"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "antibiotic selection plates",
+          "reagent": "outgrowth (100\u03bcl, undiluted or diluted 1:5 with recovery media)",
+          "volume": "100\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "antibiotic selection plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nplace(container='master mix tube', temperature='on ice')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: master mix tube, other: {'method': 'flick'})\n\n### AUTOMATED SECTION ###\ncombine(reagent=['vector (20\u2013100 ng)', 'insert (3-fold molar excess)', 'dH2O (q.s. to 5\u03bcl)'], volume='5\u03bcl total')\nadd(reagent='Instant Sticky-end Ligase Master Mix', volume='5\u03bcl')\nmix(method='pipetting up and down', repetitions='7-10 times')\nplace(temperature='on ice')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: competent cells, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\naliquot(container='1.5 ml microcentrifuge tube', reagent='competent cells', volume='50\u03bcl')\nadd(container='1.5 ml microcentrifuge tube', reagent='ligation reaction', volume='2\u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 1.5 ml microcentrifuge tube, other: {'method': 'finger-flicking'})\n\n### AUTOMATED SECTION ###\nincubate(container='1.5 ml microcentrifuge tube', temperature='on ice', duration='30 minutes')\nheat shock(container='1.5 ml microcentrifuge tube', temperature='42\u00b0C', duration='30 seconds')\nincubate(container='1.5 ml microcentrifuge tube', temperature='on ice', duration='2 minutes')\nadd(container='1.5 ml microcentrifuge tube', reagent='recovery media (e.g. SOC)', volume='950\u03bcl')\nincubate(container='1.5 ml microcentrifuge tube', temperature='37\u00b0C', duration='1 hour', speed='200\u2013250 rpm', method='rotation or shaking')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: antibiotic selection plates, reagent: outgrowth (100\u03bcl, undiluted or diluted 1:5 with recovery media), volume: 100\u03bcl, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='antibiotic selection plates', temperature='37\u00b0C', duration='overnight')",
+    "source_file": "protocol_298.txt"
+  }
+]

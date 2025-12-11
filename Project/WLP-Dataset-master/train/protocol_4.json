@@ -1,0 +1,141 @@
+[
+  {
+    "protocol": "Ligation Protocol WITH T4 DNA Ligase (M0202)\nThaw the T4 DNA Ligase Buffer and resuspended at room temperature.\nSet up the reaction in a microcentrifuge tube on ice.\nGently mix the reaction by pipetting up and down and microfuge briefly.\nFor cohesive (sticky) ends, incubate at 16\u00b0C overnight or room temperature for 10 minutes.\nFor blunt ends or single base overhangs, incubate at 16\u00b0C overnight or room temperature for 2 hours.\nHeat inactivate at 65 degrees C for 10 minutes.\nChill on ice and transform 1-5 \u03bcl of the reaction into 50 \u03bcl competent cells.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "T4 DNA Ligase Buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction components",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture (cohesive ends)",
+          "volume": null,
+          "temperature": "16\u00b0C or room temperature",
+          "duration": "overnight or 10 minutes",
+          "speed": null,
+          "other": {
+            "end_type": "cohesive (sticky) ends"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture (blunt ends or single base overhangs)",
+          "volume": null,
+          "temperature": "16\u00b0C or room temperature",
+          "duration": "overnight or 2 hours",
+          "speed": null,
+          "other": {
+            "end_type": "blunt ends or single base overhangs"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat inactivate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "1-5 \u03bcl reaction into 50 \u03bcl competent cells",
+          "volume": "1-5 \u03bcl reaction, 50 \u03bcl competent cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: T4 DNA Ligase Buffer, temperature: room temperature, other: {})\n# MANUAL: set up (container: microcentrifuge tube, reagent: reaction components, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='microcentrifuge tube', reagent='reaction mixture', method='pipetting up and down')\ncentrifuge(container='microcentrifuge tube', reagent='reaction mixture', duration='briefly')\nincubate(container='microcentrifuge tube', reagent='reaction mixture (cohesive ends)', temperature='16\u00b0C or room temperature', duration='overnight or 10 minutes', end_type='cohesive (sticky) ends')\nincubate(container='microcentrifuge tube', reagent='reaction mixture (blunt ends or single base overhangs)', temperature='16\u00b0C or room temperature', duration='overnight or 2 hours', end_type='blunt ends or single base overhangs')\nheat inactivate(container='microcentrifuge tube', reagent='reaction mixture', temperature='65\u00b0C', duration='10 minutes')\nchill(container='microcentrifuge tube', reagent='reaction mixture', temperature='on ice')\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: 1-5 \u03bcl reaction into 50 \u03bcl competent cells, volume: 1-5 \u03bcl reaction, 50 \u03bcl competent cells, other: {})",
+    "source_file": "protocol_4.txt"
+  }
+]

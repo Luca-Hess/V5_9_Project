@@ -1,0 +1,347 @@
+[
+  {
+    "protocol": "Qiagen QIAquick PCR Purification Kit Protocol\nAdd 5 volumes of Buffer PB to 1 volume of the PCR sample and mix.\nIt is not necessary to remove mineral oil or kerosene.\nIf pH indicator I has beein added to Buffer PB, check that the color of the mixture is yellow.\nIf the color of the mixture is orange or violet, add 10 \u00b5l of 3 M sodium acetate, pH 5.0, and mix.\nThe color of the mixture will turn to yellow.\nPlace a QIAquick spin column in a provided 2 ml collection tube.\nTo bind DNA, apply the sample to the QIAquick column and centrifuge for 30\u201360 s.\u00a0Discard flow-through.\nPlace the QIAquick column back into the same tube.\nTo wash, add 0.75 ml Buffer PE to the QIAquick column and centrifuge for 30\u201360 s. \nDiscard flow-through and place the QIAquick column back in the same tube.\nCentrifuge the column for an additional 1 min.\nIMPORTANT: Residual ethanol from Buffer PE will not be completely removed unless the flow-through is discarded before this additional centrifugation.\nPlace QIAquick column in a clean 1.5 ml microcentrifuge tube.\nTo elute DNA, add 50 \u00b5l Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water (pH 7.0\u20138.5) to the center of the QIAquick membrane and centrifuge the column for 1 min.\nAlternatively, for increased DNA concentration, add 30 \u00b5l elution buffer to the center of the QIAquick membrane, let the column stand for 1 min, and then centrifuge.\nIMPORTANT: Ensure that the elution buffer is dispensed directly onto the QIAquick membrane for complete elution of bound DNA.\nThe average eluate volume is 48 \u00b5l from 50 \u00b5l elution buffer volume, and 28 \u00b5l from 30 \u00b5l elution buffer.\nElution efficiency is dependent on pH.\nThe maximum elution efficiency is achieved between pH 7.0 and 8.5.\nWhen using water, make sure that the pH value is within this range, and store DNA at \u201320\u00b0C as DNA may degrade in the absence of a buffering agent.\nThe purified DNA can also be eluted in TE buffer (10 mM Tris\u00b7Cl, 1 mM EDTA, pH 8.0), but the EDTA may inhibit subsequent enzymatic reactions.\nIf the purified DNA is to be analyzed on a gel, add 1 volume of Loading Dye to 5 volumes of purified DNA.\nMix the solution by pipetting up and down before loading the gel.\nLoading dye contains 3 marker dyes (bromophenol blue, xylene cyanol, and orange G) that facilitate estimation of DNA migration distance and optimization of agarose gel run time.\nRefer to Table 2 (page 15) to identify the dyes according to migration distance and agarose gel percentage and type.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR sample tube",
+          "reagent": "Buffer PB",
+          "volume": "5 volumes of Buffer PB to 1 volume of PCR sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "PCR sample tube",
+          "reagent": "mixture with pH indicator I",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "property": "color is yellow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR sample tube",
+          "reagent": "3 M sodium acetate, pH 5.0",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "QIAquick spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "provided 2 ml collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "QIAquick spin column",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick spin column in 2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30\u201360 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "same tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": "Buffer PE",
+          "volume": "0.75 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30\u201360 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "same tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean 1.5 ml microcentrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick membrane (in column)",
+          "reagent": "Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water (pH 7.0\u20138.5)",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in 1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "QIAquick membrane (in column)",
+          "reagent": "elution buffer",
+          "volume": "30 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "QIAquick column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "QIAquick column in 1.5 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "purified DNA",
+          "reagent": "Loading Dye",
+          "volume": "1 volume Loading Dye to 5 volumes purified DNA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "purified DNA + Loading Dye solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='PCR sample tube', reagent='Buffer PB', volume='5 volumes of Buffer PB to 1 volume of PCR sample')\nmix(container='PCR sample tube')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: PCR sample tube, reagent: mixture with pH indicator I, other: {'property': 'color is yellow'})\n\n### AUTOMATED SECTION ###\nadd(container='PCR sample tube', reagent='3 M sodium acetate, pH 5.0', volume='10 \u00b5l')\nmix(container='PCR sample tube')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: QIAquick spin column, other: {'destination': 'provided 2 ml collection tube'})\n# MANUAL: apply (container: QIAquick spin column, reagent: sample, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='QIAquick spin column in 2 ml collection tube', duration='30\u201360 s')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n# MANUAL: place (container: QIAquick column, other: {'destination': 'same tube'})\n\n### AUTOMATED SECTION ###\nadd(container='QIAquick column', reagent='Buffer PE', volume='0.75 ml')\ncentrifuge(container='QIAquick column in tube', duration='30\u201360 s')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n# MANUAL: place (container: QIAquick column, other: {'destination': 'same tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='QIAquick column in tube', duration='1 min')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: QIAquick column, other: {'destination': 'clean 1.5 ml microcentrifuge tube'})\n\n### AUTOMATED SECTION ###\nadd(container='QIAquick membrane (in column)', reagent='Buffer EB (10 mM Tris\u00b7Cl, pH 8.5) or water (pH 7.0\u20138.5)', volume='50 \u00b5l', location='center of membrane')\ncentrifuge(container='QIAquick column in 1.5 ml tube', duration='1 min')\nadd(container='QIAquick membrane (in column)', reagent='elution buffer', volume='30 \u00b5l', location='center of membrane')\nwait(container='QIAquick column', duration='1 min')\ncentrifuge(container='QIAquick column in 1.5 ml tube', duration='1 min')\nadd(container='purified DNA', reagent='Loading Dye', volume='1 volume Loading Dye to 5 volumes purified DNA')\nmix(container='purified DNA + Loading Dye solution', method='pipetting up and down')",
+    "source_file": "protocol_303.txt"
+  }
+]

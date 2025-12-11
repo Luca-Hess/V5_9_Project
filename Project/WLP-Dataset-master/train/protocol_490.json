@@ -1,0 +1,423 @@
+[
+  {
+    "protocol": "Plasmid DNA miniprep protocol for EZ-10 Spin Column Plasmid DNA minipreps kit (BS413), 50 preps\nAdd 1.5 mL of overnight culture to a microcentrifuge tube\u00a0and centrifuge at 12,000rpm for 2 minutes.\nDrain the clarified supernatant\u00a0completely leaving only the cell pellet.\nOptional: Depending on ease of plasmid replication add a further 1.5 mL of overnight culture to the microcentrifuge tube containing the previous pellet and repeat until a maximum of 5 mL of overnight culture has been added.\nAdd 100uL of Solution 1 to the pellet, mix well, ensuring that no clumps are present and let sit for 1 min. \nAdd 1\u03bcL of VisualLyse to the solution from step 2 (optional). \nAdd 200\u00b5l of Solution II to the mixture, and mix gently by inverting the tube 4-6 times and then keep at room temperature for 1 minute.\nTo prevent contamination from genomic DNA, do not vortex.\nAdd 350\u00b5l of Solution III, and mix gently.\nIncubate at room temperature for 1 minute.\nA fluffy white material forms and lysate should become less viscous.\nIf VisualLyse has been added in step 3, the suspension should be mixed until all traces of blue has gone and lysate becomes colorless.\nCentrifuge at 12,000rpm for 5 minutes. \nTransfer the above supernatant (step 6) to the EZ-10 column.\nCentrifuge at 10,000rpm for 2 minutes.\u00a0 \nDiscard the flow-through in the tube.\nAdd 750\u00b5l of Wash Solution to the column, and centrifuge at 10,000rpm for 2 minutes. \nRepeat wash procedure in step 8. \nDiscard the flow-through in the collection tube.\nCentrifuge at 10,000rpm for an additional minute to remove any residual Wash Solution. \nTransfer the column to a clean 1.5ml microfuge tube (BT620-NS).\nAdd 50\u00b5l of Elution Buffer into the center part of the column and incubate at room temperature for 2 minutes.\nStore purified DNA at -20\u00baC Centrifuge at 10,000 rpm for 2 minutes",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "overnight culture",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "clarified supernatant",
+          "volume": "completely",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave": "cell pellet"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "overnight culture",
+          "volume": "1.5 mL (optional, up to 5 mL total)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "until max 5 mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Solution 1",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ensure": "no clumps"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "VisualLyse",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Solution II",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube 4-6 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Solution III",
+          "volume": "350 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "step 6"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": "Wash Solution",
+          "volume": "750 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": "Wash Solution",
+          "volume": "750 \u00b5L",
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10,000 rpm",
+          "other": {
+            "step": "8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 rpm",
+          "other": {
+            "purpose": "remove residual Wash Solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean 1.5 ml microfuge tube (BT620-NS)",
+          "reagent": "EZ-10 column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": "Elution Buffer",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center part of column"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "purified DNA",
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "EZ-10 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='microcentrifuge tube', reagent='overnight culture', volume='1.5 mL')\ncentrifuge(container='microcentrifuge tube', duration='2 minutes', speed='12,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: microcentrifuge tube, reagent: clarified supernatant, volume: completely, other: {'leave': 'cell pellet'})\n\n### AUTOMATED SECTION ###\nadd(container='microcentrifuge tube', reagent='overnight culture', volume='1.5 mL (optional, up to 5 mL total)', repeat='until max 5 mL')\nadd(container='microcentrifuge tube', reagent='Solution 1', volume='100 \u00b5L', target='pellet')\nmix(container='microcentrifuge tube', ensure='no clumps')\nwait(container='microcentrifuge tube', duration='1 minute')\nadd(container='microcentrifuge tube', reagent='VisualLyse', volume='1 \u00b5L', optional=True)\nadd(container='microcentrifuge tube', reagent='Solution II', volume='200 \u00b5L')\nmix(container='microcentrifuge tube', method='invert tube 4-6 times')\nwait(container='microcentrifuge tube', temperature='room temperature', duration='1 minute')\nadd(container='microcentrifuge tube', reagent='Solution III', volume='350 \u00b5L')\nmix(container='microcentrifuge tube', method='gently')\nincubate(container='microcentrifuge tube', temperature='room temperature', duration='1 minute')\ncentrifuge(container='microcentrifuge tube', duration='5 minutes', speed='12,000 rpm')\ntransfer(container='EZ-10 column', reagent='supernatant', source='step 6')\ncentrifuge(container='EZ-10 column', duration='2 minutes', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='EZ-10 column', reagent='Wash Solution', volume='750 \u00b5L')\ncentrifuge(container='EZ-10 column', duration='2 minutes', speed='10,000 rpm')\nrepeat(container='EZ-10 column', reagent='Wash Solution', volume='750 \u00b5L', duration='2 minutes', speed='10,000 rpm', step='8')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='EZ-10 column', duration='1 minute', speed='10,000 rpm', purpose='remove residual Wash Solution')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: clean 1.5 ml microfuge tube (BT620-NS), reagent: EZ-10 column, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='EZ-10 column', reagent='Elution Buffer', volume='50 \u00b5L', location='center part of column')\nincubate(container='EZ-10 column', temperature='room temperature', duration='2 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: microfuge tube, reagent: purified DNA, temperature: -20\u00baC, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='EZ-10 column', duration='2 minutes', speed='10,000 rpm')",
+    "source_file": "protocol_490.txt"
+  }
+]

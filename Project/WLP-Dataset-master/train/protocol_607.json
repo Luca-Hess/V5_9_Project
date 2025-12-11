@@ -1,0 +1,521 @@
+[
+  {
+    "protocol": "Protocol for SYBR Counts of Cyanophages and Bacteria Make dilutions of the sample(s).\nRecord volume of samples used.\nCustom has been to use 20 \u00b5l of phage stocks or 200 \u00b5l of cells diluted to 2 ml with autoclaved seawater.\nIf the final slides appear too sparse or dense then the volume of sample used can be adjusted accordingly.\nRemove the 10% SYBR and phenylenediamine from the freezer.\nKeep the stocks away from light (such as in a drawer) while they are thawing.\nConnect the glass flask to the vacuum pump.\nAttach the filter holder so that the grout is flat and level with the table.\nPlace a 0.8\u00a0\u00b5m filter on top of the grout.\nMake sure it is completely flat and centered, with no air bubbles underneath (pre-wetting the grout helps).\nThis filter can be used many times so long as it stays intact and flat.\nPlace the 0.02\u00a0\u00b5m filter on top of the 0.8\u00a0\u00b5m filter. \nAgain, make sure it is flat and centered with no air bubbles underneath.\nTurning on the vacuum for a brief while can help achieve this.\nClamp the funnel on top of the filters.\nAdd the sample and turn on the pump (pressure should be ~20 kPa or 7 mmHg).\nAfter the last liquid passes through the funnel and clamp should be removed with the vacuum still on.\nTurn off the vacuum; remove 0.02\u00a0\u00b5m filter.\nKeep track of which side of the filter is the top.\nBlot out any seawater on the bottom or the top plastic rim with a kimwipe.\nIt is very important to make sure the filters are completely dry before continuing.\nIt is a good idea to rub the back of the filter with a kimwipe and then stick it in a dessicator (we used a makeshift box with some drying rocks) for a few minutes.\nPrepare a 100\u00a0\u00b5L drop of SYBR, made fresh from 2.5\u00a0\u00b5L 10% stock + 97.5\u00a0\u00b5L 0.02\u00a0\u00b5m filtered deionized water, on the bottom of a plastic Petri dish.\nLay the 0.02 Anodisc filters sample side up on the drops of the SYBR staining solution for 15 minutes in a dark drawer or box.\nWhile waiting it may be a good time to prepare the antifade solution.\nDry completely as in steps 7-8.\nDo not touch the top of the filter.\nPlace the filter sample-side up on a glass slide.\nPlace 30\u00a0\u00b5L of antifade on a cover slip; then invert slip and place on top of the filter.\nAppy pressure to ensure that the antifade fills the space underneath the square.\nView with blue excitation.\nExamine at least ten fields in the microscope (We usually examine 20).\nCount at least 200 viruses or bacteria total for ten fields (400 for 20 fields).\nField size may be full (counting all particles in all 100 small squares) or smaller (e.g. 5 small squares), depending on the virus/bacteria concentration.\nFind the average number of particles per quadrant (25 small squares).\nMultiply this by a scaling factor of 1.26 x 105\u00a0to get the total number of particles on the filter.\nDivide this by the volume used (e.g. 20\u00a0\u00b5L) to get the titer in particles per ml.",
+    "actions": [
+      {
+        "action": "make dilution",
+        "parameters": {
+          "container": "sample tube or flask",
+          "reagent": "sample(s), autoclaved seawater",
+          "volume": "20 \u00b5l phage stocks or 200 \u00b5l cells diluted to 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": null,
+          "reagent": "samples",
+          "volume": "volume used",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "freezer",
+          "reagent": "10% SYBR and phenylenediamine",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "10% SYBR and phenylenediamine stocks",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "glass flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "vacuum pump"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "filter holder",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "grout_flat": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter holder",
+          "reagent": "0.8 \u00b5m filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "grout"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-wet",
+        "parameters": {
+          "container": "grout",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter holder",
+          "reagent": "0.02 \u00b5m filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "0.8 \u00b5m filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "vacuum pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "brief",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "funnel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "filters"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "funnel",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "vacuum pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pressure ~20 kPa or 7 mmHg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clamp",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while_vacuum_on": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn off",
+        "parameters": {
+          "container": "vacuum pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "0.02 \u00b5m filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "filter",
+          "reagent": "kimwipe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom or top plastic rim"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "completely": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rub",
+        "parameters": {
+          "container": "back of filter",
+          "reagent": "kimwipe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "few minutes",
+          "speed": null,
+          "other": {
+            "in": "dessicator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "plastic Petri dish",
+          "reagent": "100 \u00b5l drop of SYBR (2.5 \u00b5l 10% stock + 97.5 \u00b5l 0.02 \u00b5m filtered deionized water)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "lay",
+        "parameters": {
+          "container": "SYBR drop",
+          "reagent": "0.02 Anodisc filters sample side up",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "in": "dark drawer or box"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "antifade solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "as_in_steps": "7-8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "filter sample-side up",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "cover slip",
+          "reagent": "30 \u00b5l antifade",
+          "volume": "30 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "cover slip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place_on_top_of": "filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply pressure",
+        "parameters": {
+          "container": "cover slip/filter assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ensure": "antifade fills space"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "view",
+        "parameters": {
+          "container": "microscope",
+          "reagent": "filter assembly",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "excitation": "blue"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "microscope",
+          "reagent": "fields",
+          "volume": "at least ten (usually 20)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "microscope",
+          "reagent": "viruses or bacteria",
+          "volume": "at least 200 for ten fields (400 for 20 fields)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "find average",
+        "parameters": {
+          "container": null,
+          "reagent": "number of particles per quadrant (25 small squares)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "multiply",
+        "parameters": {
+          "container": null,
+          "reagent": "average number of particles per quadrant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "scaling_factor": "1.26 x 10^5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": null,
+          "reagent": "total number of particles on filter",
+          "volume": "volume used (e.g. 20 \u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "result": "titer in particles per ml"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmake dilution(container='sample tube or flask', reagent='sample(s), autoclaved seawater', volume='20 \u00b5l phage stocks or 200 \u00b5l cells diluted to 2 ml')\n\n### MANUAL SECTION ###\n# MANUAL: record (reagent: samples, volume: volume used, other: {})\n# MANUAL: remove (container: freezer, reagent: 10% SYBR and phenylenediamine, other: {})\n# MANUAL: thaw (reagent: 10% SYBR and phenylenediamine stocks, temperature: room temperature, other: {'protect_from_light': True})\n# MANUAL: connect (container: glass flask, other: {'to': 'vacuum pump'})\n# MANUAL: attach (container: filter holder, other: {'grout_flat': True})\n# MANUAL: place (container: filter holder, reagent: 0.8 \u00b5m filter, other: {'on_top_of': 'grout'})\n\n### AUTOMATED SECTION ###\npre-wet(container='grout', reagent='water')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: filter holder, reagent: 0.02 \u00b5m filter, other: {'on_top_of': '0.8 \u00b5m filter'})\n\n### AUTOMATED SECTION ###\nturn on(container='vacuum pump', duration='brief')\n\n### MANUAL SECTION ###\n# MANUAL: clamp (container: funnel, other: {'on_top_of': 'filters'})\n\n### AUTOMATED SECTION ###\nadd(container='funnel', reagent='sample')\nturn on(container='vacuum pump', speed='pressure ~20 kPa or 7 mmHg')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: clamp, other: {'while_vacuum_on': True})\n\n### AUTOMATED SECTION ###\nturn off(container='vacuum pump')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 0.02 \u00b5m filter, other: {})\n# MANUAL: blot (container: filter, reagent: kimwipe, other: {'location': 'bottom or top plastic rim'})\n\n### AUTOMATED SECTION ###\ndry(container='filter', completely=True)\n\n### MANUAL SECTION ###\n# MANUAL: rub (container: back of filter, reagent: kimwipe, other: {})\n\n### AUTOMATED SECTION ###\ndry(container='filter', duration='few minutes', in='dessicator')\nprepare(container='plastic Petri dish', reagent='100 \u00b5l drop of SYBR (2.5 \u00b5l 10% stock + 97.5 \u00b5l 0.02 \u00b5m filtered deionized water)', volume='100 \u00b5l', location='bottom')\n\n### MANUAL SECTION ###\n# MANUAL: lay (container: SYBR drop, reagent: 0.02 Anodisc filters sample side up, duration: 15 minutes, other: {'in': 'dark drawer or box'})\n# MANUAL: prepare (reagent: antifade solution, other: {})\n\n### AUTOMATED SECTION ###\ndry(container='filter', as_in_steps='7-8')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: glass slide, reagent: filter sample-side up, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='cover slip', reagent='30 \u00b5l antifade', volume='30 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: cover slip, other: {'place_on_top_of': 'filter'})\n# MANUAL: apply pressure (container: cover slip/filter assembly, other: {'ensure': 'antifade fills space'})\n# MANUAL: view (container: microscope, reagent: filter assembly, other: {'excitation': 'blue'})\n# MANUAL: examine (container: microscope, reagent: fields, volume: at least ten (usually 20), other: {})\n# MANUAL: count (container: microscope, reagent: viruses or bacteria, volume: at least 200 for ten fields (400 for 20 fields), other: {})\n# MANUAL: find average (reagent: number of particles per quadrant (25 small squares), other: {})\n# MANUAL: multiply (reagent: average number of particles per quadrant, other: {'scaling_factor': '1.26 x 10^5'})\n# MANUAL: divide (reagent: total number of particles on filter, volume: volume used (e.g. 20 \u00b5l), other: {'result': 'titer in particles per ml'})",
+    "source_file": "protocol_607.txt"
+  }
+]

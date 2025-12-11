@@ -1,0 +1,71 @@
+[
+  {
+    "protocol": "Dephosphorylation using rSAP in Restriction Enzyme Reaction(M0371)\nDigest 1\u20135 \u03bcg of plasmid DNA in a 20 \u03bcl reaction as follows: Incubate at 37\u00b0C for 60 minutes or follow manufacturer\u2019s recommendations.\nAdd 1 unit of rSAP for every 1 pmol of DNA ends (about 1 \u03bcg of a 3 kb plasmid).\nIncubate at 37\u00b0C for 30\u201360 minutes.\nStop reaction by heat-inactivation of rSAP and restriction enzyme (follow manufacturer's recommendations).",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "plasmid DNA (1\u20135 \u03bcg) in restriction enzyme reaction mix",
+          "volume": "20 \u03bcl",
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes or as per manufacturer\u2019s recommendations",
+          "speed": null,
+          "other": {
+            "manufacturer_recommendations": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "rSAP",
+          "volume": "1 unit per 1 pmol DNA ends (approx. 1 \u03bcg of 3 kb plasmid)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "calculation_required": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mix with rSAP",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30\u201360 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat-inactivate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mix (contains rSAP and restriction enzyme)",
+          "volume": null,
+          "temperature": "as per manufacturer's recommendations",
+          "duration": "as per manufacturer's recommendations",
+          "speed": null,
+          "other": {
+            "manufacturer_recommendations": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='reaction tube', reagent='plasmid DNA (1\u20135 \u03bcg) in restriction enzyme reaction mix', volume='20 \u03bcl', temperature='37\u00b0C', duration='60 minutes or as per manufacturer\u2019s recommendations', manufacturer_recommendations=True)\nadd(container='reaction tube', reagent='rSAP', volume='1 unit per 1 pmol DNA ends (approx. 1 \u03bcg of 3 kb plasmid)', calculation_required=True)\nincubate(container='reaction tube', reagent='reaction mix with rSAP', temperature='37\u00b0C', duration='30\u201360 minutes')\nheat-inactivate(container='reaction tube', reagent='reaction mix (contains rSAP and restriction enzyme)', temperature=\"as per manufacturer's recommendations\", duration=\"as per manufacturer's recommendations\", manufacturer_recommendations=True)",
+    "source_file": "protocol_279.txt"
+  }
+]

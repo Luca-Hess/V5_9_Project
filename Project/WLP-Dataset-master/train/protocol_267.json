@@ -1,0 +1,440 @@
+[
+  {
+    "protocol": "ELISPOT Protocol\nDilute Low-Endotoxin/Azide-Free sterile unlabeled capture antibody (BioLegend\u2019sLEAF\u2122 format antibodies are specifically designed for this assay) to a final concentration of 0.5\u20134 \u03bcg/ml in sterile Coating Buffer and transfer 100\u03bcl/well to a high affinity binding PVDF membrane ELISPOT plate (e.g., Millipore; Cat. No. MAIPS-4510).\nStore plates overnight in humidified box at 4\u00b0C or at 37\u00b0C for \u2265 4 hours inhumidified atmosphere.\nWash plate 3 times with sterile PBS, 200 \u03bcl/well.\nAdd 200 \u03bcl/well of sterile Blocking Buffer.\nSeal plate and incubate at room temperature for \u2265 1 hour.\nWash plate 3 times with sterile PBS, 200 \u03bcl/well.\nAdd appropriate sterile antigen or mitogen solution diluted in appropriate sterile tissue culture medium (TC) to ELISPOT plate, 100 \u03bcl/well.\nAdd cells diluted in sterile TC medium, 100 \u03bcl/well.\nUse 50,000-500,000 cells/well (the minimum number of cells should be determined in preliminary experiments).\nSeal plate and incubate at 37\u00b0C 5% CO2 in humidified atmosphere for theoptimum stimulation period.\nBioLegend recommends a 24 hour incubation for IFN-\u03b3, IL-2, and TNF-\u03b1, and a 48 hour incubation period for IL-4, IL-5, and IL-10 for most activation conditions.\nWash plate 3 times with PBS, 200 \u03bcl/well.\nWash plate 3 times with PBS-Tween, 200 \u03bcl/well.\nAdd 100 \u03bcl/well of diluted biotinylated detection antibody at 0.25-2 \u03bcg/ml in PBS-Tween-BSA.\nSeal the plate and incubate at 4\u00b0C overnight, or 2 hr at room temperature.\nWash plate 4 times with PBS-Tween, 200 \u03bcl/well.\nAdd 100 \u03bcl per well of the Av-HRP conjugate (Cat. No. 405103) or otherenzyme conjugate diluted to its pre-determined optimal concentration in PBS-Tween-BSA (usually between 1/500 \u2013 1/2000).\nSeal the plate and incubate at room temperature for 1 \u2013 2 hours.\nWash plate 3 times with PBS-Tween, 200 \u03bcl/well.\nWash plate 3 times with PBS, 200 \u03bcl/well.\nAdd 200 \u03bcl/well of fresh Substrate solution.\nMonitor spot/color development at room temperature and stop reaction by rinsing plate with tap water and vigorously flicking plate over a waste container or sink, followed by blotting on paper towels or other absorbent materials.\nAir dry plate overnight, until it is completely dry.\nCount spots manually with a dissecting microscope or using an automated image acquisition/analysis unit (plates can be analyzed for up to 3 months).",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Low-Endotoxin/Azide-Free sterile unlabeled capture antibody",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5\u20134 \u03bcg/ml",
+            "diluent": "sterile Coating Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "high affinity binding PVDF membrane ELISPOT plate",
+          "reagent": "diluted capture antibody solution",
+          "volume": "100 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate_brand": "Millipore; Cat. No. MAIPS-4510"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C or 37\u00b0C",
+          "duration": "overnight at 4\u00b0C or \u2265 4 hours at 37\u00b0C",
+          "speed": null,
+          "other": {
+            "atmosphere": "humidified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "sterile PBS",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "sterile Blocking Buffer",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "\u2265 1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "sterile PBS",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "sterile antigen or mitogen solution diluted in sterile tissue culture medium",
+          "volume": "100 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "cells diluted in sterile TC medium",
+          "volume": "100 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "50,000-500,000 cells/well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C, 5% CO2, humidified atmosphere",
+          "duration": "optimum stimulation period (typically 24-48 hours depending on cytokine)",
+          "speed": null,
+          "other": {
+            "cytokine_incubation": {
+              "IFN-\u03b3, IL-2, TNF-\u03b1": "24 hours",
+              "IL-4, IL-5, IL-10": "48 hours"
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "PBS",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "PBS-Tween",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "diluted biotinylated detection antibody in PBS-Tween-BSA",
+          "volume": "100 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "0.25-2 \u03bcg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C or room temperature",
+          "duration": "overnight at 4\u00b0C or 2 hr at room temperature",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "PBS-Tween",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "Av-HRP conjugate or other enzyme conjugate diluted in PBS-Tween-BSA",
+          "volume": "100 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "1/500 \u2013 1/2000 (pre-determined optimal)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 \u2013 2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "PBS-Tween",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "PBS",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "fresh Substrate solution",
+          "volume": "200 \u03bcl/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "monitor",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "spot/color development"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": "tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "rinsing plate and flicking over waste container or sink, blotting on paper towels"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "air dry",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight, until completely dry",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "ELISPOT plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "manually with dissecting microscope or automated image acquisition/analysis unit",
+            "analysis_window": "up to 3 months"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='Low-Endotoxin/Azide-Free sterile unlabeled capture antibody', final_concentration='0.5\u20134 \u03bcg/ml', diluent='sterile Coating Buffer')\ntransfer(container='high affinity binding PVDF membrane ELISPOT plate', reagent='diluted capture antibody solution', volume='100 \u03bcl/well', plate_brand='Millipore; Cat. No. MAIPS-4510')\nstore(container='ELISPOT plate', temperature='4\u00b0C or 37\u00b0C', duration='overnight at 4\u00b0C or \u2265 4 hours at 37\u00b0C', atmosphere='humidified')\nwash(container='ELISPOT plate', reagent='sterile PBS', volume='200 \u03bcl/well', times=3)\nadd(container='ELISPOT plate', reagent='sterile Blocking Buffer', volume='200 \u03bcl/well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISPOT plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISPOT plate', temperature='room temperature', duration='\u2265 1 hour')\nwash(container='ELISPOT plate', reagent='sterile PBS', volume='200 \u03bcl/well', times=3)\nadd(container='ELISPOT plate', reagent='sterile antigen or mitogen solution diluted in sterile tissue culture medium', volume='100 \u03bcl/well')\nadd(container='ELISPOT plate', reagent='cells diluted in sterile TC medium', volume='100 \u03bcl/well', cell_count='50,000-500,000 cells/well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISPOT plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISPOT plate', temperature='37\u00b0C, 5% CO2, humidified atmosphere', duration='optimum stimulation period (typically 24-48 hours depending on cytokine)', cytokine_incubation={'IFN-\u03b3, IL-2, TNF-\u03b1': '24 hours', 'IL-4, IL-5, IL-10': '48 hours'})\nwash(container='ELISPOT plate', reagent='PBS', volume='200 \u03bcl/well', times=3)\nwash(container='ELISPOT plate', reagent='PBS-Tween', volume='200 \u03bcl/well', times=3)\nadd(container='ELISPOT plate', reagent='diluted biotinylated detection antibody in PBS-Tween-BSA', volume='100 \u03bcl/well', concentration='0.25-2 \u03bcg/ml')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISPOT plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISPOT plate', temperature='4\u00b0C or room temperature', duration='overnight at 4\u00b0C or 2 hr at room temperature')\nwash(container='ELISPOT plate', reagent='PBS-Tween', volume='200 \u03bcl/well', times=4)\nadd(container='ELISPOT plate', reagent='Av-HRP conjugate or other enzyme conjugate diluted in PBS-Tween-BSA', volume='100 \u03bcl/well', concentration='1/500 \u2013 1/2000 (pre-determined optimal)')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISPOT plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISPOT plate', temperature='room temperature', duration='1 \u2013 2 hours')\nwash(container='ELISPOT plate', reagent='PBS-Tween', volume='200 \u03bcl/well', times=3)\nwash(container='ELISPOT plate', reagent='PBS', volume='200 \u03bcl/well', times=3)\nadd(container='ELISPOT plate', reagent='fresh Substrate solution', volume='200 \u03bcl/well')\n\n### MANUAL SECTION ###\n# MANUAL: monitor (container: ELISPOT plate, temperature: room temperature, other: {'process': 'spot/color development'})\n# MANUAL: stop (container: ELISPOT plate, reagent: tap water, other: {'method': 'rinsing plate and flicking over waste container or sink, blotting on paper towels'})\n# MANUAL: air dry (container: ELISPOT plate, duration: overnight, until completely dry, other: {})\n# MANUAL: count (container: ELISPOT plate, other: {'method': 'manually with dissecting microscope or automated image acquisition/analysis unit', 'analysis_window': 'up to 3 months'})",
+    "source_file": "protocol_267.txt"
+  }
+]

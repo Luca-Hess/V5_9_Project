@@ -1,0 +1,447 @@
+[
+  {
+    "protocol": "Immunoprecipitation\nTake cell dishes out of incubator and pre-cool on ice.\nRinse cells gently with ice-cold PBS for twice.\nScrape cells and spin down @ 500 rpm, 10min, 4 \u00b0C.\nAdd 500l ul IP lysis buffer to each cell pellets (upto 2E+7 cells).\nRotate for 2h at 4\u00b0C.\nCentrifuge 14,000rpm for 30 min.\nSave supernatant.\n(Optional) Roughly determine protein concentration with OD280.\nAdjust all samples to the same concentration.\nDetermine amount of beads needed (Rockland True Blot IP beads; 20 ul beads per 500ul sample).\nWash beads in 1ml lysis buffer for twice.\nSpin down @500g, 30s.\nResuspend pelleted beads in 1mg/ml BSA , rotate @ RT, 10min.\nRemove BSA and wash beads in lysis buffer for 3 times.\nResuspend pelleted beads 1:1 with lysis buffer.\nSave 40ul of IP lysate per sample as input.\nAdd primary Ab and beads to IP lysate.\nRotate @4 degree for overnight.\nPellet beads @ 500g for 30sec @RT and discard the supernatant.\nWash beads in 1ml ice-cold lysis buffer.\nRepeat 3 times.\nResuspend beads in 30ul of 2\u00d7 loading buffer.\nBoil the beads for 5min.\nCentrifuge @ RT for 1min.\nSave supernatant and perform SDS-PAGE.",
+    "actions": [
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "cell dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "incubator to ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "cell dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "cell dishes",
+          "reagent": "ice-cold PBS",
+          "volume": null,
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "cell dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "500 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell pellets",
+          "reagent": "IP lysis buffer",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "up to 2E+7 cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "cell pellets with lysis buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "2 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "lysate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "14,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "OD280"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "same concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "Rockland True Blot IP beads",
+          "volume": "20 ul beads per 500 ul sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "beads",
+          "reagent": "lysis buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 s",
+          "speed": "500 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pelleted beads",
+          "reagent": "1 mg/ml BSA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "beads in BSA",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "beads",
+          "reagent": "BSA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "beads",
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pelleted beads",
+          "reagent": "lysis buffer",
+          "volume": "1:1 ratio",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "IP lysate",
+          "reagent": null,
+          "volume": "40 ul per sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "as": "input"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "IP lysate",
+          "reagent": "primary Ab and beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "IP lysate with Ab and beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "30 s",
+          "speed": "500 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "beads",
+          "reagent": "ice-cold lysis buffer",
+          "volume": "1 ml",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "beads",
+          "reagent": "2\u00d7 loading buffer",
+          "volume": "30 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "beads in loading buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "beads in loading buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "SDS-PAGE"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: cell dishes, temperature: incubator to ice, other: {})\n\n### AUTOMATED SECTION ###\ncool(container='cell dishes', temperature='ice')\nrinse(container='cell dishes', reagent='ice-cold PBS', temperature='ice-cold', times=2)\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: cell dishes, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='cells', temperature='4\u00b0C', duration='10 min', speed='500 rpm')\nadd(container='cell pellets', reagent='IP lysis buffer', volume='500 ul', cell_count='up to 2E+7 cells')\nrotate(container='cell pellets with lysis buffer', temperature='4\u00b0C', duration='2 h')\ncentrifuge(container='lysate', duration='30 min', speed='14,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: save (container: supernatant, other: {})\n# MANUAL: determine (container: supernatant, other: {'method': 'OD280'})\n# MANUAL: adjust (container: samples, other: {'to': 'same concentration'})\n# MANUAL: determine (reagent: Rockland True Blot IP beads, volume: 20 ul beads per 500 ul sample, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='beads', reagent='lysis buffer', volume='1 ml', times=2)\ncentrifuge(container='beads', duration='30 s', speed='500 g')\nresuspend(container='pelleted beads', reagent='1 mg/ml BSA')\nrotate(container='beads in BSA', temperature='RT', duration='10 min')\nremove(container='beads', reagent='BSA')\nwash(container='beads', reagent='lysis buffer', times=3)\nresuspend(container='pelleted beads', reagent='lysis buffer', volume='1:1 ratio')\n\n### MANUAL SECTION ###\n# MANUAL: save (container: IP lysate, volume: 40 ul per sample, other: {'as': 'input'})\n\n### AUTOMATED SECTION ###\nadd(container='IP lysate', reagent='primary Ab and beads')\nrotate(container='IP lysate with Ab and beads', temperature='4\u00b0C', duration='overnight')\ncentrifuge(container='beads', temperature='RT', duration='30 s', speed='500 g')\ndiscard(container='supernatant')\nwash(container='beads', reagent='ice-cold lysis buffer', volume='1 ml', temperature='ice-cold', times=3)\nresuspend(container='beads', reagent='2\u00d7 loading buffer', volume='30 ul')\nboil(container='beads in loading buffer', duration='5 min')\ncentrifuge(container='beads in loading buffer', temperature='RT', duration='1 min')\n\n### MANUAL SECTION ###\n# MANUAL: save (container: supernatant, other: {})\n# MANUAL: perform (container: supernatant, other: {'method': 'SDS-PAGE'})",
+    "source_file": "protocol_344.txt"
+  }
+]

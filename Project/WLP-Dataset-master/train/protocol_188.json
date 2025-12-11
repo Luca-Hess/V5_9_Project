@@ -1,0 +1,529 @@
+[
+  {
+    "protocol": "Total digestion of marine particles\nPlace filter into PFA vial, ideally with sample side facing downwards or folded inwards.\nAdd 1.5 mL of sulfuric acid to all samples and blanks. \nPlace lid atop loosely and leave filter to soak for 20 min at room temperature. \nLift lid slightly to add 0.5mL of hydrogen peroxide.\nGently, swirl vial to mix.\nReact for 60 min in a hot plate at 110\u02daC with lid placed on loosely. \nAdd another 0.5 mL peroxide, replace caps loosely and increase hotplate temperature to 200\u02daC. \nIf undissolved filter pieces or semi-digested viscous material persist, let it cool down and add 100-200\u00b5L aliquots of peroxide to digest this material. \nDry vial contents at 235-250\u02daC.\u00a0\nNote: If a small droplet of sulfuric acid remains at this point, let vial cool and suspend contents in a small aliquot of Milli-Q water or 8N nitric acid and re-dry at 235\u02daC until the droplet is removed.\nResuspend dried samples in 2 mL of a freshly prepared mixture of HNO3, HCl, and HF acids (4M each) in milli-Q water.\nHeat for 4 hours at 100-110\u02daC.\nLet vials cool to room temperature, uncap and dry at 100-110\u02daC (overnight).\nAdd 2mL of freshly prepared 50% HNO3/15% H2O2 (v/v). \nTake vials to dryness on a hotplate at 100-110\u02daC. \nResuspend sample in 200-500 \u00b5L of 50% HNO3/15% H2O2 (v/v).\nCap loosely and heat at 110\u02daC.\nAfter vigorous bubbling cease, uncap vials and dry at 135\u02daC. \nAdd 100 \u00b5L concentrated HNO3 and heat at 110\u02daC to dryness redissolved in 1mL of 0.1 M HNO3. \nDilute sample to 5% of original concentration with 0.1 M HNO3 for analysis. \nAfter concentration analysis, follow Conway et al. (2013) to prepare samples for isotopic analysis.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "filter (marine particle sample)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "sample side facing downwards or folded inwards"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "sulfuric acid",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "targets": "all samples and blanks"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lid_position": "atop loosely"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "filter in sulfuric acid",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "lid_position": "loosely placed"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "lift",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to add hydrogen peroxide"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "hydrogen peroxide",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle swirl",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "110\u02daC",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "device": "hot plate",
+            "lid_position": "loosely placed"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "hydrogen peroxide",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lid_position": "loosely"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "200\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "hot plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if undissolved filter pieces or viscous material persist"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "hydrogen peroxide",
+          "volume": "100-200 \u00b5L aliquots",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "to digest undissolved material"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "235-250\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if small droplet of sulfuric acid remains"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "Milli-Q water or 8N nitric acid",
+          "volume": "small aliquot",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if small droplet of sulfuric acid remains"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "235\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "until droplet is removed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "mixture of HNO3, HCl, HF acids (4M each) in Milli-Q water",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixture": "freshly prepared"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "100-110\u02daC",
+          "duration": "4 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "uncover",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "100-110\u02daC",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "50% HNO3/15% H2O2 (v/v)",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixture": "freshly prepared"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "100-110\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "hotplate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "50% HNO3/15% H2O2 (v/v)",
+          "volume": "200-500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lid_position": "loosely"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "110\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "uncover",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "after vigorous bubbling ceases"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "135\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "concentrated HNO3",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "110\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dryness"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "redissolve",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "0.1 M HNO3",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "PFA vial",
+          "reagent": "0.1 M HNO3",
+          "volume": "to 5% of original concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "for analysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "Conway et al. (2013)",
+            "purpose": "isotopic analysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: PFA vial, reagent: filter (marine particle sample), other: {'orientation': 'sample side facing downwards or folded inwards'})\n\n### AUTOMATED SECTION ###\nadd(container='PFA vial', reagent='sulfuric acid', volume='1.5 mL', targets='all samples and blanks')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: PFA vial, reagent: lid, other: {'lid_position': 'atop loosely'})\n\n### AUTOMATED SECTION ###\nincubate(container='PFA vial', reagent='filter in sulfuric acid', temperature='room temperature', duration='20 min', lid_position='loosely placed')\n\n### MANUAL SECTION ###\n# MANUAL: lift (container: PFA vial, reagent: lid, other: {'purpose': 'to add hydrogen peroxide'})\n\n### AUTOMATED SECTION ###\nadd(container='PFA vial', reagent='hydrogen peroxide', volume='0.5 mL')\nmix(container='PFA vial', speed='gentle swirl')\nincubate(container='PFA vial', temperature='110\u02daC', duration='60 min', device='hot plate', lid_position='loosely placed')\nadd(container='PFA vial', reagent='hydrogen peroxide', volume='0.5 mL')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: PFA vial, reagent: cap, other: {'lid_position': 'loosely'})\n\n### AUTOMATED SECTION ###\nheat(container='PFA vial', temperature='200\u02daC', device='hot plate')\ncool(container='PFA vial', temperature='room temperature', condition='if undissolved filter pieces or viscous material persist')\nadd(container='PFA vial', reagent='hydrogen peroxide', volume='100-200 \u00b5L aliquots', condition='to digest undissolved material')\ndry(container='PFA vial', temperature='235-250\u02daC')\ncool(container='PFA vial', condition='if small droplet of sulfuric acid remains')\nsuspend(container='PFA vial', reagent='Milli-Q water or 8N nitric acid', volume='small aliquot', condition='if small droplet of sulfuric acid remains')\ndry(container='PFA vial', temperature='235\u02daC', repeat='until droplet is removed')\nresuspend(container='PFA vial', reagent='mixture of HNO3, HCl, HF acids (4M each) in Milli-Q water', volume='2 mL', mixture='freshly prepared')\nheat(container='PFA vial', temperature='100-110\u02daC', duration='4 hours')\ncool(container='PFA vial', temperature='room temperature')\n\n### MANUAL SECTION ###\n# MANUAL: uncover (container: PFA vial)\n\n### AUTOMATED SECTION ###\ndry(container='PFA vial', temperature='100-110\u02daC', duration='overnight')\nadd(container='PFA vial', reagent='50% HNO3/15% H2O2 (v/v)', volume='2 mL', mixture='freshly prepared')\ndry(container='PFA vial', temperature='100-110\u02daC', device='hotplate')\nresuspend(container='PFA vial', reagent='50% HNO3/15% H2O2 (v/v)', volume='200-500 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: PFA vial, other: {'lid_position': 'loosely'})\n\n### AUTOMATED SECTION ###\nheat(container='PFA vial', temperature='110\u02daC')\n\n### MANUAL SECTION ###\n# MANUAL: uncover (container: PFA vial, other: {'condition': 'after vigorous bubbling ceases'})\n\n### AUTOMATED SECTION ###\ndry(container='PFA vial', temperature='135\u02daC')\nadd(container='PFA vial', reagent='concentrated HNO3', volume='100 \u00b5L')\nheat(container='PFA vial', temperature='110\u02daC', purpose='to dryness')\nredissolve(container='PFA vial', reagent='0.1 M HNO3', volume='1 mL')\ndilute(container='PFA vial', reagent='0.1 M HNO3', volume='to 5% of original concentration', purpose='for analysis')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (other: {'reference': 'Conway et al. (2013)', 'purpose': 'isotopic analysis'})",
+    "source_file": "protocol_188.txt"
+  }
+]

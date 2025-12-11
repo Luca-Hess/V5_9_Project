@@ -1,0 +1,741 @@
+[
+  {
+    "protocol": "Stellaris\u00ae RNA FISH Cells in Suspension Protocol\nCentrifuge suspension cells (2 \u2013 5 x 106 cells) in a 15 mL conical tube.\nAspirate supernatant, leaving cells in a pellet at base of tube.\nGently resuspend cells in 1 mL of 1X PBS, and centrifuge to pellet cell suspension.\nAspirate the 1X PBS, and gently resuspend cells in 1 mL of fixation buffer.\nMix well by pipetting or inverting the tube.\nIncubate at room temperature for 10 minutes.\nCentrifuge to pellet cell suspension.\nAspirate fixation buffer, and wash cells three times with 1 mL of 1X PBS.\nMix well by gently pipetting up and down to resuspend pellet.\nTo permeabilize cells, resuspend cells in 1 mL of 70% ethanol for at least 1 hour at +2 to +8 \u00b0C.\nCells can be stored at +2 to +8 \u00b0C in 70% ethanol up to a week before hybridization.\nIf frozen before using, warm the reconstituted probe solution to room temperature.\nMix well by vortexing, then centrifuge briefly.\nTo prepare the Hybridization Buffer containing probe, add 1 \u03bcL of probe stock solution to 100 \u03bcL of Hybridization Buffer, and then vortex and centrifuge (enough for one coverglass).\nThis creates a working probe solution of 125 nM.\nThis solution will be used on step 13.\nInvert tube with fixed and permeabilized suspension cells several times to resuspend cells.\nThen place 50- 500 \u03bcL of cells (depending on concentration) in a microcentrifuge tube.\nAlternatively, at this step you can use poly-L-lysine or cytospin to adhere the fixed and permeabilized suspension cells to a round #1 coverglass after which you can perform RNA FISH following the Adherent Cell Protocol.\nCentrifuge to pellet cells and aspirate 70% ethanol.\nGently resuspend cells in 500 \u03bcL of Wash Buffer A (see recipe above).\nCentrifuge to pellet cells and aspirate Wash Buffer A. \nResuspend cells in 100 \u03bcL of Hybridization Buffer containing probe.\nMix well by pipetting up and down.\nIncubate microcentrifuge tube in the dark at 37 \u00b0C overnight (~16 hours).\nCentrifuge to pellet cells and aspirate about 50% of the Hybridization Buffer containing probe.\nThe pellet is very fluffy and easy to lose at this point.\nAdd 500 \u03bcL of Wash Buffer A.\nCentrifuge to pellet cells and aspirate solution.\nBe careful not to disturb the pellet.\nResuspend cells in 500 \u03bcL of Wash Buffer A. \nIncubate in the dark at 37 \u00b0C for 30 minutes.\nCentrifuge to pellet cells and aspirate Wash Buffer A. \nResuspend cells in 500 \u03bcL of DAPI nuclear stain (1X Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nCentrifuge to pellet cells and aspirate DAPI nuclear stain.\nResuspend cells in 500 \u03bcL of Wash Buffer B.\nCentrifuge to pellet cells and aspirate Wash Buffer B. \nResuspend cells in a small drop (approximately 30 \u03bcL) of Vectashield Mounting Medium.\nPlace 5-10 \u03bcL of cell suspension on a clean glass microscope slide and then place an 18 x 18 mm square #1 coverglass over the cells to spread the solution.\nPlace a Kimwipe over the coverglass and apply gentle pressure over the surface of the coverglass, pressing it firmly onto the surface of the slide.\nWhile applying pressure, be careful not to move the coverglass horizontally as this could result in sheared cells.\nThe Kimwipe will wick up excess mounting medium.\nSeal the coverglass perimeter with clear nail polish, and allow to dry.\nProceed to Imaging.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "suspension cells (2 \u2013 5 x 10^6 cells)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "1X PBS",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gently": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "fixation buffer",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gently": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cell suspension in fixation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting or inverting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cell suspension in fixation buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "fixation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "1X PBS",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cell pellet in PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "70% ethanol",
+          "volume": "1 mL",
+          "temperature": "+2 to +8 \u00b0C",
+          "duration": "at least 1 hour",
+          "speed": null,
+          "other": {
+            "purpose": "permeabilize cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "15 mL conical tube",
+          "reagent": "cells in 70% ethanol",
+          "volume": null,
+          "temperature": "+2 to +8 \u00b0C",
+          "duration": "up to a week",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe solution",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "probe solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "probe solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "probe stock solution to Hybridization Buffer",
+          "volume": "1 \u03bcL probe stock to 100 \u03bcL Hybridization Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prepare working probe solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortex"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "tube with fixed and permeabilized suspension cells",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": "50-500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "depends_on_concentration": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer A",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gently": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell suspension in Hybridization Buffer containing probe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell suspension in Hybridization Buffer containing probe",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "overnight (~16 hours)",
+          "speed": null,
+          "other": {
+            "in_dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "about 50%",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "pellet is fluffy and easy to lose"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer A",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "be careful not to disturb pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer A",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell suspension in Wash Buffer A",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in_dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "DAPI nuclear stain (1X Wash Buffer A with 5 ng/mL DAPI)",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "counterstain nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell suspension in DAPI nuclear stain",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in_dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "DAPI nuclear stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer B",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Wash Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "Vectashield Mounting Medium",
+          "volume": "approximately 30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "small_drop": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "glass microscope slide",
+          "reagent": "cell suspension",
+          "volume": "5-10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverglass": "18 x 18 mm square #1"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "coverglass perimeter",
+          "reagent": "clear nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "allow_to_dry": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='15 mL conical tube', reagent='suspension cells (2 \u2013 5 x 10^6 cells)')\naspirate(container='15 mL conical tube', reagent='supernatant', leave_pellet=True)\nresuspend(container='15 mL conical tube', reagent='1X PBS', volume='1 mL', gently=True)\ncentrifuge(container='15 mL conical tube', reagent='cell suspension')\naspirate(container='15 mL conical tube', reagent='1X PBS')\nresuspend(container='15 mL conical tube', reagent='fixation buffer', volume='1 mL', gently=True)\nmix(container='15 mL conical tube', reagent='cell suspension in fixation buffer', method='pipetting or inverting')\nincubate(container='15 mL conical tube', reagent='cell suspension in fixation buffer', temperature='room temperature', duration='10 minutes')\ncentrifuge(container='15 mL conical tube', reagent='cell suspension')\naspirate(container='15 mL conical tube', reagent='fixation buffer')\nwash(container='15 mL conical tube', reagent='1X PBS', volume='1 mL', times=3)\nmix(container='15 mL conical tube', reagent='cell pellet in PBS', method='gently pipetting up and down')\nresuspend(container='15 mL conical tube', reagent='70% ethanol', volume='1 mL', temperature='+2 to +8 \u00b0C', duration='at least 1 hour', purpose='permeabilize cells')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: 15 mL conical tube, reagent: cells in 70% ethanol, temperature: +2 to +8 \u00b0C, duration: up to a week, other: {})\n\n### AUTOMATED SECTION ###\nwarm(reagent='reconstituted probe solution', temperature='room temperature')\nmix(reagent='probe solution', method='vortexing')\ncentrifuge(reagent='probe solution', duration='briefly')\nadd(reagent='probe stock solution to Hybridization Buffer', volume='1 \u03bcL probe stock to 100 \u03bcL Hybridization Buffer', purpose='prepare working probe solution')\nmix(reagent='Hybridization Buffer containing probe', method='vortex')\ncentrifuge(reagent='Hybridization Buffer containing probe')\ninvert(container='tube with fixed and permeabilized suspension cells', reagent='cells', purpose='resuspend cells')\nplace(container='microcentrifuge tube', reagent='cells', volume='50-500 \u03bcL', depends_on_concentration=True)\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='70% ethanol')\nresuspend(container='microcentrifuge tube', reagent='Wash Buffer A', volume='500 \u03bcL', gently=True)\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='Wash Buffer A')\nresuspend(container='microcentrifuge tube', reagent='Hybridization Buffer containing probe', volume='100 \u03bcL')\nmix(container='microcentrifuge tube', reagent='cell suspension in Hybridization Buffer containing probe', method='pipetting up and down')\nincubate(container='microcentrifuge tube', reagent='cell suspension in Hybridization Buffer containing probe', temperature='37 \u00b0C', duration='overnight (~16 hours)', in_dark=True)\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='Hybridization Buffer containing probe', volume='about 50%', note='pellet is fluffy and easy to lose')\nadd(container='microcentrifuge tube', reagent='Wash Buffer A', volume='500 \u03bcL')\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='solution', note='be careful not to disturb pellet')\nresuspend(container='microcentrifuge tube', reagent='Wash Buffer A', volume='500 \u03bcL')\nincubate(container='microcentrifuge tube', reagent='cell suspension in Wash Buffer A', temperature='37 \u00b0C', duration='30 minutes', in_dark=True)\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='Wash Buffer A')\nresuspend(container='microcentrifuge tube', reagent='DAPI nuclear stain (1X Wash Buffer A with 5 ng/mL DAPI)', volume='500 \u03bcL', purpose='counterstain nuclei')\nincubate(container='microcentrifuge tube', reagent='cell suspension in DAPI nuclear stain', temperature='37 \u00b0C', duration='30 minutes', in_dark=True)\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='DAPI nuclear stain')\nresuspend(container='microcentrifuge tube', reagent='Wash Buffer B', volume='500 \u03bcL')\ncentrifuge(container='microcentrifuge tube', reagent='cells')\naspirate(container='microcentrifuge tube', reagent='Wash Buffer B')\nresuspend(container='microcentrifuge tube', reagent='Vectashield Mounting Medium', volume='approximately 30 \u03bcL', small_drop=True)\n\n### MANUAL SECTION ###\n# MANUAL: place (container: glass microscope slide, reagent: cell suspension, volume: 5-10 \u03bcL, other: {'coverglass': '18 x 18 mm square #1'})\n# MANUAL: seal (container: coverglass perimeter, reagent: clear nail polish, other: {'allow_to_dry': True})",
+    "source_file": "protocol_583.txt"
+  }
+]

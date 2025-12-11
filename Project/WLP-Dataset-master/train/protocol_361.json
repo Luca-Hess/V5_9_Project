@@ -1,0 +1,131 @@
+[
+  {
+    "protocol": "Modified KAPA Express Extract\nIncubate in a thermocycler for 10 minutes at 75\u00baC.\nDuring this step, cells are lysed, nucleases and proteins degraded and DNA released.\nIncubate for 5 minutes at 95\u00baC to inactivate the thermostable KAPA Express Extract protease.\nVortex reaction product for 2-3 sec.\nCentrifuge at high speed for 1 minute to pellet debris.Transfer DNA-containing supernatant to a fresh tube.\nUse 1\u00a0\u03bcl of DNA extract directly in a 25\u00a0\u03bcl PCR, without quantification.\nDilute in TE Buffer for long-term storage at -20\u00baC.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00baC",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "KAPA Express Extract reaction",
+          "volume": null,
+          "temperature": "95\u00baC",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "inactivate protease"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction product",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-3 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "high speed",
+          "other": {
+            "purpose": "pellet debris"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "DNA-containing supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "DNA extract",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "PCR_volume": "25 \u03bcl",
+            "quantification": "without"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "TE Buffer",
+            "purpose": "long-term storage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA extract (diluted in TE Buffer)",
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": "long-term",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='thermocycler', temperature='75\u00baC', duration='10 minutes')\nincubate(reagent='KAPA Express Extract reaction', temperature='95\u00baC', duration='5 minutes', purpose='inactivate protease')\nvortex(container='reaction tube', reagent='reaction product', duration='2-3 seconds')\ncentrifuge(container='reaction tube', duration='1 minute', speed='high speed', purpose='pellet debris')\ntransfer(container='fresh tube', reagent='DNA-containing supernatant')\nuse(container='PCR tube', reagent='DNA extract', volume='1 \u03bcl', PCR_volume='25 \u03bcl', quantification='without')\ndilute(reagent='DNA extract', diluent='TE Buffer', purpose='long-term storage')\nstore(reagent='DNA extract (diluted in TE Buffer)', temperature='-20\u00baC', duration='long-term')",
+    "source_file": "protocol_361.txt"
+  }
+]

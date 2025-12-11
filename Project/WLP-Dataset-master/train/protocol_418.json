@@ -1,0 +1,256 @@
+[
+  {
+    "protocol": "Protocol for  transfection of H4, (ATCC\u00ae: HTB-148) Cells by FuGENE HD in 96 well plates.\nCell plating H4 (neuroglioma) cells were seeded from 90-100% confluent culture the day before transfection with the density 7,000 cells/well in 100\u03bcl complete growth medium (DMEM + 10% Fetal Bovine Serum).\nFor transfection in 100% Fetal Bovine Serum the complete growth medium was replaced with Fetal Bovine Serum two hours before transfection.\nComplex preparation (per 20 wells).\nTissue culture 96-round bottom well plates were used for complex preparation: Prepare 0.02\u03bcg/\u03bcl pCMV\u03b2 DNA solution in OptiMEM\u00ae or sterile deionized water.\nAdd 6 \u03bcl of reagent to 100 \u03bcl of DNA solution.\nMix carefully by pipetting (15 times).\nIncubate 10 min at room temperature.\nAdd 5 \u03bcl of complex per well to the cells, and mix thoroughly.\nIncubation.\nIncubate transfected cells in CO2 incubator for 48 hours.\nDetection of \u03b2-gal expression.\nRemove the medium from the well and wash the cells once with 100\u03bcl per well PBS.\nFix the cells in the well with 50\u03bcl solution of 4% formaldehyde in PBS for 5min at room temperature.\nWash each well twice with 100\u03bcl PBS.\nAdd 50\u03bcl per well of substrate/stain solution and incubate the plate overnight at 37\u00b0C.\nObserve the cells under microscope and evaluate the proportion of blue (\u03b2-gal-positive) cells.",
+    "actions": [
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "H4 (neuroglioma) cells in complete growth medium (DMEM + 10% Fetal Bovine Serum)",
+          "volume": "100 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_density": "7,000 cells/well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "Fetal Bovine Serum",
+          "volume": "100 \u03bcl per well",
+          "temperature": null,
+          "duration": "2 hours before transfection",
+          "speed": null,
+          "other": {
+            "previous_medium": "complete growth medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "pCMV\u03b2 DNA solution in OptiMEM\u00ae or sterile deionized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "0.02 \u03bcg/\u03bcl",
+            "per_wells": "20"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube or well (for complex preparation)",
+          "reagent": "FuGENE HD reagent",
+          "volume": "6 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "100 \u03bcl DNA solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube or well (for complex preparation)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting",
+            "times": "15"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube or well (complex preparation)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "transfection complex",
+          "volume": "5 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "transfected cells",
+          "volume": null,
+          "temperature": "CO2 incubator",
+          "duration": "48 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "PBS",
+          "volume": "100 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "4% formaldehyde in PBS",
+          "volume": "50 \u03bcl per well",
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "PBS",
+          "volume": "100 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "substrate/stain solution",
+          "volume": "50 \u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscope",
+            "evaluation": "proportion of blue (\u03b2-gal-positive) cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nseed(container='96 well plate', reagent='H4 (neuroglioma) cells in complete growth medium (DMEM + 10% Fetal Bovine Serum)', volume='100 \u03bcl per well', cell_density='7,000 cells/well')\nreplace(container='96 well plate', reagent='Fetal Bovine Serum', volume='100 \u03bcl per well', duration='2 hours before transfection', previous_medium='complete growth medium')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: pCMV\u03b2 DNA solution in OptiMEM\u00ae or sterile deionized water, other: {'concentration': '0.02 \u03bcg/\u03bcl', 'per_wells': '20'})\n\n### AUTOMATED SECTION ###\nadd(container='tube or well (for complex preparation)', reagent='FuGENE HD reagent', volume='6 \u03bcl', to='100 \u03bcl DNA solution')\nmix(container='tube or well (for complex preparation)', method='pipetting', times='15')\nincubate(container='tube or well (complex preparation)', temperature='room temperature', duration='10 min')\nadd(container='96 well plate', reagent='transfection complex', volume='5 \u03bcl per well', to='cells')\nmix(container='96 well plate', method='thoroughly')\nincubate(container='96 well plate', reagent='transfected cells', temperature='CO2 incubator', duration='48 hours')\nremove(container='96 well plate', reagent='medium')\nwash(container='96 well plate', reagent='PBS', volume='100 \u03bcl per well', times='once')\nfix(container='96 well plate', reagent='4% formaldehyde in PBS', volume='50 \u03bcl per well', temperature='room temperature', duration='5 min')\nwash(container='96 well plate', reagent='PBS', volume='100 \u03bcl per well', times='twice')\nadd(container='96 well plate', reagent='substrate/stain solution', volume='50 \u03bcl per well')\nincubate(container='96 well plate', temperature='37\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: 96 well plate, reagent: cells, other: {'method': 'microscope', 'evaluation': 'proportion of blue (\u03b2-gal-positive) cells'})",
+    "source_file": "protocol_418.txt"
+  }
+]

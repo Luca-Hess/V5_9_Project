@@ -1,0 +1,102 @@
+[
+  {
+    "protocol": "Monitoring fluorescence during cyanobacterial physiology/lysis experiments\nAdvance Preparation: Aliquot\u00a0180 \u00b5l seawater medium (e.g. ASW)\u00a0into each\u00a0well of a 96-well plate.\nKeep a log of your plate layout (which samples in which wells).\nPlate-Setup: Add 20 \u00b5l of sample into the ASW for a 10X dilution.\nMix well with a pipette.\nRead\u00a0fluorescence using the Tecan Infinite Pro 200M plate reader.\nSet up a program using\u00a0the following wavelengths: excitation 440 nm, emission 680 nm for chlorophyll a; \u00a0excitation 544 nm, emission\u00a0577 nm for phycoerythrin.\nPlot fluorescence vs. time to track the real-time progression of cell growth and/or phage\u00a0infection.",
+    "actions": [
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": "seawater medium (e.g. ASW)",
+          "volume": "180 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well plate (well containing ASW)",
+          "reagent": "sample",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "10X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "96-well plate (individual wells)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "96-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Tecan Infinite Pro 200M plate reader",
+            "mode": "fluorescence"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Tecan Infinite Pro 200M plate reader",
+            "excitation_emission": [
+              {
+                "excitation": "440 nm",
+                "emission": "680 nm",
+                "target": "chlorophyll a"
+              },
+              {
+                "excitation": "544 nm",
+                "emission": "577 nm",
+                "target": "phycoerythrin"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\naliquot(container='96-well plate', reagent='seawater medium (e.g. ASW)', volume='180 \u00b5l', destination='each well')\nadd(container='96-well plate (well containing ASW)', reagent='sample', volume='20 \u00b5l', dilution='10X')\nmix(container='96-well plate (individual wells)', method='pipette')\nread(container='96-well plate', instrument='Tecan Infinite Pro 200M plate reader', mode='fluorescence')\nset(instrument='Tecan Infinite Pro 200M plate reader', excitation_emission=[{'excitation': '440 nm', 'emission': '680 nm', 'target': 'chlorophyll a'}, {'excitation': '544 nm', 'emission': '577 nm', 'target': 'phycoerythrin'}])",
+    "source_file": "protocol_358.txt"
+  }
+]

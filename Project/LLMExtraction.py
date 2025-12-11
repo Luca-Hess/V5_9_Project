@@ -9,7 +9,7 @@ from ModelAnnotation import LabAutomationMachine
 # Token for Github API:
 token =  os.environ["GITHUB_TOKEN"]
 endpoint = "https://models.github.ai/inference"
-model = "openai/gpt-4.1-mini"
+model = "openai/gpt-4.1"
 
 client = openai.OpenAI(
     base_url=endpoint,
@@ -142,7 +142,7 @@ class ImprovedAnnotationToScriptConverter:
 class SyntheticDatasetGenerator:
     """Generate training dataset using LLM extraction"""
 
-    def __init__(self, llm_extractor: LLMActionExtractor, max_per_minute: int = 14):
+    def __init__(self, llm_extractor: LLMActionExtractor, max_per_minute: int = 9):
         self.extractor = llm_extractor
         self.converter = ImprovedAnnotationToScriptConverter()
         self.max_per_minute = max_per_minute
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     # Example usage
     extractor = LLMActionExtractor(client, model)
     generator = SyntheticDatasetGenerator(extractor)
-    data_path = "WLP-Dataset-master/train"
+    data_path = "WLP-Dataset-master/test"
     generator.generate_from_protocols(data_path)
 
 # Usage example

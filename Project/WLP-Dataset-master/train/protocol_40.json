@@ -1,0 +1,223 @@
+[
+  {
+    "protocol": "Peroxide Value Method\n1.\nWeigh 0.01 mg oil into test tube and record exact weight.\nSolid fat should be melted first.\nSamples with high PV may need to be serially diluted in working solvent.\nMake sure to record dilution factor if so.\nUp to 0.10 g can be used for samples with very low PV.\n2.\nImmediately add 3 mL working solvent and vortex to dissolve-make sure it is fully dissolved.\n3.\nPrepare a blank tube (solvent in place of sample).\n4.\nAdd 15 \u03bcl ammonium thiocyanate to all tubes, and vortex 2-4 sec.\n5.\nAdd 15 \u03bcl ferrous chloride to all tubes, and vortex 2-4 sec.\n6.\nLet sit at room temperature 20 min.\nKeep out of bright light.\n7.\nRead absorbance on spectrophotometer set to 510 nm.\n8.\nDetermine PV using the following calculations: a.\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 PV (meq peroxide per kg sample) = (As \u2013 Ab) x m /\u00a0 (55.84 x m0 x 2) As= absorbance of sampleAb= absorbance of blankm = slope of standard curvem0=mass in grams of the sample55.84 =atomic weight of iron.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "test tube",
+          "reagent": "oil",
+          "volume": "0.01 mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "record_exact_weight": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": null,
+          "reagent": "solid fat",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "sample with high PV",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "serially": true,
+            "solvent": "working solvent"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_factor": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "test tube",
+          "reagent": "working solvent",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "test tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dissolve"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "blank tube",
+          "reagent": "working solvent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "no_sample": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": "ammonium thiocyanate",
+          "volume": "15 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2-4 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": "ferrous chloride",
+          "volume": "15 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2-4 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "spectrophotometer",
+            "wavelength": "510 nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "formula": "PV (meq peroxide per kg sample) = (As \u2013 Ab) x m / (55.84 x m0 x 2)"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: test tube, reagent: oil, volume: 0.01 mg, other: {'record_exact_weight': True})\n\n### AUTOMATED SECTION ###\nmelt(reagent='solid fat')\ndilute(reagent='sample with high PV', serially=True, solvent='working solvent')\n\n### MANUAL SECTION ###\n# MANUAL: record (other: {'dilution_factor': True})\n\n### AUTOMATED SECTION ###\nadd(container='test tube', reagent='working solvent', volume='3 mL')\nvortex(container='test tube', purpose='dissolve')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: blank tube, reagent: working solvent, other: {'no_sample': True})\n\n### AUTOMATED SECTION ###\nadd(container='all tubes', reagent='ammonium thiocyanate', volume='15 \u03bcl')\nvortex(container='all tubes', duration='2-4 sec')\nadd(container='all tubes', reagent='ferrous chloride', volume='15 \u03bcl')\nvortex(container='all tubes', duration='2-4 sec')\nincubate(container='all tubes', temperature='room temperature', duration='20 min', protect_from_light=True)\nread(container='all tubes', instrument='spectrophotometer', wavelength='510 nm')\n\n### MANUAL SECTION ###\n# MANUAL: calculate (other: {'formula': 'PV (meq peroxide per kg sample) = (As \u2013 Ab) x m / (55.84 x m0 x 2)'})",
+    "source_file": "protocol_40.txt"
+  }
+]

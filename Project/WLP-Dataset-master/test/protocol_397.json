@@ -1,0 +1,1043 @@
+[
+  {
+    "protocol": "Cross-linking of IgG to Protein A or G Beads (S1425/S1430)\nVortex and thoroughly resuspend Protein A Magnetic Beads. \nAliquot 100 \u03bcl of bead suspension to a sterile microcentrifuge tube (wash #1). \nAdd 500 \u03bcl 0.1 M NaPhosphate Buffer (pH 8.0). \n(wash #1) Vortex to resuspend. \n(wash #1)\u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #1)\u00a0Remove supernatant. \n(wash #2) Add 500 \u03bcl 0.1 M NaPhosphate Buffer (pH 8.0). \n(wash #2)\u00a0Vortex to resuspend. \n(wash #2)\u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #2)\u00a0Remove supernatant. \nAdd to the beads 80 \u03bcl of 0.1 M NaPhosphate Buffer (pH 8.0). \nAdd 15-25 \u03bcl of serum OR 20 \u03bcg purified IgG in a maximum volume of 30 \u03bcl. \nMix thoroughly and incubate at 4\u00b0C with agitation for 30 minutes. \nApply magnet and remove supernatant.\n(wash #1) Add\u00a0500 \u03bcl\u00a00.1 M NaPhosphate Buffer (pH 8.0). \n(wash #1)\u00a0Vortex to resuspend. \n(wash #1)\u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #1)\u00a0Remove supernatant. \n(wash #2) Add\u00a0500 \u03bcl\u00a00.1 M NaPhosphate Buffer (pH 8.0). \n(wash #2)\u00a0Vortex to resuspend. \n(wash #2)\u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #2)\u00a0Remove supernatant. \n(wash #3) Add\u00a0500 \u03bcl\u00a00.1 M NaPhosphate Buffer (pH 8.0). \n(wash #3)\u00a0Vortex to resuspend. \n(wash #3)\u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube (wash #3)\u00a0Remove supernatant. \nAdd 1 ml of Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2]) to the Protein A/G immobilized antibody. \n(wash a) Vortex to resuspend. \n(wash a) Apply magnet for 30 seconds, to pull beads to the side of the tube.\u00a0\n(wash\u00a0a) Remove supernatant.\u00a0\n(wash\u00a0a) Add\u00a01 ml\u00a0of Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2]) to the Protein A/G immobilized antibody. \n(wash b) Vortex to resuspend. \n(wash b) Apply magnet for 30 seconds, to pull beads to the side of the tube.\u00a0\u00a0\n(wash b) Remove supernatant.\u00a0\n(wash b) Resuspend in 1 ml Cross-linking Buffer containing 25 mM DMP (6.5 mg DMP/ml of buffer). \nMix thoroughly and incubate at room temperature for 45 minutes with agitation. \nApply magnet for 30 seconds, to pull beads to the side of the tube. \nRemove supernatant. \nAdd 1 ml Blocking Buffer (0.1 M ethanolamine, [pH 8.2]). \u00a0 \nVortex to resuspend.\u00a0 \nApply magnet for 30 seconds, to pull beads to the side of the tube. \nRemove supernatant. \nAdd 1 ml of Blocking Buffer Vortex to resuspend. \nIncubate for 1 hour at room temperature with agitation. \nApply magnet for 30 seconds, to pull beads to the side of the tube. \nRemove supernatant. \n(wash #1) Add 1 ml of PBS. \n(wash #1) Vortex to resuspend. \n(wash #1) Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #1) Remove supernatant. \n(wash #2) Add 1 ml of PBS. \n(wash #2) \u00a0Vortex to resuspend. \n(wash #2) Apply magnet for 30 seconds, to pull beads to the side of the tube (wash #2) Remove supernatant. \n(wash #3)\u00a0Add 1 ml of PBS. \n(wash #3) \u00a0Vortex to resuspend. \n(wash #3) \u00a0Apply magnet for 30 seconds, to pull beads to the side of the tube. \n(wash #3) Remove supernatant. \nAdd 1 ml Elution Buffer (0.1 M glycine-HCl [pH 2.5]). \nVortex to resuspend. \nApply magnet for 30 seconds, to pull beads to the side of the tube. \nRemove supernatant. \nResuspend and store beads in 100 \u03bcl PBS, 0.1% Tween 20, 0.02% sodium azide",
+    "actions": [
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "Protein A Magnetic Beads (original container)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "Protein A Magnetic Beads (original container)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "bead suspension",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "80 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "serum OR purified IgG",
+          "volume": "15-25 \u03bcl serum OR 20 \u03bcg IgG in max 30 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": "agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "0.1 M NaPhosphate Buffer (pH 8.0)",
+          "volume": "500 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2])",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "a"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "a"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "a"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2])",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "a"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "b"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "b"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "b"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Cross-linking Buffer containing 25 mM DMP (6.5 mg DMP/ml of buffer)",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "45 minutes",
+          "speed": "agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Blocking Buffer (0.1 M ethanolamine, [pH 8.2])",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Blocking Buffer",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": "agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "PBS",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "PBS",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "PBS",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "#3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "Elution Buffer (0.1 M glycine-HCl [pH 2.5])",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply_magnet",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove_supernatant",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "PBS, 0.1% Tween 20, 0.02% sodium azide",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "store": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nvortex(container='Protein A Magnetic Beads (original container)')\nresuspend(container='Protein A Magnetic Beads (original container)')\naliquot(container='sterile microcentrifuge tube', reagent='bead suspension', volume='100 \u03bcl', wash='#1')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='500 \u03bcl', wash='#1')\nvortex(container='sterile microcentrifuge tube', wash='#1')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#1')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#1')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='500 \u03bcl', wash='#2')\nvortex(container='sterile microcentrifuge tube', wash='#2')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#2')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#2')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='80 \u03bcl')\nadd(container='sterile microcentrifuge tube', reagent='serum OR purified IgG', volume='15-25 \u03bcl serum OR 20 \u03bcg IgG in max 30 \u03bcl')\nmix(container='sterile microcentrifuge tube', speed='thoroughly')\nincubate(container='sterile microcentrifuge tube', temperature='4\u00b0C', duration='30 minutes', speed='agitation')\napply_magnet(container='sterile microcentrifuge tube')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='500 \u03bcl', wash='#1')\nvortex(container='sterile microcentrifuge tube', wash='#1')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#1')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#1')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='500 \u03bcl', wash='#2')\nvortex(container='sterile microcentrifuge tube', wash='#2')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#2')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#2')\nadd(container='sterile microcentrifuge tube', reagent='0.1 M NaPhosphate Buffer (pH 8.0)', volume='500 \u03bcl', wash='#3')\nvortex(container='sterile microcentrifuge tube', wash='#3')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#3')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#3')\nadd(container='sterile microcentrifuge tube', reagent='Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2])', volume='1 ml')\nvortex(container='sterile microcentrifuge tube', wash='a')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='a')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='a')\nadd(container='sterile microcentrifuge tube', reagent='Cross-linking Buffer (0.2 M triethanolamine, [pH 8.2])', volume='1 ml', wash='a')\nvortex(container='sterile microcentrifuge tube', wash='b')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='b')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='b')\nresuspend(container='sterile microcentrifuge tube', reagent='Cross-linking Buffer containing 25 mM DMP (6.5 mg DMP/ml of buffer)', volume='1 ml')\nmix(container='sterile microcentrifuge tube', speed='thoroughly')\nincubate(container='sterile microcentrifuge tube', temperature='room temperature', duration='45 minutes', speed='agitation')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant')\nadd(container='sterile microcentrifuge tube', reagent='Blocking Buffer (0.1 M ethanolamine, [pH 8.2])', volume='1 ml')\nvortex(container='sterile microcentrifuge tube')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant')\nadd(container='sterile microcentrifuge tube', reagent='Blocking Buffer', volume='1 ml')\nvortex(container='sterile microcentrifuge tube')\nincubate(container='sterile microcentrifuge tube', temperature='room temperature', duration='1 hour', speed='agitation')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant')\nadd(container='sterile microcentrifuge tube', reagent='PBS', volume='1 ml', wash='#1')\nvortex(container='sterile microcentrifuge tube', wash='#1')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#1')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#1')\nadd(container='sterile microcentrifuge tube', reagent='PBS', volume='1 ml', wash='#2')\nvortex(container='sterile microcentrifuge tube', wash='#2')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#2')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#2')\nadd(container='sterile microcentrifuge tube', reagent='PBS', volume='1 ml', wash='#3')\nvortex(container='sterile microcentrifuge tube', wash='#3')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds', wash='#3')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant', wash='#3')\nadd(container='sterile microcentrifuge tube', reagent='Elution Buffer (0.1 M glycine-HCl [pH 2.5])', volume='1 ml')\nvortex(container='sterile microcentrifuge tube')\napply_magnet(container='sterile microcentrifuge tube', duration='30 seconds')\nremove_supernatant(container='sterile microcentrifuge tube', reagent='supernatant')\nresuspend(container='sterile microcentrifuge tube', reagent='PBS, 0.1% Tween 20, 0.02% sodium azide', volume='100 \u03bcl', store=True)",
+    "source_file": "protocol_397.txt"
+  }
+]

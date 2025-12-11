@@ -1,0 +1,253 @@
+[
+  {
+    "protocol": "LB agar plate, 1.5%\nPour 1.5% w/v (7.5g/500mL) bacteriological grade agar into an autoclave safe container capable of holding at least 500mL q.s. to 500mL using LB media Stir vigorously at room temperature until particulates are no longer visible. \nLoosely cap bottle and then autoclave for a minimum of 30 minutes (increase to 45 minutes if making 1L) using slow exhaust (liquid) cycle. \nRemove from autoclave and let cool for 20-40 minutes or until sufficiently cool to permit handling with simple nitrile/latex gloves or bare handed (about 40-60C).\n[Optional]: Cool in 55C water bath to avoid having the agar cool too much prior to pouring.\nAdd antibiotic selection after agar has cooled down and mix well. \nCarefully pour about 20-25mL of LB agar into 10cm Petri dishes (about 20-25 plates). \nLet agar cool before placing lid on top and inverting plate.\nAlternatively, place lid open slightly to the side to allow for evaporation as the agar cools.\nWrap plates in plastic wrap or store sealed in plastic bag to prevent plates from drying out.\nWrap in aluminum foil to prevent degradation of light-sensitive antibiotics, e.g. ampicillin.\nStore plates at 4C, inverted.",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "bacteriological grade agar (7.5g)",
+          "volume": "null",
+          "temperature": "room temperature",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "concentration": "1.5% w/v",
+            "final_volume": "500mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "LB media",
+          "volume": "q.s. to 500mL",
+          "temperature": "room temperature",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "agar + LB media mixture",
+          "volume": "500mL",
+          "temperature": "room temperature",
+          "duration": "until particulates are no longer visible",
+          "speed": "vigorous",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "cap_type": "loose"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "agar + LB media mixture",
+          "volume": "500mL",
+          "temperature": "null",
+          "duration": "30 minutes (45 minutes for 1L)",
+          "speed": "slow exhaust (liquid cycle)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "autoclaved agar + LB media mixture",
+          "volume": "500mL",
+          "temperature": "40-60C",
+          "duration": "20-40 minutes or until cool enough to handle",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "autoclaved agar + LB media mixture",
+          "volume": "500mL",
+          "temperature": "55C (water bath)",
+          "duration": "until ready to pour",
+          "speed": "null",
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "antibiotic selection",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "after agar has cooled",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "autoclave safe container (\u2265500mL)",
+          "reagent": "agar + LB media + antibiotic",
+          "volume": "500mL",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "well",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10cm Petri dishes",
+          "reagent": "LB agar mixture",
+          "volume": "20-25mL per dish",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "number_of_plates": "20-25"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "20-25mL per dish",
+          "temperature": "null",
+          "duration": "until agar is set",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "lid_position": "on top and inverted"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "lid_position": "open slightly to the side (for evaporation)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "material": "plastic wrap or sealed plastic bag"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "material": "aluminum foil",
+            "purpose": "prevent degradation of light-sensitive antibiotics"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "LB agar",
+          "volume": "null",
+          "temperature": "4C",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "orientation": "inverted"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='autoclave safe container (\u2265500mL)', reagent='bacteriological grade agar (7.5g)', volume='null', temperature='room temperature', duration='null', speed='null', concentration='1.5% w/v', final_volume='500mL')\ndispense(container='autoclave safe container (\u2265500mL)', reagent='LB media', volume='q.s. to 500mL', temperature='room temperature', duration='null', speed='null')\nmix(container='autoclave safe container (\u2265500mL)', reagent='agar + LB media mixture', volume='500mL', temperature='room temperature', duration='until particulates are no longer visible', speed='vigorous')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: autoclave safe container (\u2265500mL), reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {'cap_type': 'loose'})\n\n### AUTOMATED SECTION ###\nautoclave(container='autoclave safe container (\u2265500mL)', reagent='agar + LB media mixture', volume='500mL', temperature='null', duration='30 minutes (45 minutes for 1L)', speed='slow exhaust (liquid cycle)')\ncool(container='autoclave safe container (\u2265500mL)', reagent='autoclaved agar + LB media mixture', volume='500mL', temperature='40-60C', duration='20-40 minutes or until cool enough to handle', speed='null')\ncool(container='autoclave safe container (\u2265500mL)', reagent='autoclaved agar + LB media mixture', volume='500mL', temperature='55C (water bath)', duration='until ready to pour', speed='null', optional=True)\nadd(container='autoclave safe container (\u2265500mL)', reagent='antibiotic selection', volume='null', temperature='null', duration='after agar has cooled', speed='null')\nmix(container='autoclave safe container (\u2265500mL)', reagent='agar + LB media + antibiotic', volume='500mL', temperature='null', duration='null', speed='well')\ndispense(container='10cm Petri dishes', reagent='LB agar mixture', volume='20-25mL per dish', temperature='null', duration='null', speed='null', number_of_plates='20-25')\ncool(container='Petri dishes', reagent='LB agar', volume='20-25mL per dish', temperature='null', duration='until agar is set', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: Petri dishes, reagent: LB agar, volume: null, temperature: null, duration: null, speed: null, other: {'lid_position': 'on top and inverted'})\n# MANUAL: place (container: Petri dishes, reagent: LB agar, volume: null, temperature: null, duration: null, speed: null, other: {'lid_position': 'open slightly to the side (for evaporation)'})\n# MANUAL: wrap (container: Petri dishes, reagent: LB agar, volume: null, temperature: null, duration: null, speed: null, other: {'material': 'plastic wrap or sealed plastic bag'})\n# MANUAL: wrap (container: Petri dishes, reagent: LB agar, volume: null, temperature: null, duration: null, speed: null, other: {'material': 'aluminum foil', 'purpose': 'prevent degradation of light-sensitive antibiotics'})\n\n### AUTOMATED SECTION ###\nstore(container='Petri dishes', reagent='LB agar', volume='null', temperature='4C', duration='null', speed='null', orientation='inverted')",
+    "source_file": "protocol_213.txt"
+  }
+]

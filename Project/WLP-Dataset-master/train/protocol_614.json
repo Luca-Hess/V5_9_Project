@@ -1,0 +1,235 @@
+[
+  {
+    "protocol": "DNA Extraction Protocol. \nCreate mixture of CsCl, Proteinase K, and SDS.\nMix and incubate 1 hour at 56\u00b0C.\nCool to room temperature. \nAdd an equal volume of phenol and invert several times.\nSpin 3000g (6000 rpm on microfuge), 5 minutes, room temperature.\nCarefully transfer the supernatant with a wide-bore pipette to a fresh tube.\nAdd an equal volume of phenol:choroform (1:1), invert.\nSpin again, 3000g (6000 rpm on microfuge), 5 minutes, room temperature.\nTransfer the supernatant, as done before.\nAdd an equal volume of chloroform and invert.\nSpin again, 3000g (6000 rpm on microfuge), 5 minutes, room temperature.\nTransfer the supernatant, as done before.",
+    "actions": [
+      {
+        "action": "create",
+        "parameters": {
+          "container": null,
+          "reagent": "CsCl, Proteinase K, SDS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "56\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "phenol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several times",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "3000g (6000 rpm)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "wide-bore pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "phenol:chloroform (1:1)",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "3000g (6000 rpm)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chloroform",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "3000g (6000 rpm)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: create (reagent: CsCl, Proteinase K, SDS, other: {})\n\n### AUTOMATED SECTION ###\nmix()\nincubate(temperature='56\u00b0C', duration='1 hour')\ncool(temperature='room temperature')\nadd(reagent='phenol', volume='equal volume')\ninvert(duration='several times')\ncentrifuge(temperature='room temperature', duration='5 minutes', speed='3000g (6000 rpm)')\ntransfer(container='fresh tube', reagent='supernatant', tool='wide-bore pipette')\nadd(reagent='phenol:chloroform (1:1)', volume='equal volume')\ninvert()\ncentrifuge(temperature='room temperature', duration='5 minutes', speed='3000g (6000 rpm)')\ntransfer(reagent='supernatant')\nadd(reagent='chloroform', volume='equal volume')\ninvert()\ncentrifuge(temperature='room temperature', duration='5 minutes', speed='3000g (6000 rpm)')\ntransfer(reagent='supernatant')",
+    "source_file": "protocol_614.txt"
+  }
+]

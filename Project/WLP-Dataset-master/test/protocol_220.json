@@ -1,0 +1,988 @@
+[
+  {
+    "protocol": "Immunohistochemistry Protocol for Paraffin-Embedded Sections\nFix freshly dissected tissue (<3mm thick) with 10% formalin or other fixatives for 24-48\u00a0h at room temperature.\nRinse the tissue with running tap water for 1 h. Dehydrate the tissue through 70% alcohol, 45 min.\nClear the tissue through a change of xylene, 1 h. (1/2) \nClear the tissue through a change of xylene, 1 h. (2/2) \nImmerse the tissue in a change of paraffin, 1 h. (1/3) \nImmerse the tissue in a change of paraffin, 1 h. (2/3) \nImmerse the tissue in a change of paraffin, 1 h. (3/3) \nEmbed the tissue in a paraffin block.\nSection the paraffin-embedded tissue block at 5-8 \u00b5m thickness on a microtome and\u00a0float in a 40\u00b0C water bath containing distilled water.\nTransfer the sections onto glass slides suitable for immunohistochemistry (e.g. Superfrost\u00a0Plus).\nAllow the slides to dry overnight and store slides at room temperature until\u00a0ready for use.\nDeparaffinize slides in a change of xylene, 5 min. (1/2) \nDeparaffinize slides in a change of xylene, 5 min. (2/2) \nDrain off the blocking buffer from the slides.\nTransfer slides to 100% alcohol, for a 3-minute change. (1/2) \nTransfer slides to 100% alcohol, for a 3-minute change. (2/2) \nBlock endogenous peroxidase activity by incubating sections in 3% H2O2 solution in methanol at room temperature for 10 min to block endogenous peroxidase activity.\nChange by rinsing in 300 ml of PBS, for 5 min. (1/2) \nChange by rinsing in 300 ml of PBS, for 5 min. (2/2) \n(optional) Perform antigen retrieval to unmask the antigenic epitope.\nThe most commonly used antigen retrieval is a citrate buffer method.\nArrange the slides in a staining container.\nPour 300 ml of 10 mM citrate buffer, pH 6.0 into the staining container and incubate it at 95-100\u00b0C for 10 min (optimal incubation time should be determined by user).\nRemove the staining container to room temperature and allow the slides to cool for 20 min.\nChange by rinsing slides in 300 ml PBS for 5 min. (1/2) \nChange by rinsing slides in 300 ml PBS for 5 min. (2/2) \n(optional) Add 100 \u00b5l blocking buffer (e.g. 10% fetal bovine serum in PBS) onto the sections of the slides and incubate in a humidified chamber at room temperature for 1h.\nApply 100 \u00b5l appropriately diluted primary antibody (in antibody dilution buffer, e.g. 0.5% bovine serum albumin in PBS) to the sections on the slides and incubate in a humidified chamber at room temperature for 1 h. \nChange by washing the slides in 300 ml PBS for 5 min. (1/2) \nChange by washing the slides in 300 ml PBS for 5 min. (2/2) \nApply 100 \u00b5l appropriately diluted biotinylated secondary antibody (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min.\nChange by washing slides in 300 ml PBS for 5 min. (1/2) \nChange by washing slides in 300 ml PBS for 5 min. (2/2) \nApply 100 \u00b5l appropriately diluted Sav-HRP conjugates (using the antibody dilution buffer) to the sections on the slides and incubate in a humidified chamber at room temperature for 30 min (keep protected from light).\nChange by washing slides in 300 ml PBS for 5 min. (1/2) \nChange by washing slides in 300 ml PBS for 5 min. (2/2) \nApply 100 \u00b5l DAB substrate solution (freshly made just before use: 0.05% DAB - 0.015%\u00a0H2O2 in PBS) to the sections on the slides to reveal the color of antibody staining.\nAllow\u00a0the color development for < 5 min until the desired color intensity is reached.\nChange by washing slides in 300 ml PBS for 2 min. (1/3) \nChange by washing slides in 300 ml PBS for 2 min. (2/3) \nChange by washing slides in 300 ml PBS for 2 min. (3/3) \n(optional) Counterstain slides by immersing sides in Hematoxylin (e.g. Gill\u2019s Hematoxylin) for 1-2 min.\nRinse the slides in running tap water for > 15 min.\nDehydrate the tissue slides through a change of 95% alcohol, for 5 min. (1/2) \nDehydrate the tissue slides through a change of 95% alcohol, for 5 min. (2/2) \nClear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (1/3) \nClear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (2/3) \nClear the tissue slides in a change of xylene and coverslip using mounting solution (e.g. Permount). (3/3)\nObserve the color of the antibody staining in the tissue sections under microscopy.\nDehydrate the tissue through 80% alcohol, 45 min.\nDehydrate the tissue through 95% alcohol, 45 min.\nDehydrate the tissue through a change of 100% alcohol, 1 h. (1/3) \nDehydrate the tissue through a change of 100% alcohol, 1 h. (2/3) \nDehydrate the tissue through a change of 100% alcohol, 1 h. (3/3) \nTransfer through 95% alcohol for 3 min.\nTransfer through 70% alcohol for 3 min.\nTransfer through 50% alcohol for 3 min.\nDehydrate the tissue slides through a change of 100% alcohol, for 5 min. (1/2) \nDehydrate the tissue slides through a change of 100% alcohol, for 5 min. (2/2)",
+    "actions": [
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "tissue (<3mm thick)",
+          "reagent": "10% formalin or other fixatives",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "24-48 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "running tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "70% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "45 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "paraffin",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "embed",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "paraffin block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "section",
+        "parameters": {
+          "container": "paraffin-embedded tissue block",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thickness": "5-8 \u00b5m",
+            "equipment": "microtome"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "sections",
+          "reagent": "distilled water",
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sections",
+          "reagent": "glass slides (Superfrost Plus)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until ready for use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "deparaffinize",
+        "parameters": {
+          "container": "slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "deparaffinize",
+        "parameters": {
+          "container": "slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "slides",
+          "reagent": "blocking buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "slides",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "slides",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections",
+          "reagent": "3% H2O2 solution in methanol",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "block endogenous peroxidase activity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "retrieve",
+        "parameters": {
+          "container": "slides",
+          "reagent": "citrate buffer",
+          "volume": "300 ml",
+          "temperature": "95-100\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "pH": "6.0",
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "blocking buffer (e.g. 10% fetal bovine serum in PBS)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "blocking buffer",
+          "volume": "100 \u00b5l",
+          "temperature": "room temperature",
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "chamber": "humidified",
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "primary antibody (appropriately diluted in antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "primary antibody",
+          "volume": "100 \u00b5l",
+          "temperature": "room temperature",
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "chamber": "humidified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "biotinylated secondary antibody (appropriately diluted in antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "biotinylated secondary antibody",
+          "volume": "100 \u00b5l",
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "chamber": "humidified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "Sav-HRP conjugates (appropriately diluted in antibody dilution buffer)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "Sav-HRP conjugates",
+          "volume": "100 \u00b5l",
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "chamber": "humidified",
+            "protect_from_light": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "DAB substrate solution (0.05% DAB - 0.015% H2O2 in PBS, freshly made)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "develop",
+        "parameters": {
+          "container": "sections on slides",
+          "reagent": "DAB substrate solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "< 5 min",
+          "speed": null,
+          "other": {
+            "until_desired_color_intensity": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "change": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "change": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slides",
+          "reagent": "PBS",
+          "volume": "300 ml",
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "change": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "counterstain",
+        "parameters": {
+          "container": "slides",
+          "reagent": "Hematoxylin (e.g. Gill\u2019s Hematoxylin)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 min",
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "slides",
+          "reagent": "running tap water",
+          "volume": null,
+          "temperature": null,
+          "duration": "> 15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverslip": "mounting solution (e.g. Permount)",
+            "change": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverslip": "mounting solution (e.g. Permount)",
+            "change": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "clear",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "coverslip": "mounting solution (e.g. Permount)",
+            "change": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "tissue sections",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscopy"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "80% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "45 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "45 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": null,
+          "other": {
+            "change": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "70% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tissue",
+          "reagent": "50% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dehydrate",
+        "parameters": {
+          "container": "tissue slides",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "change": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: fix (container: tissue (<3mm thick), reagent: 10% formalin or other fixatives, temperature: room temperature, duration: 24-48 h, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='tissue', reagent='running tap water', duration='1 h')\ndehydrate(container='tissue', reagent='70% alcohol', duration='45 min')\nclear(container='tissue', reagent='xylene', duration='1 h', change='1/2')\nclear(container='tissue', reagent='xylene', duration='1 h', change='2/2')\nimmerse(container='tissue', reagent='paraffin', duration='1 h', change='1/3')\nimmerse(container='tissue', reagent='paraffin', duration='1 h', change='2/3')\nimmerse(container='tissue', reagent='paraffin', duration='1 h', change='3/3')\n\n### MANUAL SECTION ###\n# MANUAL: embed (container: tissue, reagent: paraffin block, other: {})\n# MANUAL: section (container: paraffin-embedded tissue block, other: {'thickness': '5-8 \u00b5m', 'equipment': 'microtome'})\n\n### AUTOMATED SECTION ###\nfloat(container='sections', reagent='distilled water', temperature='40\u00b0C', equipment='water bath')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: sections, reagent: glass slides (Superfrost Plus), other: {})\n\n### AUTOMATED SECTION ###\ndry(container='slides', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: slides, temperature: room temperature, duration: until ready for use, other: {})\n\n### AUTOMATED SECTION ###\ndeparaffinize(container='slides', reagent='xylene', duration='5 min', change='1/2')\ndeparaffinize(container='slides', reagent='xylene', duration='5 min', change='2/2')\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: slides, reagent: blocking buffer, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='slides', reagent='100% alcohol', duration='3 min', change='1/2')\ntransfer(container='slides', reagent='100% alcohol', duration='3 min', change='2/2')\nincubate(container='sections', reagent='3% H2O2 solution in methanol', temperature='room temperature', duration='10 min', purpose='block endogenous peroxidase activity')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='1/2')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='2/2')\nretrieve(container='slides', reagent='citrate buffer', volume='300 ml', temperature='95-100\u00b0C', duration='10 min', pH='6.0', optional=True)\ncool(container='slides', temperature='room temperature', duration='20 min')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='1/2')\nrinse(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='2/2')\napply(container='sections on slides', reagent='blocking buffer (e.g. 10% fetal bovine serum in PBS)', volume='100 \u00b5l', optional=True)\nincubate(container='sections on slides', reagent='blocking buffer', volume='100 \u00b5l', temperature='room temperature', duration='1 h', chamber='humidified', optional=True)\napply(container='sections on slides', reagent='primary antibody (appropriately diluted in antibody dilution buffer)', volume='100 \u00b5l')\nincubate(container='sections on slides', reagent='primary antibody', volume='100 \u00b5l', temperature='room temperature', duration='1 h', chamber='humidified')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='1/2')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='2/2')\napply(container='sections on slides', reagent='biotinylated secondary antibody (appropriately diluted in antibody dilution buffer)', volume='100 \u00b5l')\nincubate(container='sections on slides', reagent='biotinylated secondary antibody', volume='100 \u00b5l', temperature='room temperature', duration='30 min', chamber='humidified')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='1/2')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='2/2')\napply(container='sections on slides', reagent='Sav-HRP conjugates (appropriately diluted in antibody dilution buffer)', volume='100 \u00b5l', protect_from_light=True)\nincubate(container='sections on slides', reagent='Sav-HRP conjugates', volume='100 \u00b5l', temperature='room temperature', duration='30 min', chamber='humidified', protect_from_light=True)\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='1/2')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='5 min', change='2/2')\napply(container='sections on slides', reagent='DAB substrate solution (0.05% DAB - 0.015% H2O2 in PBS, freshly made)', volume='100 \u00b5l')\ndevelop(container='sections on slides', reagent='DAB substrate solution', duration='< 5 min', until_desired_color_intensity=True)\nwash(container='slides', reagent='PBS', volume='300 ml', duration='2 min', change='1/3')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='2 min', change='2/3')\nwash(container='slides', reagent='PBS', volume='300 ml', duration='2 min', change='3/3')\ncounterstain(container='slides', reagent='Hematoxylin (e.g. Gill\u2019s Hematoxylin)', duration='1-2 min', optional=True)\nrinse(container='slides', reagent='running tap water', duration='> 15 min')\ndehydrate(container='tissue slides', reagent='95% alcohol', duration='5 min', change='1/2')\ndehydrate(container='tissue slides', reagent='95% alcohol', duration='5 min', change='2/2')\nclear(container='tissue slides', reagent='xylene', coverslip='mounting solution (e.g. Permount)', change='1/3')\nclear(container='tissue slides', reagent='xylene', coverslip='mounting solution (e.g. Permount)', change='2/3')\nclear(container='tissue slides', reagent='xylene', coverslip='mounting solution (e.g. Permount)', change='3/3')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: tissue sections, other: {'method': 'microscopy'})\n\n### AUTOMATED SECTION ###\ndehydrate(container='tissue', reagent='80% alcohol', duration='45 min')\ndehydrate(container='tissue', reagent='95% alcohol', duration='45 min')\ndehydrate(container='tissue', reagent='100% alcohol', duration='1 h', change='1/3')\ndehydrate(container='tissue', reagent='100% alcohol', duration='1 h', change='2/3')\ndehydrate(container='tissue', reagent='100% alcohol', duration='1 h', change='3/3')\ntransfer(container='tissue', reagent='95% alcohol', duration='3 min')\ntransfer(container='tissue', reagent='70% alcohol', duration='3 min')\ntransfer(container='tissue', reagent='50% alcohol', duration='3 min')\ndehydrate(container='tissue slides', reagent='100% alcohol', duration='5 min', change='1/2')\ndehydrate(container='tissue slides', reagent='100% alcohol', duration='5 min', change='2/2')",
+    "source_file": "protocol_220.txt"
+  }
+]

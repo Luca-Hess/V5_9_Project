@@ -1,0 +1,494 @@
+[
+  {
+    "protocol": "Diatom Chloroplast Isolation Steps\nGrow diatom culture in autoclaved seawater media (e.g. f/2 media).\n[Protocol was developed with cells grown in f/2 medium to a density of ~1x106 cells/mL - optimization may be necessary for cells achieving a lower cell density]Gently filter culture through a 2 \u03bcm 47 mM filter.\nPeriodically, as filtration slows due to growing biomass on the filter, place filters in 50 ml of media used for growth to gently was cells from filter.\nRepeat until all culture is filtered and cells resuspended.\nRemove filters from tubes and centrifuge @ 1200 x g for 5 minutes to pellet cells.\nGently decant media.\nResuspend pellet in ~7ml 10M NH4F. \nVortex periodically while incubating tube on ice for 10 minutes.\nCentrifuge @1200 x g @ 4\u00b0C for 5 min and pour off NH4F.\nResuspend and rinse pellet 3x with isolation buffer (5-7 mls), centrifuge @1200 x g @4\u00b0C in between rinses.\nResuspend pellet in 1 ml cold isolation buffer.\nSonicate @ 10W for 10 s. \nPrepare 2 two-step Percoll gradients (in 15 ml COREX tubes).\nAdd 2 ml Bottom Layer Solution (80% Percoll) to 15 ml corex tube.\nApply 10 \u03bcl of gel loading dye the Top Layer Solution (40% Percoll) and gently add 4 ml Top Layer to the 80% Percoll layer using a Pasteur Pipette.\nLoad homogenate from step 9 (Silica Frustrule Removal) carefully onto the top of each two-step Percoll gradient with a Pasteur pipette.\nCentrifuge in swing-out rotor at 1500 x g for ten minutes brake off (@4\u00b0C).R\necover intact chloroplasts (bottom layer) using a Pasteur Pipette.\nAdd to sterile 15 ml corex tube.\nWash twice with cold isolation buffer (without added BSA) as below:\nAdd buffer.\nCentrifuge in a swing out rotor at 1000 x g @4\u00b0C for five minutes (brake on).\nDiscard Supernatant.\nUse a soft paintbrush to carefully resuspend pelleted plastids in a small amount of cold isolation buffer (or alternate preservation buffer of your choice). \n[soft paintbrush is specified so that you do not disrupt the fragile exposed plastids]. \nUse phase contrast microscopy to visualize and confirm successful extraction of intact chloroplasts.\nPlastid enrichment can be followed by subsequent protein extraction and gel electrophoresis on SDS PAGE gels for relative enrichment of RuBisCO in the plastid fraction.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": "diatom culture in autoclaved seawater media (e.g. f/2 media)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_density": "~1x10^6 cells/mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "2 \u03bcm",
+            "filter_concentration": "47 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "50 ml tube",
+          "reagent": "media used for growth",
+          "volume": "50 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently wash cells from filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "all culture is filtered and cells resuspended"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "filters",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "1200 x g",
+          "other": {
+            "purpose": "pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in 10M NH4F",
+          "volume": "~7 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "periodically during incubation",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "1200 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour off",
+        "parameters": {
+          "container": null,
+          "reagent": "NH4F",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in isolation buffer",
+          "volume": "5-7 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "3x"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": "1200 x g",
+          "other": {
+            "repeat": "in between rinses"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in cold isolation buffer",
+          "volume": "1 ml",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 s",
+          "speed": "10W",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "15 ml COREX tubes",
+          "reagent": "Percoll gradients",
+          "volume": "2 tubes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "two-step"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 ml corex tube",
+          "reagent": "Bottom Layer Solution (80% Percoll)",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "gel loading dye to Top Layer Solution (40% Percoll)",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 ml corex tube",
+          "reagent": "Top Layer Solution (40% Percoll)",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently add to 80% Percoll layer using Pasteur Pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Percoll gradient",
+          "reagent": "homogenate from step 9",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "carefully using Pasteur pipette"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "swing-out rotor",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 minutes",
+          "speed": "1500 x g",
+          "other": {
+            "brake": "off"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "bottom layer",
+          "reagent": "intact chloroplasts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "using Pasteur Pipette"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile 15 ml corex tube",
+          "reagent": "intact chloroplasts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cold isolation buffer (without added BSA)",
+          "volume": null,
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "swing out rotor",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 minutes",
+          "speed": "1000 x g",
+          "other": {
+            "brake": "on"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pelleted plastids in cold isolation buffer (or alternate preservation buffer)",
+          "volume": "small amount",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "use soft paintbrush"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "visualize",
+        "parameters": {
+          "container": null,
+          "reagent": "intact chloroplasts",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "phase contrast microscopy"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "protein from plastid fraction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "SDS PAGE gels",
+          "reagent": "protein extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "relative enrichment of RuBisCO"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (reagent: diatom culture in autoclaved seawater media (e.g. f/2 media), other: {'cell_density': '~1x10^6 cells/mL'})\n\n### AUTOMATED SECTION ###\nfilter(reagent='culture', filter_size='2 \u03bcm', filter_concentration='47 mM')\nwash(container='50 ml tube', reagent='media used for growth', volume='50 ml', method='gently wash cells from filter')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'until': 'all culture is filtered and cells resuspended'})\n# MANUAL: remove (container: tubes, reagent: filters, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='5 minutes', speed='1200 x g', purpose='pellet cells')\n\n### MANUAL SECTION ###\n# MANUAL: decant (reagent: media, other: {'method': 'gently'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet in 10M NH4F', volume='~7 ml')\nvortex(container='tube', duration='periodically during incubation')\nincubate(container='tube', temperature='on ice', duration='10 minutes')\ncentrifuge(temperature='4\u00b0C', duration='5 min', speed='1200 x g')\n\n### MANUAL SECTION ###\n# MANUAL: pour off (reagent: NH4F, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet in isolation buffer', volume='5-7 ml', repeat='3x')\ncentrifuge(temperature='4\u00b0C', speed='1200 x g', repeat='in between rinses')\nresuspend(reagent='pellet in cold isolation buffer', volume='1 ml', temperature='cold')\n\n### MANUAL SECTION ###\n# MANUAL: sonicate (duration: 10 s, speed: 10W, other: {})\n# MANUAL: prepare (container: 15 ml COREX tubes, reagent: Percoll gradients, volume: 2 tubes, other: {'type': 'two-step'})\n\n### AUTOMATED SECTION ###\nadd(container='15 ml corex tube', reagent='Bottom Layer Solution (80% Percoll)', volume='2 ml')\napply(reagent='gel loading dye to Top Layer Solution (40% Percoll)', volume='10 \u03bcl')\nadd(container='15 ml corex tube', reagent='Top Layer Solution (40% Percoll)', volume='4 ml', method='gently add to 80% Percoll layer using Pasteur Pipette')\n\n### MANUAL SECTION ###\n# MANUAL: load (container: Percoll gradient, reagent: homogenate from step 9, other: {'method': 'carefully using Pasteur pipette'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='swing-out rotor', temperature='4\u00b0C', duration='10 minutes', speed='1500 x g', brake='off')\n\n### MANUAL SECTION ###\n# MANUAL: recover (container: bottom layer, reagent: intact chloroplasts, other: {'method': 'using Pasteur Pipette'})\n\n### AUTOMATED SECTION ###\nadd(container='sterile 15 ml corex tube', reagent='intact chloroplasts')\nwash(reagent='cold isolation buffer (without added BSA)', temperature='cold', repeat='twice')\nadd(reagent='buffer')\ncentrifuge(container='swing out rotor', temperature='4\u00b0C', duration='5 minutes', speed='1000 x g', brake='on')\n\n### MANUAL SECTION ###\n# MANUAL: discard (reagent: supernatant, other: {})\n# MANUAL: resuspend (reagent: pelleted plastids in cold isolation buffer (or alternate preservation buffer), volume: small amount, temperature: cold, other: {'method': 'use soft paintbrush'})\n# MANUAL: visualize (reagent: intact chloroplasts, other: {'method': 'phase contrast microscopy'})\n# MANUAL: extract (reagent: protein from plastid fraction, other: {})\n# MANUAL: run (container: SDS PAGE gels, reagent: protein extract, other: {'purpose': 'relative enrichment of RuBisCO'})",
+    "source_file": "protocol_519.txt"
+  }
+]

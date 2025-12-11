@@ -1,0 +1,114 @@
+[
+  {
+    "protocol": "Sea stars bacterial sampling\nCollected sea stars by hand.\nRinse the location for sampling of the star with sterile seawater to remove any transient microbes.\nThis is important since the stars are in constant contact with environmental microbes and our sequencing technique is very sensitive; therefore, rinsing reduces noise.\nFor healthy individuals the sampling site (where the swabbing will occur) should be approximately 15 by 10 cm.\nRemove a clean sterile swab from its wrapping and the cotton tip should be applied to the previously rinsed sample location.\nThe swab should be pulled across the sample location with moderate pressure.\nOne \u2018swab\u2019 consists of pulling the swab back and forth one; this should be done 10 times.\nThe swab should be placed into a labeled sterile screw cap tube and then kept on ice until it can be frozen at -80\u00b0.\nSwabs are then ready for DNA extraction.\nPreviously we have used a MoBio PowerSoil Kit.",
+    "actions": [
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "sampling site on sea star"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "sterile swab wrapping",
+          "reagent": "sterile swab",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile swab (cotton tip)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "previously rinsed sample location on sea star"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pull",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile swab",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "moderate pressure",
+          "other": {
+            "location": "sample location",
+            "repetitions": "10 times (back and forth)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "labeled sterile screw cap tube",
+          "reagent": "used swab",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "sterile screw cap tube (with swab)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "until frozen at -80\u00b0C",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "sterile screw cap tube (with swab)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: rinse (reagent: sterile seawater, other: {'location': 'sampling site on sea star'})\n# MANUAL: remove (container: sterile swab wrapping, reagent: sterile swab)\n# MANUAL: apply (reagent: sterile swab (cotton tip), other: {'location': 'previously rinsed sample location on sea star'})\n# MANUAL: pull (reagent: sterile swab, speed: moderate pressure, other: {'location': 'sample location', 'repetitions': '10 times (back and forth)'})\n# MANUAL: place (container: labeled sterile screw cap tube, reagent: used swab)\n\n### AUTOMATED SECTION ###\nkeep(container='sterile screw cap tube (with swab)', temperature='on ice', duration='until frozen at -80\u00b0C')\nfreeze(container='sterile screw cap tube (with swab)', temperature='-80\u00b0C')",
+    "source_file": "protocol_68.txt"
+  }
+]

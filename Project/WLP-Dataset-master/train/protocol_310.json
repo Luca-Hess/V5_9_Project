@@ -1,0 +1,349 @@
+[
+  {
+    "protocol": "Detecting Fungal Infections in Almonds\nManually select\u00a0almond kernel samples that are pasteurized and shelled.\nAs mentioned in the 'Before Start Instructions', the almond kernels should be collected from multiple harvest cycles.\nThese particular samples were obtained from the 2012 and 2013 almond seasons.\nThe samples should be shelled and should not have any type of physical damage or any marks.\nRecord weight and size of almond kernels. \nSeparate the samples into two groups.\nOut of the 550 almond kernels collected 460 of those will be infected with two types of fungi that commonly affect almond crops.\n230 will be infected with\u00a0A. flavus\u00a0and another 230 will be infected with\u00a0A. parasiticus.\nThe remaining 90 kernels will remain uninfected and will serve as a control group.\nObtain A. flavus and A. parasiticus isolates to infect\u00a0almonds.\nThese two types of fungi were chosen due to their well known colonization on the surface of almond kernels.\nPrior to inoculation, take the fungi isolates and grow them in culture.\nUse 5% reconstituted tomato juice agar, in this case it will be V8 juice agar, and grow each isolate for 6 days at a temperature\u00a0of 31\u00a0\u00b0C in a dark environment.\nOnce fungal isolates have been grown, conidia is collected using a sterilized cotton swab and is deposited in sterile deionized\u00a0water.\nA haemocytometer will be used to quantify the water solution with conidia and it will then be diluted to a concentration\u00a0of 105 spores per ml-1.\nCreate incision on the bottom right of almond kernels using a\u00a0B-D\u00ae\u00a016G1 PrecisionGlide\u00aeNeedle.\nThis incision serves as the point of infection where the conidia in water would be placed.\nAfter making the incision on the surface of the almond, the kernels will be sterilized by submerging them in 10% bleach solution for a period of 7 minutes.\nThe kernels will then be rinsed three times with sterile deionized water and will be submerged a second time into a Dichloran solution for 2 seconds.\nRemove moisture from surface of almonds by blotting them and move them to a biological safety cabinet for a period of 10 to 15 minutes.\nInoculate each almond\u00a0with\u00a05\u00a0\u03bcl of the fungi solution.As mentioned earlier, almonds will be in two separate groups: infected and control.\nThe infected almonds will be inoculated with either A. flavus or A. parasiticus.\nOnce the almonds have been inoculated, add deionized water to the container where they are located and incubate them for a period of 7 days at a temperature of 31\u00b0 in a dark place.\nOnce the incubation period is over, wash almonds with deionized water to remove any traces of fungi spores from the surface.\nPlace almond kernels in a fume hood for a period of 12 hours.\nOnce the 12 hours are up keep kernels at a constant temperature of 2.6\u00b0C.\nTake almond and put it under the spectrophotometer, then place black optic mask in the space between these two.\nScan the surface of the almond kernel using the spectrophotometer, for each individual almond kernel take 32 scans of the face across a wavelength range of\u00a0400\u00a0nm to 2500\u00a0nm, in 2-nm increments.\nUse statistical analysis software to analyze the data gathered from all three groupings of almonds.",
+    "actions": [
+      {
+        "action": "record",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": [
+              "weight",
+              "size"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "groups": 2
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "obtain",
+        "parameters": {
+          "container": null,
+          "reagent": "A. flavus and A. parasiticus isolates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "V8 juice agar plate",
+          "reagent": "fungal isolates",
+          "volume": null,
+          "temperature": "31\u00b0C",
+          "duration": "6 days",
+          "speed": null,
+          "other": {
+            "environment": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "conidia",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterilized cotton swab"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "deposit",
+        "parameters": {
+          "container": "sterile deionized water",
+          "reagent": "conidia",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "water solution with conidia",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "10^5 spores/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom right",
+            "tool": "B-D\u00ae 16G1 PrecisionGlide\u00ae Needle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "sterilize",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "10% bleach solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "7 minutes",
+          "speed": null,
+          "other": {
+            "method": "submerge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "sterile deionized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "Dichloran solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "moisture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "blotting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 to 15 minutes",
+          "speed": null,
+          "other": {
+            "location": "biological safety cabinet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "fungi solution (A. flavus or A. parasiticus)",
+          "volume": "5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "groups": [
+              "infected",
+              "control"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "almond kernel container",
+          "reagent": "deionized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": "31\u00b0C",
+          "duration": "7 days",
+          "speed": null,
+          "other": {
+            "environment": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": "deionized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove fungi spores"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "12 hours",
+          "speed": null,
+          "other": {
+            "location": "fume hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "almond kernels",
+          "reagent": null,
+          "volume": null,
+          "temperature": "2.6\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "scan",
+        "parameters": {
+          "container": "almond kernel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "spectrophotometer",
+            "scans": 32,
+            "wavelength_range": "400 nm to 2500 nm",
+            "increment": "2 nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "data",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "statistical analysis software",
+            "groups": [
+              "infected",
+              "control"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: record (container: almond kernels, other: {'measurement': ['weight', 'size']})\n# MANUAL: separate (container: almond kernels, other: {'groups': 2})\n# MANUAL: obtain (reagent: A. flavus and A. parasiticus isolates, other: {})\n\n### AUTOMATED SECTION ###\ngrow(container='V8 juice agar plate', reagent='fungal isolates', temperature='31\u00b0C', duration='6 days', environment='dark')\n\n### MANUAL SECTION ###\n# MANUAL: collect (reagent: conidia, other: {'tool': 'sterilized cotton swab'})\n\n### AUTOMATED SECTION ###\ndeposit(container='sterile deionized water', reagent='conidia')\ndilute(container='water solution with conidia', final concentration='10^5 spores/ml')\n\n### MANUAL SECTION ###\n# MANUAL: create (container: almond kernels, other: {'location': 'bottom right', 'tool': 'B-D\u00ae 16G1 PrecisionGlide\u00ae Needle'})\n\n### AUTOMATED SECTION ###\nsterilize(container='almond kernels', reagent='10% bleach solution', duration='7 minutes', method='submerge')\nrinse(container='almond kernels', reagent='sterile deionized water', times=3)\nsubmerge(container='almond kernels', reagent='Dichloran solution', duration='2 seconds')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: almond kernels, reagent: moisture, other: {'method': 'blotting'})\n\n### AUTOMATED SECTION ###\nmove(container='almond kernels', duration='10 to 15 minutes', location='biological safety cabinet')\ninoculate(container='almond kernels', reagent='fungi solution (A. flavus or A. parasiticus)', volume='5 \u03bcl', groups=['infected', 'control'])\nadd(container='almond kernel container', reagent='deionized water')\nincubate(container='almond kernels', temperature='31\u00b0C', duration='7 days', environment='dark')\nwash(container='almond kernels', reagent='deionized water', purpose='remove fungi spores')\nplace(container='almond kernels', duration='12 hours', location='fume hood')\nkeep(container='almond kernels', temperature='2.6\u00b0C')\nscan(container='almond kernel', instrument='spectrophotometer', scans=32, wavelength_range='400 nm to 2500 nm', increment='2 nm')\nanalyze(container='data', software='statistical analysis software', groups=['infected', 'control'])",
+    "source_file": "protocol_310.txt"
+  }
+]

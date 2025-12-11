@@ -1,0 +1,419 @@
+[
+  {
+    "protocol": "Construction of shotgun libraries from RNA virus assemblages\nCesium chloride gradient is conducted to purify viruses from viral concentrate of seawater as described in others chapters of this book (Wommack et al. 2010, this volume; Steward and Culley 2010, this volume).\nEach density fraction is then extracted with the QIAamp Viral RNA Mini kit (Qiagen) as directed by the manufacturer with the following exception (see annotation).\nRemove contaminating DNA from RNA preparations with the Turbo DNAfree kit (Applied Biosystems) as described in the protocol provided with the kit.\nIn preparation for cDNA synthesis, 10 \u00b5L purified RNA viral template is mixed with a final dNTP concentration of 0.2 mM and 1 \u00b5M and 5 nM final concentrations of FR26RV-N and FR40RV-T primer, respectively.\nThe reaction is heated to 65\u00b0C then cooled on ice to allow the primers to anneal.\nWhile still on ice, DTT (0.5 mM final conc.) is added to the reaction as an enzyme stabilization reagent with 40 U RNase OUT (Invitrogen) to protect the sample form RNAse activity.\nThe complementary DNA strand is synthesized with 200 U of Superscript III (Invitrogen) reverse transcriptase.\nThe reaction is incubated initially at 25\u00b0C for 10 min so that the hexamer 3\u2032 end of primer FR26RV-N and the poly(T)20 3\u2032 end of primer FR40RV-T remain annealed to the template while cDNA synthesis commences.\nThe temperature is then increased to 50\u00b0C, the temperature at which Superscript III\u2019s processivity is highest, for 60 min.\nAfter the hour-long incubation at 50\u00b0C, the first strand synthesis reaction is heated immediately to 94\u00b0C for 3 min and then rapidly cooled on ice.\nA complementary second strand is subsequently synthesized at 37\u00b0C for 60 min with the addition of 2.5 U of Klenow Fragment, 3\u2032-5\u2032 exo \u2013 (New England Biolabs).\nThe Klenow reaction is terminated with a final incubation at 75\u00b0C for 10 min.\nOne PCR reaction contains 5 \u00b5L of template taken directly from the second strand synthesis reaction, 40 pM of FR20RV primer (see Table 1), a final dNTP concentration of 0.2 mM, 1 \u00d7 Gold buffer, 2.5 mM MgCl2, and 2.5 U of Ampligold DNA polymerase (Applied Biosystems) in a final volume of 50 \u00b5L.\nThe reaction is incubated at 94\u00b0C for 10 min to fully denature the template and activate the hot start enzyme.\nFollowed by 35 cycles of denaturation at 94\u00b0C for 1 min.\nAnnealing at 65\u00b0C for 1 min.\nExtension at 72\u00b0C for 2 min.\nA\u00a0final extension for 13 min that permits the completion of complementary strand synthesis.\nBefore gel separation, we purify and concentrate the PCR reactions with a MinElute PCR cleanup column (Qiagen) as described by the manufacturer.\nPurified PCR products are loaded onto a 1% agarose gel containing 1 \u00d7 SYBR safe stain (Invitrogen) and 0.5 \u00d7 TBE buffer.\nBands of DNA of the appropriate size range are excised and purified with a MinElute Gel Extraction kit (Qiagen) according to the manufacturer\u2019s instructions.\nIf the sample is to be cloned for Sanger sequencing, we recommend eluting DNA from the column with three washes of 10 \u00b5L nuclease-free water in preparation for the PCRTerminator (Lucigen) end repair reaction.\nFor the cloning protocol, please refer to the \u201cCloning and sequencing\u201d section of \"A degenerate primer reverse transcriptionpolymerase chain reaction\u2013based protocol to determine the diversity of picorna-like viruses\".\nThe relevant virus-containing gradient fractions are collected.\nThe CsCl in the Virus-containing gradient fractions are removed by buffer exchange using a centrifugal ultrafiltration unit with a nominal molecular weight cutoff of 30 KD to 100 KD (Microcon, Millipore or Nanosep, Pall Life Sciences) as described in Steward and Culley (2010).\nViruses are then recovered by eluting in 3 \u00d7 50 \u00b5L of 0.02-filtered SM buffer.",
+    "actions": [
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "density fraction",
+          "reagent": "QIAamp Viral RNA Mini kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manufacturer_protocol": "Qiagen"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "RNA preparation",
+          "reagent": "Turbo DNAfree kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manufacturer_protocol": "Applied Biosystems"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "purified RNA viral template, dNTPs, FR26RV-N primer, FR40RV-T primer",
+          "volume": "10 \u00b5L RNA template, 0.2 mM dNTP, 1 \u00b5M FR26RV-N, 5 nM FR40RV-T",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube (on ice)",
+          "reagent": "DTT, RNase OUT",
+          "volume": "0.5 mM DTT (final), 40 U RNase OUT",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "enzyme stabilization, RNAse protection"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Superscript III reverse transcriptase",
+          "volume": "200 U",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "cDNA synthesis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "primer annealing, cDNA synthesis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "purpose": "cDNA synthesis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "purpose": "denaturation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rapid cooling"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Klenow Fragment, 3\u2032-5\u2032 exo \u2013",
+          "volume": "2.5 U",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manufacturer": "New England Biolabs"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "purpose": "second strand synthesis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "terminate Klenow reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "template, FR20RV primer, dNTPs, Gold buffer, MgCl2, Ampligold DNA polymerase",
+          "volume": "5 \u00b5L template, 40 pM FR20RV, 0.2 mM dNTP, 1\u00d7 Gold buffer, 2.5 mM MgCl2, 2.5 U Ampligold DNA polymerase, final volume 50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "denature template, activate enzyme"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cycle",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C, 65\u00b0C, 72\u00b0C",
+          "duration": "1 min (denaturation), 1 min (annealing), 2 min (extension)",
+          "speed": null,
+          "other": {
+            "cycles": 35
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "13 min",
+          "speed": null,
+          "other": {
+            "purpose": "final extension"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "PCR reaction",
+          "reagent": "MinElute PCR cleanup column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manufacturer_protocol": "Qiagen"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "purified PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "gel_concentration": "1%",
+            "stain": "1\u00d7 SYBR safe",
+            "buffer": "0.5\u00d7 TBE"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "excise",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "DNA bands",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "size_range": "appropriate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "excised gel bands",
+          "reagent": "MinElute Gel Extraction kit",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "manufacturer_protocol": "Qiagen"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "MinElute column",
+          "reagent": "nuclease-free water",
+          "volume": "3 \u00d7 10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "preparation for PCRTerminator end repair"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "virus-containing gradient fractions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "exchange",
+        "parameters": {
+          "container": "centrifugal ultrafiltration unit",
+          "reagent": "virus-containing gradient fractions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer_exchange": true,
+            "MWCO": "30 KD to 100 KD",
+            "devices": "Microcon, Millipore or Nanosep, Pall Life Sciences"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "centrifugal ultrafiltration unit",
+          "reagent": "0.02-filtered SM buffer",
+          "volume": "3 \u00d7 50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "virus recovery"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nextract(container='density fraction', reagent='QIAamp Viral RNA Mini kit', manufacturer_protocol='Qiagen')\nremove(container='RNA preparation', reagent='Turbo DNAfree kit', manufacturer_protocol='Applied Biosystems')\nmix(container='reaction tube', reagent='purified RNA viral template, dNTPs, FR26RV-N primer, FR40RV-T primer', volume='10 \u00b5L RNA template, 0.2 mM dNTP, 1 \u00b5M FR26RV-N, 5 nM FR40RV-T')\nheat(container='reaction tube', temperature='65\u00b0C')\ncool(container='reaction tube', temperature='on ice')\nadd(container='reaction tube (on ice)', reagent='DTT, RNase OUT', volume='0.5 mM DTT (final), 40 U RNase OUT', purpose='enzyme stabilization, RNAse protection')\n\n### MANUAL SECTION ###\n# MANUAL: synthesize (container: reaction tube, reagent: Superscript III reverse transcriptase, volume: 200 U, other: {'purpose': 'cDNA synthesis'})\n\n### AUTOMATED SECTION ###\nincubate(container='reaction tube', temperature='25\u00b0C', duration='10 min', purpose='primer annealing, cDNA synthesis')\nincubate(container='reaction tube', temperature='50\u00b0C', duration='60 min', purpose='cDNA synthesis')\nheat(container='reaction tube', temperature='94\u00b0C', duration='3 min', purpose='denaturation')\ncool(container='reaction tube', temperature='on ice', purpose='rapid cooling')\nadd(container='reaction tube', reagent='Klenow Fragment, 3\u2032-5\u2032 exo \u2013', volume='2.5 U', manufacturer='New England Biolabs')\nincubate(container='reaction tube', temperature='37\u00b0C', duration='60 min', purpose='second strand synthesis')\nincubate(container='reaction tube', temperature='75\u00b0C', duration='10 min', purpose='terminate Klenow reaction')\nmix(container='PCR tube', reagent='template, FR20RV primer, dNTPs, Gold buffer, MgCl2, Ampligold DNA polymerase', volume='5 \u00b5L template, 40 pM FR20RV, 0.2 mM dNTP, 1\u00d7 Gold buffer, 2.5 mM MgCl2, 2.5 U Ampligold DNA polymerase, final volume 50 \u00b5L')\nincubate(container='PCR tube', temperature='94\u00b0C', duration='10 min', purpose='denature template, activate enzyme')\ncycle(container='PCR tube', temperature='94\u00b0C, 65\u00b0C, 72\u00b0C', duration='1 min (denaturation), 1 min (annealing), 2 min (extension)', cycles=35)\nincubate(container='PCR tube', temperature='72\u00b0C', duration='13 min', purpose='final extension')\npurify(container='PCR reaction', reagent='MinElute PCR cleanup column', manufacturer_protocol='Qiagen')\n\n### MANUAL SECTION ###\n# MANUAL: load (container: agarose gel, reagent: purified PCR products, other: {'gel_concentration': '1%', 'stain': '1\u00d7 SYBR safe', 'buffer': '0.5\u00d7 TBE'})\n# MANUAL: excise (container: agarose gel, reagent: DNA bands, other: {'size_range': 'appropriate'})\n\n### AUTOMATED SECTION ###\npurify(container='excised gel bands', reagent='MinElute Gel Extraction kit', manufacturer_protocol='Qiagen')\nelute(container='MinElute column', reagent='nuclease-free water', volume='3 \u00d7 10 \u00b5L', purpose='preparation for PCRTerminator end repair')\ncollect(container='virus-containing gradient fractions')\nexchange(container='centrifugal ultrafiltration unit', reagent='virus-containing gradient fractions', buffer_exchange=True, MWCO='30 KD to 100 KD', devices='Microcon, Millipore or Nanosep, Pall Life Sciences')\nelute(container='centrifugal ultrafiltration unit', reagent='0.02-filtered SM buffer', volume='3 \u00d7 50 \u00b5L', purpose='virus recovery')",
+    "source_file": "protocol_129.txt"
+  }
+]

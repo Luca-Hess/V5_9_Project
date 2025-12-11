@@ -1,0 +1,537 @@
+[
+  {
+    "protocol": "Gel Electrophoresis\nPour 100 mL of 1X TAE Buffer into an Erlenmeyer Flask.\nWeigh out 1 g Agarose and add it to the Erlenmeyer Flask.\nPlace Erlenmeyer Flask in a microwave on high power for two minutes or until solution is clear and agarose is completely dissolved, occasionally stirring.\nRemove Erlenmeyer Flask from microwave and let it sit on the lab bench to cool just until you can comfortably pick it up.\nPlace gel tray on clamp and clamp securely.\nAdd well plates where you want wells and use a level to ensure it is balanced.\nPour contents of the Erlemeyer Flask into the gel tray and let it sit for 10 minutes, or until\u00a0solid.\nRemove the well plates carefully as to not tear the gel and remove the tray from the clamp, but ensure the gel remains in the tray.\nPlace gel tray into gel electrophoresis apparatus with the wells closer to the negative/black end.\nPour additional TAE Buffer to fill each side of the apparatus and to create a thin layer of buffer covering the top of the gel.\nPipette 5\u00a0uL of the 1kb DNA Ladder with Loading Dye into a well.\nTypically this is placed into one of the wells near an edge.\nPipette your DNA, approximately 20 uL, with Loading Dye mixture into another well.\nRepeat for each sample.\nPlace lid on apparatus and plug cables into amplifier.\nSet amplifier to stay at a constant voltage of 70 V. Let run for 45\u00a0minutes or until the loading dye has sufficiently moved.\nRemove gel from gel tray after draining excess TAE Buffer.\nPlace gel into a bin with 1% Ethidium Bromide, ensuring the solution does not come into contact with skin.\nClean all surfaces that may have come in contact with ethidium bromide, place gloves in a bin labelled \"Ethidium Bromide\", and wash hands repeatedly afterwards.\nLet gel sit for 15 minutes.\nCarefully removing the gel, to avoid splashes, place on top of a UV light source with a camera.\nIn as short a time as is possible, turn on the UV light to capture a photograph of the gel.\nRemove band if purifying DNA.\nOtherwise, carefully dispose of the gel into a wastebin labelled \"Ethidium Bromide\".",
+    "actions": [
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": "1X TAE Buffer",
+          "volume": "100 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "Agarose",
+          "volume": "1 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": "Agarose",
+          "volume": "1 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "high power (microwave)",
+          "duration": "2 minutes or until solution is clear and agarose is dissolved",
+          "speed": null,
+          "other": {
+            "stirring": "occasionally"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "Erlenmeyer Flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": "until comfortable to touch",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "clamp"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "clamp",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "securely": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "well plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "desired wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "level",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ensure": "balanced"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "contents of Erlenmeyer Flask (agarose solution)",
+          "volume": "approx 100 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": "agarose gel",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes or until solid",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "well plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "clamp",
+            "ensure": "gel remains in tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "gel electrophoresis apparatus",
+            "orientation": "wells closer to negative/black end"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel electrophoresis apparatus",
+          "reagent": "additional TAE Buffer",
+          "volume": "enough to fill each side and cover gel",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "layer": "thin layer covering top of gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "well",
+          "reagent": "1kb DNA Ladder with Loading Dye",
+          "volume": "5 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "well near edge"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "well",
+          "reagent": "DNA sample with Loading Dye mixture",
+          "volume": "20 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "well",
+          "reagent": "DNA sample with Loading Dye mixture",
+          "volume": "20 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "each sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "lid",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "apparatus"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "plug",
+        "parameters": {
+          "container": "cables",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "amplifier"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "amplifier",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "voltage": "70 V",
+            "mode": "constant"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel electrophoresis apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "45 minutes or until loading dye has sufficiently moved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "gel tray after draining excess TAE Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bin with 1% Ethidium Bromide"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "ensure",
+        "parameters": {
+          "container": null,
+          "reagent": "Ethidium Bromide solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "does not contact skin": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "all surfaces",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contacted": "Ethidium Bromide"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gloves",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bin labelled 'Ethidium Bromide'"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "hands",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "repeatedly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true,
+            "avoid": "splashes"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "top of UV light source with camera"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "UV light",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as short as possible",
+          "speed": null,
+          "other": {
+            "capture": "photograph of gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "band",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "if": "purifying DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispose",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "wastebin labelled 'Ethidium Bromide'"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npour(container='Erlenmeyer Flask', reagent='1X TAE Buffer', volume='100 mL')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: Agarose, volume: 1 g, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Erlenmeyer Flask', reagent='Agarose', volume='1 g')\n\n### MANUAL SECTION ###\n# MANUAL: heat (container: Erlenmeyer Flask, temperature: high power (microwave), duration: 2 minutes or until solution is clear and agarose is dissolved, other: {'stirring': 'occasionally'})\n# MANUAL: cool (container: Erlenmeyer Flask, temperature: until comfortable to touch, other: {})\n# MANUAL: place (container: gel tray, other: {'location': 'clamp'})\n# MANUAL: clamp (container: gel tray, other: {'securely': True})\n# MANUAL: add (container: gel tray, reagent: well plates, other: {'location': 'desired wells'})\n# MANUAL: level (container: gel tray, other: {'ensure': 'balanced'})\n\n### AUTOMATED SECTION ###\npour(container='gel tray', reagent='contents of Erlenmeyer Flask (agarose solution)', volume='approx 100 mL')\nwait(container='gel tray', reagent='agarose gel', duration='10 minutes or until solid')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: well plates, other: {'carefully': True})\n# MANUAL: remove (container: gel tray, other: {'from': 'clamp', 'ensure': 'gel remains in tray'})\n# MANUAL: place (container: gel tray, other: {'location': 'gel electrophoresis apparatus', 'orientation': 'wells closer to negative/black end'})\n\n### AUTOMATED SECTION ###\npour(container='gel electrophoresis apparatus', reagent='additional TAE Buffer', volume='enough to fill each side and cover gel', layer='thin layer covering top of gel')\npipette(container='well', reagent='1kb DNA Ladder with Loading Dye', volume='5 uL', location='well near edge')\npipette(container='well', reagent='DNA sample with Loading Dye mixture', volume='20 uL')\nrepeat(container='well', reagent='DNA sample with Loading Dye mixture', volume='20 uL', for='each sample')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: lid, other: {'location': 'apparatus'})\n# MANUAL: plug (container: cables, other: {'into': 'amplifier'})\n\n### AUTOMATED SECTION ###\nset(container='amplifier', voltage='70 V', mode='constant')\nrun(container='gel electrophoresis apparatus', duration='45 minutes or until loading dye has sufficiently moved')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gel, other: {'from': 'gel tray after draining excess TAE Buffer'})\n# MANUAL: place (container: gel, other: {'location': 'bin with 1% Ethidium Bromide'})\n# MANUAL: ensure (reagent: Ethidium Bromide solution, other: {'does not contact skin': True})\n# MANUAL: clean (container: all surfaces, other: {'contacted': 'Ethidium Bromide'})\n# MANUAL: place (container: gloves, other: {'location': \"bin labelled 'Ethidium Bromide'\"})\n# MANUAL: wash (container: hands, duration: repeatedly, other: {})\n\n### AUTOMATED SECTION ###\nwait(container='gel', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gel, other: {'carefully': True, 'avoid': 'splashes'})\n# MANUAL: place (container: gel, other: {'location': 'top of UV light source with camera'})\n\n### AUTOMATED SECTION ###\nturn on(container='UV light', duration='as short as possible', capture='photograph of gel')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: band, other: {'if': 'purifying DNA'})\n# MANUAL: dispose (container: gel, other: {'location': \"wastebin labelled 'Ethidium Bromide'\"})",
+    "source_file": "protocol_19.txt"
+  }
+]

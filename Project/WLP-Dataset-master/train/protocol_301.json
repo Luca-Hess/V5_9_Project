@@ -1,0 +1,258 @@
+[
+  {
+    "protocol": "Treg Polarization of Mouse CD4+ Cells\nHarvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.\nTease lymph nodes through a sterile 70-\u00b5m nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).\nResuspend cells in complete medium and use your favorite method to isolate CD4+cells.\nCheckout Biocompare.com to find useful kits.\nPlate CD4+cells at 1.0 x 106/1ml/well.\nCulture cells for 5 days at 37\u00b0C, 5% CO2, in the presence ofanti-mouse CD28, clone 37.51 (3 \u00b5g/mL), recombinant mouse IL-2 (5 ng/mL), and recombinanthuman TGF-\u03b21 (5 ng/ml).\nOn day 3, if media is yellow, add 2 ml/well of fresh media.\nOn day 5, after harvesting, the cells are ready for staining.\nOn day 0, coat 12-well plate with anti-mouse CD3\u03b5, clone 145-2C11 (3 \u00b5g/ml).\nIncubate\u00a0at 37\u00b0C for 2 hours.\n(Alternatively, incubate at 4\u00b0C overnight.)\nAseptically decant antibody solution from the plate.\nWash plate with sterile PBS (wash 1/3).\nWash plate with sterile PBS (wash 2/3).\nWash plate with sterile PBS (wash 3/3).\nDiscard liquid.",
+    "actions": [
+      {
+        "action": "tease",
+        "parameters": {
+          "container": "70-\u00b5m nylon cell strainer",
+          "reagent": "lymph nodes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "incomplete RPMI containing 10% FCS"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "complete medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": null,
+          "reagent": "CD4+ cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "CD4+ cells",
+          "volume": "1 ml/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "1.0 x 10^6/well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "well plate",
+          "reagent": "CD4+ cells",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "5 days",
+          "speed": null,
+          "other": {
+            "CO2": "5%",
+            "additives": [
+              {
+                "name": "anti-mouse CD28, clone 37.51",
+                "concentration": "3 \u00b5g/mL"
+              },
+              {
+                "name": "recombinant mouse IL-2",
+                "concentration": "5 ng/mL"
+              },
+              {
+                "name": "recombinant human TGF-\u03b21",
+                "concentration": "5 ng/mL"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "well",
+          "reagent": "fresh media",
+          "volume": "2 ml/well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if media is yellow (on day 3)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "day": "5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "3 \u00b5g/ml",
+            "day": "0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "alternative": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "aseptically": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "sterile PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: tease (container: 70-\u00b5m nylon cell strainer, reagent: lymph nodes, other: {'medium': 'incomplete RPMI containing 10% FCS'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', medium='complete medium')\n\n### MANUAL SECTION ###\n# MANUAL: isolate (reagent: CD4+ cells)\n\n### AUTOMATED SECTION ###\nplate(container='well plate', reagent='CD4+ cells', volume='1 ml/well', cell_count='1.0 x 10^6/well')\nculture(container='well plate', reagent='CD4+ cells', temperature='37\u00b0C', duration='5 days', CO2='5%', additives=[{'name': 'anti-mouse CD28, clone 37.51', 'concentration': '3 \u00b5g/mL'}, {'name': 'recombinant mouse IL-2', 'concentration': '5 ng/mL'}, {'name': 'recombinant human TGF-\u03b21', 'concentration': '5 ng/mL'}])\nadd(container='well', reagent='fresh media', volume='2 ml/well', condition='if media is yellow (on day 3)')\n\n### MANUAL SECTION ###\n# MANUAL: harvest (reagent: cells, other: {'day': '5'})\n\n### AUTOMATED SECTION ###\ncoat(container='12-well plate', reagent='anti-mouse CD3\u03b5, clone 145-2C11', concentration='3 \u00b5g/ml', day='0')\nincubate(container='12-well plate', temperature='37\u00b0C', duration='2 hours')\nincubate(container='12-well plate', temperature='4\u00b0C', duration='overnight', alternative=True)\ndecant(container='12-well plate', reagent='antibody solution', aseptically=True)\nwash(container='12-well plate', reagent='sterile PBS', wash_number='1/3')\nwash(container='12-well plate', reagent='sterile PBS', wash_number='2/3')\nwash(container='12-well plate', reagent='sterile PBS', wash_number='3/3')\ndiscard(container='12-well plate', reagent='liquid')",
+    "source_file": "protocol_301.txt"
+  }
+]

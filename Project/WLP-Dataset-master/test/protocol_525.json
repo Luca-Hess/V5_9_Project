@@ -1,0 +1,167 @@
+[
+  {
+    "protocol": "DNA Precipitation Protocol\nAdd 2 volumes of ice cold ethanol, mix well.\nLet sit on ice 15-30 minutes.  \nMicrofuge at max speed, 20 minutes.\nCarefully remove supernatant and fill tube halfway with 70% ethanol. \nSpin at max speed for 2 minutes.\nRepeat the above step one time (2nd 70% wash).\nRemove as much ethanol as possible without disturbing the pellet Leave tube open on bench ~ 15 minutes.\u00a0  \nDissolve in TE buffer (~ pH 7.6).",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ice cold ethanol",
+          "volume": "2 volumes (relative to sample)",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15-30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "max speed",
+          "other": {
+            "type": "microfuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": "as much as possible",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "70% ethanol",
+          "volume": "halfway fill tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "tube",
+          "reagent": "70% ethanol",
+          "volume": "halfway fill tube",
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "max speed",
+          "other": {
+            "times": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ethanol",
+          "volume": "as much as possible without disturbing pellet",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "bench (room temperature, open tube)",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TE buffer (~pH 7.6)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='ice cold ethanol', volume='2 volumes (relative to sample)', temperature='ice cold')\nmix(container='tube')\nincubate(container='tube', temperature='on ice', duration='15-30 minutes')\ncentrifuge(container='tube', duration='20 minutes', speed='max speed', type='microfuge')\nremove(container='tube', reagent='supernatant', volume='as much as possible')\nadd(container='tube', reagent='70% ethanol', volume='halfway fill tube')\ncentrifuge(container='tube', duration='2 minutes', speed='max speed')\nrepeat(container='tube', reagent='70% ethanol', volume='halfway fill tube', duration='2 minutes', speed='max speed', times=1)\nremove(container='tube', reagent='ethanol', volume='as much as possible without disturbing pellet')\nincubate(container='tube', temperature='bench (room temperature, open tube)', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: dissolve (container: tube, reagent: TE buffer (~pH 7.6), other: {})",
+    "source_file": "protocol_525.txt"
+  }
+]

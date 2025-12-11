@@ -1,0 +1,101 @@
+[
+  {
+    "protocol": "Blunting Protocol (M0203)\nDissolve DNA in any 1X NEBuffer or T4 DNA Ligase Reaction Buffer.\nSupplement with 100 \u03bcM of each dNTP.\nAdd 1 unit of T4 DNA Polymerase per microgram DNA.\nIncubate 15 minutes at 12\u00b0C.\nStop reaction by adding EDTA to a final concentration of 10 mM.\nHeat for 20 minutes at 75\u00b0C (see references 1,2).",
+    "actions": [
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X NEBuffer or T4 DNA Ligase Reaction Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "supplement",
+        "parameters": {
+          "container": null,
+          "reagent": "dNTP (each)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "100 \u03bcM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "T4 DNA Polymerase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "1 unit per microgram DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "12\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "10 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: dissolve (reagent: DNA, other: {'buffer': '1X NEBuffer or T4 DNA Ligase Reaction Buffer'})\n\n### AUTOMATED SECTION ###\nsupplement(reagent='dNTP (each)', concentration='100 \u03bcM')\nadd(reagent='T4 DNA Polymerase', amount='1 unit per microgram DNA')\nincubate(temperature='12\u00b0C', duration='15 minutes')\nadd(reagent='EDTA', final concentration='10 mM')\nheat(temperature='75\u00b0C', duration='20 minutes')",
+    "source_file": "protocol_225.txt"
+  }
+]

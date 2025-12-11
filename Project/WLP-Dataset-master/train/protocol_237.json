@@ -1,0 +1,353 @@
+[
+  {
+    "protocol": "Direct-Blot\u2122 Western Blotting Protocol\nPlace cells in a microcentrifuge tube and centrifuge to collect the cell pellet.\nLyse the cell pellet with 100 \u00b5l of lysis buffer on ice for 30 min (For 1 X 106 cells, lyse with 100 \u00b5lof lysis buffer).\nCentrifuge at 14,000 rpm (16,000 x g) for 10 minutes at 4\u00b0C.\nTransfer the supernatant to a new tube and discard the pellet.\nRemove 20 \u00b5l of supernatant and mix with 20 \u00b5l of 2x sample buffer.\nBoil for 5 min.\nCool at room temperature for 5 minutes.\nMicrocentrifuge for 5 minutes.\nLoad up to 40 \u00b5l of sample to each well of a 1.5 mm thick gel.\nSet gel running conditions according to the manufacturer\u2019s instructions.\nTransfer the proteins to anitrocellulose or PVDF membrane with variable power settings according to the manufacturer\u2019s instructions.\nRemove the blotted membrane from the transfer apparatus and immediately place in blocking buffer consisting of 5% nonfat dry milk/TBS-T. Incubate the blot for 1 hour at room temperature, or overnight at 4\u00b0C with agitation.\nDilute the Direct-Blot\u2122 antibody to the recommended concentration/dilution in 5% nonfat dry milk/TBS-T** (usually at a 1:1000-1:2000 dilution).\nPlace the membrane in the Direct-Blot\u2122 antibody solution and incubate for 2 hours at room temperature, or overnight at 4\u00b0C with agitation.\nWash\u00a0 for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).\n[wash 1/3] Wash\u00a0 for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).\n[wash 2/3] Wash\u00a0 for 5 minutes with Wash Buffer (TBS containing 0.1% Tween-20).\n[wash 3/3] Incubate membrane (protein side up) with 10 ml of ECL (enhanced chemiluminescence substrate) for 1-2 minutes.\nThe final volume required is 0.125 ml/cm2.\nDrain off the excess detection reagent, wrap up the blots, and gently smooth out any air bubbles.\nPlace the wrapped blots, protein side up, in an X-ray film cassette and expose to x-ray film.\nExposures can vary from 5 seconds to 60 minutes.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "collect cell pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "lyse",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "lysis buffer",
+          "volume": "100 \u00b5l",
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "cells": "1 x 10^6"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "14,000 rpm (16,000 x g)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant and 2x sample buffer",
+          "volume": "20 \u00b5l supernatant + 20 \u00b5l 2x sample buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "boiling",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel (1.5 mm thick)",
+          "reagent": "sample",
+          "volume": "up to 40 \u00b5l per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "gel apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "manufacturer\u2019s instructions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "membrane (nitrocellulose or PVDF)",
+          "reagent": "proteins",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "variable power settings",
+          "other": {
+            "condition": "manufacturer\u2019s instructions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "transfer apparatus"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "blocking buffer (5% nonfat dry milk/TBS-T)",
+          "volume": null,
+          "temperature": "room temperature or 4\u00b0C",
+          "duration": "1 hour or overnight",
+          "speed": "agitation",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Direct-Blot\u2122 antibody in 5% nonfat dry milk/TBS-T",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "1:1000-1:2000"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "Direct-Blot\u2122 antibody solution",
+          "volume": null,
+          "temperature": "room temperature or 4\u00b0C",
+          "duration": "2 hours or overnight",
+          "speed": "agitation",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "Wash Buffer (TBS containing 0.1% Tween-20)",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "Wash Buffer (TBS containing 0.1% Tween-20)",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "Wash Buffer (TBS containing 0.1% Tween-20)",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "membrane (protein side up)",
+          "reagent": "ECL (enhanced chemiluminescence substrate)",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": "1-2 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "excess detection reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "blots",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "smooth": "air bubbles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "X-ray film cassette",
+          "reagent": "wrapped blots (protein side up)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "expose",
+        "parameters": {
+          "container": "X-ray film cassette",
+          "reagent": "x-ray film",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 seconds to 60 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='microcentrifuge tube', reagent='cells', purpose='collect cell pellet')\nlyse(container='microcentrifuge tube', reagent='lysis buffer', volume='100 \u00b5l', temperature='on ice', duration='30 min', cells='1 x 10^6')\ncentrifuge(container='microcentrifuge tube', temperature='4\u00b0C', duration='10 min', speed='14,000 rpm (16,000 x g)')\ntransfer(container='new tube', reagent='supernatant', discard='pellet')\nmix(reagent='supernatant and 2x sample buffer', volume='20 \u00b5l supernatant + 20 \u00b5l 2x sample buffer')\nboil(reagent='sample', temperature='boiling', duration='5 min')\ncool(reagent='sample', temperature='room temperature', duration='5 min')\ncentrifuge(reagent='sample', duration='5 min')\nload(container='gel (1.5 mm thick)', reagent='sample', volume='up to 40 \u00b5l per well')\n\n### MANUAL SECTION ###\n# MANUAL: set (container: gel apparatus, other: {'condition': 'manufacturer\u2019s instructions'})\n# MANUAL: transfer (container: membrane (nitrocellulose or PVDF), reagent: proteins, speed: variable power settings, other: {'condition': 'manufacturer\u2019s instructions'})\n# MANUAL: remove (container: membrane, other: {'from': 'transfer apparatus'})\n\n### AUTOMATED SECTION ###\nincubate(container='membrane', reagent='blocking buffer (5% nonfat dry milk/TBS-T)', temperature='room temperature or 4\u00b0C', duration='1 hour or overnight', speed='agitation')\ndilute(reagent='Direct-Blot\u2122 antibody in 5% nonfat dry milk/TBS-T', dilution='1:1000-1:2000')\nincubate(container='membrane', reagent='Direct-Blot\u2122 antibody solution', temperature='room temperature or 4\u00b0C', duration='2 hours or overnight', speed='agitation')\nwash(container='membrane', reagent='Wash Buffer (TBS containing 0.1% Tween-20)', duration='5 min', wash_number=1)\nwash(container='membrane', reagent='Wash Buffer (TBS containing 0.1% Tween-20)', duration='5 min', wash_number=2)\nwash(container='membrane', reagent='Wash Buffer (TBS containing 0.1% Tween-20)', duration='5 min', wash_number=3)\nincubate(container='membrane (protein side up)', reagent='ECL (enhanced chemiluminescence substrate)', volume='10 ml', duration='1-2 min')\n\n### MANUAL SECTION ###\n# MANUAL: drain (container: membrane, reagent: excess detection reagent)\n# MANUAL: wrap (container: blots, other: {'smooth': 'air bubbles'})\n# MANUAL: place (container: X-ray film cassette, reagent: wrapped blots (protein side up))\n# MANUAL: expose (container: X-ray film cassette, reagent: x-ray film, duration: 5 seconds to 60 minutes)",
+    "source_file": "protocol_237.txt"
+  }
+]

@@ -1,0 +1,345 @@
+[
+  {
+    "protocol": "Stellaris\u00ae RNA FISH Alternative Protocol for Adherent Cells\nGrow cells on 18 mm round #1 coverglass in a 12-well cell culture plate.\nAspirate growth medium, and wash with 1 mL of 1X PBS.\nTo fix and permeabilize cells, add 1 mL of methanol-acetic acid (MeOH-AcOH) fixation solution.\nIncubate at room temperature for 10 minutes.\nCells can be stored at +2 to +8 \u00b0C in MeOH-AcOH up to 48 hours before hybridization.\nDo not use a coverglass containing adherent cells if the MeOH-AcOH has completely evaporated.\nIf frozen before using, warm the reconstituted probe solution to room temperature.\nMix well by vortexing, then centrifuge briefly.\nTo prepare the Hybridization Buffer containing probe, add 1 \u03bcL of probe stock solution to 100 \u03bcL of Hybridization Buffer, and then vortex and centrifuge (enough for one coverglass).\nThis creates a working probe solution of 125 nM.\nThis solution will be used on steps d and e. \nAspirate the MeOH-AcOH off the coverglass containing adherent cells within the 12-well plate.\nAdd 1 mL of Wash Buffer A (see recipe above), and incubate at room temperature for 2-5 minutes.\nAssemble humidified chamber: 150 mm tissue culture plate; bottom lined evenly with a flat water-saturated paper towel and a single layer of Parafilm placed on top of the paper towel.\nThis chamber will help prevent evaporation of the probe solution from under the coverglass.\nWithin the humidified chamber, dispense 100 \u03bcL of the Hybridization Buffer containing probe onto the Parafilm.\nGently transfer the coverglass, cells side down, onto the 100 \u03bcL drop of Hybridization Buffer containing probe.\nCover the humidified chamber with the tissue culture lid, and seal with Parafilm.\nIncubate in the dark at 37 \u00b0C for 2 hours.\n(Incubation can be continued up to 16 hours).\nGently transfer the coverglass, cells side up, to a fresh 12-well plate containing 1 mL of Wash Buffer A. \nIncubate in the dark at 37 \u00b0C for 30 minutes.\nAspirate Wash Buffer A, and then add 1 mL of DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nAspirate the DAPI staining buffer, and then add 1 mL of Wash Buffer B. \nIncubate at room temperature for 2-5 minutes.\nAdd a small drop (approximately 15 \u03bcL) of Vectashield Mounting Medium onto a microscope slide, and mount coverglass onto the slide, cells side down.\nGently wick away excess anti-fade from the perimeter of the coverglass.\nSeal the coverglass perimeter with clear nail polish, and allow to dry.\nIf necessary, gently wipe away any dried salt off the coverglass using water.\nProceed to Imaging",
+    "actions": [
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "12-well cell culture plate",
+          "reagent": "growth medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "12-well cell culture plate",
+          "reagent": "1X PBS",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "12-well cell culture plate",
+          "reagent": "methanol-acetic acid (MeOH-AcOH) fixation solution",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well cell culture plate",
+          "reagent": "methanol-acetic acid (MeOH-AcOH) fixation solution",
+          "volume": "1 mL",
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe solution",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "probe stock solution",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "100 \u03bcL Hybridization Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "101 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "101 \u03bcL",
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "MeOH-AcOH",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "coverglass containing adherent cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer A",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "coverglass containing adherent cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer A",
+          "volume": "1 mL",
+          "temperature": "room temperature",
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "Parafilm in humidified chamber",
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "humidified chamber",
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "100 \u03bcL",
+          "temperature": "37 \u00b0C",
+          "duration": "2 hours (up to 16 hours)",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer A",
+          "volume": "1 mL",
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "DAPI nuclear stain (Wash Buffer A with 5 ng/mL DAPI)",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "DAPI nuclear stain",
+          "volume": "1 mL",
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "DAPI staining buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer B",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "12-well plate",
+          "reagent": "Wash Buffer B",
+          "volume": "1 mL",
+          "temperature": "room temperature",
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "Vectashield Mounting Medium",
+          "volume": "15 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "small drop"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\naspirate(container='12-well cell culture plate', reagent='growth medium')\nwash(container='12-well cell culture plate', reagent='1X PBS', volume='1 mL')\nadd(container='12-well cell culture plate', reagent='methanol-acetic acid (MeOH-AcOH) fixation solution', volume='1 mL')\nincubate(container='12-well cell culture plate', reagent='methanol-acetic acid (MeOH-AcOH) fixation solution', volume='1 mL', temperature='room temperature', duration='10 minutes')\nwarm(reagent='reconstituted probe solution', temperature='room temperature')\nmix(reagent='reconstituted probe solution', speed='vortex')\ncentrifuge(reagent='reconstituted probe solution', duration='briefly')\nadd(reagent='probe stock solution', volume='1 \u03bcL', to='100 \u03bcL Hybridization Buffer')\nmix(reagent='Hybridization Buffer containing probe', volume='101 \u03bcL', speed='vortex')\ncentrifuge(reagent='Hybridization Buffer containing probe', volume='101 \u03bcL', duration='briefly')\naspirate(container='12-well plate', reagent='MeOH-AcOH', from='coverglass containing adherent cells')\nadd(container='12-well plate', reagent='Wash Buffer A', volume='1 mL', to='coverglass containing adherent cells')\nincubate(container='12-well plate', reagent='Wash Buffer A', volume='1 mL', temperature='room temperature', duration='2-5 minutes')\ndispense(container='Parafilm in humidified chamber', reagent='Hybridization Buffer containing probe', volume='100 \u03bcL')\nincubate(container='humidified chamber', reagent='Hybridization Buffer containing probe', volume='100 \u03bcL', temperature='37 \u00b0C', duration='2 hours (up to 16 hours)', in the dark=True)\nincubate(container='12-well plate', reagent='Wash Buffer A', volume='1 mL', temperature='37 \u00b0C', duration='30 minutes', in the dark=True)\naspirate(container='12-well plate', reagent='Wash Buffer A')\nadd(container='12-well plate', reagent='DAPI nuclear stain (Wash Buffer A with 5 ng/mL DAPI)', volume='1 mL')\nincubate(container='12-well plate', reagent='DAPI nuclear stain', volume='1 mL', temperature='37 \u00b0C', duration='30 minutes', in the dark=True)\naspirate(container='12-well plate', reagent='DAPI staining buffer')\nadd(container='12-well plate', reagent='Wash Buffer B', volume='1 mL')\nincubate(container='12-well plate', reagent='Wash Buffer B', volume='1 mL', temperature='room temperature', duration='2-5 minutes')\nadd(container='microscope slide', reagent='Vectashield Mounting Medium', volume='15 \u03bcL', type='small drop')",
+    "source_file": "protocol_236.txt"
+  }
+]

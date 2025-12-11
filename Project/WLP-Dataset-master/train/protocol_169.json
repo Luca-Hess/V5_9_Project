@@ -1,0 +1,608 @@
+[
+  {
+    "protocol": "General protocol for the concentration of virioplankton from a large volume (>20 L) water sample\nPrefilter ambient water sample with a 25-\u00b5m wound polypropylene sediment filter before any concentration using a peristaltic or diaphragm pump.\nRinse the concentration container three times with prefiltered water before filling with prefiltered sample water.\nOnce the concentration container is full of 25 \u00b5m prefiltered ambient water, arrange the tubing for tangential flow filtration (TFF).\nAttach the 0.22-\u00b5m tangential flow filtration (TFF) filter feed and retentate tubing to the TFF filter housing inlet and outlet ports, respectively.\nAttach the permeate tubing to the permeate port of the TFF filter housing and direct into a separate container to catch virus-containing water.\nRun the feed tubing through a large peristaltic pump head.\nIf the peristaltic pump head has an occlusion setting, set it to maximal occlusion to help prime the 0.22-\u00b5m TFF filter and remove all air.\nTurn the peristatic pump on and increase the peristaltic pump speed to 20% to prime the tubing and remove excess air.\nOnce the tubing and filter are completely filled with water, adjust the occlusion knob to a looser setting to prevent excessive tubing wear.\nSlowly increase the pump speed to 45%.\nOnce the system is running smoothly, partially open the permeate valve on the 0.22-\u00b5m TFF filter to the second tick mark (~20\u00b0 open).\nCollect the <0.22 \u00b5m permeate into an appropriately sized carboy.\nWhen the permeate carboy is more than half full with <0.22 \u00b5m permeate, prepare the 30-kD TFF filter for viral concentration.\nSlow the large peristaltic pump speed to 10%.\nAttach the feed and retentate tubing to the appropriate ports on the 30-kD TFF.\nDirect the permeate\u00a0tubing from the 30-kD TFF filter into a clean carboy to collect ultrafiltrate (UF; virus-free water).\nCarefully work the feed tubing into the second pump head of the large peristaltic pump.\nIncrease the large peristaltic pump speed to 20%.\nAgain, tighten the occlusion knob on the pump head to prime the 30-kD TFF filter and remove all air.\nOnce the filter and lines are fully primed loosen the pump head occlusion knob.\nSlowly increase the pump speed to 45%.\nSlowly close the backpressure knob on the 30-kD TFF filter until permeate begins to flow.\nMonitor the level of <0.22 \u00b5m water in the <0.22 \u00b5m permeate carboy.\nThe level should be maintained at half full until the pre filtered ambient water is nearly gone.\nCollect 1 L of ultra filtrate (30 kD TFF permeate) in a 2-L bottle for rinsing of the 30-kD TFF filter.\nWhen ~5 L of 25 \u00b5m filtered ambient water remains in the large carboy, release the pump head and remove the 0.22-\u00b5m TFF filter feed tubing from the large peristaltic pump.\nContinue to run the 30-kD TFF filter until ~1 L of <0.22 \u00b5m water remains in the carboy.\nWhen 1L or less of <0.22 \u00b5m water remains, stop the large peristaltic pump and drain the 30-kD TFF filter into the <0.22 \u00b5m water carboy.\nSlowly prime the 30-kD TFF filter from the 1 L of collected UF from step 22 and then recirculate (feed, retentate and permeate lines of the 30-kD filter in the 1L of UF) the UF at 30% pump speed for 5 min.\nStop the pump, release the pump head, and drain all tubing into the 2-L UF bottle.\nPool the recirculated UF with the ~1 L of retentate from the primary viral concentration through the 30-kD TFF filter.\nThe volume of the ~2 L viral concentrate can be further reduced by using a small-scale TFF ultrafilter.\nTo avoid excessive degradation of viruses, it is advisable to store the first stage VC at 4\u00b0C and perform a second stage small-scale concentration a soon as possible (i.e., within no more than 1 d).\nInsure that the permeate port is closed, then begin priming the system as follows.",
+    "actions": [
+      {
+        "action": "prefilter",
+        "parameters": {
+          "container": "ambient water sample (>20 L)",
+          "reagent": "none",
+          "volume": ">20 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "25-\u00b5m wound polypropylene sediment filter",
+            "equipment": "peristaltic or diaphragm pump"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "concentration container",
+          "reagent": "prefiltered water",
+          "volume": "unspecified (three times)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "concentration container",
+          "reagent": "prefiltered sample water",
+          "volume": "unspecified (full)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "TFF filter housing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tubing": "0.22-\u00b5m TFF filter feed and retentate tubing",
+            "ports": "inlet and outlet"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "TFF filter housing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tubing": "permeate tubing",
+            "port": "permeate port",
+            "destination": "separate container"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "feed tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "large peristaltic pump head"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "peristaltic pump head",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "occlusion": "maximal"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "peristaltic pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "20%",
+          "other": {
+            "purpose": "prime tubing and remove excess air"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "occlusion knob",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "setting": "looser"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "increase",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "45%",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "permeate valve on 0.22-\u00b5m TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "second tick mark (~20\u00b0 open)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "carboy",
+          "reagent": "<0.22 \u00b5m permeate",
+          "volume": "unspecified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "30-kD TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "viral concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "slow",
+        "parameters": {
+          "container": "large peristaltic pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "10%",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "30-kD TFF",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tubing": "feed and retentate",
+            "ports": "appropriate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "direct",
+        "parameters": {
+          "container": "permeate tubing from 30-kD TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean carboy",
+            "content": "ultrafiltrate (UF; virus-free water)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "work",
+        "parameters": {
+          "container": "feed tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "second pump head of large peristaltic pump"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "increase",
+        "parameters": {
+          "container": "large peristaltic pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "20%",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "tighten",
+        "parameters": {
+          "container": "occlusion knob on pump head",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prime 30-kD TFF filter and remove air"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "loosen",
+        "parameters": {
+          "container": "pump head occlusion knob",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "increase",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "45%",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "backpressure knob on 30-kD TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "slowly",
+            "until": "permeate begins to flow"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "monitor",
+        "parameters": {
+          "container": "<0.22 \u00b5m permeate carboy",
+          "reagent": "<0.22 \u00b5m water",
+          "volume": "unspecified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "level": "maintain at half full"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "2-L bottle",
+          "reagent": "ultrafiltrate (30 kD TFF permeate)",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rinsing 30-kD TFF filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "release",
+        "parameters": {
+          "container": "pump head",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "0.22-\u00b5m TFF filter feed tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "large peristaltic pump"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "30-kD TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "~1 L of <0.22 \u00b5m water remains in carboy"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "large peristaltic pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "30-kD TFF filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "<0.22 \u00b5m water carboy"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prime",
+        "parameters": {
+          "container": "30-kD TFF filter",
+          "reagent": "collected UF",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "recirculate",
+        "parameters": {
+          "container": "30-kD filter (feed, retentate, permeate lines)",
+          "reagent": "UF",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "30%",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stop",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "release",
+        "parameters": {
+          "container": "pump head",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "drain",
+        "parameters": {
+          "container": "all tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "2-L UF bottle"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "recirculated UF and ~1 L retentate",
+          "reagent": null,
+          "volume": "~2 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "through": "30-kD TFF filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "reduce",
+        "parameters": {
+          "container": "viral concentrate",
+          "reagent": null,
+          "volume": "~2 L to smaller",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "small-scale TFF ultrafilter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "first stage VC",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "no more than 1 d",
+          "speed": null,
+          "other": {
+            "purpose": "avoid excessive degradation of viruses"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "permeate port",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prime",
+        "parameters": {
+          "container": "system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nprefilter(container='ambient water sample (>20 L)', reagent='none', volume='>20 L', filter='25-\u00b5m wound polypropylene sediment filter', equipment='peristaltic or diaphragm pump')\nrinse(container='concentration container', reagent='prefiltered water', volume='unspecified (three times)')\nfill(container='concentration container', reagent='prefiltered sample water', volume='unspecified (full)')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: TFF filter housing, other: {'tubing': '0.22-\u00b5m TFF filter feed and retentate tubing', 'ports': 'inlet and outlet'})\n# MANUAL: attach (container: TFF filter housing, other: {'tubing': 'permeate tubing', 'port': 'permeate port', 'destination': 'separate container'})\n\n### AUTOMATED SECTION ###\nrun(container='feed tubing', equipment='large peristaltic pump head')\nset(container='peristaltic pump head', occlusion='maximal')\nturn on(container='peristaltic pump', speed='20%', purpose='prime tubing and remove excess air')\nadjust(container='occlusion knob', setting='looser')\nincrease(container='pump', speed='45%')\nopen(container='permeate valve on 0.22-\u00b5m TFF filter', position='second tick mark (~20\u00b0 open)')\ncollect(container='carboy', reagent='<0.22 \u00b5m permeate', volume='unspecified')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 30-kD TFF filter, other: {'purpose': 'viral concentration'})\n\n### AUTOMATED SECTION ###\nslow(container='large peristaltic pump', speed='10%')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: 30-kD TFF, other: {'tubing': 'feed and retentate', 'ports': 'appropriate'})\n# MANUAL: direct (container: permeate tubing from 30-kD TFF filter, other: {'destination': 'clean carboy', 'content': 'ultrafiltrate (UF; virus-free water)'})\n# MANUAL: work (container: feed tubing, other: {'equipment': 'second pump head of large peristaltic pump'})\n\n### AUTOMATED SECTION ###\nincrease(container='large peristaltic pump', speed='20%')\ntighten(container='occlusion knob on pump head', purpose='prime 30-kD TFF filter and remove air')\nloosen(container='pump head occlusion knob')\nincrease(container='pump', speed='45%')\nclose(container='backpressure knob on 30-kD TFF filter', method='slowly', until='permeate begins to flow')\n\n### MANUAL SECTION ###\n# MANUAL: monitor (container: <0.22 \u00b5m permeate carboy, reagent: <0.22 \u00b5m water, volume: unspecified, other: {'level': 'maintain at half full'})\n\n### AUTOMATED SECTION ###\ncollect(container='2-L bottle', reagent='ultrafiltrate (30 kD TFF permeate)', volume='1 L', purpose='rinsing 30-kD TFF filter')\nrelease(container='pump head')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 0.22-\u00b5m TFF filter feed tubing, other: {'from': 'large peristaltic pump'})\n\n### AUTOMATED SECTION ###\nrun(container='30-kD TFF filter', until='~1 L of <0.22 \u00b5m water remains in carboy')\nstop(container='large peristaltic pump')\ndrain(container='30-kD TFF filter', destination='<0.22 \u00b5m water carboy')\nprime(container='30-kD TFF filter', reagent='collected UF', volume='1 L')\nrecirculate(container='30-kD filter (feed, retentate, permeate lines)', reagent='UF', volume='1 L', duration='5 min', speed='30%')\nstop(container='pump')\nrelease(container='pump head')\ndrain(container='all tubing', destination='2-L UF bottle')\n\n### MANUAL SECTION ###\n# MANUAL: pool (container: recirculated UF and ~1 L retentate, volume: ~2 L, other: {'through': '30-kD TFF filter'})\n\n### AUTOMATED SECTION ###\nreduce(container='viral concentrate', volume='~2 L to smaller', equipment='small-scale TFF ultrafilter')\nstore(container='first stage VC', temperature='4\u00b0C', duration='no more than 1 d', purpose='avoid excessive degradation of viruses')\nclose(container='permeate port')\nprime(container='system')",
+    "source_file": "protocol_169.txt"
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "protocol": "SDS-PAGE for Identifying nonmucin protein in BSM\nPrepare the sample solutions: \nprepare the mucin samples. \nAssign different volume for each sample, 10ul,20ul,30ul, respectively. \nAdd DDI water to the samples, let each tube has 30ul solution.\nAdd loading buffer to each sample.\nHeating them in 95 degree for 10min.\nLoading the running buffer.\nAdd some running buffer into the electrophrosis cell.\npeel the green paste at the bottom and take away the top green plastic cover, set the gel\u00a0in the electrophorsis cell.\nFill the inner and outer buffer chambers with running buffer.\nMake sure that the level of the running buffer above the top of the gel and there is no leakage from the inner buffer chamber to the outer.\nPerforming electrophorsis.\nLoad the protein sample on the gel.\nConnect the electrophoresis cell to the power supply and perform electrophores in Run conditions: 150 V~200 VRun time:\u00a0until the loading buffer line come to the bottom of the gel Staining.\nWash gels in DI H2O.\nRemove all water from staining container and add stain (PageBlue), agitate overnight. \nWash gel using DI water, first time 5 minutes; second time 10 minutes; third time 30 minutes; forth time, 1 hour and fifth time keep the gel in DI water agitate overnight.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mucin sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "assign",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mucin sample",
+          "volume": "10ul, 20ul, 30ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DDI water",
+          "volume": "to reach 30ul total per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "loading buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample solution",
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": null,
+          "reagent": "running buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "electrophoresis cell",
+          "reagent": "running buffer",
+          "volume": "some",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "peel",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "green paste at bottom"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "top green plastic cover"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "electrophoresis cell",
+          "reagent": "gel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "inner and outer buffer chambers",
+          "reagent": "running buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "electrophoresis cell",
+          "reagent": "running buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "level above top of gel, no leakage"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": "electrophoresis cell",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "electrophoresis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "protein sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "electrophoresis cell",
+          "reagent": "power supply",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "run conditions": "150-200 V",
+            "run time": "until loading buffer line reaches bottom of gel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "PageBlue",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": "agitate",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "staining container",
+          "reagent": "water",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "staining container",
+          "reagent": "PageBlue stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "staining container",
+          "reagent": "gel in PageBlue",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "wash_number": 4
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "gel",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "wash_number": 5
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: tube, reagent: mucin sample, other: {})\n# MANUAL: assign (container: tube, reagent: mucin sample, volume: 10ul, 20ul, 30ul, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='DDI water', volume='to reach 30ul total per tube')\nadd(container='tube', reagent='loading buffer')\nheat(container='tube', reagent='sample solution', temperature='95\u00b0C', duration='10 min')\n\n### MANUAL SECTION ###\n# MANUAL: load (reagent: running buffer, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='electrophoresis cell', reagent='running buffer', volume='some')\n\n### MANUAL SECTION ###\n# MANUAL: peel (container: gel, other: {'material': 'green paste at bottom'})\n# MANUAL: remove (container: gel, other: {'material': 'top green plastic cover'})\n# MANUAL: set (container: electrophoresis cell, reagent: gel, other: {})\n\n### AUTOMATED SECTION ###\nfill(container='inner and outer buffer chambers', reagent='running buffer')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: electrophoresis cell, reagent: running buffer, other: {'condition': 'level above top of gel, no leakage'})\n# MANUAL: perform (container: electrophoresis cell, other: {'process': 'electrophoresis'})\n\n### AUTOMATED SECTION ###\nload(container='gel', reagent='protein sample')\n\n### MANUAL SECTION ###\n# MANUAL: connect (container: electrophoresis cell, reagent: power supply, other: {'run conditions': '150-200 V', 'run time': 'until loading buffer line reaches bottom of gel'})\n\n### AUTOMATED SECTION ###\nstain(container='gel', reagent='PageBlue', duration='overnight', speed='agitate')\nwash(container='gel', reagent='DI H2O')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: staining container, reagent: water, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='staining container', reagent='PageBlue stain')\nagitate(container='staining container', reagent='gel in PageBlue', duration='overnight')\nwash(container='gel', reagent='DI water', duration='5 min', wash_number=1)\nwash(container='gel', reagent='DI water', duration='10 min', wash_number=2)\nwash(container='gel', reagent='DI water', duration='30 min', wash_number=3)\nwash(container='gel', reagent='DI water', duration='1 hour', wash_number=4)\nagitate(container='gel', reagent='DI water', duration='overnight', wash_number=5)",
+    "source_file": "protocol_305.txt"
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "protocol": "DNA extraction from plants\nGrind frozen plant material (100mg) in liquid Nitrogen.\nIn a 2 ml tube, add 800 uL of 1,5x CTAB and 1 ul of Beta-mercaptoethanol to the ground leaf material.\nIncubate 1 hour at 60-65 degrees (C).\nCool at Room Temp.\nAdd 1 volume of Chloroform/Isoamylalkohol (24:1) mixture.\nMix on overhead shaker for 10 minutes.\nCentrifuge at 3000 rmp for 25 minutes.\nTransfer supernatant to a new tube.\nUse wide pipette tips (cut point of tips if needed).\nAdd 10 uL RNAse (10 mg/ml) incubate at 37 degrees (C) for 30 minutes.\nAdd one volume 100% Isoponanol (pre-chilled at -20).\nAllow sample to precepitate for up to 20 minutes at -20.\nCentrifuge at full speed for 10 minutes.\nRemove supernatant.\nAdd 1 ml 70% Ethanol.\nCentrifuge at full speed for 10 minutes.\nRemove Supernatant.\nRepeat once.\nDry pellet in air or approx 20 minutes in vacuum centrifuge.\nDissolve pallet in 1x TE (10 mM Tris, pH8, 1 mM EDTA)",
+    "actions": [
+      {
+        "action": "grind",
+        "parameters": {
+          "container": null,
+          "reagent": "frozen plant material",
+          "volume": "100 mg",
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": "1.5x CTAB",
+          "volume": "800 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "ground leaf material"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": "Beta-mercaptoethanol",
+          "volume": "1 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "ground leaf material"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60-65\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": "Chloroform/Isoamylalkohol (24:1) mixture",
+          "volume": "1 volume (equal to previous)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "method": "overhead shaker"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "25 minutes",
+          "speed": "3000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "wide pipette tips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "cut point of tips if needed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "RNAse (10 mg/ml)",
+          "volume": "10 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "100% Isopropanol (pre-chilled at -20\u00b0C)",
+          "volume": "1 volume (equal to previous)",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "up to 20 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "allow sample to precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "full speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "70% Ethanol",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "full speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "once",
+          "speed": null,
+          "other": {
+            "step": "centrifuge and remove supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes (vacuum centrifuge) or air dry",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "1x TE (10 mM Tris, pH8, 1 mM EDTA)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grind (reagent: frozen plant material, volume: 100 mg, temperature: liquid nitrogen, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='2 ml tube', reagent='1.5x CTAB', volume='800 uL', to='ground leaf material')\nadd(container='2 ml tube', reagent='Beta-mercaptoethanol', volume='1 uL', to='ground leaf material')\nincubate(container='2 ml tube', temperature='60-65\u00b0C', duration='1 hour')\ncool(container='2 ml tube', temperature='room temperature')\nadd(container='2 ml tube', reagent='Chloroform/Isoamylalkohol (24:1) mixture', volume='1 volume (equal to previous)')\nmix(container='2 ml tube', duration='10 minutes', method='overhead shaker')\ncentrifuge(container='2 ml tube', duration='25 minutes', speed='3000 rpm')\ntransfer(container='new tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: use (reagent: wide pipette tips, other: {'note': 'cut point of tips if needed'})\n\n### AUTOMATED SECTION ###\nadd(reagent='RNAse (10 mg/ml)', volume='10 uL')\nincubate(temperature='37\u00b0C', duration='30 minutes')\nadd(reagent='100% Isopropanol (pre-chilled at -20\u00b0C)', volume='1 volume (equal to previous)', temperature='-20\u00b0C')\nwait(temperature='-20\u00b0C', duration='up to 20 minutes', purpose='allow sample to precipitate')\ncentrifuge(duration='10 minutes', speed='full speed')\nremove(reagent='supernatant')\nadd(reagent='70% Ethanol', volume='1 ml')\ncentrifuge(duration='10 minutes', speed='full speed')\nremove(reagent='supernatant')\nrepeat(duration='once', step='centrifuge and remove supernatant')\ndry(reagent='pellet', duration='20 minutes (vacuum centrifuge) or air dry')\ndissolve(reagent='1x TE (10 mM Tris, pH8, 1 mM EDTA)', target='pellet')",
+    "source_file": "protocol_90.txt"
+  }
+]

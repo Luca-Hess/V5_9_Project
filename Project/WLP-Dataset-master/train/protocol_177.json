@@ -1,0 +1,190 @@
+[
+  {
+    "protocol": "Cesium Chloride Dialysis for Viruses\nPrepare MTN100 with 5x NaCl.\nPrepare MTN100 with 3x NaCl.\nPrepare MTN100 with 1x NaCl.\nBring volume to 1L with Milli-Q water.\nUse Slide-A-Lyzer dialysis casettes (Pierce #66425 or #87730; 10K MWCO, 0.5-3.0ml) and follow the manufacturer\u2019s directions for loading and dialysis of cassettes.\nStep dialyze for ~30 min with the 5x NaCl MTN buffer.\nStep dialyze for ~30 min with the 3x NaCl MTN buffer.\nStep dialyze for ~30 min with the two changes of the 1x NaCl MTN, using at least 300 volumes of buffer to sample.\nStir gently at room temperature Remove the sample according to manufacturer\u2019s directions Transfer to sterile, low bind tubes.\nStore dialyzed particles at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "MTN100 with 5x NaCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "MTN100 with 3x NaCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "MTN100 with 1x NaCl",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": null,
+          "reagent": "Milli-Q water",
+          "volume": "1L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to_final_volume": "1L"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassette",
+          "reagent": "sample",
+          "volume": "0.5-3.0ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cassette_type": "Pierce #66425 or #87730; 10K MWCO"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassette",
+          "reagent": "5x NaCl MTN buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "step": "first"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassette",
+          "reagent": "3x NaCl MTN buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "step": "second"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassette",
+          "reagent": "1x NaCl MTN buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "changes": "two",
+            "buffer_to_sample_ratio": "at least 300 volumes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassette",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "according_to": "manufacturer\u2019s directions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile, low bind tubes",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "dialyzed particles",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: MTN100 with 5x NaCl, other: {})\n# MANUAL: prepare (reagent: MTN100 with 3x NaCl, other: {})\n# MANUAL: prepare (reagent: MTN100 with 1x NaCl, other: {})\n\n### AUTOMATED SECTION ###\nbring(reagent='Milli-Q water', volume='1L', to_final_volume='1L')\nload(container='Slide-A-Lyzer dialysis cassette', reagent='sample', volume='0.5-3.0ml', cassette_type='Pierce #66425 or #87730; 10K MWCO')\ndialyze(container='Slide-A-Lyzer dialysis cassette', reagent='5x NaCl MTN buffer', duration='30 min', step='first')\ndialyze(container='Slide-A-Lyzer dialysis cassette', reagent='3x NaCl MTN buffer', duration='30 min', step='second')\ndialyze(container='Slide-A-Lyzer dialysis cassette', reagent='1x NaCl MTN buffer', duration='30 min', changes='two', buffer_to_sample_ratio='at least 300 volumes')\nstir(temperature='room temperature', speed='gently')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Slide-A-Lyzer dialysis cassette, reagent: sample, other: {'according_to': 'manufacturer\u2019s directions'})\n\n### AUTOMATED SECTION ###\ntransfer(container='sterile, low bind tubes', reagent='sample')\nstore(reagent='dialyzed particles', temperature='4\u00b0C')",
+    "source_file": "protocol_177.txt"
+  }
+]

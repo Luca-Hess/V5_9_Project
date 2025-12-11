@@ -1,0 +1,153 @@
+[
+  {
+    "protocol": "Chlorophyll Extraction in Cyanobacteria\nTake 1 ml sample of your cyanobacteria culture and spin it down at 14,000 rpm for 5 min.\nDiscard 0.9 ml of the supernatant.\nResuspend the pellet in the remaining 100 \u00b5l.\nAdd 0.9 ml of 100% methanol to the sample\u00a0and mix thoroughly by vortexing.\nIncubate the samples in the dark for 30 min at 4 \u00b0C in the fridge.\nSpin down samples again at 14,000 rpm for 5 min.\nTransfer supernatant into a cuvette and measure the extinction at 665 nm.\nUse 90% methanol as the reference solution.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "cyanobacteria culture tube",
+          "reagent": "cyanobacteria culture",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "14,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "supernatant",
+          "volume": "0.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "pellet",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "100% methanol",
+          "volume": "0.9 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "14,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "cuvette",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wavelength": "665 nm"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='cyanobacteria culture tube', reagent='cyanobacteria culture', volume='1 ml')\ncentrifuge(container='sample tube', duration='5 min', speed='14,000 rpm')\naspirate(container='sample tube', reagent='supernatant', volume='0.9 ml')\nresuspend(container='sample tube', reagent='pellet', volume='100 \u00b5l')\ndispense(container='sample tube', reagent='100% methanol', volume='0.9 ml')\nmix(container='sample tube', speed='vortex')\nincubate(container='sample tube', temperature='4 \u00b0C', duration='30 min', light='dark')\ncentrifuge(container='sample tube', duration='5 min', speed='14,000 rpm')\ntransfer(container='cuvette', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: cuvette, other: {'wavelength': '665 nm'})",
+    "source_file": "protocol_62.txt"
+  }
+]

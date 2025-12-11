@@ -1,0 +1,67 @@
+[
+  {
+    "protocol": "PNGase F Protocol, Non-Denaturing Conditions\nAdd 2-5 \u00b5l PNGase F.\nMix gently.\nIncubate reaction at 37\u00b0C for 4 - 24 hours.\nAnalyze by method of choice",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "PNGase F",
+          "volume": "2-5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "4-24 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "method of choice"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(reagent='PNGase F', volume='2-5 \u00b5l')\nmix(speed='gently')\nincubate(temperature='37\u00b0C', duration='4-24 hours')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (other: {'method': 'method of choice'})",
+    "source_file": "protocol_145.txt"
+  }
+]

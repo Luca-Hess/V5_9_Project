@@ -1,0 +1,825 @@
+[
+  {
+    "protocol": "Fingerprinting aquatic virus communities using denaturing gradient gel electrophoresis (DGGE)\nUsing lint-free tissues, wash glass plates, spacers, and combs thoroughly with 70% ethanol.\nAssemble the gel sandwich by placing the small glass plate on top of the large plate, being sure to correctly place a 1-mm spacer along each edge of the plate assembly.\nTo prevent current leakage and the resultant \u201csmiles\u201d in the bands near the edges of the gel, grease both sides of the spacers with as little as possible silicon grease to cover the full length of the spacer but only a quarter of the spacer width.\nAttach the plate clamps and place the entire assembly into the casting stand.\nInspect the plate assembly to ensure that the two glass plates and the spacers form a flush surface along the sides, and ensure that all gaskets adequately seal the plate assembly.\nCheck the gradient maker and flush with sdH2O.\nEmpty pump tubing and attach pipette tip at the outlet tube to the top-middle of the gel chamber.\nTo optimize the gradient conditions for a new DGGE experiment (new primer sets, new sample type/habitat, etc.), we usually start with a relatively broad gradient (20% to 80% denaturant).\nWe then focus the gradient around the area of interest to include the highest and lowest bands in different samples.\nTable 1 (guidelines) can be used to determine the appropriate composition of the denaturing gradient gel (16 \u00d7 16 cm) that has a total volume of 29 mL.\nMake up two solutions of 14.5 mL each, a low denaturant concentration solution and a high denaturant concentration solution.\nMix the solutions A and B (guidelines) to the desired percentage.\nAfter preparing the denaturing gel solutions, degas for 15 min and filter through a 0.45-mm syringe filter.\nImmediately before casting the gel, add 145 \u00b5L 10% APS and 7.25 \u00b5L TEMED into each solution and swirl gently to mix.\nAt this point, you will have approximately 10 min to pour the gel.\nMake sure the pump is off and the gradient maker-channel is closed (handle up).\nPour solution with the highest denaturant in the right leg of the gradient maker (at the pump side) and the solution with the lowest denaturant in the left leg.\nTurn the magnetic stirrer on, while simultaneously starting the pump (5 mL/min).\nSimultaneously, start the pump (5 mL/min) and move the handle of the gradient maker to horizontal position (channel open).\nUse approximately 4\u20135 min to fill the gel.\nEmpty the tubing and flush thoroughly with sdH2O.\nInsert the comb, flat or straight side down, making sure that there are no bubbles under the comb.\nDifferent combs (16 or 20 wells) are available, depending on the number of samples that you want to run.\nCover gels with cling film and allow ~2 h for the gel to polymerize.\nThe gel can be kept at 4\u00b0C until the next day.\nPrepare approximately 7 L of 1\u00d7 TAE and fill the buffer chamber.\nPut about 0.5 L aside for later use.\nTo enhance the circulation of the running buffer, place the tank on a magnet stirrer and add a magnetic stirrer bar in the bottom of the tank.\nPreheat the buffer in the DCode apparatus to 60\u00b0C; this will take about 2 h. Attach the gel plates to the core assembly.\nLoosen the clamps a quarter-turn counterclockwise to prevent breaking of the sandwich clamps (due to heat expansion).\nThen place the core assembly into the heated buffer in the tank.\nSwitch off the magnetic stirrer (if loading in tank).\nFlush each well with buffer using syringe with needle to remove any unpolymerized acrylamide and excess urea.\nFlush each well with buffer again before loading approximately 10\u201350 \u00b5L of PCR products mixed with loading dye into each well.\nTo quantify PCR products, we recommend gel quantification using a DNA mass standard (e.g., Low DNA Mass ladder; Invitrogen) and commercially available gel quantification software such as Quantity One (Bio-Rad) or free software such as Image J (available for download at http://rsbweb.nih.gov/ij/download.html).\nIn the DGGE gel, load a marker on each side of the gel adjacent to the samples\u00a0(markers can be custom made for each DGGE application using known PCR products, or common molecular weight markers can be used)\u00a0 for determination of band positions, or comparisons of different gels.\nApply a loading voltage of 200 V for 5 min before starting the pump to circulate the buffer, then turn on the magnetic stirrer.\nThe length of the run and the running voltage depend on the size of the PCR products and the percentage of acrylamide/bis in the gel.\nA good starting point is to run the gel at 60 V (about 20 mA for one gel) for 19 h. \nWhen the electrophoresis is complete, take apart the apparatus and remove the glass plates from the gel clamps.\nCarefully separate the plates, leaving the gel exposed on the large plate.\nUse the edge of the small plate to trim the well walls, but be sure to leave the leftmost wall slightly higher than the others for use as a gel orientation reference.\nFor easy manipulation, the gel can either be stained on the large plate or transferred to, stained on, and transported on a plastic sheet.\nStain the gel for 30 min in 50\u2013500 mL fluorescent gel stain.\nDestain the gel for 30 min in 1 \u00d7 TAE.\nRemember, the fluorescent dye binds to nucleic acids; therefore, it is important to minimize contact with skin, so gloves (powder-free) should be worn.\nIf staining in a container, use plastic and not glass, as the fluorescent dyes accumulate over time on glass surfaces.\nSlide the gel off of the plastic sheet or large plate onto a UV transilluminator and view the gel.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "glass plates, spacers, combs",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "lint-free tissues"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "gel sandwich",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plates": "small glass plate, large glass plate",
+            "spacer": "1-mm spacer along each edge"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "grease",
+        "parameters": {
+          "container": "spacers",
+          "reagent": "silicon grease",
+          "volume": "as little as possible to cover full length, quarter width",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "plate clamps",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assembly": "gel sandwich"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "casting stand"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "inspect",
+        "parameters": {
+          "container": "plate assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "criteria": "flush surface, sealed gaskets"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "gradient maker",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "gradient maker",
+          "reagent": "sdH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "pump tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "pipette tip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "outlet tube to top-middle of gel chamber"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": null,
+          "reagent": "low denaturant solution, high denaturant solution",
+          "volume": "14.5 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "solutions A and B",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "percentage": "desired percentage"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "degas",
+        "parameters": {
+          "container": "denaturing gel solutions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "denaturing gel solutions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "0.45-mm syringe filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each solution",
+          "reagent": "145 \u00b5L 10% APS, 7.25 \u00b5L TEMED",
+          "volume": "145 \u00b5L, 7.25 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "each solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently swirl",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "within 10 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gradient maker",
+          "reagent": "solution with highest denaturant (right leg), solution with lowest denaturant (left leg)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "right leg (pump side), left leg"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "magnetic stirrer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": "5 mL/min",
+          "temperature": null,
+          "duration": null,
+          "speed": "5 mL/min",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "gradient maker handle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "horizontal (channel open)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": "4\u20135 min",
+          "temperature": null,
+          "duration": "4\u20135 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "tubing",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "tubing",
+          "reagent": "sdH2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "comb",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "flat or straight side down",
+            "criteria": "no bubbles under comb"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "gels",
+          "reagent": "cling film",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "polymerize",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "~2 h",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until next day",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1\u00d7 TAE",
+          "volume": "7 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "buffer chamber",
+          "reagent": "1\u00d7 TAE",
+          "volume": "7 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "put aside",
+        "parameters": {
+          "container": null,
+          "reagent": "1\u00d7 TAE",
+          "volume": "0.5 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tank",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "magnet stirrer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tank",
+          "reagent": "magnetic stirrer bar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "bottom of tank"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "preheat",
+        "parameters": {
+          "container": "buffer in DCode apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "2 h",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "gel plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assembly": "core assembly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "loosen",
+        "parameters": {
+          "container": "clamps",
+          "reagent": null,
+          "volume": "quarter-turn counterclockwise",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent breaking due to heat expansion"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "core assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "heated buffer in tank"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "switch off",
+        "parameters": {
+          "container": "magnetic stirrer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if loading in tank"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "each well",
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "syringe with needle",
+            "purpose": "remove unpolymerized acrylamide and excess urea"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flush",
+        "parameters": {
+          "container": "each well",
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "before loading samples"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "each well",
+          "reagent": "PCR products mixed with loading dye",
+          "volume": "10\u201350 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel (each side adjacent to samples)",
+          "reagent": "marker",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determination of band positions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "voltage": "200 V",
+            "purpose": "before starting pump"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": "pump",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "circulate buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "magnetic stirrer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "19 h",
+          "speed": "60 V, ~20 mA",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "take apart",
+        "parameters": {
+          "container": "apparatus",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "gel clamps"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "leave": "gel exposed on large plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "trim",
+        "parameters": {
+          "container": "well walls",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "edge of small plate",
+            "criteria": "leave leftmost wall higher for orientation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "fluorescent gel stain",
+          "volume": "50\u2013500 mL",
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "destain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "1\u00d7 TAE",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "slide",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "plastic sheet or large plate",
+            "to": "UV transilluminator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "view",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "UV transilluminator"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: wash (container: glass plates, spacers, combs, reagent: 70% ethanol, other: {'tool': 'lint-free tissues'})\n# MANUAL: assemble (container: gel sandwich, other: {'plates': 'small glass plate, large glass plate', 'spacer': '1-mm spacer along each edge'})\n# MANUAL: grease (container: spacers, reagent: silicon grease, volume: as little as possible to cover full length, quarter width)\n# MANUAL: attach (container: plate clamps, other: {'assembly': 'gel sandwich'})\n# MANUAL: place (container: assembly, other: {'location': 'casting stand'})\n# MANUAL: inspect (container: plate assembly, other: {'criteria': 'flush surface, sealed gaskets'})\n# MANUAL: check (container: gradient maker)\n\n### AUTOMATED SECTION ###\nflush(container='gradient maker', reagent='sdH2O')\nempty(container='pump tubing')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: pipette tip, other: {'location': 'outlet tube to top-middle of gel chamber'})\n\n### AUTOMATED SECTION ###\nmake(reagent='low denaturant solution, high denaturant solution', volume='14.5 mL each')\nmix(reagent='solutions A and B', percentage='desired percentage')\ndegas(container='denaturing gel solutions', duration='15 min')\nfilter(container='denaturing gel solutions', filter='0.45-mm syringe filter')\nadd(container='each solution', reagent='145 \u00b5L 10% APS, 7.25 \u00b5L TEMED', volume='145 \u00b5L, 7.25 \u00b5L')\nmix(container='each solution', speed='gently swirl')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: gel, duration: within 10 min)\n\n### AUTOMATED SECTION ###\npour(container='gradient maker', reagent='solution with highest denaturant (right leg), solution with lowest denaturant (left leg)', location='right leg (pump side), left leg')\nturn on(container='magnetic stirrer')\nstart(container='pump', volume='5 mL/min', speed='5 mL/min')\n\n### MANUAL SECTION ###\n# MANUAL: move (container: gradient maker handle, other: {'position': 'horizontal (channel open)'})\n\n### AUTOMATED SECTION ###\nfill(container='gel', volume='4\u20135 min', duration='4\u20135 min')\nempty(container='tubing')\nflush(container='tubing', reagent='sdH2O')\n\n### MANUAL SECTION ###\n# MANUAL: insert (container: comb, other: {'orientation': 'flat or straight side down', 'criteria': 'no bubbles under comb'})\n# MANUAL: cover (container: gels, reagent: cling film)\n\n### AUTOMATED SECTION ###\npolymerize(container='gel', duration='~2 h')\nkeep(container='gel', temperature='4\u00b0C', duration='until next day')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 1\u00d7 TAE, volume: 7 L)\n\n### AUTOMATED SECTION ###\nfill(container='buffer chamber', reagent='1\u00d7 TAE', volume='7 L')\n\n### MANUAL SECTION ###\n# MANUAL: put aside (reagent: 1\u00d7 TAE, volume: 0.5 L)\n# MANUAL: place (container: tank, other: {'location': 'magnet stirrer'})\n# MANUAL: add (container: tank, reagent: magnetic stirrer bar, other: {'location': 'bottom of tank'})\n\n### AUTOMATED SECTION ###\npreheat(container='buffer in DCode apparatus', temperature='60\u00b0C', duration='2 h')\n\n### MANUAL SECTION ###\n# MANUAL: attach (container: gel plates, other: {'assembly': 'core assembly'})\n# MANUAL: loosen (container: clamps, volume: quarter-turn counterclockwise, other: {'purpose': 'prevent breaking due to heat expansion'})\n# MANUAL: place (container: core assembly, other: {'location': 'heated buffer in tank'})\n\n### AUTOMATED SECTION ###\nswitch off(container='magnetic stirrer', condition='if loading in tank')\nflush(container='each well', reagent='buffer', tool='syringe with needle', purpose='remove unpolymerized acrylamide and excess urea')\nflush(container='each well', reagent='buffer', purpose='before loading samples')\nload(container='each well', reagent='PCR products mixed with loading dye', volume='10\u201350 \u00b5L')\nload(container='gel (each side adjacent to samples)', reagent='marker', purpose='determination of band positions')\napply(container='gel', duration='5 min', voltage='200 V', purpose='before starting pump')\nstart(container='pump', purpose='circulate buffer')\nturn on(container='magnetic stirrer')\nrun(container='gel', duration='19 h', speed='60 V, ~20 mA')\n\n### MANUAL SECTION ###\n# MANUAL: take apart (container: apparatus)\n# MANUAL: remove (container: glass plates, other: {'from': 'gel clamps'})\n# MANUAL: separate (container: plates, other: {'leave': 'gel exposed on large plate'})\n# MANUAL: trim (container: well walls, other: {'tool': 'edge of small plate', 'criteria': 'leave leftmost wall higher for orientation'})\n\n### AUTOMATED SECTION ###\nstain(container='gel', reagent='fluorescent gel stain', volume='50\u2013500 mL', duration='30 min')\ndestain(container='gel', reagent='1\u00d7 TAE', duration='30 min')\n\n### MANUAL SECTION ###\n# MANUAL: slide (container: gel, other: {'from': 'plastic sheet or large plate', 'to': 'UV transilluminator'})\n# MANUAL: view (container: gel, other: {'location': 'UV transilluminator'})",
+    "source_file": "protocol_340.txt"
+  }
+]

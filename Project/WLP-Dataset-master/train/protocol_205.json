@@ -1,0 +1,274 @@
+[
+  {
+    "protocol": "SWIFT\u2122 Western Transfer Pads\nSoak the PVDF membrane in 100% methanol for 1\u20102 minutes then rinse 2\u20103 times with deionized water. \u00a0 \nEquilibrate PVDF or nitrocellulose membrane in diluted SWIFT\u2122 Western Buffer for 5\u201010 minutes. \nPlace the supplied SWIFT\u2122 Template Card on a flat surface and place a SWIFT\u2122 Western Transfer Pad on the Template Card.\nAdd diluted SWIFT\u2122 Western Buffer on top of the pad to soak it further.\nUse 2ml each for the 8.5 x 7.5cm and 5ml each\u00a0for the 15 x 9.5cm size pads.\nCarefully place the gel on top of the SWIFT\u2122 Western Transfer Pad and ensure no air bubbles are formed.\nIncubate for 5 minutes at room temperature.\nThe incubation step improves protein transfer efficiency.\nPlace the blotting membrane equilibrated in diluted SWIFT\u2122 Western Buffer on top of the gel, avoiding air bubbles.\nPlace another piece of SWIFT\u2122 Western Transfer Pad on top of the membrane, avoiding air bubbles.\nRemove any air bubbles by rolling a tube or pipette over the top of the sandwich.\nSlide the blot sandwich onto a transfer cassette, including fiber pads soaked in diluted SWIFT\u2122 Western Buffer.\nPut the assembled transfer cassette in a Western transfer module with diluted SWIFT\u2122 Western Buffer and run it for 30\u201060 minutes at 200mA fixed current.",
+    "actions": [
+      {
+        "action": "soak",
+        "parameters": {
+          "container": "PVDF membrane",
+          "reagent": "100% methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "PVDF membrane",
+          "reagent": "deionized water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2-3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "PVDF or nitrocellulose membrane",
+          "reagent": "diluted SWIFT\u2122 Western Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SWIFT\u2122 Template Card",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "flat surface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SWIFT\u2122 Western Transfer Pad",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on Template Card"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SWIFT\u2122 Western Transfer Pad",
+          "reagent": "diluted SWIFT\u2122 Western Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to soak pad further"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "SWIFT\u2122 Western Transfer Pad (8.5 x 7.5cm)",
+          "reagent": "diluted SWIFT\u2122 Western Buffer",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "SWIFT\u2122 Western Transfer Pad (15 x 9.5cm)",
+          "reagent": "diluted SWIFT\u2122 Western Buffer",
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top of SWIFT\u2122 Western Transfer Pad"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "ensure",
+        "parameters": {
+          "container": "gel/SWIFT\u2122 Western Transfer Pad",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "no air bubbles formed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "gel/SWIFT\u2122 Western Transfer Pad",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "blotting membrane equilibrated in diluted SWIFT\u2122 Western Buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top of gel",
+            "condition": "avoiding air bubbles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SWIFT\u2122 Western Transfer Pad",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top of membrane",
+            "condition": "avoiding air bubbles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "air bubbles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "rolling a tube or pipette over the top of the sandwich"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "slide",
+        "parameters": {
+          "container": "blot sandwich",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "onto transfer cassette",
+            "include": "fiber pads soaked in diluted SWIFT\u2122 Western Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "assembled transfer cassette",
+          "reagent": "diluted SWIFT\u2122 Western Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "Western transfer module"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "Western transfer module",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 minutes",
+          "speed": null,
+          "other": {
+            "current": "200mA fixed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsoak(container='PVDF membrane', reagent='100% methanol', duration='1-2 minutes')\nrinse(container='PVDF membrane', reagent='deionized water', times='2-3')\nequilibrate(container='PVDF or nitrocellulose membrane', reagent='diluted SWIFT\u2122 Western Buffer', duration='5-10 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: SWIFT\u2122 Template Card, other: {'location': 'flat surface'})\n# MANUAL: place (container: SWIFT\u2122 Western Transfer Pad, other: {'location': 'on Template Card'})\n\n### AUTOMATED SECTION ###\nadd(container='SWIFT\u2122 Western Transfer Pad', reagent='diluted SWIFT\u2122 Western Buffer', purpose='to soak pad further')\ndispense(container='SWIFT\u2122 Western Transfer Pad (8.5 x 7.5cm)', reagent='diluted SWIFT\u2122 Western Buffer', volume='2ml')\ndispense(container='SWIFT\u2122 Western Transfer Pad (15 x 9.5cm)', reagent='diluted SWIFT\u2122 Western Buffer', volume='5ml')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: gel, other: {'location': 'on top of SWIFT\u2122 Western Transfer Pad'})\n# MANUAL: ensure (container: gel/SWIFT\u2122 Western Transfer Pad, other: {'condition': 'no air bubbles formed'})\n\n### AUTOMATED SECTION ###\nincubate(container='gel/SWIFT\u2122 Western Transfer Pad', temperature='room temperature', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: blotting membrane equilibrated in diluted SWIFT\u2122 Western Buffer, other: {'location': 'on top of gel', 'condition': 'avoiding air bubbles'})\n# MANUAL: place (container: SWIFT\u2122 Western Transfer Pad, other: {'location': 'on top of membrane', 'condition': 'avoiding air bubbles'})\n# MANUAL: remove (container: air bubbles, other: {'method': 'rolling a tube or pipette over the top of the sandwich'})\n# MANUAL: slide (container: blot sandwich, other: {'location': 'onto transfer cassette', 'include': 'fiber pads soaked in diluted SWIFT\u2122 Western Buffer'})\n# MANUAL: put (container: assembled transfer cassette, reagent: diluted SWIFT\u2122 Western Buffer, other: {'location': 'Western transfer module'})\n\n### AUTOMATED SECTION ###\nrun(container='Western transfer module', duration='30-60 minutes', current='200mA fixed')",
+    "source_file": "protocol_205.txt"
+  }
+]

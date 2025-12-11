@@ -1,0 +1,398 @@
+[
+  {
+    "protocol": "Titration of AmPure XP Beads for Removal of Fragments <400bp\nLabel 11x1.5 ml tubes 40-45-50-55 etc.\nto 90 (= ratio of beads to DNA) Mix 48\u03bcl NEB 100bp ladder with 1152\u03bcl Molecular Biology Water.\nPipet 100\u03bcl of mixture into each of the 11 tubes.\nVortex bottle of AmPure XP beads and dispense 800\u03bcl into fresh tube.\nUsing same pipettor used for step #3, pipet volume of beads into each tube (i.e., 40\u03bcl into tube labled 40, 45\u03bcl into tube labed 45, etc.)\nClose lids, vortex tubes and incubate 5 minutes at room temperature.\nPlace tubes in MPC rack; wait 5 minutes for beads to adhere to magnet side of tubes.\nPipet off supers and discard them.\nWash the beads 2x with 500\u03bcl each 70% ethanol with 30 second incubation.\nRemove all supers from tubes.\nPlace tubes (with caps open) into 37\u00b0C heat block to dry beads (evaporate residual ethanol).\nAdd 10\u03bcl Qiagen EB to each tube, close lids.\nVortex to resuspend beads.\nPlace tubes back into MPC rack and let beads adhere to magnet sides of tubes.\nPipet off supers (containing eluted DNA) into fresh tubes.\nRun samples in 2% agarose gel (1x TAE) using 5\u03bcl DNA and 1\u03bcl 6x gel loading buffer.\nPhotograph results and determine what ratio of beads to DNA to use to exclude lower range of DNA.",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1.5 ml tubes (11)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": [
+              "40",
+              "45",
+              "50",
+              "55",
+              "...",
+              "90"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "48\u03bcl NEB 100bp ladder",
+            "1152\u03bcl Molecular Biology Water"
+          ],
+          "volume": "total 1200\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "11x1.5 ml tubes",
+          "reagent": "mixture (NEB 100bp ladder + water)",
+          "volume": "100\u03bcl per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "bottle of AmPure XP beads",
+          "reagent": "AmPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "AmPure XP beads",
+          "volume": "800\u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "11x1.5 ml tubes",
+          "reagent": "AmPure XP beads",
+          "volume": "variable (40\u03bcl into tube 40, 45\u03bcl into tube 45, etc.)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mapping": "tube label to bead volume"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "MPC rack"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tubes in MPC rack",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "beads adhere to magnet side"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "waste"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "70% ethanol",
+          "volume": "500\u03bcl per wash, 2x",
+          "temperature": null,
+          "duration": "30 seconds per wash",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tubes (caps open)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "heat block"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "evaporate residual ethanol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "Qiagen EB",
+          "volume": "10\u03bcl per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "MPC rack"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tubes in MPC rack",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "let beads adhere to magnet sides"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "supernatant (eluted DNA)",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "fresh tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "2% agarose gel (1x TAE)",
+          "reagent": [
+            "5\u03bcl DNA",
+            "1\u03bcl 6x gel loading buffer"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "electrophoresis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "photograph",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "what ratio of beads to DNA to use to exclude lower range of DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1.5 ml tubes (11), other: {'labels': ['40', '45', '50', '55', '...', '90']})\n\n### AUTOMATED SECTION ###\nmix(reagent=['48\u03bcl NEB 100bp ladder', '1152\u03bcl Molecular Biology Water'], volume='total 1200\u03bcl')\npipette(container='11x1.5 ml tubes', reagent='mixture (NEB 100bp ladder + water)', volume='100\u03bcl per tube')\nvortex(container='bottle of AmPure XP beads', reagent='AmPure XP beads')\ndispense(container='fresh tube', reagent='AmPure XP beads', volume='800\u03bcl')\npipette(container='11x1.5 ml tubes', reagent='AmPure XP beads', volume='variable (40\u03bcl into tube 40, 45\u03bcl into tube 45, etc.)', mapping='tube label to bead volume')\n\n### MANUAL SECTION ###\n# MANUAL: close (container: tubes)\n\n### AUTOMATED SECTION ###\nvortex(container='tubes')\nincubate(container='tubes', temperature='room temperature', duration='5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tubes, other: {'location': 'MPC rack'})\n\n### AUTOMATED SECTION ###\nwait(container='tubes in MPC rack', duration='5 minutes', purpose='beads adhere to magnet side')\npipette(container='tubes', reagent='supernatant', volume='all', destination='waste')\nwash(container='tubes', reagent='70% ethanol', volume='500\u03bcl per wash, 2x', duration='30 seconds per wash')\nremove(container='tubes', reagent='supernatant', volume='all')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tubes (caps open), temperature: 37\u00b0C, other: {'location': 'heat block'})\n\n### AUTOMATED SECTION ###\ndry(container='tubes', reagent='beads', temperature='37\u00b0C', purpose='evaporate residual ethanol')\nadd(container='tubes', reagent='Qiagen EB', volume='10\u03bcl per tube')\n\n### MANUAL SECTION ###\n# MANUAL: close (container: tubes)\n\n### AUTOMATED SECTION ###\nvortex(container='tubes', reagent='beads', purpose='resuspend beads')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tubes, other: {'location': 'MPC rack'})\n\n### AUTOMATED SECTION ###\nwait(container='tubes in MPC rack', purpose='let beads adhere to magnet sides')\npipette(container='tubes', reagent='supernatant (eluted DNA)', volume='all', destination='fresh tubes')\n\n### MANUAL SECTION ###\n# MANUAL: run (container: 2% agarose gel (1x TAE), reagent: ['5\u03bcl DNA', '1\u03bcl 6x gel loading buffer'], other: {'purpose': 'electrophoresis'})\n# MANUAL: photograph (container: gel)\n# MANUAL: determine (other: {'purpose': 'what ratio of beads to DNA to use to exclude lower range of DNA'})",
+    "source_file": "protocol_239.txt"
+  }
+]

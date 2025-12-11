@@ -1,0 +1,372 @@
+[
+  {
+    "protocol": "Subcellular Fractionation from Liver or Brain Soft Tissues (FOCUS\u2122 SubCell Kit)\nOPTIONAL: Delipidated BSA can be added to 1X SubCell Buffer\u2010II to the concentration of 2mg/ml for removing free fatty acids prior to processing.\nAn appropriate amount of protease inhibitor cocktail can be added to the 1X SubCell Buffer\u2010II just before use.\nUse a fresh tissue sample (obtained within one hour of sacrifice) kept on ice.\nDo not freeze.\nWeigh approximately 50\u2010100mg tissue.\nOn a cooled glass plate, with the aid of a scalpel, mince the tissue into very small pieces.\nPerform steps 4-7 on ice.\nTransfer the minced tissue to an ice\u2010cold Dounce tissue homogenizer.\nStand on ice for 2 minutes.\nTransfer the homogenate to a centrifuge tube and leave large chunks of tissue fragments in the homogenizer to be discarded.\nCentrifuge the sample at 700x g for 5 minutes to pellet the nuclei.\nCarefully transfer the supernatant into a new tube.\nCentrifuge supernatant at 12,000xg for 10 minutes.\nTransfer the supernatant (post mitochondria) to a new tube and resuspend the pellet in 10 volumes of 1X SubCell Buffer II without BSA.\nCentrifuge the sample at 700x g for 5 minutes to pellet the nuclei.\nCarefully transfer the supernatant into a new tube.\nCentrifuge supernatant at 12,000xg for 10 minutes and remove the supernatant.\nThe pellet contains mitochondria.\nSuspend the mitochondrial pellet in Working Mitochondria Storage Buffer (approximately 50\u03bcl for pellet from ~100mg tissue) and keep the suspension on ice before downstream processing.\nThe suspension may be stored on ice for up to 48 hours.\nEnrichment of other cell organelles: The post mitochondria supernatant from step 12 can be further fractionated using a variety of gradient and differential centrifugations.\nAdd 10 volumes of 1X SubCell Buffer\u2010II and using a loose\u2010fitting pestle, disaggregate the tissue with 5\u201010 strokes or until the tissue sample is completely homogenized.\nUsing a tight\u2010fitting pestle, release the nuclei with 8\u201010 strokes.\nDo not twist the pestle as nuclei shearing may occur.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1X SubCell Buffer-II",
+          "reagent": "Delipidated BSA",
+          "volume": "to 2mg/ml concentration",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "removing free fatty acids"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1X SubCell Buffer-II",
+          "reagent": "protease inhibitor cocktail",
+          "volume": "appropriate amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "just before use"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "tissue sample",
+          "reagent": null,
+          "volume": "50-100mg",
+          "temperature": "on ice",
+          "duration": "within one hour of sacrifice",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "tissue",
+          "reagent": null,
+          "volume": "50-100mg",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mince",
+        "parameters": {
+          "container": "cooled glass plate",
+          "reagent": "tissue",
+          "volume": "50-100mg",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "scalpel"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "ice-cold Dounce tissue homogenizer",
+          "reagent": "minced tissue",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "stand",
+        "parameters": {
+          "container": "homogenizer with tissue",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "homogenate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "exclude": "large tissue fragments"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "homogenate",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "700x g",
+          "other": {
+            "purpose": "pellet nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with supernatant",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "12,000x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant (post mitochondria)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "1X SubCell Buffer II without BSA",
+          "volume": "10 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with resuspended pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "700x g",
+          "other": {
+            "purpose": "pellet nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with supernatant",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "12,000x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": "tube with mitochondrial pellet",
+          "reagent": "Working Mitochondria Storage Buffer",
+          "volume": "approximately 50\u03bcl",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pellet from": "~100mg tissue"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "tube with mitochondrial suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "before downstream processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube with mitochondrial suspension",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "up to 48 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "fractionate",
+        "parameters": {
+          "container": "post mitochondria supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gradient and differential centrifugations"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tissue sample",
+          "reagent": "1X SubCell Buffer-II",
+          "volume": "10 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "disaggregate",
+        "parameters": {
+          "container": "tissue sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "loose-fitting pestle",
+            "strokes": "5-10",
+            "until": "completely homogenized"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "release",
+        "parameters": {
+          "container": "tissue sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "tight-fitting pestle",
+            "strokes": "8-10"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='1X SubCell Buffer-II', reagent='Delipidated BSA', volume='to 2mg/ml concentration', purpose='removing free fatty acids')\nadd(container='1X SubCell Buffer-II', reagent='protease inhibitor cocktail', volume='appropriate amount', timing='just before use')\nkeep(container='tissue sample', volume='50-100mg', temperature='on ice', duration='within one hour of sacrifice')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: tissue, volume: 50-100mg, other: {})\n# MANUAL: mince (container: cooled glass plate, reagent: tissue, volume: 50-100mg, temperature: on ice, other: {'tool': 'scalpel'})\n\n### AUTOMATED SECTION ###\ntransfer(container='ice-cold Dounce tissue homogenizer', reagent='minced tissue', temperature='on ice')\nstand(container='homogenizer with tissue', temperature='on ice', duration='2 minutes')\ntransfer(container='centrifuge tube', reagent='homogenate', exclude='large tissue fragments')\ncentrifuge(container='centrifuge tube', reagent='homogenate', duration='5 minutes', speed='700x g', purpose='pellet nuclei')\ntransfer(container='new tube', reagent='supernatant', carefully=True)\ncentrifuge(container='tube with supernatant', reagent='supernatant', duration='10 minutes', speed='12,000x g')\ntransfer(container='new tube', reagent='supernatant (post mitochondria)')\nresuspend(container='tube with pellet', reagent='1X SubCell Buffer II without BSA', volume='10 volumes')\ncentrifuge(container='tube with resuspended pellet', duration='5 minutes', speed='700x g', purpose='pellet nuclei')\ntransfer(container='new tube', reagent='supernatant', carefully=True)\ncentrifuge(container='tube with supernatant', reagent='supernatant', duration='10 minutes', speed='12,000x g')\nremove(container='tube with pellet', reagent='supernatant')\nsuspend(container='tube with mitochondrial pellet', reagent='Working Mitochondria Storage Buffer', volume='approximately 50\u03bcl', temperature='on ice', pellet from='~100mg tissue')\nkeep(container='tube with mitochondrial suspension', temperature='on ice', duration='before downstream processing')\nstore(container='tube with mitochondrial suspension', temperature='on ice', duration='up to 48 hours')\n\n### MANUAL SECTION ###\n# MANUAL: fractionate (container: post mitochondria supernatant, other: {'method': 'gradient and differential centrifugations'})\n\n### AUTOMATED SECTION ###\nadd(container='tissue sample', reagent='1X SubCell Buffer-II', volume='10 volumes')\n\n### MANUAL SECTION ###\n# MANUAL: disaggregate (container: tissue sample, other: {'tool': 'loose-fitting pestle', 'strokes': '5-10', 'until': 'completely homogenized'})\n# MANUAL: release (container: tissue sample, other: {'tool': 'tight-fitting pestle', 'strokes': '8-10'})",
+    "source_file": "protocol_175.txt"
+  }
+]

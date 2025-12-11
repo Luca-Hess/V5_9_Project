@@ -1,0 +1,211 @@
+[
+  {
+    "protocol": "PCR Using Q5\u00ae Hot Start High-Fidelity DNA Polymerase (M0493)\nSet up the following reaction:C\nomponent25 \u00b5l Reaction50 \u00b5l ReactionFinal Concentration5X Q5\u00a0Reaction Buffer5 \u00b5l10 \u00b5l1X10 mM dNTPs0.5 \u00b5l1 \u00b5l200 \u00b5M10 \u00b5M Forward Primer1.25 \u00b5l2.5 \u00b5l0.5 \u00b5M10 \u00b5M Reverse Primer1.25 \u00b5l2.5 \u00b5l0.5 \u00b5MTemplate DNAvariablevariable< 1,000 ngQ5 Hot Start High-Fidelity DNA Polymerase0.25 \u00b5l0.5 \u00b5l0.02 U/\u00b5l5X Q5 High GC Enhancer (optional)(5 \u00b5l)(10 \u00b5l)(1X)Nuclease-Free Waterto 25 \u00b5lto 50 \u00b5l.\u00a0 \nGently mix the reaction.\nCollect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with mineral oil if using a PCR machine without a heated lid.\nTransfer PCR tubes to a PCR machine and begin thermocycling.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "5X Q5 Reaction Buffer",
+          "volume": "5 \u00b5l or 10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "10 mM dNTPs",
+          "volume": "0.5 \u00b5l or 1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "200 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "10 \u00b5M Forward Primer",
+          "volume": "1.25 \u00b5l or 2.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "10 \u00b5M Reverse Primer",
+          "volume": "1.25 \u00b5l or 2.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Template DNA",
+          "volume": "variable",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "amount": "< 1,000 ng"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Q5 Hot Start High-Fidelity DNA Polymerase",
+          "volume": "0.25 \u00b5l or 0.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.02 U/\u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "5X Q5 High GC Enhancer",
+          "volume": "5 \u00b5l or 10 \u00b5l (optional)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "Nuclease-Free Water",
+          "volume": "to 25 \u00b5l or to 50 \u00b5l (to final volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {
+            "purpose": "collect liquid to bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "mineral oil",
+          "volume": "overlay (volume not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if using PCR machine without heated lid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "PCR machine"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "thermocycling (PCR program, not specified)",
+          "duration": "thermocycling (not specified)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='PCR tube', reagent='5X Q5 Reaction Buffer', volume='5 \u00b5l or 10 \u00b5l', final_concentration='1X')\npipette(container='PCR tube', reagent='10 mM dNTPs', volume='0.5 \u00b5l or 1 \u00b5l', final_concentration='200 \u00b5M')\npipette(container='PCR tube', reagent='10 \u00b5M Forward Primer', volume='1.25 \u00b5l or 2.5 \u00b5l', final_concentration='0.5 \u00b5M')\npipette(container='PCR tube', reagent='10 \u00b5M Reverse Primer', volume='1.25 \u00b5l or 2.5 \u00b5l', final_concentration='0.5 \u00b5M')\npipette(container='PCR tube', reagent='Template DNA', volume='variable', amount='< 1,000 ng')\npipette(container='PCR tube', reagent='Q5 Hot Start High-Fidelity DNA Polymerase', volume='0.25 \u00b5l or 0.5 \u00b5l', final_concentration='0.02 U/\u00b5l')\npipette(container='PCR tube', reagent='5X Q5 High GC Enhancer', volume='5 \u00b5l or 10 \u00b5l (optional)', final_concentration='1X')\npipette(container='PCR tube', reagent='Nuclease-Free Water', volume='to 25 \u00b5l or to 50 \u00b5l (to final volume)')\nmix(container='PCR tube', speed='gentle')\ncentrifuge(container='PCR tube', duration='quick spin', purpose='collect liquid to bottom')\npipette(container='PCR tube', reagent='mineral oil', volume='overlay (volume not specified)', condition='if using PCR machine without heated lid')\ntransfer(container='PCR tube', destination='PCR machine')\nincubate(container='PCR tube', temperature='thermocycling (PCR program, not specified)', duration='thermocycling (not specified)')",
+    "source_file": "protocol_567.txt"
+  }
+]

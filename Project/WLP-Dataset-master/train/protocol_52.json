@@ -1,0 +1,374 @@
+[
+  {
+    "protocol": "Clean-up using AMPure XP beads\nMix the reagent well so that the reagent appears homogeneous and consistent in color.\nAdd 117 \u03bcL of homogenous AMPure XP beads to each adaptor ligated DNA sample (in either 1.5 mL LoBind tubes or 0.2 mL LoBind tubes).\nMix well by pipetting up and down at least 10 times.\nIncubate at room temperature for 5 min.\nPut the tube in the magnetic stand and wait for the solution to clear (which should take approximately 3\u20135 min).\nKeep the tube in the magnetic stand.\nDo not touch the beads while you carefully discard the cleared solution from the tubes.\nContinue to keep the tube in the magnetic stand/rack whilst adding 500 \u03bcL (1.5 mL LoBind tubes) or 200 \u03bcL (0.2mL LobBind tubes) of 70% ethanol to each tube.\n(wash 1/2).\nLet the tube sit for 1 min to allow any disturbed beads to settle, and remove the ethanol.\n(wash 1/2).\nContinue to keep the tube in the magnetic stand/rack whilst adding 500 \u03bcL (1.5 mL LoBind tubes) or 200 \u03bcL (0.2mL LobBind tubes) of 70% ethanol to each tube.\n(wash 2/2).\nLet the tube sit for 1 min to allow any disturbed beads to settle, and remove the ethanol.\n(wash 2/2).\nSeal the tube or plate and centrifuge briefly (260 x g for 30 sec).\nReturn the tube to the magnetic stand/rack and wait 1 min.\nRemove any remaining ethanol using a P20 pipette and tip, being careful not to touch the bead pellet.\nDry the samples on a 37 \u00b0C heat block for 3\u20135 min or until the residual ethanol completely evaporates.\nIMPORTANT: Do not over-dry as this will decrease yield.\nAdd 32 \u03bcL nuclease-free water directly to the bead pellet, mix well by pipetting up and down at least 10 times.\nIncubate for 3 min at room temperature.\nCentrifuge briefly to consolidate the sample and place on a magnetic stand/rack for 2\u20133 min or until the solution is clear.\nRemove 30 \u03bcL of the supernatant and transfer to a fresh LoBind tube.\nThe beads can be discarded at this time.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "AMPure XP beads reagent container",
+          "reagent": "AMPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "homogeneity": "until homogeneous and consistent in color"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 mL LoBind tube or 0.2 mL LoBind tube (adaptor ligated DNA sample)",
+          "reagent": "AMPure XP beads",
+          "volume": "117 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube containing DNA sample and beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down at least 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube containing DNA sample and beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3\u20135 min",
+          "speed": null,
+          "other": {
+            "condition": "until solution clears"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "keep tube in magnetic stand"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube on magnetic stand (1.5 mL LoBind tube or 0.2 mL LoBind tube)",
+          "reagent": "70% ethanol",
+          "volume": "500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "condition": "allow disturbed beads to settle"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "ethanol",
+          "volume": "500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "1/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube on magnetic stand (1.5 mL LoBind tube or 0.2 mL LoBind tube)",
+          "reagent": "70% ethanol",
+          "volume": "500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {
+            "condition": "allow disturbed beads to settle"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "ethanol",
+          "volume": "500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash": "2/2"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "tube or plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sealed tube or plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": "260 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand/rack",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "remaining ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "P20 pipette and tip",
+            "caution": "do not touch bead pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "3\u20135 min or until residual ethanol evaporates",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "tube with bead pellet",
+          "reagent": "nuclease-free water",
+          "volume": "32 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "directly": "to bead pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with bead pellet and water",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down at least 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with bead pellet and water",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "3 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {
+            "purpose": "consolidate sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube on magnetic stand/rack",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2\u20133 min or until solution is clear",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "supernatant",
+          "volume": "30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "fresh LoBind tube",
+          "reagent": "supernatant",
+          "volume": "30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(container='AMPure XP beads reagent container', reagent='AMPure XP beads', homogeneity='until homogeneous and consistent in color')\ndispense(container='1.5 mL LoBind tube or 0.2 mL LoBind tube (adaptor ligated DNA sample)', reagent='AMPure XP beads', volume='117 \u03bcL')\nmix(container='tube containing DNA sample and beads', method='pipetting up and down at least 10 times')\nincubate(container='tube containing DNA sample and beads', temperature='room temperature', duration='5 min')\nwait(container='tube on magnetic stand', duration='3\u20135 min', condition='until solution clears')\nwait(container='tube on magnetic stand', condition='keep tube in magnetic stand')\ndispense(container='tube on magnetic stand (1.5 mL LoBind tube or 0.2 mL LoBind tube)', reagent='70% ethanol', volume='500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)', wash='1/2')\nwait(container='tube on magnetic stand', duration='1 min', condition='allow disturbed beads to settle')\naspirate(container='tube on magnetic stand', reagent='ethanol', volume='500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)', wash='1/2')\ndispense(container='tube on magnetic stand (1.5 mL LoBind tube or 0.2 mL LoBind tube)', reagent='70% ethanol', volume='500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)', wash='2/2')\nwait(container='tube on magnetic stand', duration='1 min', condition='allow disturbed beads to settle')\naspirate(container='tube on magnetic stand', reagent='ethanol', volume='500 \u03bcL (1.5 mL tube) or 200 \u03bcL (0.2 mL tube)', wash='2/2')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: tube or plate)\n\n### AUTOMATED SECTION ###\ncentrifuge(container='sealed tube or plate', duration='30 sec', speed='260 x g')\nwait(container='tube on magnetic stand/rack', duration='1 min')\naspirate(container='tube on magnetic stand', reagent='remaining ethanol', tool='P20 pipette and tip', caution='do not touch bead pellet')\ndry(container='tube', reagent='sample', temperature='37 \u00b0C', duration='3\u20135 min or until residual ethanol evaporates')\ndispense(container='tube with bead pellet', reagent='nuclease-free water', volume='32 \u03bcL', directly='to bead pellet')\nmix(container='tube with bead pellet and water', method='pipetting up and down at least 10 times')\nincubate(container='tube with bead pellet and water', temperature='room temperature', duration='3 min')\ncentrifuge(container='tube', duration='briefly', purpose='consolidate sample')\nwait(container='tube on magnetic stand/rack', duration='2\u20133 min or until solution is clear')\naspirate(container='tube on magnetic stand', reagent='supernatant', volume='30 \u03bcL')\ndispense(container='fresh LoBind tube', reagent='supernatant', volume='30 \u03bcL')",
+    "source_file": "protocol_52.txt"
+  }
+]

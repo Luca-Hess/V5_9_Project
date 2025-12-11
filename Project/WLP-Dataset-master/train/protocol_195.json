@@ -1,0 +1,409 @@
+[
+  {
+    "protocol": "Quick Fungal DNA Extraction\nInoculate fungal material into 300 \u00b5L rich growth medium in a 2 mL micro-centrifuge tube.Grow at RT for 3-4 days.\nFreeze culture tubes in LN2Freeze dry over night. \nAdd 50 \u00b5L 0.6mm glass beads to freeze-dried sample in 2 mL tube and grind using Tissue-Lyser LT for 5 mins at 50 Hz. \nAdd 500 \u00b5L lysis buffer to pulverised sample.\nVortex to mix Heat to 45 \u02daC for 5 mins, shaking at 1200 rpm.\nAdd 0.5 vol (250 \u00b5L)\u00a03 M Potassium Acetate\u00a0to lysis mix.\nVortex to mix.\nCentrifuge at\u00a012 K rpm for a\u00a0minimum of 15 minutes @ 4\u02daC.\nTransfer supernatant (~ 650 \u00b5L) to fresh 1.5 mL microcentrifuge\u00a0tube.\nAdd 1 vol chilled Isopropanol ( ~ 700 \u00b5L )\u00a0to the\u00a0supernatant, mix well, incubate -20\u02daC for 1hr.\nCentrifuge at 12 K rpm for a minimum of 15 minutes at 4\u00b0C.\nDecant gently or aspirate supernatant.\nTo the pellet add 500 \u00b5L 70% ethanol stored at -20\u00b0C.\nCentrifuge at 12 K rpm for a minimum of 3 minutes at 4\u00b0C.\nDiscard supernatant.\nRepeat wash step with\u00a0500 \u00b5L of cold\u00a070% ethanol.\nSpin and discard supernatant.\nDry pellet in speed-vac at 45\u02daC for 5-10 minutes.\nRe-suspend pellet in nuclease free water or TE buffer (10 mM Tris pH 8.0, 1 mM EDTA pH 8.0).\nAdd 50 \u00b5L 3M Sodium Acetate pH 5.5",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "2 mL micro-centrifuge tube",
+          "reagent": "fungal material, rich growth medium",
+          "volume": "300 \u00b5L rich growth medium",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL micro-centrifuge tube",
+          "reagent": "inoculated fungal material in rich growth medium",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "3-4 days",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze dry",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "0.6mm glass beads",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "grind",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "freeze-dried sample with glass beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "50 Hz",
+          "other": {
+            "instrument": "Tissue-Lyser LT"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "lysis buffer",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "pulverised sample with lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": "5 mins",
+          "speed": "shaking at 1200 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "3 M Potassium Acetate",
+          "volume": "250 \u00b5L (0.5 vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "lysis mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "lysis mix with Potassium Acetate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 minutes (minimum)",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh 1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": "650 \u00b5L (approximate)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "2 mL tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "chilled Isopropanol",
+          "volume": "700 \u00b5L (1 vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant with Isopropanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant with Isopropanol",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "1 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 minutes (minimum)",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently or aspirate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "70% ethanol (stored at -20\u00b0C)",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "3 minutes (minimum)",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "cold 70% ethanol",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "instrument": "speed-vac"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "nuclease free water or TE buffer (10 mM Tris pH 8.0, 1 mM EDTA pH 8.0)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "3M Sodium Acetate pH 5.5",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 2 mL micro-centrifuge tube, reagent: fungal material, rich growth medium, volume: 300 \u00b5L rich growth medium, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='2 mL micro-centrifuge tube', reagent='inoculated fungal material in rich growth medium', temperature='room temperature', duration='3-4 days')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: culture tubes, temperature: liquid nitrogen, other: {})\n# MANUAL: freeze dry (container: culture tubes, duration: overnight, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL tube', reagent='0.6mm glass beads', volume='50 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: grind (container: 2 mL tube, reagent: freeze-dried sample with glass beads, duration: 5 mins, speed: 50 Hz, other: {'instrument': 'Tissue-Lyser LT'})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL tube', reagent='lysis buffer', volume='500 \u00b5L')\nvortex(container='2 mL tube', reagent='pulverised sample with lysis buffer', purpose='mix')\nheat(container='2 mL tube', reagent='sample', temperature='45\u00b0C', duration='5 mins', speed='shaking at 1200 rpm')\nadd(container='2 mL tube', reagent='3 M Potassium Acetate', volume='250 \u00b5L (0.5 vol)', to='lysis mix')\nvortex(container='2 mL tube', reagent='lysis mix with Potassium Acetate', purpose='mix')\ncentrifuge(container='2 mL tube', reagent='sample', temperature='4\u00b0C', duration='15 minutes (minimum)', speed='12,000 rpm')\ntransfer(container='fresh 1.5 mL microcentrifuge tube', reagent='supernatant', volume='650 \u00b5L (approximate)', from='2 mL tube')\nadd(container='1.5 mL microcentrifuge tube', reagent='chilled Isopropanol', volume='700 \u00b5L (1 vol)', to='supernatant')\nmix(container='1.5 mL microcentrifuge tube', reagent='supernatant with Isopropanol')\nincubate(container='1.5 mL microcentrifuge tube', reagent='supernatant with Isopropanol', temperature='-20\u00b0C', duration='1 hr')\ncentrifuge(container='1.5 mL microcentrifuge tube', reagent='sample', temperature='4\u00b0C', duration='15 minutes (minimum)', speed='12,000 rpm')\ndecant(container='1.5 mL microcentrifuge tube', reagent='supernatant', method='gently or aspirate')\nadd(container='1.5 mL microcentrifuge tube', reagent='70% ethanol (stored at -20\u00b0C)', volume='500 \u00b5L', to='pellet')\ncentrifuge(container='1.5 mL microcentrifuge tube', reagent='sample', temperature='4\u00b0C', duration='3 minutes (minimum)', speed='12,000 rpm')\ndiscard(container='1.5 mL microcentrifuge tube', reagent='supernatant')\nadd(container='1.5 mL microcentrifuge tube', reagent='cold 70% ethanol', volume='500 \u00b5L', to='pellet')\ncentrifuge(container='1.5 mL microcentrifuge tube', reagent='sample', temperature='4\u00b0C')\ndiscard(container='1.5 mL microcentrifuge tube', reagent='supernatant')\ndry(container='1.5 mL microcentrifuge tube', reagent='pellet', temperature='45\u00b0C', duration='5-10 minutes', instrument='speed-vac')\nresuspend(container='1.5 mL microcentrifuge tube', reagent='nuclease free water or TE buffer (10 mM Tris pH 8.0, 1 mM EDTA pH 8.0)', to='pellet')\nadd(container='1.5 mL microcentrifuge tube', reagent='3M Sodium Acetate pH 5.5', volume='50 \u00b5L')",
+    "source_file": "protocol_195.txt"
+  }
+]

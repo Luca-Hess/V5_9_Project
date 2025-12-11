@@ -1,0 +1,290 @@
+[
+  {
+    "protocol": "Full Contact Microbiology (a.k.a Diatom Transformation via Bacterial Conjugation)\nGrow the diatom culture to mid-log phase (\u2248 8.0E6 cells/ml for Phaeodactylum tricornutum grown on F/2 media or 5.0 E7 cell/ml when grown on BG-11).\nWe have investigated transformation efficiency throughout the growth curve and found this to be the sweetspot.\nGrow 1 mL of\u00a0E. coli culture containing both the mobillity plasmid (Pta-MOB) and carrier plasmid, overnight (16-20 hrs) in LB+antibiotics, for each planned transformation.\n(We grow them at 37\u00b0C at 270 rpm in a shaking incubator.).\nOn the day of transformation, use the overnight culture to inoculate 50 mL of\u00a0fresh\u00a0LB+antibiotic, 1:50 dilution, for each planned transformation.Grow to an OD600 of 0.8 - 1.0 (37\u00b0C with 270 rpm shaking).This takes about 3-4 hours.\nDuring the 3-4 hours the E. coli\u00a0culture is growing, measure the\u00a0Phaeodactylum tricornutum\u00a0cell concentration with a FlowCam or haemocytometer to calculate the required volume needed to collect 2.5E8\u00a0cells for each transformation.\nFor each transformation, centrifuge\u00a050 mL of\u00a0E. coli\u00a0culture and the required Phaeodactylum tricornutum volume\u00a0at 4000 x g for 10 minutes at 4\u00b0C.\nResuspend E. coli pellet\u00a0in 500 \u03bcL of SOC medium.Resuspend\u00a0P. tricornutum\u00a0pellet in 500 \u03bcL of L1 medium.\nNote:\u00a0The diatom and E. coli cultures should be centrifuged at around the same time to minimize the amount of time they spend\u00a0concentrated.\nIn a 1.5 mL tube mix 200\u00a0\u03bcl of E. coli cells with 200\u00a0\u03bcl of\u00a0Phaeodactylum tricornutum cells.\nNegative control: \u00a0 In a 1.5 mL tube mix 200\u00a0\u03bcl of\u00a0SOC\u00a0medium with 200\u00a0\u03bcl of\u00a0Phaeodactylum tricornutum\u00a0cells.\nNote:\u00a0Incubate and treat the negative control plates identically to conjugation plates.\nSpread the mixture (400 \u03bcL) on\u00a0Conjugation Plates.\n(0.5x BG-11 with 5% LB and 1% agar).\nIncubate plates for 90 minutes at 30\u00b0C in the dark.\nMove plates to light incubator (18\u00b0C and 100 \u03bcmol photons m-2 s-1) for 2 days.\nCollect cells by adding\u00a01 mL of L1 medium.\nUse a cell scraper to concentrate cells and medium to one side of the plate.\nTransfer resuspended cells to a 1.5 ml microcentrifuge tube with a P1000 pipette and filter tips.\nSpread\u00a0200\u00a0\u03bcl of the cell suspension on a\u00a0Selection Plate.\nIncubate at 18\u00b0C and 100 \u03bcmol photons m-2 s-1 until colonies appear.\nAfter a minimum of 8-12 days, untransformed\u00a0Phaeodactylum tricornutum cells die off, and\u00a0colonies of transformed cells begin to appear \u2013 in some cases, this can take 3-4 weeks.\nAlternatively selection can be done in liquid BG-11\u00a0Selection media\u00a0using eGFP as a reporter\u00a0and sorted using FACS.\nun-transformed Pt\u00a0eGFP \u00a0expression.\nThis protocol was modified from the original procedure\u00a0and correspondence with the authors.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "culture flask or bottle",
+          "reagent": "Phaeodactylum tricornutum in F/2 media or BG-11",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_cell_density": "8.0E6 cells/ml (F/2) or 5.0E7 cells/ml (BG-11)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "culture tube or flask",
+          "reagent": "E. coli with Pta-MOB and carrier plasmid in LB+antibiotics",
+          "volume": "1 mL",
+          "temperature": "37\u00b0C",
+          "duration": "16-20 hrs",
+          "speed": "270 rpm",
+          "other": {
+            "shaking": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "flask",
+          "reagent": "fresh LB+antibiotic",
+          "volume": "50 mL",
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "inoculum": "overnight E. coli culture",
+            "dilution": "1:50"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "flask",
+          "reagent": "E. coli in LB+antibiotic",
+          "volume": "50 mL",
+          "temperature": "37\u00b0C",
+          "duration": "3-4 hours",
+          "speed": "270 rpm",
+          "other": {
+            "target_OD600": "0.8-1.0",
+            "shaking": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "Phaeodactylum tricornutum culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "FlowCam or haemocytometer",
+            "purpose": "calculate volume needed for 2.5E8 cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "50 mL E. coli culture and required volume of Phaeodactylum tricornutum",
+          "volume": "50 mL (E. coli) + variable (P. tricornutum)",
+          "temperature": "4\u00b0C",
+          "duration": "10 minutes",
+          "speed": "4000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "E. coli pellet in SOC medium",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "Phaeodactylum tricornutum pellet in L1 medium",
+          "volume": "500 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "200 \u03bcL E. coli cells + 200 \u03bcL Phaeodactylum tricornutum cells",
+          "volume": "400 \u03bcL total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "200 \u03bcL SOC medium + 200 \u03bcL Phaeodactylum tricornutum cells (negative control)",
+          "volume": "400 \u03bcL total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "control": "negative"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "Conjugation Plate",
+          "reagent": "mixture (400 \u03bcL)",
+          "volume": "400 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate_composition": "0.5x BG-11 with 5% LB and 1% agar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Conjugation Plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "90 minutes",
+          "speed": null,
+          "other": {
+            "light_condition": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "Conjugation Plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "2 days",
+          "speed": null,
+          "other": {
+            "light_intensity": "100 \u03bcmol photons m-2 s-1",
+            "incubator_type": "light incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Conjugation Plate",
+          "reagent": "L1 medium",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "scrape",
+        "parameters": {
+          "container": "Conjugation Plate",
+          "reagent": "cells and medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "cell scraper",
+            "purpose": "concentrate cells and medium to one side"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 mL microcentrifuge tube",
+          "reagent": "resuspended cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "P1000 pipette and filter tips"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "Selection Plate",
+          "reagent": "cell suspension",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Selection Plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "until colonies appear (8-12 days minimum, up to 3-4 weeks)",
+          "speed": null,
+          "other": {
+            "light_intensity": "100 \u03bcmol photons m-2 s-1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: culture flask or bottle, reagent: Phaeodactylum tricornutum in F/2 media or BG-11, other: {'target_cell_density': '8.0E6 cells/ml (F/2) or 5.0E7 cells/ml (BG-11)'})\n\n### AUTOMATED SECTION ###\ngrow(container='culture tube or flask', reagent='E. coli with Pta-MOB and carrier plasmid in LB+antibiotics', volume='1 mL', temperature='37\u00b0C', duration='16-20 hrs', speed='270 rpm', shaking=True)\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: flask, reagent: fresh LB+antibiotic, volume: 50 mL, temperature: 37\u00b0C, other: {'inoculum': 'overnight E. coli culture', 'dilution': '1:50'})\n\n### AUTOMATED SECTION ###\ngrow(container='flask', reagent='E. coli in LB+antibiotic', volume='50 mL', temperature='37\u00b0C', duration='3-4 hours', speed='270 rpm', target_OD600='0.8-1.0', shaking=True)\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: Phaeodactylum tricornutum culture, other: {'instrument': 'FlowCam or haemocytometer', 'purpose': 'calculate volume needed for 2.5E8 cells'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='centrifuge tube', reagent='50 mL E. coli culture and required volume of Phaeodactylum tricornutum', volume='50 mL (E. coli) + variable (P. tricornutum)', temperature='4\u00b0C', duration='10 minutes', speed='4000 x g')\nresuspend(container='centrifuge tube', reagent='E. coli pellet in SOC medium', volume='500 \u03bcL')\nresuspend(container='centrifuge tube', reagent='Phaeodactylum tricornutum pellet in L1 medium', volume='500 \u03bcL')\nmix(container='1.5 mL tube', reagent='200 \u03bcL E. coli cells + 200 \u03bcL Phaeodactylum tricornutum cells', volume='400 \u03bcL total')\nmix(container='1.5 mL tube', reagent='200 \u03bcL SOC medium + 200 \u03bcL Phaeodactylum tricornutum cells (negative control)', volume='400 \u03bcL total', control='negative')\nspread(container='Conjugation Plate', reagent='mixture (400 \u03bcL)', volume='400 \u03bcL', plate_composition='0.5x BG-11 with 5% LB and 1% agar')\nincubate(container='Conjugation Plate', temperature='30\u00b0C', duration='90 minutes', light_condition='dark')\nmove(container='Conjugation Plate', temperature='18\u00b0C', duration='2 days', light_intensity='100 \u03bcmol photons m-2 s-1', incubator_type='light incubator')\nadd(container='Conjugation Plate', reagent='L1 medium', volume='1 mL')\n\n### MANUAL SECTION ###\n# MANUAL: scrape (container: Conjugation Plate, reagent: cells and medium, other: {'tool': 'cell scraper', 'purpose': 'concentrate cells and medium to one side'})\n\n### AUTOMATED SECTION ###\ntransfer(container='1.5 mL microcentrifuge tube', reagent='resuspended cells', tool='P1000 pipette and filter tips')\nspread(container='Selection Plate', reagent='cell suspension', volume='200 \u03bcL')\nincubate(container='Selection Plate', temperature='18\u00b0C', duration='until colonies appear (8-12 days minimum, up to 3-4 weeks)', light_intensity='100 \u03bcmol photons m-2 s-1')",
+    "source_file": "protocol_7.txt"
+  }
+]

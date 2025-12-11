@@ -1,0 +1,622 @@
+[
+  {
+    "protocol": "DNEasy DNA Extraction - Vibrio Gram Negative Broth Bacteria\nPut Buffer ATL and AL at 56 C for 5 minutes before using.\nTransfer 250ul of broth culture to 2ml deep well (autoclaved). \nHarvest cells (maximum 2 x 109 cells) by centrifuging plate for 15 min at 4063 x g. \nDiscard supernatant.\nResuspend pellet in 200 \u00b5l Buffer ATL by pipetting up and down 15 times.\nSeal with foil and place in oven at 56 C for one hour.\nPlace extra plate on seal so foil doesn\u2019t come off.\nPipette up and down 15 times and spin down.\n(May place in -80 C and continue procedure later at this point.)\nIf placed in -80 C, let thaw and spin down @ 1000g for 1 min. \nAdd 205 uL Buffer AL and 205 uL molecular grade EtOH.\nPipette up and down 15 times and spin down.\nPlace DNeasy 96 plates on top of 2ml deep well plate .\nMark the DNeasy 96 plates for later sample identification.\nCarefully transfer the lysate (approximately 600ul) of each sample from step 7 to each well of the DNeasy 96 plates.\nDo not transfer more than 900 \u00b5l per well.\nSeal each DNeasy 96 plate with a porous film.\nCentrifuge for 15 min at 4063g.\nIf lysate remains in any of the wells, centrifuge for a further 10 min.\nAdd 500 \u00b5l Buffer AW1 to each sample.\nSeal each DNeasy 96 plate with a new AirPore Tape Sheet (provided).\nCentrifuge for 5 min at 4063g.\nRemove the tape.\nCarefully add 500 \u00b5l Buffer AW2 to each sample.\nCentrifuge for 15 min at 4063g.\nDo not seal the plate with AirPore Tape.\nThe heat generated during centrifugation ensures evaporation of residual ethanol in the sample (from Buffer AW2) that might otherwise inhibit downstream reactions.\nPlace in new collection rack (2ml deep well plate) and spin again 15 minutes at 4063g.\nPlace each DNeasy 96 plate in the correct orientation on a new rack of VWR 500ul plate.\nTo elute the DNA, add 200 \u00b5l Buffer TE to each sample, seal and incubate for 1 minute at room temp.\nCentrifuge for 4 min at 4063g.\n200 \u00b5l Buffer TE is sufficient to elute up to 75% of the DNA from each well of the DNeasy 96 plate.\nRecommended: For maximum DNA yield, repeat step 16 with another 200 \u00b5l Buffer TE.\nAliquot 20ul of extracted DNA to green 96 microplate.\nSeal DNeasy 96 plate and 96 microplate with non-sterile foil.\nPlace DNeasy 96 plate in -80 C and 96 microplate in -20 C.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer ATL and Buffer AL",
+          "volume": null,
+          "temperature": "56 C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2ml deep well (autoclaved)",
+          "reagent": "broth culture",
+          "volume": "250 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "4063 x g",
+          "other": {
+            "cell_count": "maximum 2 x 10^9 cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in Buffer ATL",
+          "volume": "200 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mixing_method": "pipetting up and down 15 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "seal_type": "foil"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "56 C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "location": "oven"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "extra plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent foil from coming off"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette up and down 15 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "1000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AL",
+          "volume": "205 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "molecular grade EtOH",
+          "volume": "205 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette up and down 15 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNeasy 96 plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on top of 2ml deep well plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "DNeasy 96 plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "sample identification"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "DNeasy 96 plates",
+          "reagent": "lysate",
+          "volume": "approximately 600 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "step 7"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "seal_type": "porous film"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "4063g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "4063g",
+          "other": {
+            "condition": "if lysate remains"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": "Buffer AW1",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "seal_type": "AirPore Tape Sheet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "4063g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "seal_type": "AirPore Tape"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": "Buffer AW2",
+          "volume": "500 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "4063g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "new collection rack (2ml deep well plate)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "4063g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "new rack of VWR 500ul plate",
+            "orientation": "correct"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": "Buffer TE",
+          "volume": "200 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "elute DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "4 min",
+          "speed": "4063g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": "Buffer TE",
+          "volume": "200 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "repeat for maximum DNA yield"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "green 96 microplate",
+          "reagent": "extracted DNA",
+          "volume": "20 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "DNeasy 96 plate and 96 microplate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "seal_type": "non-sterile foil"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "DNeasy 96 plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80 C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "96 microplate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20 C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(reagent='Buffer ATL and Buffer AL', temperature='56 C', duration='5 minutes')\ntransfer(container='2ml deep well (autoclaved)', reagent='broth culture', volume='250 ul')\ncentrifuge(container='plate', duration='15 min', speed='4063 x g', cell_count='maximum 2 x 10^9 cells')\ndiscard(reagent='supernatant')\nresuspend(reagent='pellet in Buffer ATL', volume='200 ul', mixing_method='pipetting up and down 15 times')\nseal(seal_type='foil')\nincubate(temperature='56 C', duration='1 hour', location='oven')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: extra plate, other: {'purpose': 'prevent foil from coming off'})\n\n### AUTOMATED SECTION ###\nmix(method='pipette up and down 15 times')\ncentrifuge()\n\n### MANUAL SECTION ###\n# MANUAL: freeze (temperature: -80 C, other: {})\n# MANUAL: thaw (other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='1 min', speed='1000g')\nadd(reagent='Buffer AL', volume='205 ul')\nadd(reagent='molecular grade EtOH', volume='205 ul')\nmix(method='pipette up and down 15 times')\ncentrifuge()\n\n### MANUAL SECTION ###\n# MANUAL: place (container: DNeasy 96 plates, other: {'location': 'on top of 2ml deep well plate'})\n# MANUAL: mark (container: DNeasy 96 plates, other: {'purpose': 'sample identification'})\n\n### AUTOMATED SECTION ###\ntransfer(container='DNeasy 96 plates', reagent='lysate', volume='approximately 600 ul', source='step 7')\nseal(container='DNeasy 96 plate', seal_type='porous film')\ncentrifuge(container='DNeasy 96 plate', duration='15 min', speed='4063g')\ncentrifuge(container='DNeasy 96 plate', duration='10 min', speed='4063g', condition='if lysate remains')\nadd(container='DNeasy 96 plate', reagent='Buffer AW1', volume='500 ul')\nseal(container='DNeasy 96 plate', seal_type='AirPore Tape Sheet')\ncentrifuge(container='DNeasy 96 plate', duration='5 min', speed='4063g')\nremove(container='DNeasy 96 plate', seal_type='AirPore Tape')\nadd(container='DNeasy 96 plate', reagent='Buffer AW2', volume='500 ul')\ncentrifuge(container='DNeasy 96 plate', duration='15 min', speed='4063g')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: DNeasy 96 plate, other: {'location': 'new collection rack (2ml deep well plate)'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='DNeasy 96 plate', duration='15 min', speed='4063g')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: DNeasy 96 plate, other: {'location': 'new rack of VWR 500ul plate', 'orientation': 'correct'})\n\n### AUTOMATED SECTION ###\nadd(container='DNeasy 96 plate', reagent='Buffer TE', volume='200 ul', purpose='elute DNA')\nseal(container='DNeasy 96 plate')\nincubate(container='DNeasy 96 plate', temperature='room temp', duration='1 minute')\ncentrifuge(container='DNeasy 96 plate', duration='4 min', speed='4063g')\nadd(container='DNeasy 96 plate', reagent='Buffer TE', volume='200 ul', purpose='repeat for maximum DNA yield')\naliquot(container='green 96 microplate', reagent='extracted DNA', volume='20 ul')\nseal(container='DNeasy 96 plate and 96 microplate', seal_type='non-sterile foil')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: DNeasy 96 plate, temperature: -80 C, other: {})\n# MANUAL: freeze (container: 96 microplate, temperature: -20 C, other: {})",
+    "source_file": "protocol_211.txt"
+  }
+]

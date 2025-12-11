@@ -1,0 +1,347 @@
+[
+  {
+    "protocol": "Genomic DNA extraction from mosquitoes\nFreeze mosquitoes and separate 1 mosquito per tube.\nAdd 25 uL of fly grinding buffer.\nGrind mosquitoes with a pestle.\nRinse pestle with 25 uL of buffer.\nIncubate at 65o C for 30 min. \nAdd 7uL 8M KAc. \nIncubate at ice for 30 min. \nCentrifuge at max speed for 15 min at RT. \nCollect supernatant and add 0.7 vol (28 uL over 40 uL) of room temperature of isopropanol (or 1 vol of ice cold 100% EtOH) and incubate for 5 min at room temperature.\nCentrifuge at RT for 15 min at max speed.\nDiscard supernatant and add 100 uL 70% EtOH.\nCentrifuge for 5min at max speed at RT.\nDiscard supernatant and add 100 uL 100% EtOH.\nCentrifuge for 5 min at max speed at RT.\nDiscard supernatant and aird dry at RT for 1 hour. \nResuspend in TE, heat for 10 minutes and quantify with nanodrop",
+    "actions": [
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mosquito",
+          "volume": null,
+          "temperature": "freezing",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mosquito",
+          "volume": "1 mosquito per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fly grinding buffer",
+          "volume": "25 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "grind",
+        "parameters": {
+          "container": "tube",
+          "reagent": "mosquito",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pestle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "pestle",
+          "reagent": "fly grinding buffer",
+          "volume": "25 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "8M KAc",
+          "volume": "7 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 min",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "isopropanol or 100% EtOH",
+          "volume": "0.7 vol (28 uL over 40 uL) or 1 vol",
+          "temperature": "room temperature or ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 min",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "70% EtOH",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "100% EtOH",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "TE",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": "nanodrop",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: tube, reagent: mosquito, temperature: freezing, other: {})\n# MANUAL: separate (container: tube, reagent: mosquito, volume: 1 mosquito per tube, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='fly grinding buffer', volume='25 uL')\n\n### MANUAL SECTION ###\n# MANUAL: grind (container: tube, reagent: mosquito, other: {'tool': 'pestle'})\n\n### AUTOMATED SECTION ###\nrinse(container='pestle', reagent='fly grinding buffer', volume='25 uL')\nincubate(container='tube', temperature='65\u00b0C', duration='30 min')\nadd(container='tube', reagent='8M KAc', volume='7 uL')\nincubate(container='tube', temperature='ice', duration='30 min')\ncentrifuge(container='tube', temperature='room temperature', duration='15 min', speed='max speed')\ncollect(container='tube', reagent='supernatant')\nadd(container='tube', reagent='isopropanol or 100% EtOH', volume='0.7 vol (28 uL over 40 uL) or 1 vol', temperature='room temperature or ice cold')\nincubate(container='tube', temperature='room temperature', duration='5 min')\ncentrifuge(container='tube', temperature='room temperature', duration='15 min', speed='max speed')\ndiscard(container='tube', reagent='supernatant')\nadd(container='tube', reagent='70% EtOH', volume='100 uL')\ncentrifuge(container='tube', temperature='room temperature', duration='5 min', speed='max speed')\ndiscard(container='tube', reagent='supernatant')\nadd(container='tube', reagent='100% EtOH', volume='100 uL')\ncentrifuge(container='tube', temperature='room temperature', duration='5 min', speed='max speed')\ndiscard(container='tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: air dry (container: tube, temperature: room temperature, duration: 1 hour, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='tube', reagent='TE')\nheat(container='tube', duration='10 min')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (container: nanodrop, other: {})",
+    "source_file": "protocol_187.txt"
+  }
+]

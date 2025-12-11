@@ -1,0 +1,193 @@
+[
+  {
+    "protocol": "Prophage Induction in Natural Populations of Heterotrophic Bacteria\nFor unconcentrated seawater samples, add 25 mL each to a control or treatment, 50-mL sterile, conical centrifuge tubes.\nTake an additional sample (25 mL) and fix with 1% 0.02-\u00b5m filtered formalin.\nFor the treatment samples, add 1 \u00b5g/mL mitomycin C (or 0.5 \u00b5g/mL in oligotrophic environments).\nThe samples are incubated for 16\u201324 h at room temperature and fixed with either 2% glutaraldehyde (for TEM), 1% formalin (epifluorescence microscopy), or 1% formalin/0.5% glutaraldehyde (flow cytometry [FCM]).\nSamples for enumeration by epifluorescence microscopy should be counted within 24 h of collection or stored as frozen slides stained with SYBR Gold.\nCount both bacteria and viruses in control and treated samples.\nCalculate the % lysogenic bacteria as follows:% lysogens = [(VDCT\u00a0- VDCC)/Bz]/BDC\u00a0T=o'. \nThe average burst size can be derived by TEM observation of bacterial bursts\u00a0(i.e., when viruses become visible in the cell at the end of the latent period; Ackermann/Heldal, this volume).",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50-mL sterile conical centrifuge tube",
+          "reagent": "unconcentrated seawater sample",
+          "volume": "25 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "group": "control or treatment"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "0.02-\u00b5m filtered formalin",
+          "volume": "1% (of 25 mL sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "additional 25 mL sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "treatment sample tube",
+          "reagent": "mitomycin C",
+          "volume": "1 \u00b5g/mL (or 0.5 \u00b5g/mL in oligotrophic environments)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sample tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "16\u201324 h",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "glutaraldehyde",
+          "volume": "2% (for TEM)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "formalin",
+          "volume": "1% (for epifluorescence microscopy)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "formalin/glutaraldehyde",
+          "volume": "1% formalin/0.5% glutaraldehyde (for flow cytometry)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "within 24 h of collection",
+          "speed": null,
+          "other": {
+            "method": "epifluorescence microscopy",
+            "target": "bacteria and viruses"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "slide",
+          "reagent": "SYBR Gold",
+          "volume": null,
+          "temperature": "frozen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "stained"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "control and treated sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "bacteria and viruses"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "formula": "% lysogens = [(VDCT\u00a0- VDCC)/Bz]/BDC\u00a0T=o'"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "TEM",
+            "target": "bacterial bursts"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='50-mL sterile conical centrifuge tube', reagent='unconcentrated seawater sample', volume='25 mL', group='control or treatment')\nadd(container='sample tube', reagent='0.02-\u00b5m filtered formalin', volume='1% (of 25 mL sample)', sample='additional 25 mL sample')\nadd(container='treatment sample tube', reagent='mitomycin C', volume='1 \u00b5g/mL (or 0.5 \u00b5g/mL in oligotrophic environments)')\nincubate(container='sample tubes', temperature='room temperature', duration='16\u201324 h')\nadd(container='sample tube', reagent='glutaraldehyde', volume='2% (for TEM)')\nadd(container='sample tube', reagent='formalin', volume='1% (for epifluorescence microscopy)')\nadd(container='sample tube', reagent='formalin/glutaraldehyde', volume='1% formalin/0.5% glutaraldehyde (for flow cytometry)')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: slide, duration: within 24 h of collection, other: {'method': 'epifluorescence microscopy', 'target': 'bacteria and viruses'})\n# MANUAL: store (container: slide, reagent: SYBR Gold, temperature: frozen, other: {'condition': 'stained'})\n# MANUAL: count (container: control and treated sample, other: {'target': 'bacteria and viruses'})\n# MANUAL: calculate (other: {'formula': \"% lysogens = [(VDCT\\xa0- VDCC)/Bz]/BDC\\xa0T=o'\"})\n# MANUAL: observe (other: {'method': 'TEM', 'target': 'bacterial bursts'})",
+    "source_file": "protocol_302.txt"
+  }
+]

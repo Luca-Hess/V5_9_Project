@@ -1,0 +1,525 @@
+[
+  {
+    "protocol": "Stellaris\u00ae RNA FISH 96 Well Glass Bottom Plate Protocol\nGrow cells in a 96-well glass bottom cell culture plate.\nDecant growth medium, and wash with 200 \u03bcL of 1X PBS.\nTo fix cells, add 200 \u03bcL of 3.7% Formaldehyde fixation solution.\nIncubate at room temperature for 10 minutes.\nWash with 200 \u03bcL of 1X PBS.\nWash with 200 \u03bcL of 1X PBS.\nThe Alternative Fixation steps are an alternative to the standard fixation and are not meant to be sequential.\nGrow cells in a 96-well glass bottom cell culture plate.\u00a0\nDecant growth media, and wash with 200 \u03bcL of 1X PBS To fix and permeabilize cells, add 200 \u03bcL of methanol-acetic acid (MeOH-AcOH) fixation solution.\nIncubate at room temperature for 10 minutes.\nCells can be stored at +2 to +8 \u00b0C in MeOH-AcOH up to 48 hours before hybridization.\nDo not use a well if the MeOH-AcOH has completely evaporated.\nIf frozen before using, warm the reconstituted probe stock to room temperature.\nMix well by vortexing, then centrifuge briefly.\nTo prepare the Hybridization Buffer containing probe, add 1.5 \u03bcL of probe stock solution to 75 \u03bcL of Hybridization Buffer, and then vortexand centrifuge (enough for one well).\nThis creates a working probe solution of 250 nM.\nThis solution will be used on step 17.\nDecant MeOH-AcOH or 70% ethanol from wells containing adherent cells.\nAdd 200 \u03bcL of Wash Buffer A (see recipe above), and incubate at room temperature for 2-5 minutes.\nDecant Wash Buffer A Add 75 \u03bcL of Hybridization Buffer containing Probe into each well.\nIncubate in the dark at 37 \u00b0C for 4 to 16 hoursa).\nIncubation is recommended for 16 hours using the Standard Fixation Methodb).\nIncubation is recommended for 2 hours using the Alternative Fixation Method.\nAspirate the Hybridization Buffer containing Probe, and add 200 \u03bcL of Wash Buffer A.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant Wash Buffer A, and then add 200 \u03bcL of DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI) to counterstain the nuclei.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant DAPI staining buffer, and then add 200 \u03bcL of Wash Buffer B.\nIncubate at room temperature for 2-5 minutes.\nAdd 30 \u03bcL of VectaShield Mounting Medium to the well and top with 30 \u03bcL of Mineral Oil Proceed to Imaging",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "growth medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "1X PBS",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "3.7% Formaldehyde fixation solution",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "1X PBS",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "1X PBS",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "growth media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "1X PBS",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "methanol-acetic acid (MeOH-AcOH) fixation solution",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "96-well glass bottom cell culture plate",
+          "reagent": "cells in MeOH-AcOH",
+          "volume": null,
+          "temperature": "+2 to +8 \u00b0C",
+          "duration": "up to 48 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe stock",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "reconstituted probe stock",
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "probe stock solution",
+          "volume": "1.5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "75 \u03bcL Hybridization Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "76.5 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "Hybridization Buffer containing probe",
+          "volume": "76.5 \u03bcL",
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "MeOH-AcOH or 70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Wash Buffer A",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Hybridization Buffer containing Probe",
+          "volume": "75 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "4 to 16 hours",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Hybridization Buffer containing Probe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Wash Buffer A",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Wash Buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI)",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to counterstain the nuclei": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in the dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "DAPI staining buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Wash Buffer B",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2-5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "VectaShield Mounting Medium",
+          "volume": "30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells containing adherent cells",
+          "reagent": "Mineral Oil",
+          "volume": "30 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: 96-well glass bottom cell culture plate, reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\ndecant(container='96-well glass bottom cell culture plate', reagent='growth medium')\nwash(container='96-well glass bottom cell culture plate', reagent='1X PBS', volume='200 \u03bcL')\nadd(container='96-well glass bottom cell culture plate', reagent='3.7% Formaldehyde fixation solution', volume='200 \u03bcL')\nincubate(container='96-well glass bottom cell culture plate', temperature='room temperature', duration='10 minutes')\nwash(container='96-well glass bottom cell culture plate', reagent='1X PBS', volume='200 \u03bcL')\nwash(container='96-well glass bottom cell culture plate', reagent='1X PBS', volume='200 \u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: 96-well glass bottom cell culture plate, reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\ndecant(container='96-well glass bottom cell culture plate', reagent='growth media')\nwash(container='96-well glass bottom cell culture plate', reagent='1X PBS', volume='200 \u03bcL')\nadd(container='96-well glass bottom cell culture plate', reagent='methanol-acetic acid (MeOH-AcOH) fixation solution', volume='200 \u03bcL')\nincubate(container='96-well glass bottom cell culture plate', temperature='room temperature', duration='10 minutes')\nstore(container='96-well glass bottom cell culture plate', reagent='cells in MeOH-AcOH', temperature='+2 to +8 \u00b0C', duration='up to 48 hours')\nwarm(reagent='reconstituted probe stock', temperature='room temperature')\nmix(reagent='reconstituted probe stock', speed='vortex')\ncentrifuge(reagent='reconstituted probe stock', duration='briefly')\nadd(reagent='probe stock solution', volume='1.5 \u03bcL', to='75 \u03bcL Hybridization Buffer')\nmix(reagent='Hybridization Buffer containing probe', volume='76.5 \u03bcL', speed='vortex')\ncentrifuge(reagent='Hybridization Buffer containing probe', volume='76.5 \u03bcL', duration='briefly')\ndecant(container='wells containing adherent cells', reagent='MeOH-AcOH or 70% ethanol')\nadd(container='wells containing adherent cells', reagent='Wash Buffer A', volume='200 \u03bcL')\nincubate(container='wells containing adherent cells', temperature='room temperature', duration='2-5 minutes')\ndecant(container='wells containing adherent cells', reagent='Wash Buffer A')\nadd(container='wells containing adherent cells', reagent='Hybridization Buffer containing Probe', volume='75 \u03bcL')\nincubate(container='wells containing adherent cells', temperature='37 \u00b0C', duration='4 to 16 hours', in the dark=True)\naspirate(container='wells containing adherent cells', reagent='Hybridization Buffer containing Probe')\nadd(container='wells containing adherent cells', reagent='Wash Buffer A', volume='200 \u03bcL')\nincubate(container='wells containing adherent cells', temperature='37 \u00b0C', duration='30 minutes', in the dark=True)\ndecant(container='wells containing adherent cells', reagent='Wash Buffer A')\nadd(container='wells containing adherent cells', reagent='DAPI nuclear stain (Wash Buffer A consisting of 5 ng/mL DAPI)', volume='200 \u03bcL', to counterstain the nuclei=True)\nincubate(container='wells containing adherent cells', temperature='37 \u00b0C', duration='30 minutes', in the dark=True)\ndecant(container='wells containing adherent cells', reagent='DAPI staining buffer')\nadd(container='wells containing adherent cells', reagent='Wash Buffer B', volume='200 \u03bcL')\nincubate(container='wells containing adherent cells', temperature='room temperature', duration='2-5 minutes')\nadd(container='wells containing adherent cells', reagent='VectaShield Mounting Medium', volume='30 \u03bcL')\nadd(container='wells containing adherent cells', reagent='Mineral Oil', volume='30 \u03bcL', top=True)",
+    "source_file": "protocol_76.txt"
+  }
+]

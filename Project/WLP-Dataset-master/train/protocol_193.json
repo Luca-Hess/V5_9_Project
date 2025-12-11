@@ -1,0 +1,279 @@
+[
+  {
+    "protocol": "BetaMark\u2122 x-40 ELISA Kit (Chemiluminescent) Protocol\nLabel a 1L bottle as \u201c1X Wash Buffer\u201d.\nDilute 5X Wash Buffer 1:5 using lab grade water* and mix well.\n*Note: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization(RODI).\nLabel an appropriate sized bottle as \u201c1X Reagent Diluent\u201d.\nLabel (2) 1.5mL microcentrifuge tubes as intermediate #1 & 2 (use enclosed tubes).\nAdd 990uL of standard diluent to intermediate tubes #1 & 2.\nReconstitute 20ug vial of 1-40 standard with 80uL of Standard Diluent.\nMix well by inversion, donot vortex.\nConcentration will be 250ug/mL.\n*Once reconstituted, standard must be used within the same day.\nAdd 10uL from the vial of reconstituted 1-40 standard to 990uL of standard diluent in intermediatetube #1.\nMix well by inversion, do not vortex.\nRemove 10uL from intermediate #1 tube and add to 990uL standard diluent in intermediate #2 tube.\nMix well by inversion, do not vortex.\nThe final concentration of intermediate tube #2 will be 25ng/mL.\nLabel a 50mL centrifuge tube as \u201c1X Incubation Buffer\u201d.\nDilute 2X incubation buffer to 1X by adding 10mL of 2X incubation buffer to 10mL of lab grade water* in the 50mL tube labeled \u201c1X Incubation Buffer\u201d.\nMix well by vortexing.\nThis will be diluent for the standard curve and samples.",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1L bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "1X Wash Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "1L bottle",
+          "reagent": "5X Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution_ratio": "1:5",
+            "diluent": "lab grade water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1L bottle",
+          "reagent": "diluted 1X Wash Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "mix well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "appropriate sized bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "1X Reagent Diluent"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1.5mL microcentrifuge tubes (2)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "intermediate #1 & 2"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tubes #1 & 2",
+          "reagent": "standard diluent",
+          "volume": "990uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "20ug vial of 1-40 standard",
+          "reagent": "Standard Diluent",
+          "volume": "80uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "20ug vial of 1-40 standard",
+          "reagent": "reconstituted standard",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion",
+            "note": "do not vortex"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": "reconstituted 1-40 standard",
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "vial of reconstituted 1-40 standard",
+            "destination": "990uL standard diluent in intermediate tube #1"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion",
+            "note": "do not vortex"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "intermediate tube #1",
+          "reagent": null,
+          "volume": "10uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "intermediate tube #2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "intermediate tube #2",
+          "reagent": "standard diluent",
+          "volume": "990uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "standard diluent",
+            "destination": "intermediate tube #2"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "intermediate tube #2",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inversion",
+            "note": "do not vortex"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "50mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "1X Incubation Buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL tube labeled '1X Incubation Buffer'",
+          "reagent": "2X incubation buffer",
+          "volume": "10mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL tube labeled '1X Incubation Buffer'",
+          "reagent": "lab grade water",
+          "volume": "10mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "50mL tube labeled '1X Incubation Buffer'",
+          "reagent": "diluted incubation buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1L bottle, other: {'label': '1X Wash Buffer'})\n\n### AUTOMATED SECTION ###\ndilute(container='1L bottle', reagent='5X Wash Buffer', dilution_ratio='1:5', diluent='lab grade water')\nmix(container='1L bottle', reagent='diluted 1X Wash Buffer', method='mix well')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: appropriate sized bottle, other: {'label': '1X Reagent Diluent'})\n# MANUAL: label (container: 1.5mL microcentrifuge tubes (2), other: {'label': 'intermediate #1 & 2'})\n\n### AUTOMATED SECTION ###\nadd(container='intermediate tubes #1 & 2', reagent='standard diluent', volume='990uL')\nreconstitute(container='20ug vial of 1-40 standard', reagent='Standard Diluent', volume='80uL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 20ug vial of 1-40 standard, reagent: reconstituted standard, other: {'method': 'inversion', 'note': 'do not vortex'})\n\n### AUTOMATED SECTION ###\nadd(container='intermediate tube #1', reagent='reconstituted 1-40 standard', volume='10uL', source='vial of reconstituted 1-40 standard', destination='990uL standard diluent in intermediate tube #1')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: intermediate tube #1, other: {'method': 'inversion', 'note': 'do not vortex'})\n\n### AUTOMATED SECTION ###\nremove(container='intermediate tube #1', volume='10uL', destination='intermediate tube #2')\nadd(container='intermediate tube #2', reagent='standard diluent', volume='990uL', source='standard diluent', destination='intermediate tube #2')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: intermediate tube #2, other: {'method': 'inversion', 'note': 'do not vortex'})\n# MANUAL: label (container: 50mL centrifuge tube, other: {'label': '1X Incubation Buffer'})\n\n### AUTOMATED SECTION ###\nadd(container=\"50mL tube labeled '1X Incubation Buffer'\", reagent='2X incubation buffer', volume='10mL')\nadd(container=\"50mL tube labeled '1X Incubation Buffer'\", reagent='lab grade water', volume='10mL')\nmix(container=\"50mL tube labeled '1X Incubation Buffer'\", reagent='diluted incubation buffer', method='vortexing')",
+    "source_file": "protocol_193.txt"
+  }
+]

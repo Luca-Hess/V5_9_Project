@@ -1,0 +1,241 @@
+[
+  {
+    "protocol": "Polyacrylamide Gel System For Electrophoresis Of Proteins\nPrepare\u00a030.0% Acrylamide stock solution (30.0:0.8).\nPrepare\u00a0Resolving gel buffer (4X).\nPrepare\u00a0Stacking gel buffer (4X).\nPrepare\u00a0Running gel buffer (10X).\nPrepare\u00a0Cracking buffer, 4X (10 mL).\nSee guidelines for\u00a0Sample Recipe for Resolving Gel.\nMix all of the ingredients together except the ammonium persulfate.\nGently overlay the gel with d-H2O (or 1X resolving gel buffer) and allow the gel to polymerize.\nPour the stacking gel immediately after adding the ammonium persulfate.\nInsert the gel comb to form the wells.\nAllow the stacking gel to polymerize for 60 min before use.\nSee guidelines for ingredients.\nBoil the samples in the cracking buffer 5-10 min before loading onto the gel.\nElectrophorese the gel at 100 volts (constant) or 10 milliamps (constant) until the dye front just runs off the gel.\nSee guidelines for\u00a0Resolving Gel Recipes and\u00a0Stacking Gel Recipes.\nStain the gels with coomassie blue stain according to the following recipe: 1.0 gm, Coomassie Brilliant Blue; R455 mL, methanol; 455 mL, d-H2O; 90 mL, glacial acetic acid;\nGels are destained with the following: 700 mL, methanol; 200 mL, glacial acetic acid; 2600 mL, d-H2O Stain and destain the gels at 65\u00b0C.\nSmall foam rubber pieces added during the destaining process absorb some of the coomassie with the result that less destain is needed and the destain need not be changed as often.\nSee guidelines for ingredients.",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "30.0% Acrylamide stock solution (30.0:0.8)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Resolving gel buffer (4X)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Stacking gel buffer (4X)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Running gel buffer (10X)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Cracking buffer, 4X",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "all ingredients except ammonium persulfate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "gel",
+          "reagent": "d-H2O or 1X resolving gel buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "polymerize",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "stacking gel",
+          "reagent": "stacking gel solution with ammonium persulfate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "gel",
+          "reagent": "gel comb",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "form wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "polymerize",
+        "parameters": {
+          "container": "stacking gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "boil",
+        "parameters": {
+          "container": "samples",
+          "reagent": "cracking buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "electrophorese",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "voltage": "100 volts (constant)",
+            "current": "10 milliamps (constant)",
+            "until": "dye front just runs off the gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "gels",
+          "reagent": "coomassie blue stain (1.0 gm Coomassie Brilliant Blue, 455 mL methanol, 455 mL d-H2O, 90 mL glacial acetic acid)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "destain",
+        "parameters": {
+          "container": "gels",
+          "reagent": "destain solution (700 mL methanol, 200 mL glacial acetic acid, 2600 mL d-H2O)",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gels during destaining",
+          "reagent": "small foam rubber pieces",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "absorb coomassie"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 30.0% Acrylamide stock solution (30.0:0.8), other: {})\n# MANUAL: prepare (reagent: Resolving gel buffer (4X), other: {})\n# MANUAL: prepare (reagent: Stacking gel buffer (4X), other: {})\n# MANUAL: prepare (reagent: Running gel buffer (10X), other: {})\n# MANUAL: prepare (reagent: Cracking buffer, 4X, volume: 10 mL, other: {})\n\n### AUTOMATED SECTION ###\nmix(reagent='all ingredients except ammonium persulfate')\noverlay(container='gel', reagent='d-H2O or 1X resolving gel buffer')\n\n### MANUAL SECTION ###\n# MANUAL: polymerize (container: gel, other: {})\n\n### AUTOMATED SECTION ###\npour(container='stacking gel', reagent='stacking gel solution with ammonium persulfate')\n\n### MANUAL SECTION ###\n# MANUAL: insert (container: gel, reagent: gel comb, other: {'purpose': 'form wells'})\n# MANUAL: polymerize (container: stacking gel, duration: 60 min, other: {})\n\n### AUTOMATED SECTION ###\nboil(container='samples', reagent='cracking buffer', duration='5-10 min')\nelectrophorese(container='gel', voltage='100 volts (constant)', current='10 milliamps (constant)', until='dye front just runs off the gel')\nstain(container='gels', reagent='coomassie blue stain (1.0 gm Coomassie Brilliant Blue, 455 mL methanol, 455 mL d-H2O, 90 mL glacial acetic acid)')\ndestain(container='gels', reagent='destain solution (700 mL methanol, 200 mL glacial acetic acid, 2600 mL d-H2O)', temperature='65\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: gels during destaining, reagent: small foam rubber pieces, other: {'purpose': 'absorb coomassie'})",
+    "source_file": "protocol_160.txt"
+  }
+]

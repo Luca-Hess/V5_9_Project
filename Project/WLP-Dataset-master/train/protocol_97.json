@@ -1,0 +1,81 @@
+[
+  {
+    "protocol": "0.5M EDTA\n46.525g EDTA disodium 2H20 in 200ml MilliQ Adjust to pH 8.0 with NaOH pellets (~5g) Autoclave",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA disodium 2H2O",
+          "volume": "46.525g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": null,
+          "reagent": "MilliQ water",
+          "volume": "200ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "EDTA disodium 2H2O",
+          "volume": "46.525g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "NaOH pellets",
+          "volume": "~5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_pH": "8.0"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: EDTA disodium 2H2O, volume: 46.525g, other: {})\n\n### AUTOMATED SECTION ###\ndispense(reagent='MilliQ water', volume='200ml')\n\n### MANUAL SECTION ###\n# MANUAL: add (reagent: EDTA disodium 2H2O, volume: 46.525g, other: {})\n# MANUAL: adjust (reagent: NaOH pellets, volume: ~5g, other: {'target_pH': '8.0'})\n\n### AUTOMATED SECTION ###\nautoclave()",
+    "source_file": "protocol_97.txt"
+  }
+]

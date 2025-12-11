@@ -1,0 +1,707 @@
+[
+  {
+    "protocol": "MPN (Most Probable Number) assay for infectivity of algal viruses\nVirus Dilution Series.\nLabel a series of 5 mL round bottom tubes from 10-1 to 10-10.\nAliquot 1.8 mL culture media to each tube.\nDilute 200 \u00b5L virus sample into the \u201c10-1\u201d tube and vortex to mix.\nUse a clean pipette tip to transfer 200 \u00b5L from the \u201c10-1\u201d tube to the \u201c10-2\u201d tube and vortex to mix.\nRepeat serial dilution to 10-10.\nTransfer 500 \u00b5L virus sample to a sterile 1.2 mL cryovial (to preserve for FCM counts).\nIn the chemical hood, add 5 \u00b5L 25% glutaraldehyde (0.25% final concentration) and gently vortex to mix.\nAliquot 250 \u00b5L to a duplicate cryovial and snap cryovials into cryocanes.\nIncubate at 4\u00b0C for 30 minutes in the dark.\nFlash freeze in liquid nitrogen and store at -80\u00b0C until analysis.\nPlate Setup.\nPour remaining culture medium into a sterile sample reservoir.\nUse a multichannel pipette to add 50 \u00b5L medium to all wells in Column 9 (\u201cControl\u201d) on all plates.\nDiscard unused medium and fill sample reservoir with host culture.\nAdd 150 \u00b5L host cells to all wells in Columns 1-9 on all plates.\nDiscard remaining culture.\nPour \u201c10-10\u201d viral dilution into new sterile sample reservoir.\nUse a multichannel pipette to add 50 \u00b5L 10-10-diluted virus sample to all wells in Column 8 on all replicate plates.\nDiscard remaining 10-10-diluted virus sample and pour \u201c10-9\u201d viral dilution into the same sample reservoir.\nUse the same pipette tips to add 50 \u00b5L 10-9-diluted virus sample to all wells in Column 7 on all plates.\nRepeat additions of diluted virus samples from most dilute to most concentrated (moving from right to left across the microplates).\nAfter final 10-3-diluted virus sample is added to plates, measure optical density for T0 in plate reader (as described below) and incubate (unstacked to prevent shading) at standard growth conditions for ~2 weeks, measuring growth every few days.\nData Collection.\nTurn on the Molecular Devices SpectraMax 340PC plate reader.\nLog into the attached computer and open the SoftMax Pro 6 software.\nOpen or create a new \u201cBasic Endpoint\u201d protocol file (.spr).\nRename the experiment appropriately and configure a plate with the following settings:Read Type: Endpoint Wavelength: 750 nm Plate Type: 96-well standard clear bottom Read Area: All Path check: Calibration on Shake: Once for 3 sec.\nMore settings: Column priority.\nAdd \u201cNew plates\u201d as needed so there is one for each replicate plate in your assay (settings will copy to these new plates within the same experiment).\nIf the SpectraMax doesn\u2019t automatically connect, click on the instrument icon in the top left corner and manually select it from the menu.\nSelect the plate to be read in the software, and place the corresponding plate on the plate reader drawer (with Column 1 closest to the instrument).\nRemove the plate lid and select \u201cRead\u201d to read the plate.\nRead each plate individually, and copy the data (must right-click to do this) into an Excel spreadsheet.\nCreate a new data file (.sda) from the same master protocol for each time point.\nVisually inspect plates and record observations.\nThe \u201cDilution Factor\u201d is the dilution ratio used for inoculating the wells of that column.\nThe \u201cVolume\u201d is the volume of the dilution added to each well in that column.\nDilution Factor: Use results from a subset of the serial dilutions such that all host wells were lysed in the most concentrated of the dilutions (i.e., 24 of 24 wells were positive for viral activity) and all host wells were healthy in the most dilute of the dilutions (i.e., 0 of 24 wells were positive for viral activity).",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "5 mL round bottom tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": "10-1 to 10-10"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "5 mL round bottom tubes",
+          "reagent": "culture media",
+          "volume": "1.8 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "\"10-1\" tube",
+          "reagent": "virus sample",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "\"10-1\" tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "from \"10-1\" tube to \"10-2\" tube",
+          "reagent": null,
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pipette_tip": "clean"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "\"10-2\" tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "serial dilution tubes (\"10-3\" to \"10-10\")",
+          "reagent": null,
+          "volume": "200 \u00b5L transfer and vortex",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "serial_dilution": "from previous tube to next"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 1.2 mL cryovial",
+          "reagent": "virus sample",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "preserve for FCM counts"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": "25% glutaraldehyde",
+          "volume": "5 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.25%",
+            "location": "chemical hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "duplicate cryovial",
+          "reagent": "preserved virus sample",
+          "volume": "250 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "snap",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "into": "cryocanes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flash_freeze",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cryovials",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until analysis",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "sterile sample reservoir",
+          "reagent": "remaining culture medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Column 9 wells on all plates",
+          "reagent": "culture medium",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pipette": "multichannel"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "sample reservoir",
+          "reagent": "unused medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "sample reservoir",
+          "reagent": "host culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Columns 1-9 wells on all plates",
+          "reagent": "host cells",
+          "volume": "150 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "sample reservoir",
+          "reagent": "remaining culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "new sterile sample reservoir",
+          "reagent": "\"10-10\" viral dilution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Column 8 wells on all replicate plates",
+          "reagent": "10-10-diluted virus sample",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pipette": "multichannel"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "sample reservoir",
+          "reagent": "remaining 10-10-diluted virus sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "same sample reservoir",
+          "reagent": "\"10-9\" viral dilution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Column 7 wells on all plates",
+          "reagent": "10-9-diluted virus sample",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pipette": "multichannel",
+            "pipette_tips": "same"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "Columns 6 to 3 wells on all plates",
+          "reagent": "diluted virus samples (10-8 to 10-3)",
+          "volume": "50 \u00b5L each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "direction": "right to left"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "plate reader",
+            "readout": "optical density",
+            "timepoint": "T0"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "standard growth conditions",
+          "duration": "~2 weeks",
+          "speed": null,
+          "other": {
+            "unstacked": true,
+            "light": "prevent shading"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every few days",
+          "speed": null,
+          "other": {
+            "instrument": "plate reader",
+            "readout": "growth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "turn_on",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "SpectraMax 340PC plate reader"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "log_in",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "attached computer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "SoftMax Pro 6",
+            "file_type": ".spr"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "rename",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "experiment": "appropriately"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "configure",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "settings": {
+              "Read Type": "Endpoint",
+              "Wavelength": "750 nm",
+              "Plate Type": "96-well standard clear bottom",
+              "Read Area": "All",
+              "Path check": "Calibration on",
+              "Shake": "Once for 3 sec",
+              "Column priority": true
+            }
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "experiment",
+          "reagent": "New plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": "one for each replicate plate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "SpectraMax 340PC plate reader"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "SoftMax Pro 6"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plate reader drawer",
+          "reagent": "corresponding plate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "Column 1 closest to instrument"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "plate",
+          "reagent": "lid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "copy",
+        "parameters": {
+          "container": "Excel spreadsheet",
+          "reagent": "data",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "right-click"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "create",
+        "parameters": {
+          "container": null,
+          "reagent": "data file (.sda)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "same master protocol",
+            "timepoint": "each"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "inspect",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "visually"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": null,
+          "reagent": "observations",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 5 mL round bottom tubes, other: {'labels': '10-1 to 10-10'})\n\n### AUTOMATED SECTION ###\naliquot(container='5 mL round bottom tubes', reagent='culture media', volume='1.8 mL')\ndilute(container='\"10-1\" tube', reagent='virus sample', volume='200 \u00b5L')\nvortex(container='\"10-1\" tube')\ntransfer(container='from \"10-1\" tube to \"10-2\" tube', volume='200 \u00b5L', pipette_tip='clean')\nvortex(container='\"10-2\" tube')\nrepeat(container='serial dilution tubes (\"10-3\" to \"10-10\")', volume='200 \u00b5L transfer and vortex', serial_dilution='from previous tube to next')\ntransfer(container='sterile 1.2 mL cryovial', reagent='virus sample', volume='500 \u00b5L', purpose='preserve for FCM counts')\nadd(container='cryovial', reagent='25% glutaraldehyde', volume='5 \u00b5L', final_concentration='0.25%', location='chemical hood')\nvortex(container='cryovial', speed='gentle')\naliquot(container='duplicate cryovial', reagent='preserved virus sample', volume='250 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: snap (container: cryovials, other: {'into': 'cryocanes'})\n\n### AUTOMATED SECTION ###\nincubate(container='cryovials', temperature='4\u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: flash_freeze (container: cryovials, temperature: liquid nitrogen)\n# MANUAL: store (container: cryovials, temperature: -80\u00b0C, duration: until analysis)\n# MANUAL: pour (container: sterile sample reservoir, reagent: remaining culture medium)\n\n### AUTOMATED SECTION ###\nadd(container='Column 9 wells on all plates', reagent='culture medium', volume='50 \u00b5L', pipette='multichannel')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: sample reservoir, reagent: unused medium)\n# MANUAL: fill (container: sample reservoir, reagent: host culture)\n\n### AUTOMATED SECTION ###\nadd(container='Columns 1-9 wells on all plates', reagent='host cells', volume='150 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: sample reservoir, reagent: remaining culture)\n# MANUAL: pour (container: new sterile sample reservoir, reagent: \"10-10\" viral dilution)\n\n### AUTOMATED SECTION ###\nadd(container='Column 8 wells on all replicate plates', reagent='10-10-diluted virus sample', volume='50 \u00b5L', pipette='multichannel')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: sample reservoir, reagent: remaining 10-10-diluted virus sample)\n# MANUAL: pour (container: same sample reservoir, reagent: \"10-9\" viral dilution)\n\n### AUTOMATED SECTION ###\nadd(container='Column 7 wells on all plates', reagent='10-9-diluted virus sample', volume='50 \u00b5L', pipette='multichannel', pipette_tips='same')\nrepeat(container='Columns 6 to 3 wells on all plates', reagent='diluted virus samples (10-8 to 10-3)', volume='50 \u00b5L each', direction='right to left')\nmeasure(container='plates', instrument='plate reader', readout='optical density', timepoint='T0')\nincubate(container='plates', temperature='standard growth conditions', duration='~2 weeks', unstacked=True, light='prevent shading')\nmeasure(container='plates', duration='every few days', instrument='plate reader', readout='growth')\n\n### MANUAL SECTION ###\n# MANUAL: turn_on (other: {'instrument': 'SpectraMax 340PC plate reader'})\n# MANUAL: log_in (other: {'device': 'attached computer'})\n# MANUAL: open (other: {'software': 'SoftMax Pro 6', 'file_type': '.spr'})\n# MANUAL: rename (other: {'experiment': 'appropriately'})\n# MANUAL: configure (container: plate, other: {'settings': {'Read Type': 'Endpoint', 'Wavelength': '750 nm', 'Plate Type': '96-well standard clear bottom', 'Read Area': 'All', 'Path check': 'Calibration on', 'Shake': 'Once for 3 sec', 'Column priority': True}})\n# MANUAL: add (container: experiment, reagent: New plates, other: {'replicates': 'one for each replicate plate'})\n# MANUAL: connect (other: {'instrument': 'SpectraMax 340PC plate reader'})\n# MANUAL: select (container: plate, other: {'software': 'SoftMax Pro 6'})\n# MANUAL: place (container: plate reader drawer, reagent: corresponding plate, other: {'orientation': 'Column 1 closest to instrument'})\n# MANUAL: remove (container: plate, reagent: lid)\n\n### AUTOMATED SECTION ###\nread(container='plate')\n\n### MANUAL SECTION ###\n# MANUAL: copy (container: Excel spreadsheet, reagent: data, other: {'method': 'right-click'})\n# MANUAL: create (reagent: data file (.sda), other: {'protocol': 'same master protocol', 'timepoint': 'each'})\n# MANUAL: inspect (container: plates, other: {'method': 'visually'})\n# MANUAL: record (reagent: observations)",
+    "source_file": "protocol_410.txt"
+  }
+]

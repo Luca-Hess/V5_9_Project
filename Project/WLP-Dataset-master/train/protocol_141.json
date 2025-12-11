@@ -1,0 +1,890 @@
+[
+  {
+    "protocol": "One-Step Growth Curves for Cyanophages\nFrom an already growing culture, split cells at the ratio you will be splitting for the one step experiment.\nImmediately after the split, take a 'time 0' growth reading using a plate reader.\nContinue taking readings in this way at approximately the same time every day for 21 days.\nGraph the results as you go and determine when exponential growth occurs!\nRepeat 2 more times to ensure the host growth is consistent.\nDuring your 3rd growth curve when exponential growth is occuring, fix 1 ml of cells with 5 \u00b5l 25% glutaraldehyde.\nFlash freeze in liquid nitrogen daily.\nStore in\u00a0-80\u00b0C freezer.\nDetermine the cell count (using FCM or DAPI) that is associated with the culture fluorescence level during exponential growth.\nIt is best to infect the host in late-exponential (log linear) phase.\nDo a plaque assay to determine the PFU/ml of the lysate you plan to use.\nCalculate the volume needed for 107 phages.\nDetermine the length of time to sample during the one-step experiement.\nPrepare dilutions for free phage and total phage by following the table found in guidelines.\nTurn on water bath to 35\u00b0C Label a 1L flask with the phage, host, and your initials.\nAdd 396 ml SN media (or however much to q. to 400 ml) to the 1L flask.\nLabel 1 15ml snap cap tube the \"Infection Tube\".\nLabel 230 15ml snap cap tubes with the red, bolded text ids.\nAdd 1ml host to each tube.\nDays in advance, pour 240 SN bottom agar plates (2ml SN bottom agar per plate).\nLay out the SN bottom agar plates.\nLabel 230 SN bottom agar plates with the red, bolded text ids.\nLabel 2 plates \"Host (-)\" Label 1.5\u00b5l centrifuge tubes with ALL THE IDS (See table 1 guidelines).\nAdd 900\u00b5l SN media to the ids highlighted in yellow.\nAdd 990\u00b5l SN media to the ids highlighted in blue.\nMicrowave SN top agar.\nAliquot heated SN media top agar into 50ml conical tubes.\nKeep warm in the 35\u00b0C water bath.\nDetermine the concentration of your culture at the time you want to start the infection.\nCalculate the volume of host culture needed for 108 cells (q. to 2ml with SN media).\nPipet this amount into the 15 ml snap cap tube labeled \"Infection Tube\".\nAdd 107 phages (q. to 2ml with SN media) to the tube.\nAllow the phages to adsorb to the host cells for 1 hour.\nPut the 4ml infection into 396ml SN media in a 1L flask to dilute the infection to 1:100.\nTake a sample immediately after dilution - this is time 0.\nRemove the plunger of 1ml luer-lock syringe.\nAdd a 0.2 \u00b5m 25mm diameter syringe filter to the syringe end.\nPipet 1 ml from the flask into the syringe using 1 ml serological pipet.\nAdd the plunger back to the syringe and\u00a00.2\u00b5m syringe filter the 1 ml into a 1.5 ml centrifuge tube.\nPerform a serial dilution to dilute the sample to 102 per ml (10-3 dilution).\nAdd 250\u00b5l of the 10-3\u00a0dilution and 250\u00b5l of the 10-2 dilution to the corresponding 15ml snap cap tube with 1ml host.\nAllow phage and host to incubate for 2 hours.\nPlate using 4ml SN top agar per plate.\nPipette 1ml from the flask into a 1.5ml centrifuge tube using the same 1ml serological pipette.\nPerform a serial dilution to dilute the sample to 102 per ml (10-3).\nAdd 250\u00b5l of the 10-3 dilution and\u00a0250\u00b5l of the 10-2 dilution to the corresponding 15ml snap cap tube with 1ml host.\nAllow phage and host to incubate for 2 hours and then plate using 4ml SN top agar per plate.\nContinue sampling in this way for 16 hours (and sample one more time at 24 hrs).\nAt later time points more dilutions will need to be plated.\nBe generous with what you plate (i.e., plate 10-2, 10-3, 10-4, 10-5).\nThe serial dilutions should be performed as shown below:\u00a0\nIn seven days, count the plaques on all plates that have a countable number of them.\nCount again on day 14 and 21.\nCalculate PFU/ml at each time point for both the centrifuged (free phage only) and not centrifuged (total phage) samples.\nGraph the results.\nCalculate burst size.\nTake the FREE phage average of the time points on the plateau before the burst (A).\nTake the FREE phage average of the time points on the plateau after the burst (B).\nSubtract A and B.\nThis the total burst or new phages released (C).\nDivide C by the number of infecting phage (TOTAL phages at T0 minus FREE at T0).\nThis is the burst size.",
+    "actions": [
+      {
+        "action": "split",
+        "parameters": {
+          "container": "culture vessel",
+          "reagent": "cell culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "as for one step experiment"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "culture vessel",
+          "reagent": "cell culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "plate reader",
+            "time": "immediately after split"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "culture vessel",
+          "reagent": "cell culture",
+          "volume": null,
+          "temperature": null,
+          "duration": "once daily for 21 days",
+          "speed": null,
+          "other": {
+            "instrument": "plate reader"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "2 more times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": null,
+          "reagent": "5 \u00b5l 25% glutaraldehyde",
+          "volume": "1 ml cells + 5 \u00b5l glutaraldehyde",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "when": "during 3rd growth curve, exponential growth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": "daily",
+          "speed": null,
+          "other": {
+            "method": "flash freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "what": "cell count associated with culture fluorescence during exponential growth",
+            "method": "FCM or DAPI"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "infect",
+        "parameters": {
+          "container": null,
+          "reagent": "host culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "phase": "late-exponential"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "assay",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "plaque assay",
+            "output": "PFU/ml"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "phages",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "volume needed for 10^7 phages"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "length of time to sample during one-step experiment"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "dilutions for free phage and total phage",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "table in guidelines"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "water bath",
+          "reagent": null,
+          "volume": null,
+          "temperature": "35\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1L flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "phage, host, initials"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L flask",
+          "reagent": "SN media",
+          "volume": "396 ml (to q.s. 400 ml)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "15ml snap cap tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "Infection Tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "230 15ml snap cap tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "red, bolded text ids"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15ml snap cap tube",
+          "reagent": "host",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "SN bottom agar plates",
+          "reagent": "SN bottom agar",
+          "volume": "2 ml per plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": "240 plates",
+            "days_in_advance": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "lay out",
+        "parameters": {
+          "container": "SN bottom agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "230 SN bottom agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "red, bolded text ids"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "2 plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "Host (-)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "1.5\u00b5l centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "ALL THE IDS (see table 1 guidelines)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ids highlighted in yellow (centrifuge tubes)",
+          "reagent": "SN media",
+          "volume": "900 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ids highlighted in blue (centrifuge tubes)",
+          "reagent": "SN media",
+          "volume": "990 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "microwave",
+        "parameters": {
+          "container": "SN top agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "50ml conical tubes",
+          "reagent": "heated SN media top agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "keep warm",
+        "parameters": {
+          "container": "SN media top agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": "35\u00b0C water bath",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "concentration at infection start"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": "host culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "volume needed for 10^8 cells (q.s. to 2ml with SN media)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "15ml snap cap tube labeled 'Infection Tube'",
+          "reagent": "host culture + SN media",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15ml snap cap tube labeled 'Infection Tube'",
+          "reagent": "10^7 phages + SN media",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15ml snap cap tube",
+          "reagent": "phages and host cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "purpose": "adsorption"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L flask",
+          "reagent": "4ml infection + 396ml SN media",
+          "volume": "400 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dilute infection to 1:100"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": "1L flask",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "immediately after dilution",
+          "speed": null,
+          "other": {
+            "label": "time 0"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1ml luer-lock syringe",
+          "reagent": "plunger",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1ml luer-lock syringe",
+          "reagent": "0.2 \u00b5m 25mm diameter syringe filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "syringe end"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1ml luer-lock syringe",
+          "reagent": "sample from flask",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "1 ml serological pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1ml luer-lock syringe",
+          "reagent": "plunger",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "1ml luer-lock syringe with 0.2\u00b5m filter",
+          "reagent": "sample",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "1.5 ml centrifuge tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "serial dilution",
+            "final_concentration": "10^2 per ml (10^-3 dilution)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15ml snap cap tube with 1ml host",
+          "reagent": "250\u00b5l of 10^-3 dilution and 250\u00b5l of 10^-2 dilution",
+          "volume": "250 \u00b5l each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "corresponding": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15ml snap cap tube",
+          "reagent": "phage and host",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "SN top agar plate",
+          "reagent": "sample",
+          "volume": "4 ml SN top agar per plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "sample from flask",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "1 ml serological pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "serial dilution",
+            "final_concentration": "10^2 per ml (10^-3 dilution)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15ml snap cap tube with 1ml host",
+          "reagent": "250\u00b5l of 10^-3 dilution and 250\u00b5l of 10^-2 dilution",
+          "volume": "250 \u00b5l each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "corresponding": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15ml snap cap tube",
+          "reagent": "phage and host",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "SN top agar plate",
+          "reagent": "sample",
+          "volume": "4 ml SN top agar per plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every time point for 16 hours, and once at 24 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "SN top agar plate",
+          "reagent": "dilutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilutions": "10^-2, 10^-3, 10^-4, 10^-5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "serial dilution",
+            "reference": "shown below"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "day 7, 14, 21",
+          "speed": null,
+          "other": {
+            "criteria": "countable number"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "PFU/ml at each time point for centrifuged and not centrifuged samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "graph",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "data": "results"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "burst size"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsplit(container='culture vessel', reagent='cell culture', ratio='as for one step experiment')\nread(container='culture vessel', reagent='cell culture', instrument='plate reader', time='immediately after split')\nread(container='culture vessel', reagent='cell culture', duration='once daily for 21 days', instrument='plate reader')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'times': '2 more times'})\n\n### AUTOMATED SECTION ###\nfix(reagent='5 \u00b5l 25% glutaraldehyde', volume='1 ml cells + 5 \u00b5l glutaraldehyde', when='during 3rd growth curve, exponential growth')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (temperature: liquid nitrogen, duration: daily, other: {'method': 'flash freeze'})\n\n### AUTOMATED SECTION ###\nstore(temperature='-80\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: determine (other: {'what': 'cell count associated with culture fluorescence during exponential growth', 'method': 'FCM or DAPI'})\n# MANUAL: infect (reagent: host culture, other: {'phase': 'late-exponential'})\n# MANUAL: assay (reagent: lysate, other: {'type': 'plaque assay', 'output': 'PFU/ml'})\n# MANUAL: calculate (reagent: phages, other: {'target': 'volume needed for 10^7 phages'})\n# MANUAL: determine (other: {'target': 'length of time to sample during one-step experiment'})\n\n### AUTOMATED SECTION ###\nprepare(reagent='dilutions for free phage and total phage', reference='table in guidelines')\nturn on(container='water bath', temperature='35\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 1L flask, other: {'label': 'phage, host, initials'})\n\n### AUTOMATED SECTION ###\nadd(container='1L flask', reagent='SN media', volume='396 ml (to q.s. 400 ml)')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 15ml snap cap tube, other: {'label': 'Infection Tube'})\n# MANUAL: label (container: 230 15ml snap cap tubes, other: {'label': 'red, bolded text ids'})\n\n### AUTOMATED SECTION ###\nadd(container='15ml snap cap tube', reagent='host', volume='1 ml')\npour(container='SN bottom agar plates', reagent='SN bottom agar', volume='2 ml per plate', quantity='240 plates', days_in_advance=True)\n\n### MANUAL SECTION ###\n# MANUAL: lay out (container: SN bottom agar plates)\n# MANUAL: label (container: 230 SN bottom agar plates, other: {'label': 'red, bolded text ids'})\n# MANUAL: label (container: 2 plates, other: {'label': 'Host (-)'})\n# MANUAL: label (container: 1.5\u00b5l centrifuge tubes, other: {'label': 'ALL THE IDS (see table 1 guidelines)'})\n\n### AUTOMATED SECTION ###\nadd(container='ids highlighted in yellow (centrifuge tubes)', reagent='SN media', volume='900 \u00b5l')\nadd(container='ids highlighted in blue (centrifuge tubes)', reagent='SN media', volume='990 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: microwave (container: SN top agar)\n\n### AUTOMATED SECTION ###\naliquot(container='50ml conical tubes', reagent='heated SN media top agar')\nkeep warm(container='SN media top agar', temperature='35\u00b0C water bath')\n\n### MANUAL SECTION ###\n# MANUAL: determine (reagent: culture, other: {'target': 'concentration at infection start'})\n# MANUAL: calculate (reagent: host culture, other: {'target': 'volume needed for 10^8 cells (q.s. to 2ml with SN media)'})\n\n### AUTOMATED SECTION ###\npipette(container=\"15ml snap cap tube labeled 'Infection Tube'\", reagent='host culture + SN media', volume='2 ml')\nadd(container=\"15ml snap cap tube labeled 'Infection Tube'\", reagent='10^7 phages + SN media', volume='2 ml')\nincubate(container='15ml snap cap tube', reagent='phages and host cells', duration='1 hour', purpose='adsorption')\nadd(container='1L flask', reagent='4ml infection + 396ml SN media', volume='400 ml', purpose='dilute infection to 1:100')\nsample(container='1L flask', duration='immediately after dilution', label='time 0')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 1ml luer-lock syringe, reagent: plunger)\n# MANUAL: add (container: 1ml luer-lock syringe, reagent: 0.2 \u00b5m 25mm diameter syringe filter, other: {'location': 'syringe end'})\n\n### AUTOMATED SECTION ###\npipette(container='1ml luer-lock syringe', reagent='sample from flask', volume='1 ml', instrument='1 ml serological pipet')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: 1ml luer-lock syringe, reagent: plunger)\n\n### AUTOMATED SECTION ###\nfilter(container='1ml luer-lock syringe with 0.2\u00b5m filter', reagent='sample', volume='1 ml', destination='1.5 ml centrifuge tube')\ndilute(container='sample', method='serial dilution', final_concentration='10^2 per ml (10^-3 dilution)')\nadd(container='15ml snap cap tube with 1ml host', reagent='250\u00b5l of 10^-3 dilution and 250\u00b5l of 10^-2 dilution', volume='250 \u00b5l each', corresponding=True)\nincubate(container='15ml snap cap tube', reagent='phage and host', duration='2 hours')\nplate(container='SN top agar plate', reagent='sample', volume='4 ml SN top agar per plate')\npipette(container='1.5ml centrifuge tube', reagent='sample from flask', volume='1 ml', instrument='1 ml serological pipette')\ndilute(container='sample', method='serial dilution', final_concentration='10^2 per ml (10^-3 dilution)')\nadd(container='15ml snap cap tube with 1ml host', reagent='250\u00b5l of 10^-3 dilution and 250\u00b5l of 10^-2 dilution', volume='250 \u00b5l each', corresponding=True)\nincubate(container='15ml snap cap tube', reagent='phage and host', duration='2 hours')\nplate(container='SN top agar plate', reagent='sample', volume='4 ml SN top agar per plate')\nsample(duration='every time point for 16 hours, and once at 24 hours')\nplate(container='SN top agar plate', reagent='dilutions', dilutions='10^-2, 10^-3, 10^-4, 10^-5')\ndilute(container='sample', method='serial dilution', reference='shown below')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: plates, reagent: plaques, duration: day 7, 14, 21, other: {'criteria': 'countable number'})\n# MANUAL: calculate (other: {'target': 'PFU/ml at each time point for centrifuged and not centrifuged samples'})\n# MANUAL: graph (other: {'data': 'results'})\n# MANUAL: calculate (other: {'target': 'burst size'})",
+    "source_file": "protocol_141.txt"
+  }
+]

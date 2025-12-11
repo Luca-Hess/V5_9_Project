@@ -1,0 +1,307 @@
+[
+  {
+    "protocol": "Th2 Polarization of Mouse CD4+ Cells\nHarvest lymph nodes (superficial cervical, mandibular, axillary, inguinal, and mesenteric) from mice.\nTease lymph nodes through a sterile 70-\u00b5m nylon cell strainer to obtain single-cell suspensions incomplete RPMI containing 10% FCS (complete medium).\nResuspend cells in complete medium and use your favorite method to isolate CD4+cells.\nCheckout Biocompare.com to find useful kits.\nOn day 0, plate CD4+ cells at 30 x106 /30 ml/T-75 flask.\nCulture cells for 3 days in complete RPMI containing 10% FCS, Con A (5 \u00b5g/mL), recombinant mouse IL-2 (20 ng/ml), and recombinant mouse IL-4 (50 ng/ml).\nOn day 3, harvest the cells and wash cells once.\nSeed 15 x106 cells/30 ml/T-75 flask along with recombinant mouse IL-2 (20 ng/ml) and recombinant mouse IL-4 (50 ng/ml).\nOn day 5, coat a 60 x 15 mm tissue culture petri dish with anti-mouse CD3\u03b5, clone 145-2C11, 10 \u00b5g/mL in PBS, 5 ml/dish.\nIncubate in a 4\u00b0C refrigerator overnight.\nOn day 6, wash the anti-mouse CD3\u03b5 pre-coated tissue culture petri dish with PBS.\nHarvest the cells from the flask (that were seeded on Day 5).\nWash the cells.\n(wash 1/2) Wash the cells.\n(wash 2/2) Seed at 20 x106 /10 ml/petri dish along with 10 \u00b5l of monensin (1000x) and anti-mouse CD28, clone 37.51 (5 \u00b5g/ml).\nIncubate for 6 hours at 37\u00b0C in a CO2 incubator.\nAfter harvesting, the cells are ready for staining.",
+    "actions": [
+      {
+        "action": "tease",
+        "parameters": {
+          "container": "70-\u00b5m nylon cell strainer",
+          "reagent": "lymph nodes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "complete RPMI containing 10% FCS"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "complete RPMI containing 10% FCS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": null,
+          "reagent": "CD4+ cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "T-75 flask",
+          "reagent": "CD4+ cells",
+          "volume": "30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "30 x10^6"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "T-75 flask",
+          "reagent": "CD4+ cells",
+          "volume": "30 ml",
+          "temperature": null,
+          "duration": "3 days",
+          "speed": null,
+          "other": {
+            "medium": "complete RPMI containing 10% FCS",
+            "additives": [
+              {
+                "name": "Con A",
+                "concentration": "5 \u00b5g/mL"
+              },
+              {
+                "name": "recombinant mouse IL-2",
+                "concentration": "20 ng/ml"
+              },
+              {
+                "name": "recombinant mouse IL-4",
+                "concentration": "50 ng/ml"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "T-75 flask",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "T-75 flask",
+          "reagent": "cells",
+          "volume": "30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "15 x10^6",
+            "additives": [
+              {
+                "name": "recombinant mouse IL-2",
+                "concentration": "20 ng/ml"
+              },
+              {
+                "name": "recombinant mouse IL-4",
+                "concentration": "50 ng/ml"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "coat",
+        "parameters": {
+          "container": "60 x 15 mm tissue culture petri dish",
+          "reagent": "anti-mouse CD3\u03b5, clone 145-2C11",
+          "volume": "5 ml/dish",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "10 \u00b5g/mL",
+            "solvent": "PBS"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "T-75 flask",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "once"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "cells",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell_count": "20 x10^6",
+            "additives": [
+              {
+                "name": "monensin",
+                "volume": "10 \u00b5l",
+                "concentration": "1000x"
+              },
+              {
+                "name": "anti-mouse CD28, clone 37.51",
+                "concentration": "5 \u00b5g/ml"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "6 hours",
+          "speed": null,
+          "other": {
+            "environment": "CO2 incubator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "harvest",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: tease (container: 70-\u00b5m nylon cell strainer, reagent: lymph nodes, other: {'medium': 'complete RPMI containing 10% FCS'})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='cells', medium='complete RPMI containing 10% FCS')\n\n### MANUAL SECTION ###\n# MANUAL: isolate (reagent: CD4+ cells, other: {})\n\n### AUTOMATED SECTION ###\nplate(container='T-75 flask', reagent='CD4+ cells', volume='30 ml', cell_count='30 x10^6')\nculture(container='T-75 flask', reagent='CD4+ cells', volume='30 ml', duration='3 days', medium='complete RPMI containing 10% FCS', additives=[{'name': 'Con A', 'concentration': '5 \u00b5g/mL'}, {'name': 'recombinant mouse IL-2', 'concentration': '20 ng/ml'}, {'name': 'recombinant mouse IL-4', 'concentration': '50 ng/ml'}])\n\n### MANUAL SECTION ###\n# MANUAL: harvest (container: T-75 flask, reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\nwash(reagent='cells', times='once')\nseed(container='T-75 flask', reagent='cells', volume='30 ml', cell_count='15 x10^6', additives=[{'name': 'recombinant mouse IL-2', 'concentration': '20 ng/ml'}, {'name': 'recombinant mouse IL-4', 'concentration': '50 ng/ml'}])\ncoat(container='60 x 15 mm tissue culture petri dish', reagent='anti-mouse CD3\u03b5, clone 145-2C11', volume='5 ml/dish', concentration='10 \u00b5g/mL', solvent='PBS')\nincubate(container='petri dish', temperature='4\u00b0C', duration='overnight')\nwash(container='petri dish', reagent='PBS', times='once')\n\n### MANUAL SECTION ###\n# MANUAL: harvest (container: T-75 flask, reagent: cells, other: {})\n\n### AUTOMATED SECTION ###\nwash(reagent='cells', times='once')\nwash(reagent='cells', times='once')\nseed(container='petri dish', reagent='cells', volume='10 ml', cell_count='20 x10^6', additives=[{'name': 'monensin', 'volume': '10 \u00b5l', 'concentration': '1000x'}, {'name': 'anti-mouse CD28, clone 37.51', 'concentration': '5 \u00b5g/ml'}])\nincubate(container='petri dish', temperature='37\u00b0C', duration='6 hours', environment='CO2 incubator')\n\n### MANUAL SECTION ###\n# MANUAL: harvest (container: petri dish, reagent: cells, other: {})",
+    "source_file": "protocol_483.txt"
+  }
+]

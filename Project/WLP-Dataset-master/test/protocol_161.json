@@ -1,0 +1,122 @@
+[
+  {
+    "protocol": "Electron microscopy for virus identification and virus assemblage characterization\n5\u00b5L of an enrichment culture, or 0.2 \u00b5m filtered and centrifuged (10 min at 3000g) cell-free supernatant, is spotted onto carbon/formvar-coated electron microscope grids (Ted Pella or EM Sciences).\nIt is then allowed to absorb for 2 min.\nRemove sample from grid by slowly bringing\u00a0a small (ca. 1cm2) piece of filter paper perpendicular to the grid to the side of the grid.\nThe sample will be removed by wicking.\nStain grid by placing on a 5\u03bcL drop of 2% Uranyl Acetate (or Phosphotungstate) for 15-30 seconds.\nRemove stain by wicking as above.\nAir dry for at least 10 minutes.\nSamples are examined by transmission electron microscopy (TEM), e.g., JEOL 100 cx, operated at 100 keV.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "carbon/formvar-coated electron microscope grid",
+          "reagent": "enrichment culture or cell-free supernatant",
+          "volume": "5\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filtered": "0.2 \u00b5m",
+            "centrifuged": "10 min at 3000g"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "purpose": "absorption"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "slowly",
+          "other": {
+            "method": "wicking with filter paper (1cm2), perpendicular to grid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": "2% Uranyl Acetate or Phosphotungstate",
+          "volume": "5\u03bcL",
+          "temperature": null,
+          "duration": "15-30 seconds",
+          "speed": null,
+          "other": {
+            "method": "placing grid on drop"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": "stain",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "wicking as above"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": null,
+          "volume": null,
+          "temperature": "ambient",
+          "duration": "at least 10 minutes",
+          "speed": null,
+          "other": {
+            "method": "air dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "electron microscope grid",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "transmission electron microscope (TEM), e.g., JEOL 100 cx, 100 keV"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='carbon/formvar-coated electron microscope grid', reagent='enrichment culture or cell-free supernatant', volume='5\u00b5L', filtered='0.2 \u00b5m', centrifuged='10 min at 3000g')\nincubate(container='electron microscope grid', reagent='sample', duration='2 min', purpose='absorption')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: electron microscope grid, reagent: sample, speed: slowly, other: {'method': 'wicking with filter paper (1cm2), perpendicular to grid'})\n\n### AUTOMATED SECTION ###\nstain(container='electron microscope grid', reagent='2% Uranyl Acetate or Phosphotungstate', volume='5\u03bcL', duration='15-30 seconds', method='placing grid on drop')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: electron microscope grid, reagent: stain, other: {'method': 'wicking as above'})\n\n### AUTOMATED SECTION ###\ndry(container='electron microscope grid', temperature='ambient', duration='at least 10 minutes', method='air dry')\n\n### MANUAL SECTION ###\n# MANUAL: examine (container: electron microscope grid, reagent: sample, other: {'instrument': 'transmission electron microscope (TEM), e.g., JEOL 100 cx, 100 keV'})",
+    "source_file": "protocol_161.txt"
+  }
+]

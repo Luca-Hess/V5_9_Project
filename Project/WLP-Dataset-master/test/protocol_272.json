@@ -1,0 +1,95 @@
+[
+  {
+    "protocol": "Multi-temperature Double Digest (single buffer)\nSet up the following reaction with Enzyme #1 (total reaction volume\u00a050\u00a0\u00b5l).\nMix components by pipetting the reaction mixture up and down, or by \"flicking\" the reaction tube.\nQuick (\"touch\") spin-down in a microcentrifuge.\nDo not vortex the reaction.\nIncubate for 1 hour at the enzyme-specific appropriate temperature.\nAdd the second enzyme.\nIncubate for 1 hour at the enzyme-specific appropriate temperature.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture (Enzyme #1, buffer, other components)",
+          "volume": "50 \u00b5l (total)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "quick (touch) spin-down",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture (with Enzyme #1)",
+          "volume": null,
+          "temperature": "enzyme-specific appropriate temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "second enzyme",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture (with both enzymes)",
+          "volume": null,
+          "temperature": "enzyme-specific appropriate temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='reaction tube', reagent='reaction mixture (Enzyme #1, buffer, other components)', volume='50 \u00b5l (total)')\nmix(container='reaction tube', reagent='reaction mixture', method='pipetting up and down')\ncentrifuge(container='reaction tube', reagent='reaction mixture', duration='quick (touch) spin-down')\nincubate(container='reaction tube', reagent='reaction mixture (with Enzyme #1)', temperature='enzyme-specific appropriate temperature', duration='1 hour')\npipette(container='reaction tube', reagent='second enzyme')\nincubate(container='reaction tube', reagent='reaction mixture (with both enzymes)', temperature='enzyme-specific appropriate temperature', duration='1 hour')",
+    "source_file": "protocol_272.txt"
+  }
+]

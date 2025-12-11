@@ -1,0 +1,807 @@
+[
+  {
+    "protocol": "RNA (and optional DNA) extraction from environmental samples (filters). \nTake frozen tubes out of the -80C freezer, keep on ice.\nWhile filtere are thawing, add RNase/DNase-free 0.5mm Silica beads to each sample tubea.\nIf RLT+ buffer (with beta mercaptoethanol) was not added previously, add it here.\nVortex for 5 minutes to ensure beads disrupt filtera.\nEnsure filter remains in RLT+ buffer the whole timeb.\nOptions to increase yield:\ni. Add pre-heated RLT+ buffer (heat for 2-3 minutes at 65C)\nii. Place tube on Tissue lyser for bead beating\niii. Vortex for additional minutes Once thoroughly lysed (note foam/bubbles may have appeared), transfer liquid lysate to new tube (avoid transferring filter).\nUsing sterile forceps, transfer the filter carefully into a 5mL sterile syringe.\nSqueeze out excess lysate from filter through the syringe into the new tube of lysate.\nNew tube for each sample should only contain lysate.\na. Optional step is to run this lysate through a Qiashredder for additional lysis.\n**Start with Qiagen extraction steps here (following Qiagen DNA/RNA All prep kit): \nTransfer the lysate to the AllPrep DNA spin column.\nCentrifuge for 30 seconds at > 10,000 rpm.\nTransfer flow-through (filtrate) into a new tube for RNA purification.\nThis DNA column can now be stored in the fridge until DNA extraction (4C).\na. If multiple spins of the lysate are required, continue this until all lysate has been passed through the DNA column and all flow-through has been obtained in a new tube.\nAdd 1 volume of 70% EtOH to the RNA flow-through product, mix by pipetting.\nDo not centrifuge.\nAdd 1 volume of 70% EtOH to the RNA flow-through product, mix by pipetting.\nDo not centrifuge.\nTransfer up to 700\u00b5l of sample (including any precipitate) to an RNeasy spin column.\nCentrifuge for 30 seconds at > 10,000 rpm.\nDiscard the flow-through.\nAdd 350\u00b5l of Buffer RW1 to RNeasy spin column.\nCentrifuge for 15 seconds at > 10,000 rpm.\nDiscard the flow-through.\nMake up DNase I and Buffer RDD stock mix for DNase digestion.\nFor each sample add 10\u00b5l of DNaseI stock to 70\u00b5l of Buffer RDD, mix solution and centrifuge briefly.\nAdd DNaseI mix (80\u00b5l) directly to RNase spin column.\nIncubate at room temperature for 15 minutes.\nAgain, add 350\u00b5l of Buffer RW1 to RNeasy spin column.\nCentrifuge for 15 seconds at > 10,000 rpm.\nDiscard the flow-through.\nAdd 500\u00b5l of Buffer RPE to RNeasy spin column.\nCentrifuge for 15 seconds at > 10,000 rpm.\nDiscard the flow-through.\nAgain, add 500\u00b5l of Buffer RPE to RNeasy spin column.\nCentrifuge for 2 minutes at > 10,000 rpm.\nDiscard the flow-through.\nOption to place RNeasy spin column into a new 2mL collection tube and centrifuge at full speed for 1 minute \u2013 this will eliminate any possible carry over of Buffer RPE.\nPlace RNeasy spin column into a new 1.5ml collection tube, add 30-50\u00b5l RNase-free water.\nCentrifuge for 1 minute at > 10,000 rpm to elute the RNA.\nOptions to increase yield:\ni. Pre-heat RNase-free water ahead of addition to RNeasy column\nii. Let RNase free water sit on RNeasy column for 1-2 minutes before centrifugation\niii. Transfer eluted RNA back into the RNeasy column and re-centrifuge to increase concentration.\nGenomic DNA purification Grab the DNA spin columns out of the fridge.\nAdd 500\u00b5l Buffer AW1 to AllPrep DNA spin column.\nCentrifuge for 15 seconds at > 10,000 rpm.\nDiscard the flow-through.\nAgain add 500\u00b5l of Buffer AW2 to the DNA column.\nCentrifuge for 2 minutes at full speed.\nDiscard the flow-through.\nPlace DNA column into a new 1.5ml collection tube, add 50-100\u00b5l of Buffer EB to the column.\nLet sit at room temperature on the column for 1 minute.\nCentrifuge for 1 minute at > 10,000 rpm.\nOptions to increase yield:\ni. Pre-heat EB buffer water ahead of addition to DNA column\nii. Transfer eluted DNA back into the RNeasy column and re-centrifuge to increase concentration.\nQC both DNA and RNA product using both Qubit fluorometer (concentration) and Agilent Bioanalyzer (quality).\na. For the Qubit load 2\u00b5l of product to the 198\u00b5l of buffer/dye solution for each sample",
+    "actions": [
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "frozen tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "RNase/DNase-free 0.5mm Silica beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "RLT+ buffer (with beta mercaptoethanol)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "RLT+ buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65C",
+          "duration": "2-3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "bead_beat",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "silica beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "Tissue lyser"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "additional minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "liquid lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid": "filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "5mL sterile syringe",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile forceps"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "squeeze",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "collect": "lysate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "Qiashredder",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "AllPrep DNA spin column",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "AllPrep DNA spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "flow-through (filtrate)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "RNA purification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNA flow-through product",
+          "reagent": "70% EtOH",
+          "volume": "1 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "RNA flow-through product",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "sample (including any precipitate)",
+          "volume": "up to 700\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RW1",
+          "volume": "350\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I and Buffer RDD stock mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "DNase digestion"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNaseI stock",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "70\u00b5l Buffer RDD"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNaseI mix",
+          "volume": "80\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNase spin column",
+          "reagent": "DNaseI mix",
+          "volume": "80\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "directly": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "RNase spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RW1",
+          "volume": "350\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RPE",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "Buffer RPE",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "again": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 2mL collection tube",
+          "reagent": "RNeasy spin column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "full speed",
+          "other": {
+            "purpose": "eliminate Buffer RPE carryover"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 1.5ml collection tube",
+          "reagent": "RNeasy spin column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": "RNase-free water",
+          "volume": "30-50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": ">10,000 rpm",
+          "other": {
+            "purpose": "elute RNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "AllPrep DNA spin column",
+          "reagent": "Buffer AW1",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "AllPrep DNA spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 seconds",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": "Buffer AW2",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "again": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "full speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow-through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 1.5ml collection tube",
+          "reagent": "DNA column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": "Buffer EB",
+          "volume": "50-100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": ">10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Qubit fluorometer tube",
+          "reagent": "product",
+          "volume": "2\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer/dye solution": "198\u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: frozen tubes, temperature: -80C, other: {})\n# MANUAL: keep (container: tubes, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='sample tube', reagent='RNase/DNase-free 0.5mm Silica beads')\nadd(container='sample tube', reagent='RLT+ buffer (with beta mercaptoethanol)')\nvortex(container='sample tube', duration='5 minutes')\nheat(container='RLT+ buffer', temperature='65C', duration='2-3 minutes')\nbead_beat(container='sample tube', reagent='silica beads', device='Tissue lyser')\nvortex(container='sample tube', duration='additional minutes')\ntransfer(container='new tube', reagent='liquid lysate', avoid='filter')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: 5mL sterile syringe, reagent: filter, other: {'tool': 'sterile forceps'})\n# MANUAL: squeeze (container: syringe, reagent: filter, other: {'collect': 'lysate'})\n\n### AUTOMATED SECTION ###\nrun(container='Qiashredder', reagent='lysate')\ntransfer(container='AllPrep DNA spin column', reagent='lysate')\ncentrifuge(container='AllPrep DNA spin column', duration='30 seconds', speed='>10,000 rpm')\ntransfer(container='new tube', reagent='flow-through (filtrate)', purpose='RNA purification')\nstore(container='DNA column', temperature='4C')\nadd(container='RNA flow-through product', reagent='70% EtOH', volume='1 volume')\nmix(container='RNA flow-through product', method='pipetting')\ntransfer(container='RNeasy spin column', reagent='sample (including any precipitate)', volume='up to 700\u00b5l')\ncentrifuge(container='RNeasy spin column', duration='30 seconds', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy spin column', reagent='Buffer RW1', volume='350\u00b5l')\ncentrifuge(container='RNeasy spin column', duration='15 seconds', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n# MANUAL: prepare (reagent: DNase I and Buffer RDD stock mix, other: {'purpose': 'DNase digestion'})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='DNaseI stock', volume='10\u00b5l', to='70\u00b5l Buffer RDD')\nmix(container='tube', reagent='DNaseI mix', volume='80\u00b5l')\ncentrifuge(container='tube', duration='briefly')\nadd(container='RNase spin column', reagent='DNaseI mix', volume='80\u00b5l', directly=True)\nincubate(container='RNase spin column', temperature='room temperature', duration='15 minutes')\nadd(container='RNeasy spin column', reagent='Buffer RW1', volume='350\u00b5l')\ncentrifuge(container='RNeasy spin column', duration='15 seconds', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy spin column', reagent='Buffer RPE', volume='500\u00b5l')\ncentrifuge(container='RNeasy spin column', duration='15 seconds', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='RNeasy spin column', reagent='Buffer RPE', volume='500\u00b5l', again=True)\ncentrifuge(container='RNeasy spin column', duration='2 minutes', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='new 2mL collection tube', reagent='RNeasy spin column')\ncentrifuge(container='RNeasy spin column', duration='1 minute', speed='full speed', purpose='eliminate Buffer RPE carryover')\ntransfer(container='new 1.5ml collection tube', reagent='RNeasy spin column')\nadd(container='RNeasy spin column', reagent='RNase-free water', volume='30-50\u00b5l')\ncentrifuge(container='RNeasy spin column', duration='1 minute', speed='>10,000 rpm', purpose='elute RNA')\nadd(container='AllPrep DNA spin column', reagent='Buffer AW1', volume='500\u00b5l')\ncentrifuge(container='AllPrep DNA spin column', duration='15 seconds', speed='>10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='DNA column', reagent='Buffer AW2', volume='500\u00b5l', again=True)\ncentrifuge(container='DNA column', duration='2 minutes', speed='full speed')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow-through, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='new 1.5ml collection tube', reagent='DNA column')\nadd(container='DNA column', reagent='Buffer EB', volume='50-100\u00b5l')\nincubate(container='DNA column', temperature='room temperature', duration='1 minute')\ncentrifuge(container='DNA column', duration='1 minute', speed='>10,000 rpm')\nload(container='Qubit fluorometer tube', reagent='product', volume='2\u00b5l', buffer/dye solution='198\u00b5l')",
+    "source_file": "protocol_610.txt"
+  }
+]

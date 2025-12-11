@@ -1,0 +1,135 @@
+[
+  {
+    "protocol": "ESAW Media for Marine Phytoplankton\nNa2SO4 NaCl KCL NaHCO3 KBr H3BO NaF\u00a0 (2.7 g/L stock). \nBring to 500 mL MilliQ water MgCl2-6H2O CaCl2-2H2O SrCl2-6H2O Tris-HCL (pH 7.8) (1.0 M stock) Fe-EDTA K2HPO4\u00a0 (10g/L stock) NaNO3\u00a0(550 mM stock) Selenite (10\u00a0\u03bcM stock). \nBring to 500 mL MilliQ water. \nAutoclave Solution I and Solution II separately. \nCombine Solution I and Solution II. \nAdd trace Metals Solutions. \nAdd Vitamin Solution.",
+    "actions": [
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "unknown (likely flask or bottle)",
+          "reagent": "Na2SO4, NaCl, KCl, NaHCO3, KBr, H3BO, NaF (2.7 g/L stock)",
+          "volume": "unknown (to be brought to 500 mL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "unknown (likely flask or bottle)",
+          "reagent": "MilliQ water",
+          "volume": "500 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "unknown (likely flask or bottle)",
+          "reagent": "MgCl2-6H2O, CaCl2-2H2O, SrCl2-6H2O, Tris-HCL (pH 7.8, 1.0 M stock), Fe-EDTA, K2HPO4 (10g/L stock), NaNO3 (550 mM stock), Selenite (10 \u03bcM stock)",
+          "volume": "unknown (to be brought to 500 mL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "unknown (likely flask or bottle)",
+          "reagent": "MilliQ water",
+          "volume": "500 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "Solution I",
+          "reagent": null,
+          "volume": null,
+          "temperature": "standard autoclave (typically 121\u00b0C)",
+          "duration": "standard autoclave (typically 15-30 min)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "Solution II",
+          "reagent": null,
+          "volume": null,
+          "temperature": "standard autoclave (typically 121\u00b0C)",
+          "duration": "standard autoclave (typically 15-30 min)",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "unknown (receiving vessel)",
+          "reagent": "Solution I and Solution II",
+          "volume": "unknown",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "combined solution",
+          "reagent": "trace Metals Solutions",
+          "volume": "unknown",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "combined solution",
+          "reagent": "Vitamin Solution",
+          "volume": "unknown",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndispense(container='unknown (likely flask or bottle)', reagent='Na2SO4, NaCl, KCl, NaHCO3, KBr, H3BO, NaF (2.7 g/L stock)', volume='unknown (to be brought to 500 mL)')\ndispense(container='unknown (likely flask or bottle)', reagent='MilliQ water', volume='500 mL')\ndispense(container='unknown (likely flask or bottle)', reagent='MgCl2-6H2O, CaCl2-2H2O, SrCl2-6H2O, Tris-HCL (pH 7.8, 1.0 M stock), Fe-EDTA, K2HPO4 (10g/L stock), NaNO3 (550 mM stock), Selenite (10 \u03bcM stock)', volume='unknown (to be brought to 500 mL)')\ndispense(container='unknown (likely flask or bottle)', reagent='MilliQ water', volume='500 mL')\nautoclave(container='Solution I', temperature='standard autoclave (typically 121\u00b0C)', duration='standard autoclave (typically 15-30 min)')\nautoclave(container='Solution II', temperature='standard autoclave (typically 121\u00b0C)', duration='standard autoclave (typically 15-30 min)')\ncombine(container='unknown (receiving vessel)', reagent='Solution I and Solution II', volume='unknown')\nadd(container='combined solution', reagent='trace Metals Solutions', volume='unknown')\nadd(container='combined solution', reagent='Vitamin Solution', volume='unknown')",
+    "source_file": "protocol_566.txt"
+  }
+]

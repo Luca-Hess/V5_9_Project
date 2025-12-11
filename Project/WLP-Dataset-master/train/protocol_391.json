@@ -1,0 +1,336 @@
+[
+  {
+    "protocol": "Tube-O-Dialyzer (No Loss Dialyzer for Small Samples)\nTube\u2010O\u2010DIALYZER\u2122 are supplied in a preservative to maintain quality.\nPrior to use discard the preservative from the tube and place the dialysis cap upside down in a beaker or other suitable container.\nPipette your sample directly into the Tube\u2010O\u2010DIALYZER\u2122 tube.\nFor Tube\u2010O\u2010DIALYZER\u2122 Micro use 20\u2010250\u00b5l and for Tube\u2010O\u2010DIALYZER\u2122 Medi use 0.2\u20102.5ml.\nRemove the Tube\u2010O\u2010DIALYZER\u2122 dialysis cap from the rinse water/buffer and carefully remove excess liquid with a pipette tip.\nScrew the dialysis cap on to the Tube\u2010O\u2010DIALYZER\u2122 tube until finger tight.\nInvert the Tube\u2010O\u2010DIALYZER\u2122, ensuring the entire sample rests upon the membrane.\nKeeping the Tube\u2010O\u2010DIALYZER\u2122 in an inverted position, slide the supplied float onto the Tube\u2010O\u2010DIALYZER\u2122 tube.\nPlace the Tube\u2010O\u2010DIALYZER\u2122 in the dialysis buffer.\nEnsure that the dialysis membrane contacts the dialysis buffer.\nIf there are large air bubbles trapped underneath the dialysis membrane surface, tilt the tube or squirt buffer to remove the air bubbles.\nDialysis Time:\u00a0\u00a0Dialysis time will depend on the nature of sample, MWCO of the Tube\u2010O\u2010DIALYZER\u2122, sample and dialysis buffer volume and concentration.\nHigher MWCO will allow faster dialysis.\nAs a guide, the sample should be dialyzed for 2\u201012h.\nDialysis buffer should also be replaced at least once during dialysis.\nAfter dialysis, remove the Tube\u2010O\u2010DIALYZER\u2122 from the float and immediately spin the Tube\u2010O\u2010DIALYZER\u2122 (in up\u2010right position) for 5\u20106 seconds at 500\u20101,000xg.\nDiscard the dialysis cap and replace with the supplied Storage Cap.\nAdd 1\u20102ml DI water or dialysis buffer to rinse.\nKeep the Tube\u2010O\u2010DIALYZER\u2122 membrane wet until required.\nGently, stir the dialysis buffer.\nFor efficient and complete dialysis we recommend inverting or gently tapping the Tube\u2010O\u2010DIALYZER\u2122 1\u20102 times during dialysis to mix the sample.",
+    "actions": [
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "preservative",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "sample",
+          "volume": "20-250\u00b5l (Micro) or 0.2-2.5ml (Medi)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Tube-O-DIALYZER dialysis cap",
+          "reagent": "excess liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "screw",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "dialysis cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tightness": "finger tight"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "ensure sample rests on membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "slide",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "float",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "inverted"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "dialysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "ensure",
+        "parameters": {
+          "container": "Tube-O-DIALYZER membrane",
+          "reagent": "dialysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contact": "membrane contacts buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tilt",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove air bubbles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "squirt",
+        "parameters": {
+          "container": "Tube-O-DIALYZER membrane",
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove air bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "sample in dialysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-12h",
+          "speed": null,
+          "other": {
+            "MWCO": "variable",
+            "buffer replacement": "at least once during dialysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "dialysis buffer container",
+          "reagent": "dialysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "at least once during dialysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "float",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after": "dialysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-6 seconds",
+          "speed": "500-1,000xg",
+          "other": {
+            "position": "upright"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "dialysis cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "storage cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "DI water or dialysis buffer",
+          "volume": "1-2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rinse"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "Tube-O-DIALYZER membrane",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "state": "wet until required"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "stir",
+        "parameters": {
+          "container": "dialysis buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "1-2 times during dialysis",
+            "purpose": "mix sample"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "tap",
+        "parameters": {
+          "container": "Tube-O-DIALYZER tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "frequency": "1-2 times during dialysis",
+            "purpose": "mix sample"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Tube-O-DIALYZER tube, reagent: preservative, other: {})\n\n### AUTOMATED SECTION ###\npipette(container='Tube-O-DIALYZER tube', reagent='sample', volume='20-250\u00b5l (Micro) or 0.2-2.5ml (Medi)')\nremove(container='Tube-O-DIALYZER dialysis cap', reagent='excess liquid', method='pipette tip')\n\n### MANUAL SECTION ###\n# MANUAL: screw (container: Tube-O-DIALYZER tube, reagent: dialysis cap, other: {'tightness': 'finger tight'})\n\n### AUTOMATED SECTION ###\ninvert(container='Tube-O-DIALYZER tube', reagent='sample', purpose='ensure sample rests on membrane')\n\n### MANUAL SECTION ###\n# MANUAL: slide (container: Tube-O-DIALYZER tube, reagent: float, other: {'position': 'inverted'})\n# MANUAL: place (container: Tube-O-DIALYZER tube, reagent: dialysis buffer, other: {})\n# MANUAL: ensure (container: Tube-O-DIALYZER membrane, reagent: dialysis buffer, other: {'contact': 'membrane contacts buffer'})\n# MANUAL: tilt (container: Tube-O-DIALYZER tube, other: {'purpose': 'remove air bubbles'})\n\n### AUTOMATED SECTION ###\nsquirt(container='Tube-O-DIALYZER membrane', reagent='buffer', purpose='remove air bubbles')\nincubate(container='Tube-O-DIALYZER tube', reagent='sample in dialysis buffer', duration='2-12h', MWCO='variable', buffer replacement='at least once during dialysis')\nreplace(container='dialysis buffer container', reagent='dialysis buffer', frequency='at least once during dialysis')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Tube-O-DIALYZER tube, reagent: float, other: {'after': 'dialysis'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Tube-O-DIALYZER tube', duration='5-6 seconds', speed='500-1,000xg', position='upright')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Tube-O-DIALYZER tube, reagent: dialysis cap, other: {})\n# MANUAL: replace (container: Tube-O-DIALYZER tube, reagent: storage cap, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='Tube-O-DIALYZER tube', reagent='DI water or dialysis buffer', volume='1-2ml', purpose='rinse')\n\n### MANUAL SECTION ###\n# MANUAL: keep (container: Tube-O-DIALYZER membrane, reagent: water, other: {'state': 'wet until required'})\n\n### AUTOMATED SECTION ###\nstir(container='dialysis buffer', speed='gentle')\ninvert(container='Tube-O-DIALYZER tube', reagent='sample', frequency='1-2 times during dialysis', purpose='mix sample')\n\n### MANUAL SECTION ###\n# MANUAL: tap (container: Tube-O-DIALYZER tube, reagent: sample, speed: gentle, other: {'frequency': '1-2 times during dialysis', 'purpose': 'mix sample'})",
+    "source_file": "protocol_391.txt"
+  }
+]

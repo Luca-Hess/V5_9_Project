@@ -1,0 +1,355 @@
+[
+  {
+    "protocol": "Time Efficient Method for Washing 15 mL Vials\nArrange vials so that they all sit upright in a large plastic cage.\nI\u2019ve found you can usually fit about 60 vials (a bit more than one bag) into a single cage.\nPlace caps into a small cage.\nPlace cages upright into a soap bath overnight.\nPlace a large piece of PTFE over the cages to keep them submerged.\nRemove cages from soap, and rinse thoroughly 7 times to remove soap.\nIt\u2019s important to make sure that water gets into each individual vial, so move the cage back and forth until each of the vials is at least partially filled.\nWhen pouring the water back out, make sure to shake the cage so that in interior of all the vials is rinsed.\nRinse the outsides in between rinsing the vial interiors.\nPlace cages upright into a 1N HCl bath.\nOnce or twice during the week, invert and/or rotate all of the cages (vials and caps) to make sure all surfaces are exposed.\nRemove vials and caps from the bath and rinse each cage 7 times to remove most of the HCl.\nClean an area in the drying bench with a clean wipe, and place cages into the drying bench.\nWith thoroughly cleaned and rinsed poly gloves, remove each vial from the cage and individually rinse the vial plus one cap three times.\nStand in front of the flow bench to shake out excess water, cap vial, and place in a bag for storage.",
+    "actions": [
+      {
+        "action": "arrange",
+        "parameters": {
+          "container": "large plastic cage",
+          "reagent": "15 mL vials",
+          "volume": "about 60 vials",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "small cage",
+          "reagent": "caps",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "soap bath",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "cages": "upright"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "cages",
+          "reagent": "PTFE",
+          "volume": "large piece",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "keep submerged"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "cages",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "soap bath"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "cages",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 7,
+            "purpose": "remove soap"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "move",
+        "parameters": {
+          "container": "cage",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "back and forth",
+          "other": {
+            "purpose": "fill vials with water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "cage",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove water from vials"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "cage",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rinse vial interiors"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "outsides of vials",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "between": "rinsing vial interiors"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "1N HCl bath",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cages": "upright"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "cages (vials and caps)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "once or twice during the week"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "cages (vials and caps)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "once or twice during the week"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "vials and caps",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "HCl bath"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "each cage",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 7,
+            "purpose": "remove HCl"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": "drying bench area",
+          "reagent": "clean wipe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "drying bench",
+          "reagent": "cages",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "each vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "cage",
+            "gloves": "poly gloves, cleaned and rinsed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "individual vial plus one cap",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove excess water",
+            "location": "flow bench"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "vial",
+          "reagent": "cap",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "bag",
+          "reagent": "capped vial",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "storage"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: arrange (container: large plastic cage, reagent: 15 mL vials, volume: about 60 vials, other: {})\n# MANUAL: place (container: small cage, reagent: caps, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='soap bath', duration='overnight', cages='upright')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: cages, reagent: PTFE, volume: large piece, other: {'purpose': 'keep submerged'})\n# MANUAL: remove (container: cages, other: {'from': 'soap bath'})\n\n### AUTOMATED SECTION ###\nrinse(container='cages', reagent='water', times=7, purpose='remove soap')\nmove(container='cage', speed='back and forth', purpose='fill vials with water')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: cage, reagent: water, other: {'purpose': 'remove water from vials'})\n\n### AUTOMATED SECTION ###\nshake(container='cage', purpose='rinse vial interiors')\nrinse(container='outsides of vials', reagent='water', between='rinsing vial interiors')\nplace(container='1N HCl bath', cages='upright')\ninvert(container='cages (vials and caps)', frequency='once or twice during the week')\nrotate(container='cages (vials and caps)', frequency='once or twice during the week')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: vials and caps, other: {'from': 'HCl bath'})\n\n### AUTOMATED SECTION ###\nrinse(container='each cage', reagent='water', times=7, purpose='remove HCl')\n\n### MANUAL SECTION ###\n# MANUAL: clean (container: drying bench area, reagent: clean wipe, other: {})\n# MANUAL: place (container: drying bench, reagent: cages, other: {})\n# MANUAL: remove (container: each vial, other: {'from': 'cage', 'gloves': 'poly gloves, cleaned and rinsed'})\n\n### AUTOMATED SECTION ###\nrinse(container='individual vial plus one cap', reagent='water', times=3)\nshake(container='vial', purpose='remove excess water', location='flow bench')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: vial, reagent: cap, other: {})\n# MANUAL: place (container: bag, reagent: capped vial, other: {'purpose': 'storage'})",
+    "source_file": "protocol_402.txt"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "protocol": "PhosphoThreonine Western Blotting\nRun 40% of IP eluate on 10% gel Tris-Glycine. \nTransfer protein to PVDF membrane for 1hr at RT with ice pack (100V). \nCut membrane just below 180kD (top MW marker on benchmark prestained ladder). \nCut Membrane at ~82kD (the blue band above the pink band using benchmark prestained ladder).\n**Note, the GST-tagged protein is ~115 kD.\nCutting the membrane in the places will help reduce non-specific binding.\nAlso, running a ladder in the middle of the gel will help you cut straight across the membrane in the event that the gel is transferred at an angle relative to the membrane.\nBlock membrane with 5% BSA (IgG and Protease-Free)/TBST for 2hrs at RT. \nProbe membrane with phospho-threonine-HRP antibody in IgG-Free/Protease-Free BSA/TBST (1:1000).\nProbe overnight at 4C in cold room on tilting tray.\nRinse membrane 8x over the course of 2hrs with 1x TBST. \nActivate membrane with pico ECL.\n**Note, the anti-pThr antibody is HRP conjugated so you don't need to use a secondary.",
+    "actions": [
+      {
+        "action": "run",
+        "parameters": {
+          "container": "10% gel Tris-Glycine",
+          "reagent": "40% of IP eluate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "IP eluate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "PVDF membrane",
+          "reagent": "protein",
+          "volume": null,
+          "temperature": "RT",
+          "duration": "1hr",
+          "speed": "100V",
+          "other": {
+            "ice_pack": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "just below 180kD (top MW marker on benchmark prestained ladder)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "at ~82kD (the blue band above the pink band using benchmark prestained ladder)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "block",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "5% BSA (IgG and Protease-Free)/TBST",
+          "volume": null,
+          "temperature": "RT",
+          "duration": "2hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "probe",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "phospho-threonine-HRP antibody in IgG-Free/Protease-Free BSA/TBST",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilution": "1:1000"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "location": "cold room",
+            "equipment": "tilting tray"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "1x TBST",
+          "volume": null,
+          "temperature": null,
+          "duration": "2hrs",
+          "speed": null,
+          "other": {
+            "times": "8x"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "activate",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "pico ECL",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: run (container: 10% gel Tris-Glycine, reagent: 40% of IP eluate, other: {'sample': 'IP eluate'})\n\n### AUTOMATED SECTION ###\ntransfer(container='PVDF membrane', reagent='protein', temperature='RT', duration='1hr', speed='100V', ice_pack=True)\n\n### MANUAL SECTION ###\n# MANUAL: cut (container: membrane, other: {'location': 'just below 180kD (top MW marker on benchmark prestained ladder)'})\n# MANUAL: cut (container: membrane, other: {'location': 'at ~82kD (the blue band above the pink band using benchmark prestained ladder)'})\n\n### AUTOMATED SECTION ###\nblock(container='membrane', reagent='5% BSA (IgG and Protease-Free)/TBST', temperature='RT', duration='2hrs')\nprobe(container='membrane', reagent='phospho-threonine-HRP antibody in IgG-Free/Protease-Free BSA/TBST', dilution='1:1000')\nincubate(container='membrane', temperature='4C', duration='overnight', location='cold room', equipment='tilting tray')\nrinse(container='membrane', reagent='1x TBST', duration='2hrs', times='8x')\nactivate(container='membrane', reagent='pico ECL')",
+    "source_file": "protocol_96.txt"
+  }
+]

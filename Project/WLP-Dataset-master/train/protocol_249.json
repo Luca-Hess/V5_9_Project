@@ -1,0 +1,100 @@
+[
+  {
+    "protocol": "Dephosphorylation using AnP (M0289)\nAdd 1/10 volume of 10X Antarctic Phosphatase Reaction Buffer to 1-5 \u00b5g of DNA cut with any restriction endonuclease in any buffer.\nAdd 1 \u00b5l of Antarctic Phosphatase (5 units) and mix.\nIncubate for 15 minutes at 37\u00b0C for 5\u00b4 extensions or blunt-ends, 60 minutes for 3\u00b4 extensions.\nHeat inactivate (or as required to inactivate the restriction enzyme) for 5 minutes at 70\u00b0C.\nProceed with ligation.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Antarctic Phosphatase Reaction Buffer",
+          "volume": "1/10 volume (relative to DNA solution)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "DNA_amount": "1-5 \u00b5g",
+            "DNA_status": "cut with any restriction endonuclease in any buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Antarctic Phosphatase (5 units)",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes (for 5' extensions or blunt-ends), 60 minutes (for 3' extensions)",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "inactivate enzyme"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "proceed",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "next_step": "ligation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(reagent='10X Antarctic Phosphatase Reaction Buffer', volume='1/10 volume (relative to DNA solution)', DNA_amount='1-5 \u00b5g', DNA_status='cut with any restriction endonuclease in any buffer')\nadd(reagent='Antarctic Phosphatase (5 units)', volume='1 \u00b5l')\nmix()\nincubate(temperature='37\u00b0C', duration=\"15 minutes (for 5' extensions or blunt-ends), 60 minutes (for 3' extensions)\")\nheat(temperature='70\u00b0C', duration='5 minutes', purpose='inactivate enzyme')\n\n### MANUAL SECTION ###\n# MANUAL: proceed (other: {'next_step': 'ligation'})",
+    "source_file": "protocol_249.txt"
+  }
+]

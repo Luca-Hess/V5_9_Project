@@ -1,0 +1,466 @@
+[
+  {
+    "protocol": "Optiprep gradient preparation for virus separation\nOptiprep preparation\u00a0UV and sterilize class II cabinet with reagent alcohol.\nWork with gloves and sleeve guards to prevent contaminating the hood.\nLabel\u00a05 15ml falcon tubes with 25%, 30%, 35%, 40% and 45% labels.\nLabel a 50 ml falcon tube \"Optiprep\".\nRemove OptiPrep solution from the fridge and wipe down sides, cap and septum with alcohol.\nPierce septum with needle (20 gauge 1/2 inch needles work best) attached to appropriately-sized\u00a0syringe and aseptically remove 15-16 ml of OptiPrep for every 2 gradients you intend to make.\nPlace Optiprep in the\u00a0sterile 50 ml falcon tube.\nMake 25%, 30%, 35%, 40% and 45% Optiprep solutions in the labeled falcon tubes.\nYou will need\u00a02.5 ml of each solution for every gradient you plan to make.\nMix well.\nFor example, if you are making 2 gradients, you will prepare 5 ml of each solution as follows:\u00a025% = 3 ml media + 2 ml Optiprep30% = 2.5 ml media + 2.5 ml OptiPrep35% = 2.1 ml media + 2.9 ml OptiPrep40% = 1.7 ml media + 3.3 ml OptiPrep45% = 1.25 ml media + 3.75 ml OptiPrep. \nMake a loading system for the centrifuge tubes\u00a0by attaching the thin end of a pasteur pipet to a 5 ml syringe with parafilm or a rubber tube.\nHold the syringe with a ring\u00a0clamp so that the end of the Pasteur pipet tip hovers just above the bottom of the tube.\nPipette 2.4 ml of 25% solution into the syringe.\nIt will begin to flow into the centrifuge tube via gravity.\nWhen nearly all the solution has left the syringe, add 2.4 ml of the 30%.\nRepeat for all solutions.\nNOTE: Try not to let the syringe run dry as it will introduce air bubbles into the tube and disrupting the reagent.\nIf this happens, you can restart the flow by placing your thumb on the top of the syringe to generate and seal and then move your thumb up and down to increase the pressure in the syringe.\nOnce all tube has been poured (all percent solutions have been added), seal the top with parafilm and place the tubes in the fridge.\nAllow the tubes to sit overnight to form a continuous gradient.\nNOTE:\u00a0 Tubes may sit in the fridge for several weeks and will still be good as long as they are sealed.\nSeparating viruses on the Optiprep gradient.\nThe next morning, pipette 0.5 - 4 ml of your viral concentrate onto each gradient.\nBalance the tubes using sterile growth medium if necessary (or whatever solution the virus sample is suspended in).\nCentrifuge the tubes in a swinging bucket rotor in the Beckman Advanti J30-I (use rotor JS-25.15) at max speed (40,000 rpm) for at least 4 hours at 8\u02daC.\nNOTE: Occasionally you will need to spin for longer than 4 hours to achieve separation.\nIn these cases an overnight or 24 hour spin may be required.\nRemove\u00a0the tubes carefully out of the rotor and place them on a standing clamp to visualize the bands.\nNOTE:\u00a0 Sometimes the bands are not visible until you suspend the tubes in a beaker of water, remove and back light them.\nExtracting bands.\nExtract the bands separately using sterile needles and a 3 ml syringe.\nNOTE: You must use 20 gauge half-inch needles at this stage to avoid puncturing both walls of the tube!\nDo not use any needles longer than \u00bd\u201d.\nWipe the sides of the tube wall with ethanol.\nPlace the syringe just below the band and puncture the wall.\nAspirate and remove the band with the syringe until the band disappears.\nIt usually results in about 400 ul \u2013 1 ml volume removed.\nPlace a piece of scotch tape over the hole in the tube to prevent the gradient from leaking out.\nPlace the sample into a 1.5 ml centrifuge tube and store at 4\u02daC until ready to use.\nNOTE:\u00a0If you have multiple bands, extract in the order from\u00a0lowest to highest.\nThis will prevent any leakage from the puncture site from possibly contaminating the wall next to your lower bands.",
+    "actions": [
+      {
+        "action": "sterilize",
+        "parameters": {
+          "container": "class II cabinet",
+          "reagent": "UV and reagent alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "5 x 15 ml falcon tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": [
+              "25%",
+              "30%",
+              "35%",
+              "40%",
+              "45%"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "50 ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "Optiprep"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "OptiPrep solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "fridge",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wipe",
+        "parameters": {
+          "container": "OptiPrep solution (sides, cap, septum)",
+          "reagent": "alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pierce",
+        "parameters": {
+          "container": "OptiPrep septum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "needle": "20 gauge 1/2 inch"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "OptiPrep solution",
+          "reagent": null,
+          "volume": "15-16 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "syringe with needle"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sterile 50 ml falcon tube",
+          "reagent": "OptiPrep solution",
+          "volume": "15-16 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "labeled falcon tubes",
+          "reagent": "Optiprep solutions (25%, 30%, 35%, 40%, 45%)",
+          "volume": "2.5 ml per gradient",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "labeled falcon tubes",
+          "reagent": "Optiprep solutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "25% solution",
+          "volume": "2.4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "25% solution",
+          "volume": "2.4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gravity flow via syringe/pasteur pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "syringe",
+          "reagent": "30% solution",
+          "volume": "2.4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "30% solution",
+          "volume": "2.4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gravity flow via syringe/pasteur pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "all solutions (35%, 40%, 45%)",
+          "volume": "2.4 ml each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gravity flow via syringe/pasteur pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "fridge",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "fridge",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "form continuous gradient"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "gradient tube",
+          "reagent": "viral concentrate",
+          "volume": "0.5 - 4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "balance",
+        "parameters": {
+          "container": "gradient tubes",
+          "reagent": "sterile growth medium or virus suspension buffer",
+          "volume": "as needed",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "gradient tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "8\u02daC",
+          "duration": "at least 4 hours",
+          "speed": "40,000 rpm",
+          "other": {
+            "rotor": "JS-25.15",
+            "instrument": "Beckman Advanti J30-I"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gradient tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "rotor"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "visualize",
+        "parameters": {
+          "container": "gradient tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "standing clamp, backlight, water bath"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "gradient tube",
+          "reagent": "bands",
+          "volume": "400 ul \u2013 1 ml per band",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile needle (20 gauge 1/2 inch) and 3 ml syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "wipe",
+        "parameters": {
+          "container": "tube wall",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "puncture",
+        "parameters": {
+          "container": "tube wall",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "needle"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "band",
+          "reagent": null,
+          "volume": "400 ul \u2013 1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "syringe"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "tube",
+          "reagent": "scotch tape",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent gradient leaking"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1.5 ml centrifuge tube",
+          "reagent": "extracted band sample",
+          "volume": "400 ul \u2013 1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "1.5 ml centrifuge tube",
+          "reagent": "extracted band sample",
+          "volume": null,
+          "temperature": "4\u02daC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: sterilize (container: class II cabinet, reagent: UV and reagent alcohol, other: {})\n# MANUAL: label (container: 5 x 15 ml falcon tubes, other: {'labels': ['25%', '30%', '35%', '40%', '45%']})\n# MANUAL: label (container: 50 ml falcon tube, other: {'label': 'Optiprep'})\n# MANUAL: remove (container: OptiPrep solution, temperature: fridge, other: {})\n# MANUAL: wipe (container: OptiPrep solution (sides, cap, septum), reagent: alcohol, other: {})\n# MANUAL: pierce (container: OptiPrep septum, other: {'needle': '20 gauge 1/2 inch'})\n\n### AUTOMATED SECTION ###\naspirate(container='OptiPrep solution', volume='15-16 ml', tool='syringe with needle')\ndispense(container='sterile 50 ml falcon tube', reagent='OptiPrep solution', volume='15-16 ml')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: labeled falcon tubes, reagent: Optiprep solutions (25%, 30%, 35%, 40%, 45%), volume: 2.5 ml per gradient, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='labeled falcon tubes', reagent='Optiprep solutions')\npipette(container='syringe', reagent='25% solution', volume='2.4 ml')\ndispense(container='centrifuge tube', reagent='25% solution', volume='2.4 ml', method='gravity flow via syringe/pasteur pipet')\npipette(container='syringe', reagent='30% solution', volume='2.4 ml')\ndispense(container='centrifuge tube', reagent='30% solution', volume='2.4 ml', method='gravity flow via syringe/pasteur pipet')\nrepeat(container='centrifuge tube', reagent='all solutions (35%, 40%, 45%)', volume='2.4 ml each', method='gravity flow via syringe/pasteur pipet')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: centrifuge tubes, reagent: parafilm, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='centrifuge tubes', temperature='fridge')\nwait(container='centrifuge tubes', temperature='fridge', duration='overnight', purpose='form continuous gradient')\npipette(container='gradient tube', reagent='viral concentrate', volume='0.5 - 4 ml')\nbalance(container='gradient tubes', reagent='sterile growth medium or virus suspension buffer', volume='as needed')\ncentrifuge(container='gradient tubes', temperature='8\u02daC', duration='at least 4 hours', speed='40,000 rpm', rotor='JS-25.15', instrument='Beckman Advanti J30-I')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gradient tubes, other: {'from': 'rotor'})\n# MANUAL: visualize (container: gradient tubes, other: {'method': 'standing clamp, backlight, water bath'})\n# MANUAL: extract (container: gradient tube, reagent: bands, volume: 400 ul \u2013 1 ml per band, other: {'tool': 'sterile needle (20 gauge 1/2 inch) and 3 ml syringe'})\n# MANUAL: wipe (container: tube wall, reagent: ethanol, other: {})\n# MANUAL: puncture (container: tube wall, other: {'tool': 'needle'})\n\n### AUTOMATED SECTION ###\naspirate(container='band', volume='400 ul \u2013 1 ml', tool='syringe')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: tube, reagent: scotch tape, other: {'purpose': 'prevent gradient leaking'})\n\n### AUTOMATED SECTION ###\ndispense(container='1.5 ml centrifuge tube', reagent='extracted band sample', volume='400 ul \u2013 1 ml')\nstore(container='1.5 ml centrifuge tube', reagent='extracted band sample', temperature='4\u02daC')",
+    "source_file": "protocol_386.txt"
+  }
+]

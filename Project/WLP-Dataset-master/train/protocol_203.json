@@ -1,0 +1,783 @@
+[
+  {
+    "protocol": "96-well DNA Extraction Protocol from 25mm 0.2\u00b5m filters\nPrepare lysis buffer. \nPrepare Lysozyme & RNase Aliquot. \nPrepare ProK Aliquot. \nThaw filters on ice. \nDo quick spin down. \nTransfer each filter to screw top, O-ringed eppendorf tube, also on ice. \nAdd 250 \u00b5l lysis buffer with RNase and lysozyme to each tube. \nIncubate 37\u00b0C for 30 min., rotating end over end at angle, for optimal mixing with minimal frothing. \nAdd 18.75 \u00b5l of Proteinase K solution (10 mg/ml made up in lysis buffer) to a final conc. of 0.65 mg/ml. \nAdd 29.9 \u00b5l 10% SDS to a final conc. of 1%. \nIncubate at 55\u00b0C for 2 hours, rotating end over end at angle. \nTowards end of this time, turn on heat block or hyb oven to 70\u00b0C. \nPut elution liquid (Buffer AE or water) into 70\u00b0C to preheat. \nAdd 300 \u00b5l Buffer AL (=Buffer AL/E without the ethanol added). \nMix thoroughly by vortexing and spin down quickly.\u00a0 \nIncubate 70\u00b0C for 10 mins.\nAdd 300 \u00b5l 96-100% EtOH. \nMix by vortexing vigorously and spin down quickly. \nCheck pH of lysate, must\u00a0be <7\u00a0to get max. binding efficiency to column. \nPipet onto 96 well spin columns, making sure not to wet the rims to avoid cross contamination. \nPlace the 96 well column plate onto the S-block for flow through collection. \nSeal plate with Airpore tape sheet Spin 5788 xg for 10 min. at 40\u00ad\u00b0C. \nDiscard flow through. \nPlace in new collection tray.\u00a0 \nAdd additional lysate if needed and repeat spin, etc.\nAdd 500 \u00b5l Buffer AW1, reseal plate Spin 5788 xg for 5 min. at 40\u00b0C. \nAdd 500 \u00b5l Buffer AW2, reseal plate Spin 5788 xg for 5 min. at 40\u00b0C. \nTo dry columns, either reseal plate with new sheet and spin 5600 xg for 15 min. at 40\u00b0C atop a new collection tray or incubate in hyb oven at 70\u00b0C for 15 min.\nTransfer column plate to top of rack of \"elution microtubes RS\". \nAdd 200 \u00b5l pre-heated 70\u00b0C Buffer AE or water, reseal plate Incubate 1 min. at RT.\u00a0 \nSpin 5788 xg 2 min. to elute. \nRepeat with second 200 \u00b5l (will increase total yield up to 25%) or if you wanted to keep the column small, you could use the first 200 \u00b5l elution, heat it back to 70\u00b0C, and pass it through the column again (will increase total yield approx. 15%). \nCan freeze elutants and break here overnight, or for a while, before proceeding with Final DNA clean up step, particularly if DNA is in Buffer AE which is TE, so will keep the DNA relatively stable. \nTransfer the eluted DNA to the 96 well PCR purification plate (no more than 300 \u00b5l at a time). \nApply vacuum at 20 inches Hg until dry (~20-30 min.)\nRinse DNA with 100 \u00b5l Ambion water, apply vacuum 5-10 min. until dry. \nRinse a second time with water if you want to make sure all Buffer TE removed. \nAdd 20 \u00b5l dilute TE. \nPipette up and down 20 times and transfer to a clean 96 well plate",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Lysozyme & RNase aliquot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "ProK aliquot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "screw top, O-ringed eppendorf tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "lysis buffer with RNase and lysozyme",
+          "volume": "250 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 min",
+          "speed": "rotating end over end at angle",
+          "other": {
+            "mixing": "optimal mixing with minimal frothing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "Proteinase K solution (10 mg/ml made up in lysis buffer)",
+          "volume": "18.75 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.65 mg/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": "10% SDS",
+          "volume": "29.9 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1%"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": "2 hours",
+          "speed": "rotating end over end at angle",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "heat block or hyb oven",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "preheat",
+        "parameters": {
+          "container": null,
+          "reagent": "elution liquid (Buffer AE or water)",
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AL (=Buffer AL/E without the ethanol added)",
+          "volume": "300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly by vortexing",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "96-100% EtOH",
+          "volume": "300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortexing vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "<7"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "96 well spin columns",
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid_wetting_rims": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "96 well column plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "S-block for flow through collection"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": "Airpore tape sheet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sealed plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": "10 min",
+          "speed": "5788 xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "column plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "new collection tray"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "additional lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AW1",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sealed plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": "5 min",
+          "speed": "5788 xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AW2",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sealed plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": "5 min",
+          "speed": "5788 xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "5600 xg",
+          "other": {
+            "method": "centrifuge or incubate at 70\u00b0C"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "columns",
+          "reagent": null,
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "method": "hyb oven"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "top of rack of elution microtubes RS",
+          "reagent": "column plate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column plate",
+          "reagent": "pre-heated 70\u00b0C Buffer AE or water",
+          "volume": "200 \u00b5l",
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "5788 xg",
+          "other": {
+            "purpose": "elute"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "column plate",
+          "reagent": "200 \u00b5l Buffer AE or water",
+          "volume": "200 \u00b5l",
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "increase yield"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "first 200 \u00b5l elution",
+          "volume": "200 \u00b5l",
+          "temperature": "70\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "pass through column again"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "elutants",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight or for a while",
+          "speed": null,
+          "other": {
+            "purpose": "storage before DNA clean up"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "96 well PCR purification plate",
+          "reagent": "eluted DNA",
+          "volume": "\u2264300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": "vacuum",
+          "volume": null,
+          "temperature": null,
+          "duration": "20-30 min",
+          "speed": "20 inches Hg",
+          "other": {
+            "purpose": "dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": "Ambion water",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": "vacuum",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 min",
+          "speed": null,
+          "other": {
+            "purpose": "dry"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove Buffer TE"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": "dilute TE",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR purification plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "up and down 20 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: lysis buffer, other: {})\n# MANUAL: prepare (reagent: Lysozyme & RNase aliquot, other: {})\n# MANUAL: prepare (reagent: ProK aliquot, other: {})\n# MANUAL: thaw (container: filters, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='filters', duration='quick')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: screw top, O-ringed eppendorf tube, reagent: filter, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='eppendorf tube', reagent='lysis buffer with RNase and lysozyme', volume='250 \u00b5l')\nincubate(container='eppendorf tube', temperature='37\u00b0C', duration='30 min', speed='rotating end over end at angle', mixing='optimal mixing with minimal frothing')\nadd(container='eppendorf tube', reagent='Proteinase K solution (10 mg/ml made up in lysis buffer)', volume='18.75 \u00b5l', final_concentration='0.65 mg/ml')\nadd(container='eppendorf tube', reagent='10% SDS', volume='29.9 \u00b5l', final_concentration='1%')\nincubate(container='eppendorf tube', temperature='55\u00b0C', duration='2 hours', speed='rotating end over end at angle')\nheat(container='heat block or hyb oven', temperature='70\u00b0C')\npreheat(reagent='elution liquid (Buffer AE or water)', temperature='70\u00b0C')\nadd(reagent='Buffer AL (=Buffer AL/E without the ethanol added)', volume='300 \u00b5l')\nmix(speed='thoroughly by vortexing')\ncentrifuge(duration='quick')\nincubate(temperature='70\u00b0C', duration='10 min')\nadd(reagent='96-100% EtOH', volume='300 \u00b5l')\nmix(speed='vortexing vigorously')\ncentrifuge(duration='quick')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: lysate, other: {'pH': '<7'})\n\n### AUTOMATED SECTION ###\npipette(container='96 well spin columns', reagent='lysate', avoid_wetting_rims=True)\n\n### MANUAL SECTION ###\n# MANUAL: place (container: 96 well column plate, other: {'location': 'S-block for flow through collection'})\n\n### AUTOMATED SECTION ###\nseal(container='plate', reagent='Airpore tape sheet')\ncentrifuge(container='sealed plate', temperature='40\u00b0C', duration='10 min', speed='5788 xg')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {})\n# MANUAL: place (container: column plate, other: {'location': 'new collection tray'})\n\n### AUTOMATED SECTION ###\nadd(reagent='additional lysate')\ncentrifuge()\nadd(reagent='Buffer AW1', volume='500 \u00b5l')\nseal(container='plate')\ncentrifuge(container='sealed plate', temperature='40\u00b0C', duration='5 min', speed='5788 xg')\nadd(reagent='Buffer AW2', volume='500 \u00b5l')\nseal(container='plate')\ncentrifuge(container='sealed plate', temperature='40\u00b0C', duration='5 min', speed='5788 xg')\ndry(container='columns', duration='15 min', speed='5600 xg', method='centrifuge or incubate at 70\u00b0C')\nincubate(container='columns', temperature='70\u00b0C', duration='15 min', method='hyb oven')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: top of rack of elution microtubes RS, reagent: column plate, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='column plate', reagent='pre-heated 70\u00b0C Buffer AE or water', volume='200 \u00b5l', temperature='70\u00b0C')\nseal(container='plate')\nincubate(container='plate', temperature='RT', duration='1 min')\ncentrifuge(container='plate', duration='2 min', speed='5788 xg', purpose='elute')\nrepeat(container='column plate', reagent='200 \u00b5l Buffer AE or water', volume='200 \u00b5l', temperature='70\u00b0C', purpose='increase yield')\nheat(reagent='first 200 \u00b5l elution', volume='200 \u00b5l', temperature='70\u00b0C', purpose='pass through column again')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: elutants, duration: overnight or for a while, other: {'purpose': 'storage before DNA clean up'})\n\n### AUTOMATED SECTION ###\ntransfer(container='96 well PCR purification plate', reagent='eluted DNA', volume='\u2264300 \u00b5l')\napply(container='PCR purification plate', reagent='vacuum', duration='20-30 min', speed='20 inches Hg', purpose='dry')\nrinse(container='PCR purification plate', reagent='Ambion water', volume='100 \u00b5l')\napply(container='PCR purification plate', reagent='vacuum', duration='5-10 min', purpose='dry')\nrinse(container='PCR purification plate', reagent='water', purpose='remove Buffer TE')\nadd(container='PCR purification plate', reagent='dilute TE', volume='20 \u00b5l')\npipette(container='PCR purification plate', speed='up and down 20 times')\ntransfer(container='clean 96 well plate')",
+    "source_file": "protocol_203.txt"
+  }
+]

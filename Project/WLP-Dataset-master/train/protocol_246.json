@@ -1,0 +1,721 @@
+[
+  {
+    "protocol": "Sandwich ELISA Protocol\nDilute unlabeled capture antibody to a final concentration of 0.5 \u2013 8 \u00b5g/ml in Coating Buffer (BioLegend, Cat. No. 421701) and transfer 100 \u00b5l to each well of a high affinity, protein-bindingELISA plate (e.g., BioLegend Cat. No. 423501).\nSeal plate to prevent evaporation.\nIncubate at 4\u00b0C overnight.\nBring the plate to room temperature, flick off the capture antibody solution.\nSeal plate and incubate at room temperature for \u2265 1 hour.\nFirmly blot plate against clean paper towels.\nDilute standards and samples to desired concentrations in Blocking Solution (perform dilutions in polypropylene tubes or plate) and add 100 \u00b5l per well to the ELISA plate.\nSeal the plate and incubate at room temperature for 2-4 hours or at 4\u00b0C overnight.\nWash with PBS/Tween (1/3).\nWash with PBS/Tween (2/3).\nWash with PBS/Tween (3/3).\nDilute the biotin-labeled detection antibody to 0.25 \u2013 2 \u00b5g/ml in Blocking Solution.\nAdd 100 \u00b5l of diluted antibody to each well.\nSeal the plate and incubate at room temperature for 1 hour.\nWash with PBS/Tween (1/3).\nWash with PBS/Tween (2/3).\nWash with PBS/Tween (3/3).\nDilute the Av-HRP conjugate (Cat. No. 405103) or other enzyme conjugate to its pre-determined optimal concentration in Blocking Buffer (usually between 1/500 \u2013 1/2000).\nAdd 100 \u00b5l per well.\nSeal the plate and incubate at room temperature for 30 minutes.\nWash with PBS/Tween (1/5).\nWash with PBS/Tween (2/5).\nWash with PBS/Tween (3/5).\nWash with PBS/Tween (4/5).\nWash with PBS/Tween (5/5).\nThaw ABTS Substrate Solution within 20 min of use.\nAdd 11 \u00b5l of 30% H2O2 per 11 ml of substrateand vortex.\nImmediately dispense 100 \u00b5l into each well and incubate at room temperature (4-60minutes) for color development.\nTo stop the color reaction, add 50 \u00b5l of ABTS Stop Solution.\nRead the optical density (OD) for each well with a microplate reader set to 405 nm.\nWash with PBS/Tween (1/3).\nWash with PBS/Tween (2/3).\nWash with PBS/Tween (3/3).\nBlock non-specific binding sites by adding 200 \u00b5l of Blocking Solution to each well.\nWash with PBS/Tween (1/3).\nWash with PBS/Tween (2/3).\nWash with PBS/Tween (3/3).",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube or plate",
+          "reagent": "unlabeled capture antibody in Coating Buffer (BioLegend, Cat. No. 421701)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.5 \u2013 8 \u00b5g/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "high affinity, protein-binding ELISA plate (e.g., BioLegend Cat. No. 423501)",
+          "reagent": "diluted capture antibody",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "prevent evaporation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "bring",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "flick",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "capture antibody solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "\u2265 1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "surface": "clean paper towels"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "polypropylene tubes or plate",
+          "reagent": "standards and samples in Blocking Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "desired_concentration": "user defined"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "diluted standards and samples",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature or 4\u00b0C",
+          "duration": "2-4 hours or overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube or plate",
+          "reagent": "biotin-labeled detection antibody in Blocking Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.25 \u2013 2 \u00b5g/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "diluted detection antibody",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube or plate",
+          "reagent": "Av-HRP conjugate (Cat. No. 405103) or other enzyme conjugate in Blocking Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "1/500 \u2013 1/2000 (pre-determined optimal)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "diluted enzyme conjugate",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "1/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "2/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "3/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "4/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "5/5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "ABTS Substrate Solution",
+          "volume": null,
+          "temperature": null,
+          "duration": "within 20 min of use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "30% H2O2",
+          "volume": "11 \u00b5l per 11 ml substrate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "ABTS Substrate Solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "ABTS Substrate Solution + H2O2",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "ABTS Substrate Solution",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "4-60 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "color development"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "ABTS Stop Solution",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "microplate reader",
+            "wavelength": "405 nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "block",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "Blocking Solution",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "each well",
+            "purpose": "block non-specific binding sites"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "1/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "2/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "ELISA plate",
+          "reagent": "PBS/Tween",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cycle": "3/3"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(container='tube or plate', reagent='unlabeled capture antibody in Coating Buffer (BioLegend, Cat. No. 421701)', final_concentration='0.5 \u2013 8 \u00b5g/ml')\ntransfer(container='high affinity, protein-binding ELISA plate (e.g., BioLegend Cat. No. 423501)', reagent='diluted capture antibody', volume='100 \u00b5l', destination='each well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISA plate, other: {'purpose': 'prevent evaporation'})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISA plate', temperature='4\u00b0C', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: bring (container: ELISA plate, temperature: room temperature, other: {})\n# MANUAL: flick (container: ELISA plate, reagent: capture antibody solution, other: {})\n# MANUAL: seal (container: ELISA plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISA plate', temperature='room temperature', duration='\u2265 1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: blot (container: ELISA plate, other: {'surface': 'clean paper towels'})\n\n### AUTOMATED SECTION ###\ndilute(container='polypropylene tubes or plate', reagent='standards and samples in Blocking Solution', desired_concentration='user defined')\nadd(container='ELISA plate', reagent='diluted standards and samples', volume='100 \u00b5l', destination='each well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISA plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISA plate', temperature='room temperature or 4\u00b0C', duration='2-4 hours or overnight')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='1/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='2/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='3/3')\ndilute(container='tube or plate', reagent='biotin-labeled detection antibody in Blocking Solution', final_concentration='0.25 \u2013 2 \u00b5g/ml')\nadd(container='ELISA plate', reagent='diluted detection antibody', volume='100 \u00b5l', destination='each well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISA plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISA plate', temperature='room temperature', duration='1 hour')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='1/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='2/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='3/3')\ndilute(container='tube or plate', reagent='Av-HRP conjugate (Cat. No. 405103) or other enzyme conjugate in Blocking Buffer', final_concentration='1/500 \u2013 1/2000 (pre-determined optimal)')\nadd(container='ELISA plate', reagent='diluted enzyme conjugate', volume='100 \u00b5l', destination='each well')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: ELISA plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='ELISA plate', temperature='room temperature', duration='30 minutes')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='1/5')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='2/5')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='3/5')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='4/5')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='5/5')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: ABTS Substrate Solution, duration: within 20 min of use, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='30% H2O2', volume='11 \u00b5l per 11 ml substrate', destination='ABTS Substrate Solution')\nvortex(container='tube', reagent='ABTS Substrate Solution + H2O2')\ndispense(container='ELISA plate', reagent='ABTS Substrate Solution', volume='100 \u00b5l', destination='each well')\nincubate(container='ELISA plate', temperature='room temperature', duration='4-60 minutes', purpose='color development')\nadd(container='ELISA plate', reagent='ABTS Stop Solution', volume='50 \u00b5l', destination='each well')\nread(container='ELISA plate', instrument='microplate reader', wavelength='405 nm')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='1/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='2/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='3/3')\nblock(container='ELISA plate', reagent='Blocking Solution', volume='200 \u00b5l', destination='each well', purpose='block non-specific binding sites')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='1/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='2/3')\nwash(container='ELISA plate', reagent='PBS/Tween', cycle='3/3')",
+    "source_file": "protocol_246.txt"
+  }
+]

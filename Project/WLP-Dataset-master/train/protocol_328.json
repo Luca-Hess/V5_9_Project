@@ -1,0 +1,221 @@
+[
+  {
+    "protocol": "Plaque Assay Protocol for Pseudoalteromonas\nFirst, autoclave the top agar to melt it.\nWhile the autoclave is running, let your bottom agar plates warm to room temperature and label them and make whatever dilutions of your phages you plan to plate.\nNote:\u00a0 it is wise to plate one dilution higher and one dilution lower than what you calculated as optimal. \nAliquot the agar into tubes and place in 40\u00b0C water bath.\nPipet 100 \u03bcl of your phage sample onto the plate. \u00a0 \nRemove the agar tube from the water bath and add the host to it using a 1 ml or 5 ml pipettor. \nAdd 3.5 ml of the agar/host mixture to each plate.\nSwirl the plate to spread the agar making sure it covers the whole plate.\nLeave the plates on the bench overnight. \nCount or pick plaques the next day",
+    "actions": [
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": "top agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "melt"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "bottom agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "bottom agar plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "phage dilutions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plan": "as needed for plating"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "agar",
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "plate",
+          "reagent": "phage sample",
+          "volume": "100 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "agar tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "water bath"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "agar tube",
+          "reagent": "host",
+          "volume": "1 ml or 5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plate",
+          "reagent": "agar/host mixture",
+          "volume": "3.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "swirl",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "spread agar to cover plate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "bench (ambient)",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "plaques"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "plaques"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nautoclave(container='top agar', purpose='melt')\nwarm(container='bottom agar plates', temperature='room temperature')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: bottom agar plates)\n# MANUAL: prepare (reagent: phage dilutions, other: {'plan': 'as needed for plating'})\n\n### AUTOMATED SECTION ###\naliquot(container='tubes', reagent='agar')\nincubate(container='tubes', reagent='agar', temperature='40\u00b0C', method='water bath')\npipette(container='plate', reagent='phage sample', volume='100 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: agar tube, other: {'from': 'water bath'})\n\n### AUTOMATED SECTION ###\nadd(container='agar tube', reagent='host', volume='1 ml or 5 ml', instrument='pipettor')\nadd(container='plate', reagent='agar/host mixture', volume='3.5 ml')\nswirl(container='plate', purpose='spread agar to cover plate')\nincubate(container='plates', temperature='bench (ambient)', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: plates, other: {'target': 'plaques'})\n# MANUAL: pick (container: plates, other: {'target': 'plaques'})",
+    "source_file": "protocol_328.txt"
+  }
+]

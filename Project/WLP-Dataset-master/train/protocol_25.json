@@ -1,0 +1,400 @@
+[
+  {
+    "protocol": "Fixation of yeast cells for RNA-FISH\nAround 10am, start a cell culture in a 50ml tube, using 10ml of CSM.\nGrow for 8-10 hours in a shaker at 30\u00a0\u00b0C.\nMeasure OD in the evening and dilute into 250ml glass flasks, starting 45ml of CSM for overnight growth.\nAiming for OD 0.2-0.4 around 10am the next morning.\nTransfer to 50ml falcon tubes.\nAdd 5ml of Formaldehyde, invert a few times, set at benchtop for 45min.\nSpin down at 3,000rpm for 4min.\nDecant and wash by pipetting with 1ml of ice-cold BufferB.\nTransfer to 1.5ml tubes.\n(wash 1/2).\nSpin down at 3,000rpm for 4min.\n(wash 1/2).\nWash once more with 1ml ice-cold BufferB.\n(wash 2/2).\nSpin down at 3,000rpm for 4min.\n(wash 2/2).\nDecant and resuspend in 1ml of BufferB.\nAdd 2.5ul of Zymolyase and digest at 30\u00a0\u00b0C\u00a0until most of the cells turn dark when checked by phase contrast microscope.\n(See more in the Guidelines).\nDrop 1 \u03bcL of the cells onto a glass slide, do not cover (pressure makes it look like they digested).\nUse a 20x scope with a phase contrast ring.\nCheck digestion progress every 30 minutes.\nThe cells turn black/grey from white/shiny.\nAim for 80%-90% of the cells within the view to be digested.\nDo not overdigest.\nWash with 1ml ice-cold BufferB, spinning 5-6min at 2,000rpm.\n(wash 1/2).\nDecant and wash again with 1ml ice-cold BufferB, spinning 5-6min at 2,000rpm.\n(wash 2/2).\nResuspend in 1ml of 70% Ethanol overnight at 4 \u00b0C.",
+    "actions": [
+      {
+        "action": "start",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": "CSM",
+          "volume": "10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell culture": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "50ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "8-10 hours",
+          "speed": "shaker",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "OD": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "250ml glass flask",
+          "reagent": "CSM",
+          "volume": "45ml",
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "starting": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": "Formaldehyde",
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "a few times",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "benchtop (ambient)",
+          "duration": "45min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "4min",
+          "speed": "3,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "50ml falcon tube",
+          "reagent": "BufferB (ice-cold)",
+          "volume": "1ml",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "4min",
+          "speed": "3,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "BufferB (ice-cold)",
+          "volume": "1ml",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "4min",
+          "speed": "3,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "BufferB",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "Zymolyase",
+          "volume": "2.5ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "30\u00b0C",
+          "duration": "until most cells turn dark",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "drop",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "cells",
+          "volume": "1\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "do not cover": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "glass slide",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "every 30 minutes",
+          "speed": null,
+          "other": {
+            "phase contrast microscope": true,
+            "20x scope": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "BufferB (ice-cold)",
+          "volume": "1ml",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-6min",
+          "speed": "2,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "BufferB (ice-cold)",
+          "volume": "1ml",
+          "temperature": "ice-cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-6min",
+          "speed": "2,000rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "1.5ml tube",
+          "reagent": "70% Ethanol",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "store at 4\u00b0C": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: start (container: 50ml tube, reagent: CSM, volume: 10ml, other: {'cell culture': True})\n\n### AUTOMATED SECTION ###\ngrow(container='50ml tube', temperature='30\u00b0C', duration='8-10 hours', speed='shaker')\n\n### MANUAL SECTION ###\n# MANUAL: measure (other: {'OD': True})\n\n### AUTOMATED SECTION ###\ndilute(container='250ml glass flask', reagent='CSM', volume='45ml', duration='overnight', starting=True)\ntransfer(container='50ml falcon tube')\nadd(container='50ml falcon tube', reagent='Formaldehyde', volume='5ml')\ninvert(container='50ml falcon tube', duration='a few times')\nincubate(container='50ml falcon tube', temperature='benchtop (ambient)', duration='45min')\ncentrifuge(container='50ml falcon tube', duration='4min', speed='3,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: 50ml falcon tube, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='50ml falcon tube', reagent='BufferB (ice-cold)', volume='1ml', temperature='ice-cold')\ntransfer(container='1.5ml tube')\ncentrifuge(container='1.5ml tube', duration='4min', speed='3,000rpm')\nwash(container='1.5ml tube', reagent='BufferB (ice-cold)', volume='1ml', temperature='ice-cold')\ncentrifuge(container='1.5ml tube', duration='4min', speed='3,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: 1.5ml tube, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='1.5ml tube', reagent='BufferB', volume='1ml')\nadd(container='1.5ml tube', reagent='Zymolyase', volume='2.5ul')\ndigest(container='1.5ml tube', temperature='30\u00b0C', duration='until most cells turn dark')\n\n### MANUAL SECTION ###\n# MANUAL: drop (container: glass slide, reagent: cells, volume: 1\u03bcL, other: {'do not cover': True})\n# MANUAL: check (container: glass slide, reagent: cells, duration: every 30 minutes, other: {'phase contrast microscope': True, '20x scope': True})\n\n### AUTOMATED SECTION ###\nwash(container='1.5ml tube', reagent='BufferB (ice-cold)', volume='1ml', temperature='ice-cold')\ncentrifuge(container='1.5ml tube', duration='5-6min', speed='2,000rpm')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: 1.5ml tube, other: {})\n\n### AUTOMATED SECTION ###\nwash(container='1.5ml tube', reagent='BufferB (ice-cold)', volume='1ml', temperature='ice-cold')\ncentrifuge(container='1.5ml tube', duration='5-6min', speed='2,000rpm')\nresuspend(container='1.5ml tube', reagent='70% Ethanol', volume='1ml', duration='overnight', store at 4\u00b0C=True)",
+    "source_file": "protocol_25.txt"
+  }
+]

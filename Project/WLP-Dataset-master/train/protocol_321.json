@@ -1,0 +1,113 @@
+[
+  {
+    "protocol": "Fixation of marine samples for flow cytometry sorting\nPrefilter seawater sample onto 200 \u00b5m mesh. \nAdd 1.5 mL of prefiltered seawater sample to a 2 mL cryotube. \nAdd DMSO. \nAdd Pluronic (facultative). \nVortex. \nWait 10 min. \nFlash freeze in liquid nitrogen tank",
+    "actions": [
+      {
+        "action": "prefilter",
+        "parameters": {
+          "container": "mesh (200 \u00b5m)",
+          "reagent": "seawater sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mesh_size": "200 \u00b5m"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": "prefiltered seawater sample",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": "DMSO",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": "Pluronic",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "facultative": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flash freeze",
+        "parameters": {
+          "container": "2 mL cryotube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "liquid nitrogen tank"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prefilter (container: mesh (200 \u00b5m), reagent: seawater sample, other: {'mesh_size': '200 \u00b5m'})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL cryotube', reagent='prefiltered seawater sample', volume='1.5 mL')\nadd(container='2 mL cryotube', reagent='DMSO')\nadd(container='2 mL cryotube', reagent='Pluronic', facultative=True)\nvortex(container='2 mL cryotube')\nwait(container='2 mL cryotube', duration='10 min')\n\n### MANUAL SECTION ###\n# MANUAL: flash freeze (container: 2 mL cryotube, temperature: liquid nitrogen, other: {'method': 'liquid nitrogen tank'})",
+    "source_file": "protocol_321.txt"
+  }
+]

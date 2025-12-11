@@ -1,0 +1,2748 @@
+[
+  {
+    "protocol": "Metatranscriptomics sample preparation protocol w/ScriptSeq\nThaw 2-ml screw-cap tube on ice (should take a while).\nIf using sterivex filters, follow notes in annotations.\nLyse the cells on the filters:\u00a0Remove the 300 \u00b5l RNAlater carefully and discard.\nAdd 750 \u00b5l (1.5mL)* Lysis/Binding buffer, vortex vigorously to completely lyse the cells.\nAdd 75 \u00b5l (150 \u00b5l)* miRNA Homogenate Additive.\nVortex to mix.\nLeave the mixture on ice for 10 min.\nTransfer the 825 \u00b5l lysate to a new Non-stick RNase-free tube or a 2 mL tube with o-ring (might need to spin the tubes to get as much lysate out as possible).\nAdd 750 \u00b5l Acid-Phenol:Chloroform, vortex for 30-60 sec to mix.\nCentrifuge for 5 min at maximum 10,000 X g at RT.\nCarefully remove the top aqueous phase w/o disturbing the lower phase, transfer it to a fresh tube.\nPre-heat Elution Solution (or Nuclease-free water) to 95\u00baC.\nAdd 1.25 volumes of RT 100% ethanol to the aqueous phase, mix well, load to a Filter Cartridge in the collection tube (provided).\nCentrifuge for 15 sec at 10,000 X g, discard the flow-through.\nApply 700 \u00b5l miRNA Wash Solution 1 to the Filter Cartridge and centrifuge for 10 sec at 10,000 X g, discard the flow-through.\nApply 500 \u00b5l Wash Solution 2/3, spin 15 sec at 10,000 X g, and discard the flow-through.\nRepeat step 14.\nPut the Filter Cartridge back in the tube, centrifuge for 1.5 min at 10,000 X g to remove residual fluid from the filter.\nTransfer the Filter Cartridge into a fresh collection tube, apply 50 \u00b5l pre-heated (95 \u00baC) Elution Solution (0.1 mM EDTA) to the center of the filter.\nWait ~1 minute.\nSpin for 30 sec at 10,000 X g. Repeat steps 17-19 with another 50 \u00b5l pre-heated (95\u00baC) Elution Solution.\nAdd 1/10th volume of DNase I buffer (~10 \u00b5l) and 2 \u00b5l DNase I (2U/\u00b5l), gently mix and incubate at 37 \u00baC for 30 min.\nIf RNeasy MinElute is to be used immediately after this, there is no need to use the DNase inactivation reagent \u2013 go directly to the RNeasy MinElute Procedure.\nAdd 0.1 volume (10 \u00b5l) of DNase inactivation reagent, mix well, incubate at RT for 2 min, flicking the tube occasionally.\nCentrifuge for 1.5 min at 10,000 X g, transfer RNA to a fresh new 0.5 ml non-stick Rnase-free tube, store in \u201370 \u00baC.\nPre-heat elution buffer or water to 40\u00b0C.\nCombine two 100 \u00b5l DNase-treated RNA samples in a 2ml Nonsticky RNase-free tube (~200 \u00b5l total).\nAdd 700 \u00b5l RLT buffer, and mix with by pipeting.\nAdd 500 \u00b5l 100% ethanol, mix thoroughly by pipetting.\nDO NOT CENTRIFUGE.\nImmediately load 700 \u00b5l onto an RNeasy MinElute Column in a 2 ml tube, close the tube gently, centrifuge for 15 s at \u2265 8,000 X g.\u00a0Discard flow through.\nRepeat step 29 to process the remaining sample volume through the column.\nTransfer the spin column to a new 2 ml collection tube.\nPipet 500 \u00b5l buffer RPE onto the column, close tube gently.\nCentrifuge for 15 s at \u2265 8,000 X g to wash.\nDiscard the flow-through.\nReuse the collection tube.\nAdd 500 \u00b5l of 80% ethanol to the column, close tube gently.\nCentrifuge for 2 min at \u2265 8,000 X g, discard flow-through.\nTransfer the column to a new 2 ml collection tube.\nOPEN the cap of the tube, and centrifuge at 12,000 X g for 5 min, discard flow-through.\nElute with 25 \u00b5l pre-heated nuclease-free water or RNA storage buffer.\nTransfer the spin column to a new 1.5 ml tube, pipet water or buffer directly onto the center of the silica-gel membrane, wait for 2 min at RT, close gently.\nCentrifuge for 1 min at 12,000 X g to elute.\nRepeat elution using 15 \u00b5l of water or buffer.\nStore elutions at -80\u00b0C or continue with quantification.\nDepending on your application, the recommended option for RNA quantification is:Bioanalyzer (Agilent) using the RNA 6000 Pico total RNA kit: quantitative range = 0.05-5.0 ng / \u00b5l (dilute samples 1:10 and 1:100 prior to analysis), allows visualization of RNA size distribution, less accurate, ~1 hr processing time.\nOrder primers (found in guidelines).\nPCR amplify rRNA.Template DNA100 ngBact 23S (35 cycles)All other primers (35 cycles)Herculase 5X buffer10\u00b5l95\u00b0C \u00a0 \u00a02 min95\u00b0C \u00a0 \u00a02 mindNTP (10mM)1.25\u00b5l95\u00b0C \u00a0 \u00a020 sec95\u00b0C \u00a0 \u00a020 secF primer (10\u00b5M)1.25\u00b5l39\u00b0C\u00a0 \u00a0 20 sec55\u00b0C \u00a0 \u00a020 secR primer (10\u00b5M)1.25\u00b5l72\u00b0C \u00a0 \u00a02 min72\u00b0C \u00a0 \u00a02 minHerculase pol1\u00b5l72\u00b0C \u00a0 \u00a03 min72\u00b0C \u00a0 \u00a03 minH2OTo 50\u00b5l.\nPurify PCR products using the QIAquick PCR purification kit (Qiagen)** with elution in 50 ul elution buffer and quantify DNA concentration using the Nanodrop (Nanodrop is fine here, as the PCR products should be at high conc.\n(>100 ng/\u00b5l)).\nPrepare separate reactions for all probes.\nFor a standard 20 \u00b5l reaction*:PCR amplicons (step B1, suggest 250-500 ng)*1\u00b5lATP (75 mM)2\u00a0\u00b5lGTP (75 mM)2\u00a0\u00b5lCTP (75 mM)1.5\u00a0\u00b5lUTP (75 mM)1.5\u00a0\u00b5lBiotin-11-CTP (10 mM, Roche\u00a004739205001)3.75\u00a0\u00b5lBiotin-16-UTP (10 mM, Roche 11388908910)3.75\u00a0\u00b5l10X buffer2\u00a0\u00b5lSUPERase\u2022InTM RNase inhibitor0.5\u00a0\u00b5lT7 RNA polymerase2\u00a0\u00b5l.\nAt room temperature (not on ice, as spermidine in the reaction buffer may cause DNA precipitation), mix reagents in the order listed.\nIncubate at 37\u00baC for 4-6 hrs.\nAfter incubation, add 1 \u00b5l DNase I (included in the MEGAscript kit) to remove the DNA template.\nIncubate at 37\u00baC for an additional 30 min.\nPurify synthesized RNA using the MEGAclearTM kit, with elution in 50 \u00b5l elution solution.\nQuantify RNA concentration using either RiboGreen or Nanodrop (Nanodrop should work fine as RNA samples should be at high concentration).\nStore probes at -80\u00b0C.\nBead washing (do this before or during the hybridization step).\nFor each sample, transfer 400 \u00b5l of beads* to a 1.5 ml tube.\nWash 1: bind beads to magnetic separation rack (takes ~2 min), pipet off and discard supernatant, re-suspend beads in equal volume of 0.1N NaOH (deactivates bead-associated RNases), and quick vortex to re-suspend, spin down, re-bind to magnet and pipet off supernatant.\nDo this step quickly.\nWash #2: Repeat wash in step57 using 1X SSC buffer.\nOn the 3rd wash, leave beads in buffer on ice until hybridization is complete.\nWash #3: Repeat wash in step57 using 1X SSC buffer and leave beads in buffer on ice until hybridization is complete.\nHybridization.\nFor a 50\u00a0\u00b5l reaction*, prepare in a PCR tube:\u00a0Template, total RNA (ideally 250-500 ng in <36.5 ul)X \u00b5laRNA 16S probe (500-1000 ng)**X \u00b5laRNA 23S probe (500-1000 ng)**X \u00b5lSUPERase\u2022In RNase inhibitor1\u00a0\u00b5l20X Sodium chloride-citrate (SSC) buffer (RNase free)2.5\u00a0\u00b5lFormamide (100%)***10\u00a0\u00b5lNuclease-free water (if necessary)To 50\u00a0\u00b5l.\nIn a thermal cycler, incubate under the following conditions:  5 min at 70\u00baC Rampdown to 25\u00b0C using 5\u00b0C increments for 1 min each.\nRemove the reaction and let sit at RT for 2-5 min.\nBead\u00a0binding.\nWhile the hybridization reaction is at RT, capture the pre-aliquoted beads (400 \u00b5l per sample) on the magnetic rack, pipet off the supernatant, and remove the beads from the rack.\nDilute the hybridization reaction in PCR tubes to 100 \u00b5l using 20% formamide in 1X SSC.\nAdd the hybridization reaction (now 100 \u00b5l) to the dried beads.\nIncubate at RT for 10 min, with occasional flicking to mix.\nBead removal.\nQuick spin the tubes.\nCapture the beads on the magnetic rack (2-3 min).\nTransfer the non-rRNA-containing supernatant to a 1.5 ml tube using a P200 pipettor.\nRe-suspend remaining beads with 100 \u00b5l 1X SSC, capture beads as above, transfer supernatant to the same 1.5 ml tube (200 \u00b5l total volume).\nPurify subtracted RNA (200\u00a0\u00b5l) to remove formamide.\nUse the RNeasy MinElute kit.\nElute in 15 \u00b5l and 5 \u00b5l pre-heated to 50 \u00b0C (combine the elutions).\nRun 1 \u00b5l of purified RNA (diluted 1:10 and 1:100) on the Bioanalyzer to confirm rRNA subtraction and probe removal.\nStore RNA at -80\u00b0C for downstream applications.\nIf needed, speedvac the subtracted RNA to maximum volume of 9 \u00b5l.\nUse all of the template material remaining after the rRNA-subtraction step.\nIn a 0.2 mL PCR tube assemble the following reaction:  Nuclease-free waterx \u00b5lrRNA-subtracted RNAy\u00a0\u00b5lRNA fragmentation solution1.0\u00a0\u00b5lcDNA synthesis primer2.0\u00a0\u00b5lTotal reaction volume12\u00a0\u00b5l.\nFragment RNA by incubation at 85 \u00baC for 5 minutes in thermocycler with heated lid.\nStop fragmentation reaction by placing the tube on ice.\nOn ice preare the cDNA synthesis master mix, volumes below are per rxn: cDNA synthesis premix, 3\u00a0\u00b5l; 100 mM, DTT, 0.5\u00a0\u00b5l; StarScript Reverse Transcriptase, 0.5\u00a0\u00b5l; Total volume, 4\u00a0\u00b5l.\nGently but thoroughly mix the cDNA synthesis master mix by pipetting.\nAdd 4 \u00b5l of the cDNA synthesis master mix to each reaction on ice from Part C1 and mix by pipetting.\nIncubate at 25 \u00b0C for 5 minutes followed by 42 \u00b0C for 20 minutes.\nCool the reactions to 37 \u00b0C and pause the thermocycler.\nRemove one reaction at a time from the thermocycler, add 1.0 \u00b5l of Finishing solution and mix gently by pipetting.\nReturn each reaction to the thermocycler before proceeding to the next.\nIncubate at 37 \u00b0C for 10 minutes.\nIncubate each reaction at 95\u00b0C for 3 minutes, then cool reactions to 25 \u00b0C and pause the thermocycler.\nDuring the 95 \u00b0C incubation prepare the terminal tagging master mix described in C3.\nOn ice, prepare the terminal tagging premix by combining the following on ice: Terminal tagging premix, 7.5\u00a0\u00b5l; DNA polymerase, 0.5\u00a0\u00b5l; Total volume 8\u00a0\u00b5l.\nRemove one reaction at a time from the thermocycler (25 \u00b0C paused) and add 8 \u00b5l of the terminal tagging master mix.\nGently mix by pipetting.\nReturn each reaction to the thermocycler before proceeding to the next.\nIncubate each reaction at 25 \u00b0C for 15 minutes.\nIncubate each reaction at 95 \u00b0C for 3 minutes.\nThen cool to 4 \u00b0C on ice or in thermocycler.\nUse the Agencourt AmpureXP system to purify the cDNA with 1.8X purification.\nWarm Ampure beads to room temperature for 30 minutes.\nPrepare 400 \u00b5l fresh 80% ethanol at room temperature for each sample.\nAdd 45 \u00b5l of beads to each microfuge tube containing the di-tagged cDNA from part 3C.\nMix thoroughly by pipetting 10 times.\nTransfer volume to 1.5 mL tube.\nIncubate at room temp for 15 minutes.\nPlace tubes in magnetic stand at room temp for at least 5 minutes until liquid clear.\nRemove and discard supernatant using a pipet, some liquid may remain in tube.\nEthanol Wash #1: With tubes on stand, add 200 \u00b5l 80% ethanol to each tube without disturbing the beads.\nEthanol Wash #1: Incubate for 30 seconds, then remove and discard supernatant.\nEthanol Wash #2: With tubes on stand, add 200 \u00b5l 80% ethanol to each tube without disturbing the beads.\nEthanol Wash #2: Incubate for 30 seconds, then remove and discard supernatant.\nAllow tubes to air-dry on magnetic stand for 15 minutes at room temp.\nAdd 24.5 \u00b5l of nuclease-free water to each tube and remove from magnetic stand.\nThoroughly resuspend beads by pipetting 10 times.\nIncubate tube at room temperature for 2 minutes.\nPlace the tube on magnetic stand at room temp for at least 5 minutes, until liquid clears.\nTransfer 22.5 \u00b5l supernatant, which contains di-tagged cDNA, from each tube to a new 0.2 mL PCR tube, place on ice.\nIn a 0.2 mL PCR tube containing 22.5 \u00b5l of di-tagged cDNA from C4, add on ice: FailSafe PCR Premix E, 25 \u00b5l; Forward PCR primer, 1\u00a0\u00b5l; Reverse or ScriptSeq index primer, 1\u00a0\u00b5l; FailSafe PCR Enzyme (1.25 U), 0.5\u00a0\u00b5l; Total Volume, 50\u00a0\u00b5l.\nPerform PCR: Denature ds DNA at 95 \u00b0C for 1 minute.\nFollowed by 12-15 cycles of: 95 \u00b0C for 30 seconds; 55 \u00b0C for 30 seconds; 68 \u00b0C for 3 minutes.\nFinish with 68 \u00b0C for 7 minutes.\nBring thermocycler temperature down to 4 \u00b0C.\nAfter PCR complete, proceed immediately to purification step C6.\nUse the Ampure XP system to purify the PCR reaction to remove the primer-dimers that can occur during PCR.\nWarm Ampure beads to room temperature for 30 minutes.\nPrepare 400 \u00b5l fresh 80% ethanol at room temperature for each sample.\nAdd 50 \u00b5l of beads to each tube containing amplified library from part C5.\nMix thoroughly by pipetting 10 times.\nTransfer each 100 \u00b5l volume to 1.5 mL tube.\nIncubate at room temp for 15 minutes.\nPlace tubes in magnetic stand at room temp for at least 5 minutes until liquid clear.\nRemove and discard supernatant using a pipet, some liquid may remain in tube.\nEthanol Wash #1: With tubes on stand, add 200 \u00b5l 80% ethanol to each tube without disturbing the beads.\nEthanol Wash #1: Incubate for 30 seconds, then remove and discard supernatant.\nEthanol Wash #2: With tubes on stand, add 200 \u00b5l 80% ethanol to each tube without disturbing the beads.\nEthanol Wash #2: Incubate for 30 seconds, then remove and discard supernatant.\nAllow tubes to air-dry on magnetic stand for 15 minutes at room temp.\nAdd 20 \u00b5l of nuclease-free water to each tube and remove from magnetic stand.\nThoroughly resuspend beads by pipetting 10 times.\nIncubate tube at room temperature for 2 minutes.\nPlace the tube on magnetic stand at room temp for at least 5 minutes, until liquid clears.\nTransfer the supernatant, which contains the RNA-Seq library, from each tube to a new tube.\nMake 1:10 and 1:100 dilutions for Bioanalyzer analysis of average library size.\nPerform Picogreen to get accurate quantification of library concentration.\nAt this point, the samples are ready for pooling (check for compatible indices) and sequencing according to the latest MiSeq/NextSeq sequencing protocol.\nFor v2 sequencing kits with\u00a0the MiSeq and NextSeq, we recommend a final pooled library concentration of 6 pM and 1.0 pM respectively.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "2-ml screw-cap tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter",
+          "reagent": "RNAlater",
+          "volume": "300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter",
+          "reagent": "Lysis/Binding buffer",
+          "volume": "750 \u00b5l (1.5mL)*",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "purpose": "lyse cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter",
+          "reagent": "miRNA Homogenate Additive",
+          "volume": "75 \u00b5l (150 \u00b5l)*",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Non-stick RNase-free tube or 2 mL tube with o-ring",
+          "reagent": "lysate",
+          "volume": "825 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "recover lysate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Acid-Phenol:Chloroform",
+          "volume": "750 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-60 sec",
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "5 min",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "top aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "fresh tube",
+            "avoid_disturbing": "lower phase"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-heat",
+        "parameters": {
+          "container": null,
+          "reagent": "Elution Solution or Nuclease-free water",
+          "volume": null,
+          "temperature": "95\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "aqueous phase",
+          "reagent": "RT 100% ethanol",
+          "volume": "1.25 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix": "well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Filter Cartridge in collection tube",
+          "reagent": "aqueous phase + ethanol mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Filter Cartridge in collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": "miRNA Wash Solution 1",
+          "volume": "700 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 sec",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": "Wash Solution 2/3",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 sec",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "14"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Filter Cartridge in tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1.5 min",
+          "speed": "10,000 X g",
+          "other": {
+            "purpose": "remove residual fluid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh collection tube",
+          "reagent": "Filter Cartridge",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": "pre-heated (95 \u00baC) Elution Solution (0.1 mM EDTA)",
+          "volume": "50 \u00b5l",
+          "temperature": "95 \u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Filter Cartridge",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "17-19",
+            "reagent": "another 50 \u00b5l pre-heated (95\u00baC) Elution Solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNase I buffer",
+          "volume": "1/10th volume (~10 \u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNase I (2U/\u00b5l)",
+          "volume": "2 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00baC",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNase inactivation reagent",
+          "volume": "0.1 volume (10 \u00b5l)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "mix well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "flicking": "occasionally"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1.5 min",
+          "speed": "10,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh new 0.5 ml non-stick RNase-free tube",
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": "-70 \u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-heat",
+        "parameters": {
+          "container": null,
+          "reagent": "elution buffer or water",
+          "volume": null,
+          "temperature": "40\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "2ml Nonsticky RNase-free tube",
+          "reagent": "DNase-treated RNA samples",
+          "volume": "2 x 100 \u00b5l (~200 \u00b5l total)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml Nonsticky RNase-free tube",
+          "reagent": "RLT buffer",
+          "volume": "700 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml Nonsticky RNase-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml Nonsticky RNase-free tube",
+          "reagent": "100% ethanol",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml Nonsticky RNase-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "RNeasy MinElute Column in 2 ml tube",
+          "reagent": "sample",
+          "volume": "700 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "close_tube": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "RNeasy MinElute Column in 2 ml tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 s",
+          "speed": "\u2265 8,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "29"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 2 ml collection tube",
+          "reagent": "spin column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipet",
+        "parameters": {
+          "container": "column",
+          "reagent": "buffer RPE",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "close_tube": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 s",
+          "speed": "\u2265 8,000 X g",
+          "other": {
+            "purpose": "wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "reuse",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "column",
+          "reagent": "80% ethanol",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "close_tube": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "\u2265 8,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 2 ml collection tube",
+          "reagent": "column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "centrifuge"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "12,000 X g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "column",
+          "reagent": "pre-heated nuclease-free water or RNA storage buffer",
+          "volume": "25 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 1.5 ml tube",
+          "reagent": "spin column",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipet",
+        "parameters": {
+          "container": "column",
+          "reagent": "water or buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of silica-gel membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "2 min",
+          "speed": null,
+          "other": {
+            "close_tube": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "12,000 X g",
+          "other": {
+            "purpose": "elute"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "15 \u00b5l of water or buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "elution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "elutions",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Bioanalyzer (Agilent) using RNA 6000 Pico total RNA kit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratios": "1:10 and 1:100"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "order",
+        "parameters": {
+          "container": null,
+          "reagent": "primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "guidelines"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": "rRNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "PCR"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "QIAquick PCR purification kit",
+            "elution": "50 \u00b5l elution buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "separate reactions for all probes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "reagents for 20 \u00b5l reaction",
+          "volume": "20 \u00b5l",
+          "temperature": "RT",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "listed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00baC",
+          "duration": "4-6 hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "DNase I",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove DNA template"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00baC",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "synthesized RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "MEGAclearTM kit",
+            "elution": "50 \u00b5l elution solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "RiboGreen or Nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "probes",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "beads",
+          "volume": "400 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per_sample": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "bind",
+        "parameters": {
+          "container": "magnetic separation rack",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipet",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "beads",
+          "volume": "equal volume of 0.1N NaOH",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "deactivate bead-associated RNases"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "quick",
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "bind",
+        "parameters": {
+          "container": "magnet",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipet",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "57",
+            "buffer": "1X SSC"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "leave",
+        "parameters": {
+          "container": "tube",
+          "reagent": "beads in buffer",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "hybridization complete"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "hybridization reaction",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": "Template RNA, aRNA 16S probe, aRNA 23S probe, RNase inhibitor, SSC buffer, formamide, water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermal cycler",
+          "reagent": "hybridization reaction",
+          "volume": null,
+          "temperature": "5 min at 70\u00baC, rampdown to 25\u00b0C using 5\u00b0C increments for 1 min each",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "2-5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "capture",
+        "parameters": {
+          "container": "magnetic rack",
+          "reagent": "pre-aliquoted beads",
+          "volume": "400 \u00b5l per sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while": "hybridization at RT"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipet",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "magnetic rack",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "PCR tubes",
+          "reagent": "hybridization reaction",
+          "volume": "to 100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "20% formamide in 1X SSC"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "dried beads",
+          "reagent": "hybridization reaction (100 \u00b5l)",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "RT",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "mix": "occasional flicking"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "quick",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "capture",
+        "parameters": {
+          "container": "magnetic rack",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "2-3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 ml tube",
+          "reagent": "non-rRNA-containing supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "using": "P200 pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "remaining beads",
+          "volume": "100 \u00b5l 1X SSC",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "capture",
+        "parameters": {
+          "container": "magnetic rack",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "same 1.5 ml tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_volume": "200 \u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "subtracted RNA",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove formamide",
+            "kit": "RNeasy MinElute"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": "15 \u00b5l and 5 \u00b5l",
+          "temperature": "pre-heated to 50 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "combine_elutions": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "purified RNA",
+          "volume": "1 \u00b5l (diluted 1:10 and 1:100)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Bioanalyzer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "downstream applications"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "speedvac",
+        "parameters": {
+          "container": null,
+          "reagent": "subtracted RNA",
+          "volume": "maximum 9 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": "0.2 mL PCR tube",
+          "reagent": "fragmentation reaction",
+          "volume": "12 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": "nuclease-free water, rRNA-subtracted RNA, RNA fragmentation solution, cDNA synthesis primer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": "fragmentation reaction",
+          "volume": null,
+          "temperature": "85 \u00baC",
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "heated_lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "stop fragmentation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "cDNA synthesis master mix",
+          "volume": "4 \u00b5l per rxn",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": "cDNA synthesis premix, DTT, StarScript Reverse Transcriptase"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "cDNA synthesis master mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "fragmentation reaction tube",
+          "reagent": "cDNA synthesis master mix",
+          "volume": "4 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25 \u00b0C for 5 min, 42 \u00b0C for 20 min",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pause_thermocycler": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": "reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "one_at_a_time": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Finishing solution",
+          "volume": "1.0 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mix": "gently pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": "reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before_next": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37 \u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C for 3 min, cool to 25 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pause_thermocycler": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "terminal tagging master mix",
+          "volume": "8 \u00b5l per rxn",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": "terminal tagging premix, DNA polymerase"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "terminal tagging master mix",
+          "volume": "8 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "one_at_a_time": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": "reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "before_next": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25 \u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermocycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95 \u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_ice_or_thermocycler": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "cDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "system": "Agencourt AmpureXP",
+            "purification_ratio": "1.8X"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "Ampure beads",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "80% ethanol",
+          "volume": "400 \u00b5l per sample",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "beads",
+          "volume": "45 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "di-tagged cDNA from part 3C"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "at least 5 min",
+          "speed": null,
+          "other": {
+            "until": "liquid clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "80% ethanol",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with_tubes_on_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "80% ethanol",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with_tubes_on_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nuclease-free water",
+          "volume": "24.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove_from_magnetic_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": "tube",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "at least 5 min",
+          "speed": null,
+          "other": {
+            "until": "liquid clears"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new 0.2 mL PCR tube",
+          "reagent": "22.5 \u00b5l supernatant (di-tagged cDNA)",
+          "volume": "22.5 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "0.2 mL PCR tube",
+          "reagent": "FailSafe PCR Premix E, Forward PCR primer, Reverse or ScriptSeq index primer, FailSafe PCR Enzyme",
+          "volume": "25 \u00b5l, 1 \u00b5l, 1 \u00b5l, 0.5 \u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_volume": "50 \u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "PCR",
+          "volume": null,
+          "temperature": "95 \u00b0C for 1 min, 12-15 cycles of 95 \u00b0C for 30 sec, 55 \u00b0C for 30 sec, 68 \u00b0C for 3 min, finish with 68 \u00b0C for 7 min, cool to 4 \u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "system": "Ampure XP",
+            "purpose": "remove primer-dimers"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "Ampure beads",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "80% ethanol",
+          "volume": "400 \u00b5l per sample",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "beads",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "amplified library from part C5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.5 mL tube",
+          "reagent": "sample",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": "tubes",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "at least 5 min",
+          "speed": null,
+          "other": {
+            "until": "liquid clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "80% ethanol",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with_tubes_on_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "80% ethanol",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with_tubes_on_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "discard": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nuclease-free water",
+          "volume": "20 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "remove_from_magnetic_stand": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting 10 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "magnetic stand",
+          "reagent": "tube",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "at least 5 min",
+          "speed": null,
+          "other": {
+            "until": "liquid clears"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant (RNA-Seq library)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "library",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratios": "1:10 and 1:100",
+            "purpose": "Bioanalyzer analysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": null,
+          "reagent": "Picogreen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "quantification of library concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "check": "compatible indices"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: 2-ml screw-cap tube, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nremove(container='filter', reagent='RNAlater', volume='300 \u00b5l', discard=True)\nadd(container='filter', reagent='Lysis/Binding buffer', volume='750 \u00b5l (1.5mL)*')\nvortex(container='filter', speed='vigorously', purpose='lyse cells')\nadd(container='filter', reagent='miRNA Homogenate Additive', volume='75 \u00b5l (150 \u00b5l)*')\nvortex(container='filter', purpose='mix')\nincubate(container='filter', temperature='on ice', duration='10 min')\ntransfer(container='Non-stick RNase-free tube or 2 mL tube with o-ring', reagent='lysate', volume='825 \u00b5l', source='filter')\nspin(container='tube', purpose='recover lysate')\nadd(container='tube', reagent='Acid-Phenol:Chloroform', volume='750 \u00b5l')\nvortex(container='tube', duration='30-60 sec', purpose='mix')\ncentrifuge(container='tube', temperature='RT', duration='5 min', speed='10,000 X g')\nremove(container='tube', reagent='top aqueous phase', transfer_to='fresh tube', avoid_disturbing='lower phase')\npre-heat(reagent='Elution Solution or Nuclease-free water', temperature='95\u00baC')\nadd(container='aqueous phase', reagent='RT 100% ethanol', volume='1.25 volumes', mix='well')\nload(container='Filter Cartridge in collection tube', reagent='aqueous phase + ethanol mixture')\ncentrifuge(container='Filter Cartridge in collection tube', duration='15 sec', speed='10,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\napply(container='Filter Cartridge', reagent='miRNA Wash Solution 1', volume='700 \u00b5l')\ncentrifuge(container='Filter Cartridge', duration='10 sec', speed='10,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\napply(container='Filter Cartridge', reagent='Wash Solution 2/3', volume='500 \u00b5l')\ncentrifuge(container='Filter Cartridge', duration='15 sec', speed='10,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nrepeat(step='14')\ncentrifuge(container='Filter Cartridge in tube', duration='1.5 min', speed='10,000 X g', purpose='remove residual fluid')\ntransfer(container='fresh collection tube', reagent='Filter Cartridge')\napply(container='Filter Cartridge', reagent='pre-heated (95 \u00baC) Elution Solution (0.1 mM EDTA)', volume='50 \u00b5l', temperature='95 \u00baC', location='center of filter')\nwait(container='Filter Cartridge', duration='1 min')\ncentrifuge(container='Filter Cartridge', duration='30 sec', speed='10,000 X g')\nrepeat(steps='17-19', reagent='another 50 \u00b5l pre-heated (95\u00baC) Elution Solution')\nadd(container='tube', reagent='DNase I buffer', volume='1/10th volume (~10 \u00b5l)')\nadd(container='tube', reagent='DNase I (2U/\u00b5l)', volume='2 \u00b5l')\nmix(container='tube', speed='gently')\nincubate(container='tube', temperature='37 \u00baC', duration='30 min')\nadd(container='tube', reagent='DNase inactivation reagent', volume='0.1 volume (10 \u00b5l)')\nmix(container='tube', method='mix well')\nincubate(container='tube', temperature='RT', duration='2 min', flicking='occasionally')\ncentrifuge(container='tube', duration='1.5 min', speed='10,000 X g')\ntransfer(container='fresh new 0.5 ml non-stick RNase-free tube', reagent='RNA')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube, reagent: RNA, temperature: -70 \u00baC, other: {})\n\n### AUTOMATED SECTION ###\npre-heat(reagent='elution buffer or water', temperature='40\u00b0C')\ncombine(container='2ml Nonsticky RNase-free tube', reagent='DNase-treated RNA samples', volume='2 x 100 \u00b5l (~200 \u00b5l total)')\nadd(container='2ml Nonsticky RNase-free tube', reagent='RLT buffer', volume='700 \u00b5l')\nmix(container='2ml Nonsticky RNase-free tube', method='pipetting')\nadd(container='2ml Nonsticky RNase-free tube', reagent='100% ethanol', volume='500 \u00b5l')\nmix(container='2ml Nonsticky RNase-free tube', method='pipetting')\nload(container='RNeasy MinElute Column in 2 ml tube', reagent='sample', volume='700 \u00b5l', close_tube='gently')\ncentrifuge(container='RNeasy MinElute Column in 2 ml tube', duration='15 s', speed='\u2265 8,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nrepeat(step='29')\ntransfer(container='new 2 ml collection tube', reagent='spin column')\npipet(container='column', reagent='buffer RPE', volume='500 \u00b5l', close_tube='gently')\ncentrifuge(container='column', duration='15 s', speed='\u2265 8,000 X g', purpose='wash')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n# MANUAL: reuse (container: collection tube, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='column', reagent='80% ethanol', volume='500 \u00b5l', close_tube='gently')\ncentrifuge(container='column', duration='2 min', speed='\u2265 8,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='new 2 ml collection tube', reagent='column')\n\n### MANUAL SECTION ###\n# MANUAL: open (container: tube, other: {'purpose': 'centrifuge'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube', duration='5 min', speed='12,000 X g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: collection tube, reagent: flow-through, other: {})\n\n### AUTOMATED SECTION ###\nelute(container='column', reagent='pre-heated nuclease-free water or RNA storage buffer', volume='25 \u00b5l')\ntransfer(container='new 1.5 ml tube', reagent='spin column')\npipet(container='column', reagent='water or buffer', location='center of silica-gel membrane')\nwait(container='column', temperature='RT', duration='2 min', close_tube='gently')\ncentrifuge(container='column', duration='1 min', speed='12,000 X g', purpose='elute')\nrepeat(volume='15 \u00b5l of water or buffer', purpose='elution')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: tube, reagent: elutions, temperature: -80\u00b0C, other: {})\n# MANUAL: quantify (reagent: RNA, other: {'method': 'Bioanalyzer (Agilent) using RNA 6000 Pico total RNA kit'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='samples', ratios='1:10 and 1:100')\n\n### MANUAL SECTION ###\n# MANUAL: order (reagent: primers, other: {'source': 'guidelines'})\n\n### AUTOMATED SECTION ###\namplify(reagent='rRNA', method='PCR')\npurify(reagent='PCR products', kit='QIAquick PCR purification kit', elution='50 \u00b5l elution buffer')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (reagent: DNA, other: {'method': 'Nanodrop'})\n# MANUAL: prepare (reagent: separate reactions for all probes, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='PCR tube', reagent='reagents for 20 \u00b5l reaction', volume='20 \u00b5l', temperature='RT', order='listed')\nincubate(container='PCR tube', temperature='37\u00baC', duration='4-6 hrs')\nadd(container='PCR tube', reagent='DNase I', volume='1 \u00b5l', purpose='remove DNA template')\nincubate(container='PCR tube', temperature='37\u00baC', duration='30 min')\npurify(reagent='synthesized RNA', kit='MEGAclearTM kit', elution='50 \u00b5l elution solution')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (reagent: RNA, other: {'method': 'RiboGreen or Nanodrop'})\n# MANUAL: store (reagent: probes, temperature: -80\u00b0C, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='1.5 ml tube', reagent='beads', volume='400 \u00b5l', per_sample=True)\nbind(container='magnetic separation rack', reagent='beads', duration='2 min')\npipet(container='tube', reagent='supernatant', discard=True)\nresuspend(container='tube', reagent='beads', volume='equal volume of 0.1N NaOH', purpose='deactivate bead-associated RNases')\nvortex(container='tube', speed='quick', purpose='resuspend')\nspin(container='tube')\nbind(container='magnet', reagent='beads')\npipet(container='tube', reagent='supernatant', discard=True)\nrepeat(step='57', buffer='1X SSC')\n\n### MANUAL SECTION ###\n# MANUAL: leave (container: tube, reagent: beads in buffer, temperature: on ice, other: {'until': 'hybridization complete'})\n\n### AUTOMATED SECTION ###\nprepare(container='PCR tube', reagent='hybridization reaction', volume='50 \u00b5l', components='Template RNA, aRNA 16S probe, aRNA 23S probe, RNase inhibitor, SSC buffer, formamide, water')\nincubate(container='thermal cycler', reagent='hybridization reaction', temperature='5 min at 70\u00baC, rampdown to 25\u00b0C using 5\u00b0C increments for 1 min each')\nwait(container='reaction', temperature='RT', duration='2-5 min')\ncapture(container='magnetic rack', reagent='pre-aliquoted beads', volume='400 \u00b5l per sample', while='hybridization at RT')\npipet(container='tube', reagent='supernatant', discard=True)\nremove(container='magnetic rack', reagent='beads')\ndilute(container='PCR tubes', reagent='hybridization reaction', volume='to 100 \u00b5l', diluent='20% formamide in 1X SSC')\nadd(container='dried beads', reagent='hybridization reaction (100 \u00b5l)', volume='100 \u00b5l')\nincubate(container='tube', temperature='RT', duration='10 min', mix='occasional flicking')\nspin(container='tube', speed='quick')\ncapture(container='magnetic rack', reagent='beads', duration='2-3 min')\ntransfer(container='1.5 ml tube', reagent='non-rRNA-containing supernatant', using='P200 pipettor')\nresuspend(container='tube', reagent='remaining beads', volume='100 \u00b5l 1X SSC')\ncapture(container='magnetic rack', reagent='beads')\ntransfer(container='same 1.5 ml tube', reagent='supernatant', total_volume='200 \u00b5l')\npurify(reagent='subtracted RNA', volume='200 \u00b5l', purpose='remove formamide', kit='RNeasy MinElute')\nelute(reagent='RNA', volume='15 \u00b5l and 5 \u00b5l', temperature='pre-heated to 50 \u00b0C', combine_elutions=True)\n\n### MANUAL SECTION ###\n# MANUAL: run (reagent: purified RNA, volume: 1 \u00b5l (diluted 1:10 and 1:100), other: {'instrument': 'Bioanalyzer'})\n# MANUAL: store (reagent: RNA, temperature: -80\u00b0C, other: {'purpose': 'downstream applications'})\n# MANUAL: speedvac (reagent: subtracted RNA, volume: maximum 9 \u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nassemble(container='0.2 mL PCR tube', reagent='fragmentation reaction', volume='12 \u00b5l', components='nuclease-free water, rRNA-subtracted RNA, RNA fragmentation solution, cDNA synthesis primer')\nincubate(container='thermocycler', reagent='fragmentation reaction', temperature='85 \u00baC', duration='5 min', heated_lid=True)\ncool(container='tube', temperature='on ice', purpose='stop fragmentation')\nprepare(reagent='cDNA synthesis master mix', volume='4 \u00b5l per rxn', temperature='on ice', components='cDNA synthesis premix, DTT, StarScript Reverse Transcriptase')\nmix(reagent='cDNA synthesis master mix', method='pipetting')\nadd(container='fragmentation reaction tube', reagent='cDNA synthesis master mix', volume='4 \u00b5l', temperature='on ice', mix='pipetting')\nincubate(container='thermocycler', temperature='25 \u00b0C for 5 min, 42 \u00b0C for 20 min')\ncool(container='reaction', temperature='37 \u00b0C', pause_thermocycler=True)\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: thermocycler, reagent: reaction, other: {'one_at_a_time': True})\n\n### AUTOMATED SECTION ###\nadd(container='reaction tube', reagent='Finishing solution', volume='1.0 \u00b5l', mix='gently pipetting')\n\n### MANUAL SECTION ###\n# MANUAL: return (container: thermocycler, reagent: reaction, other: {'before_next': True})\n\n### AUTOMATED SECTION ###\nincubate(container='thermocycler', temperature='37 \u00b0C', duration='10 min')\nincubate(container='thermocycler', temperature='95\u00b0C for 3 min, cool to 25 \u00b0C', pause_thermocycler=True)\nprepare(reagent='terminal tagging master mix', volume='8 \u00b5l per rxn', temperature='on ice', components='terminal tagging premix, DNA polymerase')\nadd(container='reaction tube', reagent='terminal tagging master mix', volume='8 \u00b5l', one_at_a_time=True)\nmix(container='reaction tube', method='pipetting')\n\n### MANUAL SECTION ###\n# MANUAL: return (container: thermocycler, reagent: reaction, other: {'before_next': True})\n\n### AUTOMATED SECTION ###\nincubate(container='thermocycler', temperature='25 \u00b0C', duration='15 min')\nincubate(container='thermocycler', temperature='95 \u00b0C', duration='3 min')\ncool(container='reaction', temperature='4 \u00b0C', on_ice_or_thermocycler=True)\npurify(reagent='cDNA', system='Agencourt AmpureXP', purification_ratio='1.8X')\nwarm(reagent='Ampure beads', temperature='room temperature', duration='30 min')\nprepare(reagent='80% ethanol', volume='400 \u00b5l per sample', temperature='room temperature')\nadd(container='microfuge tube', reagent='beads', volume='45 \u00b5l', sample='di-tagged cDNA from part 3C')\nmix(container='microfuge tube', method='pipetting 10 times')\ntransfer(container='1.5 mL tube', reagent='sample')\nincubate(container='tube', temperature='room temp', duration='15 min')\nplace(container='magnetic stand', reagent='tubes', temperature='room temp', duration='at least 5 min', until='liquid clear')\nremove(container='tube', reagent='supernatant', discard=True)\nadd(container='tube', reagent='80% ethanol', volume='200 \u00b5l', with_tubes_on_stand=True)\nincubate(container='tube', duration='30 sec')\nremove(container='tube', reagent='supernatant', discard=True)\nadd(container='tube', reagent='80% ethanol', volume='200 \u00b5l', with_tubes_on_stand=True)\nincubate(container='tube', duration='30 sec')\nremove(container='tube', reagent='supernatant', discard=True)\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: tube on magnetic stand, temperature: room temp, duration: 15 min, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='nuclease-free water', volume='24.5 \u00b5l', remove_from_magnetic_stand=True)\nresuspend(container='tube', reagent='beads', method='pipetting 10 times')\nincubate(container='tube', temperature='room temperature', duration='2 min')\nplace(container='magnetic stand', reagent='tube', temperature='room temp', duration='at least 5 min', until='liquid clears')\ntransfer(container='new 0.2 mL PCR tube', reagent='22.5 \u00b5l supernatant (di-tagged cDNA)', volume='22.5 \u00b5l', temperature='on ice')\nadd(container='0.2 mL PCR tube', reagent='FailSafe PCR Premix E, Forward PCR primer, Reverse or ScriptSeq index primer, FailSafe PCR Enzyme', volume='25 \u00b5l, 1 \u00b5l, 1 \u00b5l, 0.5 \u00b5l', temperature='on ice', total_volume='50 \u00b5l')\nperform(container='PCR tube', reagent='PCR', temperature='95 \u00b0C for 1 min, 12-15 cycles of 95 \u00b0C for 30 sec, 55 \u00b0C for 30 sec, 68 \u00b0C for 3 min, finish with 68 \u00b0C for 7 min, cool to 4 \u00b0C')\npurify(reagent='PCR reaction', system='Ampure XP', purpose='remove primer-dimers')\nwarm(reagent='Ampure beads', temperature='room temperature', duration='30 min')\nprepare(reagent='80% ethanol', volume='400 \u00b5l per sample', temperature='room temperature')\nadd(container='tube', reagent='beads', volume='50 \u00b5l', sample='amplified library from part C5')\nmix(container='tube', method='pipetting 10 times')\ntransfer(container='1.5 mL tube', reagent='sample', volume='100 \u00b5l')\nincubate(container='tube', temperature='room temp', duration='15 min')\nplace(container='magnetic stand', reagent='tubes', temperature='room temp', duration='at least 5 min', until='liquid clear')\nremove(container='tube', reagent='supernatant', discard=True)\nadd(container='tube', reagent='80% ethanol', volume='200 \u00b5l', with_tubes_on_stand=True)\nincubate(container='tube', duration='30 sec')\nremove(container='tube', reagent='supernatant', discard=True)\nadd(container='tube', reagent='80% ethanol', volume='200 \u00b5l', with_tubes_on_stand=True)\nincubate(container='tube', duration='30 sec')\nremove(container='tube', reagent='supernatant', discard=True)\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: tube on magnetic stand, temperature: room temp, duration: 15 min, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='tube', reagent='nuclease-free water', volume='20 \u00b5l', remove_from_magnetic_stand=True)\nresuspend(container='tube', reagent='beads', method='pipetting 10 times')\nincubate(container='tube', temperature='room temperature', duration='2 min')\nplace(container='magnetic stand', reagent='tube', temperature='room temp', duration='at least 5 min', until='liquid clears')\ntransfer(container='new tube', reagent='supernatant (RNA-Seq library)')\ndilute(reagent='library', ratios='1:10 and 1:100', purpose='Bioanalyzer analysis')\n\n### MANUAL SECTION ###\n# MANUAL: perform (reagent: Picogreen, other: {'purpose': 'quantification of library concentration'})\n\n### AUTOMATED SECTION ###\npool(reagent='samples', check='compatible indices')",
+    "source_file": "protocol_42.txt"
+  }
+]

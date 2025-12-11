@@ -1,0 +1,1105 @@
+[
+  {
+    "protocol": "NEBNext\u00ae Ultra\u2122 DNA Library Prep Protocol for Illumina\u00ae With Size Selection (E7370)\nMix the following components in a sterile nuclease-free tube (Total volume 65 \u03bcl): End Prep Enzyme Mix   3.0 \u03bcl; End Repair Reaction Buffer (10X) 6.5 \u03bcl; Fragmented DNA   55.5 \u03bcl.\nMix by pipetting.\nQuick spin to collect all liquid from the sides of the tube.\nPlace in a thermocycler, with the heated lid on, and run the following program:TimeTemperature30 minutes20\u00b0C30 minutes65\u00b0CHold4\u00b0C.\nAdd the following components directly to the End Prep reaction mixture and mix well (Total volume 83.5 \u03bcl): Blunt/TA Ligase Master Mix   15 \u03bcl; NEBNext Adaptor for Illumina   2.5 \u03bcl; Ligation Enhancer   1 \u03bcl.\nMix by pipetting.\nQuick spin to collect all liquid from the sides of the tube.\nIncubate at 20\u00b0C for 15 minutes in a thermal cycler.\nAdd 3 \u03bcl of USER\u2122 enzyme to the ligation mixture from step 8.\nMix well and incubate at 37\u00b0C for 15 minutes.\nVortex AMPure XP beads to resuspend.\nAdd 13.5 \u03bcl dH2O to the ligation reaction for a 100 \u03bcl total volume.\nAdd 55 \u03bcl of resuspended AMPure XP beads to the 100 \u03bcl ligation reaction.\nMix well by pipetting up and down at least 10 times.\nIncubate for 5 minutes at room temperature.\nQuickly spin the tube.\nPlace the tube on an appropriate magnetic stand to separate the beads from the supernatant.\nAfter the solution is clear (about 5 minutes), carefully transfer the supernatant containing your DNA to a new tube (Caution: do not discard the supernatant).\nDiscard the beads that contain the unwanted large fragments.\nAdd 25 \u03bcl resuspended AMPure XP beads to the supernatant.\nMix well and incubate for 5 minutes at room temperature.\nQuickly spin the tube.\nPlace it on an appropriate magnetic stand to separate the beads from the supernatant.\nAfter the solution is clear (about 5 minutes), carefully remove and discard the supernatant that contains unwanted DNA.\nBe careful not to disturb the beads that contain the desired DNA targets (Caution: do not discard beads).\nWash #1: Add 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nWash #1:\u00a0Incubate at room temperature for 30 seconds.\nWash #1:\u00a0Carefully remove and discard the supernatant.\nWash #2: Add 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nWash #2:\u00a0Incubate at room temperature for 30 seconds.\nWash #2:\u00a0Carefully remove and discard the supernatant.\nWash #3: Add 200 \u03bcl of 80% freshly prepared ethanol to the tube while in the magnetic stand.\nWash #3:\u00a0Incubate at room temperature for 30 seconds.\nWash #3:\u00a0Carefully remove and discard the supernatant.\nAir the dry beads for 10 minutes while the tube is on the magnetic stand with the lid open.\nElute the DNA target from the beads into 28 \u03bcl of 10 mM Tris-HCl or 0.1 X TE, pH 8.0.\nMix well on a vortex mixer or by pipetting up and down.\nQuickly spin the tube and place it on a magnetic stand.\nAfter the solution is clear (about 5 minutes), transfer 23 \u03bcl to a new PCR tube for amplification.\nMix the following components in sterile strip tubes (Total volume\u00a0\u00a0 50 \u03bcl): Adaptor Ligated DNA Fragments   23 \u03bcl; NEBNext High Fidelity 2X PCR Master Mix   25 \u03bcl; Index Primer   1 \u03bcl; Universal PCR Primer  1 \u03bcl.\nPCR using the following cycling conditions: CYCLE STEPTEMPTIMECYCLESInitial Denaturation98\u00b0C30 seconds1Denaturation98\u00b0C10 seconds6-15*Annealing65\u00b0C30 secondsExtension72\u00b0C30 secondsFinal Extension72\u00b0C5 minutes1Hold4\u00b0C\u221e.\nVortex AMPure XP beads to resuspend.\nAdd 50 \u03bcl of resuspended AMPure XP beads to the PCR reactions (~ 50 \u03bc l).\nMix well by pipetting up and down at least 10 times.\nIncubate for 5 minutes at room temperature.\nQuickly spin the tube and place it on an appropriate magnetic stand to separate beads from supernatant.\nAfter the solution is clear (about 5 minutes), carefully remove and discard the supernatant.\nBe careful not to disturb the beads that contain DNA targets (Caution do not discard beads).\nWash #1: Add 200 \u03bcl of 80% ethanol to the PCR plate while in the magnetic stand.\nWash #1: \u00a0Incubate at room temperature for 30 seconds.\nWash #1:\u00a0Carefully remove and discard the supernatant.\nWash #2: Add 200 \u03bcl of 80% ethanol to the PCR plate while in the magnetic stand.\nWash #2: \u00a0Incubate at room temperature for 30 seconds.\nWash #2:\u00a0Carefully remove and discard the supernatant.\nAir dry the beads for 10 minutes while the PCR plate is on the magnetic stand with the lid open.\nElute DNA target from beads into 33 \u03bcl 10 mM Tris-HCl, pH 8.0 or 0.1X TE.\nMix well by pipetting up and down at least 10 times.\nQuickly spin the tube and place it on an appropriate magnetic stand to separate beads from supernatant.\nAfter the solution is clear (about 5 minutes), carefully transfer 28 \u03bcl supernatant to a new PCR tube.\nDilute the library 5 fold with water, and check the size distribution on an Agilent high sensitivity chip.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": {
+            "End Prep Enzyme Mix": "3.0 \u03bcl",
+            "End Repair Reaction Buffer (10X)": "6.5 \u03bcl",
+            "Fragmented DNA": "55.5 \u03bcl"
+          },
+          "volume": "65 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": [
+            "20\u00b0C",
+            "65\u00b0C",
+            "4\u00b0C"
+          ],
+          "duration": [
+            "30 minutes",
+            "30 minutes",
+            "hold"
+          ],
+          "speed": null,
+          "other": {
+            "instrument": "thermocycler",
+            "heated lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": {
+            "Blunt/TA Ligase Master Mix": "15 \u03bcl",
+            "NEBNext Adaptor for Illumina": "2.5 \u03bcl",
+            "Ligation Enhancer": "1 \u03bcl"
+          },
+          "volume": "83.5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "End Prep reaction mixture"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "20\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "instrument": "thermal cycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": {
+            "USER enzyme": "3 \u03bcl"
+          },
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "ligation mixture from step 8"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile nuclease-free tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "AMPure XP beads vial",
+          "reagent": "AMPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ligation reaction",
+          "reagent": "dH2O",
+          "volume": "13.5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final volume": "100 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "100 \u03bcl ligation reaction",
+          "reagent": "resuspended AMPure XP beads",
+          "volume": "55 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "ligation reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting up and down at least 10 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "ligation reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "ligation reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "ligation reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "magnetic stand",
+            "purpose": "separate beads from supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "ligation reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solution to clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "ligation reaction tube",
+          "reagent": "supernatant containing DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "new tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "ligation reaction tube",
+          "reagent": "beads containing unwanted large fragments",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new tube (supernatant)",
+          "reagent": "resuspended AMPure XP beads",
+          "volume": "25 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "magnetic stand",
+            "purpose": "separate beads from supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solution to clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "new tube (supernatant + beads)",
+          "reagent": "supernatant containing unwanted DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1,
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2,
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "80% freshly prepared ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3,
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "lid": "open"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": "10 mM Tris-HCl or 0.1 X TE, pH 8.0",
+          "volume": "28 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex or pipetting up and down",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "magnetic stand"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solution to clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube",
+          "reagent": "23 \u03bcl eluted DNA",
+          "volume": "23 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "new PCR tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile strip tubes",
+          "reagent": {
+            "Adaptor Ligated DNA Fragments": "23 \u03bcl",
+            "NEBNext High Fidelity 2X PCR Master Mix": "25 \u03bcl",
+            "Index Primer": "1 \u03bcl",
+            "Universal PCR Primer": "1 \u03bcl"
+          },
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": null,
+          "volume": "50 \u03bcl",
+          "temperature": [
+            "98\u00b0C",
+            "65\u00b0C",
+            "72\u00b0C",
+            "4\u00b0C"
+          ],
+          "duration": [
+            "30 seconds",
+            "10 seconds",
+            "30 seconds",
+            "30 seconds",
+            "5 minutes",
+            "hold"
+          ],
+          "speed": null,
+          "other": {
+            "cycles": "6-15",
+            "instrument": "thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "AMPure XP beads vial",
+          "reagent": "AMPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PCR reactions (~50 \u03bcl)",
+          "reagent": "resuspended AMPure XP beads",
+          "volume": "50 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR reactions",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting up and down at least 10 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR reactions",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PCR reactions tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "PCR reactions tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "magnetic stand"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "PCR reactions tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solution to clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "PCR reactions tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "80% ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1,
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "80% ethanol",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2,
+            "purpose": "discard"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "beads",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "lid": "open"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": "10 mM Tris-HCl, pH 8.0 or 0.1X TE",
+          "volume": "33 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "PCR plate on magnetic stand",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pipetting up and down at least 10 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick spin",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "magnetic stand"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solution to clear"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube",
+          "reagent": "28 \u03bcl supernatant",
+          "volume": "28 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "new PCR tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "library tube",
+          "reagent": "water",
+          "volume": "5 fold",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "Agilent high sensitivity chip",
+          "reagent": "library",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "size distribution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(container='sterile nuclease-free tube', reagent={'End Prep Enzyme Mix': '3.0 \u03bcl', 'End Repair Reaction Buffer (10X)': '6.5 \u03bcl', 'Fragmented DNA': '55.5 \u03bcl'}, volume='65 \u03bcl')\nmix(container='sterile nuclease-free tube', speed='pipetting')\ncentrifuge(container='sterile nuclease-free tube', duration='quick spin')\nincubate(container='sterile nuclease-free tube', temperature=['20\u00b0C', '65\u00b0C', '4\u00b0C'], duration=['30 minutes', '30 minutes', 'hold'], instrument='thermocycler', heated lid=True)\nadd(container='sterile nuclease-free tube', reagent={'Blunt/TA Ligase Master Mix': '15 \u03bcl', 'NEBNext Adaptor for Illumina': '2.5 \u03bcl', 'Ligation Enhancer': '1 \u03bcl'}, volume='83.5 \u03bcl', to='End Prep reaction mixture')\nmix(container='sterile nuclease-free tube', speed='pipetting')\ncentrifuge(container='sterile nuclease-free tube', duration='quick spin')\nincubate(container='sterile nuclease-free tube', temperature='20\u00b0C', duration='15 minutes', instrument='thermal cycler')\nadd(container='sterile nuclease-free tube', reagent={'USER enzyme': '3 \u03bcl'}, to='ligation mixture from step 8')\nmix(container='sterile nuclease-free tube')\nincubate(container='sterile nuclease-free tube', temperature='37\u00b0C', duration='15 minutes')\nmix(container='AMPure XP beads vial', reagent='AMPure XP beads', speed='vortex', purpose='resuspend')\nadd(container='ligation reaction', reagent='dH2O', volume='13.5 \u03bcl', final volume='100 \u03bcl')\nadd(container='100 \u03bcl ligation reaction', reagent='resuspended AMPure XP beads', volume='55 \u03bcl')\nmix(container='ligation reaction', speed='pipetting up and down at least 10 times')\nincubate(container='ligation reaction', temperature='room temperature', duration='5 minutes')\ncentrifuge(container='ligation reaction tube', duration='quick spin')\nseparate(container='ligation reaction tube', instrument='magnetic stand', purpose='separate beads from supernatant')\nwait(container='ligation reaction tube', duration='5 minutes', purpose='solution to clear')\ntransfer(container='ligation reaction tube', reagent='supernatant containing DNA', to='new tube')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: ligation reaction tube, reagent: beads containing unwanted large fragments, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='new tube (supernatant)', reagent='resuspended AMPure XP beads', volume='25 \u03bcl')\nmix(container='new tube (supernatant + beads)')\nincubate(container='new tube (supernatant + beads)', temperature='room temperature', duration='5 minutes')\ncentrifuge(container='new tube (supernatant + beads)', duration='quick spin')\nseparate(container='new tube (supernatant + beads)', instrument='magnetic stand', purpose='separate beads from supernatant')\nwait(container='new tube (supernatant + beads)', duration='5 minutes', purpose='solution to clear')\nremove(container='new tube (supernatant + beads)', reagent='supernatant containing unwanted DNA', purpose='discard')\nwash(container='tube on magnetic stand', reagent='80% freshly prepared ethanol', volume='200 \u03bcl', wash_number=1)\nincubate(container='tube on magnetic stand', temperature='room temperature', duration='30 seconds', wash_number=1)\nremove(container='tube on magnetic stand', reagent='supernatant', wash_number=1, purpose='discard')\nwash(container='tube on magnetic stand', reagent='80% freshly prepared ethanol', volume='200 \u03bcl', wash_number=2)\nincubate(container='tube on magnetic stand', temperature='room temperature', duration='30 seconds', wash_number=2)\nremove(container='tube on magnetic stand', reagent='supernatant', wash_number=2, purpose='discard')\nwash(container='tube on magnetic stand', reagent='80% freshly prepared ethanol', volume='200 \u03bcl', wash_number=3)\nincubate(container='tube on magnetic stand', temperature='room temperature', duration='30 seconds', wash_number=3)\nremove(container='tube on magnetic stand', reagent='supernatant', wash_number=3, purpose='discard')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: tube on magnetic stand, reagent: beads, duration: 10 minutes, other: {'lid': 'open'})\n\n### AUTOMATED SECTION ###\nelute(container='tube on magnetic stand', reagent='10 mM Tris-HCl or 0.1 X TE, pH 8.0', volume='28 \u03bcl', from='beads')\nmix(container='tube on magnetic stand', speed='vortex or pipetting up and down')\ncentrifuge(container='tube', duration='quick spin')\nseparate(container='tube', instrument='magnetic stand')\nwait(container='tube', duration='5 minutes', purpose='solution to clear')\ntransfer(container='tube', reagent='23 \u03bcl eluted DNA', volume='23 \u03bcl', to='new PCR tube')\nmix(container='sterile strip tubes', reagent={'Adaptor Ligated DNA Fragments': '23 \u03bcl', 'NEBNext High Fidelity 2X PCR Master Mix': '25 \u03bcl', 'Index Primer': '1 \u03bcl', 'Universal PCR Primer': '1 \u03bcl'}, volume='50 \u03bcl')\namplify(container='PCR tube', volume='50 \u03bcl', temperature=['98\u00b0C', '65\u00b0C', '72\u00b0C', '4\u00b0C'], duration=['30 seconds', '10 seconds', '30 seconds', '30 seconds', '5 minutes', 'hold'], cycles='6-15', instrument='thermocycler')\nmix(container='AMPure XP beads vial', reagent='AMPure XP beads', speed='vortex', purpose='resuspend')\nadd(container='PCR reactions (~50 \u03bcl)', reagent='resuspended AMPure XP beads', volume='50 \u03bcl')\nmix(container='PCR reactions', speed='pipetting up and down at least 10 times')\nincubate(container='PCR reactions', temperature='room temperature', duration='5 minutes')\ncentrifuge(container='PCR reactions tube', duration='quick spin')\nseparate(container='PCR reactions tube', instrument='magnetic stand')\nwait(container='PCR reactions tube', duration='5 minutes', purpose='solution to clear')\nremove(container='PCR reactions tube', reagent='supernatant', purpose='discard')\nwash(container='PCR plate on magnetic stand', reagent='80% ethanol', volume='200 \u03bcl', wash_number=1)\nincubate(container='PCR plate on magnetic stand', temperature='room temperature', duration='30 seconds', wash_number=1)\nremove(container='PCR plate on magnetic stand', reagent='supernatant', wash_number=1, purpose='discard')\nwash(container='PCR plate on magnetic stand', reagent='80% ethanol', volume='200 \u03bcl', wash_number=2)\nincubate(container='PCR plate on magnetic stand', temperature='room temperature', duration='30 seconds', wash_number=2)\nremove(container='PCR plate on magnetic stand', reagent='supernatant', wash_number=2, purpose='discard')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: PCR plate on magnetic stand, reagent: beads, duration: 10 minutes, other: {'lid': 'open'})\n\n### AUTOMATED SECTION ###\nelute(container='PCR plate on magnetic stand', reagent='10 mM Tris-HCl, pH 8.0 or 0.1X TE', volume='33 \u03bcl', from='beads')\nmix(container='PCR plate on magnetic stand', speed='pipetting up and down at least 10 times')\ncentrifuge(container='tube', duration='quick spin')\nseparate(container='tube', instrument='magnetic stand')\nwait(container='tube', duration='5 minutes', purpose='solution to clear')\ntransfer(container='tube', reagent='28 \u03bcl supernatant', volume='28 \u03bcl', to='new PCR tube')\ndilute(container='library tube', reagent='water', volume='5 fold')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: Agilent high sensitivity chip, reagent: library, other: {'purpose': 'size distribution'})",
+    "source_file": "protocol_13.txt"
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "protocol": "Extracting nucleic acids from viruses on a filter\nAdd 1 mL T + C lysis buffer containing 100 \u00b5g/ml proteinase K to a low-volume (1\u20133 cc) syringe that has been fitted with a female\u2013female Luer-Lok adapter (the injection syringe).\nEnsure that there is minimal air in the injection syringe-adapter assembly, then connect it to the outlet of the filter.\nConnect a second low-volume syringe to the filter inlet (the aspiration syringe).\nHold the filter-syringe assembly vertically with the injector syringe pushing upward from below.\nHold the filter securely to the injection syringe and gently, but firmly, push extraction buffer into the filter housing until liquid just begins to appear in the aspiration syringe.\nIncubate the assembly (filter with two syringes attached) for 15 min at 65\u00b0C in a hybridization oven.\nAllow the syringe-filter assembly to cool briefly.\nRemove the extract by holding the syringe assembly vertically with the aspiration syringe underneath (and the filter upside down) and gently pulling on the plunger to pull the extract into the aspiration syringe.\nDetach the aspiration syringe.\nTransfer the extract to a microcentrifuge tube.\nChill on ice for 2\u20133 minutes.\nAdd one-half volume of MPC protein precipitation reagent (supplied in the kit) and vortex for 10 s.\nPellet the debris by centrifugation at 10,000g for 10 min.\nTransfer the supernatant (containing the nucleic acids) to a sterile microcentrifuge tube; be very careful to avoid the pellet (containing the SDS-protein complex).\nTransfer up to 800 \u00b5l of the sample to a fresh tube; add 1 \u00b5l polyacryl carrier, and vortex briefly.\nAdd 1 \u00b5l polyacryl carrier, and vortex briefly.\nAdd an equal volume of 100% isopropanol.\nMix by inverting the tube several times.\nCentrifuge the sample at \u226510,000g for 15\u201345 min.\nDecant or aspirate the supernatant.\nWash the pellet twice, each time adding 70% ethanol, centrifuging for 1 min, and decanting (or aspirating) the ethanol.\nAir-dry the pellet, then dissolve in 10 \u00b5L of 0.02- filtered, sterile 0.5\u00d7 TE buffer heated to 50\u00b0C.\nIf required, DNA or RNA can be selectively removed from the total nucleic acid precipitate by enzymatic digestion with DNase or RNase.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "low-volume syringe (1\u20133 cc) fitted with female\u2013female Luer-Lok adapter",
+          "reagent": "T + C lysis buffer containing 100 \u00b5g/ml proteinase K",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "injection syringe-adapter assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "outlet of the filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "connect",
+        "parameters": {
+          "container": "second low-volume syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "filter inlet"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "injection syringe",
+          "reagent": "extraction buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently but firmly",
+          "other": {
+            "into": "filter housing",
+            "until": "liquid just begins to appear in the aspiration syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "assembly (filter with two syringes attached)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "device": "hybridization oven"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "syringe-filter assembly",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pull",
+        "parameters": {
+          "container": "aspiration syringe",
+          "reagent": "extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "orientation": "assembly vertical, aspiration syringe underneath, filter upside down"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "detach",
+        "parameters": {
+          "container": "aspiration syringe",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "aspiration syringe to microcentrifuge tube",
+          "reagent": "extract",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "extract",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "2\u20133 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "MPC protein precipitation reagent",
+          "volume": "one-half volume (relative to extract)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "supplied in the kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "10,000g",
+          "other": {
+            "purpose": "pellet the debris"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "supernatant (containing nucleic acids)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "sterile microcentrifuge tube",
+            "note": "avoid pellet (containing SDS-protein complex)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile microcentrifuge tube",
+          "reagent": "sample",
+          "volume": "up to 800 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "fresh tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "polyacryl carrier",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "polyacryl carrier",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "100% isopropanol",
+          "volume": "equal volume (relative to sample)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting tube several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15\u201345 min",
+          "speed": "\u226510,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "alternative": "decant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "alternative": "decant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "0.02- filtered, sterile 0.5\u00d7 TE buffer heated to 50\u00b0C",
+          "volume": "10 \u00b5L",
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "digest",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "DNase or RNase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "if required, to selectively remove DNA or RNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='low-volume syringe (1\u20133 cc) fitted with female\u2013female Luer-Lok adapter', reagent='T + C lysis buffer containing 100 \u00b5g/ml proteinase K', volume='1 mL')\n\n### MANUAL SECTION ###\n# MANUAL: connect (container: injection syringe-adapter assembly, other: {'to': 'outlet of the filter'})\n# MANUAL: connect (container: second low-volume syringe, other: {'to': 'filter inlet'})\n# MANUAL: push (container: injection syringe, reagent: extraction buffer, speed: gently but firmly, other: {'into': 'filter housing', 'until': 'liquid just begins to appear in the aspiration syringe'})\n\n### AUTOMATED SECTION ###\nincubate(container='assembly (filter with two syringes attached)', temperature='65\u00b0C', duration='15 min', device='hybridization oven')\ncool(container='syringe-filter assembly', duration='briefly')\n\n### MANUAL SECTION ###\n# MANUAL: pull (container: aspiration syringe, reagent: extract, speed: gently, other: {'orientation': 'assembly vertical, aspiration syringe underneath, filter upside down'})\n# MANUAL: detach (container: aspiration syringe, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='aspiration syringe to microcentrifuge tube', reagent='extract')\nchill(container='microcentrifuge tube', reagent='extract', temperature='on ice', duration='2\u20133 min')\nadd(container='microcentrifuge tube', reagent='MPC protein precipitation reagent', volume='one-half volume (relative to extract)', source='supplied in the kit')\nvortex(container='microcentrifuge tube', duration='10 s')\ncentrifuge(container='microcentrifuge tube', duration='10 min', speed='10,000g', purpose='pellet the debris')\ntransfer(container='microcentrifuge tube', reagent='supernatant (containing nucleic acids)', to='sterile microcentrifuge tube', note='avoid pellet (containing SDS-protein complex)')\ntransfer(container='sterile microcentrifuge tube', reagent='sample', volume='up to 800 \u00b5l', to='fresh tube')\nadd(container='fresh tube', reagent='polyacryl carrier', volume='1 \u00b5l')\nvortex(container='fresh tube', duration='briefly')\nadd(container='fresh tube', reagent='polyacryl carrier', volume='1 \u00b5l')\nvortex(container='fresh tube', duration='briefly')\nadd(container='fresh tube', reagent='100% isopropanol', volume='equal volume (relative to sample)')\nmix(container='fresh tube', method='inverting tube several times')\ncentrifuge(container='fresh tube', duration='15\u201345 min', speed='\u226510,000g')\naspirate(container='fresh tube', reagent='supernatant', alternative='decant')\nwash(container='fresh tube', reagent='70% ethanol', times='twice')\ncentrifuge(container='fresh tube', duration='1 min')\naspirate(container='fresh tube', reagent='ethanol', alternative='decant')\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: fresh tube, reagent: pellet, other: {})\n\n### AUTOMATED SECTION ###\ndissolve(container='fresh tube', reagent='0.02- filtered, sterile 0.5\u00d7 TE buffer heated to 50\u00b0C', volume='10 \u00b5L', temperature='50\u00b0C')\ndigest(container='fresh tube', reagent='DNase or RNase', note='if required, to selectively remove DNA or RNA')",
+    "source_file": "protocol_75.txt"
+  }
+]

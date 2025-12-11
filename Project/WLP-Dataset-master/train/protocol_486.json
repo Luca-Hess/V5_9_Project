@@ -1,0 +1,597 @@
+[
+  {
+    "protocol": "SAMfluoro\u2122: SAM Methyltransferase Assay\nStandard Assay:\u00a0Label 8 clean glass test tubes with A-H and prepare the standards as indicated below.\nThe diluted standards are stable for 4 hours at room temperature.\nTube10\u00b5M Resorufin Stock (\u00b5l)1X Resorufin Buffer (\u00b5l)Final Concentration (\u00b5M)A1258751.25B2507502.5C3756253.75D5005005E6253756.25F7502507.5G8751258.75H1000010.\u00a0\u00a0\u00a0 \nThaw SAM Methyltransferase Assay Buffer and SAM Methyltransferase Assay Buffer Additive solution at room temperature.\nAdd the entire volume of SAM Methyltransferase Assay Buffer Additive into the SAM Methyltransferase Assay Buffer and mix it thoroughly.\nStore SAM Methyltransferase Assay Buffer at room temperature, do not freeze after addition of Additive.\nPositive Control: Adenosylhomocysteine: The vial contains 200\u00b5l of a 1mM solution of adenosylhomocysteine (AdoHcy).\nThaw the vial on ice.\nPrior to use, dilute 10\u00b5l with 90\u00b5l of SAM Methyltransferase Assay Buffer with Additive.\nSAMfluoro Enzyme Mix, supplied in 300\u00b5l vials.\nEach vial is suitable for 36 assays.\nThaw on ice only the number of vials you require for your assay.\nS-Adenosylmethionine (SAM), supplied lyophilized.\nReconstitute the contents ofthe vial with 100\u00b5l HCl Assay Reagent [20mM] to yield 6.9mM SAM.\nSAMfluoro Fluorometric Mix.\nImmediately prior to making the Master Mix, add 100\u00b5l DMSO to the vial and vortex.\nAdd 400\u00b5l proteomic grade or ultra pure water and vortex.\nResorufin Buffer: Add 4ml Resorufin Buffer [10X] to 36ml ultra pure water to generate 1X Resorufin Buffer.\nSample Preparation: Prepare your test sample, containing the purified SAM dependent methyltransferase to be assayed, according to your own standard protocol.\nPrepare the specific substrate for the methyltransferase to be assayed using the SAM Methyltransferase Assay Buffer or the buffer of your own choice.\nStandard Assay:\u00a0Add 115\u00b5l of each standard per well of a fluorescent compatible plate.\nPerform in duplicate.\nStandard Assay:\u00a0Blank the plate against 1X Resorufin Buffer.\nRead the plate after 5 minutes using an excitation wavelength of 530-540nm and an emission wavelength of 585-595nm.\nEquilibrate the SAM Methyltransferase Assay Buffer + Additive to 37 \u00b0C.\nAliquot a total volume of 5\u03bcl of your SAM methyltransferase samples to at least two wells of a 96 well plate.\nUse the SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0 as a diluent.\nWe recommend performing the reactions and controls in at least duplicate.\na. For the background control, aliquot 5\u03bcl SAM Methyltransferase Assay Buffer into each background control well.\nWe recommend performing the reactions in duplicate.\nb. For the positive control, add 5\u03bcl Positive Control and 10\u03bcl SAM Methyltransferase Assay Buffer to each positive control well.\nWe recommend performing the reactions in duplicate.\nAdd 10\u00b5l the appropriate acceptor substrate to the sample and background control wells, using SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0 as a diluent.\nImmediately prior to use and in a suitable tube, prepare the SAM Methyltransferase Assay Master Mix according to the table below:\nReagent36 wells72 wells100 wellsSAM Methyltransferase Assay Buffer + Additive3ml6ml9mlSAMfluoro Enzyme Mix1 vial/ 300\u00b5l2 vial/ 600\u00b5l3 vial/ 900\u00b5lSAMfluoro Fluorometric Mix200\u00b5l400\u00b5l600\u00b5lS-Adenosylmethionine1 vial/ 100\u00b5l2 vials/ 200\u00b5l3 vials/ 300\u00b5l.\u00a0 \nImmediately initiate the reaction by adding 100\u03bcl SAM Methyltransferase Master Mix to the wells.\nImmediately, read the plate at 37\u00b0C every minute for 30 minutes using an excitation wavelength of 530-540nm and an emission wavelength of 585- 595nm.\nStandard Assay: Dilute 25\u00b5l resorufin standard with 475\u00b5l 1X Resorufin Buffer.\nStandard Assay:\u00a0Mix 500\u00b5l of this diluted standard with 4.5ml 1X Resorufin to yield a stock solution of 10\u00b5M.",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "8 clean glass test tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "labels": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "glass test tubes A-H",
+          "reagent": "10\u00b5M Resorufin Stock",
+          "volume": [
+            "125\u00b5l",
+            "250\u00b5l",
+            "375\u00b5l",
+            "500\u00b5l",
+            "625\u00b5l",
+            "750\u00b5l",
+            "875\u00b5l",
+            "1000\u00b5l"
+          ],
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tube": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "glass test tubes A-H",
+          "reagent": "1X Resorufin Buffer",
+          "volume": [
+            "875\u00b5l",
+            "750\u00b5l",
+            "625\u00b5l",
+            "500\u00b5l",
+            "375\u00b5l",
+            "250\u00b5l",
+            "125\u00b5l",
+            "0\u00b5l"
+          ],
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tube": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E",
+              "F",
+              "G",
+              "H"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "SAM Methyltransferase Assay Buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "SAM Methyltransferase Assay Buffer Additive solution",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SAM Methyltransferase Assay Buffer",
+          "reagent": "SAM Methyltransferase Assay Buffer Additive",
+          "volume": "entire volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "SAM Methyltransferase Assay Buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "thoroughly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "SAM Methyltransferase Assay Buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "do_not_freeze": true
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "vial",
+          "reagent": "Adenosylhomocysteine (AdoHcy)",
+          "volume": "200\u00b5l",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "Adenosylhomocysteine (AdoHcy)",
+          "volume": "10\u00b5l with 90\u00b5l SAM Methyltransferase Assay Buffer with Additive",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "vial",
+          "reagent": "SAMfluoro Enzyme Mix",
+          "volume": "300\u00b5l per vial",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number_of_vials": "as required for assay"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "vial",
+          "reagent": "S-Adenosylmethionine (SAM)",
+          "volume": "100\u00b5l HCl Assay Reagent [20mM]",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "6.9mM SAM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SAMfluoro Fluorometric Mix vial",
+          "reagent": "DMSO",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "immediately_prior_to_master_mix": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "SAMfluoro Fluorometric Mix vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SAMfluoro Fluorometric Mix vial",
+          "reagent": "proteomic grade or ultra pure water",
+          "volume": "400\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "SAMfluoro Fluorometric Mix vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Resorufin Buffer [10X]",
+          "volume": "4ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "36ml ultra pure water",
+            "final_buffer": "1X Resorufin Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "test sample containing purified SAM dependent methyltransferase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "user's own standard protocol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "specific substrate for methyltransferase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "SAM Methyltransferase Assay Buffer or buffer of choice"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "fluorescent compatible plate",
+          "reagent": "each standard",
+          "volume": "115\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per_well": true,
+            "duplicate": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "blank",
+        "parameters": {
+          "container": "plate",
+          "reagent": "1X Resorufin Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "after 5 minutes",
+          "speed": null,
+          "other": {
+            "excitation_wavelength": "530-540nm",
+            "emission_wavelength": "585-595nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "SAM Methyltransferase Assay Buffer + Additive",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "SAM methyltransferase samples",
+          "volume": "5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "at_least_two_wells": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "as_diluent": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "background control wells",
+          "reagent": "SAM Methyltransferase Assay Buffer",
+          "volume": "5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "duplicate": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "positive control wells",
+          "reagent": "Positive Control",
+          "volume": "5\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "duplicate": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "positive control wells",
+          "reagent": "SAM Methyltransferase Assay Buffer",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "duplicate": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample and background control wells",
+          "reagent": "appropriate acceptor substrate",
+          "volume": "10\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "suitable tube",
+          "reagent": "SAM Methyltransferase Assay Master Mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "table": {
+              "36_wells": {
+                "SAM Methyltransferase Assay Buffer + Additive": "3ml",
+                "SAMfluoro Enzyme Mix": "1 vial/300\u00b5l",
+                "SAMfluoro Fluorometric Mix": "200\u00b5l",
+                "S-Adenosylmethionine": "1 vial/100\u00b5l"
+              },
+              "72_wells": {
+                "SAM Methyltransferase Assay Buffer + Additive": "6ml",
+                "SAMfluoro Enzyme Mix": "2 vials/600\u00b5l",
+                "SAMfluoro Fluorometric Mix": "400\u00b5l",
+                "S-Adenosylmethionine": "2 vials/200\u00b5l"
+              },
+              "100_wells": {
+                "SAM Methyltransferase Assay Buffer + Additive": "9ml",
+                "SAMfluoro Enzyme Mix": "3 vials/900\u00b5l",
+                "SAMfluoro Fluorometric Mix": "600\u00b5l",
+                "S-Adenosylmethionine": "3 vials/300\u00b5l"
+              }
+            }
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells",
+          "reagent": "SAM Methyltransferase Master Mix",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "initiate_reaction": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "every minute for 30 minutes",
+          "speed": null,
+          "other": {
+            "excitation_wavelength": "530-540nm",
+            "emission_wavelength": "585-595nm"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "resorufin standard",
+          "volume": "25\u00b5l with 475\u00b5l 1X Resorufin Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "diluted resorufin standard with 4.5ml 1X Resorufin Buffer",
+          "volume": "500\u00b5l diluted standard + 4.5ml 1X Resorufin Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "10\u00b5M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: 8 clean glass test tubes, other: {'labels': ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']})\n\n### AUTOMATED SECTION ###\npipette(container='glass test tubes A-H', reagent='10\u00b5M Resorufin Stock', volume=['125\u00b5l', '250\u00b5l', '375\u00b5l', '500\u00b5l', '625\u00b5l', '750\u00b5l', '875\u00b5l', '1000\u00b5l'], tube=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])\npipette(container='glass test tubes A-H', reagent='1X Resorufin Buffer', volume=['875\u00b5l', '750\u00b5l', '625\u00b5l', '500\u00b5l', '375\u00b5l', '250\u00b5l', '125\u00b5l', '0\u00b5l'], tube=['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'])\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: SAM Methyltransferase Assay Buffer, temperature: room temperature)\n# MANUAL: thaw (reagent: SAM Methyltransferase Assay Buffer Additive solution, temperature: room temperature)\n\n### AUTOMATED SECTION ###\nadd(container='SAM Methyltransferase Assay Buffer', reagent='SAM Methyltransferase Assay Buffer Additive', volume='entire volume')\nmix(container='SAM Methyltransferase Assay Buffer', speed='thoroughly')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: SAM Methyltransferase Assay Buffer, temperature: room temperature, other: {'do_not_freeze': True})\n# MANUAL: thaw (container: vial, reagent: Adenosylhomocysteine (AdoHcy), volume: 200\u00b5l, temperature: on ice)\n\n### AUTOMATED SECTION ###\ndilute(reagent='Adenosylhomocysteine (AdoHcy)', volume='10\u00b5l with 90\u00b5l SAM Methyltransferase Assay Buffer with Additive')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: vial, reagent: SAMfluoro Enzyme Mix, volume: 300\u00b5l per vial, temperature: on ice, other: {'number_of_vials': 'as required for assay'})\n\n### AUTOMATED SECTION ###\nreconstitute(container='vial', reagent='S-Adenosylmethionine (SAM)', volume='100\u00b5l HCl Assay Reagent [20mM]', final_concentration='6.9mM SAM')\nadd(container='SAMfluoro Fluorometric Mix vial', reagent='DMSO', volume='100\u00b5l', immediately_prior_to_master_mix=True)\nvortex(container='SAMfluoro Fluorometric Mix vial')\nadd(container='SAMfluoro Fluorometric Mix vial', reagent='proteomic grade or ultra pure water', volume='400\u00b5l')\nvortex(container='SAMfluoro Fluorometric Mix vial')\nadd(reagent='Resorufin Buffer [10X]', volume='4ml', to='36ml ultra pure water', final_buffer='1X Resorufin Buffer')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: test sample containing purified SAM dependent methyltransferase, other: {'protocol': \"user's own standard protocol\"})\n# MANUAL: prepare (reagent: specific substrate for methyltransferase, other: {'buffer': 'SAM Methyltransferase Assay Buffer or buffer of choice'})\n\n### AUTOMATED SECTION ###\nadd(container='fluorescent compatible plate', reagent='each standard', volume='115\u00b5l', per_well=True, duplicate=True)\n\n### MANUAL SECTION ###\n# MANUAL: blank (container: plate, reagent: 1X Resorufin Buffer)\n\n### AUTOMATED SECTION ###\nread(container='plate', duration='after 5 minutes', excitation_wavelength='530-540nm', emission_wavelength='585-595nm')\nequilibrate(container='SAM Methyltransferase Assay Buffer + Additive', temperature='37\u00b0C')\naliquot(container='96 well plate', reagent='SAM methyltransferase samples', volume='5\u00b5l', at_least_two_wells=True)\n\n### MANUAL SECTION ###\n# MANUAL: use (reagent: SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0, other: {'as_diluent': True})\n\n### AUTOMATED SECTION ###\naliquot(container='background control wells', reagent='SAM Methyltransferase Assay Buffer', volume='5\u00b5l', duplicate=True)\nadd(container='positive control wells', reagent='Positive Control', volume='5\u00b5l', duplicate=True)\nadd(container='positive control wells', reagent='SAM Methyltransferase Assay Buffer', volume='10\u00b5l', duplicate=True)\nadd(container='sample and background control wells', reagent='appropriate acceptor substrate', volume='10\u00b5l', diluent='SAM Methyltransferase Assay Buffer or 0.1M Tris, pH8.0')\nprepare(container='suitable tube', reagent='SAM Methyltransferase Assay Master Mix', table={'36_wells': {'SAM Methyltransferase Assay Buffer + Additive': '3ml', 'SAMfluoro Enzyme Mix': '1 vial/300\u00b5l', 'SAMfluoro Fluorometric Mix': '200\u00b5l', 'S-Adenosylmethionine': '1 vial/100\u00b5l'}, '72_wells': {'SAM Methyltransferase Assay Buffer + Additive': '6ml', 'SAMfluoro Enzyme Mix': '2 vials/600\u00b5l', 'SAMfluoro Fluorometric Mix': '400\u00b5l', 'S-Adenosylmethionine': '2 vials/200\u00b5l'}, '100_wells': {'SAM Methyltransferase Assay Buffer + Additive': '9ml', 'SAMfluoro Enzyme Mix': '3 vials/900\u00b5l', 'SAMfluoro Fluorometric Mix': '600\u00b5l', 'S-Adenosylmethionine': '3 vials/300\u00b5l'}})\nadd(container='wells', reagent='SAM Methyltransferase Master Mix', volume='100\u00b5l', initiate_reaction=True)\nread(container='plate', temperature='37\u00b0C', duration='every minute for 30 minutes', excitation_wavelength='530-540nm', emission_wavelength='585-595nm')\ndilute(reagent='resorufin standard', volume='25\u00b5l with 475\u00b5l 1X Resorufin Buffer')\nmix(reagent='diluted resorufin standard with 4.5ml 1X Resorufin Buffer', volume='500\u00b5l diluted standard + 4.5ml 1X Resorufin Buffer', final_concentration='10\u00b5M')",
+    "source_file": "protocol_486.txt"
+  }
+]

@@ -1,0 +1,901 @@
+[
+  {
+    "protocol": "High quality DNA from Fungi for long read sequencing e.g.\nPacBio\nMake lysis buffer by mixing buffer A+B+C (2.5:2.5:1 + 0.1%PVP final) and briefly heat to 64 \u00b0C.\nLet cool to room temperature for use in 50mL Falcon tubes.All following steps are based on 17.5ml lysis buffer as starting volume.\nadd 10uL (10kU) RNAse T1 to lysis buffer.\nGrind tissue/spores with liquid nitrogen in a mortar with sand, use 1g of sand per 100mg of starting material.\nGrind for 2 mins in 4x 15 sec bursts adding liquid nitrogen after each 15 sec grinding burst.\nTransfer powder to 50mL Falcon containing lysis buffer and RNAse, mix well by vortexing.\nIncubate at RT for 30 mins mixing by inversion every 5 mins.\nAdd 200uL Proteinase K, incubate at RT for 30 mins mixing by inversion every 5 mins.\nCool on ice for 5 mins.\nAdd 3.5 mL (0.2 vol) of KAc 5M, mix by inversion, incubate on ice for max 5 mins.\nSpin at 4oC and 5000g for 12 mins.\nTransfer supernatant to fresh Falcon tube containing 17.5ml (1vol) (P/C/I) and mix by inversion for 2 mins.\nSpin at 4 \u00b0C and 4000g for 10 mins.\nTransfer supernatant (might be milky but do not worry) to fresh Falcon tube containing 17.5ml (1vol) P/C/I and mix by inversion for 2 mins.\nSpin at 4 \u00b0C and 4000g for 10 mins.\nTransfer supernatant (~17mL) to fresh Falcon tube and add 5uL RNAse T1.\nIncubate for 20-30mins at RT.\nAdd 1.8mL (~0.1vol) NaAc and mix by inversion.\nAdd 18mL (~1vol) RT isopropanol and mix by inversion.\nIncubate at RT for 5-10mins.\nSpin at 4 \u00b0C and 10000g for 30 mins.\nCarefully pipette off supernatant till about 1-2 mL left, DNA will form a mostly translucent to white film/pellet at the bottom of the tube.\nUse 1mL pipette tip to transfer pellet and remaining liquid into fresh 1.7mL eppendorf tube.\nIf the pellet got loose during transfer add 1.5mL fresh 70% EtOH to the 50mL Faclon and spin for 5min at 4000g.\nRemove 1mL and transfer the remaining volume and DNA pellet to same 1.7mL eppendorf tube.\nSpin in table top centrifuge for 5 mins at 13000g.\nRemove supernatant with pipette and wash with 1.5mL fresh 70% Ethanol, invert several times to dislodge pellet.\nSpin in table top centrifuge for 5 mins at 13000g.\nRemove supernatant with pipette and wash with 1.5mL fresh 70% Ethanol, invert several times to dislodge pellet.\nSpin in table top centrifuge for 5 mins at 13000g.\nRemove supernatant with pipette.\nSpin in table top centrifuge for 1 min at 13000g.\nRemove remaining ethanol with pipette.\nAir-dry pellet for 7 mins.\nAdd 200uL of 10mM Tris pH9 leave at RT for 3 hours.\nFlick tube slightly for mixing and add 200uL of TE buffer.\nDO NOT!\nvortex as it shears DNA.\nleave at RT over night.\nNext day add another 100uL TE buffer and incubate for 1h at 28 \u00b0C with 1400rpm shaking.\nMeasure dsDNA concentration using BR Qubit and measure absorbance with Nanodrop.\nAt this point Qubit to Nanodrop ratios were 1/10 -1/20.This might be also a good step to assess DNA quality by runing a 0.8% TBE agarose gel with 500ng dsDNA and a lamda-Hind-III ladder as control.\nIf you have a Pulse Field Gel Electrophoresis around even better.\nUse AMPure beads for secondary clean up at beads 0.45 (Vol/Vol) following the PacBio protocol.\nElute in 10mM Tris pH8.\nMeasure dsDNA concentration using BR Qubit and measure absorbance with Nanodrop.\nAt this stage Qubit to Nanodrop ratios were 0.64, 260/280 1.87 and 260/230 1.37.\nSamples were submitted to Ramaciotti (http://www.ramaciotti.unsw.edu.au/) sequencing centre in Sydney.\nExcellent personel performed quality control, prepared 15-20kb libraries and we ran 13 SMRT cells with P6 chemistry.\nSome summary statistics are shown below.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer A, buffer B, buffer C, PVP",
+          "volume": "2.5:2.5:1 ratio + 0.1% PVP final",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": "64 \u00b0C",
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "RNAse T1",
+          "volume": "10uL (10kU)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "grind",
+        "parameters": {
+          "container": "mortar",
+          "reagent": "tissue/spores, sand, liquid nitrogen",
+          "volume": "1g sand per 100mg starting material",
+          "temperature": "liquid nitrogen",
+          "duration": "2 mins (4x 15 sec bursts)",
+          "speed": null,
+          "other": {
+            "add_liquid_nitrogen_each_burst": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "powder (ground tissue/spores)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contains_lysis_buffer_and_RNAse": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 mins",
+          "speed": null,
+          "other": {
+            "mix_by_inversion_every": "5 mins"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "Proteinase K",
+          "volume": "200uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 mins",
+          "speed": null,
+          "other": {
+            "mix_by_inversion_every": "5 mins"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "KAc 5M",
+          "volume": "3.5 mL (0.2 vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "max 5 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "12 mins",
+          "speed": "5000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh Falcon tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "add": "17.5ml (1vol) P/C/I"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 mins",
+          "speed": "inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "10 mins",
+          "speed": "4000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh Falcon tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "add": "17.5ml (1vol) P/C/I"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 mins",
+          "speed": "inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "10 mins",
+          "speed": "4000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh Falcon tube",
+          "reagent": "supernatant (~17mL)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": "RNAse T1",
+          "volume": "5uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20-30 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": "NaAc",
+          "volume": "1.8mL (~0.1vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": "RT isopropanol",
+          "volume": "18mL (~1vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "inversion",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5-10 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 \u00b0C",
+          "duration": "30 mins",
+          "speed": "10000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "Falcon tube",
+          "reagent": "supernatant",
+          "volume": "remove till 1-2 mL left",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "DNA_pellet_at_bottom": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "pellet and remaining liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "use_1mL_pipette_tip": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "fresh 70% EtOH",
+          "volume": "1.5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "if_pellet_loose_during_transfer": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "4000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "50mL Falcon tube",
+          "reagent": "1mL supernatant",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "remaining volume and DNA pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "13000g",
+          "other": {
+            "table_top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "use_pipette": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "fresh 70% Ethanol",
+          "volume": "1.5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "invert several times",
+          "other": {
+            "dislodge_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "13000g",
+          "other": {
+            "table_top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "use_pipette": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "fresh 70% Ethanol",
+          "volume": "1.5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "invert several times",
+          "other": {
+            "dislodge_pellet": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 mins",
+          "speed": "13000g",
+          "other": {
+            "table_top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "use_pipette": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "13000g",
+          "other": {
+            "table_top": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "remaining ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "use_pipette": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": "7 mins",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "10mM Tris pH9",
+          "volume": "200uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "3 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "flick tube slightly",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "TE buffer",
+          "volume": "200uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": "TE buffer",
+          "volume": "100uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "next_day": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1.7mL eppendorf tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "28 \u00b0C",
+          "duration": "1 hour",
+          "speed": "1400rpm shaking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "dsDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "BR Qubit"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "dsDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": null,
+          "reagent": "0.8% TBE agarose gel, 500ng dsDNA, lamda-Hind-III ladder",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "assess DNA quality"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "AMPure beads",
+          "volume": "0.45 (Vol/Vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "follow_protocol": "PacBio"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "10mM Tris pH8",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "dsDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "BR Qubit"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": "dsDNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Nanodrop"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='buffer A, buffer B, buffer C, PVP', volume='2.5:2.5:1 ratio + 0.1% PVP final')\nheat(reagent='lysis buffer', temperature='64 \u00b0C', duration='briefly')\ncool(reagent='lysis buffer', temperature='room temperature')\nadd(container='50mL Falcon tube', reagent='RNAse T1', volume='10uL (10kU)')\n\n### MANUAL SECTION ###\n# MANUAL: grind (container: mortar, reagent: tissue/spores, sand, liquid nitrogen, volume: 1g sand per 100mg starting material, temperature: liquid nitrogen, duration: 2 mins (4x 15 sec bursts), other: {'add_liquid_nitrogen_each_burst': True})\n\n### AUTOMATED SECTION ###\ntransfer(container='50mL Falcon tube', reagent='powder (ground tissue/spores)', contains_lysis_buffer_and_RNAse=True)\nmix(container='50mL Falcon tube', speed='vortex')\nincubate(container='50mL Falcon tube', temperature='room temperature', duration='30 mins', mix_by_inversion_every='5 mins')\nadd(container='50mL Falcon tube', reagent='Proteinase K', volume='200uL')\nincubate(container='50mL Falcon tube', temperature='room temperature', duration='30 mins', mix_by_inversion_every='5 mins')\ncool(container='50mL Falcon tube', temperature='on ice', duration='5 mins')\nadd(container='50mL Falcon tube', reagent='KAc 5M', volume='3.5 mL (0.2 vol)')\nmix(container='50mL Falcon tube', speed='inversion')\nincubate(container='50mL Falcon tube', temperature='on ice', duration='max 5 mins')\ncentrifuge(container='50mL Falcon tube', temperature='4 \u00b0C', duration='12 mins', speed='5000g')\ntransfer(container='fresh Falcon tube', reagent='supernatant', add='17.5ml (1vol) P/C/I')\nmix(container='Falcon tube', duration='2 mins', speed='inversion')\ncentrifuge(container='Falcon tube', temperature='4 \u00b0C', duration='10 mins', speed='4000g')\ntransfer(container='fresh Falcon tube', reagent='supernatant', add='17.5ml (1vol) P/C/I')\nmix(container='Falcon tube', duration='2 mins', speed='inversion')\ncentrifuge(container='Falcon tube', temperature='4 \u00b0C', duration='10 mins', speed='4000g')\ntransfer(container='fresh Falcon tube', reagent='supernatant (~17mL)')\nadd(container='Falcon tube', reagent='RNAse T1', volume='5uL')\nincubate(container='Falcon tube', temperature='room temperature', duration='20-30 mins')\nadd(container='Falcon tube', reagent='NaAc', volume='1.8mL (~0.1vol)')\nmix(container='Falcon tube', speed='inversion')\nadd(container='Falcon tube', reagent='RT isopropanol', volume='18mL (~1vol)')\nmix(container='Falcon tube', speed='inversion')\nincubate(container='Falcon tube', temperature='room temperature', duration='5-10 mins')\ncentrifuge(container='Falcon tube', temperature='4 \u00b0C', duration='30 mins', speed='10000g')\npipette(container='Falcon tube', reagent='supernatant', volume='remove till 1-2 mL left', DNA_pellet_at_bottom=True)\ntransfer(container='1.7mL eppendorf tube', reagent='pellet and remaining liquid', use_1mL_pipette_tip=True)\nadd(container='50mL Falcon tube', reagent='fresh 70% EtOH', volume='1.5mL', if_pellet_loose_during_transfer=True)\ncentrifuge(container='50mL Falcon tube', duration='5 mins', speed='4000g')\nremove(container='50mL Falcon tube', reagent='1mL supernatant', volume='1mL')\ntransfer(container='1.7mL eppendorf tube', reagent='remaining volume and DNA pellet')\ncentrifuge(container='1.7mL eppendorf tube', duration='5 mins', speed='13000g', table_top=True)\nremove(container='1.7mL eppendorf tube', reagent='supernatant', use_pipette=True)\nwash(container='1.7mL eppendorf tube', reagent='fresh 70% Ethanol', volume='1.5mL', speed='invert several times', dislodge_pellet=True)\ncentrifuge(container='1.7mL eppendorf tube', duration='5 mins', speed='13000g', table_top=True)\nremove(container='1.7mL eppendorf tube', reagent='supernatant', use_pipette=True)\nwash(container='1.7mL eppendorf tube', reagent='fresh 70% Ethanol', volume='1.5mL', speed='invert several times', dislodge_pellet=True)\ncentrifuge(container='1.7mL eppendorf tube', duration='5 mins', speed='13000g', table_top=True)\nremove(container='1.7mL eppendorf tube', reagent='supernatant', use_pipette=True)\ncentrifuge(container='1.7mL eppendorf tube', duration='1 min', speed='13000g', table_top=True)\nremove(container='1.7mL eppendorf tube', reagent='remaining ethanol', use_pipette=True)\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: 1.7mL eppendorf tube, reagent: pellet, duration: 7 mins, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1.7mL eppendorf tube', reagent='10mM Tris pH9', volume='200uL')\nincubate(container='1.7mL eppendorf tube', temperature='room temperature', duration='3 hours')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 1.7mL eppendorf tube, speed: flick tube slightly, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='1.7mL eppendorf tube', reagent='TE buffer', volume='200uL')\nadd(container='1.7mL eppendorf tube', reagent='TE buffer', volume='100uL', next_day=True)\nincubate(container='1.7mL eppendorf tube', temperature='28 \u00b0C', duration='1 hour', speed='1400rpm shaking')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: dsDNA, other: {'method': 'BR Qubit'})\n# MANUAL: measure (reagent: dsDNA, other: {'method': 'Nanodrop'})\n# MANUAL: run (reagent: 0.8% TBE agarose gel, 500ng dsDNA, lamda-Hind-III ladder, other: {'purpose': 'assess DNA quality'})\n\n### AUTOMATED SECTION ###\nclean(reagent='AMPure beads', volume='0.45 (Vol/Vol)', follow_protocol='PacBio')\nelute(reagent='10mM Tris pH8')\n\n### MANUAL SECTION ###\n# MANUAL: measure (reagent: dsDNA, other: {'method': 'BR Qubit'})\n# MANUAL: measure (reagent: dsDNA, other: {'method': 'Nanodrop'})",
+    "source_file": "protocol_8.txt"
+  }
+]

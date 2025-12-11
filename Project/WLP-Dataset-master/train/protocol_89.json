@@ -1,0 +1,282 @@
+[
+  {
+    "protocol": "One Step Procedure for Screening Recombinant Plasmids by Size\nInoculate 3.5 mL aliquots of LB media containing the appropriate antibiotic with single colony isolates of the bacteria containing the plasmid in question.\nIncubate overnight at 37\u00b0C.\nPlace 150 \u00b5L of each culture into a microfuge tube.\nCentrifuge in the microfuge for 30 seconds to pellet the bacteria.\nDiscard the supernatants.\nAdd 40 \u00b5L of agarose beads to each sample.\nAdd 14 \u00b5L of phenol:chloroform (1:1) to each sample and vortex for 5-10 sec.\nCentrifuge the samples in the microfuge for 5 min to separate the phases.\nLayer 10 \u00b5L of each of the aqueous phases onto a 1.2% agarose horizontal gel made up with 1X TPE buffer.\nIn the outside lanes run lambda DNA digested with HindIII and/or StyI for size markers.\nAlso run the original vector to show the size of the plasmid without insert DNA.\nGels may be double combed to facilitate running more samples.\nElectrophorese the gel in 1X TPE buffer for approximately 400-450 volt-hours.\nStain the gel with ethidium bromide at a concentration of 0.5 \u00b5g/mL in d-H2O for 30 minutes.\nObserve the gel on a UV light box and photograph the gel.\nFor further analysis, plasmid DNA may be isolated from those samples that indicate that they have inserts of the appropriate size.\nDestain the gel with d-H2O.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "LB media aliquots (3.5 mL)",
+          "reagent": "single colony isolates of bacteria containing plasmid",
+          "volume": "3.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotic": "appropriate antibiotic"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "LB media aliquots",
+          "reagent": null,
+          "volume": "3.5 mL",
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "culture",
+          "volume": "150 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "culture",
+          "volume": "150 \u00b5L",
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "purpose": "pellet bacteria"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "agarose beads",
+          "volume": "40 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "phenol:chloroform (1:1)",
+          "volume": "14 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "1.2% agarose horizontal gel",
+          "reagent": "aqueous phase",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X TPE"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "agarose gel (outside lanes)",
+          "reagent": "lambda DNA digested with HindIII and/or StyI",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "size markers"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "original vector",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "show size of plasmid without insert"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "electrophorese",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "approx. 400-450 volt-hours",
+          "speed": null,
+          "other": {
+            "buffer": "1X TPE"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "agarose gel",
+          "reagent": "ethidium bromide",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "concentration": "0.5 \u00b5g/mL",
+            "solvent": "d-H2O"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "UV light box"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "photograph",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "isolate",
+        "parameters": {
+          "container": "sample",
+          "reagent": "plasmid DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "samples with inserts of appropriate size"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "destain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "d-H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: LB media aliquots (3.5 mL), reagent: single colony isolates of bacteria containing plasmid, volume: 3.5 mL, other: {'antibiotic': 'appropriate antibiotic'})\n\n### AUTOMATED SECTION ###\nincubate(container='LB media aliquots', volume='3.5 mL', temperature='37\u00b0C', duration='overnight')\ndispense(container='microfuge tube', reagent='culture', volume='150 \u00b5L')\ncentrifuge(container='microfuge tube', reagent='culture', volume='150 \u00b5L', duration='30 seconds', purpose='pellet bacteria')\ndiscard(container='microfuge tube', reagent='supernatant')\nadd(container='microfuge tube', reagent='agarose beads', volume='40 \u00b5L')\nadd(container='microfuge tube', reagent='phenol:chloroform (1:1)', volume='14 \u00b5L')\nvortex(container='microfuge tube', reagent='sample', duration='5-10 seconds')\ncentrifuge(container='microfuge tube', reagent='sample', duration='5 min', purpose='separate phases')\nlayer(container='1.2% agarose horizontal gel', reagent='aqueous phase', volume='10 \u00b5L', buffer='1X TPE')\nrun(container='agarose gel (outside lanes)', reagent='lambda DNA digested with HindIII and/or StyI', purpose='size markers')\nrun(container='agarose gel', reagent='original vector', purpose='show size of plasmid without insert')\nelectrophorese(container='agarose gel', duration='approx. 400-450 volt-hours', buffer='1X TPE')\nstain(container='agarose gel', reagent='ethidium bromide', duration='30 minutes', concentration='0.5 \u00b5g/mL', solvent='d-H2O')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: gel, other: {'method': 'UV light box'})\n# MANUAL: photograph (container: gel, other: {})\n# MANUAL: isolate (container: sample, reagent: plasmid DNA, other: {'condition': 'samples with inserts of appropriate size'})\n\n### AUTOMATED SECTION ###\ndestain(container='gel', reagent='d-H2O')",
+    "source_file": "protocol_89.txt"
+  }
+]

@@ -1,0 +1,350 @@
+[
+  {
+    "protocol": "Large Volume Marine Cyanophage Phage Purification\nGrow up cells in large volumes (1-2L) to yield ~1011 - 1012 cells using 'microbubbling' technique.\nAdd Rnase A (10ug ml-1 = for 2L, 250\u00b5l of Qiagen's 100mg/ml stock) and DNase1 (0.25 SU ml-1 =2L, add 50\u00b5l of stock).\nCentrifuge 12,500 rpm (23,975xg) in Beckman Ja-14 for 15 minutes at 4\u00b0C Filter the supernatant through a Kim Wipe tissue paper.\nMix in polyethylene glycol (PEG 8,000; 100g L-1) by gentle stirring.\nIncubate overnight at 4\u00b0C.\nCollect PEG-phage precipitate by centrifuge (6 tubes at a time for the 2L volumes) at 12,500rpm (23,975xg) in Beckman Ja-14 for 15 minutes at 4\u00b0C.\nDiscard supernatant.\nGently resuspend pellet into ~1/150 volume Pro99 (~1-2 ml).\nAdd in resuspension media -place the tube on its side in syrofoam cut-outs so that it rests at an angle.\nPut on orbital shaker (150 rpm) in cold room for overnight re-suspension.\nCombine resuspended PEG concentrated phage into a single tube (now ready for layering onto a CsCl gradient).\nPrepare a CsCl step gradient (1.3, 1.4, 1.5, 1.65 bands) in ultracentrifuge tubes.  \nAdd concentrated phage sample at top.\nSpin 28,000 rpm for 4 hours at 4\u00b0C in SW28 swinging bucket rotor.\nRemove purified phage band (interface of \u03c1 = 1.4 and 1.5 bands on step gradient). \nStep dialyze in Slide-A-Lyzer dialysis cassettes (Pierce #66425; 10K MWCO, 0.5-3.0 ml volume) - 30 minutes against 5xNaCl (3M), 3xNaCl (1.8M), two changes of 1xNaCl buffer [MTM100 = 600 mM NaCl, 100 mM TrisHCL (pH = 7.5), 100 mM MgCl2].  \nStore dialyzed particles at 4\u00b0C until needed. \nIncubate for 1 hour at room temperature. \nAdd 116g NaCl per Liter of lysate (thus 2M addition + seawater yields final concentration ~2.6M).\nIncubate on ice 30 minutes.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "large volume vessel (1-2L)",
+          "reagent": "cells (marine cyanophage host)",
+          "volume": "1-2L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "technique": "microbubbling",
+            "yield": "~10^11 - 10^12 cells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell culture (2L)",
+          "reagent": "Rnase A (Qiagen's 100mg/ml stock)",
+          "volume": "250\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "10ug/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cell culture (2L)",
+          "reagent": "DNase1 (stock)",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "0.25 SU/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "cell culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 minutes",
+          "speed": "12,500 rpm (23,975xg)",
+          "other": {
+            "rotor": "Beckman Ja-14"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "Kim Wipe tissue paper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "filtered supernatant",
+          "reagent": "polyethylene glycol (PEG 8,000)",
+          "volume": "100g/L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gentle stirring"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "PEG mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "PEG-phage precipitate (6 tubes at a time for 2L volumes)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 minutes",
+          "speed": "12,500 rpm (23,975xg)",
+          "other": {
+            "rotor": "Beckman Ja-14"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "Pro99",
+          "volume": "~1-2 ml (~1/150 volume)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with pellet",
+          "reagent": "resuspension media (Pro99)",
+          "volume": "~1-2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "tube on its side in styrofoam cut-outs at an angle"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "tube with pellet and Pro99",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": "150 rpm",
+          "other": {
+            "device": "orbital shaker"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "combine",
+        "parameters": {
+          "container": "resuspended PEG concentrated phage",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "single tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "ultracentrifuge tubes",
+          "reagent": "CsCl solutions (1.3, 1.4, 1.5, 1.65 bands)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "step gradient"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "ultracentrifuge tube with CsCl gradient",
+          "reagent": "concentrated phage sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "at top"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "ultracentrifuge tube (SW28 swinging bucket rotor)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "4 hours",
+          "speed": "28,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "ultracentrifuge tube",
+          "reagent": "purified phage band (interface of \u03c1 = 1.4 and 1.5 bands)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": "Slide-A-Lyzer dialysis cassettes (Pierce #66425; 10K MWCO, 0.5-3.0 ml volume)",
+          "reagent": [
+            "5xNaCl (3M)",
+            "3xNaCl (1.8M)",
+            "1xNaCl buffer [MTM100 = 600 mM NaCl, 100 mM TrisHCL (pH = 7.5), 100 mM MgCl2]"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes (each step)",
+          "speed": null,
+          "other": {
+            "steps": "stepwise against listed buffers"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "dialyzed particles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until needed",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "dialyzed particles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "lysate",
+          "reagent": "NaCl",
+          "volume": "116g/L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "2M addition + seawater yields ~2.6M"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "lysate with NaCl",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: large volume vessel (1-2L), reagent: cells (marine cyanophage host), volume: 1-2L, other: {'technique': 'microbubbling', 'yield': '~10^11 - 10^12 cells'})\n\n### AUTOMATED SECTION ###\nadd(container='cell culture (2L)', reagent=\"Rnase A (Qiagen's 100mg/ml stock)\", volume='250\u00b5l', final concentration='10ug/ml')\nadd(container='cell culture (2L)', reagent='DNase1 (stock)', volume='50\u00b5l', final concentration='0.25 SU/ml')\ncentrifuge(container='cell culture', temperature='4\u00b0C', duration='15 minutes', speed='12,500 rpm (23,975xg)', rotor='Beckman Ja-14')\n\n### MANUAL SECTION ###\n# MANUAL: filter (container: supernatant, other: {'filter': 'Kim Wipe tissue paper'})\n\n### AUTOMATED SECTION ###\nmix(container='filtered supernatant', reagent='polyethylene glycol (PEG 8,000)', volume='100g/L', method='gentle stirring')\nincubate(container='PEG mixture', temperature='4\u00b0C', duration='overnight')\ncentrifuge(container='PEG-phage precipitate (6 tubes at a time for 2L volumes)', temperature='4\u00b0C', duration='15 minutes', speed='12,500 rpm (23,975xg)', rotor='Beckman Ja-14')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='pellet', reagent='Pro99', volume='~1-2 ml (~1/150 volume)')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: tube with pellet, reagent: resuspension media (Pro99), volume: ~1-2 ml, other: {'position': 'tube on its side in styrofoam cut-outs at an angle'})\n\n### AUTOMATED SECTION ###\nshake(container='tube with pellet and Pro99', temperature='cold room', duration='overnight', speed='150 rpm', device='orbital shaker')\ncombine(container='resuspended PEG concentrated phage', destination='single tube')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: ultracentrifuge tubes, reagent: CsCl solutions (1.3, 1.4, 1.5, 1.65 bands), other: {'type': 'step gradient'})\n\n### AUTOMATED SECTION ###\nadd(container='ultracentrifuge tube with CsCl gradient', reagent='concentrated phage sample', position='at top')\ncentrifuge(container='ultracentrifuge tube (SW28 swinging bucket rotor)', temperature='4\u00b0C', duration='4 hours', speed='28,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: ultracentrifuge tube, reagent: purified phage band (interface of \u03c1 = 1.4 and 1.5 bands), other: {})\n\n### AUTOMATED SECTION ###\ndialyze(container='Slide-A-Lyzer dialysis cassettes (Pierce #66425; 10K MWCO, 0.5-3.0 ml volume)', reagent=['5xNaCl (3M)', '3xNaCl (1.8M)', '1xNaCl buffer [MTM100 = 600 mM NaCl, 100 mM TrisHCL (pH = 7.5), 100 mM MgCl2]'], duration='30 minutes (each step)', steps='stepwise against listed buffers')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: dialyzed particles, temperature: 4\u00b0C, duration: until needed, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='dialyzed particles', temperature='room temperature', duration='1 hour')\nadd(container='lysate', reagent='NaCl', volume='116g/L', final concentration='2M addition + seawater yields ~2.6M')\nincubate(container='lysate with NaCl', temperature='on ice', duration='30 minutes')",
+    "source_file": "protocol_389.txt"
+  }
+]

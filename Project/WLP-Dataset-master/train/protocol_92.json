@@ -1,0 +1,69 @@
+[
+  {
+    "protocol": "Vitamin Solution for ESAW Media for Marine Phytoplankton\nThiamine Vitamin B12 Biotin After mixing, filter sterilize with 0.2\u00a0\u03bcm filter and store in dark at -20\u00baC.\nDivide into small aliquots if desired.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Thiamine, Vitamin B12, Biotin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "mixed vitamin solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2 \u03bcm"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered vitamin solution",
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light_condition": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": "small aliquots",
+          "reagent": "vitamin solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='Thiamine, Vitamin B12, Biotin')\nfilter(reagent='mixed vitamin solution', filter_type='0.2 \u03bcm')\nstore(reagent='filtered vitamin solution', temperature='-20\u00baC', light_condition='dark')\ndivide(container='small aliquots', reagent='vitamin solution')",
+    "source_file": "protocol_92.txt"
+  }
+]

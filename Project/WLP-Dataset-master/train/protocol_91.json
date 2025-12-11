@@ -1,0 +1,215 @@
+[
+  {
+    "protocol": "BL21 Electro\u00adcompetent Prep\nDilute 5mL O/N into 500mL LB.\nGrow to OD 0.6\u00ad-0.8 (~1.5\u00ad-3 hours).\nPour into 2x250mL Centrifuge bottles.\nChill bottles on ice for 10 minutes.\nSpin at 3000xg for 20min at 4C.\nDecant supernatant.\nResuspend + combine pellets in 250mL pre\u00adchilled 10% glycerol.\nSpin at 3000xg for 20min at 4C.\nDecant supernatant.\nResuspend pellet in 20mL pre\u00adchilled 10% glycerol (switch to 50mL Falcon Tube).\nSpin at 3000xg for 20min at 4C.\nDecant supernatant.\nResuspend in 3mL pre\u00adchilled 10% glycerol.\nSNAP Freeze in 25\u00ad50uL aliquots in LN2.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "O/N culture, LB",
+          "volume": "5mL O/N into 500mL LB",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1.5-3 hours",
+          "speed": null,
+          "other": {
+            "grow_to_OD": "0.6-0.8"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "2x250mL Centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "culture"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": "20min",
+          "speed": "3000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": "pre-chilled 10% glycerol",
+          "volume": "250mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "combine_pellets": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": "20min",
+          "speed": "3000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "Centrifuge bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "50mL Falcon Tube",
+          "reagent": "pre-chilled 10% glycerol",
+          "volume": "20mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50mL Falcon Tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4C",
+          "duration": "20min",
+          "speed": "3000xg",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "50mL Falcon Tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pre-chilled 10% glycerol",
+          "volume": "3mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "25-50uL aliquots",
+          "temperature": "LN2",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "SNAP Freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='O/N culture, LB', volume='5mL O/N into 500mL LB')\nincubate(duration='1.5-3 hours', grow_to_OD='0.6-0.8')\ndispense(container='2x250mL Centrifuge bottles', source='culture')\nchill(container='Centrifuge bottles', temperature='on ice', duration='10 minutes')\ncentrifuge(container='Centrifuge bottles', temperature='4C', duration='20min', speed='3000xg')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: Centrifuge bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='Centrifuge bottles', reagent='pre-chilled 10% glycerol', volume='250mL', combine_pellets=True)\ncentrifuge(container='Centrifuge bottles', temperature='4C', duration='20min', speed='3000xg')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: Centrifuge bottles, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(container='50mL Falcon Tube', reagent='pre-chilled 10% glycerol', volume='20mL', source='pellet')\ncentrifuge(container='50mL Falcon Tube', temperature='4C', duration='20min', speed='3000xg')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: 50mL Falcon Tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pre-chilled 10% glycerol', volume='3mL')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (volume: 25-50uL aliquots, temperature: LN2, other: {'method': 'SNAP Freeze'})",
+    "source_file": "protocol_91.txt"
+  }
+]

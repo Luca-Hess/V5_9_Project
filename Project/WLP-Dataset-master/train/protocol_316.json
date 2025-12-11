@@ -1,0 +1,263 @@
+[
+  {
+    "protocol": "Cryopreservation\nDilute 100% Glycerol to 50% Glycerol.\nIn a sterile 50ml Falcon tube pour 25ml 100% glycerol.\nAdd 25ml autoclaved MilliQ and mix thoroughly.\nPour into sterile reservoir.\nIn sterile 500ml deep 96 well plate add 240\u03bcl of 50% glycerol to each well using an 8 channel pipet. \nTake pore film off of 2ml deep 96 well plate.\nUsing a 12 channel 200\u03bcl pipet, pipet up and down from bottom of wells 3 times, then transfer 160\u03bcl from each well to the plate with glycerol.\nPipet up and down in glycerol 5 times.\nRepeat step 4 for all rows/wells. \nSeal 500ml deep 96 well plate (glycerol plate) with foil.\nPlace in shaker for 30 minutes.\nRe-seal 2ml deep 96 well plate with pore film and place in refrigerator.\nAfter 30 minutes on shaker, place 500ml deep plate in -80\u00baC freezer",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "100% glycerol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "50% glycerol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "sterile 50ml Falcon tube",
+          "reagent": "100% glycerol",
+          "volume": "25ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterile 50ml Falcon tube",
+          "reagent": "autoclaved MilliQ water",
+          "volume": "25ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile 50ml Falcon tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "thoroughly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "sterile reservoir",
+          "reagent": "50% glycerol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sterile 500ml deep 96 well plate",
+          "reagent": "50% glycerol",
+          "volume": "240\u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "8 channel pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": "pore film",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": null,
+          "volume": "200\u03bcl (up and down 3 times)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12 channel 200\u03bcl pipet",
+            "action": "pipet up and down from bottom of wells 3 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2ml deep 96 well plate to 500ml deep 96 well plate",
+          "reagent": null,
+          "volume": "160\u03bcl per well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "12 channel 200\u03bcl pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "500ml deep 96 well plate",
+          "reagent": null,
+          "volume": "up and down 5 times",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "pipet",
+            "action": "pipet up and down in glycerol 5 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "all rows/wells",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "step 4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "500ml deep 96 well plate",
+          "reagent": "foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "500ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": "pore film",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "500ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "500ml deep 96 well plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00baC freezer",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: dilute (reagent: 100% glycerol, other: {'final_concentration': '50% glycerol'})\n# MANUAL: pour (container: sterile 50ml Falcon tube, reagent: 100% glycerol, volume: 25ml, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='sterile 50ml Falcon tube', reagent='autoclaved MilliQ water', volume='25ml')\nmix(container='sterile 50ml Falcon tube', method='thoroughly')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: sterile reservoir, reagent: 50% glycerol, other: {})\n\n### AUTOMATED SECTION ###\ndispense(container='sterile 500ml deep 96 well plate', reagent='50% glycerol', volume='240\u03bcl per well', instrument='8 channel pipet')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 2ml deep 96 well plate, reagent: pore film, other: {})\n\n### AUTOMATED SECTION ###\npipette(container='2ml deep 96 well plate', volume='200\u03bcl (up and down 3 times)', instrument='12 channel 200\u03bcl pipet', action='pipet up and down from bottom of wells 3 times')\ntransfer(container='2ml deep 96 well plate to 500ml deep 96 well plate', volume='160\u03bcl per well', instrument='12 channel 200\u03bcl pipet')\npipette(container='500ml deep 96 well plate', volume='up and down 5 times', instrument='pipet', action='pipet up and down in glycerol 5 times')\nrepeat(container='all rows/wells', step='step 4')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: 500ml deep 96 well plate, reagent: foil, other: {})\n\n### AUTOMATED SECTION ###\nshake(container='500ml deep 96 well plate', duration='30 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: 2ml deep 96 well plate, reagent: pore film, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='2ml deep 96 well plate', temperature='refrigerator')\nwait(container='500ml deep 96 well plate', duration='30 minutes')\nplace(container='500ml deep 96 well plate', temperature='-80\u00baC freezer')",
+    "source_file": "protocol_316.txt"
+  }
+]

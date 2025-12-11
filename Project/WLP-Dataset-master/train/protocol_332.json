@@ -1,0 +1,675 @@
+[
+  {
+    "protocol": "OmniPrep\u2122 For High Quality Genomic DNA Extraction From Blood\nTo <500\u00b5l whole blood, buffy coat, bone marrow or packed cells in a 2ml microfuge tube, add 0.75ml Nuclei Isolation Buffer.\nCentrifuge at ~14,000g for 30 seconds to pellet the whole blood cells and nuclei.\nVortex to resuspend the pellet and add 0.75ml Nuclei Isolation Buffer.\nCentrifuge at ~14,000g for 30 seconds to pellet the nuclei.\nIncubate the sample at 55-60\u00b0C for 15 minutes.\nDo not heat higher than 60\u00b0C.\nOPTIONAL: For maximum DNA recovery, add 1\u00b5l Proteinase K solution for every 100\u00b5l Lysis Buffer and incubate at 60\u00b0C for 1-2 hours.\nInvert the tube periodically each hour.\nThis step will digest hard to handle tissues and significantly improve the yield.\nAllow the sample to cool to room temperature.\nAdd 200\u00b5l chloroform and mix by inverting the tube several times.\nCentrifuge for 10 minutes at 14,000xg and carefully remove the upper phase to a clean microcentrifuge tube.\nAdd 50\u00b5l DNA Stripping Solution to the sample and invert several times to mix.\nIncubate the sample for 5-10 minutes at 60\u00b0C.\nAdd 100\u00b5l Precipitation Solution and mix by inverting the tube several times.\nCentrifuge the sample at 14,000xg for 5 minutes.\nTransfer the supernatant to a clean tube and precipitate the genomic DNA with 500\u00b5l isopropanol.\nInvert the tubes 10 times to precipitate the DNA.\nOPTIONAL: For increased DNA recovery, add 2\u00b5l Mussel Glycogen as a DNA carrier.\nCentrifuge at 14,000xg for 5 minutes to pellet genomic DNA.\nRemove the supernatant.\nAdd 700\u00b5l 70% ethanol to the tube and invert several times to wash the DNA pellet.\nCentrifuge for 1 minute at 14,000xg.\nDecant or pipette off the ethanol wash.\u00a0 \nInvert the tube on a clean absorbent surface for several minutes to allow any excess ethanol to drain away.\nAdd 50\u00b5l TE Buffer to the pellet.\nIncubate at room temperature for at least 15 minutes to rehydrate.\nOPTIONAL: 1\u00b5l LongLife\u2122 RNase for every 100\u00b5l TE Buffer can be added at this stage.\nStore DNA at 4\u00b0C, for long term storage store at -20\u00b0C or -80\u00b0C.\nInvert to mix and incubate at room temperature for 1 minute, invert at least twice during incubation.\nRemove the supernatant containing lysed red blood cells, retaining the pellet.\nInvert tube to mix and then incubate for 10 minutes at room temperature, inverting the tube every 1-2 minutes.\nRemove the supernatant and retain the white nuclei pellet with 10-20\u00b5l supernatant.\nVortex to resuspend the pellet for improved nuclear lysis and add 500\u00b5l Genomic Lysis Buffer.\nMix by pipetting or vortexing at high speed for 10 seconds.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "Nuclei Isolation Buffer",
+          "volume": "0.75ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "<500\u00b5l whole blood, buffy coat, bone marrow or packed cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "14,000g",
+          "other": {
+            "purpose": "pellet whole blood cells and nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "Nuclei Isolation Buffer",
+          "volume": "0.75ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": "14,000g",
+          "other": {
+            "purpose": "pellet nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "55-60\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "Proteinase K solution",
+          "volume": "1\u00b5l per 100\u00b5l Lysis Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "1-2 hours",
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "frequency": "periodically each hour",
+            "optional": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "chloroform",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting tube several times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "14,000xg",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "upper phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean microcentrifuge tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": "DNA Stripping Solution",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert several times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "60\u00b0C",
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": "Precipitation Solution",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert several times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "14,000xg",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "isopropanol",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "precipitate genomic DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "10",
+            "purpose": "precipitate DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "Mussel Glycogen",
+          "volume": "2\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true,
+            "purpose": "DNA carrier"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "14,000xg",
+          "other": {
+            "purpose": "pellet genomic DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "70% ethanol",
+          "volume": "700\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "wash DNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert several times"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "14,000xg",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "ethanol wash",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "decant or pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several minutes",
+          "speed": null,
+          "other": {
+            "purpose": "drain excess ethanol",
+            "surface": "clean absorbent surface"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "TE Buffer",
+          "volume": "50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "DNA pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "at least 15 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "rehydrate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "LongLife\u2122 RNase",
+          "volume": "1\u00b5l per 100\u00b5l TE Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "4\u00b0C (short term), -20\u00b0C or -80\u00b0C (long term)",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "clean tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "frequency": "at least twice during incubation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "supernatant containing lysed red blood cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "retain": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "invert": "every 1-2 minutes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "retain": "white nuclei pellet with 10-20\u00b5l supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend pellet for improved nuclear lysis"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": "Genomic Lysis Buffer",
+          "volume": "500\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml microfuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": "high",
+          "other": {
+            "method": "pipetting or vortexing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='2ml microfuge tube', reagent='Nuclei Isolation Buffer', volume='0.75ml', sample='<500\u00b5l whole blood, buffy coat, bone marrow or packed cells')\ncentrifuge(container='2ml microfuge tube', duration='30 seconds', speed='14,000g', purpose='pellet whole blood cells and nuclei')\nvortex(container='2ml microfuge tube', purpose='resuspend pellet')\nadd(container='2ml microfuge tube', reagent='Nuclei Isolation Buffer', volume='0.75ml')\ncentrifuge(container='2ml microfuge tube', duration='30 seconds', speed='14,000g', purpose='pellet nuclei')\nincubate(container='2ml microfuge tube', temperature='55-60\u00b0C', duration='15 minutes')\nadd(container='2ml microfuge tube', reagent='Proteinase K solution', volume='1\u00b5l per 100\u00b5l Lysis Buffer', optional=True)\nincubate(container='2ml microfuge tube', temperature='60\u00b0C', duration='1-2 hours', optional=True)\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: 2ml microfuge tube, other: {'frequency': 'periodically each hour', 'optional': True})\n\n### AUTOMATED SECTION ###\ncool(container='2ml microfuge tube', temperature='room temperature')\nadd(container='2ml microfuge tube', reagent='chloroform', volume='200\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: 2ml microfuge tube, other: {'method': 'inverting tube several times'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='2ml microfuge tube', duration='10 minutes', speed='14,000xg')\nremove(container='2ml microfuge tube', reagent='upper phase', destination='clean microcentrifuge tube')\nadd(container='clean microcentrifuge tube', reagent='DNA Stripping Solution', volume='50\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: clean microcentrifuge tube, other: {'method': 'invert several times'})\n\n### AUTOMATED SECTION ###\nincubate(container='clean microcentrifuge tube', temperature='60\u00b0C', duration='5-10 minutes')\nadd(container='clean microcentrifuge tube', reagent='Precipitation Solution', volume='100\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: clean microcentrifuge tube, other: {'method': 'invert several times'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='clean microcentrifuge tube', duration='5 minutes', speed='14,000xg')\ntransfer(container='clean microcentrifuge tube', reagent='supernatant', destination='clean tube')\nadd(container='clean tube', reagent='isopropanol', volume='500\u00b5l', purpose='precipitate genomic DNA')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: clean tube, other: {'times': '10', 'purpose': 'precipitate DNA'})\n\n### AUTOMATED SECTION ###\nadd(container='clean tube', reagent='Mussel Glycogen', volume='2\u00b5l', optional=True, purpose='DNA carrier')\ncentrifuge(container='clean tube', duration='5 minutes', speed='14,000xg', purpose='pellet genomic DNA')\nremove(container='clean tube', reagent='supernatant')\nadd(container='clean tube', reagent='70% ethanol', volume='700\u00b5l', purpose='wash DNA pellet')\n\n### MANUAL SECTION ###\n# MANUAL: mix (container: clean tube, other: {'method': 'invert several times'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='clean tube', duration='1 minute', speed='14,000xg')\nremove(container='clean tube', reagent='ethanol wash', method='decant or pipette')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: clean tube, duration: several minutes, other: {'purpose': 'drain excess ethanol', 'surface': 'clean absorbent surface'})\n\n### AUTOMATED SECTION ###\nadd(container='clean tube', reagent='TE Buffer', volume='50\u00b5l', target='DNA pellet')\nincubate(container='clean tube', temperature='room temperature', duration='at least 15 minutes', purpose='rehydrate')\nadd(container='clean tube', reagent='LongLife\u2122 RNase', volume='1\u00b5l per 100\u00b5l TE Buffer', optional=True)\nstore(container='clean tube', reagent='DNA', temperature='4\u00b0C (short term), -20\u00b0C or -80\u00b0C (long term)')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: clean tube, duration: 1 minute, other: {'frequency': 'at least twice during incubation'})\n\n### AUTOMATED SECTION ###\nremove(container='2ml microfuge tube', reagent='supernatant containing lysed red blood cells', retain='pellet')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: 2ml microfuge tube, other: {'purpose': 'mix'})\n# MANUAL: incubate (container: 2ml microfuge tube, temperature: room temperature, duration: 10 minutes, other: {'invert': 'every 1-2 minutes'})\n\n### AUTOMATED SECTION ###\nremove(container='2ml microfuge tube', reagent='supernatant', retain='white nuclei pellet with 10-20\u00b5l supernatant')\nvortex(container='2ml microfuge tube', purpose='resuspend pellet for improved nuclear lysis')\nadd(container='2ml microfuge tube', reagent='Genomic Lysis Buffer', volume='500\u00b5l')\nmix(container='2ml microfuge tube', duration='10 seconds', speed='high', method='pipetting or vortexing')",
+    "source_file": "protocol_332.txt"
+  }
+]

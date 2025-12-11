@@ -1,0 +1,269 @@
+[
+  {
+    "protocol": "SMARTseq2. \nday 1 Wipe down bench with RNase zap or similar Dilute oligo-dT30VN primer by adding 37\u00b5L of 100\u00b5M primer to 63\u00b5L of nuclease free H20. \nPrepare RT \nmixReagentStock ConcAmt/1Amt/NFinal ConcNuclease Free H20---0.29\u00a0\u00a0FS Buffer5x2\u00a01xBetaine5M2\u00a01MMgCl21M0.06\u00a06mMTSO100\u00b5M0.1\u00a01\u00b5MDTT100mM0.5\u00a05mMSuperscript II200U/\u00b5L0.5\u00a0100URNase OUT40U/\u00b5L\u00a0\u00a010USample---------- (4.3)---------.\nIncubate at 72\u00ba for 3m, return to ice. \nTake 4.3\u00b5L of hybridized oligo-dT+RNA and put in strip tubes.\nAdd 5.7\u00b5L RT mix RTNum CycleGroupTempTime1xA4290m10xB502m\u00a0B422m1xC7015mholdD4hold Dilute ISPCR primers 1:100 Prepare PCR preamp mixComponentStockAmt/1Amt/NFinal Conc(First Strand Rxn)--10\u00b5L-------KAPA HiFi Hot Start2x12.5\u00a01xISPCR primers1\u00b5M2.5\u00b5L\u00a00.1\u00b5M--------------------------Final Volume\u00a025\u00b5L.\u00a0\u00a0 \nAdd 15\u00b5L PCR preamp mix to 10\u00b5L RT. \nPreamp PCR15 cycles is the current recommendation, but there's enough that I'll try 13 Ampure Cleanup.\nUse 0.6 volumes of beads, so 15\u00b5L of beads for the 25\u00b5L reaction.\nResuspend in 15.5\u00b5L EB, then measure concentrations using qubit.",
+    "actions": [
+      {
+        "action": "wipe",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase zap or similar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "oligo-dT30VN primer",
+          "volume": "37\u00b5L of 100\u00b5M primer + 63\u00b5L nuclease free H2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "RT mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": [
+              {
+                "reagent": "Nuclease Free H2O",
+                "volume": "0.29\u00b5L"
+              },
+              {
+                "reagent": "FS Buffer 5x",
+                "volume": "2\u00b5L"
+              },
+              {
+                "reagent": "Betaine 5M",
+                "volume": "2\u00b5L"
+              },
+              {
+                "reagent": "MgCl2 1M",
+                "volume": "0.06\u00b5L"
+              },
+              {
+                "reagent": "TSO 100\u00b5M",
+                "volume": "0.1\u00b5L"
+              },
+              {
+                "reagent": "DTT 100mM",
+                "volume": "0.5\u00b5L"
+              },
+              {
+                "reagent": "Superscript II 200U/\u00b5L",
+                "volume": "0.5\u00b5L"
+              },
+              {
+                "reagent": "RNase OUT 40U/\u00b5L",
+                "volume": null
+              },
+              {
+                "reagent": "Sample",
+                "volume": "4.3\u00b5L"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00baC",
+          "duration": "3m",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "strip tubes",
+          "reagent": "hybridized oligo-dT+RNA",
+          "volume": "4.3\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "strip tubes",
+          "reagent": "RT mix",
+          "volume": "5.7\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "ISPCR primers",
+          "volume": "1:100 dilution",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR preamp mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": [
+              {
+                "reagent": "KAPA HiFi Hot Start 2x",
+                "volume": "12.5\u00b5L"
+              },
+              {
+                "reagent": "ISPCR primers 1\u00b5M",
+                "volume": "2.5\u00b5L"
+              },
+              {
+                "reagent": "First Strand Rxn",
+                "volume": "10\u00b5L"
+              }
+            ],
+            "final_volume": "25\u00b5L"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR preamp mix",
+          "volume": "15\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "10\u00b5L RT"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 cycles (recommendation), 13 cycles (alternative)",
+          "speed": null,
+          "other": {
+            "method": "Preamp PCR"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Ampure beads",
+          "volume": "15\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "0.6 volumes for 25\u00b5L reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "EB",
+          "volume": "15.5\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "qubit",
+            "analyte": "concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: wipe (reagent: RNase zap or similar, other: {})\n\n### AUTOMATED SECTION ###\ndilute(reagent='oligo-dT30VN primer', volume='37\u00b5L of 100\u00b5M primer + 63\u00b5L nuclease free H2O')\nprepare(reagent='RT mix', components=[{'reagent': 'Nuclease Free H2O', 'volume': '0.29\u00b5L'}, {'reagent': 'FS Buffer 5x', 'volume': '2\u00b5L'}, {'reagent': 'Betaine 5M', 'volume': '2\u00b5L'}, {'reagent': 'MgCl2 1M', 'volume': '0.06\u00b5L'}, {'reagent': 'TSO 100\u00b5M', 'volume': '0.1\u00b5L'}, {'reagent': 'DTT 100mM', 'volume': '0.5\u00b5L'}, {'reagent': 'Superscript II 200U/\u00b5L', 'volume': '0.5\u00b5L'}, {'reagent': 'RNase OUT 40U/\u00b5L', 'volume': None}, {'reagent': 'Sample', 'volume': '4.3\u00b5L'}])\nincubate(temperature='72\u00baC', duration='3m')\ncool(temperature='ice')\ntransfer(container='strip tubes', reagent='hybridized oligo-dT+RNA', volume='4.3\u00b5L')\nadd(container='strip tubes', reagent='RT mix', volume='5.7\u00b5L')\ndilute(reagent='ISPCR primers', volume='1:100 dilution')\nprepare(reagent='PCR preamp mix', components=[{'reagent': 'KAPA HiFi Hot Start 2x', 'volume': '12.5\u00b5L'}, {'reagent': 'ISPCR primers 1\u00b5M', 'volume': '2.5\u00b5L'}, {'reagent': 'First Strand Rxn', 'volume': '10\u00b5L'}], final_volume='25\u00b5L')\nadd(reagent='PCR preamp mix', volume='15\u00b5L', to='10\u00b5L RT')\namplify(duration='15 cycles (recommendation), 13 cycles (alternative)', method='Preamp PCR')\nadd(reagent='Ampure beads', volume='15\u00b5L', ratio='0.6 volumes for 25\u00b5L reaction')\nresuspend(reagent='EB', volume='15.5\u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: measure (other: {'method': 'qubit', 'analyte': 'concentration'})",
+    "source_file": "protocol_598.txt"
+  }
+]

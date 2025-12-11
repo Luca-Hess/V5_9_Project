@@ -1,0 +1,447 @@
+[
+  {
+    "protocol": "Immunoblot Screening of Chlorella Virus Plaques\nTake the desired petri plates of virus plaques on chlorella lawns and chill in the cold room for 30-60 min prior to use.\nOverlay the plates with the nitrocellulose circles.\nAllow the nitrocellulose to lay on the agar surface for 15 min.\nAllow the filters to air dry.\nAdd 7.5-8.0 mL of the blocking solution to each filter in a glass petri plate and incubate for 30 min with gentle shaking (approximately 100 rpm on the rotary shaker).\nDecant the blocking solution from the petri plates.\nAdd 7.5-8.0 mL of a 1/600 dilution of the 1\u00b0 antiserum in 1X TBST to each filter and incubate for 30 min, with gentle shaking.\nDecant the antiserum from the petri plates.\nWash each filter 3X with 8.0 mL of 1X TBST for 10 min, with gentle shaking.\nDecant the TBST solution from the petri plates.\nAdd 7.5-8.0 ml of a 1/7500 dilution of the 2\u00b0 antiserum in 1X TBST to each of the filters and incubate for 30 min, with gentle shaking.\nDecant the antiserum solution from the petri plates.\nWash each filter 3X with 8.0 mL of 1X TBST for 10 min, with gentle shaking.\nDecant the TBST solution from the petri plates.\nAdd 7.5-8.0 mL of the reaction mixture to each of the filters, cover with aluminum foil and incubate with gentle shaking.\nWhen the color development is sufficient, decant the reaction mixture from the petri plates.\nAdd 8.0 mL of the stop/storage buffer to each filter and incubate for 30 min, with gentle shaking.\nPlace the filters into a glass pyrex baking dish with the stop/storage buffer and incubate for 30 min at room temperature.\nRemove the filters from the stop/storage buffer and allow to air dry on paper towels or filter papers.\nStore the filters in small plastic sealed bags.\nPlace in the cold room overnight.",
+    "actions": [
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "30-60 min",
+          "speed": null,
+          "other": {
+            "contents": "virus plaques on chlorella lawns"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "nitrocellulose circles",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "nitrocellulose circles",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "on": "agar surface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": "air",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "glass petri plate",
+          "reagent": "blocking solution",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "glass petri plate",
+          "reagent": "blocking solution",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "100 rpm",
+          "other": {
+            "with": "gentle shaking"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "blocking solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1/600 dilution of 1\u00b0 antiserum in 1X TBST",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1/600 dilution of 1\u00b0 antiserum in 1X TBST",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "gentle shaking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "antiserum",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1X TBST",
+          "volume": "8.0 mL",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "gentle shaking",
+          "other": {
+            "repeats": "3X",
+            "target": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "TBST solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1/7500 dilution of 2\u00b0 antiserum in 1X TBST",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1/7500 dilution of 2\u00b0 antiserum in 1X TBST",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "gentle shaking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "antiserum solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "1X TBST",
+          "volume": "8.0 mL",
+          "temperature": null,
+          "duration": "10 min",
+          "speed": "gentle shaking",
+          "other": {
+            "repeats": "3X",
+            "target": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "TBST solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "reaction mixture",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "aluminum foil",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "reaction mixture",
+          "volume": "7.5-8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle shaking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "when": "color development is sufficient"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "stop/storage buffer",
+          "volume": "8.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "each filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "petri plates",
+          "reagent": "stop/storage buffer",
+          "volume": "8.0 mL",
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "gentle shaking",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "glass pyrex baking dish",
+          "reagent": "stop/storage buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contents": "filters"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "glass pyrex baking dish",
+          "reagent": "stop/storage buffer",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "contents": "filters"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "glass pyrex baking dish",
+          "reagent": "filters",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "stop/storage buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": "air",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on": "paper towels or filter papers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "small plastic sealed bags",
+          "reagent": "filters",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nchill(container='petri plates', temperature='cold room', duration='30-60 min', contents='virus plaques on chlorella lawns')\n\n### MANUAL SECTION ###\n# MANUAL: overlay (container: petri plates, reagent: nitrocellulose circles)\n\n### AUTOMATED SECTION ###\nincubate(container='petri plates', reagent='nitrocellulose circles', duration='15 min', on='agar surface')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: filters, temperature: air)\n\n### AUTOMATED SECTION ###\nadd(container='glass petri plate', reagent='blocking solution', volume='7.5-8.0 mL', to='each filter')\nincubate(container='glass petri plate', reagent='blocking solution', volume='7.5-8.0 mL', duration='30 min', speed='100 rpm', with='gentle shaking')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: blocking solution)\n\n### AUTOMATED SECTION ###\nadd(container='petri plates', reagent='1/600 dilution of 1\u00b0 antiserum in 1X TBST', volume='7.5-8.0 mL', to='each filter')\nincubate(container='petri plates', reagent='1/600 dilution of 1\u00b0 antiserum in 1X TBST', volume='7.5-8.0 mL', duration='30 min', speed='gentle shaking')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: antiserum)\n\n### AUTOMATED SECTION ###\nwash(container='petri plates', reagent='1X TBST', volume='8.0 mL', duration='10 min', speed='gentle shaking', repeats='3X', target='each filter')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: TBST solution)\n\n### AUTOMATED SECTION ###\nadd(container='petri plates', reagent='1/7500 dilution of 2\u00b0 antiserum in 1X TBST', volume='7.5-8.0 mL', to='each filter')\nincubate(container='petri plates', reagent='1/7500 dilution of 2\u00b0 antiserum in 1X TBST', volume='7.5-8.0 mL', duration='30 min', speed='gentle shaking')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: antiserum solution)\n\n### AUTOMATED SECTION ###\nwash(container='petri plates', reagent='1X TBST', volume='8.0 mL', duration='10 min', speed='gentle shaking', repeats='3X', target='each filter')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: TBST solution)\n\n### AUTOMATED SECTION ###\nadd(container='petri plates', reagent='reaction mixture', volume='7.5-8.0 mL', to='each filter')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: petri plates, reagent: aluminum foil)\n\n### AUTOMATED SECTION ###\nincubate(container='petri plates', reagent='reaction mixture', volume='7.5-8.0 mL', speed='gentle shaking')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: petri plates, reagent: reaction mixture, other: {'when': 'color development is sufficient'})\n\n### AUTOMATED SECTION ###\nadd(container='petri plates', reagent='stop/storage buffer', volume='8.0 mL', to='each filter')\nincubate(container='petri plates', reagent='stop/storage buffer', volume='8.0 mL', duration='30 min', speed='gentle shaking')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: glass pyrex baking dish, reagent: stop/storage buffer, other: {'contents': 'filters'})\n\n### AUTOMATED SECTION ###\nincubate(container='glass pyrex baking dish', reagent='stop/storage buffer', temperature='room temperature', duration='30 min', contents='filters')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: glass pyrex baking dish, reagent: filters, other: {'from': 'stop/storage buffer'})\n# MANUAL: dry (container: filters, temperature: air, other: {'on': 'paper towels or filter papers'})\n# MANUAL: store (container: small plastic sealed bags, reagent: filters)\n\n### AUTOMATED SECTION ###\nchill(temperature='cold room', duration='overnight')",
+    "source_file": "protocol_254.txt"
+  }
+]

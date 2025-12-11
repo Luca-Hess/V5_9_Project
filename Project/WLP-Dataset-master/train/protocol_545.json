@@ -1,0 +1,195 @@
+[
+  {
+    "protocol": "Construction of U6-based sgRNA expression vectors\nOrder a pair of U6 vector-specific, 23nt targeting primers for each target For each target (GN19), order a forward primer TTCGN19 for the U6 promoter vectors; order a reverse primer AAACN19. \nNote that the N19 in the reverse primers is reverse complementary to that in the forward primer. \nTo order primers compatible with both the pU6x-sgRNA vectors and pT7-gRNA (Add gene plasmid #4675; (JAO et al 2013)), order degenerate primers WTMGGN18 (forward) and AMMCN18C (reverse), where M=A or C, W=A or T. \nAgain, the N18 in the reverse primers is reverse complementary to that in the forward primer. \nMix\u00a01\u00b5l 100\u00b5M stock each in a 20\u00b5l 1x NEB buffer 2. \nIncubate the mixture as follows: 95 \u00b0C for 5 min, ramp\u00a0down to 50 \u00b0C\u00a0at 0.1 \u00b0C/sec, 50 \u00b0C for 10 min chill\u00a0to 4 \u00b0C at normal ramp speed. \nMix the following components to ligate the annealed oligos to the U6 vector of choice (pU6x-sgRNA #1-#5, see diagrams and plasmid list in the\u00a0Guidelines). \nIncubate at 37 \u00b0C for 20 min. \nIncubate at 16 \u00b0C\u00a0for 15 min. \nIncubate at\u00a037\u00a0\u00b0C for 10 min. \nIncubate at 55 \u00b0C for 15 min. \nIncubate at\u00a080 \u00b0C for 15 min (optional).  \nThe reaction is ready for transformation (use 2 \u00b5l of the ligation and plate 10% ofthe transformants).\nTransform and spread onto spectinomycin (50\u00b5g/ml) plates.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "1\u00b5l 100\u00b5M stock each primer, 20\u00b5l 1x NEB buffer 2",
+          "volume": "total 22\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "primer mixture",
+          "volume": "22\u00b5l",
+          "temperature": "95\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "ramp_down",
+        "parameters": {
+          "container": null,
+          "reagent": "primer mixture",
+          "volume": "22\u00b5l",
+          "temperature": "from 95\u00b0C to 50\u00b0C",
+          "duration": null,
+          "speed": "0.1\u00b0C/sec",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "primer mixture",
+          "volume": "22\u00b5l",
+          "temperature": "50\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "primer mixture",
+          "volume": "22\u00b5l",
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": "normal ramp speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "annealed oligos, U6 vector of choice (pU6x-sgRNA #1-#5)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": null,
+          "temperature": "16\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "ligation mixture",
+          "volume": null,
+          "temperature": "80\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "2\u00b5l ligation mixture",
+          "volume": "2\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "downstream": "plate 10% of transformants"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "spectinomycin (50\u00b5g/ml) plates",
+          "reagent": "transformants",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='1\u00b5l 100\u00b5M stock each primer, 20\u00b5l 1x NEB buffer 2', volume='total 22\u00b5l')\nincubate(reagent='primer mixture', volume='22\u00b5l', temperature='95\u00b0C', duration='5 min')\nramp_down(reagent='primer mixture', volume='22\u00b5l', temperature='from 95\u00b0C to 50\u00b0C', speed='0.1\u00b0C/sec')\nincubate(reagent='primer mixture', volume='22\u00b5l', temperature='50\u00b0C', duration='10 min')\nchill(reagent='primer mixture', volume='22\u00b5l', temperature='4\u00b0C', speed='normal ramp speed')\nmix(reagent='annealed oligos, U6 vector of choice (pU6x-sgRNA #1-#5)')\nincubate(reagent='ligation mixture', temperature='37\u00b0C', duration='20 min')\nincubate(reagent='ligation mixture', temperature='16\u00b0C', duration='15 min')\nincubate(reagent='ligation mixture', temperature='37\u00b0C', duration='10 min')\nincubate(reagent='ligation mixture', temperature='55\u00b0C', duration='15 min')\nincubate(reagent='ligation mixture', temperature='80\u00b0C', duration='15 min', optional=True)\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: 2\u00b5l ligation mixture, volume: 2\u00b5l, other: {'downstream': 'plate 10% of transformants'})\n# MANUAL: spread (container: spectinomycin (50\u00b5g/ml) plates, reagent: transformants, other: {})",
+    "source_file": "protocol_545.txt"
+  }
+]

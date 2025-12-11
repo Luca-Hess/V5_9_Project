@@ -1,0 +1,55 @@
+[
+  {
+    "protocol": "Radioactive Labeling with T4 PNK 3' phosphatase minus\nSet-up the following reaction. \nIncubate at 37\u00b0C for 30 minutes.\nHeat inactivate by incubating at 65\u00b0C for 20 minutes.",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "description": "set up the following reaction"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.6
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "heat inactivate"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (other: {'description': 'set up the following reaction'})\n\n### AUTOMATED SECTION ###\nincubate(temperature='37\u00b0C', duration='30 minutes')\nincubate(temperature='65\u00b0C', duration='20 minutes', purpose='heat inactivate')",
+    "source_file": "protocol_312.txt"
+  }
+]

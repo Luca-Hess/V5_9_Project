@@ -1,0 +1,343 @@
+[
+  {
+    "protocol": "Modified Qiagen Plasmid Midi\nHarvest overnight bacterial culture by centrifuging at 4000 x g for 15 min at 4\u00b0C.\nResuspend the bacterial pellet in 4 ml Buffer P1.\nAdd 4 ml Buffer P2, mix thoroughly by vigorously inverting 4\u20136 times, and incubate at room temperature (15\u201325\u00b0C) for 5 min.\nIf using LyseBlue reagent, the solution will turn blue.\nAdd 4 ml prechilled Buffer P3, mix thoroughly by vigorously inverting 4\u20136 times.\nIncubate on ice for 15 min.\nIf using LyseBlue reagent, mix the solution until it is colorless.\nCentrifuge at 14,000 x g for 45 min at 4\u00b0C.\nEquilibrate a QIAGEN-tip 100 by applying 4 ml Buffer QBT, and allow column to empty by gravity flow.\nApply the supernatant from step 5 to the QIAGEN-tip and allow it to enter the resin by gravity flow.\nWash the QIAGEN-tip with 2 x 10 ml Buffer QC.\nAllow Buffer QC to move through the QIAGEN-tip by gravity flow.\nElute DNA with 5 ml Buffer QF into a clean 15 ml vessel.\nFor constructs larger than 45 kb, prewarming the elution buffer to 65\u00b0C may help to increase the yield.\nPrecipitate DNA by adding 3.5 ml room-temperature isopropanol to the eluted DNA and mix.\nCentrifuge at 4,000 x g for 60 min at 4\u00b0C.\nCarefully decant the supernatant.\nWash the DNA pellet with 2 ml room-temperature 70% ethanol and centrifuge at 4,000 x g for 10 min.\nCarefully decant supernatant.\nAir-dry pellet for 5\u201310 min and redissolve DNA in a suitable volume of appropriate buffer (e.g., TE buffer, pH 8.0, or 10 mM Tris\u00b7Cl, pH 8.5).",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "overnight bacterial culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": "4000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "bacterial pellet",
+          "reagent": "Buffer P1",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bacterial suspension",
+          "reagent": "Buffer P2",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "bacterial suspension with Buffer P2",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously inverting 4\u20136 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "bacterial suspension after mixing",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature (15\u201325\u00b0C)",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "bacterial lysate",
+          "reagent": "prechilled Buffer P3",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "bacterial lysate with Buffer P3",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously inverting 4\u20136 times",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "bacterial lysate after mixing",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "bacterial lysate after incubation",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "45 min",
+          "speed": "14,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "QIAGEN-tip 100",
+          "reagent": "Buffer QBT",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gravity flow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "QIAGEN-tip 100",
+          "reagent": "supernatant from step 5",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gravity flow"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "QIAGEN-tip 100",
+          "reagent": "Buffer QC",
+          "volume": "2 x 10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "QIAGEN-tip 100",
+          "reagent": "Buffer QF",
+          "volume": "5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "collect_into": "clean 15 ml vessel"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "Buffer QF",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "for constructs >45 kb"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "eluted DNA",
+          "reagent": "isopropanol",
+          "volume": "3.5 ml",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "eluted DNA with isopropanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA/isopropanol mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "60 min",
+          "speed": "4,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuged DNA pellet",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "DNA pellet",
+          "reagent": "70% ethanol",
+          "volume": "2 ml",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA pellet in ethanol",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "4,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "centrifuged DNA pellet",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "carefully": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "DNA pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5\u201310 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "redissolve",
+        "parameters": {
+          "container": "DNA pellet",
+          "reagent": "appropriate buffer (e.g., TE buffer, pH 8.0, or 10 mM Tris\u00b7Cl, pH 8.5)",
+          "volume": "suitable volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='overnight bacterial culture', temperature='4\u00b0C', duration='15 min', speed='4000 x g')\nresuspend(container='bacterial pellet', reagent='Buffer P1', volume='4 ml')\nadd(container='bacterial suspension', reagent='Buffer P2', volume='4 ml')\nmix(container='bacterial suspension with Buffer P2', speed='vigorously inverting 4\u20136 times')\nincubate(container='bacterial suspension after mixing', temperature='room temperature (15\u201325\u00b0C)', duration='5 min')\nadd(container='bacterial lysate', reagent='prechilled Buffer P3', volume='4 ml')\nmix(container='bacterial lysate with Buffer P3', speed='vigorously inverting 4\u20136 times')\nincubate(container='bacterial lysate after mixing', temperature='on ice', duration='15 min')\ncentrifuge(container='bacterial lysate after incubation', temperature='4\u00b0C', duration='45 min', speed='14,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: equilibrate (container: QIAGEN-tip 100, reagent: Buffer QBT, volume: 4 ml, other: {'method': 'gravity flow'})\n# MANUAL: apply (container: QIAGEN-tip 100, reagent: supernatant from step 5, other: {'method': 'gravity flow'})\n\n### AUTOMATED SECTION ###\nwash(container='QIAGEN-tip 100', reagent='Buffer QC', volume='2 x 10 ml')\nelute(container='QIAGEN-tip 100', reagent='Buffer QF', volume='5 ml', collect_into='clean 15 ml vessel')\nheat(container='Buffer QF', temperature='65\u00b0C', note='for constructs >45 kb')\nadd(container='eluted DNA', reagent='isopropanol', volume='3.5 ml', temperature='room temperature')\nmix(container='eluted DNA with isopropanol')\ncentrifuge(container='DNA/isopropanol mixture', temperature='4\u00b0C', duration='60 min', speed='4,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuged DNA pellet, reagent: supernatant, other: {'carefully': True})\n\n### AUTOMATED SECTION ###\nwash(container='DNA pellet', reagent='70% ethanol', volume='2 ml', temperature='room temperature')\ncentrifuge(container='DNA pellet in ethanol', temperature='4\u00b0C', duration='10 min', speed='4,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: centrifuged DNA pellet, reagent: supernatant, other: {'carefully': True})\n# MANUAL: air-dry (container: DNA pellet, duration: 5\u201310 min, other: {})\n\n### AUTOMATED SECTION ###\nredissolve(container='DNA pellet', reagent='appropriate buffer (e.g., TE buffer, pH 8.0, or 10 mM Tris\u00b7Cl, pH 8.5)', volume='suitable volume')",
+    "source_file": "protocol_191.txt"
+  }
+]

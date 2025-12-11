@@ -1,0 +1,128 @@
+[
+  {
+    "protocol": "Sampling for Flow Cytometry (FCM)\nAdvance preparation:\u00a0for each sample to be collected,\u00a0aliquot 900 \u00b5l of seawater (artificial seawater salts or complete sterile medium)\u00a0into a labeled 1.2 ml cryovial.\nCollect sample: add\u00a0100 \u00b5l of sample into\u00a0cryovial containing 900 \u00b5l of seawater.\nKeep cryovial cap clean and sterile.\nPreserve/fix sample: In the chemical fume hood, lay out cryovial caps (inside cap facing up) and use the repeator pipet to add 5 \u00b5l of glutaraldehyde (25%) to each cap.\nCap each\u00a0tube and mix well by inverting a few times.\nIncubate for 10 minutes in the dark.\nFlash-freeze tubes in liquid nitrogen and store at -80\u00b0C until analysis.",
+    "actions": [
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "1.2 ml cryovial",
+          "reagent": "seawater (artificial seawater salts or complete sterile medium)",
+          "volume": "900 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "label": "each cryovial"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial containing 900 \u00b5l seawater",
+          "reagent": "sample",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "cryovial cap (inside facing up)",
+          "reagent": "glutaraldehyde (25%)",
+          "volume": "5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "chemical fume hood",
+            "instrument": "repeator pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert a few times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "dark (no light)",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "flash-freeze",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "cryovial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until analysis",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\naliquot(container='1.2 ml cryovial', reagent='seawater (artificial seawater salts or complete sterile medium)', volume='900 \u00b5l', label='each cryovial')\nadd(container='cryovial containing 900 \u00b5l seawater', reagent='sample', volume='100 \u00b5l')\nadd(container='cryovial cap (inside facing up)', reagent='glutaraldehyde (25%)', volume='5 \u00b5l', location='chemical fume hood', instrument='repeator pipet')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: cryovial)\n\n### AUTOMATED SECTION ###\nmix(container='cryovial', method='invert a few times')\nincubate(container='cryovial', temperature='dark (no light)', duration='10 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: flash-freeze (container: cryovial, temperature: liquid nitrogen)\n\n### AUTOMATED SECTION ###\nstore(container='cryovial', temperature='-80\u00b0C', duration='until analysis')",
+    "source_file": "protocol_508.txt"
+  }
+]

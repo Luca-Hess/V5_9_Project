@@ -1,0 +1,632 @@
+[
+  {
+    "protocol": "Stellaris\u00ae RNA FISH Protocol for Brain\nThaw the slide-mounted tissue section to room temperature.\nImmerse the slide in cold 4% E.M. grade paraformaldehyde in 1X PBS for 15 minutes.\nWash with 1X PBS for 5 minutes.\nWash twice with 1X PBS for 5 minutes.\nDip the slide in nuclease-free water.\nDip the slide in 1X TEA buffer.\nImmerse the slide in 1X TEA + Acetic Anhydride for 10 minutes (Stirring!)\n*** Immerse the slide in 2X SSC for 3 minutes.\nImmerse the slide in 70% ethanol for 3 minutes.\nImmerse the slide in 95% ethanol for 3 minutes.\nImmerse the slide in 100% ethanol for 3 minutes.\nImmerse the slide in Chloroform for 5 minutes.\n3Immerse the slide in 100% ethanol for 3 minutes.\nImmerse the slide in 95% ethanol for 3 minutes.\nLet air dry for 90+ minutes (but no longer than 4 hours).\nIf frozen before using, warm the reconstituted probe solution to room temperature.\nMix well by vortexing, then centrifuge briefly.\nTo prepare the hybridization solution, add 4.0 \u03bcL of probe stock solution to 200 \u03bcL of hybridization buffer, and then vortex and centrifuge.\nThis creates a working probe solution of 250 nM.\nThis solution will be used on step 18.\nAssemble a humidified chamber: 150 mm tissue culture plate; a single water-saturated paper towel placed alongside the inner chamber edge.\nThis chamber will help prevent evaporation of the probe solution from the tissue section.\nAfter slide has dried for 90+ minutes, dispense 200 \u03bcL of hybridization buffer containing probe onto the tissue sections of the slide.\nCarefully place a clean 24 x 60 mm rectangular coverglass over the hybridization solution to completely cover the tissue sections and allow for even distribution of the hybridization solution.\nPlace the slide in the humidified chamber, cover with the tissue culture lid, and seal chamber with parafilm.\nIncubate in the dark at 37 \u00b0C for at least 4 hours (incubation can be continued up to 16 hours).\nImmerse the slide in wash buffer A, and allow the submerged coverglass to slide off the tissue section.\nGentle agitation maybe required to remove the coverglass.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant wash buffer A, and then add DAPI nuclear stain (wash buffer consisting of 5 ng/mL DAPI) to counterstain the nuclei.\nIncubate in the dark at 37 \u00b0C for 30 minutes.\nDecant DAPI staining buffer, and then immerse slide in Wash Buffer B for 3 minutes.\nImmerse slide in 50% ethanol for 3 minutes.\nImmerse slide in 85% ethanol for 3 minutes.\nImmerse slide in 100% ethanol for 3 minutes.\nLet air dry for 5-10 minutes.\nAdd a drop or two (approximately 50-100 \u03bcL) of Prolong Gold Antifade Mountant onto the tissue sections.\nCover with a clean 24 x 60 mm coverglass, allowing the antifade to spread evenly across the tissue sections.\nAllow Prolong Gold to cure overnight, in the dark, at room temperature.\nSeal the coverglass perimeter with clear nail polish, and allow to dry in the dark.\nProceed to imaging.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "slide-mounted tissue section",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "cold 4% E.M. grade paraformaldehyde in 1X PBS",
+          "volume": null,
+          "temperature": "cold",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dip",
+        "parameters": {
+          "container": "slide",
+          "reagent": "nuclease-free water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dip",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X TEA buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "1X TEA + Acetic Anhydride",
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "stirring",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "2X SSC",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "95% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "100% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Chloroform",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "100% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "95% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "90+ minutes (but no longer than 4 hours)",
+          "speed": null,
+          "other": {
+            "method": "air dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "reconstituted probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if frozen before using"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reconstituted probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reconstituted probe solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "hybridization solution",
+          "reagent": "probe stock solution",
+          "volume": "4.0 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "200 \u03bcL hybridization buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "hybridization solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "hybridization solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "slide (tissue sections)",
+          "reagent": "hybridization buffer containing probe",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "slide (tissue sections with hybridization solution)",
+          "reagent": "24 x 60 mm rectangular coverglass",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "allow for even distribution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": "humidified chamber",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cover": "tissue culture lid",
+            "seal": "parafilm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide in humidified chamber",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "at least 4 hours (up to 16 hours)",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "wash buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "allow submerged coverglass to slide off"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "slide in wash buffer A",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "purpose": "remove coverglass"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide in wash buffer A",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "slide",
+          "reagent": "wash buffer A",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "slide",
+          "reagent": "DAPI nuclear stain (wash buffer with 5 ng/mL DAPI)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "counterstain nuclei"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide in DAPI staining buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "slide",
+          "reagent": "DAPI staining buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "Wash Buffer B",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "50% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "85% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "immerse",
+        "parameters": {
+          "container": "slide",
+          "reagent": "100% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5-10 minutes",
+          "speed": null,
+          "other": {
+            "method": "air dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "slide (tissue sections)",
+          "reagent": "Prolong Gold Antifade Mountant",
+          "volume": "50-100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "a drop or two"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "slide (with antifade)",
+          "reagent": "clean 24 x 60 mm coverglass",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "allow antifade to spread evenly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "slide (with Prolong Gold Antifade Mountant)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "coverglass perimeter",
+          "reagent": "clear nail polish",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "slide (sealed with nail polish)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: slide-mounted tissue section, temperature: room temperature, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide', reagent='cold 4% E.M. grade paraformaldehyde in 1X PBS', temperature='cold', duration='15 minutes')\nwash(container='slide', reagent='1X PBS', duration='5 minutes')\nwash(container='slide', reagent='1X PBS', duration='5 minutes', repeat=2)\ndip(container='slide', reagent='nuclease-free water')\ndip(container='slide', reagent='1X TEA buffer')\nimmerse(container='slide', reagent='1X TEA + Acetic Anhydride', duration='10 minutes', speed='stirring')\nimmerse(container='slide', reagent='2X SSC', duration='3 minutes')\nimmerse(container='slide', reagent='70% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='95% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='100% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='Chloroform', duration='5 minutes')\nimmerse(container='slide', reagent='100% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='95% ethanol', duration='3 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: slide, duration: 90+ minutes (but no longer than 4 hours), other: {'method': 'air dry'})\n# MANUAL: warm (container: reconstituted probe solution, temperature: room temperature, other: {'condition': 'if frozen before using'})\n\n### AUTOMATED SECTION ###\nmix(container='reconstituted probe solution', speed='vortex')\ncentrifuge(container='reconstituted probe solution', duration='briefly')\nadd(container='hybridization solution', reagent='probe stock solution', volume='4.0 \u03bcL', to='200 \u03bcL hybridization buffer')\nmix(container='hybridization solution', speed='vortex')\ncentrifuge(container='hybridization solution', duration='briefly')\ndispense(container='slide (tissue sections)', reagent='hybridization buffer containing probe', volume='200 \u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: slide (tissue sections with hybridization solution), reagent: 24 x 60 mm rectangular coverglass, other: {'note': 'allow for even distribution'})\n# MANUAL: place (container: slide, reagent: humidified chamber, other: {'cover': 'tissue culture lid', 'seal': 'parafilm'})\n\n### AUTOMATED SECTION ###\nincubate(container='slide in humidified chamber', temperature='37\u00b0C', duration='at least 4 hours (up to 16 hours)', light='dark')\nimmerse(container='slide', reagent='wash buffer A', note='allow submerged coverglass to slide off')\nagitate(container='slide in wash buffer A', speed='gentle', purpose='remove coverglass')\nincubate(container='slide in wash buffer A', temperature='37\u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: slide, reagent: wash buffer A, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='slide', reagent='DAPI nuclear stain (wash buffer with 5 ng/mL DAPI)', purpose='counterstain nuclei')\nincubate(container='slide in DAPI staining buffer', temperature='37\u00b0C', duration='30 minutes', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: slide, reagent: DAPI staining buffer, other: {})\n\n### AUTOMATED SECTION ###\nimmerse(container='slide', reagent='Wash Buffer B', duration='3 minutes')\nimmerse(container='slide', reagent='50% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='85% ethanol', duration='3 minutes')\nimmerse(container='slide', reagent='100% ethanol', duration='3 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: dry (container: slide, duration: 5-10 minutes, other: {'method': 'air dry'})\n\n### AUTOMATED SECTION ###\nadd(container='slide (tissue sections)', reagent='Prolong Gold Antifade Mountant', volume='50-100 \u03bcL', note='a drop or two')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: slide (with antifade), reagent: clean 24 x 60 mm coverglass, other: {'note': 'allow antifade to spread evenly'})\n\n### AUTOMATED SECTION ###\nincubate(container='slide (with Prolong Gold Antifade Mountant)', temperature='room temperature', duration='overnight', light='dark')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: coverglass perimeter, reagent: clear nail polish, other: {})\n# MANUAL: dry (container: slide (sealed with nail polish), other: {'light': 'dark'})",
+    "source_file": "protocol_179.txt"
+  }
+]

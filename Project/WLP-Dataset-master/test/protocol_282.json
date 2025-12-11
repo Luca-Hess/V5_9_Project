@@ -1,0 +1,277 @@
+[
+  {
+    "protocol": "4% / 10% Stacking and Separating Protein Gel\nInto a 15 mL centrifuge tube, add 5 mL 2x Separating Gel Buffer. \nAdd 2.5 mL 40% Acrylamide/bis-acrylamide (29:1). \nAdd 2.5 mL DI H2O 50 uL 10% Ammonium persulfate. \nAdd 5 uL TEMED, then invert tube several times to properly mix all components and initiate the polymerization process.\nPipette 1 mL at a time of the 10% separating gel mixture between the two pieces of glass until you are about 75% of the way full.\nAdd a miniature amount of isopropyl alcohol on top of your separating gel so that it levels off (less than 50 uL), then wait for the gel to polymerize.\nYou will know it has polymerized as you should have some left in your centrifuge tube.\nIf you invert your centrifuge tube and the solution stays stuck on the bottom, then the gel has successfully polyermized.\nTo a new 15 mL centrifuge tube, add 2 mL of 2x stacking gel buffer.\nAdd 0.4 mL 40% acrylamide/bis-acrylamide (29:1). \nAdd 1.6 mL H2O Add 20 uL 10% Ammonium Persulfate. \nAdd 4 uL TEMED and invert tube to properly mix and initiate polymerization.\nUse a paper towel to remove any leftover isopropanol, then fill the gel the rest of the way up by pipetting in 1 mL of the 4% stacking gel at a time until the top of the glass is reached, and place the comb in, ensuring that no air bubbles are created.\nLet polymerize, then either use or store wrapped in a wet paper towel and plastic at 4 C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": "2x Separating Gel Buffer",
+          "volume": "5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": "40% Acrylamide/bis-acrylamide (29:1)",
+          "volume": "2.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": "DI H2O",
+          "volume": "2.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": "10% Ammonium persulfate",
+          "volume": "50 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": "TEMED",
+          "volume": "5 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "between the two pieces of glass",
+          "reagent": "10% separating gel mixture",
+          "volume": "1 mL at a time",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "fill_percent": "about 75% full"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "on top of separating gel (between glass plates)",
+          "reagent": "isopropyl alcohol",
+          "volume": "less than 50 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "level off gel"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "gel (between glass plates)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "gel polymerizes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": "2x stacking gel buffer",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": "40% acrylamide/bis-acrylamide (29:1)",
+          "volume": "0.4 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": "H2O",
+          "volume": "1.6 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": "10% Ammonium Persulfate",
+          "volume": "20 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": "TEMED",
+          "volume": "4 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "new 15 mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "gel (between glass plates)",
+          "reagent": "4% stacking gel",
+          "volume": "1 mL at a time",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "top of glass is reached"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "gel (between glass plates)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "until": "gel polymerizes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "gel (between glass plates)",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4 C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wrapped_in": "wet paper towel and plastic"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='15 mL centrifuge tube', reagent='2x Separating Gel Buffer', volume='5 mL')\nadd(container='15 mL centrifuge tube', reagent='40% Acrylamide/bis-acrylamide (29:1)', volume='2.5 mL')\nadd(container='15 mL centrifuge tube', reagent='DI H2O', volume='2.5 mL')\nadd(container='15 mL centrifuge tube', reagent='10% Ammonium persulfate', volume='50 uL')\nadd(container='15 mL centrifuge tube', reagent='TEMED', volume='5 uL')\nmix(container='15 mL centrifuge tube', method='invert tube several times')\npipette(container='between the two pieces of glass', reagent='10% separating gel mixture', volume='1 mL at a time', fill_percent='about 75% full')\nadd(container='on top of separating gel (between glass plates)', reagent='isopropyl alcohol', volume='less than 50 uL', purpose='level off gel')\nwait(container='gel (between glass plates)', until='gel polymerizes')\nadd(container='new 15 mL centrifuge tube', reagent='2x stacking gel buffer', volume='2 mL')\nadd(container='new 15 mL centrifuge tube', reagent='40% acrylamide/bis-acrylamide (29:1)', volume='0.4 mL')\nadd(container='new 15 mL centrifuge tube', reagent='H2O', volume='1.6 mL')\nadd(container='new 15 mL centrifuge tube', reagent='10% Ammonium Persulfate', volume='20 uL')\nadd(container='new 15 mL centrifuge tube', reagent='TEMED', volume='4 uL')\nmix(container='new 15 mL centrifuge tube', method='invert tube')\npipette(container='gel (between glass plates)', reagent='4% stacking gel', volume='1 mL at a time', until='top of glass is reached')\nwait(container='gel (between glass plates)', until='gel polymerizes')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: gel (between glass plates), temperature: 4 C, other: {'wrapped_in': 'wet paper towel and plastic'})",
+    "source_file": "protocol_282.txt"
+  }
+]

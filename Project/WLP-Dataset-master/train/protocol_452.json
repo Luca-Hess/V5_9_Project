@@ -1,0 +1,443 @@
+[
+  {
+    "protocol": "SYBR Staining - Jenn's Method\nRemove 10,000x SYBR-Gold and Anti-fade solutions from -20\u00b0C freezer.\nKeep SYBR in the dark.\nKeep SYBR in the dark.\nHave 0.02 \u03bcm filtered TE, dilution buffer and water on hand enough to make dilutions and wet filters.\nPrepare dilutions of sample.\n** Mix by inverting tube up and down.\nLabel frosted slides and get out coverslips.\nCut scotch tape in half for taping down coverslips.\nTurn off the lights.\nDilute SYBR 1:10 using 5 \u03bcl in 45\u03bcl TE.\nPut 10 \u03bcl drop of Anti-fade onto coverslips.\nLabel petri dishes:  mark in half and use arrow or number to designate top.\nPipet 2.5 \u03bcl diluted SYBR on to top and bottom halves of petri dish (2 drops per dish) and add 97.5 \u03bcl TE.\nTurn vacuum pump on, but do not turn on vacuum to tower supports.\nPipet water onto top of frosted support.\nPlace a backing filter on top of tower support and open vacuum to evenly lay down filter.\nTurn off vacuum.\nPlace another drop of water on top of filter and place 25 mm 0.02 \u03bcm Anodisc filter on top.\nTurn on vacuum.\nClamp tower to support.\nPipet in sample bringing tip very close to filter.\nLet filter dry (~30 sec).\nWith vacuum still running, carefully remove filter and place on drop of SYBR in petri dish.\nStain for 15 min.\nTurn off vacuum.\nRepeat steps 18 - 23\u00a0until all samples are stained.\nAfter staining, place 0.5 ml water on backing filter.\nPick up stained filter with forceps and place on top of water droplet.\nTurn on vacuum for ~30 sec to dry filter.\nRemove filter with vacuum still on and place coverslip with anti-fade on top.\nSet down forceps and place filter and coverslip onto slide.\nTape down one end.\nPut 2 coverslips per slide and tape in the middle to hold down coverslips.\nExamine immediately or place in freezer for 1 hr to improve staining.",
+    "actions": [
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "-20\u00b0C freezer",
+          "reagent": "10,000x SYBR-Gold and Anti-fade solutions",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR-Gold",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "dilutions of sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sample dilution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR-Gold",
+          "volume": "5 \u03bcl SYBR-Gold in 45 \u03bcl TE",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "1:10"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "coverslip",
+          "reagent": "Anti-fade",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "form": "drop"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "petri dish (top and bottom halves)",
+          "reagent": "diluted SYBR-Gold",
+          "volume": "2.5 \u03bcl per half (2 drops per dish)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "TE",
+          "volume": "97.5 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "frosted support (top)",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tower support",
+          "reagent": "backing filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "open",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "evenly lay down filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "backing filter",
+          "reagent": "water",
+          "volume": "drop",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter",
+          "reagent": "25 mm 0.02 \u03bcm Anodisc filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "filter",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tip position": "very close to filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "vacuum still running"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "on drop of SYBR"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "backing filter",
+          "reagent": "water",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "water droplet",
+          "reagent": "stained filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 sec",
+          "speed": null,
+          "other": {
+            "purpose": "dry filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "vacuum still on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": "filter and coverslip with anti-fade",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "tape",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "one end"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "slide",
+          "reagent": "2 coverslips",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "tape",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "middle to hold down coverslips"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "immediately"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "freezer",
+          "reagent": "slide",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 hr",
+          "speed": null,
+          "other": {
+            "purpose": "improve staining"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: -20\u00b0C freezer, reagent: 10,000x SYBR-Gold and Anti-fade solutions, temperature: -20\u00b0C, other: {})\n# MANUAL: keep (reagent: SYBR-Gold, other: {'condition': 'in the dark'})\n# MANUAL: prepare (reagent: dilutions of sample, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='tube', reagent='sample dilution', method='invert up and down')\ndilute(reagent='SYBR-Gold', volume='5 \u03bcl SYBR-Gold in 45 \u03bcl TE', ratio='1:10')\ndispense(container='coverslip', reagent='Anti-fade', volume='10 \u03bcl', form='drop')\npipette(container='petri dish (top and bottom halves)', reagent='diluted SYBR-Gold', volume='2.5 \u03bcl per half (2 drops per dish)')\nadd(container='petri dish', reagent='TE', volume='97.5 \u03bcl')\npipette(container='frosted support (top)', reagent='water')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tower support, reagent: backing filter, other: {})\n\n### AUTOMATED SECTION ###\nopen(container='vacuum', purpose='evenly lay down filter')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: backing filter, reagent: water, volume: drop, other: {})\n# MANUAL: place (container: filter, reagent: 25 mm 0.02 \u03bcm Anodisc filter, other: {})\n\n### AUTOMATED SECTION ###\nturn on(container='vacuum')\npipette(container='filter', reagent='sample', tip position='very close to filter')\ndry(container='filter', duration='30 sec')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter, other: {'condition': 'vacuum still running'})\n# MANUAL: place (container: petri dish, reagent: filter, other: {'location': 'on drop of SYBR'})\n\n### AUTOMATED SECTION ###\nstain(container='petri dish', reagent='filter', duration='15 min')\nplace(container='backing filter', reagent='water', volume='0.5 ml')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: water droplet, reagent: stained filter, other: {})\n\n### AUTOMATED SECTION ###\nturn on(container='vacuum', duration='30 sec', purpose='dry filter')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filter, other: {'condition': 'vacuum still on'})\n# MANUAL: place (container: slide, reagent: filter and coverslip with anti-fade, other: {})\n# MANUAL: tape (container: slide, other: {'location': 'one end'})\n# MANUAL: put (container: slide, reagent: 2 coverslips, other: {})\n# MANUAL: tape (container: slide, other: {'location': 'middle to hold down coverslips'})\n# MANUAL: examine (other: {'timing': 'immediately'})\n# MANUAL: freeze (container: freezer, reagent: slide, duration: 1 hr, other: {'purpose': 'improve staining'})",
+    "source_file": "protocol_452.txt"
+  }
+]

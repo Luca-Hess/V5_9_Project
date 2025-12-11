@@ -1,0 +1,504 @@
+[
+  {
+    "protocol": "Extraction of surface-community DNA from Ulva sp.\nThis method performs a direct lysis of the microbial community on the algal surface followed by an organic extraction and precipitation of the microbial DNA.\nUlva plants do get damaged during the treatment, however eukaryotic microbes might be lysed.\nTherefore microscopic check of the algal surface before treatment and removal of basal parts (old and most likely covered by secondary colonisers) is necessary.\nCollect several Ulva sp. plants by hand from intertidal pool and transfer into a plastic bag container with sea water (from the same site).\nTransfer into the laboratory asap.\nTransfer plants into sterile washing bowl container with a bit of CMFSW and cut off the buttom part (2-3 cm) of the plant with a sterile knife and forceps.\nChop the plant into piece of roughly 2-4 cm length width.\nWash plant pieces 3 times for 1-2 min with CMFSW; make sure smaller bits and non-plant material get wash away.\nTake a couple of random pieces and perform a microscopic observation on it:place Ulva piece onto glass slidecover Ulva piece with approx. 10 \u00b5l of live stain.\nPlace on cover slip and drain excessive liquid with a tissue.\nObserve under fluorescent microscope.\nDescribe and note surface coverage of cells.\nUsing a balance weigh out 12 g of plant wet-weight (drip dry) into a petri dish.\nTransfer 12 g of plant into a sterile 50 ml Falcon tube with 30 ml of CMFSW and 300 \u00b5l of 3M Multi Enzyme Cleaner; shake gently to make sure the plant surface is covered with the CMFSW cleaner mix.\nIncubate at room temperature.\nPerform microscopy after 30 min (see point 6).\nIf surface shows little cells left or is cleared, then go to point 12.\nOtherwise continue incubation (total 1 hour or 2 hours), until most cells on the plant surface are remove.\nTransfer liquid into 1 or 2 new 50ml Falcon tubes (file tubes not more than 20 ml); make sure no plant material is being transferred, optional the liquid can be filtered through a sterile 125 \u00b5m sieve of a 0.8 \u00b5m filter.\nAdd an equal volume of phenol chloroform isoamyl alcohol (25:24:1) to the supernatant and shake gently but thoroughly.\nCentrifuge for 5 min at 2000 x g.\nTransfer aqueous phase into a SS34 tubes.\nAdd 1/10 volume of 3M sodium acetate and 3 volumes of 95% ethanol.\nShake gently but thoroughly; note: a white precipitate will become visible.\nIncubate at \u201320oC for at least 2 hours.\nCentrifuge for 30 min at 20 000 x g.\nRemove supernatant.\nAdd 10 ml of 70% ethanol to pellet.\nCentrifuge for 5 min at 20 000 x g.\nRemove supernatant and air-dry pellet.\nResuspend pellet in 0.5 ml sterile water and transfer into 2 ml microcentrifuge tube.\nAdd 1/10 volume of 3M sodium acetate and 3 volumes of 95% ethanol.\nShake gently but thoroughly; note: a white precipitate will become visible.\nIncubate at \u201320oC for at least 2 hours.\nCentrifuge for 30 min at 20 000 x g.\nRemove supernatant.\nAdd 1 ml of 70% ethanol to pellet.\nCentrifuge for 5 min at 20 000 x g.\nRemove supernatant and air-dry pellet.\nResuspend pellet into 50-100\u00b5l TE-buffer.\nCheck approx. 1\u00b5l on agarose gel.",
+    "actions": [
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "plastic bag",
+          "reagent": "Ulva sp. plants with sea water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "intertidal pool",
+            "to": "plastic bag"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile washing bowl",
+          "reagent": "Ulva sp. plants",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "a bit of CMFSW"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sterile washing bowl",
+          "reagent": "Ulva plant pieces",
+          "volume": null,
+          "temperature": null,
+          "duration": "1-2 min per wash",
+          "speed": null,
+          "other": {
+            "times": 3,
+            "wash_solution": "CMFSW"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "petri dish",
+          "reagent": "Ulva plant pieces",
+          "volume": "12 g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "drip dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile 50 ml Falcon tube",
+          "reagent": "12 g Ulva plant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "with": "30 ml CMFSW and 300 \u00b5l 3M Multi Enzyme Cleaner"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "50 ml Falcon tube",
+          "reagent": "Ulva plant, CMFSW, Multi Enzyme Cleaner",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "purpose": "ensure plant surface is covered"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "50 ml Falcon tube",
+          "reagent": "Ulva plant, CMFSW, Multi Enzyme Cleaner",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 min to 2 hours",
+          "speed": null,
+          "other": {
+            "monitor": "until most cells on plant surface are removed"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "1 or 2 new 50 ml Falcon tubes",
+          "reagent": "liquid (supernatant)",
+          "volume": "\u226420 ml per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "optional, through 125 \u00b5m sieve or 0.8 \u00b5m filter",
+            "exclude": "plant material"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "50 ml Falcon tube",
+          "reagent": "phenol chloroform isoamyl alcohol (25:24:1)",
+          "volume": "equal volume to supernatant",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "50 ml Falcon tube",
+          "reagent": "supernatant + phenol chloroform isoamyl alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently but thoroughly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "50 ml Falcon tube",
+          "reagent": "supernatant + phenol chloroform isoamyl alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "2000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "3M sodium acetate",
+          "volume": "1/10 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "95% ethanol",
+          "volume": "3 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "aqueous phase + sodium acetate + ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently but thoroughly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "precipitate mixture",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "\u22652 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "precipitate mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "20,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "70% ethanol",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "pellet + 70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "20,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "SS34 tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "pellet in sterile water",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "3M sodium acetate",
+          "volume": "1/10 volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "95% ethanol",
+          "volume": "3 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "pellet + sodium acetate + ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently but thoroughly",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "precipitate mixture",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "\u22652 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "precipitate mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "20,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "70% ethanol",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "pellet + 70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "20,000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "air-dry",
+        "parameters": {
+          "container": "2 ml microcentrifuge tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellet in TE-buffer",
+          "volume": "50-100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ntransfer(container='plastic bag', reagent='Ulva sp. plants with sea water', from='intertidal pool', to='plastic bag')\ntransfer(container='sterile washing bowl', reagent='Ulva sp. plants', with='a bit of CMFSW')\nwash(container='sterile washing bowl', reagent='Ulva plant pieces', duration='1-2 min per wash', times=3, wash_solution='CMFSW')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: petri dish, reagent: Ulva plant pieces, volume: 12 g, other: {'condition': 'drip dry'})\n\n### AUTOMATED SECTION ###\ntransfer(container='sterile 50 ml Falcon tube', reagent='12 g Ulva plant', with='30 ml CMFSW and 300 \u00b5l 3M Multi Enzyme Cleaner')\nshake(container='50 ml Falcon tube', reagent='Ulva plant, CMFSW, Multi Enzyme Cleaner', speed='gently', purpose='ensure plant surface is covered')\nincubate(container='50 ml Falcon tube', reagent='Ulva plant, CMFSW, Multi Enzyme Cleaner', temperature='room temperature', duration='30 min to 2 hours', monitor='until most cells on plant surface are removed')\ntransfer(container='1 or 2 new 50 ml Falcon tubes', reagent='liquid (supernatant)', volume='\u226420 ml per tube', filter='optional, through 125 \u00b5m sieve or 0.8 \u00b5m filter', exclude='plant material')\nadd(container='50 ml Falcon tube', reagent='phenol chloroform isoamyl alcohol (25:24:1)', volume='equal volume to supernatant')\nshake(container='50 ml Falcon tube', reagent='supernatant + phenol chloroform isoamyl alcohol', speed='gently but thoroughly')\ncentrifuge(container='50 ml Falcon tube', reagent='supernatant + phenol chloroform isoamyl alcohol', duration='5 min', speed='2000 x g')\ntransfer(container='SS34 tube', reagent='aqueous phase')\nadd(container='SS34 tube', reagent='3M sodium acetate', volume='1/10 volume')\nadd(container='SS34 tube', reagent='95% ethanol', volume='3 volumes')\nshake(container='SS34 tube', reagent='aqueous phase + sodium acetate + ethanol', speed='gently but thoroughly')\nincubate(container='SS34 tube', reagent='precipitate mixture', temperature='-20\u00b0C', duration='\u22652 hours')\ncentrifuge(container='SS34 tube', reagent='precipitate mixture', duration='30 min', speed='20,000 x g')\nremove(container='SS34 tube', reagent='supernatant')\nadd(container='SS34 tube', reagent='70% ethanol', volume='10 ml')\ncentrifuge(container='SS34 tube', reagent='pellet + 70% ethanol', duration='5 min', speed='20,000 x g')\nremove(container='SS34 tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: SS34 tube, reagent: pellet)\n\n### AUTOMATED SECTION ###\nresuspend(container='2 ml microcentrifuge tube', reagent='pellet in sterile water', volume='0.5 ml')\nadd(container='2 ml microcentrifuge tube', reagent='3M sodium acetate', volume='1/10 volume')\nadd(container='2 ml microcentrifuge tube', reagent='95% ethanol', volume='3 volumes')\nshake(container='2 ml microcentrifuge tube', reagent='pellet + sodium acetate + ethanol', speed='gently but thoroughly')\nincubate(container='2 ml microcentrifuge tube', reagent='precipitate mixture', temperature='-20\u00b0C', duration='\u22652 hours')\ncentrifuge(container='2 ml microcentrifuge tube', reagent='precipitate mixture', duration='30 min', speed='20,000 x g')\nremove(container='2 ml microcentrifuge tube', reagent='supernatant')\nadd(container='2 ml microcentrifuge tube', reagent='70% ethanol', volume='1 ml')\ncentrifuge(container='2 ml microcentrifuge tube', reagent='pellet + 70% ethanol', duration='5 min', speed='20,000 x g')\nremove(container='2 ml microcentrifuge tube', reagent='supernatant')\n\n### MANUAL SECTION ###\n# MANUAL: air-dry (container: 2 ml microcentrifuge tube, reagent: pellet)\n\n### AUTOMATED SECTION ###\nresuspend(reagent='pellet in TE-buffer', volume='50-100 \u00b5l')",
+    "source_file": "protocol_133.txt"
+  }
+]

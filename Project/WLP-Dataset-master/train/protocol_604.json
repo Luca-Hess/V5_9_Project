@@ -1,0 +1,65 @@
+[
+  {
+    "protocol": "Lysis Buffer (10mM Tris-HCl, 2mM EDTA, 1% SDS). \nAdd 2.5ml 1M Tris-HCl pH 7.5 to an autoclaved bottle. \nAdd 1ml 0.5M EDTA. \nAdd 2.5g SDS. \nAdjust total volume to 250ml with MilliQ",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "1M Tris-HCl pH 7.5",
+          "volume": "2.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "0.5M EDTA",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "SDS",
+          "volume": "2.5g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "autoclaved bottle",
+          "reagent": "MilliQ",
+          "volume": "to 250ml total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='autoclaved bottle', reagent='1M Tris-HCl pH 7.5', volume='2.5ml')\nadd(container='autoclaved bottle', reagent='0.5M EDTA', volume='1ml')\nadd(container='autoclaved bottle', reagent='SDS', volume='2.5g')\nadjust(container='autoclaved bottle', reagent='MilliQ', volume='to 250ml total')",
+    "source_file": "protocol_604.txt"
+  }
+]

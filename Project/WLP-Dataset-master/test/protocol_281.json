@@ -1,0 +1,211 @@
+[
+  {
+    "protocol": "Generation of DNA fragments by DNase digestion\nIn a 50 \u00b5L reaction volume, resuspend 8 \u00b5g DNA in 50 mM Tris\u00b7HCl (pH 7.6), 10 mM MnCl2, 100 \u00b5g mL\u20131 bovine serum albumin, and 0.01 SU mL\u20131 DNase I.\nRemove 5 \u00b5L aliquots (adding to 45 \u00b5L TE buffer, pH 7.6) 0, 0.5, 1, 2, 5, 10, 15, and 30 min after addition of the digestion mixture.\nImmediately transfer to a tube containing 25 \u00b5L Tris-buffered (pH 7.0) phenol.\nPerform\u00a0a phenol:chloroform (1:1) extraction.\nPerform a chloroform extraction.\nPerform a chloroform extraction once more.\nPrecipitate the fragmented DNA.\nWash with 70% ethanol.\nDry.\nResuspend fragmented DNA in 23 \u00b5L of Blunt-ending Mix (100 \u00b5M dNTPs, 1 \u00d7 T4 DNA Pol Buffer).\nHeat at 65\u00b0C for 30 min to resuspend DNA and inactivate any DNase I that was carried over.\nCool to room temperature.\nAdd 2.5 U Klenow fragment and 5 U T4 DNA polymerase.\nIncubate the reaction at 37\u00b0C for 1 h.\nThe fragmented and blunt-ended virus DNA can be run on a 1% agarose gel prior to excising fragments in the 1000\u20134000 bp range using a standard gel extraction procedures before downstream cloning.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "reaction tube (50 \u00b5L volume)",
+          "reagent": "8 \u00b5g DNA in 50 mM Tris\u00b7HCl (pH 7.6), 10 mM MnCl2, 100 \u00b5g/mL bovine serum albumin, 0.01 SU/mL DNase I",
+          "volume": "50 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": "5 \u00b5L aliquots",
+          "temperature": null,
+          "duration": "at 0, 0.5, 1, 2, 5, 10, 15, and 30 min after addition of digestion mixture",
+          "speed": null,
+          "other": {
+            "destination": "45 \u00b5L TE buffer (pH 7.6)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube containing 25 \u00b5L Tris-buffered (pH 7.0) phenol",
+          "reagent": "aliquot in TE buffer",
+          "volume": "entire aliquot",
+          "temperature": null,
+          "duration": "immediately",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol:chloroform (1:1)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "once more"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fragmented DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "tube",
+          "reagent": "70% ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fragmented DNA pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fragmented DNA in 23 \u00b5L Blunt-ending Mix (100 \u00b5M dNTPs, 1\u00d7 T4 DNA Pol Buffer)",
+          "volume": "23 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "tube",
+          "reagent": "resuspended DNA",
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "purpose": "resuspend DNA and inactivate DNase I"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "2.5 U Klenow fragment and 5 U T4 DNA polymerase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 h",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='reaction tube (50 \u00b5L volume)', reagent='8 \u00b5g DNA in 50 mM Tris\u00b7HCl (pH 7.6), 10 mM MnCl2, 100 \u00b5g/mL bovine serum albumin, 0.01 SU/mL DNase I', volume='50 \u00b5L')\nremove(container='reaction tube', reagent='reaction mixture', volume='5 \u00b5L aliquots', duration='at 0, 0.5, 1, 2, 5, 10, 15, and 30 min after addition of digestion mixture', destination='45 \u00b5L TE buffer (pH 7.6)')\ntransfer(container='tube containing 25 \u00b5L Tris-buffered (pH 7.0) phenol', reagent='aliquot in TE buffer', volume='entire aliquot', duration='immediately')\nextract(container='tube', reagent='phenol:chloroform (1:1)')\nextract(container='tube', reagent='chloroform')\nextract(container='tube', reagent='chloroform', repeat='once more')\nprecipitate(container='tube', reagent='fragmented DNA')\nwash(container='tube', reagent='70% ethanol')\ndry(container='tube', reagent='fragmented DNA pellet')\nresuspend(container='tube', reagent='fragmented DNA in 23 \u00b5L Blunt-ending Mix (100 \u00b5M dNTPs, 1\u00d7 T4 DNA Pol Buffer)', volume='23 \u00b5L')\nheat(container='tube', reagent='resuspended DNA', temperature='65\u00b0C', duration='30 min', purpose='resuspend DNA and inactivate DNase I')\ncool(container='tube', reagent='reaction mixture', temperature='room temperature')\nadd(container='tube', reagent='2.5 U Klenow fragment and 5 U T4 DNA polymerase')\nincubate(container='tube', reagent='reaction mixture', temperature='37\u00b0C', duration='1 h')",
+    "source_file": "protocol_281.txt"
+  }
+]

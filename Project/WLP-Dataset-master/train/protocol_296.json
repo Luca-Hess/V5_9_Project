@@ -1,0 +1,113 @@
+[
+  {
+    "protocol": "IPTG \u2013 1 M (100 x) Stock Solution\nWeigh 2.383 g of IPTG. \nAdd 10 ml sterile H2O.\nDissolve completely.\nPrewet a 0.2 \u00b5m syringe filter by drawing through 5-10 ml of sterile H2O\u00a0and discard water.\nSterilize Ampicillin Stock through the prepared 0.2 \u00b5m syringe filter.\nStore in 1 ml aliquots at -20\u00b0C for up to 1 year.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "IPTG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "2.383 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "sterile H2O",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "IPTG in sterile H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "prewet",
+        "parameters": {
+          "container": "0.2 \u00b5m syringe filter",
+          "reagent": "sterile H2O",
+          "volume": "5-10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "draw through filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "water",
+          "volume": "5-10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "sterilize",
+        "parameters": {
+          "container": "prepared 0.2 \u00b5m syringe filter",
+          "reagent": "Ampicillin Stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "filter through"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "1 ml aliquots",
+          "reagent": "Ampicillin Stock",
+          "volume": "1 ml",
+          "temperature": "-20\u00b0C",
+          "duration": "up to 1 year",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: IPTG, other: {'mass': '2.383 g'})\n\n### AUTOMATED SECTION ###\nadd(reagent='sterile H2O', volume='10 ml')\ndissolve(reagent='IPTG in sterile H2O')\nprewet(container='0.2 \u00b5m syringe filter', reagent='sterile H2O', volume='5-10 ml', method='draw through filter')\ndiscard(reagent='water', volume='5-10 ml')\nsterilize(container='prepared 0.2 \u00b5m syringe filter', reagent='Ampicillin Stock', method='filter through')\nstore(container='1 ml aliquots', reagent='Ampicillin Stock', volume='1 ml', temperature='-20\u00b0C', duration='up to 1 year')",
+    "source_file": "protocol_296.txt"
+  }
+]

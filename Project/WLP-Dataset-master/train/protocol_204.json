@@ -1,0 +1,69 @@
+[
+  {
+    "protocol": "1M Tris-HCl\nDissolve 30.275g Trizma base in 200ml MilliQ. \nAdjust to pH 7.5 with HCl (~35ml). \nAdjust total volume to 250ml with MilliQ. \nAutoclave.",
+    "actions": [
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "Trizma base",
+          "volume": "30.275g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solvent": "200ml MilliQ"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "HCl",
+          "volume": "~35ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target_pH": "7.5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": "MilliQ",
+          "volume": "to 250ml total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndissolve(reagent='Trizma base', volume='30.275g', solvent='200ml MilliQ')\nadjust(reagent='HCl', volume='~35ml', target_pH='7.5')\nadjust(reagent='MilliQ', volume='to 250ml total')\n\n### MANUAL SECTION ###\n# MANUAL: autoclave (other: {})",
+    "source_file": "protocol_204.txt"
+  }
+]

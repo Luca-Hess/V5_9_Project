@@ -1,0 +1,247 @@
+[
+  {
+    "protocol": "Antibody Purification (small scale)\nCentrifuge anti-sera @ 4\u00baC, 14,000g, 10min.\n(Optional)\u00a0Filter through 0.2um filter.\nApply protein A or protein G beads gently to Bio-Rad empty gravity column.\nSet up the column on a vacuum manifold.\nEquilibrate column with 10 volumes of ice cold Binding Buffer.\nDilute anti-sera with 2 volumes of Binding Buffer.\nLet diluted anti-sera go through the column by gravity.\nCollect flow through and repeat step 6 once.\nWash column with 10 bed volumes of ice-cold Binding Buffer.\nElute antibody with 5 bed volumes of room temperature Elution Buffer.\nFill up each collecting tube with 200\u00a0\u03bcl 1M Tris-HCl (PH9.0).\nCollect 1ml of flow through in each collecting tube.\nSave for antibody activity test.\nRe-equilibrate column with 10 bed volumes of Binding Buffer.\nStore Column at refrigerator for later use.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "anti-sera tube",
+          "reagent": "anti-sera",
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "10 min",
+          "speed": "14,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "anti-sera",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_type": "0.2um"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "Bio-Rad empty gravity column",
+          "reagent": "protein A or protein G beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "vacuum manifold"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "column",
+          "reagent": "Binding Buffer",
+          "volume": "10 volumes",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "anti-sera",
+          "volume": "2 volumes of Binding Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "let go through",
+        "parameters": {
+          "container": "column",
+          "reagent": "diluted anti-sera",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "by gravity"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "flow through collection tube",
+          "reagent": "flow through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "step 6"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "column",
+          "reagent": "Binding Buffer",
+          "volume": "10 bed volumes",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "column",
+          "reagent": "Elution Buffer",
+          "volume": "5 bed volumes",
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fill up",
+        "parameters": {
+          "container": "collecting tube",
+          "reagent": "1M Tris-HCl (PH9.0)",
+          "volume": "200 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "collecting tube",
+          "reagent": "flow through",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "collected sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "antibody activity test"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "re-equilibrate",
+        "parameters": {
+          "container": "column",
+          "reagent": "Binding Buffer",
+          "volume": "10 bed volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "later use"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='anti-sera tube', reagent='anti-sera', temperature='4\u00baC', duration='10 min', speed='14,000g')\nfilter(reagent='anti-sera', filter_type='0.2um')\n\n### MANUAL SECTION ###\n# MANUAL: apply (container: Bio-Rad empty gravity column, reagent: protein A or protein G beads, other: {'method': 'gently'})\n# MANUAL: set up (container: column, other: {'equipment': 'vacuum manifold'})\n\n### AUTOMATED SECTION ###\nequilibrate(container='column', reagent='Binding Buffer', volume='10 volumes', temperature='ice cold')\ndilute(reagent='anti-sera', volume='2 volumes of Binding Buffer')\n\n### MANUAL SECTION ###\n# MANUAL: let go through (container: column, reagent: diluted anti-sera, other: {'method': 'by gravity'})\n\n### AUTOMATED SECTION ###\ncollect(container='flow through collection tube', reagent='flow through')\nrepeat(step='step 6')\nwash(container='column', reagent='Binding Buffer', volume='10 bed volumes', temperature='ice cold')\nelute(container='column', reagent='Elution Buffer', volume='5 bed volumes', temperature='room temperature')\nfill up(container='collecting tube', reagent='1M Tris-HCl (PH9.0)', volume='200 \u03bcl')\ncollect(container='collecting tube', reagent='flow through', volume='1 ml')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: collected sample, other: {'purpose': 'antibody activity test'})\n\n### AUTOMATED SECTION ###\nre-equilibrate(container='column', reagent='Binding Buffer', volume='10 bed volumes')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: column, temperature: refrigerator, other: {'purpose': 'later use'})",
+    "source_file": "protocol_461.txt"
+  }
+]

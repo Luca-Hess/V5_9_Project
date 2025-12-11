@@ -1,0 +1,351 @@
+[
+  {
+    "protocol": "Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays\nPrepare base plates using 0.4% GIBCO LM agarose (0.4g agarose / 100 ml). \nMake up plates using filtered, autoclaved 75% Sargasso Sea Water (SSW). \nAdd appropriate agarose, then microwave to a boil.\u00a0 \nAdd appropriate nutrients to bring levels up to media of choice (SN, Pro99?)\nVortex / shake to mix nutrients thoroughly and asceptically pour plates in hood. \nAllow plates to sit overnight to solidify before adding top agarose. \nPrepare your cyanophage dilutions ahead of plating cells in top agarose by using media for dilutions in 5 ml Falcon tubes. \nPrepare top agarose as 0.5% GIBCO. \nLow-Melt agarose. \nUse filtered, autoclaved 75% SSW to make up plates.\nAdd appropriate agarose (0.5 g / 100 ml SSW) and microwave as above. \nAllow to cool in a pre-heated water bath to ~29\u00b0C (solidifies ~24-28\u00b0C). \u00a0\nAsceptically add filter sterilized nutrients to bring level of top agarose nutrients to desired media of choice. \nAdd appropriate volume of cells to top agarose, vortex to thoroughly mix and plate immediately. \nInoculate a liquid culture using the same dilution chosen for the plates as an indicator of when the plates might turn green (within a few days of each other). \nIncubate all plates overnight at ~2-5 uE light without parafilming the plates to allow the top agarose to solidify completely. \nAfter the o/n incubation parafilm the plates (humidity control) and place at the appropriate light levels",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "base plates",
+          "reagent": "0.4% GIBCO LM agarose (0.4g agarose / 100 ml)",
+          "volume": "100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "make up",
+        "parameters": {
+          "container": "plates",
+          "reagent": "filtered, autoclaved 75% Sargasso Sea Water (SSW)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plates",
+          "reagent": "appropriate agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "microwave",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boil",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plates",
+          "reagent": "appropriate nutrients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "media": "SN, Pro99?"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "plates",
+          "reagent": "nutrients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "plates",
+          "reagent": "nutrients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "hood"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "solidify"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "5 ml Falcon tubes",
+          "reagent": "cyanophage dilutions",
+          "volume": "5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "media": "media for dilutions"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "top agarose (0.5% GIBCO Low-Melt agarose)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "make up",
+        "parameters": {
+          "container": "plates",
+          "reagent": "filtered, autoclaved 75% SSW",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plates",
+          "reagent": "appropriate agarose (0.5 g / 100 ml SSW)",
+          "volume": "0.5 g / 100 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "microwave",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "boil",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "pre-heated water bath ~29\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "cool"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plates",
+          "reagent": "filter sterilized nutrients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "bring level of top agarose nutrients to desired media"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "top agarose",
+          "reagent": "cells",
+          "volume": "appropriate volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "top agarose",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "thoroughly mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "plates",
+          "reagent": "top agarose + cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "immediately",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "liquid culture",
+          "reagent": "same dilution as plates",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "indicator for plate color change"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "~2-5 uE light",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "parafilm": "without"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "parafilm",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "humidity control"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "appropriate light levels",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: base plates, reagent: 0.4% GIBCO LM agarose (0.4g agarose / 100 ml), volume: 100 ml, other: {})\n# MANUAL: make up (container: plates, reagent: filtered, autoclaved 75% Sargasso Sea Water (SSW), other: {})\n\n### AUTOMATED SECTION ###\nadd(container='plates', reagent='appropriate agarose')\n\n### MANUAL SECTION ###\n# MANUAL: microwave (container: plates, temperature: boil, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='plates', reagent='appropriate nutrients', media='SN, Pro99?')\nvortex(container='plates', reagent='nutrients')\nshake(container='plates', reagent='nutrients')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plates, other: {'location': 'hood'})\n\n### AUTOMATED SECTION ###\nallow(container='plates', duration='overnight', purpose='solidify')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 5 ml Falcon tubes, reagent: cyanophage dilutions, volume: 5 ml, other: {'media': 'media for dilutions'})\n# MANUAL: prepare (reagent: top agarose (0.5% GIBCO Low-Melt agarose), other: {})\n# MANUAL: make up (container: plates, reagent: filtered, autoclaved 75% SSW, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='plates', reagent='appropriate agarose (0.5 g / 100 ml SSW)', volume='0.5 g / 100 ml')\n\n### MANUAL SECTION ###\n# MANUAL: microwave (container: plates, temperature: boil, other: {})\n\n### AUTOMATED SECTION ###\nallow(container='plates', temperature='pre-heated water bath ~29\u00b0C', purpose='cool')\nadd(container='plates', reagent='filter sterilized nutrients', purpose='bring level of top agarose nutrients to desired media')\nadd(container='top agarose', reagent='cells', volume='appropriate volume')\nvortex(container='top agarose', reagent='cells', purpose='thoroughly mix')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: plates, reagent: top agarose + cells, duration: immediately, other: {})\n# MANUAL: inoculate (container: liquid culture, reagent: same dilution as plates, other: {'purpose': 'indicator for plate color change'})\n\n### AUTOMATED SECTION ###\nincubate(container='plates', temperature='~2-5 uE light', duration='overnight', parafilm='without')\n\n### MANUAL SECTION ###\n# MANUAL: parafilm (container: plates, other: {'purpose': 'humidity control'})\n\n### AUTOMATED SECTION ###\nplace(container='plates', temperature='appropriate light levels')",
+    "source_file": "protocol_222.txt"
+  }
+]

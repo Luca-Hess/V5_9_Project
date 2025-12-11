@@ -1,0 +1,1800 @@
+[
+  {
+    "protocol": "16S Amplicon Library Generation for Reef Corals\nAdd coral samples (< 1 cm2\u00a0biopsies) to PowerBead Tubes.\nThe PowerBead tubes are beating the coral samples to help extract the DNA from the tissues\u00a0and break apart cell walls.\nFurthermore, the bead tubes have a solution that is protecting the DNA from degradation.\nMake sure C1 solution is dissolved\u00a0(heat solution if not dissolved), add 60 \u00b5l of Solution C1(This solution contains SDS needed for cell lysis). \nSecure\u00a0PowerSoil tubes in FastPrep Bead Beater.\nBeat bead tubes at setting 6 for 30 s(Modified from MoBio protocol, helps to facilitate bead beating and lysis tissues). \nDNA EXTRACTION\u00a0(modified from the MoBio\u00a0PowerSoil Kit).\nFor each sample label (1) BeadBeating tube, (4) 2 mL collection tubes and (1) Spin.\nFilter.\nExtract up to 24 samples at once, randomize the samples extracted across the\u00a0experiment design.\nFinally, extract\u00a0sample blanks to test for contamination.\nSecure PowerBead tubes to MoBio Vortex Adaptor, vortex at max speed for 10 minutes. \nCentrifuge tubes at 10,000 g (no more or tubes may break) for 30 seconds at room temperature.\nMake sure tubes can spin freely in the centrifuge.\nTransfer supernatant\u00a0to a clean pre-labeled 2 mL collection tube (expect bewteen 400 \u00b5L and 500 \u00b5L of supernatant). \nAdd 250 \u00b5L of Solution C2 and vortex for 5 seconds.\nIncubate at 4\u00b0C for 5 minutes(Solution C2 is an inhibitor removal reagent).\nCentrifuge tubes at room temperature for 1 minute at 10,000 g. \nAvoiding the pellet, transfer\u00a0up to 600 \u00b5L of supernatant to a clean, pre-labeled 2 ml collection tube(the pellet does not contain DNA). \nAdd 200 \u00b5L of solution C3 and vortex briefly.\nIncubate at 4\u00b0C for 5 minutes(Solution C3 is an inhibitor removal reagent).\nCentrigue the tubes at room temperature for 1 minute at 10,000 g. \nAvoiding the pellet, transfer up to 600 \u00b5L of supernatant to a clean, pre-labled 2 ml collection tube.\n(Pellet does not contain DNA) Centrifuge tubes at room temperature for 1 minute\u00a0at 10,000 g. \nTransfer 750 \u00b5L of supernatant to a clean, pre-labeled 2 ml collection tube(Pellet does not contain DNA). \nShake to mix the Solution C4, add 1.2 mL of solution C4 to supernatant and vortex for 5 seconds.\n(C4 is a high salt concentrated solution to help bind the DNA to the spin filter) \nLoad approximately 675 \u00b5L of the supernatant\u00a0and solution onto a spin\u00a0filter and centrifuge at 10,000 g for 1 minute at room temperature.\nDiscard flow through and add an additional 675 \u00b5L of supernatant to the spin filter, centrifuge at 10,000 g for 1 minute.\nLoad\u00a0remaining supernatant on to the spin filter and centrifuge at 10,000 g for 1 minute, discard the flow through.\nThe DNA should now be bound to the spin filter and the contaminants\u00a0should be passed through the filter and discarded.\nAdd 500 \u00b5L of Solution C5 and centrifuge at room temperature for 30 seconds at 10,000 g. \nDiscard the flow through into an appropriate waste container (for ethanol).\nThis is a wash step to clean the DNA that is bound to the membrane.\nCentrifuge the filter and 2 ml collection tube for 1 minute at 10,000 g.\u00a0\nThis spin removes residual Solution C5, which is important\u00a0because ethanol can inhibit PCR and other downstream applications. \nCarefully place spin filter into a new pre-labeled clean 2 ml collection tube.\nDo not splash Solution C5 onto the filter!!!\nAdd 100 \u00b5l of Solution C6 to the center of the filter and centrifuge at room temperature for 30 seconds at 10,000 g.\u00a0\nSolution C6 is a sterile elution buffer that will release the DNA from the spin filter membrane.\nTherefore, after the spin the DNA is now in solution in the 2 ml tube.\nYou can also elute your DNA using water or TE buffer. \nDiscard the spin filter and store DNA at -20\u00b0C until further processing.\nWhen ready proceed to next step.\nThis is a potential\u00a0stopping point\u00a0in the protocol.\nPCR\u00a0AMPLIFICATION for generation of 16s libraries.\nThis protocol assumes\u00a096 or more samples are being processed at the same time using PCR plates.\nAdjust accordingly if this is not the case.\nArray extracted DNA into 96 well plates according to a detailed\u00a0plate map design.\nThe\u00a0plate map should indicate the sample ID and barcodes being used.\nThis is essential because it is needed to bioinformatically\u00a0determine which sequences belongs to which samples after receiving data from the facility.\nMake sure to randomize the\u00a0DNA samples across\u00a0the\u00a0plates.\nNote this map has the forward barcodes SA501 to SA508 and the reverse barcodes SA701-SA712.\nStore DNA template plates at -20\u00b0C.\nReconstitute\u00a0primers to 100 \u00b5M in original primer tubes in Hyclone water.\nAfter allowing primers to sit overnight at 4\u00b0C, store at -20\u00b0C.\nDilute a working stock of the 100 \u00b5M primers to 10 mM using HyClone water in a 2 mL collection tube.\nMake sure to dilute enough primer to array across primer plates.\nDepending\u00a0how many samples are going to be multiplex, you may need to make several plates.\nIt is important\u00a0each primer combo is only used once across the entire study, therefore primer plates should be designed carefully.\nThe forward codes should be arrayed across the ROWS (i.e., A-H) of the primer plates, while the reverse codes should be arrayed across the COLUMNS (i.e., 1-12) of the primer plates.\nUsing the working stock and working carefully to avoid cross-contaminating PCR primers, array 20 \u00b5L of each 10 mM primer into a 96 well PCR plate based on a detailed\u00a0primer map that corresponds\u00a0to the DNA template map (see example above).\nAfter adding the forward and reverse primers, mix the contents of each well using a pipet tip.\nThe primer plates should be stored at -20\u00b0C.\nWarning: it is essential to avoid contaminating the primer stocks.\nMake sure to use individual pipet tips when arraying and mixing the primers.\nPCR\u00a0Amplifications.\nDefrost PCR reagents (NEB Q5 HiFidelity Master Mix), primers and DNA samples and label PCR plate (e.g., PCR plate I).\nTo minimize basis introduced during PCR reactions, run PCR reactions in triplicate, so for each PCR plate run three plates using the same chemistry.\nIf able, run PCR plates at the same time.\nIn a\u00a02 ml collection tubes, mix together 12.5 \u00b5L of the NEB\u00a0Q5\u00a0HiFidelity Master Mix and 8.5 \u00b5L of HyClone water for each 25 \u00b5l PCR reaction.\nVortex.\nUsing a multi-channel pipet, array 1.5 \u00b5l of each primer pair into the PCR plate according to the plate map Using a multi-channel pipet, array 21 \u00b5l of the master mix into each well of the PCR plate. \nUsing a multi-channel pipett, array 2.5 \u00b5l of each sample\u00a0DNA into the PCR plate according to the plate map.\nMake sure one sample corresponds to one well of the plate.\n**Note: DNA amount can be altered, but you will need to adjsut the amount of water added in step 28 and the amount of master mix added in step 30 to ensure each PCR reaction is 25 \u00b5l in volume.\nSeal PCR plate using a PCR plate cover and vortex PCR plate to mix contents.\nSpin PCR plate to ensure solution is at the bottom of each well.\nPlate PCR plate into thrermocycler.\nSet up and run following protocol:\nSelect Hot.\nStart for Taq at 98\u00b0C.\nStep 1: ( initial denaturation) 98\u00b0C, 30 seconds.\nStep 2: 30 Cycles of (denaturation) 98\u00b0C 10 seconds,\u00a0(primer annealing) 55\u00b0C 30 seconds,\u00a0(extentsion) 72\u00b0C 30 seconds.\nStep 3: (extension) 72\u00b0C 2 minutes.\nStep 4: 4\u00b0C Hold. \nCheck random sub-set of PCR products by running them out on a 1.5% Agarose gel and visualizing the gel in a gel box to check for PCR bands.\nStore PCR products at 4\u00b0C.\nBriefly,\u00a0to make a 1.5 % agarose gel, dissolve\u00a01.5 g of aragose in 100 ml of TBE buffer by heating solution in microwave.\nAdd 10 \u00b5l of sybrsafe dye to solution and poor into gel tray with comb.\nOn a piece of parafilm, mix 2 \u00b5l of 10X loading buffer with 5-10 \u00b5l of PCR product.\nLoad mixture onto gel.\nLoad 5-10 \u00b5l of a 50 bp ladder onto gel alongside PCR products.\nRun gel at 100 V for 30-40 minutes.\nVisualize using a gel imaging system to check for PCR bands between\u00a0300 and 400\u00a0bp.\nThis is a potential\u00a0stopping point in protocol.\nAfter all PCR reactions have been completed you can move forward to cleaning and normalizing\u00a0your PCR libraries.\nIf you ran your PCR libraries in triplicate, pool replicate sample PCR products \nPCR PURIFICATION AND NORMALIZATION.\nUsing Charm Biotech, Just-a-Plate 96 PCR purification\u00a0and normalization plates.\nFollowing the manufacture's\u00a0protocol.\nBefore starting, to prepare washing buffer (WB2), add 19.2 ml of 100 % Ethanol and mix well.\nStore at room temperature.\nMake sure to have plenty of pipet tips on hand, kimwipes or absorbent\u00a0paper, multichannel pipet and sterile multichannel liquid well.\nBind PCR products to plate wells.\nUsing a multichannel pipet, transfer 20 \u00b5l of each PCR product to normalization plate and place into corresponding wells.\nMix binding buffer in bottle, using a multichannel pipet add 20 \u00b5l of the binding buffer into each well.\nMix with PCR products by pipetting up and down 5-6 times.\nUse separate\u00a0pipet tip for each well.\nSeal the plate and incubate at room temperature for 30-60 minutes.\nRemove the plate cover.\nAspirate\u00a0the liquid from the plate by quickly flipping the plate upside down over a waster container and shaking vigorously.\nThen flip the plate onto a clean absorbent paper (i.e., kimwipe) and tap three or four times to remove liquid.\nMove onto the washing step.\nYour PCR products should now be bound to the walls of the normalization plate. \nWash PCR Products.\nAdd 50 \u00b5l of wash buffer to each well.\nMix solution by pipetting up and down 1-2 times.\nincubate plate for 30 seconds at room temperature.\nAspirate\u00a0wash buffer from the binding plate as done above for the binding buffer.\nRepeat these steps once for a total of two washes.\nAir dry normalization plate in an open thermocycler set at 65\u00b0C until dry (2-4 minutes).\nProceed to elution step. \nEluting PCR Products.\nAdd 20-40 \u00b5l of an elution buffer (such as the PowerSoil elution buffer Solution C6 used during DNA extraction) into each well of the plate using a multichannel pipet.\nSeal plate with a new adhesive cover and cortex for 30 seconds.\nCentrifuge the plate to collect all liquid at the bottom of the wells.\nStore cleaned and normalized products at 4\u00b0C for short term storage\u00a0or -20\u00b0C for longer storage.\nThis is a potential\u00a0stopping point.\nOPTIONAL: Quantify cleaned and normalized PCR products following the AccuClear dsDNA quantification kit manufacture\u00a0instructions.\nPool PCR ProductsUsing a multichannel pipet, pool PCR products by adding equal volumes of each pcr plate well to a sterile multichannel well.\nTransfer pooled library to a 2 mL tube.\nPurify pooled library using AMPure XP PCR purification\u00a0beads.\nThis step is added to help remove primer dimers from pooled library. \nMake sure beads are at room temperature, shake beads to re-suspend any settled particles. \nAdd beads at a 0.8 ratio (~0.8 X) to pooled library.\nFor instance, add 500 \u00b5L of the library to 400 \u00b5L of the beads.\nIncubate at room\u00a0temperature for 5 minutes. \nPlace tube\u00a0on magnetic stand for 2 minutes, wait until the solution is clear. \nAspirate the clear solution with care to not scrape the beads.\nAdd 900 \u00b5L of 70% ethanol to the tube. \nIncubate at room temperature for 30 seconds. \nAspirate the ethanol. \nPreform a second ethanol wash by repeating steps\u00a047-49.\nDry at room temperature for 15 mins or until ethanol is no longer visible. \nRemove tube from the magnet holder. \nAdd 200 \u00b5l of TE buffer to elute the DNA from the beads.\nIf a higher concentration is desired, add less TE buffer.\nPipet buffer up and down ten times to thoroughly\u00a0mix.\nPlace tube on magnet for 1 minute. \nTransfer eluent to a new pre-labled tube and submit to sequencing facility for QC and analysis.\nSize select PCR library.\nUsing the QIAquick gel extraction kit, cat # 28704.\nIf the bioanalizer trace from the sequencing facility indicates there\u00a0have multiple peaks not corresponding to the target amplicon sequence, it may be necessary to size select the library.\nThis is often the case with\u00a0obtaining\u00a016s amplicon sequences from corals.\nRun ~75 \u00b5L of the pooled library on a 2% agarose gel for appoximately 1 hour.\nMake sure to include a ladder.\nExcise the target amplicon\u00a0band from gel with a razor blade and place into a clean 15 mL tube.\nSee figure for comparison\u00a0of gel to determine if there are multiple\u00a0amplicons in library.\nObtain gel weight.\n1 g of gel is equal to 1 mL in volume.\nAdd 3 volumes of buffer QG for 1 volumn of gel.\nIncubate at 50\u00b0C for 10 minutes or until the gel is fully dissolved.\nMix by vortexing every 2-3 minutes to help dissolve the gel.\nAfter the gel has dissolved, check the color of the gel.\nIf it is orange or violet, at 10 \u00b5L of the 3 M sodium acetate and mix.\nAdd 1 gel volume of isopropanol to the sample and mix. \nPlace spin column in the provided 2 mL collection tube.\nTo bind the DNA, apply the sample to the column and centrifuge for 1 min at 10,000 rpm.\nDiscard the flow through.\nThe volume of the collection\u00a0tube only holds ~ 800 \u00b5L, so if the sample is more then 800 \u00b5L spin the sample through the volumn in 800 \u00b5L batches\u00a0to bind all of the DNA to the column.\nAdd 0.5 mL of buffer QG to the column and centrifuge for 1 min at 10,000 rpm.\nTo wash the sample, add 0.75 mL of Buffer PE to the column and centrifuge for 1 min at 10,000 rpm.\nDiscard the flow through.\nCentrifuge the column for 1 additional minute at 13,000 rpm\u00a0to ensure there is no residual Buffer PE.\nPlace the column in a new 2 mL micro-centrifuge tube.\nTo elute the DNA, add 25 \u00b5L of buffer EB to the center of the QIAquick membrane and centrifuge for 1 min at 13,000 rpm.\nSubmit the library to the sequencing facility.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PowerBead Tube",
+          "reagent": "coral samples (< 1 cm2 biopsies)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "C1 solution tube",
+          "reagent": "C1 solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "dissolve C1 solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "PowerBead Tube",
+          "reagent": "Solution C1",
+          "volume": "60 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "secure",
+        "parameters": {
+          "container": "PowerSoil tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "FastPrep Bead Beater"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "beat",
+        "parameters": {
+          "container": "bead tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 s",
+          "speed": "setting 6",
+          "other": {
+            "device": "FastPrep Bead Beater"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": [
+            "BeadBeating tube",
+            "2 mL collection tubes",
+            "Spin tube"
+          ],
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": {
+              "BeadBeating tube": 1,
+              "2 mL collection tubes": 4,
+              "Spin tube": 1
+            }
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.5
+      },
+      {
+        "action": "randomize",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": "up to 24 samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "sample blanks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "test for contamination"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "secure",
+        "parameters": {
+          "container": "PowerBead tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "MoBio Vortex Adaptor"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "PowerBead tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "max speed",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean pre-labeled 2 mL collection tube",
+          "reagent": "supernatant",
+          "volume": "400-500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL collection tube",
+          "reagent": "Solution C2",
+          "volume": "250 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 mL collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean, pre-labeled 2 ml collection tube",
+          "reagent": "supernatant",
+          "volume": "up to 600 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "solution C3",
+          "volume": "200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean, pre-labeled 2 ml collection tube",
+          "reagent": "supernatant",
+          "volume": "up to 600 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean, pre-labeled 2 ml collection tube",
+          "reagent": "supernatant",
+          "volume": "750 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "Solution C4 bottle",
+          "reagent": "Solution C4",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix Solution C4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": "solution C4",
+          "volume": "1.2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "supernatant and solution",
+          "volume": "675 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "waste": "appropriate waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "supernatant",
+          "volume": "675 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "remaining supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "waste": "appropriate waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "Solution C5",
+          "volume": "500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "waste": "appropriate waste container"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "filter and 2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": "Solution C6",
+          "volume": "100 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": "10,000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "2 ml tube",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "until further processing"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "array",
+        "parameters": {
+          "container": "96 well plates",
+          "reagent": "extracted DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate map": "detailed plate map design"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "randomize",
+        "parameters": {
+          "container": "DNA samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "across": "plates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "DNA template plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "reconstitute",
+        "parameters": {
+          "container": "original primer tubes",
+          "reagent": "primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "100 \u00b5M",
+            "solvent": "Hyclone water"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "primer tubes",
+          "reagent": "primers",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "primer tubes",
+          "reagent": "primers",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "2 mL collection tube",
+          "reagent": "100 \u00b5M primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "10 mM",
+            "solvent": "Hyclone water"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "array",
+        "parameters": {
+          "container": "96 well PCR plate",
+          "reagent": "10 mM primer",
+          "volume": "20 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "map": "primer map"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "each well of PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipet tip"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "primer plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "defrost",
+        "parameters": {
+          "container": [
+            "PCR reagents",
+            "primers",
+            "DNA samples"
+          ],
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "example": "PCR plate I"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": [
+            "NEB Q5 HiFidelity Master Mix",
+            "Hyclone water"
+          ],
+          "volume": [
+            "12.5 \u00b5L",
+            "8.5 \u00b5L"
+          ],
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per reaction": "25 \u00b5l PCR reaction"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "2 ml collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "array",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": "primer pair",
+          "volume": "1.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "multi-channel pipet",
+            "map": "plate map"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "array",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": "master mix",
+          "volume": "21 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "multi-channel pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "array",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": "sample DNA",
+          "volume": "2.5 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "multi-channel pipet",
+            "map": "plate map"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cover": "PCR plate cover"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "ensure solution is at bottom of wells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "device": "thermocycler"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "PCR plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": [
+              {
+                "step": "initial denaturation",
+                "temperature": "98\u00b0C",
+                "duration": "30 seconds"
+              },
+              {
+                "step": "denaturation",
+                "temperature": "98\u00b0C",
+                "duration": "10 seconds",
+                "cycles": 30
+              },
+              {
+                "step": "primer annealing",
+                "temperature": "55\u00b0C",
+                "duration": "30 seconds",
+                "cycles": 30
+              },
+              {
+                "step": "extension",
+                "temperature": "72\u00b0C",
+                "duration": "30 seconds",
+                "cycles": 30
+              },
+              {
+                "step": "final extension",
+                "temperature": "72\u00b0C",
+                "duration": "2 minutes"
+              },
+              {
+                "step": "hold",
+                "temperature": "4\u00b0C",
+                "duration": null
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "PCR products",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "short term storage"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": "microwave-safe container",
+          "reagent": "1.5 g agarose in 100 ml TBE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "heating in microwave"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gel solution",
+          "reagent": "sybrsafe dye",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "gel tray with comb",
+          "reagent": "gel solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "parafilm",
+          "reagent": [
+            "10X loading buffer",
+            "PCR product"
+          ],
+          "volume": [
+            "2 \u00b5l",
+            "5-10 \u00b5l"
+          ],
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel",
+          "reagent": "50 bp ladder",
+          "volume": "5-10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30-40 minutes",
+          "speed": "100 V",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "visualize",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "system": "gel imaging system"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "multichannel well",
+          "reagent": "PCR products",
+          "volume": "equal volumes from each PCR plate well",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "pooled library",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "AMPure XP PCR purification beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove primer dimers"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "beads tube",
+          "reagent": "AMPure XP beads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "re-suspend beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "AMPure XP beads",
+          "volume": "0.8X volume of pooled library (e.g., 400 \u00b5L beads to 500 \u00b5L library)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": null,
+          "other": {
+            "device": "magnetic stand"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "clear solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "avoid": "beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "70% ethanol",
+          "volume": "900 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "70% ethanol",
+          "volume": "900 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "second wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "repeat": "second wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "aspirate",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "second wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes or until ethanol is no longer visible",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "magnet holder"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": "TE buffer",
+          "volume": "200 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "elute DNA from beads"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipet up and down ten times"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "2 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "device": "magnet"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new pre-labeled tube",
+          "reagent": "eluent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "2% agarose gel",
+          "reagent": "pooled library",
+          "volume": "~75 \u00b5L",
+          "temperature": null,
+          "duration": "1 hour",
+          "speed": null,
+          "other": {
+            "include": "ladder"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "excise",
+        "parameters": {
+          "container": "gel",
+          "reagent": "target amplicon band",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "razor blade",
+            "destination": "clean 15 mL tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "gel",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": "buffer QG",
+          "volume": "3 volumes per 1 volume gel",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "10 minutes or until gel is dissolved",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "interval": "every 2-3 minutes"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": "3 M sodium acetate",
+          "volume": "10 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if gel color is orange or violet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": "isopropanol",
+          "volume": "1 gel volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "15 mL tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "provided 2 mL collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "buffer QG",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "Buffer PE",
+          "volume": "0.75 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "flow through",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "13,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new 2 mL micro-centrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "buffer EB",
+          "volume": "25 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of QIAquick membrane"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "13,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='PowerBead Tube', reagent='coral samples (< 1 cm2 biopsies)')\nheat(container='C1 solution tube', reagent='C1 solution', purpose='dissolve C1 solution')\nadd(container='PowerBead Tube', reagent='Solution C1', volume='60 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: secure (container: PowerSoil tubes, other: {'device': 'FastPrep Bead Beater'})\n\n### AUTOMATED SECTION ###\nbeat(container='bead tubes', duration='30 s', speed='setting 6', device='FastPrep Bead Beater')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: ['BeadBeating tube', '2 mL collection tubes', 'Spin tube'], other: {'quantity': {'BeadBeating tube': 1, '2 mL collection tubes': 4, 'Spin tube': 1}})\n# MANUAL: filter (other: {})\n# MANUAL: randomize (container: samples, other: {'quantity': 'up to 24 samples'})\n# MANUAL: extract (container: sample blanks, other: {'purpose': 'test for contamination'})\n# MANUAL: secure (container: PowerBead tubes, other: {'device': 'MoBio Vortex Adaptor'})\n\n### AUTOMATED SECTION ###\nvortex(container='PowerBead tubes', duration='10 minutes', speed='max speed')\ncentrifuge(container='tubes', temperature='room temperature', duration='30 seconds', speed='10,000 g')\ntransfer(container='clean pre-labeled 2 mL collection tube', reagent='supernatant', volume='400-500 \u00b5L')\nadd(container='2 mL collection tube', reagent='Solution C2', volume='250 \u00b5L')\nvortex(container='2 mL collection tube', duration='5 seconds')\nincubate(container='2 mL collection tube', temperature='4\u00b0C', duration='5 minutes')\ncentrifuge(container='tubes', temperature='room temperature', duration='1 minute', speed='10,000 g')\ntransfer(container='clean, pre-labeled 2 ml collection tube', reagent='supernatant', volume='up to 600 \u00b5L', avoid='pellet')\nadd(container='2 ml collection tube', reagent='solution C3', volume='200 \u00b5L')\nvortex(container='2 ml collection tube', duration='briefly')\nincubate(container='2 ml collection tube', temperature='4\u00b0C', duration='5 minutes')\ncentrifuge(container='tubes', temperature='room temperature', duration='1 minute', speed='10,000 g')\ntransfer(container='clean, pre-labeled 2 ml collection tube', reagent='supernatant', volume='up to 600 \u00b5L', avoid='pellet')\ncentrifuge(container='tubes', temperature='room temperature', duration='1 minute', speed='10,000 g')\ntransfer(container='clean, pre-labeled 2 ml collection tube', reagent='supernatant', volume='750 \u00b5L', avoid='pellet')\nshake(container='Solution C4 bottle', reagent='Solution C4', purpose='mix Solution C4')\nadd(container='2 ml collection tube', reagent='solution C4', volume='1.2 mL')\nvortex(container='2 ml collection tube', duration='5 seconds')\nload(container='spin filter', reagent='supernatant and solution', volume='675 \u00b5L')\ncentrifuge(container='spin filter', temperature='room temperature', duration='1 minute', speed='10,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {'waste': 'appropriate waste container'})\n\n### AUTOMATED SECTION ###\nadd(container='spin filter', reagent='supernatant', volume='675 \u00b5L')\ncentrifuge(container='spin filter', temperature='room temperature', duration='1 minute', speed='10,000 g')\nload(container='spin filter', reagent='remaining supernatant')\ncentrifuge(container='spin filter', temperature='room temperature', duration='1 minute', speed='10,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {'waste': 'appropriate waste container'})\n\n### AUTOMATED SECTION ###\nadd(container='spin filter', reagent='Solution C5', volume='500 \u00b5L')\ncentrifuge(container='spin filter', temperature='room temperature', duration='30 seconds', speed='10,000 g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {'waste': 'appropriate waste container'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='filter and 2 ml collection tube', duration='1 minute', speed='10,000 g')\nadd(container='spin filter', reagent='Solution C6', volume='100 \u00b5l', location='center of filter')\ncentrifuge(container='spin filter', temperature='room temperature', duration='30 seconds', speed='10,000 g')\nstore(container='2 ml tube', reagent='DNA', temperature='-20\u00b0C', purpose='until further processing')\narray(container='96 well plates', reagent='extracted DNA', plate map='detailed plate map design')\n\n### MANUAL SECTION ###\n# MANUAL: randomize (container: DNA samples, other: {'across': 'plates'})\n\n### AUTOMATED SECTION ###\nstore(container='DNA template plates', temperature='-20\u00b0C')\nreconstitute(container='original primer tubes', reagent='primers', concentration='100 \u00b5M', solvent='Hyclone water')\nincubate(container='primer tubes', reagent='primers', temperature='4\u00b0C', duration='overnight')\nstore(container='primer tubes', reagent='primers', temperature='-20\u00b0C')\ndilute(container='2 mL collection tube', reagent='100 \u00b5M primers', final concentration='10 mM', solvent='Hyclone water')\narray(container='96 well PCR plate', reagent='10 mM primer', volume='20 \u00b5L', map='primer map')\nmix(container='each well of PCR plate', method='pipet tip')\nstore(container='primer plates', temperature='-20\u00b0C')\ndefrost(container=['PCR reagents', 'primers', 'DNA samples'])\n\n### MANUAL SECTION ###\n# MANUAL: label (container: PCR plate, other: {'example': 'PCR plate I'})\n\n### AUTOMATED SECTION ###\nmix(container='2 ml collection tube', reagent=['NEB Q5 HiFidelity Master Mix', 'Hyclone water'], volume=['12.5 \u00b5L', '8.5 \u00b5L'], per reaction='25 \u00b5l PCR reaction')\nvortex(container='2 ml collection tube')\narray(container='PCR plate', reagent='primer pair', volume='1.5 \u00b5l', method='multi-channel pipet', map='plate map')\narray(container='PCR plate', reagent='master mix', volume='21 \u00b5l', method='multi-channel pipet')\narray(container='PCR plate', reagent='sample DNA', volume='2.5 \u00b5l', method='multi-channel pipet', map='plate map')\nseal(container='PCR plate', cover='PCR plate cover')\nvortex(container='PCR plate')\nspin(container='PCR plate', purpose='ensure solution is at bottom of wells')\nplate(container='PCR plate', device='thermocycler')\nrun(container='PCR plate', protocol=[{'step': 'initial denaturation', 'temperature': '98\u00b0C', 'duration': '30 seconds'}, {'step': 'denaturation', 'temperature': '98\u00b0C', 'duration': '10 seconds', 'cycles': 30}, {'step': 'primer annealing', 'temperature': '55\u00b0C', 'duration': '30 seconds', 'cycles': 30}, {'step': 'extension', 'temperature': '72\u00b0C', 'duration': '30 seconds', 'cycles': 30}, {'step': 'final extension', 'temperature': '72\u00b0C', 'duration': '2 minutes'}, {'step': 'hold', 'temperature': '4\u00b0C', 'duration': None}])\nstore(container='PCR products', temperature='4\u00b0C', purpose='short term storage')\ndissolve(container='microwave-safe container', reagent='1.5 g agarose in 100 ml TBE buffer', method='heating in microwave')\nadd(container='gel solution', reagent='sybrsafe dye', volume='10 \u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: gel tray with comb, reagent: gel solution, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='parafilm', reagent=['10X loading buffer', 'PCR product'], volume=['2 \u00b5l', '5-10 \u00b5l'])\n\n### MANUAL SECTION ###\n# MANUAL: load (container: gel, reagent: mixture, other: {})\n# MANUAL: load (container: gel, reagent: 50 bp ladder, volume: 5-10 \u00b5l, other: {})\n\n### AUTOMATED SECTION ###\nrun(container='gel', duration='30-40 minutes', speed='100 V')\n\n### MANUAL SECTION ###\n# MANUAL: visualize (container: gel, other: {'system': 'gel imaging system'})\n\n### AUTOMATED SECTION ###\npool(container='multichannel well', reagent='PCR products', volume='equal volumes from each PCR plate well')\ntransfer(container='2 mL tube', reagent='pooled library')\npurify(container='2 mL tube', reagent='AMPure XP PCR purification beads', purpose='remove primer dimers')\nshake(container='beads tube', reagent='AMPure XP beads', purpose='re-suspend beads')\nadd(container='2 mL tube', reagent='AMPure XP beads', volume='0.8X volume of pooled library (e.g., 400 \u00b5L beads to 500 \u00b5L library)')\nincubate(container='2 mL tube', temperature='room temperature', duration='5 minutes')\nplace(container='2 mL tube', duration='2 minutes', device='magnetic stand')\naspirate(container='2 mL tube', reagent='clear solution', avoid='beads')\nadd(container='2 mL tube', reagent='70% ethanol', volume='900 \u00b5L')\nincubate(container='2 mL tube', temperature='room temperature', duration='30 seconds')\naspirate(container='2 mL tube', reagent='ethanol')\nadd(container='2 mL tube', reagent='70% ethanol', volume='900 \u00b5L', repeat='second wash')\nincubate(container='2 mL tube', temperature='room temperature', duration='30 seconds', repeat='second wash')\naspirate(container='2 mL tube', reagent='ethanol', repeat='second wash')\ndry(container='2 mL tube', temperature='room temperature', duration='15 minutes or until ethanol is no longer visible')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: tube, other: {'from': 'magnet holder'})\n\n### AUTOMATED SECTION ###\nadd(container='2 mL tube', reagent='TE buffer', volume='200 \u00b5l', purpose='elute DNA from beads')\nmix(container='2 mL tube', method='pipet up and down ten times')\nplace(container='2 mL tube', duration='1 minute', device='magnet')\ntransfer(container='new pre-labeled tube', reagent='eluent')\nrun(container='2% agarose gel', reagent='pooled library', volume='~75 \u00b5L', duration='1 hour', include='ladder')\n\n### MANUAL SECTION ###\n# MANUAL: excise (container: gel, reagent: target amplicon band, other: {'tool': 'razor blade', 'destination': 'clean 15 mL tube'})\n# MANUAL: weigh (container: gel, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='15 mL tube', reagent='buffer QG', volume='3 volumes per 1 volume gel')\nincubate(container='15 mL tube', temperature='50\u00b0C', duration='10 minutes or until gel is dissolved')\nvortex(container='15 mL tube', interval='every 2-3 minutes')\nadd(container='15 mL tube', reagent='3 M sodium acetate', volume='10 \u00b5L', condition='if gel color is orange or violet')\nadd(container='15 mL tube', reagent='isopropanol', volume='1 gel volume')\nmix(container='15 mL tube')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: spin column, other: {'destination': 'provided 2 mL collection tube'})\n# MANUAL: apply (container: spin column, reagent: sample, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='spin column', duration='1 minute', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='spin column', reagent='buffer QG', volume='0.5 mL')\ncentrifuge(container='spin column', duration='1 minute', speed='10,000 rpm')\nadd(container='spin column', reagent='Buffer PE', volume='0.75 mL')\ncentrifuge(container='spin column', duration='1 minute', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: flow through, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='spin column', duration='1 minute', speed='13,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: spin column, other: {'destination': 'new 2 mL micro-centrifuge tube'})\n\n### AUTOMATED SECTION ###\nadd(container='spin column', reagent='buffer EB', volume='25 \u00b5L', location='center of QIAquick membrane')\ncentrifuge(container='spin column', duration='1 minute', speed='13,000 rpm')",
+    "source_file": "protocol_385.txt"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "protocol": "Sampling for RNA / Protein/ dissolved nutrients from phage infection experiments\nAt each time point, collect 10ml from each\u00a0experimental bottle/tube into a 15ml conical tube, using a serological pipet.\nCollect one 10ml sample for RNA and one 10ml sample for protein.\nSpin tubes for 15 minutes at 4700 rpm (4816 x g) in a swinging bucket rotor.\nIf you wish to collect the cell-free fraction (e.g.\nfor analyzing dissolved inorganic or organic nutrients or phage particles): decant supernatants into labeled sterile\u00a050 ml conical tubes.\nWe pool the RNA and protein supernatants together resulting in a 20ml combined supernatant.\nIf you do not wish to collect the cell-free fraction: decant supernatant into waste container.\nFlash-freeze cell pellets in 15 ml tubes using liquid nitrogen;\u00a0store pellets in -80\u00b0C freezer until later analysis.\nIf you are not collecting the cell-free fraction, stop here.\nIf you are collecting the cell-free fraction, go to Step 5.\nRemove the plunger from a 20ml clean syringe.\nAttach a new 0.2\u00b5m syringe filter to the syringe.\nPour\u00a0your 20ml combined supernatant into the barrel of the syringe.\nReplace plunger on the syringe and\u00a0filter your 20ml\u00a0supernatant into appropriate\u00a0tubes for your downstream nutrient/phage analysis (we use a 15ml conical tube plus a 5ml snap-cap Eppendorf tube).\nRepeat step 5 for each sample.\nYou can reuse the same syringe for replicates of the same condition/treatment.\nStore 0.2\u00b5m filtered samples in -20\u00baC until analysis.\n(if analyzing phage particles in the filtrate, store at 4\u00baC instead.)",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "15ml conical tube",
+          "reagent": "sample from experimental bottle/tube",
+          "volume": "10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "serological pipet",
+            "time_point": "each time point"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "15ml conical tube",
+          "reagent": "sample for RNA",
+          "volume": "10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "15ml conical tube",
+          "reagent": "sample for protein",
+          "volume": "10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15ml conical tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": "4700 rpm (4816 x g)",
+          "other": {
+            "rotor_type": "swinging bucket"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "labeled sterile 50ml conical tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if collecting cell-free fraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA and protein supernatants",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "waste container",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if not collecting cell-free fraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": "15ml tube",
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flash-freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "15ml tube",
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "until later analysis",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "20ml clean syringe",
+          "reagent": "plunger",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "attach",
+        "parameters": {
+          "container": "20ml clean syringe",
+          "reagent": "0.2\u00b5m syringe filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "barrel of syringe",
+          "reagent": "20ml combined supernatant",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "20ml syringe",
+          "reagent": "plunger",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "appropriate tubes (15ml conical tube + 5ml snap-cap Eppendorf tube)",
+          "reagent": "20ml supernatant",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter": "0.2\u00b5m syringe filter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "appropriate tubes",
+          "reagent": "0.2\u00b5m filtered samples",
+          "volume": null,
+          "temperature": "-20\u00baC",
+          "duration": "until analysis",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "appropriate tubes",
+          "reagent": "0.2\u00b5m filtered samples (phage particle analysis)",
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "until analysis",
+          "speed": null,
+          "other": {
+            "condition": "if analyzing phage particles in filtrate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncollect(container='15ml conical tube', reagent='sample from experimental bottle/tube', volume='10ml', tool='serological pipet', time_point='each time point')\ncollect(container='15ml conical tube', reagent='sample for RNA', volume='10ml')\ncollect(container='15ml conical tube', reagent='sample for protein', volume='10ml')\ncentrifuge(container='15ml conical tube', duration='15 minutes', speed='4700 rpm (4816 x g)', rotor_type='swinging bucket')\ndecant(container='labeled sterile 50ml conical tube', reagent='supernatant', condition='if collecting cell-free fraction')\npool(reagent='RNA and protein supernatants', volume='20ml')\ndecant(container='waste container', reagent='supernatant', condition='if not collecting cell-free fraction')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (container: 15ml tube, reagent: cell pellet, temperature: liquid nitrogen, other: {'method': 'flash-freeze'})\n\n### AUTOMATED SECTION ###\nstore(container='15ml tube', reagent='cell pellet', temperature='-80\u00b0C', duration='until later analysis')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: 20ml clean syringe, reagent: plunger)\n# MANUAL: attach (container: 20ml clean syringe, reagent: 0.2\u00b5m syringe filter)\n# MANUAL: pour (container: barrel of syringe, reagent: 20ml combined supernatant, volume: 20ml)\n# MANUAL: replace (container: 20ml syringe, reagent: plunger)\n# MANUAL: filter (container: appropriate tubes (15ml conical tube + 5ml snap-cap Eppendorf tube), reagent: 20ml supernatant, volume: 20ml, other: {'filter': '0.2\u00b5m syringe filter'})\n\n### AUTOMATED SECTION ###\nstore(container='appropriate tubes', reagent='0.2\u00b5m filtered samples', temperature='-20\u00baC', duration='until analysis')\nstore(container='appropriate tubes', reagent='0.2\u00b5m filtered samples (phage particle analysis)', temperature='4\u00baC', duration='until analysis', condition='if analyzing phage particles in filtrate')",
+    "source_file": "protocol_407.txt"
+  }
+]

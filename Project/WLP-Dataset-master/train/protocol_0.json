@@ -1,0 +1,403 @@
+[
+  {
+    "protocol": "SpinSmart Plasmid Purification Protocol: High-copy plasmid DNA from E. coli\nStart with 1-5 ml E. coli LB culture*, pellet cells in a microcentrifuge for 30 sec at 11,000 x g. Discard the supernatant and remove as much of the liquid as possible.\nAdd 250 \u00b5l PB1 Resuspension Buffer.\nVortex or pipet up and down to resuspend the cell pellet completely.\nNo cell clumps should be visible.\nAdd 250 \u00b5l PB2 Lysis Buffer.\nInvert the tube 6-8 times to mix completely.\nDo not vortex!.\nIncubate at room temperature for up to 5 min or until lysate appears clear.\nAdd 300 \u00b5l PB3 Neutralization Buffer.\nInvert the tube 6-8 times to mix completely.\nDo not vortex!.\nCentrifuge for 5 min at 11,000 x g at room temperature.\nIf precipitate is not completely clear from the lysate, centrifuge again for 5 min at 11,000 x g at room temperature.\nPlace a SpinSmart Plasmid Binding Column in a Collection Tube (2 ml) and load a maximum of 750 \u00b5l of the supernatant\u00a0(from the \"Lysate Clarification\" section above)\u00a0onto the column.\nCentrifuge for 1 min at 11,000 x g. Discard flow-through and place the SpinSmart Plasmid Binding Column into the Collection Tube (2 ml).\nOptional:\u00a0For host strains containing high levels of nucleases (e.g.\nHB101 or strains of the JM series), perform a wash step with 500 \u00b5l PB4 Wash Buffer pre-warmed to 50\u00b0C.\nCentrifuge for 1 min at 11,000 x g before proceeding with Buffer PB5.\nAdd 600 \u00b5l PB5 Wash Buffer (make sure EtOH has been added).\nCentrifuge for 1 min at 11,000 x g. Discard flow-through and place the SpinSmart Plasmid Column back into the empty Collection Tube (2 ml).\nCentrifuge for 2 min at 11,000 x g and discard the Collection Tube (2 ml).\nPlace the SpinSmart Plasmid Binding Column in a 1.5 ml microcentrifuge tube (not provided) and add 50 \u00b5l PB6 Elution Buffer.\nIncubate for 1 min at\u00a0room temperature.\nCentrifuge for 1 min at 11,000 x g.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "E. coli LB culture (pellet cells)",
+          "volume": "1-5 ml",
+          "temperature": "room temperature",
+          "duration": "30 sec",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "PB1 Resuspension Buffer",
+          "volume": "250 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell pellet + PB1 Resuspension Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "vortex or pipet up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "PB2 Lysis Buffer",
+          "volume": "250 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube 6-8 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "cell lysate",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "up to 5 min or until lysate appears clear",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "PB3 Neutralization Buffer",
+          "volume": "300 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "neutralized lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "invert tube 6-8 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "neutralized lysate",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "microcentrifuge tube",
+          "reagent": "neutralized lysate (if precipitate not clear)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in Collection Tube (2 ml)",
+          "reagent": "supernatant (from lysate clarification)",
+          "volume": "max 750 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in Collection Tube (2 ml)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube (2 ml)",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Collection Tube (2 ml)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column",
+          "reagent": "PB4 Wash Buffer (pre-warmed to 50\u00b0C)",
+          "volume": "500 \u00b5l",
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "optional": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in Collection Tube (2 ml)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "11,000 x g",
+          "other": {
+            "before": "Buffer PB5"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column",
+          "reagent": "PB5 Wash Buffer (EtOH added)",
+          "volume": "600 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in Collection Tube (2 ml)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube (2 ml)",
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SpinSmart Plasmid Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "empty Collection Tube (2 ml)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinSmart Plasmid Column in empty Collection Tube (2 ml)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "Collection Tube (2 ml)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "1.5 ml microcentrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube",
+          "reagent": "PB6 Elution Buffer",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "11,000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='microcentrifuge tube', reagent='E. coli LB culture (pellet cells)', volume='1-5 ml', temperature='room temperature', duration='30 sec', speed='11,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: microcentrifuge tube, reagent: supernatant, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='microcentrifuge tube', reagent='PB1 Resuspension Buffer', volume='250 \u00b5l')\nmix(container='microcentrifuge tube', reagent='cell pellet + PB1 Resuspension Buffer', method='vortex or pipet up and down')\nadd(container='microcentrifuge tube', reagent='PB2 Lysis Buffer', volume='250 \u00b5l')\nmix(container='microcentrifuge tube', reagent='cell lysate', method='invert tube 6-8 times')\nincubate(container='microcentrifuge tube', reagent='cell lysate', temperature='room temperature', duration='up to 5 min or until lysate appears clear')\nadd(container='microcentrifuge tube', reagent='PB3 Neutralization Buffer', volume='300 \u00b5l')\nmix(container='microcentrifuge tube', reagent='neutralized lysate', method='invert tube 6-8 times')\ncentrifuge(container='microcentrifuge tube', reagent='neutralized lysate', temperature='room temperature', duration='5 min', speed='11,000 x g')\ncentrifuge(container='microcentrifuge tube', reagent='neutralized lysate (if precipitate not clear)', temperature='room temperature', duration='5 min', speed='11,000 x g')\nload(container='SpinSmart Plasmid Binding Column in Collection Tube (2 ml)', reagent='supernatant (from lysate clarification)', volume='max 750 \u00b5l')\ncentrifuge(container='SpinSmart Plasmid Binding Column in Collection Tube (2 ml)', duration='1 min', speed='11,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube (2 ml), reagent: flow-through, other: {})\n# MANUAL: place (container: SpinSmart Plasmid Binding Column, other: {'destination': 'Collection Tube (2 ml)'})\n\n### AUTOMATED SECTION ###\nadd(container='SpinSmart Plasmid Binding Column', reagent='PB4 Wash Buffer (pre-warmed to 50\u00b0C)', volume='500 \u00b5l', temperature='50\u00b0C', optional=True)\ncentrifuge(container='SpinSmart Plasmid Binding Column in Collection Tube (2 ml)', duration='1 min', speed='11,000 x g', before='Buffer PB5')\nadd(container='SpinSmart Plasmid Binding Column', reagent='PB5 Wash Buffer (EtOH added)', volume='600 \u00b5l')\ncentrifuge(container='SpinSmart Plasmid Binding Column in Collection Tube (2 ml)', duration='1 min', speed='11,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube (2 ml), reagent: flow-through, other: {})\n# MANUAL: place (container: SpinSmart Plasmid Column, other: {'destination': 'empty Collection Tube (2 ml)'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='SpinSmart Plasmid Column in empty Collection Tube (2 ml)', duration='2 min', speed='11,000 x g')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: Collection Tube (2 ml), other: {})\n# MANUAL: place (container: SpinSmart Plasmid Binding Column, other: {'destination': '1.5 ml microcentrifuge tube'})\n\n### AUTOMATED SECTION ###\nadd(container='SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube', reagent='PB6 Elution Buffer', volume='50 \u00b5l')\nincubate(container='SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube', temperature='room temperature', duration='1 min')\ncentrifuge(container='SpinSmart Plasmid Binding Column in 1.5 ml microcentrifuge tube', duration='1 min', speed='11,000 x g')",
+    "source_file": "protocol_0.txt"
+  }
+]

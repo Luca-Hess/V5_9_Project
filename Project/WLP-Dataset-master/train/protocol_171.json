@@ -1,0 +1,179 @@
+[
+  {
+    "protocol": "Phenol extraction of Chlorella cells\nPellet cells (~1/2 daily culture).\nSuspend in 15 ml of liquid phenol.\nAdd about 0.2ml 5% cetylpyridium chloride (cationic detergent) to facilitate chlorophyll extraction.\nShake suspension until green has been extracted from cells.\nAdd 10 ml toluene (to reduce density).\nMix.\nCentrifuge and wash pellet with aqueous buffer.\nWash pellet about 5x.\nUse your nose as a guide to removal of phenol.\nIf need be a UV spectrum of the final wash supernatant can be used to assure absence of phenol.",
+    "actions": [
+      {
+        "action": "pellet",
+        "parameters": {
+          "container": null,
+          "reagent": "Chlorella cells (~1/2 daily culture)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "suspend",
+        "parameters": {
+          "container": null,
+          "reagent": "liquid phenol",
+          "volume": "15 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pelleted Chlorella cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "5% cetylpyridium chloride (cationic detergent)",
+          "volume": "0.2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": "suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": "until green has been extracted from cells",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "toluene",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "suspension"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "suspension with toluene",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "aqueous buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "aqueous buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "pellet",
+            "repeat": "5x"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "use nose as guide to removal of phenol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "assure",
+        "parameters": {
+          "container": null,
+          "reagent": "final wash supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "UV spectrum",
+            "target": "absence of phenol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npellet(reagent='Chlorella cells (~1/2 daily culture)')\nsuspend(reagent='liquid phenol', volume='15 ml', target='pelleted Chlorella cells')\nadd(reagent='5% cetylpyridium chloride (cationic detergent)', volume='0.2 ml', target='suspension')\nshake(reagent='suspension', duration='until green has been extracted from cells')\nadd(reagent='toluene', volume='10 ml', target='suspension')\nmix(reagent='suspension with toluene')\ncentrifuge(reagent='mixture')\nwash(reagent='aqueous buffer', target='pellet')\nwash(reagent='aqueous buffer', target='pellet', repeat='5x')\n\n### MANUAL SECTION ###\n# MANUAL: observe (other: {'method': 'use nose as guide to removal of phenol'})\n# MANUAL: assure (reagent: final wash supernatant, other: {'method': 'UV spectrum', 'target': 'absence of phenol'})",
+    "source_file": "protocol_171.txt"
+  }
+]

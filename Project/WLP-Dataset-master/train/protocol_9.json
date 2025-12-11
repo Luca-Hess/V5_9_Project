@@ -1,0 +1,83 @@
+[
+  {
+    "protocol": "Blunting Protocol for NEB PCR Cloning Kit (E1202)\nMix the following components in a sterile microfuge tube: Reactions containing restriction enzyme digested DNA are incubated at room temperature for 15 minutes.\nReactions with sheared/nebulized DNA or PCR products are incubated at room temperature for 30 minutes.\nImmediately inactivate enzyme in the blunting reaction by heating at 70\u00b0C for 10 minutes.\nProceed directly to the ligation step using the Quick Ligation Kit (NEB #M2200) or standard T4 DNA Ligase (NEB #M0202\u00a0).",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "restriction enzyme digested DNA or sheared/nebulized DNA or PCR products and other blunting reaction components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "restriction enzyme digested DNA reaction",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "sheared/nebulized DNA or PCR product reaction",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "sterile microfuge tube",
+          "reagent": "blunting reaction",
+          "volume": null,
+          "temperature": "70\u00b0C",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "enzyme inactivation"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "proceed",
+        "parameters": {
+          "container": null,
+          "reagent": "Quick Ligation Kit (NEB #M2200) or standard T4 DNA Ligase (NEB #M0202)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "ligation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(container='sterile microfuge tube', reagent='restriction enzyme digested DNA or sheared/nebulized DNA or PCR products and other blunting reaction components')\nincubate(container='sterile microfuge tube', reagent='restriction enzyme digested DNA reaction', temperature='room temperature', duration='15 minutes')\nincubate(container='sterile microfuge tube', reagent='sheared/nebulized DNA or PCR product reaction', temperature='room temperature', duration='30 minutes')\nheat(container='sterile microfuge tube', reagent='blunting reaction', temperature='70\u00b0C', duration='10 minutes', purpose='enzyme inactivation')\n\n### MANUAL SECTION ###\n# MANUAL: proceed (reagent: Quick Ligation Kit (NEB #M2200) or standard T4 DNA Ligase (NEB #M0202), other: {'step': 'ligation'})",
+    "source_file": "protocol_9.txt"
+  }
+]

@@ -1,0 +1,536 @@
+[
+  {
+    "protocol": "Immunohistochemistry Protocol for Ultra Streptavidin Detection Kits (USA)\nClear Slides: Removes paraffin and hydrates the tissue.\nNote: If using frozen sections, allow slides to come to room temperature for 15 minutes & proceed to step (F) only\u00a0\nA. Xylene5 minutes in each of (3) different 250mL containers\u00a0\nB. 100% alcohol 5 minutes in each of (3) different 250mL containers\u00a0\nC. 95% alcohol3 minutes in (1) 250mL container\u00a0\nD. 70% alcohol3 minutes in (1) 250mL container\u00a0\nE. water1 minutes in each of (3) different 250mL containers\u00a0\nF. H2O2 (3%)15 minutes using # 1 Blocking Reagent (included in 50 test kit only), or 927401/927402 (sold separately) for 150 and 500 test kit.\nRinse slides with lab grade water.\nNote: Lab grade filtered water such as injection grade, cell culture grade, Reverse Osmosis De-Ionization (RODI).\nAntigen Retrieval (refer to product datasheet, not always required).\u00a0\nRetrieve-ALL (927901, 928201, 927601) or Sodium Citrate (928501, 928601).\u00a0\nHeat slides in microwave on high for 1 minute 40 seconds in the appropriate retrieval solution at 1X.\u00a0\nReduce to low power and simmer 10 minutes in the microwave.\nAllow to cool on the bench top for 10 minutes.\nRinse with lab grade water.\nRinse Slides with 1X PBS (926201).\u00a0\nNote: Other antigen retrievals could include EDTA, Proteinase K, Pepsin, protease VIII \u2013 follow antibody manufacturer\u2019s instructions.\nApply #2 Blocking Reagent (blue in color) for at least 5 minutes at room temperature.\nDo NOT wash after this step.\nBlot off serum block 6 mL predilute antibodies are ready to use, do not dilute\u00a01 mL concentrate products can be diluted >1:40 in PBS or other antibody diluent.\u00a0\nIf using a non-BioLegend antibody, dilute according to the manufacturer\u2019s instructions.\nIncubate primary antibody 20-60 minutes at room temperature (refer to incubation time listed on the datasheet).\nRinse slides with 1X PBS.\nApply #4 Linking Reagent (yellow in color) \u2013 and incubate slides for 20 minutes at room temperature.\nRinse slides with 1X PBS.\nApply #5 Labeling Reagent (orange in color) \u2013 and incubate slides for 20 minutes at room temperature Rinse with 1X PBS.\nApply chromogen and incubate slides for 5 minutes at room temperature.\nA. AEC Chromogen: 20\u03bcL AEC chromogen + 1mL AEC substrate buffer (1:50 Dilution)\u00a0\nB. DAB Chromogen: 40 \u03bcL DAB chromogen + 1mL DAB substrate buffer (1:25 Dilution)\u00a0\nNote: Not all USA Kits contain chromogen.\nIf using a non-BioLegend chromogen, dilute and incubate according to the manufacturer\u2019s instructions.\nRinse slides with lab grade water.\nSubmerge slides in Hematoxylin for 30 seconds (not provided).\nRinse under running lab grade water for 1 minute or until water is clear.\nSubmerge slides in Bluing Reagent for 1 minute (not provided).\nRinse under running lab grade water for 1 minute.\nClear slides: Dehydrate the tissue.\nA. 95% alcohol 3 minutes in (1) 250mL container\u00a0\nB. 100% alcohol 5 minutes in each of (3) different 250mL container\u00a0\nC. Xylene 5 minutes in each of (3) different 250mL container.\nCover slip slide using Permanent Aqueous Mounting Medium or Xylene Based medium.\nNote: Do not use xylene based mount with AEC Chromogen as it will dissolve the chromogen.",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "70% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "H2O2 (3%) / #1 Blocking Reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "kit": "50, 150, or 500 test kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "lab grade water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": null,
+          "reagent": "Retrieve-ALL or Sodium Citrate solution (1X)",
+          "volume": null,
+          "temperature": "microwave high",
+          "duration": "1 minute 40 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "Retrieve-ALL or Sodium Citrate solution (1X)",
+          "volume": null,
+          "temperature": "microwave low",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": {
+            "mode": "simmer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "bench top",
+          "duration": "10 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "lab grade water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "#2 Blocking Reagent (blue)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "at least 5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "blot",
+        "parameters": {
+          "container": null,
+          "reagent": "serum block",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "concentrate antibody product",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "PBS or other antibody diluent",
+            "dilution": ">1:40"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "primary antibody",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20-60 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "#4 Linking Reagent (yellow)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "#4 Linking Reagent (yellow)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "#5 Labeling Reagent (orange)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "#5 Labeling Reagent (orange)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "20 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "1X PBS",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": null,
+          "reagent": "chromogen",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "chromogen",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "AEC chromogen",
+          "volume": "20 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1 mL AEC substrate buffer",
+            "dilution": "1:50"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "DAB chromogen",
+          "volume": "40 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "1 mL DAB substrate buffer",
+            "dilution": "1:25"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "lab grade water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": null,
+          "reagent": "Hematoxylin",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "lab grade water (running)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute or until clear",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "submerge",
+        "parameters": {
+          "container": null,
+          "reagent": "Bluing Reagent",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": null,
+          "reagent": "lab grade water (running)",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "95% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "100% alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "250mL container",
+          "reagent": "xylene",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "repeat": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": null,
+          "reagent": "Permanent Aqueous Mounting Medium or Xylene Based medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='250mL container', reagent='xylene', duration='5 minutes', repeat=3)\nincubate(container='250mL container', reagent='100% alcohol', duration='5 minutes', repeat=3)\nincubate(container='250mL container', reagent='95% alcohol', duration='3 minutes')\nincubate(container='250mL container', reagent='70% alcohol', duration='3 minutes')\nincubate(container='250mL container', reagent='water', duration='1 minute', repeat=3)\nincubate(reagent='H2O2 (3%) / #1 Blocking Reagent', duration='15 minutes', kit='50, 150, or 500 test kit')\nrinse(reagent='lab grade water')\n\n### MANUAL SECTION ###\n# MANUAL: heat (reagent: Retrieve-ALL or Sodium Citrate solution (1X), temperature: microwave high, duration: 1 minute 40 seconds)\n# MANUAL: incubate (reagent: Retrieve-ALL or Sodium Citrate solution (1X), temperature: microwave low, duration: 10 minutes, other: {'mode': 'simmer'})\n\n### AUTOMATED SECTION ###\ncool(temperature='bench top', duration='10 minutes')\nrinse(reagent='lab grade water')\nrinse(reagent='1X PBS')\nincubate(reagent='#2 Blocking Reagent (blue)', temperature='room temperature', duration='at least 5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: blot (reagent: serum block)\n\n### AUTOMATED SECTION ###\ndilute(reagent='concentrate antibody product', volume='1 mL', diluent='PBS or other antibody diluent', dilution='>1:40')\nincubate(reagent='primary antibody', temperature='room temperature', duration='20-60 minutes')\nrinse(reagent='1X PBS')\napply(reagent='#4 Linking Reagent (yellow)')\nincubate(reagent='#4 Linking Reagent (yellow)', temperature='room temperature', duration='20 minutes')\nrinse(reagent='1X PBS')\napply(reagent='#5 Labeling Reagent (orange)')\nincubate(reagent='#5 Labeling Reagent (orange)', temperature='room temperature', duration='20 minutes')\nrinse(reagent='1X PBS')\napply(reagent='chromogen')\nincubate(reagent='chromogen', temperature='room temperature', duration='5 minutes')\ndilute(reagent='AEC chromogen', volume='20 \u03bcL', diluent='1 mL AEC substrate buffer', dilution='1:50')\ndilute(reagent='DAB chromogen', volume='40 \u03bcL', diluent='1 mL DAB substrate buffer', dilution='1:25')\nrinse(reagent='lab grade water')\n\n### MANUAL SECTION ###\n# MANUAL: submerge (reagent: Hematoxylin, duration: 30 seconds)\n\n### AUTOMATED SECTION ###\nrinse(reagent='lab grade water (running)', duration='1 minute or until clear')\n\n### MANUAL SECTION ###\n# MANUAL: submerge (reagent: Bluing Reagent, duration: 1 minute)\n\n### AUTOMATED SECTION ###\nrinse(reagent='lab grade water (running)', duration='1 minute')\nincubate(container='250mL container', reagent='95% alcohol', duration='3 minutes')\nincubate(container='250mL container', reagent='100% alcohol', duration='5 minutes', repeat=3)\nincubate(container='250mL container', reagent='xylene', duration='5 minutes', repeat=3)\n\n### MANUAL SECTION ###\n# MANUAL: cover (reagent: Permanent Aqueous Mounting Medium or Xylene Based medium)",
+    "source_file": "protocol_178.txt"
+  }
+]

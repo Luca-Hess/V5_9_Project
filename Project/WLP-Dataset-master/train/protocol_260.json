@@ -1,0 +1,407 @@
+[
+  {
+    "protocol": "DNA/RNA Extractions from Sterivex Filters\nThaw sterivex filters on ice.\nAdd 40\u00b5L lysozyme solution (add 2 mg lysozyme to 40 \u00b5l Lysis Buffer) to filter.\nIncubate at 37\u00b0C while rotating for 45 minutes.\nAdd 100\u00b5L Proteinase K solution (1mg Proteinase K in 100 \u00b5l Lysis Buffer) and 100\u00b5L 20% SDS.\nIncubate at 55\u00b0C while rotating for 2 hours.\nTransfer lysate to a 15 mL conical tube using a sterile 3 mL syringe.\nAdd 1 mL Lysis Buffer to filter and wash at 55\u00b0C for 15 minutes.\nPool with above lysate.\nAdd 3 mL Phenol:Chloroform:IAA (25:24:1; pH 8.0).\nVortex for 10 seconds.\nSpin for 5 minutes at 2500g (speed 8).\nCarefully transfer aqueous phase to a new 15 mL conical tube.\nAdd 3 mL Chloroform:IAA (24:1) Vortex for 10 seconds.\nSpin for 5 minutes at 2500g (speed 8).\nCarefully transfer aqueous phase to a centricon 100.\nAll of the remaining volume should be transferred to an epi tube.\nSpin Centricon at 1000xg (speed4) for 20 minutes.\nAdd remaining volume from epi tube to centricon.\nSpin until only 100\u00b5L - 500\u00b5L of aqueous phase is left in Centricon.\nAdd 1 mL TE Buffer Repeat step 20.\nSpin until only 100 \u00b5L - 150 \u00b5L left in Centricon.\nCarefully remove liquid without damaging the membrane.\nWash membrane well with 40\u00b5L of TE Buffer Pool the membrane in the same epi tube.\nNote the total volume in the epi tube.",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": "lysozyme solution (2 mg lysozyme in 40 \u00b5L Lysis Buffer)",
+          "volume": "40 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "45 minutes",
+          "speed": "rotating",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": "Proteinase K solution (1 mg Proteinase K in 100 \u00b5L Lysis Buffer)",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": "20% SDS",
+          "volume": "100 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": "55\u00b0C",
+          "duration": "2 hours",
+          "speed": "rotating",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterivex filter to 15 mL conical tube",
+          "reagent": "lysate",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sterile 3 mL syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": "Lysis Buffer",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "sterivex filter",
+          "reagent": "Lysis Buffer",
+          "volume": "1 mL",
+          "temperature": "55\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "lysate",
+          "reagent": "wash",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pooled lysate",
+          "reagent": "Phenol:Chloroform:IAA (25:24:1; pH 8.0)",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "pooled lysate with Phenol:Chloroform:IAA",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "pooled lysate with Phenol:Chloroform:IAA",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "2500g (speed 8)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "pooled lysate with Phenol:Chloroform:IAA to new 15 mL conical tube",
+          "reagent": "aqueous phase",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "aqueous phase in 15 mL conical tube",
+          "reagent": "Chloroform:IAA (24:1)",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "aqueous phase with Chloroform:IAA",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "aqueous phase with Chloroform:IAA",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "2500g (speed 8)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "aqueous phase to centricon 100",
+          "reagent": "aqueous phase",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "centricon 100 to epi tube",
+          "reagent": "remaining volume",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Centricon",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "1000xg (speed 4)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "centricon",
+          "reagent": "remaining volume from epi tube",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Centricon",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until only 100\u00b5L - 500\u00b5L of aqueous phase is left",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Centricon",
+          "reagent": "TE Buffer",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Centricon",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until only 100 \u00b5L - 150 \u00b5L left",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Centricon",
+          "reagent": "liquid",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "without damaging the membrane"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "TE Buffer",
+          "volume": "40 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "membrane",
+          "reagent": null,
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "same epi tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "note",
+        "parameters": {
+          "container": "epi tube",
+          "reagent": null,
+          "volume": "total volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: sterivex filter, temperature: on ice, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='sterivex filter', reagent='lysozyme solution (2 mg lysozyme in 40 \u00b5L Lysis Buffer)', volume='40 \u00b5L')\nincubate(container='sterivex filter', temperature='37\u00b0C', duration='45 minutes', speed='rotating')\nadd(container='sterivex filter', reagent='Proteinase K solution (1 mg Proteinase K in 100 \u00b5L Lysis Buffer)', volume='100 \u00b5L')\nadd(container='sterivex filter', reagent='20% SDS', volume='100 \u00b5L')\nincubate(container='sterivex filter', temperature='55\u00b0C', duration='2 hours', speed='rotating')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: sterivex filter to 15 mL conical tube, reagent: lysate, volume: all, other: {'tool': 'sterile 3 mL syringe'})\n\n### AUTOMATED SECTION ###\nadd(container='sterivex filter', reagent='Lysis Buffer', volume='1 mL')\nwash(container='sterivex filter', reagent='Lysis Buffer', volume='1 mL', temperature='55\u00b0C', duration='15 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: pool (container: lysate, reagent: wash, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='pooled lysate', reagent='Phenol:Chloroform:IAA (25:24:1; pH 8.0)', volume='3 mL')\nvortex(container='pooled lysate with Phenol:Chloroform:IAA', duration='10 seconds')\nspin(container='pooled lysate with Phenol:Chloroform:IAA', duration='5 minutes', speed='2500g (speed 8)')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: pooled lysate with Phenol:Chloroform:IAA to new 15 mL conical tube, reagent: aqueous phase, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='aqueous phase in 15 mL conical tube', reagent='Chloroform:IAA (24:1)', volume='3 mL')\nvortex(container='aqueous phase with Chloroform:IAA', duration='10 seconds')\nspin(container='aqueous phase with Chloroform:IAA', duration='5 minutes', speed='2500g (speed 8)')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: aqueous phase to centricon 100, reagent: aqueous phase, volume: all, other: {})\n# MANUAL: transfer (container: centricon 100 to epi tube, reagent: remaining volume, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nspin(container='Centricon', duration='20 minutes', speed='1000xg (speed 4)')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: centricon, reagent: remaining volume from epi tube, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nspin(container='Centricon', duration='until only 100\u00b5L - 500\u00b5L of aqueous phase is left')\nadd(container='Centricon', reagent='TE Buffer', volume='1 mL')\nspin(container='Centricon', duration='until only 100 \u00b5L - 150 \u00b5L left')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: Centricon, reagent: liquid, volume: all, other: {'note': 'without damaging the membrane'})\n\n### AUTOMATED SECTION ###\nwash(container='membrane', reagent='TE Buffer', volume='40 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: pool (container: membrane, volume: all, other: {'destination': 'same epi tube'})\n# MANUAL: note (container: epi tube, volume: total volume, other: {})",
+    "source_file": "protocol_260.txt"
+  }
+]

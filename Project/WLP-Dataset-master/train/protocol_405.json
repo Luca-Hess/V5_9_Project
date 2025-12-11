@@ -1,0 +1,247 @@
+[
+  {
+    "protocol": "Adsorption of phage to cyanobacteria\nHave everything ready to perform plaque assay:\na. Plating cells, aliquoted, and set aside.\nb. Bottom plates labeled (24 + plates).\nc. Top agar aliquoted and temperature equilibrated.\nd. Dilution tubes\u2014these contain 1.5 mL media, labeled and kept on ice.\ne. Cyanophage stock diluted into 1\u20135 mL media Set up a table to record times such as Table 1\u00a0(guidelines).\nSet up adsorption cultures (e.g., 250 mL polycarbonate Erlenmeyer flasks with screw cap).\nFill flask with 100 mL host cells.\nAdd cyanophage stock of known titer to host at an MOI of ca. 0.01 and quickly mix to disperse the virus.\nImmediately remove a subsample and dilute 100\u00d7 for time zero: Transfer 15 \u00b5L to a tube containing 1.5 mL of ice cold media.\nVortex to mix.\nPellet host for 5 min at ca.\n16,000g and 4\u00b0C; note the time.\nCarefully remove a small aliquot (50 \u00b5L) of the supernatant to a new tube and keep cold for plaque assay; note time.\nPlace adsorption cultures under usual conditions (e.g., light and temp).\nRepeat sampling at 15 min intervals for 1 to 1.5 h Determine the concentration of viruses remaining in the supernatant for each time point by plaque assay.",
+    "actions": [
+      {
+        "action": "label",
+        "parameters": {
+          "container": "bottom plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quantity": "24+"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "top agar",
+          "reagent": "top agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "top agar aliquots",
+          "reagent": "top agar",
+          "volume": null,
+          "temperature": "equilibrated",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "dilution tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "dilution tubes",
+          "reagent": "media",
+          "volume": "1.5 mL",
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "media",
+          "reagent": "cyanophage stock",
+          "volume": "1\u20135 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "250 mL polycarbonate Erlenmeyer flask with screw cap",
+          "reagent": "host cells",
+          "volume": "100 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "flask with host cells",
+          "reagent": "cyanophage stock",
+          "volume": "MOI ca. 0.01",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "flask with host cells and cyanophage",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quickly",
+          "speed": null,
+          "other": {
+            "purpose": "disperse virus"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube containing 1.5 mL ice cold media",
+          "reagent": "subsample from flask",
+          "volume": "15 \u00b5L",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "time zero dilution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube with subsample and media",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with host cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "16,000g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": "50 \u00b5L",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "for plaque assay"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "supernatant aliquot",
+          "volume": "50 \u00b5L",
+          "temperature": "cold",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "for plaque assay"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "adsorption cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": "usual conditions (light and temp)",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "adsorption cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every 15 min for 1 to 1.5 h",
+          "speed": null,
+          "other": {
+            "action": "sampling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: label (container: bottom plates, other: {'quantity': '24+'})\n\n### AUTOMATED SECTION ###\naliquot(container='top agar', reagent='top agar')\nequilibrate(container='top agar aliquots', reagent='top agar', temperature='equilibrated')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: dilution tubes)\n\n### AUTOMATED SECTION ###\ndispense(container='dilution tubes', reagent='media', volume='1.5 mL', temperature='on ice')\ndilute(container='media', reagent='cyanophage stock', volume='1\u20135 mL')\nfill(container='250 mL polycarbonate Erlenmeyer flask with screw cap', reagent='host cells', volume='100 mL')\nadd(container='flask with host cells', reagent='cyanophage stock', volume='MOI ca. 0.01')\nmix(container='flask with host cells and cyanophage', duration='quickly', purpose='disperse virus')\ntransfer(container='tube containing 1.5 mL ice cold media', reagent='subsample from flask', volume='15 \u00b5L', temperature='ice cold', purpose='time zero dilution')\nvortex(container='tube with subsample and media', purpose='mix')\ncentrifuge(container='tube with host cells', temperature='4\u00b0C', duration='5 min', speed='16,000g')\nremove(container='tube after centrifugation', reagent='supernatant', volume='50 \u00b5L', temperature='cold', purpose='for plaque assay')\ntransfer(container='new tube', reagent='supernatant aliquot', volume='50 \u00b5L', temperature='cold', purpose='for plaque assay')\nincubate(container='adsorption cultures', temperature='usual conditions (light and temp)')\nrepeat(container='adsorption cultures', duration='every 15 min for 1 to 1.5 h', action='sampling')",
+    "source_file": "protocol_405.txt"
+  }
+]

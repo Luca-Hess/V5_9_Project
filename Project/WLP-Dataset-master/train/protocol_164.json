@@ -1,0 +1,337 @@
+[
+  {
+    "protocol": "Isolation and isotopic labeling of bacteria\nPrepare M9 media stocks.\u00a0\u00a0\nThe recipe for 1L of minimal growth medium (M9) is as follows:\u00a0\u00a0\u00a0\nAfter cooling of the autoclaved mix, add the rest of the components by 0.2 \u00b5m filter sterilization.\nIn order to prepare solid media for plating, add 1.5% agar (15 gr agar per 1 L of media) prior to autoclaving.\nAllow cooling of the media prior to add the 0.2\u00b5m filter sterilization\u00a0components.\nPour the media in Petri dishes and allow solidification of agar.\nTo prepare 1 L of the 5x M9 salts stock (autoclaved).\u00a0\nFor isotopic labeling, use D-glucose-1-13C (99% atom 13C) and ammonium-15N chloride (98% atom 15N)\nVitamins and trace metals stock used were the same as for algal DY-V media. \u00a0\u00a0\nBacterial plating.\u00a0\u00a0\u00a0\nUse a small volume (i.e. 0.1 mL) of the sample you want to isolate your bacteria to inoculate M9 agar plates.\nEnsure correct striking and dispersal of the inoculum to facilitate picking of individual colonies afterwards.\nBacterial growth\u00a0\u00a0Incubate bacteria at a temperature of choice.\nBacteria isolated from the algal cultures were chosen to grow at 30 \u00baC.\nInspect plates after 24h until big enough colonies are visible to pick.\nPicking and transfer of colonies.\nUsing sterile picks, transfer a single colony of bacteria into M9 liquid media.\nRecommended to do a first transfer into a small volume (~ 25 - 50 mL).\nPrepare a battery of tubes beforehand with M9 liquid media and pick a variety of colonies.\nProduction of labeled\u00a0bacterial biomass.\u00a0\u00a0\nIn order to produce a large ammount of biomass, transfer some of the bacteria from the M9 cultures tubes to a larger volume (i.e. 1L).\nLet bacteria grow until media is completely cloudy and a maximum yield is achieved of biomass (can be 3-4 days until C and N is consummed).\nNOTE:\u00a0for isotopic labeling, M9 media used in this step will contain 15NH4Cl and 13C D-glucose.\nProduction of HKB.\u00a0\u00a0\nOnce you have enough biomass, follow up with the protocol for making heat killed bacteria\u00a0(start at the 3rd step).",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "M9 media stocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "autoclaved mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "rest of the components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "0.2 \u00b5m filter sterilization"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "agar",
+          "volume": "15 g per 1 L media",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final concentration": "1.5%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "autoclave",
+        "parameters": {
+          "container": null,
+          "reagent": "media with agar",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "0.2 \u00b5m filter sterilization components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "Petri dishes",
+          "reagent": "media with agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "process": "solidification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "5x M9 salts stock",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "autoclaved"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "D-glucose-1-13C and ammonium-15N chloride",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "99% atom 13C, 98% atom 15N"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "vitamins and trace metals stock",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "reference": "same as algal DY-V media"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "M9 agar plates",
+          "reagent": "sample",
+          "volume": "0.1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "M9 agar plates",
+          "reagent": "bacteria",
+          "volume": null,
+          "temperature": "temperature of choice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "M9 agar plates",
+          "reagent": "bacteria",
+          "volume": null,
+          "temperature": "30 \u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "inspect",
+        "parameters": {
+          "container": "plates",
+          "reagent": "bacterial colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": "after 24h until colonies are visible",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "M9 liquid media",
+          "reagent": "single colony of bacteria",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "using sterile picks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "M9 liquid media",
+          "reagent": "single colony of bacteria",
+          "volume": "25-50 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "first transfer": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "M9 liquid media",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "battery": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": null,
+          "reagent": "variety of colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "larger volume (e.g., 1L)",
+          "reagent": "bacteria from M9 culture tubes",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "large volume culture",
+          "reagent": "bacteria",
+          "volume": "1 L",
+          "temperature": null,
+          "duration": "3-4 days",
+          "speed": null,
+          "other": {
+            "until": "media is cloudy and maximum yield is achieved"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: M9 media stocks, other: {})\n\n### AUTOMATED SECTION ###\ncool(reagent='autoclaved mix')\nadd(reagent='rest of the components', method='0.2 \u00b5m filter sterilization')\nadd(reagent='agar', volume='15 g per 1 L media', final concentration='1.5%')\n\n### MANUAL SECTION ###\n# MANUAL: autoclave (reagent: media with agar, volume: 1 L, other: {})\n\n### AUTOMATED SECTION ###\ncool(reagent='media')\nadd(reagent='0.2 \u00b5m filter sterilization components')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: Petri dishes, reagent: media, other: {})\n\n### AUTOMATED SECTION ###\nallow(container='Petri dishes', reagent='media with agar', process='solidification')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 5x M9 salts stock, volume: 1 L, other: {'method': 'autoclaved'})\n# MANUAL: use (reagent: D-glucose-1-13C and ammonium-15N chloride, other: {'concentration': '99% atom 13C, 98% atom 15N'})\n# MANUAL: use (reagent: vitamins and trace metals stock, other: {'reference': 'same as algal DY-V media'})\n# MANUAL: inoculate (container: M9 agar plates, reagent: sample, volume: 0.1 mL, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='M9 agar plates', reagent='bacteria', temperature='temperature of choice')\nincubate(container='M9 agar plates', reagent='bacteria', temperature='30 \u00baC')\n\n### MANUAL SECTION ###\n# MANUAL: inspect (container: plates, reagent: bacterial colonies, duration: after 24h until colonies are visible, other: {})\n# MANUAL: transfer (container: M9 liquid media, reagent: single colony of bacteria, other: {'method': 'using sterile picks'})\n# MANUAL: transfer (container: M9 liquid media, reagent: single colony of bacteria, volume: 25-50 mL, other: {'first transfer': True})\n# MANUAL: prepare (container: tubes, reagent: M9 liquid media, other: {'battery': True})\n# MANUAL: pick (reagent: variety of colonies, other: {})\n\n### AUTOMATED SECTION ###\ntransfer(container='larger volume (e.g., 1L)', reagent='bacteria from M9 culture tubes', volume='1 L')\nincubate(container='large volume culture', reagent='bacteria', volume='1 L', duration='3-4 days', until='media is cloudy and maximum yield is achieved')",
+    "source_file": "protocol_164.txt"
+  }
+]

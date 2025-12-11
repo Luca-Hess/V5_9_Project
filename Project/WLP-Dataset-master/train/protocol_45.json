@@ -1,0 +1,233 @@
+[
+  {
+    "protocol": "Fixation of Planktonic Samples\nAdd freshly prepared PFA fixative (see 'Fixing Cells with PFA Protocol') to water sample to a final concentration of 1-2%.Alternatively, use Formaldehyde, and fix for 12-24 hours at 4\u00b0C.\nPlace a moistened support filter (0.45 \u03bcm pore size, cellulose nitrate, 47 mm diameter) and a membrane filter (0.2 \u03bcm pore size, white polycarbonate (GTTP), 47 mm diameter) into a filtration tower.\nFilter an appropriate volume of the fixed sample by applying gentle vacuum (~ 5 inch).\nPlace a moistened support filter (0.45 \u03bcm pore size, cellulose nitrate, 25 mm diameter; Sartorius, Germany) and a membrane filter (0.2 \u03bcm pore size, white polycarbonate (GTTP), 25 mm diameter; Millipore, Eschborn, Germany) into a filtration tower.\nFilter 1 ml of the fixed sample by applying gentle vacuum (~5 inch).\nFilter 2 ml of the fixed sample on a second filter.\nAfter complete sample filtration, wash with 10-20 ml of sterile H2O.\nRemove H2O by filtration.\nPut membrane filter on blotting paper for drying and cover, e.g.\nwith the lid of a cryo box or a Petri dish.\nAllow air-drying.\nStore each filter in a separate labelled Petri dish.\nPlace membrane filter between separator sheets that the GTTP membrane filters were provided with.\nSeal Petri dish with parafilm.\nStore at -20\u00b0C until processing.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "water sample",
+          "reagent": "freshly prepared PFA fixative or Formaldehyde",
+          "volume": "to final concentration of 1-2%",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "see 'Fixing Cells with PFA Protocol'"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "water sample with fixative",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "12-24 hours",
+          "speed": null,
+          "other": {
+            "note": "if using Formaldehyde"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filtration tower",
+          "reagent": "moistened support filter (0.45 \u03bcm, cellulose nitrate, 47 mm) and membrane filter (0.2 \u03bcm, white polycarbonate (GTTP), 47 mm)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filtration tower",
+          "reagent": "fixed sample",
+          "volume": "appropriate volume",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vacuum (~5 inch)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filtration tower",
+          "reagent": "moistened support filter (0.45 \u03bcm, cellulose nitrate, 25 mm; Sartorius) and membrane filter (0.2 \u03bcm, white polycarbonate (GTTP), 25 mm; Millipore)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filtration tower",
+          "reagent": "fixed sample",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle vacuum (~5 inch)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "filtration tower",
+          "reagent": "fixed sample",
+          "volume": "2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "on a second filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "filtration tower/filter",
+          "reagent": "sterile H2O",
+          "volume": "10-20 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filtration tower/filter",
+          "reagent": "H2O",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "by filtration",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "put",
+        "parameters": {
+          "container": "blotting paper",
+          "reagent": "membrane filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "for drying and cover with lid of cryo box or Petri dish"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "membrane filter on blotting paper",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "air-drying"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "labelled Petri dish",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "each filter in separate dish"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "separator sheets",
+          "reagent": "membrane filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "sheets provided with GTTP membrane filters"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "parafilm",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "until processing",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='water sample', reagent='freshly prepared PFA fixative or Formaldehyde', volume='to final concentration of 1-2%', note=\"see 'Fixing Cells with PFA Protocol'\")\nincubate(container='water sample with fixative', temperature='4\u00b0C', duration='12-24 hours', note='if using Formaldehyde')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: filtration tower, reagent: moistened support filter (0.45 \u03bcm, cellulose nitrate, 47 mm) and membrane filter (0.2 \u03bcm, white polycarbonate (GTTP), 47 mm), other: {})\n\n### AUTOMATED SECTION ###\nfilter(container='filtration tower', reagent='fixed sample', volume='appropriate volume', speed='gentle vacuum (~5 inch)')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: filtration tower, reagent: moistened support filter (0.45 \u03bcm, cellulose nitrate, 25 mm; Sartorius) and membrane filter (0.2 \u03bcm, white polycarbonate (GTTP), 25 mm; Millipore), other: {})\n\n### AUTOMATED SECTION ###\nfilter(container='filtration tower', reagent='fixed sample', volume='1 ml', speed='gentle vacuum (~5 inch)')\nfilter(container='filtration tower', reagent='fixed sample', volume='2 ml', note='on a second filter')\nwash(container='filtration tower/filter', reagent='sterile H2O', volume='10-20 ml')\nremove(container='filtration tower/filter', reagent='H2O', speed='by filtration')\n\n### MANUAL SECTION ###\n# MANUAL: put (container: blotting paper, reagent: membrane filter, other: {'note': 'for drying and cover with lid of cryo box or Petri dish'})\n# MANUAL: dry (container: membrane filter on blotting paper, other: {'method': 'air-drying'})\n# MANUAL: store (container: labelled Petri dish, reagent: filter, other: {'note': 'each filter in separate dish'})\n# MANUAL: place (container: separator sheets, reagent: membrane filter, other: {'note': 'sheets provided with GTTP membrane filters'})\n# MANUAL: seal (container: Petri dish, reagent: parafilm, other: {})\n# MANUAL: store (container: Petri dish, temperature: -20\u00b0C, duration: until processing, other: {})",
+    "source_file": "protocol_45.txt"
+  }
+]

@@ -1,0 +1,962 @@
+[
+  {
+    "protocol": "Isolation and Purification of Plasmid DNA from E. coli\nInoculate 1000 mL of L broth containing the appropriate antibiotic with 10 mL of an overnight culture of the E. coli strain containing the plasmid to be purified.\nIncubate at 37\u00b0C overnight.\nIf amplification of the plasmid DNA is necessary (because of low copy  number of the plasmid under normal conditions), after 4-8 hours of growth, add chloramphenicol (34 mg/mL) to a final concentration  of 170 ug/mL or spectinomycin (10 mg/mL) to a final concentration of 50 ug/mL (if the bacteria carries chloramphenicol resistance).\nIncubate at 37\u00b0C overnight.\nCentrifuge the bacterial cells in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4\u00b0C.\nUse 3-250 mL GSA bottles per liter of bacteria.\nDiscard the supernatants.\nResuspend the cells with 60 mL (total, 20 mL/bottle) of lysozyme solution.\nIncubate on ice for 30 min.\nAdd 120 mL (total, 40 mL/bottle) of the alkaline SDS solution.\nGently mix (by inversion) until the solution clears.\nIncubate on ice for 5 min.\nAdd 90 mL (total, 30 mL/bottle) of the high salt solution.\nMix well and incubate on ice for 30-60 min.\nCentrifuge the bottles in the Sorvall GSA rotor at 10,000 rpm, 10 min, 4\u00b0C.\nDecant the supernatants to clean bottles.\nPrecipitate the DNA with 2X volumes (approximately 170-180 mL) of 100% EtOH.\nHold at -80\u00b0C for 60 min.\nCentrifuge the bottles in the Sorvall GSA rotor at 10,000 rpm, 10 min, 4\u00b0C.\nDiscard the supernatants.\nResuspend the pellets with 10 mL each of 50 mM Tris-HCl, pH 8.0, 100 mM NaOAc.\nTransfer the material to 30 mL corex tubes.\nAdd an equal volume of buffer-saturated phenol to each tube.\nMix well and centrifuge in the Sorvall SS34 rotor at 10,000 rpm, 10 min, room temperature.\nRemove the upper aqueous layers to clean 30 mL corex tubes.\nPrecipitate the DNAs with 2X volumes of 100% EtOH.\nHold at -80\u00b0C for 45 min.\nCentrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 10 min, 4\u00b0C.\nDiscard the supernatants.\nDry the pellets briefly (10-15 min) in the vacuum  desiccator to remove the EtOH.\nResuspend each plasmid DNA with a total of 10 mL of 1X TE buffer.\nWeigh out exactly 6.8 gm of CsCl into each of 2-30 mL corex tubes for each plasmid DNA.\nDivide each plasmid DNA solution between the 2 tubes of CsCl, measuring the volume.\nAdd 1X TE buffer to the tubes of CsCl to a final volume of 6.4 mL added to each  tube.\nMix well, until all the CsCl is in solution.\nAdd 512 \u00b5L of ethidium bromide (10 mg/mL) to each tube.\nMix well.\nCentrifuge the tubes in the Sorvall SS34 rotor at 10,000 rpm, 15 min, 4\u00b0C.\nTransfer the supernatants to Beckman polyallomar Ti50 rotor quick-seal tubes using a syringe and needle (18g).\nFill the tubes to capacity with  a CsCl/ethidium bromide solution (6.8 gm CsCl, 6.4 mL 1X TE buffer, 512 \u00b5L 10 mg/ml ethidium bromide).\nSeal the tubes with the Beckman tube sealer.\nCentrifuge the gradients in the Beckamn Ti50 rotor at 35,000 rpm, 72 hours, 25\u00b0C.\nVisualize the DNA using a UV light source.\nRemove the plasmid DNA from the gradients by puncturing the side of the tube with an 18g needle and syringe.\nPlace a small amount of Vaseline on the side of the tube and puncture through the Vaseline.\nSmear the Vaseline over the puncture hole when the syringe is removed to seal the hole.\nCircular plasmid DNA is the lower band in the gradient.\nChromosomal DNA and nicked circular DNA is in the upper band in the gradient.\nPlace the DNA solution into 30 mL corex tubes.\nExtract the ethidium bromide from the DNA solution by adding an equal  volume of CsCl/TE buffer saturated isopropanol.\nMix gently and centrifuge in the Sorvall SS34 rotor at 3,000 rpm, 1 min, 4\u00b0C.\nPipet off the upper isopropanol layer.\nRepeat the isopropanol extraction 1X.\nAdd 1.0 mL of 3 M NaOAc to each tube of DNA and adjust the volume in each tube to 10.0 mL with 1X TE buffer.\nPrecipitate the DNAs with 2X volumes of 100% EtOH.\nHold at -20\u00b0C overnight.\nCentrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 10 min, 4\u00b0C.\nDiscard the supernatants.\nDry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.\nResuspend the plasmid DNAs with 1X TE buffer.\nDetermine the DNA concentration.\nStore the DNAs at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "1000 mL L broth",
+          "reagent": "10 mL overnight E. coli culture",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "antibiotic": "appropriate antibiotic"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "1000 mL L broth",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture",
+          "reagent": "chloramphenicol or spectinomycin",
+          "volume": "to final concentration of 170 ug/mL or 50 ug/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "chloramphenicol": "34 mg/mL stock",
+            "spectinomycin": "10 mg/mL stock",
+            "timing": "after 4-8 hours of growth"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "culture",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "3 x 250 mL GSA bottles",
+          "reagent": "bacterial cells",
+          "volume": "per liter",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": "lysozyme solution",
+          "volume": "60 mL total (20 mL/bottle)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": "alkaline SDS solution",
+          "volume": "120 mL total (40 mL/bottle)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until solution clears",
+          "speed": "gentle (by inversion)",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "5 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": "high salt solution",
+          "volume": "90 mL total (30 mL/bottle)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30-60 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "GSA bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean bottles"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": "100% EtOH",
+          "volume": "2X volumes (170-180 mL)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall GSA"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": "50 mM Tris-HCl, pH 8.0, 100 mM NaOAc",
+          "volume": "10 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean bottles",
+          "reagent": "resuspended material",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "30 mL corex tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "buffer-saturated phenol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "upper aqueous layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "clean 30 mL corex tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": "100% EtOH",
+          "volume": "2X volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": "45 min",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall HB-4"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": "vacuum desiccator",
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "purpose": "remove EtOH"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "clean 30 mL corex tubes",
+          "reagent": "1X TE buffer",
+          "volume": "10 mL total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": "CsCl",
+          "volume": "6.8 gm each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "each plasmid DNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "divide",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": "plasmid DNA solution",
+          "volume": "measured",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": "1X TE buffer",
+          "volume": "6.4 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "until CsCl is in solution",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": "ethidium bromide (10 mg/mL)",
+          "volume": "512 \u00b5L each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "well",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "15 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "2 x 30 mL corex tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+            "method": "syringe and needle (18g)"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": "CsCl/ethidium bromide solution",
+          "volume": "to capacity",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "composition": "6.8 gm CsCl, 6.4 mL 1X TE buffer, 512 \u00b5L 10 mg/mL ethidium bromide"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Beckman tube sealer"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "72 hours",
+          "speed": "35,000 rpm",
+          "other": {
+            "rotor": "Beckman Ti50"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "visualize",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "UV light source"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": "plasmid DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "puncture side with 18g needle and syringe"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": "Vaseline",
+          "volume": "small amount",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "side of tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "puncture",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "through": "Vaseline"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "smear",
+        "parameters": {
+          "container": "Beckman polyallomar Ti50 rotor quick-seal tubes",
+          "reagent": "Vaseline",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "over": "puncture hole"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "DNA solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "ethidium bromide",
+          "volume": "equal volume of CsCl/TE buffer saturated isopropanol",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "DNA solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 min",
+          "speed": "3,000 rpm",
+          "other": {
+            "rotor": "Sorvall SS34"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "upper isopropanol layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "isopropanol extraction",
+          "volume": "1X",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "3 M NaOAc",
+          "volume": "1.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "1X TE buffer",
+          "volume": "to 10.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "100% EtOH",
+          "volume": "2X volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "10 min",
+          "speed": "10,000 rpm",
+          "other": {
+            "rotor": "Sorvall HB-4"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": "vacuum desiccator",
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "purpose": "remove EtOH"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "30 mL corex tubes",
+          "reagent": "1X TE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: inoculate (container: 1000 mL L broth, reagent: 10 mL overnight E. coli culture, volume: 10 mL, other: {'antibiotic': 'appropriate antibiotic'})\n\n### AUTOMATED SECTION ###\nincubate(container='1000 mL L broth', temperature='37\u00b0C', duration='overnight')\nadd(container='culture', reagent='chloramphenicol or spectinomycin', volume='to final concentration of 170 ug/mL or 50 ug/mL', chloramphenicol='34 mg/mL stock', spectinomycin='10 mg/mL stock', timing='after 4-8 hours of growth')\nincubate(container='culture', temperature='37\u00b0C', duration='overnight')\ncentrifuge(container='3 x 250 mL GSA bottles', reagent='bacterial cells', volume='per liter', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', rotor='Sorvall GSA')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: GSA bottles, reagent: supernatant)\n\n### AUTOMATED SECTION ###\nresuspend(container='GSA bottles', reagent='lysozyme solution', volume='60 mL total (20 mL/bottle)')\nincubate(container='GSA bottles', temperature='on ice', duration='30 min')\nadd(container='GSA bottles', reagent='alkaline SDS solution', volume='120 mL total (40 mL/bottle)')\nmix(container='GSA bottles', duration='until solution clears', speed='gentle (by inversion)')\nincubate(container='GSA bottles', temperature='on ice', duration='5 min')\nadd(container='GSA bottles', reagent='high salt solution', volume='90 mL total (30 mL/bottle)')\nmix(container='GSA bottles', speed='well')\nincubate(container='GSA bottles', temperature='on ice', duration='30-60 min')\ncentrifuge(container='GSA bottles', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm', rotor='Sorvall GSA')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: GSA bottles, reagent: supernatant, other: {'destination': 'clean bottles'})\n\n### AUTOMATED SECTION ###\nprecipitate(container='clean bottles', reagent='100% EtOH', volume='2X volumes (170-180 mL)')\nhold(container='clean bottles', temperature='-80\u00b0C', duration='60 min')\ncentrifuge(container='clean bottles', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm', rotor='Sorvall GSA')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: clean bottles, reagent: supernatant)\n\n### AUTOMATED SECTION ###\nresuspend(container='clean bottles', reagent='50 mM Tris-HCl, pH 8.0, 100 mM NaOAc', volume='10 mL each')\ntransfer(container='clean bottles', reagent='resuspended material', destination='30 mL corex tubes')\nadd(container='30 mL corex tubes', reagent='buffer-saturated phenol', volume='equal volume')\nmix(container='30 mL corex tubes', speed='well')\ncentrifuge(container='30 mL corex tubes', temperature='room temperature', duration='10 min', speed='10,000 rpm', rotor='Sorvall SS34')\nremove(container='30 mL corex tubes', reagent='upper aqueous layer', destination='clean 30 mL corex tubes')\nprecipitate(container='clean 30 mL corex tubes', reagent='100% EtOH', volume='2X volumes')\nhold(container='clean 30 mL corex tubes', temperature='-80\u00b0C', duration='45 min')\ncentrifuge(container='clean 30 mL corex tubes', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm', rotor='Sorvall HB-4')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: clean 30 mL corex tubes, reagent: supernatant)\n# MANUAL: dry (container: clean 30 mL corex tubes, reagent: pellets, temperature: vacuum desiccator, duration: 10-15 min, other: {'purpose': 'remove EtOH'})\n\n### AUTOMATED SECTION ###\nresuspend(container='clean 30 mL corex tubes', reagent='1X TE buffer', volume='10 mL total')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: 2 x 30 mL corex tubes, reagent: CsCl, volume: 6.8 gm each, other: {'for': 'each plasmid DNA'})\n# MANUAL: divide (container: 2 x 30 mL corex tubes, reagent: plasmid DNA solution, volume: measured)\n\n### AUTOMATED SECTION ###\nadd(container='2 x 30 mL corex tubes', reagent='1X TE buffer', volume='6.4 mL each')\nmix(container='2 x 30 mL corex tubes', duration='until CsCl is in solution')\nadd(container='2 x 30 mL corex tubes', reagent='ethidium bromide (10 mg/mL)', volume='512 \u00b5L each')\nmix(container='2 x 30 mL corex tubes', speed='well')\ncentrifuge(container='2 x 30 mL corex tubes', temperature='4\u00b0C', duration='15 min', speed='10,000 rpm', rotor='Sorvall SS34')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: 2 x 30 mL corex tubes, reagent: supernatant, other: {'destination': 'Beckman polyallomar Ti50 rotor quick-seal tubes', 'method': 'syringe and needle (18g)'})\n# MANUAL: fill (container: Beckman polyallomar Ti50 rotor quick-seal tubes, reagent: CsCl/ethidium bromide solution, volume: to capacity, other: {'composition': '6.8 gm CsCl, 6.4 mL 1X TE buffer, 512 \u00b5L 10 mg/mL ethidium bromide'})\n# MANUAL: seal (container: Beckman polyallomar Ti50 rotor quick-seal tubes, other: {'method': 'Beckman tube sealer'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='Beckman polyallomar Ti50 rotor quick-seal tubes', temperature='25\u00b0C', duration='72 hours', speed='35,000 rpm', rotor='Beckman Ti50')\n\n### MANUAL SECTION ###\n# MANUAL: visualize (container: Beckman polyallomar Ti50 rotor quick-seal tubes, reagent: DNA, other: {'method': 'UV light source'})\n# MANUAL: remove (container: Beckman polyallomar Ti50 rotor quick-seal tubes, reagent: plasmid DNA, other: {'method': 'puncture side with 18g needle and syringe'})\n# MANUAL: place (container: Beckman polyallomar Ti50 rotor quick-seal tubes, reagent: Vaseline, volume: small amount, other: {'location': 'side of tube'})\n# MANUAL: puncture (container: Beckman polyallomar Ti50 rotor quick-seal tubes, other: {'through': 'Vaseline'})\n# MANUAL: smear (container: Beckman polyallomar Ti50 rotor quick-seal tubes, reagent: Vaseline, other: {'over': 'puncture hole'})\n\n### AUTOMATED SECTION ###\nplace(container='30 mL corex tubes', reagent='DNA solution')\nextract(container='30 mL corex tubes', reagent='ethidium bromide', volume='equal volume of CsCl/TE buffer saturated isopropanol', from='DNA solution')\nmix(container='30 mL corex tubes', speed='gently')\ncentrifuge(container='30 mL corex tubes', temperature='4\u00b0C', duration='1 min', speed='3,000 rpm', rotor='Sorvall SS34')\npipette(container='30 mL corex tubes', reagent='upper isopropanol layer')\nrepeat(container='30 mL corex tubes', reagent='isopropanol extraction', volume='1X')\nadd(container='30 mL corex tubes', reagent='3 M NaOAc', volume='1.0 mL')\nadjust(container='30 mL corex tubes', reagent='1X TE buffer', volume='to 10.0 mL')\nprecipitate(container='30 mL corex tubes', reagent='100% EtOH', volume='2X volumes')\nhold(container='30 mL corex tubes', temperature='-20\u00b0C', duration='overnight')\ncentrifuge(container='30 mL corex tubes', temperature='4\u00b0C', duration='10 min', speed='10,000 rpm', rotor='Sorvall HB-4')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: 30 mL corex tubes, reagent: supernatant)\n# MANUAL: dry (container: 30 mL corex tubes, reagent: pellets, temperature: vacuum desiccator, duration: 10-15 min, other: {'purpose': 'remove EtOH'})\n\n### AUTOMATED SECTION ###\nresuspend(container='30 mL corex tubes', reagent='1X TE buffer')\n\n### MANUAL SECTION ###\n# MANUAL: determine (reagent: DNA, other: {'measurement': 'concentration'})\n\n### AUTOMATED SECTION ###\nstore(reagent='DNA', temperature='4\u00b0C')",
+    "source_file": "protocol_23.txt"
+  }
+]

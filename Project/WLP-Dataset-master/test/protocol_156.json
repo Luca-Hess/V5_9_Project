@@ -1,0 +1,323 @@
+[
+  {
+    "protocol": "General tube bacteria extraction (DNeasy)\nPlace Buffer ATL and Buffer Al at 56C for at least 5 minutes before starting.\nMake sure AW1 and AW2 have ethanol added.\nSpin >500ul of bacteria liquid culture at 10000g for 10 minutes.\nPour off supernatant.\nAdd 200ul buffer ATL to each sample and vortex for 15s.\nAdd 200ul 100% ethanol to each sample and vortex for 15s.\nBriefly spin to collect all liquid.\nTransfer all of sample including precipitate to spin column.\nCentrifuge at max speed (>20000g) for 2 minutes.\nEmpty collection tube.\nAdd 500ul buffer AW1 to spin column.\nSpin at max speed (>20000g) for 2 minutes.\nAdd 500ul buffer AW2 to spin column.\nSpin at max speed (>20000g) for 2 minutes.\nPlace spin column in a new collection tube and spin at max speed (>20000g) for 3 minutes.\nTransfer spin column to a labeled 1.5ml Eppendorf lobind tube.\nAdd 100ul of buffer TE directly to membrane/filter in spin column and incubate at room temp.\nfor 1 min Spin at 10000g for 2 minutes",
+    "actions": [
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Buffer ATL and Buffer Al",
+          "reagent": null,
+          "volume": null,
+          "temperature": "56C",
+          "duration": "at least 5 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "AW1 and AW2 bottles",
+          "reagent": "ethanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ethanol_added": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with >500ul bacteria liquid culture",
+          "reagent": null,
+          "volume": ">500ul",
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "10000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatant",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "buffer ATL",
+          "volume": "200ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "100% ethanol",
+          "volume": "200ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15s",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "brief",
+          "speed": null,
+          "other": {
+            "purpose": "collect all liquid"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "sample including precipitate",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": ">20000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "empty",
+        "parameters": {
+          "container": "collection tube",
+          "reagent": null,
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "buffer AW1",
+          "volume": "500ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": ">20000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "buffer AW2",
+          "volume": "500ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": ">20000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "new collection tube",
+          "reagent": "spin column",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column in new collection tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "3 minutes",
+          "speed": ">20000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "labeled 1.5ml Eppendorf lobind tube",
+          "reagent": "spin column",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "spin column",
+          "reagent": "buffer TE",
+          "volume": "100ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "directly to membrane/filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "1 minute",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "spin column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "10000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nincubate(container='Buffer ATL and Buffer Al', temperature='56C', duration='at least 5 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: check (container: AW1 and AW2 bottles, reagent: ethanol, other: {'ethanol_added': True})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube with >500ul bacteria liquid culture', volume='>500ul', duration='10 minutes', speed='10000g')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: tube, reagent: supernatant, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='sample tube', reagent='buffer ATL', volume='200ul')\nvortex(container='sample tube', duration='15s')\nadd(container='sample tube', reagent='100% ethanol', volume='200ul')\nvortex(container='sample tube', duration='15s')\ncentrifuge(container='sample tube', duration='brief', purpose='collect all liquid')\ntransfer(container='spin column', reagent='sample including precipitate', volume='all')\ncentrifuge(container='spin column', duration='2 minutes', speed='>20000g')\n\n### MANUAL SECTION ###\n# MANUAL: empty (container: collection tube, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='spin column', reagent='buffer AW1', volume='500ul')\ncentrifuge(container='spin column', duration='2 minutes', speed='>20000g')\nadd(container='spin column', reagent='buffer AW2', volume='500ul')\ncentrifuge(container='spin column', duration='2 minutes', speed='>20000g')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: new collection tube, reagent: spin column, volume: all, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='spin column in new collection tube', duration='3 minutes', speed='>20000g')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: labeled 1.5ml Eppendorf lobind tube, reagent: spin column, volume: all, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='spin column', reagent='buffer TE', volume='100ul', location='directly to membrane/filter')\nincubate(container='spin column', temperature='room temp', duration='1 minute')\ncentrifuge(container='spin column', duration='2 minutes', speed='10000g')",
+    "source_file": "protocol_156.txt"
+  }
+]

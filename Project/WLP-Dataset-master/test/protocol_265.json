@@ -1,0 +1,295 @@
+[
+  {
+    "protocol": "Re-amplification of CRISPRa and CRISPRi libraries (v1.0)Reference: Genome-Scale CRISPR-Mediated Control of Gene Repression and A\nDilute each sub-library to 50 ng/ul in water or EB \tElectroporate the library a\tPre-chill 01 cm cuvettes, megaX cells, 10% glycerol on ice.\nFollow the table above for the amounts of sub-library plasmid DNA and MegaX competent cells, mix gently and incubate on ice for 30 min.\t\nAdd pre-chilled 10% glycerol to the MageX-library mix for a final 75 ul, transfer the mix to a prechilled 01 cm cuvette.\t\nElectroporate at 20 kV, 200 ohms, 25 uF (Gene Pulser Xcell, Bio-rad).\t\nTransfer cells to a culture tube.\t\nUse 1 ml pipettes and gel loading tips.\t\nWash cells out gently with 300 ul SOC twice (total 600 ul).\t\t\nIncubate at 37oC, 250 rpm, 15 hour. \t\nPlate the transformations. \t\nPlate all in one large square plate per sub-library, use autoclaved beads.\t\nIncubate at 37oC for 18 hours. \t\nCollect all colonies with LB and do one maxiprep per plate, elute in 500 ul EB; an ideal concentration is about 2~3 ug/ul. \t\nTo sequence the library, you can PCR the sgRNA region with the following primers. \t\nPool sub-libraries proportionally (based on the number of sgRNAs) to have the CRISPRa or CRISPRi library, measure the pooled concentration and dilute it to 400 ng/ul for PCR.\t\nRun 3 tubes of 100 ul PCR reactions library.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "sub-library tube",
+          "reagent": "water or EB",
+          "volume": "to achieve 50 ng/ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pre-chill",
+        "parameters": {
+          "container": "01 cm cuvettes, MegaX cells, 10% glycerol",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "sub-library plasmid DNA and MegaX competent cells",
+          "reagent": null,
+          "volume": "as per table (not specified)",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "sub-library plasmid DNA and MegaX competent cells mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "MageX-library mix",
+          "reagent": "pre-chilled 10% glycerol",
+          "volume": "to final 75 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "prechilled 01 cm cuvette",
+          "reagent": "MageX-library mix (with glycerol)",
+          "volume": "75 ul",
+          "temperature": "prechilled",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "electroporate",
+        "parameters": {
+          "container": "01 cm cuvette",
+          "reagent": "MageX-library mix",
+          "volume": "75 ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "voltage": "20 kV",
+            "resistance": "200 ohms",
+            "capacitance": "25 uF",
+            "instrument": "Gene Pulser Xcell (Bio-rad)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "culture tube",
+          "reagent": "electroporated cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "culture tube with cells",
+          "reagent": "SOC",
+          "volume": "300 ul, twice (total 600 ul)",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "culture tube with cells",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 hours",
+          "speed": "250 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "plate",
+        "parameters": {
+          "container": "large square plate per sub-library",
+          "reagent": "transformed cells",
+          "volume": "all",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "beads": "autoclaved"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "large square plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "18 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "large square plate",
+          "reagent": "LB",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "collect all colonies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "maxiprep",
+        "parameters": {
+          "container": "per plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "elution": "500 ul EB",
+            "ideal concentration": "2~3 ug/ul"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "PCR",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "library, primers",
+          "volume": "not specified",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "sgRNA region"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": "tube",
+          "reagent": "sub-libraries",
+          "volume": "proportional (based on sgRNA count)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "library type": "CRISPRa or CRISPRi"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "tube with pooled library",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "concentration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube with pooled library",
+          "reagent": null,
+          "volume": "to 400 ng/ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "PCR"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "PCR tubes",
+          "reagent": "library",
+          "volume": "3 tubes of 100 ul each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(container='sub-library tube', reagent='water or EB', volume='to achieve 50 ng/ul')\npre-chill(container='01 cm cuvettes, MegaX cells, 10% glycerol', temperature='on ice')\nmix(container='sub-library plasmid DNA and MegaX competent cells', volume='as per table (not specified)', speed='gently')\nincubate(container='sub-library plasmid DNA and MegaX competent cells mix', temperature='on ice', duration='30 min')\nadd(container='MageX-library mix', reagent='pre-chilled 10% glycerol', volume='to final 75 ul')\ntransfer(container='prechilled 01 cm cuvette', reagent='MageX-library mix (with glycerol)', volume='75 ul', temperature='prechilled')\n\n### MANUAL SECTION ###\n# MANUAL: electroporate (container: 01 cm cuvette, reagent: MageX-library mix, volume: 75 ul, other: {'voltage': '20 kV', 'resistance': '200 ohms', 'capacitance': '25 uF', 'instrument': 'Gene Pulser Xcell (Bio-rad)'})\n\n### AUTOMATED SECTION ###\ntransfer(container='culture tube', reagent='electroporated cells')\nwash(container='culture tube with cells', reagent='SOC', volume='300 ul, twice (total 600 ul)', speed='gently')\nincubate(container='culture tube with cells', temperature='37\u00b0C', duration='15 hours', speed='250 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: plate (container: large square plate per sub-library, reagent: transformed cells, volume: all, other: {'beads': 'autoclaved'})\n\n### AUTOMATED SECTION ###\nincubate(container='large square plate', temperature='37\u00b0C', duration='18 hours')\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: large square plate, reagent: LB, volume: not specified, other: {'method': 'collect all colonies'})\n# MANUAL: maxiprep (container: per plate, other: {'elution': '500 ul EB', 'ideal concentration': '2~3 ug/ul'})\n\n### AUTOMATED SECTION ###\nPCR(container='PCR tube', reagent='library, primers', volume='not specified', target='sgRNA region')\npool(container='tube', reagent='sub-libraries', volume='proportional (based on sgRNA count)', library type='CRISPRa or CRISPRi')\nmeasure(container='tube with pooled library', target='concentration')\ndilute(container='tube with pooled library', volume='to 400 ng/ul', for='PCR')\nrun(container='PCR tubes', reagent='library', volume='3 tubes of 100 ul each')",
+    "source_file": "protocol_265.txt"
+  }
+]

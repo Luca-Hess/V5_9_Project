@@ -1,0 +1,344 @@
+[
+  {
+    "protocol": "Isolation and Purification of DNA from Chlorella Viruses\nFor each gradient, in 100 x 13 mm tubes, mix together 500 \u00b5L of virus, 60 \u00b5L of 10X TEN, pH 7.4, and 60 \u00b5L of 1% Na sarcosyl.\nAdd 600 \u00b5L of 60% (w/w) CsCl to each tube.\nHeat the tubes at 75\u00b0C for 15 min.\nLayer the samples onto pre-formed 40-60% (w/w) CsCl gradients in SW60 rotor tubes (to make a final 30-60% gradient).\nAdd 1200 \u00b5L of the heated virus to each gradient.\nCentrifuge the gradients in SW60 rotors at 35,000 rpm, 18 hours, 25\u00b0C.\nRemove the DNA bands from the gradients with a wide bent needle to silicon-coated 30 mL corex tubes.\nExtract the Hoechst dye from the DNA by adding an equal volume of CsCl/TE-saturated isopropanol to the DNA solution, mixing gently by inversion, centrifuge for 1 min at 3,000 rpm in the Sorvall to separate the phases, and pipet off the upper isopropanol layer.\nRepeat last step.\nAdd 1.0 mL of 3 M NaOAc to each tube and adjust the volume of each tube to 10.0 mL with 1X TE buffer.\nPrecipitate the DNAs with 2X volumes of 100% EtOH.\nMix well and hold at -20\u00b0C overnight.\nCentrifuge the DNA samples in the Sorvall HB-4 rotor at 10,000 rpm, 20 min, 4\u00b0C.\nDiscard the supernatants.\nDry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.\nResuspend the DNA samples with approximately 500 \u00b5L of 1X TE buffer.\nDetermine the DNA concentrations and store the DNAs at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "100 x 13 mm tubes",
+          "reagent": "500 \u00b5L virus, 60 \u00b5L 10X TEN (pH 7.4), 60 \u00b5L 1% Na sarcosyl",
+          "volume": "620 \u00b5L total",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "100 x 13 mm tubes",
+          "reagent": "600 \u00b5L 60% (w/w) CsCl",
+          "volume": "600 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "SW60 rotor tubes",
+          "reagent": "samples onto pre-formed 40-60% (w/w) CsCl gradients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_gradient": "30-60%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "gradient",
+          "reagent": "1200 \u00b5L heated virus",
+          "volume": "1200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SW60 rotors",
+          "reagent": "gradients",
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "18 hours",
+          "speed": "35,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "gradients",
+          "reagent": "DNA bands",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "wide bent needle",
+            "destination": "silicon-coated 30 mL corex tubes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "DNA solution",
+          "reagent": "equal volume CsCl/TE-saturated isopropanol",
+          "volume": "equal volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "DNA solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gentle inversion"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "DNA solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "3,000 rpm",
+          "other": {
+            "instrument": "Sorvall"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "DNA solution",
+          "reagent": "upper isopropanol layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "previous extraction step"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1.0 mL 3 M NaOAc",
+          "volume": "1.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1X TE buffer",
+          "volume": "to 10.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "2X volumes 100% EtOH",
+          "volume": "2X volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall HB-4 rotor",
+          "reagent": "DNA samples",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "20 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": "supernatants",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "vacuum desiccator",
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": "10-15 min",
+          "speed": null,
+          "other": {
+            "purpose": "remove EtOH"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube",
+          "reagent": "1X TE buffer",
+          "volume": "approx. 500 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNA concentrations",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tube",
+          "reagent": "DNAs",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(container='100 x 13 mm tubes', reagent='500 \u00b5L virus, 60 \u00b5L 10X TEN (pH 7.4), 60 \u00b5L 1% Na sarcosyl', volume='620 \u00b5L total')\nadd(container='100 x 13 mm tubes', reagent='600 \u00b5L 60% (w/w) CsCl', volume='600 \u00b5L')\nheat(container='tubes', temperature='75\u00b0C', duration='15 min')\nlayer(container='SW60 rotor tubes', reagent='samples onto pre-formed 40-60% (w/w) CsCl gradients', final_gradient='30-60%')\nadd(container='gradient', reagent='1200 \u00b5L heated virus', volume='1200 \u00b5L')\ncentrifuge(container='SW60 rotors', reagent='gradients', temperature='25\u00b0C', duration='18 hours', speed='35,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: gradients, reagent: DNA bands, other: {'tool': 'wide bent needle', 'destination': 'silicon-coated 30 mL corex tubes'})\n\n### AUTOMATED SECTION ###\nadd(container='DNA solution', reagent='equal volume CsCl/TE-saturated isopropanol', volume='equal volume')\nmix(container='DNA solution', method='gentle inversion')\ncentrifuge(container='DNA solution', duration='1 min', speed='3,000 rpm', instrument='Sorvall')\npipette(container='DNA solution', reagent='upper isopropanol layer')\nrepeat(step='previous extraction step')\nadd(container='tube', reagent='1.0 mL 3 M NaOAc', volume='1.0 mL')\nadjust(container='tube', reagent='1X TE buffer', volume='to 10.0 mL')\nprecipitate(container='tube', reagent='2X volumes 100% EtOH', volume='2X volumes')\nmix(container='tube')\nhold(container='tube', temperature='-20\u00b0C', duration='overnight')\ncentrifuge(container='Sorvall HB-4 rotor', reagent='DNA samples', temperature='4\u00b0C', duration='20 min', speed='10,000 rpm')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube, reagent: supernatants, other: {})\n# MANUAL: dry (container: vacuum desiccator, reagent: pellets, duration: 10-15 min, other: {'purpose': 'remove EtOH'})\n\n### AUTOMATED SECTION ###\nresuspend(container='tube', reagent='1X TE buffer', volume='approx. 500 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: determine (container: tube, reagent: DNA concentrations, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='tube', reagent='DNAs', temperature='4\u00b0C')",
+    "source_file": "protocol_515.txt"
+  }
+]

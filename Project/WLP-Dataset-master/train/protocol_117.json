@@ -1,0 +1,155 @@
+[
+  {
+    "protocol": "Cyanophage plaque purification\nPlate cells as described in Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays.\nWhen plaques begin showing up, pick them using the \u201ccoring\u201d technique.\nTo follow the liquid cultures, you just need to check (by eye) every couple of days to see if any of them have lysed.\nWhen you check them, give them a quick LOW-SPEED vortex (<4) to get the cells off the bottom of the tube (particularly the Syn) without spilling cells.\nWhen you go to \u201charvest\u201d the cyanophage (after lysis), decant the tube into two 50 ml orange capped tubes. \u00a0\nSpin on the Beckman JA-17 rotor, 10K (~13,800g), 17\u00b0C, 20 minutes.\nTransfer the supernatant into two fresh pre-labeled acid-washed glass black-capped tubes (label with: cyanophage name, date, \u201cspun\u201d, 2xplaque purified) for storage.\nWork asceptically in the hood with flame.",
+    "actions": [
+      {
+        "action": "plate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "as described in Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": null,
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "technique": "coring"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": "liquid cultures",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "every couple of days",
+          "speed": null,
+          "other": {
+            "method": "by eye",
+            "purpose": "see if any have lysed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": "<4 (low speed)",
+          "other": {
+            "purpose": "get cells off bottom without spilling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "tube",
+          "reagent": "cyanophage (after lysis)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "two 50 ml orange capped tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "two 50 ml orange capped tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "17\u00b0C",
+          "duration": "20 minutes",
+          "speed": "10K (~13,800g)",
+          "other": {
+            "rotor": "Beckman JA-17"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "two 50 ml orange capped tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "two fresh pre-labeled acid-washed glass black-capped tubes",
+            "label": "cyanophage name, date, 'spun', 2xplaque purified"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "acid-washed glass black-capped tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "work",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "hood",
+            "condition": "asceptically",
+            "equipment": "flame"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: plate (reagent: cells, other: {'method': 'as described in Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays'})\n# MANUAL: pick (reagent: plaques, other: {'technique': 'coring'})\n# MANUAL: check (container: liquid cultures, duration: every couple of days, other: {'method': 'by eye', 'purpose': 'see if any have lysed'})\n\n### AUTOMATED SECTION ###\nvortex(container='tube', reagent='cells', duration='quick', speed='<4 (low speed)', purpose='get cells off bottom without spilling')\ndecant(container='tube', reagent='cyanophage (after lysis)', destination='two 50 ml orange capped tubes')\ncentrifuge(container='two 50 ml orange capped tubes', temperature='17\u00b0C', duration='20 minutes', speed='10K (~13,800g)', rotor='Beckman JA-17')\ntransfer(container='two 50 ml orange capped tubes', reagent='supernatant', destination='two fresh pre-labeled acid-washed glass black-capped tubes', label=\"cyanophage name, date, 'spun', 2xplaque purified\")\n\n### MANUAL SECTION ###\n# MANUAL: store (container: acid-washed glass black-capped tubes, reagent: supernatant)\n# MANUAL: work (other: {'location': 'hood', 'condition': 'asceptically', 'equipment': 'flame'})",
+    "source_file": "protocol_117.txt"
+  }
+]

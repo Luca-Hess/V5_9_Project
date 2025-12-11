@@ -1,0 +1,147 @@
+[
+  {
+    "protocol": "Dephosphorylation using CIP in Restriction Enzyme Reaction (M0290)\nDigest 1\u20135 \u03bcg of plasmid DNA in a 20 \u03bcl reaction as follows: DNA \u2265 1 \u03bcl; Restriction Enzyme Buffer (10X)   2 \u03bcl; Restriction Endonuclease   1 \u03bcl; H2O, purified  to 20 \u03bcl.\nIncubate at 37\u00b0C for 60 minutes or follow manufacturer\u2019s recommendations.\nAdd 1 unit of CIP for every 1 pmol of DNA ends (about 1 \u03bcg of a 3 kb plasmid).\nIncubate at 37\u00b0C for 30\u201360 minutes.\nPurify DNA by gel purification, spin-column or\u00a0phenol extraction.\nProceed with ligation.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "plasmid DNA",
+          "volume": "\u2265 1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_reaction_volume": "20 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Restriction Enzyme Buffer (10X)",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_reaction_volume": "20 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "Restriction Endonuclease",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_reaction_volume": "20 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "H2O, purified",
+          "volume": "to 20 \u03bcl (q.s.)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_reaction_volume": "20 \u03bcl"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": "20 \u03bcl",
+          "temperature": "37\u00b0C",
+          "duration": "60 minutes or as recommended",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "CIP",
+          "volume": "1 unit per 1 pmol DNA ends (about 1 \u03bcg of 3 kb plasmid)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30\u201360 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gel purification, spin-column or phenol extraction"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "proceed",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "next_step": "ligation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='reaction tube', reagent='plasmid DNA', volume='\u2265 1 \u03bcl', total_reaction_volume='20 \u03bcl')\npipette(container='reaction tube', reagent='Restriction Enzyme Buffer (10X)', volume='2 \u03bcl', total_reaction_volume='20 \u03bcl')\npipette(container='reaction tube', reagent='Restriction Endonuclease', volume='1 \u03bcl', total_reaction_volume='20 \u03bcl')\npipette(container='reaction tube', reagent='H2O, purified', volume='to 20 \u03bcl (q.s.)', total_reaction_volume='20 \u03bcl')\nincubate(container='reaction tube', volume='20 \u03bcl', temperature='37\u00b0C', duration='60 minutes or as recommended')\npipette(container='reaction tube', reagent='CIP', volume='1 unit per 1 pmol DNA ends (about 1 \u03bcg of 3 kb plasmid)')\nincubate(container='reaction tube', temperature='37\u00b0C', duration='30\u201360 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: purify (container: reaction tube, reagent: DNA, other: {'method': 'gel purification, spin-column or phenol extraction'})\n# MANUAL: proceed (other: {'next_step': 'ligation'})",
+    "source_file": "protocol_11.txt"
+  }
+]

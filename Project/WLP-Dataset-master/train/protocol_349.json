@@ -1,0 +1,462 @@
+[
+  {
+    "protocol": "SYBR Gold Staining for viral enumeration using 13 mm Anodisc 0.02 \u03bcm filters\nCut a 3 ml syringe as a filter funnel:(Fig 1) Take a gasket from 13 mm MILLIPORE filter holder (FISHER, SX0001300).\nFig 2 Obtain a clamp for 25 filter funnel.\nMake dilution of virus prep in 0.02um filtered seawater to a concentration of ~E+07 particles ml-1.\nThaw the commercial stock of SYBR-Gold in the dark at RT and centrifuge at ~3000 rpm for 5 minutes because SYBR-Gold is in DMSO.\nCentrifuge at ~3000 rpm for 5 minutes.\nDilute SYBR-Gold in 0.02 \u00b5m filtered TE buffer to 100x (10 \u00b5l in 990 \u00b5l TE buffer).\nAdd 1 \u00b5l of SYBR working stock in 49 \u00b5l 0.02 \u00b5m filtered TE buffer in a plastic Petri dish.\nCover the dish by aluminum foil.\nSet up the filtration unit, connecting it to a vacuum.\nAdd a few drops of 0.02 \u00b5m filtered mQ on the filter base and place a 25 mm 0.2 nitrocellulose filter (the support filter) on top of the water.\nFig 3 Switch on the vacuum, the support filter should be flat on the filter base.\nPlace a 13 mm Anodisc filter on the wet nitrocellulose filter.\nFig 4 Place a gasket on the 13 mm Anodisc filter.\nFig 5 Place the syringe filter funnel carefully on the gasket and apply the clamp.\nFig 6 Switch on the vacuum and add samples for filtration, leave the vacuum on for 1 more minutes after sample drained completely.\nLeave the vacuum on for 1 more minutes after sample drained completely.\nTake away the clamp and syringe filter funnel while vacuum is on.\nCarefully push the filer to the edge of the filter base by tweezers while vacuum is on to remove the filter.\nFig 7 Dry filter membrane on Kimwipes in the dark at RT completely.\nRemove membrane and place viruses-side up on staining solution in the Petri dish for 15 min, cover the Petri dish by aluminum foil.\nCover the Petri dish by aluminum foil.\nDry filter membrane again on Kimwipes in the dark at RT completely.\nPipet 10 \u00b5l antifade solution on a microscope slide and place the stained filter membrane on top of it.\nPipet 10 \u00b5l antifade solution on a coverslid and carefully place it on the filter to avoid bubbles.\nPipet 10 \u00b5l antifade solution on a coverslid and carefully place it on the filter to avoid bubbles.\nPlace slide at \u201320\u00b0C to enhance fluorescence.\nRead slides using 100x oil immersion objective and inverted fluorescent microscope.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "virus prep",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "0.02 \u00b5m filtered seawater",
+            "final_concentration": "~E+07 particles ml-1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "commercial stock of SYBR-Gold",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR-Gold stock",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "~3000 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "~3000 rpm",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR-Gold",
+          "volume": "10 \u00b5l SYBR-Gold in 990 \u00b5l TE buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "0.02 \u00b5m filtered TE buffer",
+            "final_concentration": "100x"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plastic Petri dish",
+          "reagent": "SYBR working stock",
+          "volume": "1 \u00b5l SYBR working stock in 49 \u00b5l 0.02 \u00b5m filtered TE buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cover_material": "aluminum foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filter base",
+          "reagent": "0.02 \u00b5m filtered mQ water",
+          "volume": "a few drops",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "filter base",
+          "reagent": "25 mm 0.2 \u00b5m nitrocellulose filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "switch_on",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "wet nitrocellulose filter",
+          "reagent": "13 mm Anodisc filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "13 mm Anodisc filter",
+          "reagent": "gasket",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "gasket",
+          "reagent": "syringe filter funnel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "apply": "clamp"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "switch_on",
+        "parameters": {
+          "container": "vacuum",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "filtration unit",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "for": "filtration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "after": "sample drained completely",
+            "vacuum": "on"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": {
+            "after": "sample drained completely",
+            "vacuum": "on"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "filtration unit",
+          "reagent": "clamp and syringe filter funnel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while": "vacuum is on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "filter base",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "edge of filter base",
+            "tool": "tweezers",
+            "while": "vacuum is on"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "Kimwipes",
+          "reagent": "filter membrane",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until completely dry",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "Kimwipes",
+          "reagent": "membrane",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": "membrane (viruses-side up)",
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "on": "staining solution"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cover",
+        "parameters": {
+          "container": "Petri dish",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cover_material": "aluminum foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "Kimwipes",
+          "reagent": "filter membrane",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until completely dry",
+          "speed": null,
+          "other": {
+            "light_condition": "in the dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "antifade solution",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "stained filter membrane on top"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "coverslid",
+          "reagent": "antifade solution",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "on filter to avoid bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "coverslid",
+          "reagent": "antifade solution",
+          "volume": "10 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "place": "on filter to avoid bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "enhance fluorescence"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "objective": "100x oil immersion",
+            "microscope": "inverted fluorescent microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(reagent='virus prep', diluent='0.02 \u00b5m filtered seawater', final_concentration='~E+07 particles ml-1')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: commercial stock of SYBR-Gold, temperature: room temperature, other: {'light_condition': 'in the dark'})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='SYBR-Gold stock', duration='5 minutes', speed='~3000 rpm')\ncentrifuge(duration='5 minutes', speed='~3000 rpm')\ndilute(reagent='SYBR-Gold', volume='10 \u00b5l SYBR-Gold in 990 \u00b5l TE buffer', diluent='0.02 \u00b5m filtered TE buffer', final_concentration='100x')\nadd(container='plastic Petri dish', reagent='SYBR working stock', volume='1 \u00b5l SYBR working stock in 49 \u00b5l 0.02 \u00b5m filtered TE buffer')\n\n### MANUAL SECTION ###\n# MANUAL: cover (container: Petri dish, other: {'cover_material': 'aluminum foil'})\n\n### AUTOMATED SECTION ###\nadd(container='filter base', reagent='0.02 \u00b5m filtered mQ water', volume='a few drops')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: filter base, reagent: 25 mm 0.2 \u00b5m nitrocellulose filter, other: {'on_top_of': 'water'})\n# MANUAL: switch_on (container: vacuum)\n# MANUAL: place (container: wet nitrocellulose filter, reagent: 13 mm Anodisc filter)\n# MANUAL: place (container: 13 mm Anodisc filter, reagent: gasket)\n# MANUAL: place (container: gasket, reagent: syringe filter funnel, other: {'apply': 'clamp'})\n# MANUAL: switch_on (container: vacuum)\n\n### AUTOMATED SECTION ###\nadd(container='filtration unit', reagent='samples', for='filtration')\nwait(duration='1 minute', after='sample drained completely', vacuum='on')\nwait(duration='1 minute', after='sample drained completely', vacuum='on')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: filtration unit, reagent: clamp and syringe filter funnel, other: {'while': 'vacuum is on'})\n# MANUAL: push (container: filter base, reagent: filter, other: {'to': 'edge of filter base', 'tool': 'tweezers', 'while': 'vacuum is on'})\n# MANUAL: dry (container: Kimwipes, reagent: filter membrane, temperature: room temperature, duration: until completely dry, other: {'light_condition': 'in the dark'})\n# MANUAL: remove (container: Kimwipes, reagent: membrane)\n# MANUAL: place (container: Petri dish, reagent: membrane (viruses-side up), duration: 15 min, other: {'on': 'staining solution'})\n# MANUAL: cover (container: Petri dish, other: {'cover_material': 'aluminum foil'})\n# MANUAL: dry (container: Kimwipes, reagent: filter membrane, temperature: room temperature, duration: until completely dry, other: {'light_condition': 'in the dark'})\n\n### AUTOMATED SECTION ###\npipette(container='microscope slide', reagent='antifade solution', volume='10 \u00b5l', place='stained filter membrane on top')\npipette(container='coverslid', reagent='antifade solution', volume='10 \u00b5l', place='on filter to avoid bubbles')\npipette(container='coverslid', reagent='antifade solution', volume='10 \u00b5l', place='on filter to avoid bubbles')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: slide, temperature: -20\u00b0C, other: {'purpose': 'enhance fluorescence'})\n# MANUAL: read (container: slide, other: {'objective': '100x oil immersion', 'microscope': 'inverted fluorescent microscope'})",
+    "source_file": "protocol_349.txt"
+  }
+]

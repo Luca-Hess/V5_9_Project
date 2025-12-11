@@ -1,0 +1,239 @@
+[
+  {
+    "protocol": "T-maze (light vs dark)\n24h before the experiment, anesthetize 3-6 d old flies under CO2, and clip\u00a02/3\u00a0from both wings to half of them.\nIn the same vial, place around 30 flies with clipped wings and another 30 intact flies.\nLet them recover from anaesthesia until experiment begins.\nPlace the flies in the entrance tube (see figure) and let them adapt for 10 min.\nTurn on the light source.\nTransfer the flies to the elevator by gently tapping the apparatus, and pull the movable part down in order to close it.\nFlies are kept in the elevator for 30 sec.\nPull down the movable part, so that the elevator is placed between the transparent and the opaque tubes.\nAllow the flies to choose between dark and light for 30 sec.\nClose all tubes by pulling up the movable part, in order to lock the flies in the tube they have selected.\nCount the number of flies with and without wings in each tube.\nCalculate the Choice Index (see Guidelines for formula).",
+    "actions": [
+      {
+        "action": "anesthetize",
+        "parameters": {
+          "container": "null",
+          "reagent": "CO2",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "organism": "3-6 d old flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "clip",
+        "parameters": {
+          "container": "null",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "amount": "2/3 from both wings",
+            "target": "half of flies"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "vial",
+          "reagent": "flies with clipped wings and intact flies",
+          "volume": "around 30 flies each",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "vial",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "until experiment begins",
+          "speed": "null",
+          "other": {
+            "from": "anaesthesia"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adapt",
+        "parameters": {
+          "container": "entrance tube",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "10 min",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn on",
+        "parameters": {
+          "container": "null",
+          "reagent": "light source",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "elevator",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "method": "gently tapping the apparatus"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pull down",
+        "parameters": {
+          "container": "movable part",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "purpose": "close elevator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "elevator",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "30 sec",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pull down",
+        "parameters": {
+          "container": "movable part",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "purpose": "place elevator between transparent and opaque tubes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "transparent and opaque tubes",
+          "reagent": "flies",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "30 sec",
+          "speed": "null",
+          "other": {
+            "choice": "between dark and light"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "close",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "method": "pulling up the movable part",
+            "purpose": "lock flies in tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "flies with and without wings",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": "null",
+          "reagent": "Choice Index",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "reference": "see Guidelines for formula"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: anesthetize (container: null, reagent: CO2, volume: null, temperature: null, duration: null, speed: null, other: {'organism': '3-6 d old flies'})\n# MANUAL: clip (container: null, reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {'amount': '2/3 from both wings', 'target': 'half of flies'})\n# MANUAL: place (container: vial, reagent: flies with clipped wings and intact flies, volume: around 30 flies each, temperature: null, duration: null, speed: null)\n# MANUAL: recover (container: vial, reagent: flies, volume: null, temperature: null, duration: until experiment begins, speed: null, other: {'from': 'anaesthesia'})\n# MANUAL: place (container: entrance tube, reagent: flies, volume: null, temperature: null, duration: null, speed: null)\n\n### AUTOMATED SECTION ###\nadapt(container='entrance tube', reagent='flies', volume='null', temperature='null', duration='10 min', speed='null')\nturn on(container='null', reagent='light source', volume='null', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: elevator, reagent: flies, volume: null, temperature: null, duration: null, speed: null, other: {'method': 'gently tapping the apparatus'})\n\n### AUTOMATED SECTION ###\npull down(container='movable part', reagent='null', volume='null', temperature='null', duration='null', speed='null', purpose='close elevator')\nkeep(container='elevator', reagent='flies', volume='null', temperature='null', duration='30 sec', speed='null')\npull down(container='movable part', reagent='null', volume='null', temperature='null', duration='null', speed='null', purpose='place elevator between transparent and opaque tubes')\nallow(container='transparent and opaque tubes', reagent='flies', volume='null', temperature='null', duration='30 sec', speed='null', choice='between dark and light')\nclose(container='all tubes', reagent='null', volume='null', temperature='null', duration='null', speed='null', method='pulling up the movable part', purpose='lock flies in tube')\n\n### MANUAL SECTION ###\n# MANUAL: count (container: each tube, reagent: flies with and without wings, volume: null, temperature: null, duration: null, speed: null)\n# MANUAL: calculate (container: null, reagent: Choice Index, volume: null, temperature: null, duration: null, speed: null, other: {'reference': 'see Guidelines for formula'})",
+    "source_file": "protocol_327.txt"
+  }
+]

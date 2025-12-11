@@ -1,0 +1,464 @@
+[
+  {
+    "protocol": "Pulse Field Gel Electrophoresis (PFGE) Protocol for separation of Chlorella chromosomal DNA and Chlorella virus DNA\nHarvest Chlorella NC64A (or Pbi) cells from 4 day old cultures (1.2 - 2.0 x 107 cells/ml) by centrifugation at 4000 x g for 5 minutes.\nRe-suspend in MBBM (NC64A cells) or FES (Pbi cells) at concentration of 8.6 x 107 cells/mL.\nAdd chlorella virus to a multiplicity of infection (MOI) = 10 plaque-forming units (pfu)/cell.\nSample infected chlorella cells (25 mL) into prepared centrifuge tubes with formaldehyde (the final formaldehyde concentration is 4%) and place on ice.\nCentrifuge at 4000 x g for 5 minutes.\nWash samples by re-suspending them in 10 mL of MBBM amended with 50 mM EDTA and following centrifugation at 4000 x g for 5 minutes.\nRepeat wash step 3 times.\nRe-suspend washed infected cells in 0.5 mL of SB.\nAdd to the cells\u00a00.5 mL\u00a0of 2% low melting point agarose (BioRad) in SB (kept at 45\u00b0C), mix well (work quickly, try not to generate any air bubbles), and pour the mix into BioRad plug molds.\nPlace\u00a0plug molds in refrigerator for 15 minutes to solidify.\nCarefully remove agarose blocks from mold and place them into 2 mL of\u00a0DB amended with 1mg/mL Proteinase K.\nAfter incubation, wash agarose\u00a0blocks\u00a0for 30 minutes with DB 4 times.\nCut blocks in small pieces to fit gel wells.\nLoad agarose blocks into gel wells and seal them with melted (~45\u00b0C) 1% low melting point agarose in running buffer.\nThe chromosomes of Hansenula wingei (1.05-3.13 Mbp), cat#170-3667; Schizosaccharomyces (3.5-5.7 Mbp), cat#170-3633 (Bio-Rad, Hercules, CA, USA), and Yeast Chromosome PFG Marker (225-1,900 Kbp), cat#N0345S (New England Biolabs, Beverly, MA, USA) are used as molecular weight markers.\nSeparate chromosomal DNA \u00a0in CHEF-DR \u00a0(BioRad, Hercules, CA) electrophoresis unit with 1X TAE running buffer.\nRun electrophoresis at 3 V/cm (100 V) with pulse time ramping from 250 to 900 seconds for 60 hrs.\nChange buffer \u00a0every 24 hrs.\nStain gel with 0.5 mg/L ethidium bromide for 20.\nAdd 3.1 ml of 37% formaldehyde into 40 ml centrifuge tubes\u00a0and place them on ice.\nIncubate agarose blocks for 24 hrs at 50\u00b0C Prepare 1% agarose gel (PFGE grade) in 1\u00d7 TAE buffer using BioRad\u00a0casting stand.",
+    "actions": [
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "culture tubes",
+          "reagent": "Chlorella NC64A (or Pbi) cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "4000 x g",
+          "other": {
+            "cell_concentration": "1.2 - 2.0 x 10^7 cells/ml",
+            "culture_age": "4 day old"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "MBBM (NC64A cells) or FES (Pbi cells)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "8.6 x 10^7 cells/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "chlorella virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "MOI": "10 pfu/cell"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sample",
+        "parameters": {
+          "container": "prepared centrifuge tubes",
+          "reagent": "infected chlorella cells",
+          "volume": "25 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "formaldehyde_final_concentration": "4%"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "4000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "MBBM amended with 50 mM EDTA",
+          "volume": "10 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "4000 x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "wash",
+            "times": "3"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "SB",
+          "volume": "0.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "washed infected cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "2% low melting point agarose (BioRad) in SB (kept at 45\u00b0C)",
+          "volume": "0.5 mL",
+          "temperature": "45\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "work quickly, try not to generate any air bubbles"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "BioRad plug molds",
+          "reagent": "cell/agarose mix",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": null,
+          "volume": null,
+          "temperature": "refrigerator",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "solidify"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "plug molds",
+          "reagent": "agarose blocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose blocks",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "solution": "DB amended with 1mg/mL Proteinase K"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose blocks in DB + Proteinase K",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "DB",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "times": "4"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose blocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "fit gel wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "gel wells",
+          "reagent": "agarose blocks",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "gel wells",
+          "reagent": "melted (~45\u00b0C) 1% low melting point agarose in running buffer",
+          "volume": null,
+          "temperature": "45\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "chromosomes of Hansenula wingei, Schizosaccharomyces, Yeast Chromosome PFG Marker",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "molecular weight markers"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": "CHEF-DR electrophoresis unit",
+          "reagent": "chromosomal DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "1X TAE running buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "electrophoresis unit",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "60 hrs",
+          "speed": null,
+          "other": {
+            "voltage": "3 V/cm (100 V)",
+            "pulse_time_ramping": "250 to 900 seconds"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "change",
+        "parameters": {
+          "container": null,
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": "every 24 hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "gel",
+          "reagent": "0.5 mg/L ethidium bromide",
+          "volume": null,
+          "temperature": null,
+          "duration": "20",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "40 ml centrifuge tubes",
+          "reagent": "37% formaldehyde",
+          "volume": "3.1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose blocks",
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "24 hrs",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1% agarose gel (PFGE grade) in 1\u00d7 TAE buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "casting_stand": "BioRad"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncentrifuge(container='culture tubes', reagent='Chlorella NC64A (or Pbi) cells', duration='5 minutes', speed='4000 x g', cell_concentration='1.2 - 2.0 x 10^7 cells/ml', culture_age='4 day old')\nresuspend(reagent='MBBM (NC64A cells) or FES (Pbi cells)', final_concentration='8.6 x 10^7 cells/mL')\nadd(reagent='chlorella virus', MOI='10 pfu/cell')\nsample(container='prepared centrifuge tubes', reagent='infected chlorella cells', volume='25 mL', formaldehyde_final_concentration='4%')\nplace(container='centrifuge tubes', temperature='on ice')\ncentrifuge(container='centrifuge tubes', duration='5 minutes', speed='4000 x g')\nwash(reagent='MBBM amended with 50 mM EDTA', volume='10 mL')\ncentrifuge(duration='5 minutes', speed='4000 x g')\nrepeat(step='wash', times='3')\nresuspend(reagent='SB', volume='0.5 mL', sample='washed infected cells')\nadd(reagent='2% low melting point agarose (BioRad) in SB (kept at 45\u00b0C)', volume='0.5 mL', temperature='45\u00b0C', sample='cells')\nmix(note='work quickly, try not to generate any air bubbles')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: BioRad plug molds, reagent: cell/agarose mix, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='plug molds', temperature='refrigerator', duration='15 minutes', purpose='solidify')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: plug molds, reagent: agarose blocks, other: {})\n\n### AUTOMATED SECTION ###\nplace(reagent='agarose blocks', volume='2 mL', solution='DB amended with 1mg/mL Proteinase K')\nincubate(reagent='agarose blocks in DB + Proteinase K')\nwash(reagent='DB', duration='30 minutes', times='4')\n\n### MANUAL SECTION ###\n# MANUAL: cut (reagent: agarose blocks, other: {'purpose': 'fit gel wells'})\n# MANUAL: load (container: gel wells, reagent: agarose blocks, other: {})\n# MANUAL: seal (container: gel wells, reagent: melted (~45\u00b0C) 1% low melting point agarose in running buffer, temperature: 45\u00b0C, other: {})\n# MANUAL: use (reagent: chromosomes of Hansenula wingei, Schizosaccharomyces, Yeast Chromosome PFG Marker, other: {'purpose': 'molecular weight markers'})\n\n### AUTOMATED SECTION ###\nseparate(container='CHEF-DR electrophoresis unit', reagent='chromosomal DNA', buffer='1X TAE running buffer')\nrun(container='electrophoresis unit', duration='60 hrs', voltage='3 V/cm (100 V)', pulse_time_ramping='250 to 900 seconds')\nchange(reagent='buffer', duration='every 24 hrs')\nstain(container='gel', reagent='0.5 mg/L ethidium bromide', duration='20')\nadd(container='40 ml centrifuge tubes', reagent='37% formaldehyde', volume='3.1 ml')\nplace(container='centrifuge tubes', temperature='on ice')\nincubate(reagent='agarose blocks', temperature='50\u00b0C', duration='24 hrs')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: 1% agarose gel (PFGE grade) in 1\u00d7 TAE buffer, other: {'casting_stand': 'BioRad'})",
+    "source_file": "protocol_123.txt"
+  }
+]

@@ -1,0 +1,653 @@
+[
+  {
+    "protocol": "Irys NLRS DNA labeling and Data collection\nEquilibrate DNA ~30 min at room temp.\nPipet mix 3x with wide bore tip.\nPrepare nicking master mix\u00a0One 10\u03bcL rxn: 1\u03bcL buffer + DNA + enzyme in 200\u03bcL thin-wall PCR tube.\nBlood BspQI: 5-7u (BNG3)Cell line BspQI: 3-5u (BNG3)Other BspQI: 5-10u (BNG3)BbvCI: 4-8u (BNG2)Q+C: 3/2, 6/4, 9/6u (BNG2). \nMix 4x with Xplorer Plus Pipettor set to 8\u03bcL at lowest speed.\nPulse spin 2sec.\nIncubate in a thermal cycler for 2 hrs at 37\u00b0C with heated-lid. (For the rest of the protocol, protect from light).\nPrepare the Labeling Master Mix.\nreagentamount10x labeling buffer1.5\u03bcL10x labeling mix1.5\u03bcLTaq 5u/\u03bcL1\u03bcLH201\u03bcL.\u00a0 \nAdd 5\u03bcL Labeling Master Mix.\nMix 4x with Xplorer Plus Pipettor set to 13\u03bcL at lowest speed.\nPulse spin 2sec.\nIncubate in a thermal cycler for 60 min at 72\u00b0C with heated-lid.\nPrepare the Repair Master Mix.\nreagentamount10x Thermo Pol0.5\u03bcL50x Repair Mix0.4\u03bcL50mM NAD+0.4\u03bcLTaq DNA ligase1\u03bcLH202.7\u03bcL.\u00a0 \nMix 4x with Xplorer Plus Pipettor set to 18\u03bcL at lowest speed.\nPulse spin 2sec.\nIncubate in a thermal cycler for 30 min at 37\u00b0C with heated-lid.\nPlace NLR reaction on ice.\nAdd 1\u03bcL Stop Solution.\nMix by gently stirring 5 times with the pipet tip.\nPulse spin 2sec.\nAdd 5\u03bcl of the Repair Master Mix.\nEquilibrate Staining Master Mix components to room temp.\nPrepare the Staining Master Mix.\nreagentamount4x flow buffer15\u03bcL1M DTT12\u03bcLDNA stain1.5\u03bcLH2O11.5\u03bcL.\u00a0 \nAliquot 40\u03bcL of the Staining Master Mix into a 0.6mL amber tube.\nTransfer NLR to Staining Mix with standard tip.\nPulse spin 2 sec.\nGently mix NLRS DNA 5x with wide bore tip set to 50\u03bcL.\nPulse spin 2 sec.\nPlace staining reactions at 4\u00b0C overnight to ensure uniform DNA staining.\nEquilibrate NLRS to room temp for ~30 min.\nGently mix DNA 3x with wide bore tip set to 50\u03bcL.\nPulse spin 2 sec.\nRemove 2\u03bcL aliquots from the Top, Middle and Bottom to separate Qubit Assay tubes.\nAdd 18uL of Qubit HS Buffer.\nSonicate 10 min in a bath sonicator.\nAdd 180\u03bcL Qubit reagent mix.\nVortex 5 seconds.\nPulse spin 2 sec.\nIncubate at least 2 min at room temp.\nQuantitate with Qubit 2.0 Fluorimeter.\nNLRS DNA conc: 3-10ng/\u03bcL.\nCV < 25%.\nLoad sample into Irys chip and start data collection with a 30-cycle run on irys system",
+    "actions": [
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3,
+            "tip_type": "wide bore"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "200\u03bcL thin-wall PCR tube",
+          "reagent": "nicking master mix (1\u03bcL buffer + DNA + enzyme)",
+          "volume": "10\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "enzyme_amounts": {
+              "Blood BspQI": "5-7u (BNG3)",
+              "Cell line BspQI": "3-5u (BNG3)",
+              "Other BspQI": "5-10u (BNG3)",
+              "BbvCI": "4-8u (BNG2)",
+              "Q+C": "3/2, 6/4, 9/6u (BNG2)"
+            }
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "8\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": "lowest",
+          "other": {
+            "times": 4,
+            "instrument": "Xplorer Plus Pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermal cycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hrs",
+          "speed": null,
+          "other": {
+            "heated_lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Labeling Master Mix (1.5\u03bcL 10x labeling buffer, 1.5\u03bcL 10x labeling mix, 1\u03bcL Taq 5u/\u03bcL, 1\u03bcL H2O)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Labeling Master Mix",
+          "volume": "5\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "13\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": "lowest",
+          "other": {
+            "times": 4,
+            "instrument": "Xplorer Plus Pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermal cycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "72\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "heated_lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Repair Master Mix (0.5\u03bcL 10x Thermo Pol, 0.4\u03bcL 50x Repair Mix, 0.4\u03bcL 50mM NAD+, 1\u03bcL Taq DNA ligase, 2.7\u03bcL H2O)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "18\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": "lowest",
+          "other": {
+            "times": 4,
+            "instrument": "Xplorer Plus Pipettor"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "thermal cycler",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "heated_lid": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "NLR reaction",
+          "volume": null,
+          "temperature": "ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Stop Solution",
+          "volume": "1\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gently stirring",
+            "times": 5,
+            "instrument": "pipet tip"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Repair Master Mix",
+          "volume": "5\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": null,
+          "reagent": "Staining Master Mix components",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Staining Master Mix (15\u03bcL 4x flow buffer, 12\u03bcL 1M DTT, 1.5\u03bcL DNA stain, 11.5\u03bcL H2O)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "0.6mL amber tube",
+          "reagent": "Staining Master Mix",
+          "volume": "40\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "NLR",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to": "Staining Mix",
+            "tip_type": "standard"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "NLRS DNA",
+          "volume": "50\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 5,
+            "tip_type": "wide bore"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "staining reactions",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {
+            "purpose": "ensure uniform DNA staining"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": null,
+          "reagent": "NLRS",
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": "50\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": 3,
+            "tip_type": "wide bore"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "Qubit Assay tubes",
+          "reagent": "NLRS DNA",
+          "volume": "2\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": [
+              "Top",
+              "Middle",
+              "Bottom"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Qubit HS Buffer",
+          "volume": "18\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "instrument": "bath sonicator"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Qubit reagent mix",
+          "volume": "180\u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 sec",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 sec",
+          "speed": null,
+          "other": {
+            "type": "pulse spin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temp",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "quantitate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "Qubit 2.0 Fluorimeter"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "Irys chip",
+          "reagent": "sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "start",
+        "parameters": {
+          "container": "irys system",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "run_type": "data collection",
+            "cycles": 30
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nequilibrate(reagent='DNA', temperature='room temp', duration='30 min')\nmix(reagent='DNA', times=3, tip_type='wide bore')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: 200\u03bcL thin-wall PCR tube, reagent: nicking master mix (1\u03bcL buffer + DNA + enzyme), volume: 10\u03bcL, other: {'enzyme_amounts': {'Blood BspQI': '5-7u (BNG3)', 'Cell line BspQI': '3-5u (BNG3)', 'Other BspQI': '5-10u (BNG3)', 'BbvCI': '4-8u (BNG2)', 'Q+C': '3/2, 6/4, 9/6u (BNG2)'}})\n\n### AUTOMATED SECTION ###\nmix(volume='8\u03bcL', speed='lowest', times=4, instrument='Xplorer Plus Pipettor')\ncentrifuge(duration='2 sec', type='pulse spin')\nincubate(container='thermal cycler', temperature='37\u00b0C', duration='2 hrs', heated_lid=True)\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Labeling Master Mix (1.5\u03bcL 10x labeling buffer, 1.5\u03bcL 10x labeling mix, 1\u03bcL Taq 5u/\u03bcL, 1\u03bcL H2O), other: {})\n\n### AUTOMATED SECTION ###\nadd(reagent='Labeling Master Mix', volume='5\u03bcL')\nmix(volume='13\u03bcL', speed='lowest', times=4, instrument='Xplorer Plus Pipettor')\ncentrifuge(duration='2 sec', type='pulse spin')\nincubate(container='thermal cycler', temperature='72\u00b0C', duration='60 min', heated_lid=True)\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Repair Master Mix (0.5\u03bcL 10x Thermo Pol, 0.4\u03bcL 50x Repair Mix, 0.4\u03bcL 50mM NAD+, 1\u03bcL Taq DNA ligase, 2.7\u03bcL H2O), other: {})\n\n### AUTOMATED SECTION ###\nmix(volume='18\u03bcL', speed='lowest', times=4, instrument='Xplorer Plus Pipettor')\ncentrifuge(duration='2 sec', type='pulse spin')\nincubate(container='thermal cycler', temperature='37\u00b0C', duration='30 min', heated_lid=True)\ncool(reagent='NLR reaction', temperature='ice')\nadd(reagent='Stop Solution', volume='1\u03bcL')\n\n### MANUAL SECTION ###\n# MANUAL: mix (other: {'method': 'gently stirring', 'times': 5, 'instrument': 'pipet tip'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='2 sec', type='pulse spin')\nadd(reagent='Repair Master Mix', volume='5\u03bcL')\nequilibrate(reagent='Staining Master Mix components', temperature='room temp')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Staining Master Mix (15\u03bcL 4x flow buffer, 12\u03bcL 1M DTT, 1.5\u03bcL DNA stain, 11.5\u03bcL H2O), other: {})\n\n### AUTOMATED SECTION ###\naliquot(container='0.6mL amber tube', reagent='Staining Master Mix', volume='40\u03bcL')\ntransfer(reagent='NLR', to='Staining Mix', tip_type='standard')\ncentrifuge(duration='2 sec', type='pulse spin')\nmix(reagent='NLRS DNA', volume='50\u03bcL', times=5, tip_type='wide bore')\ncentrifuge(duration='2 sec', type='pulse spin')\nincubate(reagent='staining reactions', temperature='4\u00b0C', duration='overnight', purpose='ensure uniform DNA staining')\nequilibrate(reagent='NLRS', temperature='room temp', duration='30 min')\nmix(reagent='DNA', volume='50\u03bcL', times=3, tip_type='wide bore')\ncentrifuge(duration='2 sec', type='pulse spin')\naliquot(container='Qubit Assay tubes', reagent='NLRS DNA', volume='2\u03bcL', from=['Top', 'Middle', 'Bottom'])\nadd(reagent='Qubit HS Buffer', volume='18\u03bcL')\nsonicate(duration='10 min', instrument='bath sonicator')\nadd(reagent='Qubit reagent mix', volume='180\u03bcL')\nvortex(duration='5 sec')\ncentrifuge(duration='2 sec', type='pulse spin')\nincubate(temperature='room temp', duration='2 min')\n\n### MANUAL SECTION ###\n# MANUAL: quantitate (other: {'instrument': 'Qubit 2.0 Fluorimeter'})\n# MANUAL: load (container: Irys chip, reagent: sample, other: {})\n\n### AUTOMATED SECTION ###\nstart(container='irys system', run_type='data collection', cycles=30)",
+    "source_file": "protocol_474.txt"
+  }
+]

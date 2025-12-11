@@ -1,0 +1,143 @@
+[
+  {
+    "protocol": "Sequential Double Digest\nSet up the following reaction using the restriction endonuclease that has the lowest salt concentration in its recommended buffer (total reaction volume\u00a050\u00a0\u00b5l).\nMix components by pipetting the reaction mixture up and down, or by \"flicking\" the reaction tube.\nQuick (\"touch\") spin-down in a microcentrifuge.\nDo not vortex the reaction.\nIncubate for 1 hour at the enzyme-specific appropriate temperature.\nAdjust the salt concentration of the reaction (using a small volume of a concentrated salt solution) to approximate the reaction conditions of the second restriction endonuclease.\nAdd the second enzyme.\nMix components by pipetting the reaction mixture up and down, or by \"flicking\" the reaction tube.\nQuick (\"touch\") spin-down in a microcentrifuge.\nDo not vortex the reaction.\nIncubate for 1 hour at the enzyme-specific appropriate temperature.",
+    "actions": [
+      {
+        "action": "set up",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "restriction endonuclease with lowest salt concentration, recommended buffer, other reaction components",
+          "volume": "50 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "use enzyme with lowest salt concentration in recommended buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": "touch spin",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "enzyme-specific appropriate temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "concentrated salt solution",
+          "volume": "small volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "approximate reaction conditions of second restriction endonuclease"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "second restriction endonuclease",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipetting up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "quick",
+          "speed": "touch spin",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "reaction mixture",
+          "volume": null,
+          "temperature": "enzyme-specific appropriate temperature",
+          "duration": "1 hour",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: set up (container: reaction tube, reagent: restriction endonuclease with lowest salt concentration, recommended buffer, other reaction components, volume: 50 \u00b5l, other: {'note': 'use enzyme with lowest salt concentration in recommended buffer'})\n\n### AUTOMATED SECTION ###\nmix(container='reaction tube', reagent='reaction mixture', method='pipetting up and down')\ncentrifuge(container='reaction tube', duration='quick', speed='touch spin')\nincubate(container='reaction tube', reagent='reaction mixture', temperature='enzyme-specific appropriate temperature', duration='1 hour')\nadjust(container='reaction tube', reagent='concentrated salt solution', volume='small volume', target='approximate reaction conditions of second restriction endonuclease')\nadd(container='reaction tube', reagent='second restriction endonuclease')\nmix(container='reaction tube', reagent='reaction mixture', method='pipetting up and down')\ncentrifuge(container='reaction tube', duration='quick', speed='touch spin')\nincubate(container='reaction tube', reagent='reaction mixture', temperature='enzyme-specific appropriate temperature', duration='1 hour')",
+    "source_file": "protocol_218.txt"
+  }
+]

@@ -1,0 +1,637 @@
+[
+  {
+    "protocol": "Intracellular Staining With True-Phos\u2122 Perm Buffer in Whole Blood\nWarm 1 X RBC Lysis/Fixation Solution (Cat# 422401, 10X solution).\nFor each 0.1 mL of whole blood, aliquot 2 mL of 1 X RBC Lysis/Fixation Solution to a 50 mL conical tube and warm to 37\u00b0C.\nChill True-Phos\u2122 Perm Buffer to -20\u00b0C.\nFor each 0.1 mL of whole blood, aliquot 1.0 mL of True-Phos\u2122 Perm Buffer and chill to -20\u00b0C.\nAliquot 0.1 mL of whole blood (heparin) into a 50 mL conical tube for each test\u00a0Tips:\u00a0- 22 tests (or 2.2 mL of whole blood) are the maximum number of tests that can be processed in a 50 mL conical, due to volume constraints.\n-Prepare two aliquots: Negative control: untreated, Positive control: treated with stimuli\u00a0\n-Incubate the cells with the appropriate stimuli, at the suitable temperature and time.\nFix the cells immediately after treatment by pre-warmed 1 X RBC Lysis/Fixation Solution.\nGently pipette to ensure thorough mixing. \nIncubate at 37\u00b0C for 15 minutes to ensure cells are properly fixed. \nCentrifuge cells at 350 x g at room temperature for 5 minutes, decant supernatant, vortex to resuspend cell pellet. \nAdd sufficient Cell Staining Buffer to wash the cells (approximately 2 ml for each 1 x 106 cells, BioLegend Cell Staining Buffer recommended, Cat#420201), centrifuge at 350 x g at room temperature for 5 minutes, and decant supernatant.\nRepeat, for a total of two washes. \nGently pipette cells using residual volume to resuspend cell pellet. \nWhile vortexing, permeabilize cells by adding pre-chilled True-Phos\u2122 Perm Buffer.\u00a0\nExample: for 1 mL of whole blood, permeabilize with 10 mL of pre-chilled True-Phos\u2122 Perm Buffer. \nIncubate at -20\u00b0C for 60 minutes to ensure cells are properly permeabilized. \nCentrifuge cells at 1000 x g at room temperature for 5 minutes, decant supernatant, vortex to resuspend cell pellet. \nAdd sufficient Cell Staining Buffer to wash the cells, centrifuge cells at 1000 x g at room temperature for 5 minutes, decant supernatant.\nRepeat, for a total of two washes. \nResuspend the cells in a volume of Cell Staining Buffer equivalent to the starting volume of blood.\u00a0\nExample: if starting volume of whole blood was 1 mL, resuspend cell pellet in 1 mL of Cell Staining Buffer. \nTransfer 100 ml to a 12 x 75 mm tube. \nAdd antibody cocktail(s) to appropriate tubes, vortex to mix, and incubate for 30 minutes at room temperature in the dark. \nAdd 2 mL of Cell Staining Buffer, centrifuge cells at 1000 x g at room temperature for 5 minutes, decant supernatant.\nRepeat, for a total of two washes. \nResuspend cells in approximately 500 uL of Cell Staining Buffer and analyze with a flow cytometer",
+    "actions": [
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "1X RBC Lysis/Fixation Solution",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "catalog_number": "422401",
+            "concentration": "10X solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "50 mL conical tube",
+          "reagent": "1X RBC Lysis/Fixation Solution",
+          "volume": "2 mL per 0.1 mL whole blood",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per_test": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": "50 mL conical tube",
+          "reagent": "1X RBC Lysis/Fixation Solution",
+          "volume": "2 mL",
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": null,
+          "reagent": "True-Phos\u2122 Perm Buffer",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": null,
+          "reagent": "True-Phos\u2122 Perm Buffer",
+          "volume": "1.0 mL per 0.1 mL whole blood",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "chilled": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "50 mL conical tube",
+          "reagent": "whole blood (heparin)",
+          "volume": "0.1 mL per test",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "max_tests_per_tube": 22
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "whole blood aliquots",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "negative_control": "untreated",
+            "positive_control": "treated with stimuli"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells with stimuli",
+          "volume": null,
+          "temperature": "suitable temperature",
+          "duration": "suitable time",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.7
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "add pre-warmed 1X RBC Lysis/Fixation Solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "cell mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "purpose": "thorough mixing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "fixation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Cell Staining Buffer",
+          "volume": "2 mL per 1 x 10^6 cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "catalog_number": "420201",
+            "recommended": "BioLegend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "350 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": [
+              "add Cell Staining Buffer",
+              "centrifuge",
+              "decant"
+            ],
+            "total_washes": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "residual volume",
+          "temperature": null,
+          "duration": null,
+          "speed": "gentle",
+          "other": {
+            "purpose": "resuspend cell pellet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "pre-chilled True-Phos\u2122 Perm Buffer",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while_vortexing": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "permeabilize",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "10 mL per 1 mL whole blood (example)",
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "pre-chilled True-Phos\u2122 Perm Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "60 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "permeabilization"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "1000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "cell pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "resuspend"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Cell Staining Buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "wash"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "1000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": [
+              "add Cell Staining Buffer",
+              "centrifuge",
+              "decant"
+            ],
+            "total_washes": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "equivalent to starting volume of blood",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "Cell Staining Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "12 x 75 mm tube",
+          "reagent": "resuspended cells",
+          "volume": "100 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "antibody cocktail(s)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to_appropriate_tubes": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": "tube contents",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "mix"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "cells with antibody cocktail",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {
+            "in_dark": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "Cell Staining Buffer",
+          "volume": "2 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "5 minutes",
+          "speed": "1000 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": [
+              "add Cell Staining Buffer",
+              "centrifuge",
+              "decant"
+            ],
+            "total_washes": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "500 uL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "Cell Staining Buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "flow cytometer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwarm(reagent='1X RBC Lysis/Fixation Solution', temperature='37\u00b0C', catalog_number='422401', concentration='10X solution')\naliquot(container='50 mL conical tube', reagent='1X RBC Lysis/Fixation Solution', volume='2 mL per 0.1 mL whole blood', per_test=True)\nwarm(container='50 mL conical tube', reagent='1X RBC Lysis/Fixation Solution', volume='2 mL', temperature='37\u00b0C')\nchill(reagent='True-Phos\u2122 Perm Buffer', temperature='-20\u00b0C')\naliquot(reagent='True-Phos\u2122 Perm Buffer', volume='1.0 mL per 0.1 mL whole blood', temperature='-20\u00b0C', chilled=True)\naliquot(container='50 mL conical tube', reagent='whole blood (heparin)', volume='0.1 mL per test', max_tests_per_tube=22)\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: whole blood aliquots, other: {'negative_control': 'untreated', 'positive_control': 'treated with stimuli'})\n\n### AUTOMATED SECTION ###\nincubate(reagent='cells with stimuli', temperature='suitable temperature', duration='suitable time')\nfix(reagent='cells', method='add pre-warmed 1X RBC Lysis/Fixation Solution')\npipette(reagent='cell mixture', speed='gentle', purpose='thorough mixing')\nincubate(reagent='cells', temperature='37\u00b0C', duration='15 minutes', purpose='fixation')\ncentrifuge(reagent='cells', temperature='room temperature', duration='5 minutes', speed='350 x g')\ndecant(reagent='supernatant')\nvortex(reagent='cell pellet', purpose='resuspend')\nadd(reagent='Cell Staining Buffer', volume='2 mL per 1 x 10^6 cells', catalog_number='420201', recommended='BioLegend')\ncentrifuge(reagent='cells', temperature='room temperature', duration='5 minutes', speed='350 x g')\ndecant(reagent='supernatant')\nrepeat(steps=['add Cell Staining Buffer', 'centrifuge', 'decant'], total_washes=2)\npipette(reagent='cells', volume='residual volume', speed='gentle', purpose='resuspend cell pellet')\nadd(reagent='pre-chilled True-Phos\u2122 Perm Buffer', temperature='-20\u00b0C', while_vortexing=True)\npermeabilize(reagent='cells', volume='10 mL per 1 mL whole blood (example)', temperature='-20\u00b0C', buffer='pre-chilled True-Phos\u2122 Perm Buffer')\nincubate(reagent='cells', temperature='-20\u00b0C', duration='60 minutes', purpose='permeabilization')\ncentrifuge(reagent='cells', temperature='room temperature', duration='5 minutes', speed='1000 x g')\ndecant(reagent='supernatant')\nvortex(reagent='cell pellet', purpose='resuspend')\nadd(reagent='Cell Staining Buffer', purpose='wash')\ncentrifuge(reagent='cells', temperature='room temperature', duration='5 minutes', speed='1000 x g')\ndecant(reagent='supernatant')\nrepeat(steps=['add Cell Staining Buffer', 'centrifuge', 'decant'], total_washes=2)\nresuspend(reagent='cells', volume='equivalent to starting volume of blood', buffer='Cell Staining Buffer')\ntransfer(container='12 x 75 mm tube', reagent='resuspended cells', volume='100 uL')\nadd(reagent='antibody cocktail(s)', to_appropriate_tubes=True)\nvortex(reagent='tube contents', purpose='mix')\nincubate(reagent='cells with antibody cocktail', temperature='room temperature', duration='30 minutes', in_dark=True)\nadd(reagent='Cell Staining Buffer', volume='2 mL')\ncentrifuge(reagent='cells', temperature='room temperature', duration='5 minutes', speed='1000 x g')\ndecant(reagent='supernatant')\nrepeat(steps=['add Cell Staining Buffer', 'centrifuge', 'decant'], total_washes=2)\nresuspend(reagent='cells', volume='500 uL', buffer='Cell Staining Buffer')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (reagent: cells, other: {'instrument': 'flow cytometer'})",
+    "source_file": "protocol_351.txt"
+  }
+]

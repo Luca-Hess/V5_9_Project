@@ -1,0 +1,346 @@
+[
+  {
+    "protocol": "Extracting DNA from viruses embedded in agarose\nAdd agarose to SE buffer for a final concentration of 1.5% (wt/vol).\nMelt the agarose in a microwave oven, then cool and maintain at 37\u00b0C in a water bath.\nWarm the viral concentrate to 37\u00b0C in the water bath, then immediately mix with an equal volume of molten agarose and quickly transfer the mixture to casting molds.\nOnce the agarose has gelled, transfer the plug (or noodle from the syringe, or buttons from the parafilm), into a tube containing 5 volumes of lysis buffer amended with proteinase K (1 mg mL\u20131 final concentration).\nIncubate at room temperature overnight.\nDecant the lysis buffer, being careful not to lose the plugs.\nOptional: Rinse the plugs twice, each time adding 25 volumes of fresh TE containing 1 mM PMSF, incubating for 1 h with gentle agitation, then decanting the rinse fluid.\nRinse the plugs, add 50 volumes of fresh TE with no PMSF, incubate for 30 min.\nwith gentle agitation, then decant the rinse fluid.\nOnce more, rinse the plugs, add 50 volumes of fresh TE with no PMSF, incubate for 30 min.\nwith gentle agitation, then decant the rinse fluid.\nStore the plugs at 4\u00b0C submerged in TE.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "SE buffer",
+          "reagent": "agarose",
+          "volume": "for final concentration of 1.5% (wt/vol)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": null,
+          "reagent": "agarose in SE buffer",
+          "volume": null,
+          "temperature": "microwave oven (high heat)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": null,
+          "reagent": "molten agarose",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "maintain",
+        "parameters": {
+          "container": null,
+          "reagent": "molten agarose",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "warm",
+        "parameters": {
+          "container": null,
+          "reagent": "viral concentrate",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "viral concentrate and equal volume of molten agarose",
+          "volume": "equal volumes",
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": "quickly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "casting molds",
+          "reagent": "mixture of viral concentrate and molten agarose",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "quickly",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tube containing lysis buffer with proteinase K",
+          "reagent": "plug/noodle/buttons (gelled agarose)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "lysis buffer volume": "5 volumes",
+            "proteinase K concentration": "1 mg/mL final"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plug in lysis buffer with proteinase K",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "tube",
+          "reagent": "lysis buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "caution": "do not lose plugs"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs",
+          "volume": "25 volumes of fresh TE containing 1 mM PMSF",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "twice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fresh TE containing 1 mM PMSF",
+          "volume": "25 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs in TE with PMSF",
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": "gentle agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "tube",
+          "reagent": "rinse fluid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs",
+          "volume": "50 volumes of fresh TE with no PMSF",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fresh TE with no PMSF",
+          "volume": "50 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs in TE",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "gentle agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "tube",
+          "reagent": "rinse fluid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs",
+          "volume": "50 volumes of fresh TE with no PMSF",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "fresh TE with no PMSF",
+          "volume": "50 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "plugs in TE",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": "gentle agitation",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "decant",
+        "parameters": {
+          "container": "tube",
+          "reagent": "rinse fluid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "plugs",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "submerged in": "TE"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='SE buffer', reagent='agarose', volume='for final concentration of 1.5% (wt/vol)')\n\n### MANUAL SECTION ###\n# MANUAL: melt (reagent: agarose in SE buffer, temperature: microwave oven (high heat), other: {})\n\n### AUTOMATED SECTION ###\ncool(reagent='molten agarose', temperature='37\u00b0C', method='water bath')\nmaintain(reagent='molten agarose', temperature='37\u00b0C', method='water bath')\nwarm(reagent='viral concentrate', temperature='37\u00b0C', method='water bath')\nmix(reagent='viral concentrate and equal volume of molten agarose', volume='equal volumes', temperature='37\u00b0C', speed='quickly')\ntransfer(container='casting molds', reagent='mixture of viral concentrate and molten agarose', speed='quickly')\ntransfer(container='tube containing lysis buffer with proteinase K', reagent='plug/noodle/buttons (gelled agarose)', lysis buffer volume='5 volumes', proteinase K concentration='1 mg/mL final')\nincubate(container='tube', reagent='plug in lysis buffer with proteinase K', temperature='room temperature', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: tube, reagent: lysis buffer, other: {'caution': 'do not lose plugs'})\n\n### AUTOMATED SECTION ###\nrinse(container='tube', reagent='plugs', volume='25 volumes of fresh TE containing 1 mM PMSF', times='twice')\nadd(container='tube', reagent='fresh TE containing 1 mM PMSF', volume='25 volumes')\nincubate(container='tube', reagent='plugs in TE with PMSF', duration='1 h', speed='gentle agitation')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: tube, reagent: rinse fluid, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='tube', reagent='plugs', volume='50 volumes of fresh TE with no PMSF')\nadd(container='tube', reagent='fresh TE with no PMSF', volume='50 volumes')\nincubate(container='tube', reagent='plugs in TE', duration='30 min', speed='gentle agitation')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: tube, reagent: rinse fluid, other: {})\n\n### AUTOMATED SECTION ###\nrinse(container='tube', reagent='plugs', volume='50 volumes of fresh TE with no PMSF')\nadd(container='tube', reagent='fresh TE with no PMSF', volume='50 volumes')\nincubate(container='tube', reagent='plugs in TE', duration='30 min', speed='gentle agitation')\n\n### MANUAL SECTION ###\n# MANUAL: decant (container: tube, reagent: rinse fluid, other: {})\n\n### AUTOMATED SECTION ###\nstore(reagent='plugs', temperature='4\u00b0C', submerged in='TE')",
+    "source_file": "protocol_288.txt"
+  }
+]

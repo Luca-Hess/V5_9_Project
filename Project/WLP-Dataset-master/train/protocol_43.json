@@ -1,0 +1,153 @@
+[
+  {
+    "protocol": "Cleaning of the Nuclear Fraction (FOCUS\u2122 SubCell Kit)\nResuspend the nuclear pellet in 300\u00b5l SubCell Buffer\u2010III.\nUsing a sharp pipette tip, remove the sticky lump if any.\nThe lump is formed from dead cells and some lysed nuclei.\nCentrifuge the tube at 700x g for 5 minutes and discard the supernatant.\nThe pellet containing nuclei is clean enough for most purposes.\nIf further cleaning required, go to next step.\nPipette 300\u00b5l SubCell Buffer\u2010IV to a 1.5ml centrifuge tube.\nResuspend the nuclear pellet in 100\u00b5l SubCell Buffer\u2010III.\nCarefully overlay the nuclear suspension on the surface of SubCell Buffer\u2010IV.\nCentrifuge the tube at 1,000x g for 10 minutes.\nRemove the supernatant and collect the very clean nuclear pellet in the tube.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with nuclear pellet",
+          "reagent": "SubCell Buffer\u2010III",
+          "volume": "300\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube with nuclear pellet",
+          "reagent": "sticky lump (dead cells/lysed nuclei)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "sharp pipette tip"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube with nuclear pellet",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "700x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": "SubCell Buffer\u2010IV",
+          "volume": "300\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "tube with nuclear pellet",
+          "reagent": "SubCell Buffer\u2010III",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": "1.5ml centrifuge tube with SubCell Buffer\u2010IV",
+          "reagent": "nuclear suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "carefully on surface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "1.5ml centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 minutes",
+          "speed": "1,000x g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "tube after centrifugation",
+          "reagent": "very clean nuclear pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='tube with nuclear pellet', reagent='SubCell Buffer\u2010III', volume='300\u00b5l')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: tube with nuclear pellet, reagent: sticky lump (dead cells/lysed nuclei), other: {'tool': 'sharp pipette tip'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube with nuclear pellet', duration='5 minutes', speed='700x g')\ndiscard(container='tube after centrifugation', reagent='supernatant')\npipette(container='1.5ml centrifuge tube', reagent='SubCell Buffer\u2010IV', volume='300\u00b5l')\nresuspend(container='tube with nuclear pellet', reagent='SubCell Buffer\u2010III', volume='100\u00b5l')\noverlay(container='1.5ml centrifuge tube with SubCell Buffer\u2010IV', reagent='nuclear suspension', method='carefully on surface')\ncentrifuge(container='1.5ml centrifuge tube', duration='10 minutes', speed='1,000x g')\nremove(container='tube after centrifugation', reagent='supernatant')\ncollect(container='tube after centrifugation', reagent='very clean nuclear pellet')",
+    "source_file": "protocol_43.txt"
+  }
+]

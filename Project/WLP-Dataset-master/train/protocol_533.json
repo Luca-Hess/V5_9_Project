@@ -1,0 +1,131 @@
+[
+  {
+    "protocol": "From siRNA to shRNA\nAnchor\u00a0the siRNA sequence (19nt) on your target gene.\nExtract 2nt of upstream +19nt siRNA + 1nt of downstream, which is totally 22nt of nucleotides.\nAntisense shRNA: Insert the reverse complement of the 22nt into shRNA backbone.\nSense shRNA: Insert the 22nt (from step 2) into shRNA backbone.\nReplace the 1st nt with other nucleotide (replace A with G and vice versa; replace C with T and vice versa).\nNow your shRNA designing job is done.\nYou see, how easy it is!\nSynthesis the shRNA nucleotides and insert them into pTRIPZ vector.\nYou may also translocate the shRNA from pTRIPZ vector into pGIPZ vector.",
+    "actions": [
+      {
+        "action": "anchor",
+        "parameters": {
+          "container": null,
+          "reagent": "siRNA sequence (19nt)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "target gene"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "2nt upstream, 19nt siRNA, 1nt downstream",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "total_nt": "22nt"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "shRNA backbone",
+          "reagent": "reverse complement of 22nt",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "antisense shRNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "shRNA backbone",
+          "reagent": "22nt sequence",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "type": "sense shRNA"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": null,
+          "reagent": "1st nucleotide",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "rules": "A\u2194G, C\u2194T"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": null,
+          "reagent": "shRNA nucleotides",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "insert",
+        "parameters": {
+          "container": "pTRIPZ vector",
+          "reagent": "shRNA nucleotides",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "translocate",
+        "parameters": {
+          "container": "pGIPZ vector",
+          "reagent": "shRNA from pTRIPZ vector",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: anchor (reagent: siRNA sequence (19nt), other: {'target': 'target gene'})\n# MANUAL: extract (reagent: 2nt upstream, 19nt siRNA, 1nt downstream, other: {'total_nt': '22nt'})\n# MANUAL: insert (container: shRNA backbone, reagent: reverse complement of 22nt, other: {'type': 'antisense shRNA'})\n# MANUAL: insert (container: shRNA backbone, reagent: 22nt sequence, other: {'type': 'sense shRNA'})\n# MANUAL: replace (reagent: 1st nucleotide, other: {'rules': 'A\u2194G, C\u2194T'})\n# MANUAL: synthesize (reagent: shRNA nucleotides, other: {})\n# MANUAL: insert (container: pTRIPZ vector, reagent: shRNA nucleotides, other: {})\n# MANUAL: translocate (container: pGIPZ vector, reagent: shRNA from pTRIPZ vector, other: {})",
+    "source_file": "protocol_533.txt"
+  }
+]

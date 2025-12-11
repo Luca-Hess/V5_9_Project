@@ -1,0 +1,173 @@
+[
+  {
+    "protocol": "Probe Making\nCut a 5 \u00bc inch length of carbon fiber tube, a 6 inch length of FEP outer sheath material, two \u00be inch pieces of inner end-cap material, and two \u00be inch pieces of middle end-cap material.\nPlace the inner end-cap material around the sample tube, slide up to an appropriate height so that there is enough space for the carbon-fiber tube below, and so that the overall sample tube length is correct, and shrink it on.\nShrink the middle end-cap material over the inner end-cap.\nSlide the sample tube into the carbon fiber tube.\nSimilarly, shrink on inner and middle end-caps onto the sample tube below the carbon fiber.\nShrink a single piece of FEP sheath material over the whole assembly.\nCut the end on a slight angle.",
+    "actions": [
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "carbon fiber tube",
+          "volume": "5 \u00bc inch length",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "FEP outer sheath material",
+          "volume": "6 inch length",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "inner end-cap material",
+          "volume": "two \u00be inch pieces",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "middle end-cap material",
+          "volume": "two \u00be inch pieces",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "inner end-cap material",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "around sample tube, slide up to appropriate height"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "shrink",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "inner end-cap material",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shrink",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "middle end-cap material",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "over": "inner end-cap"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "slide",
+        "parameters": {
+          "container": "carbon fiber tube",
+          "reagent": "sample tube",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "into carbon fiber tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "shrink",
+        "parameters": {
+          "container": "sample tube",
+          "reagent": "inner and middle end-caps",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "position": "onto sample tube below carbon fiber"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "shrink",
+        "parameters": {
+          "container": "whole assembly",
+          "reagent": "FEP sheath material",
+          "volume": "single piece",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": null,
+          "reagent": "end",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "angle": "slight"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: cut (reagent: carbon fiber tube, volume: 5 \u00bc inch length, other: {})\n# MANUAL: cut (reagent: FEP outer sheath material, volume: 6 inch length, other: {})\n# MANUAL: cut (reagent: inner end-cap material, volume: two \u00be inch pieces, other: {})\n# MANUAL: cut (reagent: middle end-cap material, volume: two \u00be inch pieces, other: {})\n# MANUAL: place (container: sample tube, reagent: inner end-cap material, other: {'position': 'around sample tube, slide up to appropriate height'})\n\n### AUTOMATED SECTION ###\nshrink(container='sample tube', reagent='inner end-cap material')\nshrink(container='sample tube', reagent='middle end-cap material', over='inner end-cap')\n\n### MANUAL SECTION ###\n# MANUAL: slide (container: carbon fiber tube, reagent: sample tube, other: {'position': 'into carbon fiber tube'})\n\n### AUTOMATED SECTION ###\nshrink(container='sample tube', reagent='inner and middle end-caps', position='onto sample tube below carbon fiber')\nshrink(container='whole assembly', reagent='FEP sheath material', volume='single piece')\n\n### MANUAL SECTION ###\n# MANUAL: cut (reagent: end, other: {'angle': 'slight'})",
+    "source_file": "protocol_309.txt"
+  }
+]

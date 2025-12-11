@@ -1,0 +1,348 @@
+[
+  {
+    "protocol": "Phenol/chloroform extraction\nDilute your nucleic acid sample to 100\u2013700 \u00b5L or divide your samples into tubes such that you have no more than 700 \u00b5L per tube.\nAdd an equal volume of phenol to the tube, vortex vigorously to mix the phases.\nSpin in a microfuge at top speed for 1\u20132 min to separate the phases.\nRemove the aqueous phase to a new tube, being careful not to transfer any of the protein at the phase interface.\nRepeat the phenol extraction from step 4.\nRepeat the phenol extraction from step 4.\nExtract the sample with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.\nExtract the sample again with an equal volume of chloroform:isoamyl alcohol to remove any trace phenol.\nPrecipitate the nucleic acid.",
+    "actions": [
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nucleic acid sample",
+          "volume": "100\u2013700 \u00b5L per tube",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "divide_samples": "no more than 700 \u00b5L per tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume to sample (100\u2013700 \u00b5L)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed (microfuge)",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume to sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed (microfuge)",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "phenol",
+          "volume": "equal volume to sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed (microfuge)",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform:isoamyl alcohol",
+          "volume": "equal volume to sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove trace phenol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed (microfuge)",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube",
+          "reagent": "chloroform:isoamyl alcohol",
+          "volume": "equal volume to sample",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove trace phenol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex vigorously",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1\u20132 min",
+          "speed": "top speed (microfuge)",
+          "other": {
+            "purpose": "separate phases"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "aqueous phase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "transfer_to": "new tube",
+            "avoid": "protein at phase interface"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "precipitate",
+        "parameters": {
+          "container": "tube",
+          "reagent": "nucleic acid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.5
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ndilute(container='tube', reagent='nucleic acid sample', volume='100\u2013700 \u00b5L per tube', divide_samples='no more than 700 \u00b5L per tube')\nadd(container='tube', reagent='phenol', volume='equal volume to sample (100\u2013700 \u00b5L)')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed (microfuge)', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\nadd(container='tube', reagent='phenol', volume='equal volume to sample')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed (microfuge)', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\nadd(container='tube', reagent='phenol', volume='equal volume to sample')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed (microfuge)', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\nadd(container='tube', reagent='chloroform:isoamyl alcohol', volume='equal volume to sample', purpose='remove trace phenol')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed (microfuge)', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\nadd(container='tube', reagent='chloroform:isoamyl alcohol', volume='equal volume to sample', purpose='remove trace phenol')\nmix(container='tube', speed='vortex vigorously')\ncentrifuge(container='tube', duration='1\u20132 min', speed='top speed (microfuge)', purpose='separate phases')\nremove(container='tube', reagent='aqueous phase', transfer_to='new tube', avoid='protein at phase interface')\n\n### MANUAL SECTION ###\n# MANUAL: precipitate (container: tube, reagent: nucleic acid, other: {})",
+    "source_file": "protocol_544.txt"
+  }
+]

@@ -1,0 +1,127 @@
+[
+  {
+    "protocol": "PNGase F Protocol, Denaturing Conditions\nCombine the following (for a\u00a010 \u00b5l total reaction volume): \nDenature glycoprotein by heating reaction at 95\u00b0C for 5 minutes.\nChill denatured glycoprotein on ice. \nCentrifuge 10 seconds. \nAdd the following (bringing total reaction volume to\u00a020 \u00b5l):\u00a0 \nAdd PNGase F,\u00a0\u00a01 \u00b5l. \nMix gently. \nIncubate reaction at 37\u00b0C for 1 hour.  \nAnalyze by method of choice",
+    "actions": [
+      {
+        "action": "combine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "10 \u00b5l total reaction volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "glycoprotein",
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "purpose": "denature glycoprotein"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "denatured glycoprotein",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10 seconds",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": "PNGase F",
+          "volume": "1 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_volume": "20 \u00b5l"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "1 hour",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "method of choice"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\ncombine(volume='10 \u00b5l total reaction volume')\nheat(container='reaction tube', reagent='glycoprotein', temperature='95\u00b0C', duration='5 minutes', purpose='denature glycoprotein')\ncool(container='reaction tube', reagent='denatured glycoprotein', temperature='on ice')\ncentrifuge(container='reaction tube', duration='10 seconds')\nadd(container='reaction tube', reagent='PNGase F', volume='1 \u00b5l', final_volume='20 \u00b5l')\nmix(container='reaction tube', speed='gently')\nincubate(container='reaction tube', temperature='37\u00b0C', duration='1 hour')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (other: {'method': 'method of choice'})",
+    "source_file": "protocol_198.txt"
+  }
+]

@@ -1,0 +1,351 @@
+[
+  {
+    "protocol": "Transformation of Bacterial Cultures Using The Calcium Chloride Procedure\nGrow 5 mL of the host cells overnight in L broth at 37\u00b0C.\nInoculate 100 mL of L broth with 1 mL of the overnight culture.\nGrow the cells with shaking at 37\u00b0C to a density of approximately 5 X 107 cells/ml.\nChill the culture on ice for 10 min.\nCentrifuge the cell suspension in the Sorvall SS34 rotor at 4,000g, 5 min, 4\u00b0C.\nDiscard the supernatant.\nResuspend the cells with 1/2 the original volume with an ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2.\nPlace the cell suspension in an ice bath for 15 min.\nDiscard the supernatant.\nResuspend the cells with 1/15 of the original volume with an ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2.\nDispense 0.2 mL aliquots into prechilled microfuge tubes.\nStore the cells at 4\u00b0C for 12-24 hours.\nAdd the DNA in as small a volume as possible (1-2 \u00b5L/plate).\nMix and store on ice for 30 min.\nTransfer the mixtures to 42\u00b0C for 2 min.\nAdd 1.0 mL of L broth to each tube and incubate at 37\u00b0C for 30 min (tetracycline selection) or 60 min (ampicillin or kanamycin selection) without shaking.\nSpread an appropriate volume (usually 100-200 \u00b5L) of cells onto selective media by using either the spread plate method or the agar overlay method.\nLeave the plates at room temperature until the agar overlay has solidified or the liquid has been absorbed into the plate.\nInvert the plates and incubate at 37\u00b0C.\nColonies should appear in 12-16 hours.\nCentrifuge the suspension in the Sorvall SS34 rotor at 4,000g, 5 min, 4\u00b0C.",
+    "actions": [
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "5 mL culture tube or flask",
+          "reagent": "host cells in L broth",
+          "volume": "5 mL",
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": "100 mL flask or bottle",
+          "reagent": "1 mL overnight culture",
+          "volume": "1 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "100 mL L broth"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "flask or bottle",
+          "reagent": "cells in L broth",
+          "volume": "100 mL",
+          "temperature": "37\u00b0C",
+          "duration": "until density ~5 x 10^7 cells/mL",
+          "speed": "shaking",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "chill",
+        "parameters": {
+          "container": "culture flask or bottle",
+          "reagent": "cell culture",
+          "volume": "100 mL",
+          "temperature": "on ice",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "cell suspension",
+          "volume": "100 mL",
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "4,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2",
+          "volume": "1/2 original volume",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": "ice bath",
+          "duration": "15 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "centrifuge tube",
+          "reagent": "ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2",
+          "volume": "1/15 original volume",
+          "temperature": "ice cold",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "prechilled microfuge tubes",
+          "reagent": "cell suspension",
+          "volume": "0.2 mL aliquots",
+          "temperature": "prechilled",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microfuge tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "12-24 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "DNA",
+          "volume": "1-2 \u00b5L/plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "as small a volume as possible"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "cells and DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "mixture",
+          "volume": null,
+          "temperature": "42\u00b0C",
+          "duration": "2 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "L broth",
+          "volume": "1.0 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "microfuge tube",
+          "reagent": "cells in L broth",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "30 min (tetracycline) or 60 min (ampicillin/kanamycin)",
+          "speed": "without shaking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spread",
+        "parameters": {
+          "container": "selective media plate",
+          "reagent": "cells",
+          "volume": "100-200 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spread plate or agar overlay"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "leave",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "until agar overlay solidifies or liquid absorbed",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "plate",
+          "reagent": "colonies",
+          "volume": null,
+          "temperature": null,
+          "duration": "12-16 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "Sorvall SS34 rotor",
+          "reagent": "suspension",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "4,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: grow (container: 5 mL culture tube or flask, reagent: host cells in L broth, volume: 5 mL, temperature: 37\u00b0C, duration: overnight, other: {})\n# MANUAL: inoculate (container: 100 mL flask or bottle, reagent: 1 mL overnight culture, volume: 1 mL, other: {'destination': '100 mL L broth'})\n# MANUAL: grow (container: flask or bottle, reagent: cells in L broth, volume: 100 mL, temperature: 37\u00b0C, duration: until density ~5 x 10^7 cells/mL, speed: shaking, other: {})\n\n### AUTOMATED SECTION ###\nchill(container='culture flask or bottle', reagent='cell culture', volume='100 mL', temperature='on ice', duration='10 min')\ncentrifuge(container='Sorvall SS34 rotor', reagent='cell suspension', volume='100 mL', temperature='4\u00b0C', duration='5 min', speed='4,000g')\ndiscard(container='centrifuge tube', reagent='supernatant')\nresuspend(container='centrifuge tube', reagent='ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2', volume='1/2 original volume', temperature='ice cold')\nincubate(container='centrifuge tube', reagent='cell suspension', temperature='ice bath', duration='15 min')\ndiscard(container='centrifuge tube', reagent='supernatant')\nresuspend(container='centrifuge tube', reagent='ice cold, sterile solution of 10 mM Tris-HCl, pH 8.0, 50 mM CaCl2', volume='1/15 original volume', temperature='ice cold')\ndispense(container='prechilled microfuge tubes', reagent='cell suspension', volume='0.2 mL aliquots', temperature='prechilled')\nstore(container='microfuge tubes', reagent='cells', temperature='4\u00b0C', duration='12-24 hours')\nadd(container='microfuge tube', reagent='DNA', volume='1-2 \u00b5L/plate', note='as small a volume as possible')\nmix(container='microfuge tube', reagent='cells and DNA')\nstore(container='microfuge tube', reagent='mixture', temperature='on ice', duration='30 min')\ntransfer(container='microfuge tube', reagent='mixture', temperature='42\u00b0C', duration='2 min')\nadd(container='microfuge tube', reagent='L broth', volume='1.0 mL')\nincubate(container='microfuge tube', reagent='cells in L broth', temperature='37\u00b0C', duration='30 min (tetracycline) or 60 min (ampicillin/kanamycin)', speed='without shaking')\n\n### MANUAL SECTION ###\n# MANUAL: spread (container: selective media plate, reagent: cells, volume: 100-200 \u00b5L, other: {'method': 'spread plate or agar overlay'})\n\n### AUTOMATED SECTION ###\nleave(container='plate', temperature='room temperature', duration='until agar overlay solidifies or liquid absorbed')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: plate, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', temperature='37\u00b0C')\nwait(container='plate', reagent='colonies', duration='12-16 hours')\ncentrifuge(container='Sorvall SS34 rotor', reagent='suspension', temperature='4\u00b0C', duration='5 min', speed='4,000g')",
+    "source_file": "protocol_366.txt"
+  }
+]

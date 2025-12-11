@@ -1,0 +1,187 @@
+[
+  {
+    "protocol": "Capped RNA Synthesis (E2050)\nPrepare 40 mM cap analog. \nThaw the necessary kit components, mix and pulse-spin in a microfuge to collect solutions to the bottoms of tubes. \nAssemble the reaction at room temperature in the following order. \nMix thoroughly and pulse-spin. \u00a0\nIncubate at 37\u00b0C for 2 hours. \nOptional step:\u00a0To remove template DNA, add 2 \u03bcl of DNase I (RNase-free), mix and incubate at 37\u00b0C for 15 minutes.\nProceed with purification of synthesized RNA or analysis of transcription products by gel electrophoresis",
+    "actions": [
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "kit components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "kit components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "kit components",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pulse-spin",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "assemble",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "order": "specified"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "pulse-spin",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "2 hours",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase I (RNase-free)",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "optional"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "step": "optional"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": {
+            "step": "optional"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": null,
+          "reagent": "synthesized RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": null,
+          "reagent": "transcription products",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "gel electrophoresis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: thaw (container: tubes, reagent: kit components, other: {})\n\n### AUTOMATED SECTION ###\nmix(container='tubes', reagent='kit components')\ncentrifuge(container='tubes', reagent='kit components', speed='pulse-spin')\n\n### MANUAL SECTION ###\n# MANUAL: assemble (temperature: room temperature, other: {'order': 'specified'})\n\n### AUTOMATED SECTION ###\nmix()\ncentrifuge(speed='pulse-spin')\nincubate(temperature='37\u00b0C', duration='2 hours')\npipette(reagent='DNase I (RNase-free)', volume='2 \u03bcl', step='optional')\nmix(step='optional')\nincubate(temperature='37\u00b0C', duration='15 minutes', step='optional')\n\n### MANUAL SECTION ###\n# MANUAL: purify (reagent: synthesized RNA, other: {})\n# MANUAL: analyze (reagent: transcription products, other: {'method': 'gel electrophoresis'})",
+    "source_file": "protocol_377.txt"
+  }
+]

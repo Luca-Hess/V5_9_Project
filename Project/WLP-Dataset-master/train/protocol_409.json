@@ -1,0 +1,465 @@
+[
+  {
+    "protocol": "Seydoux lab Cas9 preparation\nTransform DE3 GOLD (Agilent, #230132) cells with nm2973 plasmid (Fu et al 2014) and plate on LB + 50\u03bcg/mL Carbenicillin. \nInoculate 25mL LB + 50\u00a0\u03bcg/mL Carbenicillin with bacteria from the fresh transformation and incubate at 37 \u00b0C\u00a0overnight.\nTransfer 5mL of overnight culture to 1L LB + 0.1% glucose + 50\u00a0\u03bcg/mL Carbenicillin.\nGrow at 25 \u00b0C\u00a0to\u00a0OD600=~0.5.\nShift culture to 18 \u00b0C\u00a0for 15\u201025 minutes.\nAdd IPTG to 0.2 mM and incubate overnight.\nPellet culture and obtain wet weight.\nResuspend at ~6 mL/g cells with Buffer A + protease inhibitor (Roche, #11836170001) + 1mM PMSF.\nSonicate 6 x 45s (setting 3 at 30%, 1 second pulse\u20102 second pause) with 1 minute cooling inbetween.\nSpin lysate 30 minutes at 16000xg and transfer supernatant to a fresh tube.\nEquilibrate a 5mL Ni\u2010agarose (Qiagen, #30410) with column with Buffer A (at least 25mL).\nBatch bind clarified lysate with Ni\u2010agarose 45 minutes at 4 \u00b0C.\nWash Ni\u2010agarose column with 100mL of Buffer B. \nElute protein with Buffer C. \nDetermine fractions that have Cas9 protein using Bradford assay or by running a small amount on SDS\u2010PAGE gel.\nPool fractions.\nEquilibrate a 5mL Q Sepharose (Sigma, #Q1126) column with 1M KCl (25mL, this charges the column).\nEquilibrate Q Sepharose column with Buffer C (25mL).\nFlow eluent (from step 17) over Q Sepharose column.\nCollect flow\u2010through and dialyze into 1L Buffer D for 5 hours at 4 \u00b0C.\nTransfer into 1L Buffer D and dialyze overnight.\nConcentrate protein to ~10 mg/mL using a 100K centrifugal filter (Milipore, UFC910024).\nAliquot and flash\u2010freeze in liquid nitrogen.\nStore aliquots at\u00a0\u201080\u00b0C.",
+    "actions": [
+      {
+        "action": "transform",
+        "parameters": {
+          "container": null,
+          "reagent": "DE3 GOLD cells, nm2973 plasmid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate_on": "LB + 50\u03bcg/mL Carbenicillin"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "inoculate",
+        "parameters": {
+          "container": null,
+          "reagent": "25mL LB + 50\u03bcg/mL Carbenicillin",
+          "volume": "25mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "bacteria from fresh transformation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": "overnight culture",
+          "volume": "5mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "1L LB + 0.1% glucose + 50\u03bcg/mL Carbenicillin"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "to_OD600": "~0.5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shift",
+        "parameters": {
+          "container": null,
+          "reagent": "culture",
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "15-25 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "IPTG",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.2 mM"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "culture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "pellet culture"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "obtain",
+        "parameters": {
+          "container": null,
+          "reagent": "wet weight",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer A + protease inhibitor + 1mM PMSF",
+          "volume": "~6 mL/g cells",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sonicate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "6 x 45s",
+          "speed": "setting 3 at 30%, 1s pulse-2s pause",
+          "other": {
+            "cooling": "1 minute between cycles"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 minutes",
+          "speed": "16000xg",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "5mL Ni-agarose column",
+          "reagent": "Buffer A",
+          "volume": "at least 25mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "batch_bind",
+        "parameters": {
+          "container": null,
+          "reagent": "clarified lysate, Ni-agarose",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "45 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "Ni-agarose column",
+          "reagent": "Buffer B",
+          "volume": "100mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": "Ni-agarose column",
+          "reagent": "Buffer C",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "target": "protein"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": "fractions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Bradford assay or SDS-PAGE"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "fractions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "5mL Q Sepharose column",
+          "reagent": "1M KCl",
+          "volume": "25mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "charge column"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "Q Sepharose column",
+          "reagent": "Buffer C",
+          "volume": "25mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "flow",
+        "parameters": {
+          "container": "Q Sepharose column",
+          "reagent": "eluent (from step 17)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "flow-through",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": null,
+          "reagent": "flow-through",
+          "volume": "1L Buffer D",
+          "temperature": "4\u00b0C",
+          "duration": "5 hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "1L Buffer D",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dialyze",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "1L Buffer D",
+          "temperature": null,
+          "duration": "overnight",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "100K centrifugal filter",
+          "reagent": "protein",
+          "volume": "~10 mg/mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": null,
+          "reagent": "protein",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "freeze",
+        "parameters": {
+          "container": null,
+          "reagent": "aliquots",
+          "volume": null,
+          "temperature": "liquid nitrogen",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flash-freeze"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "aliquots",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: transform (reagent: DE3 GOLD cells, nm2973 plasmid, other: {'plate_on': 'LB + 50\u03bcg/mL Carbenicillin'})\n# MANUAL: inoculate (reagent: 25mL LB + 50\u03bcg/mL Carbenicillin, volume: 25mL, other: {'source': 'bacteria from fresh transformation'})\n\n### AUTOMATED SECTION ###\nincubate(temperature='37\u00b0C', duration='overnight')\ntransfer(reagent='overnight culture', volume='5mL', destination='1L LB + 0.1% glucose + 50\u03bcg/mL Carbenicillin')\ngrow(temperature='25\u00b0C', to_OD600='~0.5')\nshift(reagent='culture', temperature='18\u00b0C', duration='15-25 minutes')\nadd(reagent='IPTG', final_concentration='0.2 mM')\nincubate(duration='overnight')\ncentrifuge(reagent='culture', purpose='pellet culture')\n\n### MANUAL SECTION ###\n# MANUAL: obtain (reagent: wet weight)\n\n### AUTOMATED SECTION ###\nresuspend(reagent='Buffer A + protease inhibitor + 1mM PMSF', volume='~6 mL/g cells')\n\n### MANUAL SECTION ###\n# MANUAL: sonicate (duration: 6 x 45s, speed: setting 3 at 30%, 1s pulse-2s pause, other: {'cooling': '1 minute between cycles'})\n\n### AUTOMATED SECTION ###\ncentrifuge(reagent='lysate', duration='30 minutes', speed='16000xg')\ntransfer(container='fresh tube', reagent='supernatant')\nequilibrate(container='5mL Ni-agarose column', reagent='Buffer A', volume='at least 25mL')\nbatch_bind(reagent='clarified lysate, Ni-agarose', temperature='4\u00b0C', duration='45 minutes')\nwash(container='Ni-agarose column', reagent='Buffer B', volume='100mL')\nelute(container='Ni-agarose column', reagent='Buffer C', target='protein')\n\n### MANUAL SECTION ###\n# MANUAL: determine (reagent: fractions, other: {'method': 'Bradford assay or SDS-PAGE'})\n\n### AUTOMATED SECTION ###\npool(reagent='fractions')\nequilibrate(container='5mL Q Sepharose column', reagent='1M KCl', volume='25mL', purpose='charge column')\nequilibrate(container='Q Sepharose column', reagent='Buffer C', volume='25mL')\nflow(container='Q Sepharose column', reagent='eluent (from step 17)')\ncollect(reagent='flow-through')\n\n### MANUAL SECTION ###\n# MANUAL: dialyze (reagent: flow-through, volume: 1L Buffer D, temperature: 4\u00b0C, duration: 5 hours)\n\n### AUTOMATED SECTION ###\ntransfer(volume='1L Buffer D')\n\n### MANUAL SECTION ###\n# MANUAL: dialyze (volume: 1L Buffer D, duration: overnight)\n\n### AUTOMATED SECTION ###\nconcentrate(container='100K centrifugal filter', reagent='protein', volume='~10 mg/mL')\naliquot(reagent='protein')\n\n### MANUAL SECTION ###\n# MANUAL: freeze (reagent: aliquots, temperature: liquid nitrogen, other: {'method': 'flash-freeze'})\n\n### AUTOMATED SECTION ###\nstore(reagent='aliquots', temperature='-80\u00b0C')",
+    "source_file": "protocol_409.txt"
+  }
+]

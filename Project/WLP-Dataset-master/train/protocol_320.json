@@ -1,0 +1,238 @@
+[
+  {
+    "protocol": "SpinOUT\u2122: Protein Desalting\nEquilibrate the column with the buffer of choice by applying at least 5 column volumes of buffer in batches of 1-2 column volumes.\nCentrifuge the column at 1,000g for 2 minutes to remove the buffer after each application.\nPlace the column in a new collection tube and remove the cap.\nSlowly, apply the protein solution to the center of the SpinOUT\u2122 resin.\nCentrifuge the column at 1,000g for the indicated times in the table below to collect the desalted protein solution.\nDiscard the column.\nMark one side of the column and ensure in all centrifugations the mark is facing outwards during centrifugation.\nPrepare the SpinOUT\u2122 column by centrifuging the SpinOUT\u2122 columns at 1,000g for 1 minute to compact the resin.\nRemove the top and then bottom caps.\nPlace into an appropriate collection tube.\nCentrifuge the column at 1,000g for 2 minutes to remove the storage buffer.",
+    "actions": [
+      {
+        "action": "equilibrate",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": "buffer of choice",
+          "volume": "at least 5 column volumes, in batches of 1-2 column volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "1,000g",
+          "other": {
+            "purpose": "remove buffer after each application"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SpinOUT\u2122 column cap",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "apply",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": "protein solution",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "center of SpinOUT\u2122 resin",
+            "method": "slowly"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "indicated times in table",
+          "speed": "1,000g",
+          "other": {
+            "purpose": "collect desalted protein solution"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "mark",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "one side of column"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "ensure",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "mark facing outwards during centrifugation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "1,000g",
+          "other": {
+            "purpose": "compact resin"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SpinOUT\u2122 column top cap",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "SpinOUT\u2122 column bottom cap",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "appropriate collection tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SpinOUT\u2122 column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2 minutes",
+          "speed": "1,000g",
+          "other": {
+            "purpose": "remove storage buffer"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nequilibrate(container='SpinOUT\u2122 column', reagent='buffer of choice', volume='at least 5 column volumes, in batches of 1-2 column volumes')\ncentrifuge(container='SpinOUT\u2122 column', duration='2 minutes', speed='1,000g', purpose='remove buffer after each application')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: SpinOUT\u2122 column, other: {'destination': 'new collection tube'})\n# MANUAL: remove (container: SpinOUT\u2122 column cap, other: {})\n\n### AUTOMATED SECTION ###\napply(container='SpinOUT\u2122 column', reagent='protein solution', location='center of SpinOUT\u2122 resin', method='slowly')\ncentrifuge(container='SpinOUT\u2122 column', duration='indicated times in table', speed='1,000g', purpose='collect desalted protein solution')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: SpinOUT\u2122 column, other: {})\n# MANUAL: mark (container: SpinOUT\u2122 column, other: {'location': 'one side of column'})\n# MANUAL: ensure (container: SpinOUT\u2122 column, other: {'orientation': 'mark facing outwards during centrifugation'})\n# MANUAL: prepare (container: SpinOUT\u2122 column, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='SpinOUT\u2122 column', duration='1 minute', speed='1,000g', purpose='compact resin')\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: SpinOUT\u2122 column top cap, other: {})\n# MANUAL: remove (container: SpinOUT\u2122 column bottom cap, other: {})\n# MANUAL: place (container: SpinOUT\u2122 column, other: {'destination': 'appropriate collection tube'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='SpinOUT\u2122 column', duration='2 minutes', speed='1,000g', purpose='remove storage buffer')",
+    "source_file": "protocol_320.txt"
+  }
+]

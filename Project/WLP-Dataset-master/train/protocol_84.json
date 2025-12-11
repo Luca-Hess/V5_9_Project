@@ -1,0 +1,796 @@
+[
+  {
+    "protocol": "Preparation of Tara Sample DNA From Iron-Chloride Precipitates\nLocate samples and record inventory number and number of filters (or portions) used.\nTurn the filters precipitate-side out with bleached forceps that have been rinsed with water and use aluminum foil squares as work surface, discarding after each filter.\nRemove filter from 50cc tube and refold so that precipitate side comes in contact with resuspension buffer Return filter to tube using forceps and sterile applicator sticks.\nKeep filters dark and refrigerated until ready to suspend.\nPrepare 1x or 2x resuspension buffer.\nPrepare 20mL 1x or 10mL 2x per filter from 20L of seawater.\nAdd resuspension buffer to each filter Parafilm the tubes and wrap all of them in aluminum foil.\nPut foil pack of tubes on rotator, in cold room, using rubber bands to secure, and rotate slowly overnight.\nTo recover resuspended viruses, remove the liquid at the bottom using a 5mL pipet and transfer to a fresh 15mL or 50mL sterile, labeled tube.\nUsing bleached and rinsed forceps or sterile applicator sticks, pull edge of filter up and over lip of tube and secure with the lid.\nCentrifuge 1000rpm, 5min, 18\u00b0C to recover liquid left on filter.\nRemove liquid and add more buffer if filter still has a lot of precipitate clinging to it.\nRotate for several more hours.\nRepeat removal of liquid.\nDilute stock DNase 1:100 in 10x DNase buffer (concentration = 400 U/mL).\nAdd 1/10th volume of diluted DNase to each sample Parafilm tubes, wrap them in aluminum foil and attach to tube rotator with rubber bands.\nIncubate by rotating slowly at room temperature for 2 hours.\nInactivate DNase by adding EDTA and EGTA to 0.1M final concentration each.\nMix by inverting the tube several times.\nAdd the DNase treated and inactivated sample to the top reservoir of Amicon Ultra 100kDA centrifugal concentrators.\nCentrifuge the concentrators at 1000 g for 5 minute intervals at 18\u00b0C until samples are at less than 2mL each.\nPut 1mL of resin on one Wizard Prep column.\nThoroughly resuspend resin by shaking vigorously.\nMix 1mL per 0.5-1.0mL of DNA.\nAdd each 1mL of resin to a 3mL luer lock syringe attached to a Wizard column.\nPush through into a 5mL snap-cap tube.\nSave this tube until DNA quantification.\nRemove syringe from column Remove plunger.\nReattach syringe barrel to column.\nWash columns with 2mL 80% isopropanol pushing through with the syringe barrel into a waste container.\nPut columns into 1.5mL centrifuge tube and centrifuge at 10,000 g for 2.5 minutes to remove residual alcohol.\nDiscard tube.\nPlace column into a fresh 1.5mL centrifuge tube and pipet on 50-100\u00b5L of TE (0.02\u00b5m filtered and heated to 80\u00b0C).\nVortex gently (1400rpm) and let sit 1 minute.\nCentrifuge at 10,000 g for 1 minute.\nTransfer extracted DNA to Lo-bind DNA 0.5mL tubes.\nRepeat elution above (steps 37-40) one more time.\nUse 1-2\u00b5L of the first elution and 4-5\u00b5L of the second elution for the Pico Green assay to quantify the extracted DNAQuant-iT dsDNA Pico Green assay kit (Invitrogen).\nUse the Excel spreadsheet to calculate the ng/\u00b5L DNA for each sample.\nStore in -80\u00b0C ultra-low freezer.\nLabel tubes with date, station, depth and concentration and store in -80\u00b0C ultra-low freezer",
+    "actions": [
+      {
+        "action": "record",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "inventory_number": "required",
+            "number_of_filters": "required"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "turn",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "side": "precipitate-side out",
+            "tool": "bleached forceps rinsed with water",
+            "work_surface": "aluminum foil squares"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "50cc tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "refold",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "side": "precipitate side contacts resuspension buffer"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "return",
+        "parameters": {
+          "container": "tube",
+          "reagent": "filter",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "forceps and sterile applicator sticks"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "keep",
+        "parameters": {
+          "container": "filters",
+          "reagent": null,
+          "volume": null,
+          "temperature": "refrigerated",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "dark"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1x or 2x resuspension buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "1x or 2x resuspension buffer",
+          "volume": "20mL 1x or 10mL 2x per filter",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "source": "20L seawater"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each filter",
+          "reagent": "resuspension buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Parafilm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "aluminum foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "foil pack of tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "cold room",
+          "duration": "overnight",
+          "speed": "slowly",
+          "other": {
+            "equipment": "rotator",
+            "secured_with": "rubber bands"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "liquid at bottom",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "5mL pipet"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh 15mL or 50mL sterile, labeled tube",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pull",
+        "parameters": {
+          "container": "filter",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "bleached and rinsed forceps or sterile applicator sticks",
+            "action": "pull edge of filter up and over lip of tube and secure with lid"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "5min",
+          "speed": "1000rpm",
+          "other": {
+            "purpose": "recover liquid left on filter"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube/filter",
+          "reagent": "buffer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "condition": "if filter still has a lot of precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "several more hours",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tube",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "stock DNase",
+          "volume": "1:100",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "10x DNase buffer",
+            "final_concentration": "400 U/mL"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each sample",
+          "reagent": "diluted DNase",
+          "volume": "1/10th volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Parafilm"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "aluminum foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "rotate",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2 hours",
+          "speed": "slowly",
+          "other": {
+            "equipment": "tube rotator",
+            "secured_with": "rubber bands"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample",
+          "reagent": "EDTA and EGTA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "final_concentration": "0.1M each"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "inverting tube several times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "top reservoir of Amicon Ultra 100kDA centrifugal concentrators",
+          "reagent": "DNase treated and inactivated sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "concentrators",
+          "reagent": null,
+          "volume": null,
+          "temperature": "18\u00b0C",
+          "duration": "5 minute intervals",
+          "speed": "1000 g",
+          "other": {
+            "until": "samples < 2mL each"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "Wizard Prep column",
+          "reagent": "resin",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "resin",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vigorously",
+          "other": {
+            "purpose": "thoroughly resuspend resin"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "DNA",
+          "reagent": "resin",
+          "volume": "1mL per 0.5-1.0mL DNA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "3mL luer lock syringe attached to Wizard column",
+          "reagent": "1mL resin",
+          "volume": "1mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "push",
+        "parameters": {
+          "container": "Wizard column",
+          "reagent": "resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "5mL snap-cap tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": "5mL snap-cap tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "DNA quantification"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "column",
+          "reagent": "syringe",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "action": "remove plunger"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "reattach",
+        "parameters": {
+          "container": "column",
+          "reagent": "syringe barrel",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "columns",
+          "reagent": "80% isopropanol",
+          "volume": "2mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "push through with syringe barrel",
+            "destination": "waste container"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "columns in 1.5mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "2.5 minutes",
+          "speed": "10,000 g",
+          "other": {
+            "purpose": "remove residual alcohol"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "fresh 1.5mL centrifuge tube"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "column in 1.5mL centrifuge tube",
+          "reagent": "TE (0.02\u00b5m filtered and heated to 80\u00b0C)",
+          "volume": "50-100\u00b5L",
+          "temperature": "80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "1400rpm",
+          "other": {
+            "method": "gently"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "column",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "column in 1.5mL centrifuge tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 minute",
+          "speed": "10,000 g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "Lo-bind DNA 0.5mL tubes",
+          "reagent": "extracted DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "elution above (steps 37-40) one more time"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": null,
+          "reagent": "first elution (1-2\u00b5L) and second elution (4-5\u00b5L)",
+          "volume": "1-2\u00b5L and 4-5\u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assay": "Pico Green assay (Quant-iT dsDNA Pico Green assay kit, Invitrogen)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "Excel spreadsheet",
+            "output": "ng/\u00b5L DNA for each sample"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "-80\u00b0C ultra-low freezer",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "info": "date, station, depth, concentration"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: record (container: samples, other: {'inventory_number': 'required', 'number_of_filters': 'required'})\n# MANUAL: turn (container: filters, other: {'side': 'precipitate-side out', 'tool': 'bleached forceps rinsed with water', 'work_surface': 'aluminum foil squares'})\n# MANUAL: remove (container: 50cc tube, reagent: filter)\n# MANUAL: refold (container: filter, other: {'side': 'precipitate side contacts resuspension buffer'})\n# MANUAL: return (container: tube, reagent: filter, other: {'tool': 'forceps and sterile applicator sticks'})\n# MANUAL: keep (container: filters, temperature: refrigerated, other: {'light': 'dark'})\n# MANUAL: prepare (reagent: 1x or 2x resuspension buffer)\n# MANUAL: prepare (reagent: 1x or 2x resuspension buffer, volume: 20mL 1x or 10mL 2x per filter, other: {'source': '20L seawater'})\n\n### AUTOMATED SECTION ###\nadd(container='each filter', reagent='resuspension buffer')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: tubes, other: {'method': 'Parafilm'})\n# MANUAL: wrap (container: tubes, other: {'material': 'aluminum foil'})\n\n### AUTOMATED SECTION ###\nrotate(container='foil pack of tubes', temperature='cold room', duration='overnight', speed='slowly', equipment='rotator', secured_with='rubber bands')\nremove(container='tube', reagent='liquid at bottom', tool='5mL pipet')\ntransfer(container='fresh 15mL or 50mL sterile, labeled tube', reagent='liquid')\n\n### MANUAL SECTION ###\n# MANUAL: pull (container: filter, other: {'tool': 'bleached and rinsed forceps or sterile applicator sticks', 'action': 'pull edge of filter up and over lip of tube and secure with lid'})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='tube', temperature='18\u00b0C', duration='5min', speed='1000rpm', purpose='recover liquid left on filter')\nremove(container='tube', reagent='liquid')\nadd(container='tube/filter', reagent='buffer', condition='if filter still has a lot of precipitate')\nrotate(container='tube', duration='several more hours')\nremove(container='tube', reagent='liquid')\ndilute(reagent='stock DNase', volume='1:100', buffer='10x DNase buffer', final_concentration='400 U/mL')\nadd(container='each sample', reagent='diluted DNase', volume='1/10th volume')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: tubes, other: {'method': 'Parafilm'})\n# MANUAL: wrap (container: tubes, other: {'material': 'aluminum foil'})\n\n### AUTOMATED SECTION ###\nrotate(container='tubes', temperature='room temperature', duration='2 hours', speed='slowly', equipment='tube rotator', secured_with='rubber bands')\nadd(container='sample', reagent='EDTA and EGTA', final_concentration='0.1M each')\nmix(container='tube', method='inverting tube several times')\nadd(container='top reservoir of Amicon Ultra 100kDA centrifugal concentrators', reagent='DNase treated and inactivated sample')\ncentrifuge(container='concentrators', temperature='18\u00b0C', duration='5 minute intervals', speed='1000 g', until='samples < 2mL each')\nadd(container='Wizard Prep column', reagent='resin', volume='1mL')\nshake(container='resin', speed='vigorously', purpose='thoroughly resuspend resin')\nmix(container='DNA', reagent='resin', volume='1mL per 0.5-1.0mL DNA')\nadd(container='3mL luer lock syringe attached to Wizard column', reagent='1mL resin', volume='1mL')\n\n### MANUAL SECTION ###\n# MANUAL: push (container: Wizard column, reagent: resin, other: {'destination': '5mL snap-cap tube'})\n# MANUAL: save (container: 5mL snap-cap tube, other: {'purpose': 'DNA quantification'})\n# MANUAL: remove (container: column, reagent: syringe, other: {'action': 'remove plunger'})\n# MANUAL: reattach (container: column, reagent: syringe barrel)\n\n### AUTOMATED SECTION ###\nwash(container='columns', reagent='80% isopropanol', volume='2mL', method='push through with syringe barrel', destination='waste container')\ncentrifuge(container='columns in 1.5mL centrifuge tube', duration='2.5 minutes', speed='10,000 g', purpose='remove residual alcohol')\n\n### MANUAL SECTION ###\n# MANUAL: discard (container: tube)\n# MANUAL: place (container: column, other: {'destination': 'fresh 1.5mL centrifuge tube'})\n\n### AUTOMATED SECTION ###\npipette(container='column in 1.5mL centrifuge tube', reagent='TE (0.02\u00b5m filtered and heated to 80\u00b0C)', volume='50-100\u00b5L', temperature='80\u00b0C')\nvortex(container='column', duration='1 minute', speed='1400rpm', method='gently')\nwait(container='column', duration='1 minute')\ncentrifuge(container='column in 1.5mL centrifuge tube', duration='1 minute', speed='10,000 g')\ntransfer(container='Lo-bind DNA 0.5mL tubes', reagent='extracted DNA')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'steps': 'elution above (steps 37-40) one more time'})\n# MANUAL: use (reagent: first elution (1-2\u00b5L) and second elution (4-5\u00b5L), volume: 1-2\u00b5L and 4-5\u00b5L, other: {'assay': 'Pico Green assay (Quant-iT dsDNA Pico Green assay kit, Invitrogen)'})\n# MANUAL: calculate (other: {'method': 'Excel spreadsheet', 'output': 'ng/\u00b5L DNA for each sample'})\n# MANUAL: store (container: tubes, temperature: -80\u00b0C ultra-low freezer)\n# MANUAL: label (container: tubes, other: {'info': 'date, station, depth, concentration'})",
+    "source_file": "protocol_84.txt"
+  }
+]

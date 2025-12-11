@@ -1,0 +1,1283 @@
+[
+  {
+    "protocol": "Generating viral metagenomes from the coral holobiont\nAt Trunk Reef, approximately 45 g of coral tissue was sampled from three healthy, freshly collected coral colonies of\u00a0Pocillopora damicornis.\nApproximately 20 g of Acropora tenuis tissue was sampled from three healthy, freshly collected coral colonies collected in Pioneer Bay.\nFragments were washed in autoclaved, 0.02 \u03bcm filtered virus-free seawater.\nSubsequently, tissue was blasted from the coral skeleton, using an air-gun, into 15 mL 0.02 \u03bcm filtered (Anotop, Whatman) SM buffer (100 mM NaCl, 8 mM MgSO4, 50 mM Tris pH 7.5) in a zip-lock bag.\nBriefly, 5 mL of chloroform per 40 mL of coral blastate was added and samples were agitated gently for 1 h at room temperature.\nCoral blastates were homogenized at 5000 rpm for 1 min (Heidolph SilentCrusher\u2122).\nSamples were immediately centrifuged at 1000 g for 15 min.\nThe supernatant was transferred to sterile glass corex tubes and spun at 12,000 g for 15 min to pellet the majority of microbial cells (Beckman Coulter JA 25.50 rotor).\nA cesium chloride (CsCl) density gradient was then formed by layering 1 mL of 1.7, 1.5, and 1.35 g mL\u22121 CsCl into 13.2 mL UltraClear\u2122 ultracentrifuge tubes (Beckman Coulter) with 9 mL sample layered on the top of the gradient.\nGradients were then centrifuged for 2 h at 60,000 g at 4\u00b0C in a swinging bucket rotor.\nIn the MECH method, the coral tissue blastate was homogenized at 10,000 rpm for 1 min.\nThe coral tissue blastate was then spun at 400 g for 5 min.\nThe supernatant was then aliquoted into 1.5 mL aliquots in 2 mL eppendorf tubes containing 0.3 mL acid-washed glass beads (425\u2013600 \u03bcm diameter) (Sigma-Aldrich).\nThe tubes were placed in a bead beater and cells were disrupted at 5000 rpm for 5 min.\nTubes were centrifuged at top speed in a bench-top Eppendorf centrifuge for 1 min.\nThe supernatant was collected for viral fractionation using step CsCl density gradients.\nTo confirm that the MECH method was not disrupting virus particles, two dsDNA viruses, OtV-2 (Weynberg et al., 2011) and EhV-86 (Wilson et al., 2005b), were subjected to the same mechanical disruption protocol.\nFlow cytometry was used to enumerate viruses before and after disruption.\nAll samples were treated with DNase and RNase (Ambion) prior to nucleic acid extraction.\nDNA was extracted and RNase treated using a MasterPure kit (Epicentre, Illumina) following manufacturer's instructions.\nRNA was extracted using a Qiagen QIAamp viral RNA kit (Qiagen) following manufacturer's instructions, including the final DNase step (Ambion).\nTwo different\u00a0amplification methods were used.\nIn order to reduce some of the inherent biases in multi-displacement amplification (MDA), such as a preference for ssDNA viral genomes, DNA extractions were converted to dsDNA prior to amplification.\nTriplicate 10 \u03bc L aliquots of the DNA extractions, containing ds and ssDNA viral genomes, underwent a single round of Klenow reaction (3\u2032\u20135\u2032 exo-, 5U/\u03bc L) by mixing 1.5 \u03bc L of 10\u00d7 reaction buffer (New England Biolabs Buffer 2), 1.5 \u03bc L of dNTPs (2.5 mM stock), 1 \u03bc L of random hexamer primers (50 ng/\u03bc L, Invitrogen).\nThe reaction was incubated at 94\u00b0C for 3 min.\nThe reaction was then placed on ice for 3 min to allow for primer annealing.\n1 \u03bc L of Klenow (3\u2032\u20135\u2032 exo-) was added and incubated at 25\u00b0C for 10 min.\nIt was then incubated at 37\u00b0C for 60 min.\nIt was then incubated with a\u00a0termination step of 75\u00b0C for 20 min.\nAfter termination, reactions were pooled and cleaned using a Qiagen QIAamp DNA mini kit and eluted in 50 \u03bcL of Buffer AE.\nReplicate MDA reactions (n = 3 for each sample) were amplified using 2.5 \u03bc L dsDNA template and the Qiagen RepliG\u00ae kit using the standard protocol.\nAll reactions were run on a 0.8% agarose gel in 1\u00d7 TAE at 100 V for 30 min to confirm amplification, pooled and cleaned with QIAampl DNA minikit and eluted in 200 \u03bc L of Buffer AE.\nNegative controls were treated the same and also sent for sequencing to confirm that no viral contamination was present.\nAs with the RepliG\u00ae protocol, Klenow Fragment (3\u2032\u20135\u2032 exo-) was used to convert all DNA genomes to dsDNA using RP-SISPA primers with a 3\u2032 random hexamer sequence that is used for downstream PCR amplification.\nTo label the first strand with the RP-SISPA primer, 5 \u03bcL of nucleic acid was added to 9 \u03bcL reaction mix containing:.\nThe reaction was incubated at 94\u00b0C for 3 min.\nThe reaction was then placed on ice for 3 min to allow for primer annealing.\n1 \u03bcL of Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL, NEB #) was added and incubated at 37\u00b0C for 60 min.\nA second round of Klenow Fragment reaction (3\u2032\u20135\u2032 exo) labeled the second strand with the SISPA primer, by adding an additional 1 \u03bcL of primer and 1 \u03bcL dNTP.\nThe reaction then underwent a\u00a094\u00b0C for 3 min heating step.\nThe reaction was then put on ice for 3 min.\nThe reaction then underwent a\u00a0final addition of 1 \u03bcL of Klenow Fragment (3\u2032\u20135\u2032 exo-).\nThe reaction was incubated at 37\u00b0C for 60 min.\nThe reaction was then terminated at 75\u00b0C for 20 min.\nBriefly, in preparation for cDNA synthesis, 10 \u03bc L purified RNA viral template was mixed with 1 \u03bc L of 2.5 mM dNTPs and 1.3 \u03bc L of FR26RV-N (GCCGGAGCTCTGCAGATATCNNNNNN, 10 \u03bc M stock) and FR40RV-T primer (GCCGGAGCTCTGCAGATATC(T)20, 50 nM stock).\nThe reaction was heated to 65\u00b0C for 5 min.\nThe reaction was then cooled on ice for 3 min to allow the primers to anneal.\nWhile still on ice, 1 \u03bcL DTT (Invitrogen) was added to the reaction as an enzyme stabilization reagent with 1 \u03bcL RNase OUT (Invitrogen) to protect the sample from RNAse activity.\nThe complementary DNA strand was synthesized with 200 U of Superscript III reverse transcriptase.\nThe reaction was incubated initially at 25\u00b0C for 10 min to allow annealing of the hexamer 3\u2032 end of primer FR26RV-N and the poly(T)20 3\u2032 end of primer FR40RV-T to the template while cDNA synthesis commenced.\nThe temperature was then increased to 50\u00b0C for 60 min.\nThe first strand synthesis reaction was heated immediately to 94\u00b0C for 3 min and then rapidly cooled on ice.\nA complementary second strand was subsequently synthesized at 37\u00b0C for 60 min with the addition of 1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL).\nThe Klenow reaction was terminated with a final incubation at 75\u00b0C for 20 min.\nPCR amplification of the SISPA primer labeled template (DNA and RNA) was done in triplicate 25 \u03bcL reactions containing:.\nThe reaction was incubated at 95\u00b0C for 10 min.\nThe reaction then underwent 30 cycles of denaturation at:.\nThe PCR reactions were loaded on to a 0.8% agarose gel in 1\u00d7TAE at 100 V for 30 min.\nIf amplification resulted in visible PCR products (typically a smear; products should be longer than 250 bp), a reconditioning PCR was performed on pooled reactions as follows.\nOne reconditioning PCR contained 10 \u03bcL of pooled SISPA reaction template, 10 \u03bcL 10\u00d7 buffer, 16 \u03bcL dNTP (2.5 mM stock), 8 \u03bcL FR20RV primer (10 \u03bc M stock) and 0.75 \u03bcL TaKaRa LA HS Taq.\nThe reaction was incubated at 95\u00b0C for 10 min.\nThe reaction then underwent\u00a05 cycles of denaturation at:.\nReactions were cleaned and QC was assessed.\nAfter amplification, samples were cleaned with a QIAamp\u00ae DNA Mini kit (RepliG\u00ae amplification) or a MinElute\u00ae PCR purification kit (RP-SISPA).\nSamples were checked for quantification using a Quant-iT PicoGreen\u00ae kit on a NanoDrop 3300 fluorospecrometer, for quality (260:280 ratios) on a NanoDrop 2000, and were run on a 0.8% agarose gel in 1\u00d7 TAE at 100 V for 30 min to confirm a size range appropriate for sequencing (~250\u2013500 bp) was present without contamination of smaller fragments.\nAll metagenomes were sequenced using Nextera XT MiSeq 250 bp paired-end sequencing (Illumina) at the Ramaciotti Centre, University of New South Wales, Sydney, Australia.\nRaw sequence reads were processed in CLC Genomics Workbench 5.5.\nSequences were imported as Illumina paired-end reads, adaptor sequences were trimmed, and reads were checked for quality using a PHRED score of 20 and a minimum length of 100 bp.\nPaired reads were merged and a final data set containing merged reads and ORFans was checked again for QC with a minimum length of 200 bp.\nTo carry out the taxonomic assignment, these non-assembled read data sets were uploaded to the Metavir web server, which is dedicated to the analysis of viral metagenomes (http://metavir-meb.univ-bpclermont.fr) (Roux et al., 2011).\nAll virus sequences were further classified into families using the taxonomic information from the top BLAST hit.\nTetranucleotide clustering and rarefaction curves were generated using tools available through Metavir.\nThe five datasets generated from the P. damicornis samples were submitted to Genbank Sequence Read Archive (SRA) and are available under the accession numbers SRR1207981, SRR1207983, SRR1207980, SRR1207984, and SRR1246941 (Table 1 in guidelines).\nThe two datasets generated from the A. tenuis\u00a0samples have also been deposited in the SRA under the accession numbers SRR1207979 and SRR1210582.",
+    "actions": [
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "fragments",
+          "reagent": "autoclaved, 0.02 \u03bcm filtered virus-free seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "blast",
+        "parameters": {
+          "container": "zip-lock bag",
+          "reagent": "15 mL 0.02 \u03bcm filtered SM buffer",
+          "volume": "15 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "air-gun",
+            "buffer_composition": "100 mM NaCl, 8 mM MgSO4, 50 mM Tris pH 7.5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "coral blastate",
+          "reagent": "chloroform",
+          "volume": "5 mL per 40 mL coral blastate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "agitate",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "1 h",
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "coral blastates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "5000 rpm",
+          "other": {
+            "instrument": "Heidolph SilentCrusher"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "1000 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "sterile glass corex tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "sterile glass corex tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "12,000 g",
+          "other": {
+            "rotor": "Beckman Coulter JA 25.50"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "13.2 mL UltraClear ultracentrifuge tubes",
+          "reagent": "1 mL of 1.7, 1.5, and 1.35 g/mL CsCl",
+          "volume": "1 mL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "layer",
+        "parameters": {
+          "container": "13.2 mL UltraClear ultracentrifuge tubes",
+          "reagent": "sample",
+          "volume": "9 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "on_top_of": "CsCl gradient"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "ultracentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "2 h",
+          "speed": "60,000 g",
+          "other": {
+            "rotor": "swinging bucket"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "homogenize",
+        "parameters": {
+          "container": "coral tissue blastate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "coral tissue blastate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "400 g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "2 mL eppendorf tubes",
+          "reagent": "supernatant",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "contains": "0.3 mL acid-washed glass beads (425\u2013600 \u03bcm diameter)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "disrupt",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": "5000 rpm",
+          "other": {
+            "instrument": "bead beater"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 min",
+          "speed": "top speed",
+          "other": {
+            "instrument": "bench-top Eppendorf centrifuge"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "viral fractionation using step CsCl density gradients"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": "samples",
+          "reagent": "DNase and RNase (Ambion)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prior_to": "nucleic acid extraction"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "MasterPure kit (Epicentre, Illumina)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "RNase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "MasterPure kit (Epicentre, Illumina)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "RNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiagen QIAamp viral RNA kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "treat",
+        "parameters": {
+          "container": null,
+          "reagent": "DNase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiagen QIAamp viral RNA kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "convert",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA extractions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "ssDNA",
+            "to": "dsDNA",
+            "prior_to": "amplification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "10 \u03bcL DNA extraction",
+            "1.5 \u03bcL 10\u00d7 reaction buffer",
+            "1.5 \u03bcL dNTPs (2.5 mM stock)",
+            "1 \u03bcL random hexamer primers (50 ng/\u03bcL)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "purpose": "primer annealing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "1 \u03bcL Klenow (3\u2032\u20135\u2032 exo-)",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "step": "termination"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "pooled reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Qiagen QIAamp DNA mini kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AE",
+          "volume": "50 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "2.5 \u03bcL dsDNA template",
+            "Qiagen RepliG kit"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": 3,
+            "protocol": "standard"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "0.8% agarose gel",
+          "reagent": "all reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "buffer": "1\u00d7 TAE",
+            "voltage": "100 V"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "pooled reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "QIAampl DNA minikit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AE",
+          "volume": "200 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "convert",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA genomes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "ssDNA",
+            "to": "dsDNA",
+            "enzyme": "Klenow Fragment (3\u2032\u20135\u2032 exo-)",
+            "primer": "RP-SISPA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "5 \u03bcL nucleic acid",
+            "9 \u03bcL reaction mix"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "purpose": "primer annealing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL, NEB #)",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": [
+            "1 \u03bcL SISPA primer",
+            "1 \u03bcL dNTP"
+          ],
+          "volume": "1 \u03bcL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "second strand labeling"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-)",
+          "volume": "1 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "final addition"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "step": "termination"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "10 \u03bcL purified RNA viral template",
+            "1 \u03bcL 2.5 mM dNTPs",
+            "1.3 \u03bcL FR26RV-N (10 \u03bcM stock)",
+            "FR40RV-T primer (50 nM stock)"
+          ],
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "65\u00b0C",
+          "duration": "5 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "3 min",
+          "speed": null,
+          "other": {
+            "purpose": "primer annealing"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "reaction",
+          "reagent": [
+            "1 \u03bcL DTT (Invitrogen)",
+            "1 \u03bcL RNase OUT (Invitrogen)"
+          ],
+          "volume": "1 \u03bcL each",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while": "on ice"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "200 U Superscript III reverse transcriptase",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "strand": "complementary DNA"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {
+            "purpose": "annealing of hexamer and poly(T)20 primers"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "heat",
+        "parameters": {
+          "container": "first strand synthesis reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "94\u00b0C",
+          "duration": "3 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "cool",
+        "parameters": {
+          "container": "first strand synthesis reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "synthesize",
+        "parameters": {
+          "container": "reaction",
+          "reagent": "1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL)",
+          "volume": "1 \u03bcL",
+          "temperature": "37\u00b0C",
+          "duration": "60 min",
+          "speed": null,
+          "other": {
+            "strand": "complementary second strand"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "Klenow reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "75\u00b0C",
+          "duration": "20 min",
+          "speed": null,
+          "other": {
+            "step": "termination"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "amplify",
+        "parameters": {
+          "container": null,
+          "reagent": [
+            "25 \u03bcL reactions",
+            "SISPA primer labeled template (DNA and RNA)"
+          ],
+          "volume": "25 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "replicates": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "reaction",
+          "reagent": null,
+          "volume": null,
+          "temperature": "95\u00b0C",
+          "duration": "10 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "0.8% agarose gel",
+          "reagent": "PCR reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "buffer": "1\u00d7 TAE",
+            "voltage": "100 V"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "PCR reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "clean",
+        "parameters": {
+          "container": null,
+          "reagent": "pooled PCR reactions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "QIAamp DNA Mini kit or MinElute PCR purification kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "elute",
+        "parameters": {
+          "container": null,
+          "reagent": "Buffer AE",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": null,
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Quant-iT PicoGreen kit",
+            "instrument": "NanoDrop 3300 fluorospecrometer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quality": "260:280 ratios",
+            "instrument": "NanoDrop 2000"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "run",
+        "parameters": {
+          "container": "0.8% agarose gel",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": "30 min",
+          "speed": null,
+          "other": {
+            "buffer": "1\u00d7 TAE",
+            "voltage": "100 V"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "sequence",
+        "parameters": {
+          "container": null,
+          "reagent": "metagenomes",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "kit": "Nextera XT MiSeq 250 bp paired-end sequencing",
+            "location": "Ramaciotti Centre, UNSW"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "process",
+        "parameters": {
+          "container": null,
+          "reagent": "raw sequence reads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "software": "CLC Genomics Workbench 5.5"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "import",
+        "parameters": {
+          "container": null,
+          "reagent": "Illumina paired-end reads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "trim",
+        "parameters": {
+          "container": null,
+          "reagent": "adaptor sequences",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "reads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "quality": "PHRED score 20",
+            "min_length": "100 bp"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "merge",
+        "parameters": {
+          "container": null,
+          "reagent": "paired reads",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "check",
+        "parameters": {
+          "container": null,
+          "reagent": "final data set",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "QC": "min_length 200 bp"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "upload",
+        "parameters": {
+          "container": null,
+          "reagent": "non-assembled read data sets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "server": "Metavir web server"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "classify",
+        "parameters": {
+          "container": null,
+          "reagent": "virus sequences",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "top BLAST hit"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "generate",
+        "parameters": {
+          "container": null,
+          "reagent": "tetranucleotide clustering and rarefaction curves",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tools": "Metavir"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "submit",
+        "parameters": {
+          "container": null,
+          "reagent": "datasets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "database": "Genbank Sequence Read Archive (SRA)",
+            "accession_numbers": [
+              "SRR1207981",
+              "SRR1207983",
+              "SRR1207980",
+              "SRR1207984",
+              "SRR1246941",
+              "SRR1207979",
+              "SRR1210582"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nwash(container='fragments', reagent='autoclaved, 0.02 \u03bcm filtered virus-free seawater')\n\n### MANUAL SECTION ###\n# MANUAL: blast (container: zip-lock bag, reagent: 15 mL 0.02 \u03bcm filtered SM buffer, volume: 15 mL, other: {'method': 'air-gun', 'buffer_composition': '100 mM NaCl, 8 mM MgSO4, 50 mM Tris pH 7.5'})\n\n### AUTOMATED SECTION ###\nadd(container='coral blastate', reagent='chloroform', volume='5 mL per 40 mL coral blastate')\nagitate(container='samples', temperature='room temperature', duration='1 h', speed='gently')\nhomogenize(container='coral blastates', duration='1 min', speed='5000 rpm', instrument='Heidolph SilentCrusher')\ncentrifuge(container='samples', duration='15 min', speed='1000 g')\ntransfer(container='sterile glass corex tubes', reagent='supernatant')\ncentrifuge(container='sterile glass corex tubes', duration='15 min', speed='12,000 g', rotor='Beckman Coulter JA 25.50')\nlayer(container='13.2 mL UltraClear ultracentrifuge tubes', reagent='1 mL of 1.7, 1.5, and 1.35 g/mL CsCl', volume='1 mL each')\nlayer(container='13.2 mL UltraClear ultracentrifuge tubes', reagent='sample', volume='9 mL', on_top_of='CsCl gradient')\ncentrifuge(container='ultracentrifuge tubes', temperature='4\u00b0C', duration='2 h', speed='60,000 g', rotor='swinging bucket')\nhomogenize(container='coral tissue blastate', duration='1 min', speed='10,000 rpm')\ncentrifuge(container='coral tissue blastate', duration='5 min', speed='400 g')\naliquot(container='2 mL eppendorf tubes', reagent='supernatant', volume='1.5 mL', contains='0.3 mL acid-washed glass beads (425\u2013600 \u03bcm diameter)')\ndisrupt(container='tubes', duration='5 min', speed='5000 rpm', instrument='bead beater')\ncentrifuge(container='tubes', duration='1 min', speed='top speed', instrument='bench-top Eppendorf centrifuge')\ncollect(reagent='supernatant', purpose='viral fractionation using step CsCl density gradients')\ntreat(container='samples', reagent='DNase and RNase (Ambion)', prior_to='nucleic acid extraction')\nextract(reagent='DNA', kit='MasterPure kit (Epicentre, Illumina)')\ntreat(reagent='RNase', kit='MasterPure kit (Epicentre, Illumina)')\nextract(reagent='RNA', kit='Qiagen QIAamp viral RNA kit')\ntreat(reagent='DNase', kit='Qiagen QIAamp viral RNA kit')\nconvert(reagent='DNA extractions', from='ssDNA', to='dsDNA', prior_to='amplification')\nmix(reagent=['10 \u03bcL DNA extraction', '1.5 \u03bcL 10\u00d7 reaction buffer', '1.5 \u03bcL dNTPs (2.5 mM stock)', '1 \u03bcL random hexamer primers (50 ng/\u03bcL)'])\nincubate(container='reaction', temperature='94\u00b0C', duration='3 min')\ncool(container='reaction', temperature='on ice', duration='3 min', purpose='primer annealing')\nadd(container='reaction', reagent='1 \u03bcL Klenow (3\u2032\u20135\u2032 exo-)', volume='1 \u03bcL')\nincubate(container='reaction', temperature='25\u00b0C', duration='10 min')\nincubate(container='reaction', temperature='37\u00b0C', duration='60 min')\nincubate(container='reaction', temperature='75\u00b0C', duration='20 min', step='termination')\npool(reagent='reactions')\nclean(reagent='pooled reactions', kit='Qiagen QIAamp DNA mini kit')\nelute(reagent='Buffer AE', volume='50 \u03bcL')\namplify(reagent=['2.5 \u03bcL dsDNA template', 'Qiagen RepliG kit'], replicates=3, protocol='standard')\nrun(container='0.8% agarose gel', reagent='all reactions', duration='30 min', buffer='1\u00d7 TAE', voltage='100 V')\npool(reagent='reactions')\nclean(reagent='pooled reactions', kit='QIAampl DNA minikit')\nelute(reagent='Buffer AE', volume='200 \u03bcL')\nconvert(reagent='DNA genomes', from='ssDNA', to='dsDNA', enzyme='Klenow Fragment (3\u2032\u20135\u2032 exo-)', primer='RP-SISPA')\nadd(reagent=['5 \u03bcL nucleic acid', '9 \u03bcL reaction mix'])\nincubate(container='reaction', temperature='94\u00b0C', duration='3 min')\ncool(container='reaction', temperature='on ice', duration='3 min', purpose='primer annealing')\nadd(container='reaction', reagent='1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL, NEB #)', volume='1 \u03bcL')\nincubate(container='reaction', temperature='37\u00b0C', duration='60 min')\nadd(container='reaction', reagent=['1 \u03bcL SISPA primer', '1 \u03bcL dNTP'], volume='1 \u03bcL each', purpose='second strand labeling')\nheat(container='reaction', temperature='94\u00b0C', duration='3 min')\ncool(container='reaction', temperature='on ice', duration='3 min')\nadd(container='reaction', reagent='1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-)', volume='1 \u03bcL', purpose='final addition')\nincubate(container='reaction', temperature='37\u00b0C', duration='60 min')\nincubate(container='reaction', temperature='75\u00b0C', duration='20 min', step='termination')\nmix(reagent=['10 \u03bcL purified RNA viral template', '1 \u03bcL 2.5 mM dNTPs', '1.3 \u03bcL FR26RV-N (10 \u03bcM stock)', 'FR40RV-T primer (50 nM stock)'])\nheat(container='reaction', temperature='65\u00b0C', duration='5 min')\ncool(container='reaction', temperature='on ice', duration='3 min', purpose='primer annealing')\nadd(container='reaction', reagent=['1 \u03bcL DTT (Invitrogen)', '1 \u03bcL RNase OUT (Invitrogen)'], volume='1 \u03bcL each', while='on ice')\nsynthesize(container='reaction', reagent='200 U Superscript III reverse transcriptase', strand='complementary DNA')\nincubate(container='reaction', temperature='25\u00b0C', duration='10 min', purpose='annealing of hexamer and poly(T)20 primers')\nincubate(container='reaction', temperature='50\u00b0C', duration='60 min')\nheat(container='first strand synthesis reaction', temperature='94\u00b0C', duration='3 min')\ncool(container='first strand synthesis reaction', temperature='on ice')\nsynthesize(container='reaction', reagent='1 \u03bcL Klenow Fragment (3\u2032\u20135\u2032 exo-, 5U/\u03bcL)', volume='1 \u03bcL', temperature='37\u00b0C', duration='60 min', strand='complementary second strand')\nincubate(container='Klenow reaction', temperature='75\u00b0C', duration='20 min', step='termination')\namplify(reagent=['25 \u03bcL reactions', 'SISPA primer labeled template (DNA and RNA)'], volume='25 \u03bcL', replicates=3)\nincubate(container='reaction', temperature='95\u00b0C', duration='10 min')\nrun(container='0.8% agarose gel', reagent='PCR reactions', duration='30 min', buffer='1\u00d7 TAE', voltage='100 V')\npool(reagent='PCR reactions')\nclean(reagent='pooled PCR reactions', kit='QIAamp DNA Mini kit or MinElute PCR purification kit')\nelute(reagent='Buffer AE')\nquantify(reagent='samples', kit='Quant-iT PicoGreen kit', instrument='NanoDrop 3300 fluorospecrometer')\n\n### MANUAL SECTION ###\n# MANUAL: check (reagent: samples, other: {'quality': '260:280 ratios', 'instrument': 'NanoDrop 2000'})\n\n### AUTOMATED SECTION ###\nrun(container='0.8% agarose gel', reagent='samples', duration='30 min', buffer='1\u00d7 TAE', voltage='100 V')\n\n### MANUAL SECTION ###\n# MANUAL: sequence (reagent: metagenomes, other: {'kit': 'Nextera XT MiSeq 250 bp paired-end sequencing', 'location': 'Ramaciotti Centre, UNSW'})\n# MANUAL: process (reagent: raw sequence reads, other: {'software': 'CLC Genomics Workbench 5.5'})\n# MANUAL: import (reagent: Illumina paired-end reads, other: {})\n# MANUAL: trim (reagent: adaptor sequences, other: {})\n# MANUAL: check (reagent: reads, other: {'quality': 'PHRED score 20', 'min_length': '100 bp'})\n# MANUAL: merge (reagent: paired reads, other: {})\n# MANUAL: check (reagent: final data set, other: {'QC': 'min_length 200 bp'})\n# MANUAL: upload (reagent: non-assembled read data sets, other: {'server': 'Metavir web server'})\n# MANUAL: classify (reagent: virus sequences, other: {'method': 'top BLAST hit'})\n# MANUAL: generate (reagent: tetranucleotide clustering and rarefaction curves, other: {'tools': 'Metavir'})\n# MANUAL: submit (reagent: datasets, other: {'database': 'Genbank Sequence Read Archive (SRA)', 'accession_numbers': ['SRR1207981', 'SRR1207983', 'SRR1207980', 'SRR1207984', 'SRR1246941', 'SRR1207979', 'SRR1210582']})",
+    "source_file": "protocol_67.txt"
+  }
+]

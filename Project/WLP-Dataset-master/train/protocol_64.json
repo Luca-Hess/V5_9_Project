@@ -1,0 +1,87 @@
+[
+  {
+    "protocol": "How to make a 20 mg/mL X-Gluc Stock Solution\nWeigh 30 mg of X-Gluc.\nAdd 1.5 mL of DMF.\nVortex to dissolve completely.\nWrap in foil and store in the dark at -20\u00b0C.\nStocks may be kept for 1 year.",
+    "actions": [
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": null,
+          "reagent": "X-Gluc",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "mass": "30 mg"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "DMF",
+          "volume": "1.5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "to dissolve completely"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wrap",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "material": "foil"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": "up to 1 year",
+          "speed": null,
+          "other": {
+            "condition": "in the dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: weigh (reagent: X-Gluc, other: {'mass': '30 mg'})\n\n### AUTOMATED SECTION ###\nadd(reagent='DMF', volume='1.5 mL')\nvortex(purpose='to dissolve completely')\n\n### MANUAL SECTION ###\n# MANUAL: wrap (other: {'material': 'foil'})\n\n### AUTOMATED SECTION ###\nstore(temperature='-20\u00b0C', duration='up to 1 year', condition='in the dark')",
+    "source_file": "protocol_64.txt"
+  }
+]
