@@ -1,413 +1,141 @@
 import os
 import json
+from functools import total_ordering
+
 import torch
 import tqdm
 import re
 
-from typing import List, Dict, Tuple
+from typing import List, Dict, Optional
+
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 from torch.optim import AdamW, lr_scheduler
 from torch.utils.data import Dataset, DataLoader
 from torch.cuda.amp import GradScaler, autocast
 from peft import LoraConfig, get_peft_model
 
-from trl import PPOTrainer, PPOConfig, AutoModelForSeq2SeqLMWithValueHead
-
-
-# Define automation machine capabilities
-class LabAutomationMachine:
-    """Defines the capabilities of a fictional lab automation machine"""
-
-    AUTOMATED_ACTIONS = {
-        'pipette': {'params': ['source', 'destination', 'volume']},
-        'add': {'params': ['reagent', 'container', 'volume']},
-        'mix': {'params': ['container', 'duration', 'speed']},
-        'incubate': {'params': ['container', 'temperature', 'duration']},
-        'centrifuge': {'params': ['container', 'speed', 'duration', 'temperature']},
-        'heat': {'params': ['container', 'temperature', 'duration']},
-        'cool': {'params': ['container', 'temperature', 'duration']},
-        'dispense': {'params': ['reagent', 'destination', 'volume']},
-        'aspirate': {'params': ['source', 'volume']},
-        'shake': {'params': ['container', 'duration', 'speed']},
-        'wait': {'params': ['duration']},
-    }
-
-    @classmethod
-    def get_action_type(cls, action: str) -> str:
-        """Determine if action is automated or manual"""
-        action_lower = action.lower()
-        if action_lower in cls.AUTOMATED_ACTIONS:
-            return 'automated'
-        return 'manual' # Default to manual if unknown actions
-
-
-class AnnotationToScriptConverter:
-    """Converts annotation format to automation script format"""
-
-    def __init__(self):
-        self.machine = LabAutomationMachine()
-
-    def parse_annotation(self, ann_text: str) -> List[Dict]:
-        """Parse .ann format into structured actions"""
-        actions = []
-        lines = ann_text.strip().split('\n')
-
-        entities = {}
-        events = {}
-        relations = {}
-
-        # Parse entities
-        for line in lines:
-            if line.startswith('T'):
-                parts = line.split('\t')
-                entity_id = parts[0]
-                type_span = parts[1].split(' ', 1)
-                entity_type = type_span[0]
-                text = parts[2] if len(parts) > 2 else ""
-                entities[entity_id] = {'type': entity_type, 'text': text}
-
-            elif line.startswith('E'):
-                parts = line.split('\t')
-                event_id = parts[0]
-                event_data = parts[1].split(' ')
-                events[event_id] = {'data': event_data}
-
-            elif line.startswith('R'):
-                parts = line.split('\t')
-                rel_data = parts[1].split(' ')
-                relations[parts[0]] = rel_data
-
-        return self._build_action_sequence(entities, events, relations)
-
-    def _build_action_sequence(self, entities, events, relations):
-        """Build structured action sequence from parsed annotations"""
-        actions = []
-
-        for event_id, event in events.items():
-            action_info = {'type': 'unknown', 'params': {}}
-
-            for item in event['data']:
-                if ':' in item:
-                    key, val = item.split(':', 1)
-                    if key == 'Action' and val in entities:
-                        action_info['action'] = entities[val]['text']
-                        action_info['type'] = self.machine.get_action_type(entities[val]['text'])
-                    elif val in entities:
-                        action_info['params'][key.lower()] = entities[val]['text']
-
-            # Extract parameters from relations
-            for rel_id, rel_data in relations.items():
-                if len(rel_data) >= 3:
-                    rel_type = rel_data[0]
-                    if 'Arg1:' + event_id in ' '.join(rel_data):
-                        for part in rel_data[1:]:
-                            if 'Arg2:' in part:
-                                entity_ref = part.split(':')[1]
-                                if entity_ref in entities:
-                                    action_info['params'][rel_type.lower()] = entities[entity_ref]['text']
-
-            actions.append(action_info)
-
-        return actions
-
-    def generate_script(self, actions: List[Dict]) -> str:
-        """Generate automation script from actions"""
-        script_lines = ["# Lab Automation Script", ""]
-        current_mode = None
-
-        for i, action in enumerate(actions):
-            action_type = action.get('type', 'manual')
-            action_name = action.get('action', 'unknown')
-            params = action.get('params', {})
-
-            # Add section headers when switching between manual/automated
-            if action_type != current_mode:
-                if action_type == 'automated':
-                    script_lines.append("\n### AUTOMATED SECTION ###")
-                else:
-                    script_lines.append("\n### MANUAL SECTION ###")
-                current_mode = action_type
-
-            # Format action with parameters
-            if action_type == 'automated' and action_name.lower() in self.machine.AUTOMATED_ACTIONS:
-                param_str = ", ".join([f"{k}={repr(v)}" for k, v in params.items()])
-                script_lines.append(f"{action_name.lower()}({param_str})")
-            else:
-                # Manual action - provide instruction
-                param_desc = ", ".join([f"{k}: {v}" for k, v in params.items()])
-                script_lines.append(f"# MANUAL: {action_name} ({param_desc})")
-
-        return "\n".join(script_lines)
-
-    def convert(self, ann_text: str) -> str:
-        """Full conversion pipeline"""
-        actions = self.parse_annotation(ann_text)
-        return self.generate_script(actions)
-
-class RewardCalculator:
-    """Calculates rewards for RL training based on annotation quality"""
-
-    def __init__(self):
-        self.converter = AnnotationToScriptConverter()
-
-    def check_syntax(self, annotation: str) -> float:
-        """Check if annotation follows proper .ann syntax"""
-        score = 0.0
-        lines = annotation.strip().split('\n')
-
-        for line in lines:
-            if not line.strip():
-                continue
-            # Valid lines start with T, E, or R
-            if line[0] in ['T', 'E', 'R']:
-                score += 1.0
-
-            # Check tab separation
-            if '\t' in line:
-                score += 0.5
-
-        return min(score / max(len(lines), 1), 1.0)
+from LLMExtraction import ImprovedAnnotationToScriptConverter #rules based
+from protocol_json_dataset import ProtocolJsonDataset
+from json_script_converter import JsonScriptConverter
+
+
+def load_model(use_cuda: bool = torch.cuda.is_available()) -> (T5ForConditionalGeneration, T5Tokenizer, torch.device):
+    """Load T5 model and tokenizer"""
+    tokenizer = T5Tokenizer.from_pretrained('t5-base')
+    base = T5ForConditionalGeneration.from_pretrained('t5-base')
+
+    lora = LoraConfig(
+        r=64,
+        lora_alpha=128,
+        target_modules=["q", "k", "v", "o", "wi", "wo"],
+        lora_dropout=0.05,
+        bias="none",
+        task_type="SEQ_2_SEQ_LM"
+    )
+
+    model = get_peft_model(base, lora)
+    device = torch.device("cuda" if use_cuda else "cpu")
+    model.to(device)
+
+    return model, tokenizer, device
+
+def train_json_extractor(
+        data_dir: str,
+        output_dir: str = 'json_extractor_model',
+        batch_size: int = 8,
+        epochs: int = 10,
+        lr: float = 3e-4,
+        max_len: int = 1024,
+        automatable_actions: Optional[List[str]] = None,
+        val_split: float = 0.2
+):
+    """Train T5 model to extract JSON actions from protocols"""
+    model, tokenizer, device = load_model()
+    use_amp = torch.cuda.is_available()
+    scaler = GradScaler() if use_amp else None
+
+    # Load full dataset
+    full_dataset = ProtocolJsonDataset(
+        data_dir, tokenizer, max_len, automatable_actions
+    )
+    # Split into train/val
+    val_size = int(len(full_dataset) * val_split)
+    train_size = len(full_dataset) - val_size
+    train_dataset, val_dataset = torch.utils.data.random_split(
+        full_dataset,
+        [train_size, val_size],
+        generator=torch.Generator().manual_seed(42)
+    )
+
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+
+    optimizer = AdamW(model.parameters(), lr=lr)
+
+    def eval_json_rate(samples: List[Dict[str, str]]) -> float:
+        ok = 0
+        for s in samples:
+            try:
+                json.loads(s['pred'])
+                ok += 1
+            except Exception:
+                pass
+        return ok / max(len(samples), 1)
+
+    def validate(val_loader_iter, max_samples: int = 32) -> (float, float):
+        model.eval()
+        total_loss = 0.0
+        samples = []
+        count = 0
+
+        with torch.no_grad():
+            for batch in val_loader_iter:
+                if count >= max_samples:
+                    break
+                batch = {k: v.to(device) for k, v in batch.items()}
+                out = model(**batch)
+                total_loss += out.loss.item()
+                count += 1
+
+                # Generate predictions for parse rate
+                pred_ids = model.generate(
+                    input_ids=batch['input_ids'],
+                    attention_mask=batch['attention_mask'],
+                    max_length=max_len,
+                    num_beams=4,
+                    early_stopping=True
+                )
+                for i, pred in enumerate(pred_ids):
+                    pred_text = tokenizer.decode(pred, skip_special_tokens=True).strip()
+                    tgt = tokenizer.decode(
+                        batch['labels'][i],
+                        skip_special_tokens=True
+                    ).strip()
+                    samples.append({"pred": pred_text, "tgt": tgt})
+
+        avg_loss = total_loss / count if count > 0 else 0.0
+        parse_rate = eval_json_rate(samples)
+        return avg_loss, parse_rate
 
-    def check_action_order(self, annotation: str) -> float:
-        """Check if actions follow logical order"""
-        try:
-            actions = self.converter.parse_annotation(annotation)
-            score = 0.0
+    print(f"Train samples: {len(train_dataset)}, Val samples: {len(val_dataset)}")
 
-            # Check that events exist
-            if len(actions) > 0:
-                score += 0.5
 
-            # Check for reasonable number of actions (not too few or many)
-            if 1 < len(actions) < 100:
-                score += 0.5
-
-            return score
-        except:
-            return 0.0
-
-
-    def check_parameters(self, annotation: str) -> float:
-        """Check parameter completeness and validity"""
-        try:
-            actions = self.converter.parse_annotation(annotation)
-            score = 0.0
-            total_actions = len(actions)
-
-            if total_actions == 0:
-                return 0.0
-
-            for action in actions:
-                # Check if action has parameters
-                if action.get('params'):
-                    score += 0.5
-
-                # Check if action type is identified
-                if action.get('action'):
-                    score += 0.5
-
-            return score / total_actions
-        except:
-            return 0.0
-
-
-    def calculate_reward(self, generated_annotation: str, reference_annotation: str = None) -> float:
-        """Calculate total reward score"""
-        syntax_score = self.check_syntax(generated_annotation)
-        order_score = self.check_action_order(generated_annotation)
-        param_score = self.check_parameters(generated_annotation)
-
-        # Weighted combination
-        total_reward = (syntax_score * 10.0 +
-                        order_score * 5.0 +
-                        param_score * 5.0)
-
-        # Bonus for similarity to reference if available
-        if reference_annotation:
-            similarity = self._calculate_similarity(generated_annotation, reference_annotation)
-            total_reward += similarity * 10.0
-
-        return total_reward
-
-
-    def _calculate_similarity(self, gen: str, ref: str) -> float:
-        """Simple token-based similarity"""
-        gen_tokens = set(gen.lower().split())
-        ref_tokens = set(ref.lower().split())
-
-        if not ref_tokens:
-            return 0.0
-
-        intersection = len(gen_tokens & ref_tokens)
-        union = len(gen_tokens | ref_tokens)
-
-        return intersection / union if union > 0 else 0.0
-
-
-class ProtocolDataset(Dataset):
-    def __init__(self, data_dir, tokenizer, max_len=512):
-        self.examples = []
-        self.tokenizer = tokenizer
-        self.max_len = max_len
-
-        for fname in os.listdir(data_dir):
-            if fname.endswith(".txt"):
-                base = fname[:-4]
-                txt_path = os.path.join(data_dir, base + ".txt")
-                ann_path = os.path.join(data_dir, base + ".ann")
-
-                if not os.path.exists(ann_path):
-                    continue
-
-                with open(txt_path, encoding="utf-8") as f:
-                    text = f.read().strip()
-                with open(ann_path, encoding="utf-8") as f:
-                    ann = f.read().strip()
-
-                self.examples.append((text, ann))
-
-
-    def __len__(self):
-        return len(self.examples)
-
-    def __getitem__(self, idx):
-        text, target = self.examples[idx]
-
-        # Add task prefix for T5
-        input_text = f"translate protocol to script: {text}"
-
-        inputs = self.tokenizer(input_text,
-                                max_length=self.max_len,
-                                truncation=True,
-                                padding="max_length",
-                                return_tensors="pt")
-        labels = self.tokenizer(target,
-                                max_length=self.max_len,
-                                truncation=True,
-                                padding="max_length",
-                                return_tensors="pt")
-        inputs["labels"] = labels["input_ids"]
-        return {key: val.squeeze(0) for key, val in inputs.items()}
-
-tokenizer = T5Tokenizer.from_pretrained("t5-base")
-
-if torch.cuda.is_available():
-    base_model = T5ForConditionalGeneration.from_pretrained("t5-large")
-    scaler = GradScaler()
-    use_amp = True
-else:
-    base_model = T5ForConditionalGeneration.from_pretrained("t5-base")
-    use_amp = False
-
-# Configure LoRA
-lora_config = LoraConfig(
-    r=64,                # rank
-    lora_alpha=128,      # scaling
-    target_modules=["q", "k", "v", "o", "wi", "wo"],  # all attention projection layers
-    lora_dropout=0.05,
-    bias="none",
-    task_type="SEQ_2_SEQ_LM"
-)
-
-model = get_peft_model(base_model, lora_config)
-
-
-train_path = "WLP-Dataset-master/train"
-test_path = "WLP-Dataset-master/test"
-
-train_dataset = ProtocolDataset(train_path, tokenizer)
-train_loader = DataLoader(train_dataset, batch_size=4, shuffle=True)
-
-test_dataset = ProtocolDataset(test_path, tokenizer)
-test_loader = DataLoader(test_dataset, batch_size=4, shuffle=False)
-
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-model.to(device)
-
-optimizer = AdamW(model.parameters(), lr=5e-4)
-scheduler = lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.5, patience=2)
-
-reward_calculator = RewardCalculator()
-converter = AnnotationToScriptConverter()
-
-
-def evaluate(model, data_loader, device):
-    model.eval()
-    total_loss = 0
-    with torch.no_grad():
-        for batch in data_loader:
-            batch = {k: v.to(device) for k, v in batch.items()}
-            outputs = model(**batch)
-            loss = outputs.loss
-            total_loss += loss.item()
-    return total_loss / len(data_loader)
-
-def run_inference_on_specific_protocol(protocol_name: str, converter):
-    """Generate automation workflow for a specific test protocol by name"""
-    test_path = "WLP-Dataset-master/test"
-
-    # Find the specific protocol in the test dataset
-    if protocol_name.endswith(".ann"):
-        base_name = protocol_name[:-4]
-    else:
-        base_name = protocol_name
-
-    protocol_text = base_name + ".txt"
-    reference_annotation = base_name + ".ann"
-
-    txt_path = os.path.join(test_path, protocol_text)
-    ann_path = os.path.join(test_path, reference_annotation)
-
-    with open(txt_path, encoding="utf-8") as f:
-        text = f.read().strip()
-    with open(ann_path, encoding="utf-8") as f:
-        ann = f.read().strip()
-
-    print(f"\n{'=' * 80}")
-    print(f"PROTOCOL: {protocol_name}")
-    print(f"{'=' * 80}")
-    print(f"\nOriginal Protocol Text:")
-    print(text)
-    print(f"\n{'-' * 80}")
-    print(f"Reference Annotation (.ann file):")
-    print(ann)
-    print(f"\n{'-' * 80}")
-
-
-    # Convert annotation to automation script (rule-based)
-    script_from_reference = converter.convert(ann)
-
-    print(f"Automation Script (from reference annotation):")
-    print(script_from_reference)
-    print(f"\n{'=' * 80}\n")
-
-if __name__ == "__main__":
-
-    # Test on protocol_2 (index 2 in test set)
-    print("Testing automation workflow generation on test data (BEFORE training):")
-    run_inference_on_specific_protocol("protocol_224", converter)
-
-    # Supervised pre-training
-    print("Starting supervised pre-training...")
-    num_pretraining_epochs = 3
-
-    for epoch in range(num_pretraining_epochs):
+    for epoch in range(epochs):
         model.train()
-        loop = tqdm.tqdm(train_loader, desc=f"Pretrain Epoch {epoch + 1}")
+        loop = tqdm.tqdm(train_loader, desc=f"Epoch {epoch + 1}/{epochs}")
 
         for batch in loop:
             batch = {k: v.to(device) for k, v in batch.items()}
-
             if use_amp:
                 with autocast():
-                    outputs = model(**batch)
-                    loss = outputs.loss
+                    out = model(**batch)
+                    loss = out.loss
                 scaler.scale(loss).backward()
                 scaler.step(optimizer)
                 scaler.update()
             else:
-                outputs = model(**batch)
-                loss = outputs.loss
+                out = model(**batch)
+                loss = out.loss
                 loss.backward()
                 torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
                 optimizer.step()
@@ -415,151 +143,261 @@ if __name__ == "__main__":
             optimizer.zero_grad()
             loop.set_postfix(loss=loss.item())
 
-        test_loss = evaluate(model, test_loader, device)
-        scheduler.step(test_loss)
-        print(f"Pretrain Epoch {epoch + 1} finished, Test Loss: {test_loss:.4f}")
+        # Validation
+        val_loss, val_rate = validate(val_loader, max_samples=32)
+        print(
+            f"Epoch {epoch+1} | "
+            f"Validation Loss: {val_loss:.4f} | "
+            f"Val JSON Parse Rate: {val_rate:.2%}"
+        )
 
-    # Reinforcement Learning fine-tuning
-    print("Starting RL fine-tuning...")
+    os.makedirs(output_dir, exist_ok=True)
+    model.save_pretrained(output_dir)
+    tokenizer.save_pretrained(output_dir)
+    print(f"Model saved to {output_dir}")
 
-    # Wrap model for PPO
-    ppo_model = AutoModelForSeq2SeqLMWithValueHead.from_pretrained(model)
-    ppo_model.to(device)
+def _ensure_valid_json(text: str) -> Optional[List[Dict]]:
+    """Attempt to fix common JSON issues in model output"""
+    try:
+        return json.loads(text)
+    except Exception:
+        pass
 
-    ppo_config = PPOConfig(
-        learning_rate = 1e-5,
-        batch_size = 4,
-        mini_batch_size = 4,
-        gradient_accumulation_steps = 1
+    try:
+        s = text.strip()
+        start = s.find('[')
+        end = s.rfind(']') + 1
+        if start >= 0 and end > start:
+            return json.loads(s[start:end])
+
+    except Exception:
+        return None
+    return None
+
+def infer_actions_from_protocol(
+        protocol_text: str,
+        model_dir: str = 'json_extractor_model',
+        automatable_actions: Optional[List[str]] = None,
+        max_len: int = 1024
+) -> List[Dict]:
+        tokenizer = T5Tokenizer.from_pretrained(model_dir)
+        model = T5ForConditionalGeneration.from_pretrained(model_dir)
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model.to(device)
+        model.eval()
+
+        automatable_actions = automatable_actions or [
+            "pipette","dispense","aspirate","mix","shake",
+            "incubate","heat","cool","centrifuge","wait"
+        ]
+
+        prompt = (
+            "You are a laboratory automation extractor.\n"
+            "Extract all actions from the protocol in strict JSON.\n"
+            "Rules:\n"
+            "- Normalize verbs (e.g., 'incubate').\n"
+            "- Include parameters: container, reagent, volume, temperature, duration, speed, other.\n"
+            "- 'automatable' true if in the allowed set.\n"
+            "- 'confidence' between 0 and 1.\n"
+            "- Respond ONLY with a valid JSON array, no extra text.\n"
+            f"Automatable actions: {', '.join(automatable_actions)}\n\n"
+            f"Protocol:\n{protocol_text}\n"
+        )
+
+        inputs = tokenizer(prompt, return_tensors="pt", max_length=max_len, truncation=True).to(device)
+        pred_ids = model.generate(
+            **inputs,
+            max_length=max_len,
+            num_beams=4,
+            early_stopping=True
+        )
+
+        text = tokenizer.decode(pred_ids[0], skip_special_tokens=True).strip()
+
+        # Validate JSON, retry with greedy if needed
+        actions = _ensure_valid_json(text)
+        if actions is None:
+            pred_ids = model.generate(
+                **inputs,
+                max_length=max_len,
+                do_sample=False,
+                num_beams=1
+            )
+            text = tokenizer.decode(pred_ids[0],
+                                    skip_special_tokens=True).strip()
+            actions = _ensure_valid_json(text)
+            if actions is None:
+                raise ValueError("Failed to parse JSON from model output.")
+
+        return actions
+
+def save_actions_json_from_file(txt_path: str,
+                                output_path: str,
+                                model_dir: str = 'json_extractor_model',
+                                automatable_actions: Optional[List[str]] = None):
+    """Load protocol from .txt file, infer actions, and save to .json file"""
+    with open(txt_path, 'r', encoding="utf-8") as f:
+        protocol_text = f.read().strip()
+    actions = infer_actions_from_protocol(
+        protocol_text,
+        model_dir=model_dir,
+        automatable_actions=automatable_actions
     )
-
-    ppo_trainer = PPOTrainer(
-        config=ppo_config,
-        model=ppo_model,
-        tokenizer=tokenizer
-    )
-
-    # Training Loop
-    num_rl_epochs = 2
-    for epoch in range(num_rl_epochs):
-        loop = tqdm.tqdm(train_loader, desc=f"RL Epoch {epoch + 1}")
-
-        for batch in loop:
-            protocol_texts = [tokenizer.decode(ids, skip_special_tokens=True)
-                              for ids in batch['input_ids']]
-            reference_annotations = [tokenizer.decode(ids, skip_special_tokens=True)
-                                     for ids in batch['labels']]
-
-            # Generate annotations
-            query_tensors = batch['input_ids'].to(device)
-            response_tensors = ppo_trainer.generate(query_tensors, max_new_tokens=512)
-
-            # Decode generated annotations
-            generated_annotations = [tokenizer.decode(r.squeeze(), skip_special_tokens=True)
-                                     for r in response_tensors]
-
-            # Calculate rewards
-            rewards = []
-            for gen_ann, ref_ann in zip(generated_annotations, reference_annotations):
-                reward = reward_calculator.calculate_reward(gen_ann, ref_ann)
-                rewards.append(torch.tensor(reward, device=device))
-
-            # PPO update
-            stats = ppo_trainer.step(query_tensors, response_tensors, rewards)
-            loop.set_postfix(mean_reward=torch.tensor(rewards).mean().item())
-
-        print(f"RL Epoch {epoch + 1} finished, Mean Reward: {torch.tensor(rewards).mean().item():.4f}")
-
-    # Save final model
-    ppo_model.save_pretrained("protocol_annotation_rl_model")
-    tokenizer.save_pretrained("protocol_annotation_rl_model")
+    with open(output_path, 'w', encoding="utf-8") as f:
+        json.dump(actions, f, indent=2)
+    print(f"Saved actions JSON to {output_path}")
 
 
-def generate_automation_workflow(protocol_text: str, model, tokenizer, device):
-    """Two-stage generation: protocol → annotation → automation script"""
+def evaluate_test_set(
+        test_dir: str,
+        model_dir: str = 'json_extractor_model',
+        output_dir: str = 'test_predictions',
+        automatable_actions: Optional[List[str]] = None,
+        max_len: int = 1024
+):
+    """
+    Evaluate model on test set with ground truth JSON files
+
+    For each protocol_X.txt in test_dir:
+    1. Generate predicted actions JSON
+    2. Save to output_dir/protocol_X.pred.json
+    3. If protocol_X.json exists, compute metrics
+    """
+    print(f"\n{'='*60}")
+    print("Evaluating on Test Set")
+    print(f"{'='*60}\n")
+
+    tokenizer = T5Tokenizer.from_pretrained(model_dir)
+    model = T5ForConditionalGeneration.from_pretrained(model_dir)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    model.to(device)
     model.eval()
 
-    # Stage 1: Generate annotation from protocol
-    input_text = f"translate protocol to automation: {protocol_text}"
-    inputs = tokenizer(input_text, return_tensors="pt", max_length=512, truncation=True).to(device)
+    os.makedirs(output_dir, exist_ok=True)
 
-    annotation_output = model.generate(
-        **inputs,
-        max_length=512,
-        num_beams=4,
-        early_stopping=True
-    )
+    automatable_actions = automatable_actions or [
+        "pipette","dispense","aspirate","mix","shake",
+        "incubate","heat","cool","centrifuge","wait"
+    ]
 
-    annotation = tokenizer.decode(annotation_output[0], skip_special_tokens=True)
+    # Metrics tracking
+    total_files = 0
+    successful_parses = 0
+    failed_parses = []
 
-    # Stage 2: Convert annotation to automation script (rule-based)
-    script = converter.convert(annotation)
-    return annotation, script
+    # find all .txt files in test_dir
+    txt_files = [f for f in os.listdir(test_dir) if f.endswith('.txt')]
+
+    print(f"Found {len(txt_files)} protocols.")
+
+    for fname in tqdm.tqdm(txt_files, desc='Processing test set'):
+        total_files += 1
+        base = fname[:-4]
+        txt_path = os.path.join(test_dir, fname)
+        pred_path = os.path.join(output_dir, f'{base}.pred.json')
+        gt_path = os.path.join(test_dir, f'{base}.json')
+
+        # Load protocol text
+        with open(txt_path, 'r', encoding="utf-8") as f:
+            protocol_text = f.read().strip()
+
+        # Generate predicted actions
+        try:
+            actions = infer_actions_from_protocol(
+                protocol_text,
+                model_dir=model_dir,
+                automatable_actions=automatable_actions,
+                max_len=max_len
+            )
+
+            # Save predicted actions
+            with open(pred_path, 'w', encoding="utf-8") as f:
+                json.dump(actions, f, indent=2)
+
+            successful_parses += 1
+
+        except Exception as e:
+            print(f'Failed to parse {fname}: {e}')
+            failed_parses.append(fname)
+            continue
+
+    # Print summary
+    print(f'\n{"="*60}')
+    print("Test Set Evaluation Summary")
+    print(f'{"="*60}\n')
+    print(f'Total Protocols Processed:  {total_files}')
+    print(f'Successful JSON Parses:     {successful_parses}')
+    print(f'Failed JSON Parses:         {len(failed_parses)}')
+    print(f'JSON Parse rate:            {successful_parses / total_files:.2%}')
+
+    if failed_parses:
+        print("\nFailed Parses:")
+        for fname in failed_parses:
+            print(f' - {fname}')
+
+    print(f'\nPredicted JSON files saved to: {output_dir}\n')
+    print(f'{"="*60}\n')
+
+    return {
+        'total': total_files,
+        'successful': successful_parses,
+        'failed': len(failed_parses),
+        'parse_rate': successful_parses / total_files if total_files > 0 else 0.0
+    }
+
 
 if __name__ == "__main__":
 
-    # Example usage
-    example_protocol = """Standard RNA Synthesis (E2050)
-    Thaw the necessary kit components.
-    Mix and pulse-spin in microfuge to collect solutions to the bottoms of tubes.
-    Keep on ice.
-    Incubate at 37°C for 2 hours."""
-
+    # Phase 1: Training
     print("\n" + "="*60)
-    print("EXAMPLE AUTOMATION SCRIPT:")
-    print("="*60)
-    annotation, script = generate_automation_workflow(example_protocol, model, tokenizer, device)
-    print("\nGenerated Annotation:")
-    print(annotation)
-    print("\nGenerated Automation Script:")
-    print(script)
+    print("Phase 1: Training JSON Extraction Model")
+    print("="*60 + "\n")
 
+    train_json_extractor(
+        data_dir='WLP-Dataset-master/train',
+        output_dir='json_extractor_model',
+        batch_size=8,
+        epochs=10,
+        lr=3e-4,
+        max_len=1024,
+        automatable_actions=[
+            "pipette","dispense","aspirate","mix","shake",
+            "incubate","heat","cool","centrifuge","wait"
+        ],
+        val_split=0.2
+    )
 
+    # Phase 2: Testing
+    print("\n" + "="*60)
+    print("Phase 2: Evaluating JSON Extraction Model on Test Set")
+    print("="*60 + "\n")
 
-# # Protocol 103 annotation example
-# print(annotate_protocol("""Isolation Of Total DNA From NC64A Chlorella
-# Inoculate 500 mL flasks with NC64A chlorella, each flask to contain 360 mL of cells at 1.2 X 106 cells/mL in MBBM.
-# Incubate the flasks at 25°C for 72 hours, with continuous light and shaking.
-# Count the cells.
-# Concentrate aliquots of NC64A chlorella, each aliquot to contain 6.0 X 109 cells.
-# If the cells are to be infected with virus, infection should be at an moi (multiplicity of infection) of 3-5.
-# Centrifuge the samples in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4°C to harvest the cells.
-# Wash the cells 1X with sterile d-H2O in the Sorvall HB-4 rotor at 5,000 rpm, 5 min, 4°C.
-# Quick freeze the cells pellets with liquid N2 and store the frozen pellets at -80°C until ready for processing.
-# Resuspend each frozen sample with 5.0 mL of 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.
-# Heat the samples at 65°C for 30 min (leave in the MSK flasks during the heating).
-# Break the samples a second time in the MSK for 30 sec with CO2 cooling.
-# Recover the homogenates to clean tubes (SS34 plastic tubes).
-# Remove a 0.3 mL aliquot from each sample to microfuge tubes for determination of the 			original DNA concentration for each sample (use the fluorometric procedure).
-# Treat each sample with 500 µL of proteinase K for 60 min at 37°C (add 200 µL/sample).
-# Heat the samples at 65°C for 5 min.
-# Add 20% SDS to each sample to a final concentration of 1% (add 500 µL/sample).
-# Add 2.7 mL of 5 M KOAc to each sample, mix well (a final concentration of 1 M).
-# Incubate the samples in the cold room for 30 min.
-# Treat the samples with RNAse at 200 µg/mL for 2 hours at 37°C (add 200 µL/sample).
-# Precipitate the DNAs in the samples by adding 2X volumes of 100% EtOH (approximately 30 mL/sample).
-# Centrifuge the tubes in the Sorvall HB-4 rotor at 10,000 rpm, 15 min, 4°C.
-# Resuspend each DNA sample with 3.5 mL of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.
-# Dialyze the samples overnight at 4°C against several changes of 50 mM Tris-HCl, pH 8.0, 10 mM EDTA.
-# Add 375 µL of 3 M NaOAc to each sample.
-# Centrifuge the samples in the Sorvall SS34 rotor at 10,000 rpm, 20 min, 4°C.
-# Wash the DNA pellets 1X with 10 mL of 70% EtOH in the Sorvall SS34 rotor at 10,000 rpm, 5 min, 4°C.
-# Dry the pellets briefly (10-15 min) in the vacuum desiccator to remove the EtOH.
-# Determine the DNA concentration of the samples using the fluorometric procedure.
-# Run CsCl gradients.
-# Centrifuge the required volume of cells for each aliquot in the Sorvall GSA rotor at 5,000 rpm, 5 min, 4°C.
-# Resuspend each aliquot with 160 mL of fresh MBBM.
-# Incubate the flasks for 45-60 min at 25°C for the cells to acclimate to the new media.
-# Incubate the flasks for the desired length of time at 25°C with continuous light and shaking.
-# Discard the supernatants.
-# Break the cells in the MSK mechanical homogenizer with 5.0 gm of 0.3 mm glass beads for 60 sec, with CO2 cooling.
-# Wash the glass beads with 50 mM NaHPO4, pH 7.4, 2.0 M NaCl.
-# Add the washes to the homogenates.
-# Centrifuge the sample in the Sorvall SS34 rotor at 14,000 rpm, 20 min, 4°C.
-# Decant the supernatants to clean tubes.
-# Store at -20°C for 2-3 hours.
-# Discard the supernatants.
-# Precipitate the DNAs by adding an equal volume of isopropanol to each tube.
-# Mix well and hold at room temperature for 30 min.
-# Discard the supernatants.
-# Resuspend the pellets with 2.0 mL of 1X TE buffer."""))
+    test_results = evaluate_test_set(
+        test_dir='WLP-Dataset-master/test',
+        model_dir='json_extractor_model',
+        output_dir='test_predictions',
+        automatable_actions=[
+            "pipette","dispense","aspirate","mix","shake",
+            "incubate","heat","cool","centrifuge","wait"
+        ],
+        max_len=1024
+    )
+
+    # Phase 3: Example script generation
+    print("\n" + "="*60)
+    print("Phase 3: Generating Automation Script from Example Protocol")
+    print("="*60 + "\n")
+
+    example_pred_json = 'test_predictions/protocol_224.pred.json'
+
+    if os.path.exists(example_pred_json):
+        with open(example_pred_json, 'r', encoding='utf-8') as f:
+            actions = json.load(f)
+
+        rb_converter = JsonScriptConverter()
+        script = rb_converter.generate_script(actions)
+
+        print("Example Automation Script (protocol_224):\n")
+        print(script)
+    else:
+        print(f"Example predicted JSON file not found: {example_pred_json}")

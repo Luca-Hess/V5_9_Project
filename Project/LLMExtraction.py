@@ -4,7 +4,7 @@ import os
 import time
 from typing import List, Dict
 
-from ModelAnnotation import LabAutomationMachine
+from json_script_converter import LabAutomationMachine
 
 # Token for Github API:
 token =  os.environ["GITHUB_TOKEN"]
@@ -224,63 +224,3 @@ if __name__ == "__main__":
     data_path = "WLP-Dataset-master/test"
     generator.generate_from_protocols(data_path)
 
-# Usage example
-# def test_llm_extraction():
-#     """Test LLM-based extraction on a sample protocol"""
-#
-#     # Initialize extractor (you'll need an API key)
-#     extractor = LLMActionExtractor(client, model)
-#
-#     sample_protocol = """Radioactive Labeling with T4 PNK (M0201S)
-# Set-up the following reaction:.
-# Incubate at 37°C for 30 minutes.
-# Heat inactivate by incubating at 65°C for 20 minutes."""
-#
-#     # Extract actions
-#     actions = extractor.extract_actions(sample_protocol)
-#
-#     print("Extracted Actions:")
-#     print(json.dumps(actions, indent=2))
-#
-#     # Generate script
-#     converter = ImprovedAnnotationToScriptConverter()
-#     script = converter.generate_script(actions)
-#
-#     print("\n" + "=" * 60)
-#     print("Generated Automation Script:")
-#     print("=" * 60)
-#     print(script)
-#
-# if __name__ == "__main__":
-#     test_llm_extraction()
-
-
-# # For local/open-source LLM alternative
-# class LocalLLMExtractor(LLMActionExtractor):
-#     """Use local LLM (e.g., LLaMA, Mistral) instead of API"""
-#
-#     def __init__(self, model_name: str = "meta-llama/Llama-3-8B-Instruct"):
-#         from transformers import pipeline
-#
-#         self.pipe = pipeline(
-#             "text-generation",
-#             model=model_name,
-#             device_map="auto",
-#             max_new_tokens=2048
-#         )
-#
-#     def extract_actions(self, protocol_text: str) -> List[Dict]:
-#         prompt = self.create_extraction_prompt(protocol_text)
-#
-#         result = self.pipe(prompt, do_sample=False)[0]['generated_text']
-#
-#         # Extract JSON from response
-#         try:
-#             # Find JSON array in response
-#             start = result.find('[')
-#             end = result.rfind(']') + 1
-#             json_str = result[start:end]
-#             actions = json.loads(json_str)
-#             return actions
-#         except:
-#             return []
