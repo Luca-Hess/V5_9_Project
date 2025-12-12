@@ -1,0 +1,150 @@
+[
+  {
+    "protocol": "FLV tracer assays Prepare FLVs for tracer assays.\nCollect seawater samples from the desired location.\nAfter determining the concentration of the FLVs in the concentrate, and the ambient concentration of viruses in the seawater, the proper amount of FLV concentrate should be added at tracer levels (<10% of original ambient virus concentration) into sample volumes of no less than 400 mL.\nDesignate a control treatment.\nAt each time point, total viral abundance and FLV numbers should be determined in duplicate from small volume subsamples (5\u201330 mL) taken into sterile, 15- or 50-mL polyethylene tubes.\nSubsamples are immediately fixed with 1% to 2% (final concentration) 0.02-\u00b5m filtered formalin and stored at 4\u00b0C.\nSlides should be prepared according to Noble and Fuhrman (1998) or Patel et al. (2007).\nProduction and removal rates are calculated from the equations of Glibert et al. (1982) and Fuhrman (1987) (see guidelines for equations).",
+    "actions": [
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "FLVs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "tracer assays"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "seawater samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "desired location"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "sample volumes (\u2265400 mL)",
+          "reagent": "FLV concentrate",
+          "volume": "tracer levels (<10% of original ambient virus concentration)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "based_on": "determined concentrations"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "designate",
+        "parameters": {
+          "container": null,
+          "reagent": "control treatment",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "sterile, 15- or 50-mL polyethylene tubes",
+          "reagent": "small volume subsamples",
+          "volume": "5\u201330 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "sample",
+            "duplicate": true,
+            "at_each_time_point": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": "subsamples in tubes",
+          "reagent": "0.02-\u00b5m filtered formalin",
+          "volume": "1% to 2% final concentration",
+          "temperature": null,
+          "duration": "immediately",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "subsamples in tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "slides",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "protocol": "Noble and Fuhrman (1998) or Patel et al. (2007)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "rates": "production and removal",
+            "equations": "Glibert et al. (1982) and Fuhrman (1987)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: FLVs, other: {'purpose': 'tracer assays'})\n# MANUAL: collect (reagent: seawater samples, other: {'location': 'desired location'})\n\n### AUTOMATED SECTION ###\nadd(container='sample volumes (\u2265400 mL)', reagent='FLV concentrate', volume='tracer levels (<10% of original ambient virus concentration)', based_on='determined concentrations')\n\n### MANUAL SECTION ###\n# MANUAL: designate (reagent: control treatment)\n\n### AUTOMATED SECTION ###\ntake(container='sterile, 15- or 50-mL polyethylene tubes', reagent='small volume subsamples', volume='5\u201330 mL', from='sample', duplicate=True, at_each_time_point=True)\nfix(container='subsamples in tubes', reagent='0.02-\u00b5m filtered formalin', volume='1% to 2% final concentration', duration='immediately')\nstore(container='subsamples in tubes', temperature='4\u00b0C')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: slides, other: {'protocol': 'Noble and Fuhrman (1998) or Patel et al. (2007)'})\n# MANUAL: calculate (other: {'rates': 'production and removal', 'equations': 'Glibert et al. (1982) and Fuhrman (1987)'})",
+    "source_file": "protocol_608.txt"
+  }
+]

@@ -1,0 +1,175 @@
+[
+  {
+    "protocol": "Preparation of deionized glyoxal\nMix 25 ml of 40% glyoxal to be deionized with 2.5 g of mixed bed resin.\nMix the solution by magnetic stirrer for 30 minutes at room temperature.\nThe resin color will change from blue to amber, when its capacity is reached.\nSeparate the deionized material from the resin by decanting or (sterile) filtration.\nRepeat the deionization process (steps 2. and 3.)\nuntil the color of the resin does not change anymore.\nApproximately half of the resin particles remain blue and half become amber after a 30-minute incubation.\nCheck the pH of the glyoxal solution by mixing 200 \u03bcl of glyoxal with 2 \u03bcl of a 10 mg/ml aqueous solution of bromocresol green and observing the color change.\nBromocresol green is yellow at pH <4.8 and blue-green at pH >5.2.\nAlternatively, use pH indicator strips instead of a bromocresol green solution.\nRepeat the deionization process (steps 2. and 3.)\nuntil the pH of the glyoxal is >5.5.\nFinal resin removal should be done through a small pore-size filter (e.g. 0.22-0.45 \u00b5m, gamma sterilized) to avoid carry-over of the resin.\nDeionized glyoxal can be stored indefinitely at -20 \u00b0C (or -80 \u00b0C) under nitrogen in tightly sealed small aliquots (e.g. microcentrifuge tubes).Use each aliquot only once, then discard.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "25 ml of 40% glyoxal and 2.5 g of mixed bed resin",
+          "volume": "25 ml glyoxal, 2.5 g resin",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "solution (glyoxal + resin)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": "magnetic stirrer",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": null,
+          "reagent": "deionized glyoxal and resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "decanting or sterile filtration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "solution (glyoxal + resin)",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": "magnetic stirrer",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "separate",
+        "parameters": {
+          "container": null,
+          "reagent": "deionized glyoxal and resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "decanting or sterile filtration"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "glyoxal + resin mixture",
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "30 minutes",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "200 \u03bcl glyoxal and 2 \u03bcl of 10 mg/ml bromocresol green solution",
+          "volume": "200 \u03bcl glyoxal, 2 \u03bcl bromocresol green",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": null,
+          "reagent": "glyoxal + bromocresol green mixture",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "observation": "color change"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "deionized glyoxal and resin",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "filter_size": "0.22-0.45 \u00b5m",
+            "sterilization": "gamma sterilized"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "deionized glyoxal",
+          "volume": "small aliquots",
+          "temperature": "-20 \u00b0C or -80 \u00b0C",
+          "duration": "indefinitely",
+          "speed": null,
+          "other": {
+            "atmosphere": "under nitrogen",
+            "seal": "tightly sealed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "used aliquot of deionized glyoxal",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='25 ml of 40% glyoxal and 2.5 g of mixed bed resin', volume='25 ml glyoxal, 2.5 g resin')\nmix(reagent='solution (glyoxal + resin)', temperature='room temperature', duration='30 minutes', speed='magnetic stirrer')\nseparate(reagent='deionized glyoxal and resin', method='decanting or sterile filtration')\nmix(reagent='solution (glyoxal + resin)', temperature='room temperature', duration='30 minutes', speed='magnetic stirrer')\nseparate(reagent='deionized glyoxal and resin', method='decanting or sterile filtration')\nincubate(reagent='glyoxal + resin mixture', temperature='room temperature', duration='30 minutes')\nmix(reagent='200 \u03bcl glyoxal and 2 \u03bcl of 10 mg/ml bromocresol green solution', volume='200 \u03bcl glyoxal, 2 \u03bcl bromocresol green')\n\n### MANUAL SECTION ###\n# MANUAL: observe (reagent: glyoxal + bromocresol green mixture, other: {'observation': 'color change'})\n\n### AUTOMATED SECTION ###\nfilter(reagent='deionized glyoxal and resin', filter_size='0.22-0.45 \u00b5m', sterilization='gamma sterilized')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: microcentrifuge tubes, reagent: deionized glyoxal, volume: small aliquots, temperature: -20 \u00b0C or -80 \u00b0C, duration: indefinitely, other: {'atmosphere': 'under nitrogen', 'seal': 'tightly sealed'})\n# MANUAL: discard (container: microcentrifuge tubes, reagent: used aliquot of deionized glyoxal, other: {})",
+    "source_file": "protocol_78.txt"
+  }
+]

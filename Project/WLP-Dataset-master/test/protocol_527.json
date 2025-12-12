@@ -1,0 +1,243 @@
+[
+  {
+    "protocol": "Swift\u2122 Membrane Stain\nFollowing protein transfer to a membrane, place the membrane in a suitable tray.\na. For PVDF Membranes: \nAdd 20ml 100% methanol and rinse for 10\u201030 seconds.\nDiscard the methanol and immediately add 12ml Swift\u2122 Membrane Stain.\nb. For Nitrocellulose Membranes: \nAdd 20ml deionized water and rinse for 30 seconds.\nDiscard the wash and add 12ml Swift\u2122 Membrane Stain.\nPlace the trays on a rocking shaker.\nProtein bands appear in ~30 seconds.\nRinse the membrane in DI water to remove the staining solution for improved image capture by scanning or photography.\nFor rapid de\u2010staining of the membranes, rinse the membrane in DI water to remove staining solution.\nWash the membranes for 30\u201060 seconds in 50ml 1X Swift\u2122 Destain, or until the stain has been removed.\nOnce de\u2010stained, rinse in DI water and store the blot in DI water until required.",
+    "actions": [
+      {
+        "action": "place",
+        "parameters": {
+          "container": "suitable tray",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "object": "membrane"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tray (PVDF membrane)",
+          "reagent": "100% methanol",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tray (PVDF membrane)",
+          "reagent": "100% methanol",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": "10-30 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tray (PVDF membrane)",
+          "reagent": "methanol",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tray (PVDF membrane)",
+          "reagent": "Swift\u2122 Membrane Stain",
+          "volume": "12ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tray (Nitrocellulose membrane)",
+          "reagent": "deionized water",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "tray (Nitrocellulose membrane)",
+          "reagent": "deionized water",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": "tray (Nitrocellulose membrane)",
+          "reagent": "wash",
+          "volume": "20ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tray (Nitrocellulose membrane)",
+          "reagent": "Swift\u2122 Membrane Stain",
+          "volume": "12ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "trays",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equipment": "rocking shaker"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "trays",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "30 seconds",
+          "speed": null,
+          "other": {
+            "observation": "protein bands appear"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove staining solution for improved image capture"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "rapid de-staining"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": "membranes",
+          "reagent": "1X Swift\u2122 Destain",
+          "volume": "50ml",
+          "temperature": null,
+          "duration": "30-60 seconds or until stain removed",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "membrane",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "blot",
+          "reagent": "DI water",
+          "volume": null,
+          "temperature": null,
+          "duration": "until required",
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: place (container: suitable tray, other: {'object': 'membrane'})\n\n### AUTOMATED SECTION ###\nadd(container='tray (PVDF membrane)', reagent='100% methanol', volume='20ml')\nrinse(container='tray (PVDF membrane)', reagent='100% methanol', volume='20ml', duration='10-30 seconds')\ndiscard(container='tray (PVDF membrane)', reagent='methanol', volume='20ml')\nadd(container='tray (PVDF membrane)', reagent='Swift\u2122 Membrane Stain', volume='12ml')\nadd(container='tray (Nitrocellulose membrane)', reagent='deionized water', volume='20ml')\nrinse(container='tray (Nitrocellulose membrane)', reagent='deionized water', volume='20ml', duration='30 seconds')\ndiscard(container='tray (Nitrocellulose membrane)', reagent='wash', volume='20ml')\nadd(container='tray (Nitrocellulose membrane)', reagent='Swift\u2122 Membrane Stain', volume='12ml')\nplace(container='trays', equipment='rocking shaker')\nwait(container='trays', duration='30 seconds', observation='protein bands appear')\nrinse(container='membrane', reagent='DI water', purpose='remove staining solution for improved image capture')\nrinse(container='membrane', reagent='DI water', purpose='rapid de-staining')\nwash(container='membranes', reagent='1X Swift\u2122 Destain', volume='50ml', duration='30-60 seconds or until stain removed')\nrinse(container='membrane', reagent='DI water')\n\n### MANUAL SECTION ###\n# MANUAL: store (container: blot, reagent: DI water, duration: until required)",
+    "source_file": "protocol_527.txt"
+  }
+]

@@ -1,0 +1,224 @@
+[
+  {
+    "protocol": "Isolation of cyanophages by liquid enrichment assay\nPrefilter at least 3 L water sample through a glass fiber filter.\nFilter sample through\u00a00.2 \u00b5m or 0.45 \u00b5m low protein binding PVDF filter.\nDispense the filtered water samples (e.g., 0.5 L or more) into culture vessels, e.g., 1 L or larger Erlenmeyer flasks.\nAdd nutrients to the filtered water to support growth of the target cells.\nSeed the filtered water with 1% to 10% v/v of host culture.\nAs a control, replace the filtered environmental sample with virus-free (0.02 \u00b5m filtered or heat-killed) water sample.\nIncubate the flasks at the temperature and light conditions appropriate for the cyanobacteria and look for signs of lysis.\nRemove an aliquot of the enrichment culture, and pellet remaining cells by centrifugation (e.g., 20 minutes at 6000g).\nFilter the supernatant through a 0.22 \u00b5m or 0.45 \u00b5m PVDF filter.\nStore the lysate at 4\u00b0C until further analysis.\nVerify the presence of lytic phages by liquid assay (or plaque assay).\nTo propagate/amplify the lytic agent, the liquid bioassay is repeated using the putative lytic agent as the test sample.",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "glass fiber filter",
+          "reagent": "water sample",
+          "volume": "at least 3 L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "prefilter": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "PVDF filter (0.2 \u00b5m or 0.45 \u00b5m, low protein binding)",
+          "reagent": "prefiltered water sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "culture vessels (e.g., 1 L or larger Erlenmeyer flasks)",
+          "reagent": "filtered water samples",
+          "volume": "0.5 L or more",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "culture vessels",
+          "reagent": "nutrients",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "support growth of target cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "culture vessels",
+          "reagent": "host culture",
+          "volume": "1% to 10% v/v",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "filtered water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "culture vessels (control)",
+          "reagent": "virus-free water sample (0.02 \u00b5m filtered or heat-killed)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "control"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": "appropriate for cyanobacteria",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light conditions": "appropriate for cyanobacteria"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "flasks",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "signs": "lysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "enrichment culture",
+          "reagent": "aliquot",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "aliquot",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "20 minutes",
+          "speed": "6000g",
+          "other": {
+            "purpose": "pellet remaining cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "PVDF filter (0.22 \u00b5m or 0.45 \u00b5m)",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "lysate",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "until further analysis",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "verify",
+        "parameters": {
+          "container": null,
+          "reagent": "lytic phages",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "liquid assay or plaque assay"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": "putative lytic agent",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "propagate/amplify lytic agent",
+            "method": "liquid bioassay"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfilter(container='glass fiber filter', reagent='water sample', volume='at least 3 L', prefilter=True)\nfilter(container='PVDF filter (0.2 \u00b5m or 0.45 \u00b5m, low protein binding)', reagent='prefiltered water sample')\ndispense(container='culture vessels (e.g., 1 L or larger Erlenmeyer flasks)', reagent='filtered water samples', volume='0.5 L or more')\nadd(container='culture vessels', reagent='nutrients', purpose='support growth of target cells')\nseed(container='culture vessels', reagent='host culture', volume='1% to 10% v/v', diluent='filtered water')\nreplace(container='culture vessels (control)', reagent='virus-free water sample (0.02 \u00b5m filtered or heat-killed)', purpose='control')\nincubate(container='flasks', temperature='appropriate for cyanobacteria', light conditions='appropriate for cyanobacteria')\n\n### MANUAL SECTION ###\n# MANUAL: observe (container: flasks, other: {'signs': 'lysis'})\n\n### AUTOMATED SECTION ###\nremove(container='enrichment culture', reagent='aliquot')\ncentrifuge(container='aliquot', duration='20 minutes', speed='6000g', purpose='pellet remaining cells')\nfilter(container='PVDF filter (0.22 \u00b5m or 0.45 \u00b5m)', reagent='supernatant')\nstore(container='lysate', temperature='4\u00b0C', duration='until further analysis')\n\n### MANUAL SECTION ###\n# MANUAL: verify (reagent: lytic phages, other: {'method': 'liquid assay or plaque assay'})\n\n### AUTOMATED SECTION ###\nrepeat(reagent='putative lytic agent', purpose='propagate/amplify lytic agent', method='liquid bioassay')",
+    "source_file": "protocol_571.txt"
+  }
+]

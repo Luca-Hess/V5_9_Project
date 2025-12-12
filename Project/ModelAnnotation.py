@@ -25,8 +25,8 @@ def load_model(use_cuda: bool = torch.cuda.is_available()) -> (T5ForConditionalG
     base = T5ForConditionalGeneration.from_pretrained('t5-base')
 
     lora = LoraConfig(
-        r=64,
-        lora_alpha=128,
+        r=128, #64,
+        lora_alpha=256, #128,
         target_modules=["q", "k", "v", "o", "wi", "wo"],
         lora_dropout=0.05,
         bias="none",
@@ -42,8 +42,9 @@ def load_model(use_cuda: bool = torch.cuda.is_available()) -> (T5ForConditionalG
 def train_json_extractor(
         data_dir: str,
         output_dir: str = 'json_extractor_model',
-        batch_size: int = 8,
-        epochs: int = 10,
+        batch_size: int = 4,
+        gradient_accumulation_steps: int = 4,
+        epochs: int = 30, #10, increased
         lr: float = 3e-4,
         max_len: int = 1024,
         automatable_actions: Optional[List[str]] = None,
@@ -70,7 +71,18 @@ def train_json_extractor(
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size)
 
-    optimizer = AdamW(model.parameters(), lr=lr)
+    optimizer = AdamW(model.parameters(), lr=lr, weight_decay=0.01)
+
+    total_steps = (len(train_loader) // gradient_accumulation_steps) * epochs
+
+    scheduler = lr_scheduler.OneCycleLR(
+        optimizer,
+        max_lr=lr,
+        epochs=epochs,
+        total_steps=total_steps,
+        pct_start=0.1,
+        anneal_strategy='cos'
+    )
 
     def eval_json_rate(samples: List[Dict[str, str]]) -> float:
         ok = 0
@@ -122,26 +134,38 @@ def train_json_extractor(
 
     for epoch in range(epochs):
         model.train()
+        optimizer.zero_grad()
+
         loop = tqdm.tqdm(train_loader, desc=f"Epoch {epoch + 1}/{epochs}")
 
-        for batch in loop:
+        for step, batch in enumerate(loop):
             batch = {k: v.to(device) for k, v in batch.items()}
+
             if use_amp:
                 with autocast():
                     out = model(**batch)
-                    loss = out.loss
+                    loss = out.loss / gradient_accumulation_steps
                 scaler.scale(loss).backward()
-                scaler.step(optimizer)
-                scaler.update()
             else:
                 out = model(**batch)
-                loss = out.loss
+                loss = out.loss / gradient_accumulation_steps
                 loss.backward()
-                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
-                optimizer.step()
 
-            optimizer.zero_grad()
-            loop.set_postfix(loss=loss.item())
+            # only step optimizer every N batches
+            if (step + 1) % gradient_accumulation_steps == 0:
+                if use_amp:
+                    scaler.unscale_(optimizer)
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                    scaler.step(optimizer)
+                    scaler.update()
+                else:
+                    torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
+                    optimizer.step()
+
+                scheduler.step()
+                optimizer.zero_grad()
+
+            loop.set_postfix(loss=loss.item() * gradient_accumulation_steps)
 
         # Validation
         val_loss, val_rate = validate(val_loader, max_samples=32)
@@ -204,47 +228,68 @@ def infer_actions_from_protocol(
             f"Protocol:\n{protocol_text}\n"
         )
 
-        inputs = tokenizer(prompt, return_tensors="pt", max_length=max_len, truncation=True).to(device)
-        pred_ids = model.generate(
-            **inputs,
+        inputs = tokenizer(
+            prompt,
+            return_tensors="pt",
             max_length=max_len,
-            num_beams=4,
-            early_stopping=True
-        )
+            truncation=True
+        ).to(device)
+
+        with torch.no_grad():
+            pred_ids = model.generate(
+                **inputs,
+                max_length=max_len,
+                num_beams=4,
+                early_stopping=True,
+                temperatur = 0.1
+            )
 
         text = tokenizer.decode(pred_ids[0], skip_special_tokens=True).strip()
 
         # Validate JSON, retry with greedy if needed
         actions = _ensure_valid_json(text)
+
         if actions is None:
             pred_ids = model.generate(
                 **inputs,
                 max_length=max_len,
                 do_sample=False,
-                num_beams=1
+                num_beams=1,
+                temperature=0.1
             )
-            text = tokenizer.decode(pred_ids[0],
-                                    skip_special_tokens=True).strip()
+            text = tokenizer.decode(
+                pred_ids[0],
+                skip_special_tokens=True
+            ).strip()
+
             actions = _ensure_valid_json(text)
+
             if actions is None:
                 raise ValueError("Failed to parse JSON from model output.")
 
-        return actions
+        return actions if actions else []
 
 def save_actions_json_from_file(txt_path: str,
-                                output_path: str,
+                                output_path: Optional[str] = None,
                                 model_dir: str = 'json_extractor_model',
                                 automatable_actions: Optional[List[str]] = None):
     """Load protocol from .txt file, infer actions, and save to .json file"""
+    if output_path is None:
+        base = os.path.splitext(txt_path)[0]
+        output_path = f"{base}.pred.json"
+
     with open(txt_path, 'r', encoding="utf-8") as f:
         protocol_text = f.read().strip()
+
     actions = infer_actions_from_protocol(
         protocol_text,
         model_dir=model_dir,
         automatable_actions=automatable_actions
     )
+
     with open(output_path, 'w', encoding="utf-8") as f:
         json.dump(actions, f, indent=2)
+
     print(f"Saved actions JSON to {output_path}")
 
 
@@ -285,6 +330,15 @@ def evaluate_test_set(
     successful_parses = 0
     failed_parses = []
 
+    # Metrics Semantic accuracy
+    action_name_matches = 0
+    total_gt_actions = 0
+    total_pred_actions = 0
+    parameter_tp = 0 # true positives
+    parameter_fp = 0 # false positives
+    parameter_fn = 0 # false negatives - missed
+
+
     # find all .txt files in test_dir
     txt_files = [f for f in os.listdir(test_dir) if f.endswith('.txt')]
 
@@ -303,7 +357,7 @@ def evaluate_test_set(
 
         # Generate predicted actions
         try:
-            actions = infer_actions_from_protocol(
+            pred_actions = infer_actions_from_protocol(
                 protocol_text,
                 model_dir=model_dir,
                 automatable_actions=automatable_actions,
@@ -316,10 +370,83 @@ def evaluate_test_set(
 
             successful_parses += 1
 
+            # Load ground truth if exists
+            if os.path.exists(gt_path):
+                with open(gt_path, 'r', encoding='utf-8') as f:
+                    gt_data = json.load(f)
+
+                # Handle formats
+                if isinstance(gt_data, list) and len(gt_data) > 0:
+                    if 'actions' in gt_data[0]:
+                        gt_actions = gt_data[0]['actions']
+                    else:
+                        gt_actions = gt_data
+                else:
+                    gt_actions = gt_data
+
+                # Compare predicted actions to ground truth
+                total_gt_actions += len(gt_actions)
+                total_pred_actions += len(pred_actions)
+
+                # Action name matches
+                gt_names = [a.get('action', '').lower() for a in gt_actions]
+                pred_names = [a.get('action', '').lower() for a in pred_actions]
+
+                # Count action name matches
+                for pn in pred_names:
+                    if pn in gt_names:
+                        action_name_matches += 1
+
+                # Compare parameters for matched actions
+                for gt_action in gt_actions:
+                    gt_name = gt_action.get('action', '').lower()
+                    gt_params = gt_action.get('params', {}) or gt_action.get('parameters', {})
+
+                    # Find corresponding predicted action
+                    pred_action = next(
+                        (p for p in pred_actions if p.get('action', '').lower() == gt_name),
+                        None
+                    )
+
+                    if pred_action:
+                        pred_params = pred_action.get('parameters', {}) or pred_action.get('params', {})
+
+                        # Flatten 'other' dict if present
+                        gt_flat = {k: v for k, v in gt_params.items() if k != 'other' and k is not None}
+                        if gt_params.get('other'):
+                            gt_flat.update(gt_params['other'])
+
+                        pred_flat = {k: v for k, v in pred_params.items() if k != 'other' and k is not None}
+                        if pred_params.get('other'):
+                            pred_flat.update(pred_params['other'])
+
+
+                        # Compare parameters
+                        gt_keys = set(gt_flat.keys())
+                        pred_keys = set(pred_flat.keys())
+
+                        parameter_tp += len(gt_keys & pred_keys) # Correct extractions
+                        parameter_fp += len(pred_keys - gt_keys) # Incorrect extractions
+                        parameter_fn += len(gt_keys - pred_keys) # Missed extractions
+
+
         except Exception as e:
             print(f'Failed to parse {fname}: {e}')
             failed_parses.append(fname)
             continue
+
+    # Calculate metrics
+    parse_rate = successful_parses / total_files if total_files > 0 else 0.0
+
+    action_precision = (action_name_matches / total_pred_actions) if total_pred_actions > 0 else 0.0
+    action_recall = (action_name_matches / total_gt_actions) if total_gt_actions > 0 else 0.0
+    action_f1 = (2 * action_precision * action_recall / (action_precision + action_recall)
+                 if (action_precision + action_recall) > 0 else 0.0)
+
+    param_precision = (parameter_tp / (parameter_tp + parameter_fp) if (parameter_tp + parameter_fp) > 0 else 0.0)
+    param_recall = (parameter_tp / (parameter_tp + parameter_fn) if (parameter_tp + parameter_fn) > 0 else 0.0)
+    param_f1 = (2 * param_precision * param_recall / (param_precision + param_recall)
+                if (param_precision + param_recall) > 0 else 0.0)
 
     # Print summary
     print(f'\n{"="*60}')
@@ -328,12 +455,30 @@ def evaluate_test_set(
     print(f'Total Protocols Processed:  {total_files}')
     print(f'Successful JSON Parses:     {successful_parses}')
     print(f'Failed JSON Parses:         {len(failed_parses)}')
-    print(f'JSON Parse rate:            {successful_parses / total_files:.2%}')
+    print(f'JSON Parse rate:            {parse_rate:.2%}')
+
+    print(f'\nAction Extraction:')
+    print(f'Ground Truth Actions:       {total_gt_actions}')
+    print(f'Predicted Actions:          {total_pred_actions}')
+    print(f'Correct Action Names:       {action_name_matches}')
+    print(f'Action Precision:           {action_precision:.2%}')
+    print(f'Action Recall:              {action_recall:.2%}')
+    print(f'Action F1 Score:            {action_f1:.2%}')
+
+    print(f'\nParameter Extraction:')
+    print(f'True Positives (TP):        {parameter_tp}')
+    print(f'False Positives (FP):       {parameter_fp}')
+    print(f'False Negatives (FN):       {parameter_fn}')
+    print(f'Parameter Precision:        {param_precision:.2%}')
+    print(f'Parameter Recall:           {param_recall:.2%}')
+    print(f'Parameter F1 Score:         {param_f1:.2%}')
 
     if failed_parses:
         print("\nFailed Parses:")
-        for fname in failed_parses:
-            print(f' - {fname}')
+        for fname, error in failed_parses[:5]:  # Show up to first 5 failures
+            print(f' - {fname}: {error[:60]}...')
+        if len(failed_parses) > 5:
+            print(f' ... and {len(failed_parses) - 5} more.')
 
     print(f'\nPredicted JSON files saved to: {output_dir}\n')
     print(f'{"="*60}\n')
@@ -342,7 +487,13 @@ def evaluate_test_set(
         'total': total_files,
         'successful': successful_parses,
         'failed': len(failed_parses),
-        'parse_rate': successful_parses / total_files if total_files > 0 else 0.0
+        'parse_rate': parse_rate,
+        'action_precision': action_precision,
+        'action_recall': action_recall,
+        'action_f1': action_f1,
+        'parameter_precision': param_precision,
+        'parameter_recall': param_recall,
+        'parameter_f1': param_f1
     }
 
 
@@ -356,8 +507,9 @@ if __name__ == "__main__":
     train_json_extractor(
         data_dir='WLP-Dataset-master/train',
         output_dir='json_extractor_model',
-        batch_size=8,
-        epochs=10,
+        batch_size=4,
+        gradient_accumulation_steps=4,
+        epochs=30,
         lr=3e-4,
         max_len=1024,
         automatable_actions=[

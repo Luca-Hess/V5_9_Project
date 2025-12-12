@@ -1,0 +1,355 @@
+[
+  {
+    "protocol": "Screening Recombinant Clones by PCR. \nTransfer the transformed clones to a stock LB-Amp or other appropriate plated media.\nGrow for 24 hr at 37\u00b0C.\nPrepare forward and reverse primers for the vector used for transformation at 100 ng/\u03bcl in DDH2O.\nSee table in guidelines for recommended primers to use with pUC18 vector.\nLabel thin-walled tubes.\nPrepare 1 ml of Master Mix:\nABI Reagents\u00a0\u00a0PGC Scientific Reagents\u00a0\u00a0Final Concentration\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0DDH2O690\u00a0\u00b5l\u00a0DDH2O833.5\u00a0\u00b5l\u00a0-----10x Buffer II100\u00a0\u00b5l\u00a010x Buffer w/MgCl2100\u00a0\u00b5l\u00a01x BufferdNTP mix80\u00a0\u00b5l\u00a0dNTP mix20\u00a0\u00b5l\u00a0200\u00a0\u00b5M each25mM MgCl280\u00a0\u00b5l\u00a0\u00a0\u00a0\u00a02mMPrimer F20\u00a0\u00b5l\u00a0Primer F20\u00a0\u00b5l\u00a00.33\u00a0\u00b5MPrimer R20\u00a0\u00b5l\u00a0Primer R20\u00a0\u00b5l\u00a00.33\u00a0\u00b5MAmpliTaq Gold10\u00a0\u00b5l\u00a0Taq Polymerase6.5\u00a0\u00b5l\u00a01U/20\u00a0\u00b5l rxn.\nVortex and spin Master Mix and dispense 20 \u03bcl per thin-walled tube.\nCap all tubes.\nSet a 10 \u03bcl pipetter to 1 \u03bcl.\nPlace tranformant plate on template and touch the pipette tip to the appropriate colony.\nPipette up and down in the appropriate PCR tube.\nRe-cap tube, change tip and repeat steps\u00a09-10 until all colonies have been added.\nPerform PCR using the thermal cycling protocol:\n95\u00b0C5 minutes1 cycle95\u00b0C55\u00b0C70\u00b0C30 seconds30 seconds30 seconds*35 cycles70\u00b0C7 minutes1 cycle4-10\u00b0C\u00a0Hold cycle*increase to 1 minute if insert is great than 1 Kb. \t\nRemove tubes at end of thermal cycling.\nAdd 2 \u03bcl 10x gel loading buffer to each tube.\nSpin to bring contents to bottom of tube and load 10 \u03bcl into lane of a 1% agarose gel in 0.5x TBE buffer.",
+    "actions": [
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "stock LB-Amp or other appropriate plated media",
+          "reagent": "transformed clones",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "plated media",
+          "reagent": "transformed clones",
+          "volume": null,
+          "temperature": "37\u00b0C",
+          "duration": "24 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "forward and reverse primers",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "100 ng/\u03bcl",
+            "solvent": "DDH2O"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "thin-walled tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Master Mix",
+          "volume": "1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "components": [
+              {
+                "reagent": "DDH2O",
+                "volume": "690 \u00b5l or 833.5 \u00b5l"
+              },
+              {
+                "reagent": "10x Buffer II or 10x Buffer w/MgCl2",
+                "volume": "100 \u00b5l"
+              },
+              {
+                "reagent": "dNTP mix",
+                "volume": "80 \u00b5l or 20 \u00b5l",
+                "concentration": "200 \u00b5M each"
+              },
+              {
+                "reagent": "25mM MgCl2",
+                "volume": "80 \u00b5l",
+                "concentration": "2 mM"
+              },
+              {
+                "reagent": "Primer F",
+                "volume": "20 \u00b5l",
+                "concentration": "0.33 \u00b5M"
+              },
+              {
+                "reagent": "Primer R",
+                "volume": "20 \u00b5l",
+                "concentration": "0.33 \u00b5M"
+              },
+              {
+                "reagent": "AmpliTaq Gold or Taq Polymerase",
+                "volume": "10 \u00b5l or 6.5 \u00b5l",
+                "concentration": "1U/20 \u00b5l rxn"
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "vortex",
+        "parameters": {
+          "container": "Master Mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "Master Mix",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "thin-walled tubes",
+          "reagent": "Master Mix",
+          "volume": "20 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "all tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "set",
+        "parameters": {
+          "container": "10 \u03bcl pipetter",
+          "reagent": null,
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "touch",
+        "parameters": {
+          "container": "transformant plate",
+          "reagent": "colony",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "tool": "pipette tip"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "PCR tube",
+          "reagent": "colony material",
+          "volume": "1 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "cap",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "change",
+        "parameters": {
+          "container": "pipette tip",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": "PCR tubes",
+          "reagent": "PCR reaction",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "thermal cycling protocol": [
+              {
+                "temperature": "95\u00b0C",
+                "duration": "5 minutes",
+                "cycles": "1"
+              },
+              {
+                "temperature": "95\u00b0C",
+                "duration": "30 seconds",
+                "cycles": "35"
+              },
+              {
+                "temperature": "55\u00b0C",
+                "duration": "30 seconds",
+                "cycles": "35"
+              },
+              {
+                "temperature": "70\u00b0C",
+                "duration": "30 seconds",
+                "cycles": "35"
+              },
+              {
+                "temperature": "70\u00b0C",
+                "duration": "7 minutes",
+                "cycles": "1"
+              },
+              {
+                "temperature": "4-10\u00b0C",
+                "duration": "hold",
+                "cycles": null
+              }
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "thermal cycler"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "10x gel loading buffer",
+          "volume": "2 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "bring contents to bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "lane of a 1% agarose gel in 0.5x TBE buffer",
+          "reagent": "PCR product",
+          "volume": "10 \u03bcl",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: stock LB-Amp or other appropriate plated media, reagent: transformed clones, other: {})\n\n### AUTOMATED SECTION ###\ngrow(container='plated media', reagent='transformed clones', temperature='37\u00b0C', duration='24 hr')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: forward and reverse primers, other: {'concentration': '100 ng/\u03bcl', 'solvent': 'DDH2O'})\n# MANUAL: label (container: thin-walled tubes, other: {})\n\n### AUTOMATED SECTION ###\nprepare(reagent='Master Mix', volume='1 ml', components=[{'reagent': 'DDH2O', 'volume': '690 \u00b5l or 833.5 \u00b5l'}, {'reagent': '10x Buffer II or 10x Buffer w/MgCl2', 'volume': '100 \u00b5l'}, {'reagent': 'dNTP mix', 'volume': '80 \u00b5l or 20 \u00b5l', 'concentration': '200 \u00b5M each'}, {'reagent': '25mM MgCl2', 'volume': '80 \u00b5l', 'concentration': '2 mM'}, {'reagent': 'Primer F', 'volume': '20 \u00b5l', 'concentration': '0.33 \u00b5M'}, {'reagent': 'Primer R', 'volume': '20 \u00b5l', 'concentration': '0.33 \u00b5M'}, {'reagent': 'AmpliTaq Gold or Taq Polymerase', 'volume': '10 \u00b5l or 6.5 \u00b5l', 'concentration': '1U/20 \u00b5l rxn'}])\nvortex(container='Master Mix')\nspin(container='Master Mix')\ndispense(container='thin-walled tubes', reagent='Master Mix', volume='20 \u03bcl')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: all tubes, other: {})\n# MANUAL: set (container: 10 \u03bcl pipetter, volume: 1 \u03bcl, other: {})\n# MANUAL: touch (container: transformant plate, reagent: colony, other: {'tool': 'pipette tip'})\n\n### AUTOMATED SECTION ###\npipette(container='PCR tube', reagent='colony material', volume='1 \u03bcl', method='up and down')\n\n### MANUAL SECTION ###\n# MANUAL: cap (container: tube, other: {})\n\n### AUTOMATED SECTION ###\nchange(container='pipette tip')\nperform(container='PCR tubes', reagent='PCR reaction', thermal cycling protocol=[{'temperature': '95\u00b0C', 'duration': '5 minutes', 'cycles': '1'}, {'temperature': '95\u00b0C', 'duration': '30 seconds', 'cycles': '35'}, {'temperature': '55\u00b0C', 'duration': '30 seconds', 'cycles': '35'}, {'temperature': '70\u00b0C', 'duration': '30 seconds', 'cycles': '35'}, {'temperature': '70\u00b0C', 'duration': '7 minutes', 'cycles': '1'}, {'temperature': '4-10\u00b0C', 'duration': 'hold', 'cycles': None}])\n\n### MANUAL SECTION ###\n# MANUAL: remove (container: tubes, other: {'from': 'thermal cycler'})\n\n### AUTOMATED SECTION ###\nadd(container='each tube', reagent='10x gel loading buffer', volume='2 \u03bcl')\nspin(container='each tube', purpose='bring contents to bottom')\nload(container='lane of a 1% agarose gel in 0.5x TBE buffer', reagent='PCR product', volume='10 \u03bcl')",
+    "source_file": "protocol_594.txt"
+  }
+]

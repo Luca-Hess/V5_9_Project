@@ -1,0 +1,381 @@
+[
+  {
+    "protocol": "Extraction of DNA from Virus\nMix Lysing Solution (LS) & Sodium Perchlorate (SP) in 2:1.\nMix the combined Lysing Solution & sodium Perchlorate with virus prep :18.5 ml LS+SP with 10ml virus prep (~ 10\u00b9\u00b9 PFU/ml ).\nIncubate the lysate at 55\u00baC for 1hrs.\nAdd 30ml of phenol : [ chloroform : isoamyl alcohol (25:1)] in the proportion equal to 1:1.\nShake them by hands for 5mins.\nTransfer the liquid to the centrifuge tubes, balance them & centrifuge for 15 mins at 14000 rpm at 4\u00baC.\nTransfer the aqueous (upper) part with pipette to the clean centrifuge tubes.\nDon\u2019t worry getting protein in it.\nPut the bottom layer into the waste container.\nCentrifuge tubes again at 14,000 rpm for 15 min.\nNow it easy to get pure liquid without protein debris.\nAqueous layer may be stored overnight at 4 \u00baC.\nEstimate the volume of the aqueous layer and add 0.1 volume of 3M (or 5M) Sodium Acetate (pH 6.0).\nCollect DNA by swirling glass rod.\nLet it dry on the glass rod.\nPour off alcohol into the waste container.\nPut DNA on the rod into the beaker & add 10 to 20ml of cold 76% Ethanol (-20\u00baC).\nLet it stand for 10-20 min.\nPress the glass rod with DNA against the wall of beaker to get rid of the ethanol.\nInvert the stirring rod in the test tube rack and dry for 5 min.\nUse 15ml plastic tubes.\nDissolve DNA in 4ml of TE.\nEstimate DNA concentration using spectrophotometer  or gel to ensure DNA quantity.\nGently overlay the aqueous layer with 2 volumes of 95 % of ethanol.",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Lysing Solution (LS) & Sodium Perchlorate (SP)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "ratio": "2:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "combined LS & SP with virus prep",
+          "volume": "18.5 ml LS+SP with 10 ml virus prep",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "virus_prep_concentration": "~10\u00b9\u00b9 PFU/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": null,
+          "reagent": "lysate",
+          "volume": null,
+          "temperature": "55\u00baC",
+          "duration": "1 hr",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "phenol : [chloroform : isoamyl alcohol (25:1)]",
+          "volume": "30 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "proportion": "1:1"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "method": "by hand"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": "liquid",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "balance": "yes"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "15 min",
+          "speed": "14000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "clean centrifuge tubes",
+          "reagent": "aqueous (upper) part",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "pipette"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "waste container",
+          "reagent": "bottom layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "centrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": "14000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "aqueous layer",
+          "volume": null,
+          "temperature": "4\u00baC",
+          "duration": "overnight",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "estimate",
+        "parameters": {
+          "container": null,
+          "reagent": "aqueous layer",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "determine volume"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "3M (or 5M) Sodium Acetate (pH 6.0)",
+          "volume": "0.1 x aqueous layer volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "swirling glass rod"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dry",
+        "parameters": {
+          "container": "glass rod",
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "waste container",
+          "reagent": "alcohol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "DNA on rod",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "cold 76% Ethanol",
+          "volume": "10-20 ml",
+          "temperature": "-20\u00baC",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10-20 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "press",
+        "parameters": {
+          "container": "beaker",
+          "reagent": "glass rod with DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove ethanol"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "test tube rack",
+          "reagent": "stirring rod with DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": "5 min",
+          "speed": null,
+          "other": {
+            "purpose": "dry"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": "15 ml plastic tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dissolve",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA in TE",
+          "volume": "4 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "estimate",
+        "parameters": {
+          "container": null,
+          "reagent": "DNA",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "spectrophotometer or gel"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "overlay",
+        "parameters": {
+          "container": null,
+          "reagent": "aqueous layer with 95% ethanol",
+          "volume": "2 volumes",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='Lysing Solution (LS) & Sodium Perchlorate (SP)', ratio='2:1')\nmix(reagent='combined LS & SP with virus prep', volume='18.5 ml LS+SP with 10 ml virus prep', virus_prep_concentration='~10\u00b9\u00b9 PFU/ml')\nincubate(reagent='lysate', temperature='55\u00baC', duration='1 hr')\nadd(reagent='phenol : [chloroform : isoamyl alcohol (25:1)]', volume='30 ml', proportion='1:1')\nshake(duration='5 min', method='by hand')\ntransfer(container='centrifuge tubes', reagent='liquid', balance='yes')\ncentrifuge(container='centrifuge tubes', temperature='4\u00baC', duration='15 min', speed='14000 rpm')\ntransfer(container='clean centrifuge tubes', reagent='aqueous (upper) part', method='pipette')\ntransfer(container='waste container', reagent='bottom layer')\ncentrifuge(container='centrifuge tubes', duration='15 min', speed='14000 rpm')\nstore(reagent='aqueous layer', temperature='4\u00baC', duration='overnight')\n\n### MANUAL SECTION ###\n# MANUAL: estimate (reagent: aqueous layer, other: {'purpose': 'determine volume'})\n\n### AUTOMATED SECTION ###\nadd(reagent='3M (or 5M) Sodium Acetate (pH 6.0)', volume='0.1 x aqueous layer volume')\n\n### MANUAL SECTION ###\n# MANUAL: collect (reagent: DNA, other: {'method': 'swirling glass rod'})\n# MANUAL: dry (container: glass rod, reagent: DNA, other: {})\n\n### AUTOMATED SECTION ###\npour(container='waste container', reagent='alcohol')\n\n### MANUAL SECTION ###\n# MANUAL: transfer (container: beaker, reagent: DNA on rod, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='beaker', reagent='cold 76% Ethanol', volume='10-20 ml', temperature='-20\u00baC')\nwait(duration='10-20 min')\n\n### MANUAL SECTION ###\n# MANUAL: press (container: beaker, reagent: glass rod with DNA, other: {'purpose': 'remove ethanol'})\n# MANUAL: invert (container: test tube rack, reagent: stirring rod with DNA, duration: 5 min, other: {'purpose': 'dry'})\n# MANUAL: use (container: 15 ml plastic tubes, other: {})\n\n### AUTOMATED SECTION ###\ndissolve(reagent='DNA in TE', volume='4 ml')\n\n### MANUAL SECTION ###\n# MANUAL: estimate (reagent: DNA, other: {'method': 'spectrophotometer or gel'})\n\n### AUTOMATED SECTION ###\noverlay(reagent='aqueous layer with 95% ethanol', volume='2 volumes')",
+    "source_file": "protocol_82.txt"
+  }
+]

@@ -1,0 +1,318 @@
+[
+  {
+    "protocol": "MojoSort\u2122 Human CD14 Selection Kit Protocol\nPrepare cells from your tissue of interest without lysing erythrocytes.\nIn the final wash of your sample preparation, resuspend the cells in MojoSort\u2122 Buffer by adding up to 4mL in a 5 mL (12 x 75 mm) polystyrene tube.\nNote: Keep MojoSort\u2122 Buffer on ice throughout the procedure.\nFilter the cells with a 70 \u03bcm cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSort\u2122 Buffer.\nCount and adjust the cell concentration to 1 x 108 cells/mL.\nAliquot 100 \u03bcL of cell suspension (107 cells) into a new tube.\nAdd 10 \u03bcL of the biotin anti-human CD14,mix well and incubate on ice for 15 minutes.\nScale up the volume accordingly if separating more cells.For example, add 100 \u03bcL for 1 x 108 cells.\nWhen working with less than 107 cells, use indicated volumesfor 107 cells.\nOptional: Keep unused cells, or take an aliquot before adding the cocktail to monitor purity and yield.\nResuspend the beads by vortexing, maximum speed, 5 touches.\nWithout washing, add 10 \u03bcL ofStreptavidin Nanobeads.\nMix well and incubate on ice for 15 minutes.\nScale up the volume accordingly if separating more cells.\nFor example, add 100 \u03bcL for 1 x 108 cells.\nWhen working with less than 107 cells, use indicated volumes for 107 cells.\nResuspend the cells in 3 mL of MojoSort\u2122 Buffer.\nNote: If you observe aggregates, filter the suspension.\nTo maximize yield, you can disrupt the aggregates by pipetting the solution up and down.\nPlace the tube in the magnet for 5 minutes.\nPour out and collect the liquid.\nThese are your cells of interest; DO NOT DISCARD.\nIf needed, add 3 mL of MojoSort\u2122 Buffer and repeat steps 10 and 11 with the magnetically labeledfraction up to two times, and then pool the unlabeled fractions.\nNote: Repeating the magnetic separation increases the yield, without a strong impact on the purity.\nTheyield will typically increase about 8 \u2013 10% with a second separation, and about 2 \u2013 5% with a thirdseparation.\nThe purity may decrease 1 \u2013 2% with each separation.\nOptional: Take a small aliquot beforeplacing the tube in the magnet to monitor purity and yield.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "5 mL (12 x 75 mm) polystyrene tube",
+          "reagent": "MojoSort\u2122 Buffer",
+          "volume": "up to 4 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "from tissue of interest"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell strainer": "70 \u03bcm",
+            "cells": "resuspended"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": "300 x g",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "MojoSort\u2122 Buffer",
+          "volume": "appropriate volume",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "pelleted"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.85
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "resuspended"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell concentration": "1 x 10^8 cells/mL"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "new tube",
+          "reagent": "cell suspension",
+          "volume": "100 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "1 x 10^7"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with cell suspension",
+          "reagent": "biotin anti-human CD14",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with cell suspension and antibody",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with cell suspension and antibody",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with cell suspension and antibody",
+          "reagent": "Streptavidin Nanobeads",
+          "volume": "10 \u03bcL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube with cell suspension and beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "well"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "tube with cell suspension and beads",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "15 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "MojoSort\u2122 Buffer",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cells": "after bead incubation"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "cell suspension": "if aggregates observed"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": null,
+          "reagent": "cell suspension",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "up and down to disrupt aggregates"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "5 minutes",
+          "speed": null,
+          "other": {
+            "device": "magnet"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "tube",
+          "reagent": "liquid (unlabeled fraction)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "collect": "cells of interest"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tube with magnetically labeled fraction",
+          "reagent": "MojoSort\u2122 Buffer",
+          "volume": "3 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "repeat": "up to two times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "pool",
+        "parameters": {
+          "container": null,
+          "reagent": "unlabeled fractions",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='5 mL (12 x 75 mm) polystyrene tube', reagent='MojoSort\u2122 Buffer', volume='up to 4 mL', cells='from tissue of interest')\n\n### MANUAL SECTION ###\n# MANUAL: filter (other: {'cell strainer': '70 \u03bcm', 'cells': 'resuspended'})\n\n### AUTOMATED SECTION ###\ncentrifuge(duration='5 minutes', speed='300 x g')\nresuspend(reagent='MojoSort\u2122 Buffer', volume='appropriate volume', cells='pelleted')\n\n### MANUAL SECTION ###\n# MANUAL: count (other: {'cells': 'resuspended'})\n# MANUAL: adjust (other: {'cell concentration': '1 x 10^8 cells/mL'})\n\n### AUTOMATED SECTION ###\naliquot(container='new tube', reagent='cell suspension', volume='100 \u03bcL', cells='1 x 10^7')\nadd(container='tube with cell suspension', reagent='biotin anti-human CD14', volume='10 \u03bcL')\nmix(container='tube with cell suspension and antibody', method='well')\nincubate(container='tube with cell suspension and antibody', temperature='on ice', duration='15 minutes')\nadd(container='tube with cell suspension and antibody', reagent='Streptavidin Nanobeads', volume='10 \u03bcL')\nmix(container='tube with cell suspension and beads', method='well')\nincubate(container='tube with cell suspension and beads', temperature='on ice', duration='15 minutes')\nresuspend(reagent='MojoSort\u2122 Buffer', volume='3 mL', cells='after bead incubation')\n\n### MANUAL SECTION ###\n# MANUAL: filter (other: {'cell suspension': 'if aggregates observed'})\n\n### AUTOMATED SECTION ###\npipette(reagent='cell suspension', method='up and down to disrupt aggregates')\n\n### MANUAL SECTION ###\n# MANUAL: place (container: tube, duration: 5 minutes, other: {'device': 'magnet'})\n# MANUAL: pour (container: tube, reagent: liquid (unlabeled fraction), other: {'collect': 'cells of interest'})\n\n### AUTOMATED SECTION ###\nadd(container='tube with magnetically labeled fraction', reagent='MojoSort\u2122 Buffer', volume='3 mL', repeat='up to two times')\n\n### MANUAL SECTION ###\n# MANUAL: pool (reagent: unlabeled fractions)",
+    "source_file": "protocol_60.txt"
+  }
+]

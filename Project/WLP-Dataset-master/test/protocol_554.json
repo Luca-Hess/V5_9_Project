@@ -1,0 +1,228 @@
+[
+  {
+    "protocol": "Monterey Wharf II Weekly Phytoplankton Monitoring Sample Collection and Processing Notes\nA vertical net tow is collected using a 25\u00b5m mesh plankton net with a 200mL cod-end piece at a depth of 5 m. \nTotal phytoplankton biomass is estimated from in vivo chlorphyll fluorescence on dark adapted net and whole water samples using a calibrated Aquaflor fluorometer (Turner Designs).\nVertical whole water samples are collected using a VanDorn at discreet 1m intervals and integrated over 5m.\nSpecies relative abundance is assessed microscopically from 1% glutaraldehyde preserved samples quantified on a nanoplankton counting chamber (Phycotech).\nThe following samples are processed and archived for later analysis: \nNutrients: Whole water is passed through a 0.2 \u00b5m syringe filter and stored at -20\u00b0C.\nNucleic Acids: 50 mLs of the net tow sample are filtered through 1.2\u00b5m Isopore membrane filter (Millipore) and extracted into Trizol (Invitrogen) before being archived at -80\u00b0C.\nProtein and Amino Acids: 50mLs of the net tow are filtered through 2\u00b5m Isopore membrane filter (Millipore) and extracted into 80% Methanol before being archived at -80\u00b0C.\nPigment: 25mLs of the net tow are filtered through Glass Microfibre Filters (Whatman) and archived at -80\u00b0C.",
+    "actions": [
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "25\u00b5m mesh plankton net with 200mL cod-end",
+          "reagent": null,
+          "volume": "200mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "depth": "5m"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "estimate",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "in vivo chlorophyll fluorescence",
+            "instrument": "Aquaflor fluorometer (Turner Designs)",
+            "sample": "dark adapted net and whole water samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "collect",
+        "parameters": {
+          "container": "VanDorn",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "interval": "discreet 1m intervals",
+            "integrated_depth": "over 5m"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "assess",
+        "parameters": {
+          "container": "nanoplankton counting chamber (Phycotech)",
+          "reagent": "1% glutaraldehyde preserved sample",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "microscopy"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "0.2 \u00b5m syringe filter",
+          "reagent": "whole water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "nutrients"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered whole water (nutrients)",
+          "volume": null,
+          "temperature": "-20\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "1.2\u00b5m Isopore membrane filter (Millipore)",
+          "reagent": "net tow sample",
+          "volume": "50mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "nucleic acids"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "Trizol (Invitrogen)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "filtered net tow (nucleic acids)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "Trizol extract (nucleic acids)",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "2\u00b5m Isopore membrane filter (Millipore)",
+          "reagent": "net tow sample",
+          "volume": "50mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "protein and amino acids"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "extract",
+        "parameters": {
+          "container": null,
+          "reagent": "80% Methanol",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample": "filtered net tow (protein and amino acids)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "Methanol extract (protein and amino acids)",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "Glass Microfibre Filters (Whatman)",
+          "reagent": "net tow sample",
+          "volume": "25mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "sample_type": "pigment"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "filtered net tow (pigment)",
+          "volume": null,
+          "temperature": "-80\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: collect (container: 25\u00b5m mesh plankton net with 200mL cod-end, volume: 200mL, other: {'depth': '5m'})\n# MANUAL: estimate (other: {'method': 'in vivo chlorophyll fluorescence', 'instrument': 'Aquaflor fluorometer (Turner Designs)', 'sample': 'dark adapted net and whole water samples'})\n# MANUAL: collect (container: VanDorn, other: {'interval': 'discreet 1m intervals', 'integrated_depth': 'over 5m'})\n# MANUAL: assess (container: nanoplankton counting chamber (Phycotech), reagent: 1% glutaraldehyde preserved sample, other: {'method': 'microscopy'})\n\n### AUTOMATED SECTION ###\nfilter(container='0.2 \u00b5m syringe filter', reagent='whole water', sample_type='nutrients')\nstore(reagent='filtered whole water (nutrients)', temperature='-20\u00b0C')\nfilter(container='1.2\u00b5m Isopore membrane filter (Millipore)', reagent='net tow sample', volume='50mL', sample_type='nucleic acids')\nextract(reagent='Trizol (Invitrogen)', sample='filtered net tow (nucleic acids)')\nstore(reagent='Trizol extract (nucleic acids)', temperature='-80\u00b0C')\nfilter(container='2\u00b5m Isopore membrane filter (Millipore)', reagent='net tow sample', volume='50mL', sample_type='protein and amino acids')\nextract(reagent='80% Methanol', sample='filtered net tow (protein and amino acids)')\nstore(reagent='Methanol extract (protein and amino acids)', temperature='-80\u00b0C')\nfilter(container='Glass Microfibre Filters (Whatman)', reagent='net tow sample', volume='25mL', sample_type='pigment')\nstore(reagent='filtered net tow (pigment)', temperature='-80\u00b0C')",
+    "source_file": "protocol_554.txt"
+  }
+]

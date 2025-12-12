@@ -1,0 +1,365 @@
+[
+  {
+    "protocol": "A Non-Interfering\u2122 (NI) Protein Assay (high throughput 96-well)\nPerform assays at room temperature.\nUse 2ml tubes for assay.\nPrepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below:\u00a0\nTube #123456Protein Standard [2mg/ml] (\u00b5l)048122025Protein (\u00b5g)0816244050.\u00a0\nAdd 1-50\u00b5l of the protein samples to be assayed to 2ml tubes.\nAdd 0.5ml UPPA\u2122 I to each tube and vortex.\nAdd 0.5ml UPPA\u2122 II to the tubes and vortex.\nIncubate for 2-3 minutes at room temperature.\nCentrifuge the titer plate at ~5,000xg for 7 minutes to pellet the precipitate.\nInvert the titer plate to remove the supernatant and shake to remove all excess supernatant.\nAdd 100\u00b5l Copper Solution (Reagent I) and 400\u00b5l deionized water to the tubes and vortex until the protein precipitate pellet dissolves.\nUsing 1ml pipette, rapidly shoot 1ml Reagent II directly into each tube containing Reagent I plus DI Water and immediately mix it by inverting the tubes.\nIncubate at room temperature for 15-20 minutes and then immediately read absorbances at 480nm against DI water.\nAfter incubation, transfer 200\u00b5l assay reaction to a flat bottom 96 well micro titer plate and measure the absorbances at 480nm against DI water.\nPlot absorbance against protein concentration and determine protein concentrations of unknowns.",
+    "actions": [
+      {
+        "action": "perform",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "assay_type": "Non-Interfering Protein Assay",
+            "format": "high throughput 96-well"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "use",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "BSA or Non-Animal Protein Standard",
+          "volume": "variable (see table)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "concentration": "2mg/ml",
+            "tube_numbers": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "protein samples",
+          "volume": "1-50\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "UPPA\u2122 I",
+          "volume": "0.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "UPPA\u2122 II",
+          "volume": "0.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "2-3 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "titer plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "7 minutes",
+          "speed": "~5,000xg",
+          "other": {
+            "purpose": "pellet precipitate"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "titer plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove supernatant"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "titer plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "remove excess supernatant"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "Copper Solution (Reagent I)",
+          "volume": "100\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "deionized water",
+          "volume": "400\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "vortex until pellet dissolves",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": "Reagent II",
+          "volume": "1ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "rapidly",
+          "other": {
+            "method": "shoot directly into tube containing Reagent I plus DI Water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "invert tubes immediately",
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": "room temperature",
+          "duration": "15-20 minutes",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": "2ml tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "absorbance at 480nm",
+            "reference": "against DI water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "from 2ml tubes to 96 well micro titer plate",
+          "reagent": "assay reaction",
+          "volume": "200\u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "plate_type": "flat bottom"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "measure",
+        "parameters": {
+          "container": "96 well micro titer plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "measurement": "absorbance at 480nm",
+            "reference": "against DI water"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "plot",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "x_axis": "protein concentration",
+            "y_axis": "absorbance"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "determine",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "output": "protein concentrations of unknowns"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: perform (temperature: room temperature, other: {'assay_type': 'Non-Interfering Protein Assay', 'format': 'high throughput 96-well'})\n# MANUAL: use (container: 2ml tubes)\n# MANUAL: prepare (container: 2ml tubes, reagent: BSA or Non-Animal Protein Standard, volume: variable (see table), other: {'concentration': '2mg/ml', 'tube_numbers': [1, 2, 3, 4, 5, 6]})\n\n### AUTOMATED SECTION ###\nadd(container='2ml tubes', reagent='protein samples', volume='1-50\u00b5l')\nadd(container='2ml tubes', reagent='UPPA\u2122 I', volume='0.5ml')\nmix(container='2ml tubes', speed='vortex')\nadd(container='2ml tubes', reagent='UPPA\u2122 II', volume='0.5ml')\nmix(container='2ml tubes', speed='vortex')\nincubate(container='2ml tubes', temperature='room temperature', duration='2-3 minutes')\ncentrifuge(container='titer plate', duration='7 minutes', speed='~5,000xg', purpose='pellet precipitate')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: titer plate, other: {'purpose': 'remove supernatant'})\n\n### AUTOMATED SECTION ###\nshake(container='titer plate', purpose='remove excess supernatant')\nadd(container='2ml tubes', reagent='Copper Solution (Reagent I)', volume='100\u00b5l')\nadd(container='2ml tubes', reagent='deionized water', volume='400\u00b5l')\nmix(container='2ml tubes', speed='vortex until pellet dissolves')\ndispense(container='2ml tubes', reagent='Reagent II', volume='1ml', speed='rapidly', method='shoot directly into tube containing Reagent I plus DI Water')\nmix(container='2ml tubes', speed='invert tubes immediately')\nincubate(container='2ml tubes', temperature='room temperature', duration='15-20 minutes')\n\n### MANUAL SECTION ###\n# MANUAL: read (container: 2ml tubes, other: {'measurement': 'absorbance at 480nm', 'reference': 'against DI water'})\n\n### AUTOMATED SECTION ###\ntransfer(container='from 2ml tubes to 96 well micro titer plate', reagent='assay reaction', volume='200\u00b5l', plate_type='flat bottom')\n\n### MANUAL SECTION ###\n# MANUAL: measure (container: 96 well micro titer plate, other: {'measurement': 'absorbance at 480nm', 'reference': 'against DI water'})\n# MANUAL: plot (other: {'x_axis': 'protein concentration', 'y_axis': 'absorbance'})\n# MANUAL: determine (other: {'output': 'protein concentrations of unknowns'})",
+    "source_file": "protocol_530.txt"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "protocol": "EpiQuik\u2122 Total Histone Extraction Kit for Tissues (Treated and Untreated\nRe-suspend cell/tissue pellet in 3 volumes (approximately 200 \u00b5l/107 cells or 100 mg of tissue) of Lysis Buffer and incubate on ice for 30 min.\nCentrifuge at 12,000 rpm for 5 min at 4\u00b0C and transfer the supernatant fraction (containing acid-soluble proteins) into a new vial.\nPrepare Balance-DTT Buffer by adding DTT Solution to Balance Buffer at a 1:500 ratio (e.g., 1 \u00b5l of DTT Solution + 500 \u00b5l of Balance Buffer).\nAdd 0.3 volumes of the Balance-DTT Buffer to the supernatant immediately (e.g., 0.3 ml of Balance-DTT Buffer to 1 ml of supernatant).\nQuantify the protein concentration with an OD reading.\nBSA can be used as a standard.\nAliquot and store the extract at \u201320\u00b0C for several days, or \u201380\u00b0C for long-term storage.\nAvoid repeated thawing and freezing.\nWeigh the sample and cut the sample into small pieces (1-2 mm3 ) with a scalpel or scissors.\nTransfer tissue pieces to a Dounce homogenizer.\nDilute 10X Pre-Lysis Buffer into 1X Pre-Lysis Buffer with distilled water at a 1:10 ratio (e.g., 1 ml of 10X Pre-Lysis Buffer + 9 ml of water).\nAdd the Diluted 1X Pre-Lysis Buffer at 1 ml per 200 mg of tissue, and disaggregate tissue pieces by 50-60 strokes.\nTransfer homogenized mixture to a 15 ml conical tube and centrifuge at 3000 rpm for 5 min at 4\u00b0C.\nRemove supernatant.\nIf total mixture volume is less than 2 ml, transfer mixture to a 2 ml vial and centrifuge at 10,000 rpm for 1 min at 4\u00b0C.",
+    "actions": [
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "cell/tissue pellet",
+          "reagent": "Lysis Buffer",
+          "volume": "3 volumes (approx. 200 \u00b5l/10^7 cells or 100 mg tissue)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "cell/tissue pellet in Lysis Buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": "on ice",
+          "duration": "30 min",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "12,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "supernatant fraction",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "new vial"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": null,
+          "reagent": "Balance-DTT Buffer (DTT Solution + Balance Buffer at 1:500 ratio)",
+          "volume": "e.g., 1 \u00b5l DTT Solution + 500 \u00b5l Balance Buffer",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": "Balance-DTT Buffer",
+          "volume": "0.3 volumes (e.g., 0.3 ml to 1 ml supernatant)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "quantify",
+        "parameters": {
+          "container": "protein solution",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "OD reading"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "aliquot",
+        "parameters": {
+          "container": "extract",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "extract",
+          "reagent": null,
+          "volume": null,
+          "temperature": "\u201320\u00b0C (several days) or \u201380\u00b0C (long-term)",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "weigh",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "cut",
+        "parameters": {
+          "container": "sample",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "size": "1-2 mm3",
+            "tool": "scalpel or scissors"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "tissue pieces",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "Dounce homogenizer"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "10X Pre-Lysis Buffer",
+          "volume": "1:10 ratio (e.g., 1 ml 10X + 9 ml water)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "diluent": "distilled water"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "tissue pieces",
+          "reagent": "Diluted 1X Pre-Lysis Buffer",
+          "volume": "1 ml per 200 mg tissue",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "disaggregate",
+        "parameters": {
+          "container": "tissue pieces in buffer",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "50-60 strokes"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "homogenized mixture",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "15 ml conical tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "15 ml conical tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "3000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "supernatant",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "mixture",
+          "reagent": null,
+          "volume": "less than 2 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "destination": "2 ml vial"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "2 ml vial",
+          "reagent": null,
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "1 min",
+          "speed": "10,000 rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.98
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nresuspend(container='cell/tissue pellet', reagent='Lysis Buffer', volume='3 volumes (approx. 200 \u00b5l/10^7 cells or 100 mg tissue)')\nincubate(container='cell/tissue pellet in Lysis Buffer', temperature='on ice', duration='30 min')\ncentrifuge(temperature='4\u00b0C', duration='5 min', speed='12,000 rpm')\ntransfer(container='supernatant fraction', destination='new vial')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (reagent: Balance-DTT Buffer (DTT Solution + Balance Buffer at 1:500 ratio), volume: e.g., 1 \u00b5l DTT Solution + 500 \u00b5l Balance Buffer, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='supernatant', reagent='Balance-DTT Buffer', volume='0.3 volumes (e.g., 0.3 ml to 1 ml supernatant)')\n\n### MANUAL SECTION ###\n# MANUAL: quantify (container: protein solution, other: {'method': 'OD reading'})\n\n### AUTOMATED SECTION ###\naliquot(container='extract')\nstore(container='extract', temperature='\u201320\u00b0C (several days) or \u201380\u00b0C (long-term)')\n\n### MANUAL SECTION ###\n# MANUAL: weigh (container: sample, other: {})\n# MANUAL: cut (container: sample, other: {'size': '1-2 mm3', 'tool': 'scalpel or scissors'})\n\n### AUTOMATED SECTION ###\ntransfer(container='tissue pieces', destination='Dounce homogenizer')\ndilute(reagent='10X Pre-Lysis Buffer', volume='1:10 ratio (e.g., 1 ml 10X + 9 ml water)', diluent='distilled water')\nadd(container='tissue pieces', reagent='Diluted 1X Pre-Lysis Buffer', volume='1 ml per 200 mg tissue')\n\n### MANUAL SECTION ###\n# MANUAL: disaggregate (container: tissue pieces in buffer, other: {'method': '50-60 strokes'})\n\n### AUTOMATED SECTION ###\ntransfer(container='homogenized mixture', destination='15 ml conical tube')\ncentrifuge(container='15 ml conical tube', temperature='4\u00b0C', duration='5 min', speed='3000 rpm')\nremove(container='supernatant')\ntransfer(container='mixture', volume='less than 2 ml', destination='2 ml vial')\ncentrifuge(container='2 ml vial', temperature='4\u00b0C', duration='1 min', speed='10,000 rpm')",
+    "source_file": "protocol_88.txt"
+  }
+]

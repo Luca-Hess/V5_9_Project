@@ -1,0 +1,96 @@
+[
+  {
+    "protocol": "10x Tris-Glycine PAGE Running Buffer Fill 1L pyrex bottle with 700mL dH20 Add 30.2g Tris base. \nAdd 144.2g glycine pH solution to 8.80 after disolution of tris and glycine. \nAdd 10g SDS (1% final).\u00a0\nFill to 1L with dH20",
+    "actions": [
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": "dH2O",
+          "volume": "700mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": "Tris base",
+          "volume": "30.2g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": "glycine",
+          "volume": "144.2g",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "adjust",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "pH": "8.80",
+            "condition": "after dissolution of tris and glycine"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": "SDS",
+          "volume": "10g (1% final)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "fill",
+        "parameters": {
+          "container": "1L pyrex bottle",
+          "reagent": "dH2O",
+          "volume": "to 1L (top up)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nfill(container='1L pyrex bottle', reagent='dH2O', volume='700mL')\nadd(container='1L pyrex bottle', reagent='Tris base', volume='30.2g')\nadd(container='1L pyrex bottle', reagent='glycine', volume='144.2g')\n\n### MANUAL SECTION ###\n# MANUAL: adjust (container: 1L pyrex bottle, other: {'pH': '8.80', 'condition': 'after dissolution of tris and glycine'})\n\n### AUTOMATED SECTION ###\nadd(container='1L pyrex bottle', reagent='SDS', volume='10g (1% final)')\nfill(container='1L pyrex bottle', reagent='dH2O', volume='to 1L (top up)')",
+    "source_file": "protocol_589.txt"
+  }
+]

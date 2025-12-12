@@ -1,0 +1,301 @@
+[
+  {
+    "protocol": "Viral and bacterial isolates, propagation and preparation of stocks\nPipette 1.7 mL amplified 0.22-\u00b5m filtered virus stock into 1.7-mL screw cap tubes.\nFloat the microcentrifuge tubes in long ultracentrifuge tubes (14 \u00d7 95 mm) using water until they are just flush with the top of the ultracentrifuge tubes; balance them to within 1 g.\nLoad the ultracentrifuge tubes into the SW40 rotor and spin them at 133,000g for 1 h.\nRecover the microcentrifuge tubes.\nRemove the supernatant and resuspend the pellet.\nPerform all subsequent steps under subdued light since the stain will fade if exposed.\nThaw the SYBR Green I, then add 1 \u00b5L stain to each concentrated virus tube and incubate for 15 min in the dark.\nVerify the staining (and monodispersal) of the viruses by pipetting 1 \u00b5L of the suspension onto a microscope slide.\nAdd an 18 \u00d7 18 mm coverslip and observe the slide under the epifluorescence microscope.\nAdd 1.65 mL water or seawater medium to each tube and respin as above.\nRemove the supernatant and resuspend as above (completes first wash out of stain).\nRepeat steps 10\u00a0and 11.\nRepeat steps 10\u00a0and 11\u00a0again.",
+    "actions": [
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "1.7-mL screw cap tubes",
+          "reagent": "amplified 0.22-\u00b5m filtered virus stock",
+          "volume": "1.7 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "float",
+        "parameters": {
+          "container": "microcentrifuge tubes in long ultracentrifuge tubes (14 \u00d7 95 mm)",
+          "reagent": "water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "flush_with_top": true
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "balance",
+        "parameters": {
+          "container": "ultracentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "balance_within": "1 g"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "load",
+        "parameters": {
+          "container": "ultracentrifuge tubes into SW40 rotor",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "SW40 rotor (ultracentrifuge tubes)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "1 h",
+          "speed": "133,000g",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "recover",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "microcentrifuge tubes",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "thaw",
+        "parameters": {
+          "container": null,
+          "reagent": "SYBR Green I",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "concentrated virus tube",
+          "reagent": "SYBR Green I stain",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "concentrated virus tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "15 min",
+          "speed": null,
+          "other": {
+            "light_condition": "dark"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "suspension",
+          "volume": "1 \u00b5L",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": "18 \u00d7 18 mm coverslip",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "observe",
+        "parameters": {
+          "container": "microscope slide",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "instrument": "epifluorescence microscope"
+          }
+        },
+        "automatable": false,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "water or seawater medium",
+          "volume": "1.65 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "each tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "as above (1 h)",
+          "speed": "as above (133,000g)",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "pellet",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "10 and 11"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "repeat",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "steps": "10 and 11"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\npipette(container='1.7-mL screw cap tubes', reagent='amplified 0.22-\u00b5m filtered virus stock', volume='1.7 mL')\n\n### MANUAL SECTION ###\n# MANUAL: float (container: microcentrifuge tubes in long ultracentrifuge tubes (14 \u00d7 95 mm), reagent: water, other: {'flush_with_top': True})\n# MANUAL: balance (container: ultracentrifuge tubes, other: {'balance_within': '1 g'})\n# MANUAL: load (container: ultracentrifuge tubes into SW40 rotor, other: {})\n\n### AUTOMATED SECTION ###\ncentrifuge(container='SW40 rotor (ultracentrifuge tubes)', duration='1 h', speed='133,000g')\n\n### MANUAL SECTION ###\n# MANUAL: recover (container: microcentrifuge tubes, other: {})\n\n### AUTOMATED SECTION ###\nremove(container='microcentrifuge tubes', reagent='supernatant')\nresuspend(container='microcentrifuge tubes', reagent='pellet')\n\n### MANUAL SECTION ###\n# MANUAL: thaw (reagent: SYBR Green I, other: {})\n\n### AUTOMATED SECTION ###\nadd(container='concentrated virus tube', reagent='SYBR Green I stain', volume='1 \u00b5L')\nincubate(container='concentrated virus tube', duration='15 min', light_condition='dark')\npipette(container='microscope slide', reagent='suspension', volume='1 \u00b5L')\n\n### MANUAL SECTION ###\n# MANUAL: add (container: microscope slide, reagent: 18 \u00d7 18 mm coverslip, other: {})\n# MANUAL: observe (container: microscope slide, other: {'instrument': 'epifluorescence microscope'})\n\n### AUTOMATED SECTION ###\nadd(container='each tube', reagent='water or seawater medium', volume='1.65 mL')\ncentrifuge(container='each tube', duration='as above (1 h)', speed='as above (133,000g)')\nremove(container='each tube', reagent='supernatant')\nresuspend(container='each tube', reagent='pellet')\n\n### MANUAL SECTION ###\n# MANUAL: repeat (other: {'steps': '10 and 11'})\n# MANUAL: repeat (other: {'steps': '10 and 11'})",
+    "source_file": "protocol_70.txt"
+  }
+]

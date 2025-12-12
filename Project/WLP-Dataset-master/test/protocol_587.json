@@ -1,0 +1,537 @@
+[
+  {
+    "protocol": "Roseobacter Screening Of Surface Waters. \nFor Viruses Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. \nPerform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. \nStore seawater filtrates at 4\u00b0C. \nAbsorb the viruses to the bacteria. \nPlace 15 \u00b5l of log phase cells and 15 \u00b5l of seawater filtrate (containing virus) into wells of a 96 well plate. \nAllow the viruses to absorb to the bacteria for 1 hour. \nAdd 200 \u00b5l growth media (1/2 or 1/10 YTSS) to the wells. \nSeal the plate with parafilm and incubate with shaking. \nLook for infected wells that show lysis with respect to uninoculated controls. \nEnrich for viruses by transferring from initial 96 well plate to another 96-well plate containing fresh liquid media (\u201cfrogging\u201d into new wells).\u00a0\nOnce enriched sufficiently, filter out cells with 0.2um filtration into 1.5ml microfuge tubes Spin for 5 mins. at max to pellet cells. \nTransfer supernatant to fresh tube for storage.\u00a0 \nStore at 4\u00b0C.  \nPlaque-purify wells containing virus by growing cells plus virus on solid media.   \nPrepare solid agar media and 0.5% overlay agar. \nAbsorb virus to cells using as a starting point, 25 \u00b5l virus from 96 well plate enrichments and 200 \u00b5l log-phase host bacteria for 1hr. \nMix the virus-absorbed cells in the 5 ml overlay agar. \nPour over the solid media. \nIncubate and look for plaque formation. \nPick representatives of all plaque types present and record appearance of the plaques. \nStore the broth that contains the agar plugs at 4\u00b0C and allow the viruses to diffuse out of the agar into the broth. \nOnce the viruses are plaque-purified they can be scaled-up in 5 ml broth cultures for DNA purification. \nTake 25 \u00b5l of the plaque-purified virus (agar plug in ~100 \u00b5l broth) and absorb to 200 \u00b5l log-phase bacteria for 1 hr. \nAdd to 5 ml broth and grow with shaking. \nCentrifuge out cells and filter culture through 0.2 \u00b5m filter SYBR stain a portion of the filtrate to determine how much virus is present.\u00a0 \nPurify DNA using the Promega Wizard Lambda DNA kit",
+    "actions": [
+      {
+        "action": "pull",
+        "parameters": {
+          "container": "null",
+          "reagent": "Roseobacter cultures",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "broth cultures",
+          "reagent": "Roseobacter cultures",
+          "volume": "5 ml",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "perform",
+        "parameters": {
+          "container": "96 well flat-bottom tissue culture treated microtiter plates",
+          "reagent": "virus screening",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "null",
+          "reagent": "seawater filtrates",
+          "volume": "null",
+          "temperature": "4\u00b0C",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "absorb",
+        "parameters": {
+          "container": "null",
+          "reagent": "viruses to the bacteria",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "96 well plate",
+          "reagent": "log phase cells and seawater filtrate (containing virus)",
+          "volume": "15 \u00b5l log phase cells, 15 \u00b5l seawater filtrate",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "null",
+          "reagent": "viruses to absorb to the bacteria",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "1 hour",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "wells",
+          "reagent": "growth media (1/2 or 1/10 YTSS)",
+          "volume": "200 \u00b5l",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "seal",
+        "parameters": {
+          "container": "plate",
+          "reagent": "parafilm",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plate",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "shaking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "look",
+        "parameters": {
+          "container": "wells",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "for": "infected wells that show lysis with respect to uninoculated controls"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "enrich",
+        "parameters": {
+          "container": "initial 96 well plate to another 96-well plate",
+          "reagent": "viruses",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "method": "frogging into new wells"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "1.5ml microfuge tubes",
+          "reagent": "cells",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "filter_size": "0.2um"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "spin",
+        "parameters": {
+          "container": "1.5ml microfuge tubes",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "5 mins",
+          "speed": "max",
+          "other": {
+            "purpose": "to pellet cells"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "fresh tube",
+          "reagent": "supernatant",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "from": "microfuge tube"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "null",
+          "reagent": "supernatant",
+          "volume": "null",
+          "temperature": "4\u00b0C",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "plaque-purify",
+        "parameters": {
+          "container": "wells",
+          "reagent": "virus",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "method": "growing cells plus virus on solid media"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "null",
+          "reagent": "solid agar media and 0.5% overlay agar",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "absorb",
+        "parameters": {
+          "container": "null",
+          "reagent": "virus to cells",
+          "volume": "25 \u00b5l virus, 200 \u00b5l log-phase host bacteria",
+          "temperature": "null",
+          "duration": "1 hr",
+          "speed": "null",
+          "other": {
+            "starting_point": "virus from 96 well plate enrichments"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "overlay agar (5 ml)",
+          "reagent": "virus-absorbed cells",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "solid media",
+          "reagent": "overlay agar with virus-absorbed cells",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "solid media plate",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "look",
+        "parameters": {
+          "container": "solid media plate",
+          "reagent": "null",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "for": "plaque formation"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "pick",
+        "parameters": {
+          "container": "solid media plate",
+          "reagent": "representatives of all plaque types",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "record",
+        "parameters": {
+          "container": "null",
+          "reagent": "appearance of the plaques",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": "null",
+          "reagent": "broth that contains the agar plugs",
+          "volume": "null",
+          "temperature": "4\u00b0C",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "broth",
+          "reagent": "viruses to diffuse out of the agar into the broth",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "scale-up",
+        "parameters": {
+          "container": "broth cultures",
+          "reagent": "plaque-purified viruses",
+          "volume": "5 ml",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "purpose": "DNA purification"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "null",
+          "reagent": "plaque-purified virus (agar plug in ~100 \u00b5l broth)",
+          "volume": "25 \u00b5l",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "absorb",
+        "parameters": {
+          "container": "null",
+          "reagent": "virus to 200 \u00b5l log-phase bacteria",
+          "volume": "25 \u00b5l virus, 200 \u00b5l bacteria",
+          "temperature": "null",
+          "duration": "1 hr",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "broth",
+          "reagent": "virus-absorbed bacteria",
+          "volume": "to 5 ml",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "grow",
+        "parameters": {
+          "container": "broth",
+          "reagent": "virus-absorbed bacteria",
+          "volume": "5 ml",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "shaking",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": "culture",
+          "reagent": "cells",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "null",
+          "reagent": "culture",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "filter_size": "0.2 \u00b5m"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "stain",
+        "parameters": {
+          "container": "null",
+          "reagent": "SYBR stain",
+          "volume": "portion of the filtrate",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "purpose": "determine how much virus is present"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "purify",
+        "parameters": {
+          "container": "null",
+          "reagent": "DNA",
+          "volume": "null",
+          "temperature": "null",
+          "duration": "null",
+          "speed": "null",
+          "other": {
+            "kit": "Promega Wizard Lambda DNA kit"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: pull (container: null, reagent: Roseobacter cultures, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\ngrow(container='broth cultures', reagent='Roseobacter cultures', volume='5 ml', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: perform (container: 96 well flat-bottom tissue culture treated microtiter plates, reagent: virus screening, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='null', reagent='seawater filtrates', volume='null', temperature='4\u00b0C', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: absorb (container: null, reagent: viruses to the bacteria, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nplace(container='96 well plate', reagent='log phase cells and seawater filtrate (containing virus)', volume='15 \u00b5l log phase cells, 15 \u00b5l seawater filtrate', temperature='null', duration='null', speed='null')\nallow(container='null', reagent='viruses to absorb to the bacteria', volume='null', temperature='null', duration='1 hour', speed='null')\nadd(container='wells', reagent='growth media (1/2 or 1/10 YTSS)', volume='200 \u00b5l', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: seal (container: plate, reagent: parafilm, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='plate', reagent='null', volume='null', temperature='null', duration='null', speed='shaking')\n\n### MANUAL SECTION ###\n# MANUAL: look (container: wells, reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {'for': 'infected wells that show lysis with respect to uninoculated controls'})\n# MANUAL: enrich (container: initial 96 well plate to another 96-well plate, reagent: viruses, volume: null, temperature: null, duration: null, speed: null, other: {'method': 'frogging into new wells'})\n\n### AUTOMATED SECTION ###\nfilter(container='1.5ml microfuge tubes', reagent='cells', volume='null', temperature='null', duration='null', speed='null', filter_size='0.2um')\nspin(container='1.5ml microfuge tubes', reagent='null', volume='null', temperature='null', duration='5 mins', speed='max', purpose='to pellet cells')\ntransfer(container='fresh tube', reagent='supernatant', volume='null', temperature='null', duration='null', speed='null', from='microfuge tube')\nstore(container='null', reagent='supernatant', volume='null', temperature='4\u00b0C', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: plaque-purify (container: wells, reagent: virus, volume: null, temperature: null, duration: null, speed: null, other: {'method': 'growing cells plus virus on solid media'})\n# MANUAL: prepare (container: null, reagent: solid agar media and 0.5% overlay agar, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nabsorb(container='null', reagent='virus to cells', volume='25 \u00b5l virus, 200 \u00b5l log-phase host bacteria', temperature='null', duration='1 hr', speed='null', starting_point='virus from 96 well plate enrichments')\nmix(container='overlay agar (5 ml)', reagent='virus-absorbed cells', volume='null', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: solid media, reagent: overlay agar with virus-absorbed cells, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nincubate(container='solid media plate', reagent='null', volume='null', temperature='null', duration='null', speed='null')\n\n### MANUAL SECTION ###\n# MANUAL: look (container: solid media plate, reagent: null, volume: null, temperature: null, duration: null, speed: null, other: {'for': 'plaque formation'})\n# MANUAL: pick (container: solid media plate, reagent: representatives of all plaque types, volume: null, temperature: null, duration: null, speed: null, other: {})\n# MANUAL: record (container: null, reagent: appearance of the plaques, volume: null, temperature: null, duration: null, speed: null, other: {})\n\n### AUTOMATED SECTION ###\nstore(container='null', reagent='broth that contains the agar plugs', volume='null', temperature='4\u00b0C', duration='null', speed='null')\nallow(container='broth', reagent='viruses to diffuse out of the agar into the broth', volume='null', temperature='null', duration='null', speed='null')\nscale-up(container='broth cultures', reagent='plaque-purified viruses', volume='5 ml', temperature='null', duration='null', speed='null', purpose='DNA purification')\ntake(container='null', reagent='plaque-purified virus (agar plug in ~100 \u00b5l broth)', volume='25 \u00b5l', temperature='null', duration='null', speed='null')\nabsorb(container='null', reagent='virus to 200 \u00b5l log-phase bacteria', volume='25 \u00b5l virus, 200 \u00b5l bacteria', temperature='null', duration='1 hr', speed='null')\nadd(container='broth', reagent='virus-absorbed bacteria', volume='to 5 ml', temperature='null', duration='null', speed='null')\ngrow(container='broth', reagent='virus-absorbed bacteria', volume='5 ml', temperature='null', duration='null', speed='shaking')\ncentrifuge(container='culture', reagent='cells', volume='null', temperature='null', duration='null', speed='null')\nfilter(container='null', reagent='culture', volume='null', temperature='null', duration='null', speed='null', filter_size='0.2 \u00b5m')\nstain(container='null', reagent='SYBR stain', volume='portion of the filtrate', temperature='null', duration='null', speed='null', purpose='determine how much virus is present')\npurify(container='null', reagent='DNA', volume='null', temperature='null', duration='null', speed='null', kit='Promega Wizard Lambda DNA kit')",
+    "source_file": "protocol_587.txt"
+  }
+]

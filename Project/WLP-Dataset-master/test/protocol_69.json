@@ -1,0 +1,544 @@
+[
+  {
+    "protocol": "Embryoid bodies generation\nAdd Trypsin 2ml and gently shake plate.\nAdd 8ml ES medium without LIF to inactivate trypsin.\nCentrifuge at\u00a0500rpm for 10min.\nAdd 8ml of EB medium to each 10cm petri-dish while centrifuging.\nGently resuspend pellet in 5ml EB medium by 5ml pipette, up and down for 5 times.\nTake 100ul cell suspension and dilute into 1ml.\nCount.\nTake appropriate number of cells and dilute into 1\u00d710^6 cells/ml.\nGently re-suspend by 5ml pipette, up and down for 4 times.\nSeed 2ml of cells/dish.\nSave 2\u00d710^6 cells for RNA extraction.\nTransfer medium containing Ebs to 50ml tubes.\nCarefully add 5ml medium to dishes immediately and put back in incubator.\nSink cells in tubes by gravity for 5min.\nDiscard supernatant.\nAdd 5ml medium to pellets.\nMix samples by inverting a few times gently.\nDistribute samples to different dishes.\nPrepare gelatin coated chamber slides (2 well).\nAdd 1.5ml of medium into each well.\nTransfer 1 dish of day4 Ebs into 15ml tube.\nWait for Ebs sink to the bottom of tube by gravity for 5min.\nDiscard supernatant.\nAdd 10ml EB medium into pellets.\nSeed 0.5ml of EB to each well.\nChange medium everyday: suck supernatant, replace with fresh EB medium.\nTake 2 wells for each group on day6, day8 and day12.\nSuck the medium carefully.\nFix with 4% PFA for 30min @RT.\n(in hood).\nWash #1 with 2ml of PBS.\nWash #2 with 2ml of PBS.\nWash #3 with 2ml of PBS.\nStore samples in PBS, @ 4\u00b0C.",
+    "actions": [
+      {
+        "action": "add",
+        "parameters": {
+          "container": "plate",
+          "reagent": "Trypsin",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "shake",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "ES medium without LIF",
+          "volume": "8ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "inactivate trypsin"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "centrifuge",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "10min",
+          "speed": "500rpm",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "10cm petri-dish",
+          "reagent": "EB medium",
+          "volume": "8ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "while": "centrifuging"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": "pellet",
+          "reagent": "EB medium",
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "method": "5ml pipette, up and down for 5 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": null,
+          "reagent": "cell suspension",
+          "volume": "100ul",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilute_into": "1ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "appropriate number",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "dilute_to": "1\u00d710^6 cells/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "method": "5ml pipette, up and down for 4 times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "dish",
+          "reagent": "cells",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "per": "dish"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "save",
+        "parameters": {
+          "container": null,
+          "reagent": "cells",
+          "volume": "2\u00d710^6",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "RNA extraction"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "50ml tubes",
+          "reagent": "medium containing Ebs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "dishes",
+          "reagent": "medium",
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "immediately": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "dishes",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "after_adding_medium": true
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "sink",
+        "parameters": {
+          "container": "tubes",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "5min",
+          "speed": null,
+          "other": {
+            "method": "gravity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pellets",
+          "reagent": "medium",
+          "volume": "5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": {
+            "method": "inverting a few times"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "distribute",
+        "parameters": {
+          "container": "different dishes",
+          "reagent": "samples",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "prepare",
+        "parameters": {
+          "container": "gelatin coated chamber slides (2 well)",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each well",
+          "reagent": "medium",
+          "volume": "1.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "15ml tube",
+          "reagent": "1 dish of day4 Ebs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wait",
+        "parameters": {
+          "container": "tube",
+          "reagent": "Ebs",
+          "volume": null,
+          "temperature": null,
+          "duration": "5min",
+          "speed": null,
+          "other": {
+            "method": "sink by gravity"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "discard",
+        "parameters": {
+          "container": null,
+          "reagent": "supernatant",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "pellets",
+          "reagent": "EB medium",
+          "volume": "10ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "seed",
+        "parameters": {
+          "container": "each well",
+          "reagent": "EB",
+          "volume": "0.5ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "change",
+        "parameters": {
+          "container": null,
+          "reagent": "medium",
+          "volume": null,
+          "temperature": null,
+          "duration": "everyday",
+          "speed": null,
+          "other": {
+            "steps": [
+              "suck supernatant",
+              "replace with fresh EB medium"
+            ]
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "take",
+        "parameters": {
+          "container": "2 wells for each group",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "days": [
+              "day6",
+              "day8",
+              "day12"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.85
+      },
+      {
+        "action": "suck",
+        "parameters": {
+          "container": null,
+          "reagent": "medium",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "carefully",
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "fix",
+        "parameters": {
+          "container": null,
+          "reagent": "4% PFA",
+          "volume": null,
+          "temperature": "RT",
+          "duration": "30min",
+          "speed": null,
+          "other": {
+            "location": "in hood"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 1
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 2
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "wash",
+        "parameters": {
+          "container": null,
+          "reagent": "PBS",
+          "volume": "2ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "wash_number": 3
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "store",
+        "parameters": {
+          "container": null,
+          "reagent": "samples in PBS",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nadd(container='plate', reagent='Trypsin', volume='2ml')\nshake(container='plate', speed='gently')\nadd(reagent='ES medium without LIF', volume='8ml', purpose='inactivate trypsin')\ncentrifuge(duration='10min', speed='500rpm')\nadd(container='10cm petri-dish', reagent='EB medium', volume='8ml', while='centrifuging')\nresuspend(container='pellet', reagent='EB medium', volume='5ml', speed='gently', method='5ml pipette, up and down for 5 times')\ntake(reagent='cell suspension', volume='100ul', dilute_into='1ml')\n\n### MANUAL SECTION ###\n# MANUAL: count (other: {})\n\n### AUTOMATED SECTION ###\ntake(reagent='cells', volume='appropriate number', dilute_to='1\u00d710^6 cells/ml')\nresuspend(volume='5ml', speed='gently', method='5ml pipette, up and down for 4 times')\nseed(container='dish', reagent='cells', volume='2ml', per='dish')\n\n### MANUAL SECTION ###\n# MANUAL: save (reagent: cells, volume: 2\u00d710^6, other: {'purpose': 'RNA extraction'})\n\n### AUTOMATED SECTION ###\ntransfer(container='50ml tubes', reagent='medium containing Ebs')\nadd(container='dishes', reagent='medium', volume='5ml', immediately=True)\nincubate(container='dishes', after_adding_medium=True)\nsink(container='tubes', reagent='cells', duration='5min', method='gravity')\ndiscard(reagent='supernatant')\nadd(container='pellets', reagent='medium', volume='5ml')\nmix(container='samples', speed='gently', method='inverting a few times')\ndistribute(container='different dishes', reagent='samples')\n\n### MANUAL SECTION ###\n# MANUAL: prepare (container: gelatin coated chamber slides (2 well), other: {})\n\n### AUTOMATED SECTION ###\nadd(container='each well', reagent='medium', volume='1.5ml')\ntransfer(container='15ml tube', reagent='1 dish of day4 Ebs')\nwait(container='tube', reagent='Ebs', duration='5min', method='sink by gravity')\ndiscard(reagent='supernatant')\nadd(container='pellets', reagent='EB medium', volume='10ml')\nseed(container='each well', reagent='EB', volume='0.5ml')\nchange(reagent='medium', duration='everyday', steps=['suck supernatant', 'replace with fresh EB medium'])\n\n### MANUAL SECTION ###\n# MANUAL: take (container: 2 wells for each group, other: {'days': ['day6', 'day8', 'day12']})\n\n### AUTOMATED SECTION ###\nsuck(reagent='medium', speed='carefully')\nfix(reagent='4% PFA', temperature='RT', duration='30min', location='in hood')\nwash(reagent='PBS', volume='2ml', wash_number=1)\nwash(reagent='PBS', volume='2ml', wash_number=2)\nwash(reagent='PBS', volume='2ml', wash_number=3)\nstore(reagent='samples in PBS', temperature='4\u00b0C')",
+    "source_file": "protocol_69.txt"
+  }
+]

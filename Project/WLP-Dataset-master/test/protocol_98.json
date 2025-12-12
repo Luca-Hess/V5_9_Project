@@ -1,0 +1,136 @@
+[
+  {
+    "protocol": "Script R8: Plotting Bacterial Taxonomy from MetaPhlan\nLoad the libraries needed for analysis.\nRead in the metadata and format it so that it matches the samples we are working with.\nWe only want to look at a certain number of taxa to make the data more visually informative.\nNow we are ready to read in the MetaPhlAn merged output at the genus level and format it for plotting.\nFormat sample IDs.\nLook at top 10 taxa.\nPlot by site symbol and site categories.",
+    "actions": [
+      {
+        "action": "load",
+        "parameters": {
+          "container": null,
+          "reagent": "libraries",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "analysis"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": null,
+          "reagent": "metadata",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "format": "match samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "format",
+        "parameters": {
+          "container": null,
+          "reagent": "metadata",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "match samples"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": null,
+          "reagent": "taxa",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "number": "certain number"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "read",
+        "parameters": {
+          "container": null,
+          "reagent": "MetaPhlAn merged output (genus level)",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "purpose": "format for plotting"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "format",
+        "parameters": {
+          "container": null,
+          "reagent": "sample IDs",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "select",
+        "parameters": {
+          "container": null,
+          "reagent": "top 10 taxa",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "plot",
+        "parameters": {
+          "container": null,
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "by": [
+              "site symbol",
+              "site categories"
+            ]
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: load (reagent: libraries, other: {'purpose': 'analysis'})\n# MANUAL: read (reagent: metadata, other: {'format': 'match samples'})\n# MANUAL: format (reagent: metadata, other: {'purpose': 'match samples'})\n# MANUAL: select (reagent: taxa, other: {'number': 'certain number'})\n# MANUAL: read (reagent: MetaPhlAn merged output (genus level), other: {'purpose': 'format for plotting'})\n# MANUAL: format (reagent: sample IDs)\n# MANUAL: select (reagent: top 10 taxa)\n# MANUAL: plot (other: {'by': ['site symbol', 'site categories']})",
+    "source_file": "protocol_98.txt"
+  }
+]

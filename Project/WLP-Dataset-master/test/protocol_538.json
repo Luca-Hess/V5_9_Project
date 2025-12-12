@@ -1,0 +1,99 @@
+[
+  {
+    "protocol": "Developing a Titration Kill Curve (G418, Hygromycin B and Puromycin)\nSplit non-transduced, confluent cells 1:5 in 10 ml DMEM + 10% FBS media.\nTransfer 0.5 mL cell suspension into 24-well plate containing 500 \u00b5l of (media + drug).\n- G418 Sulfate\n- Hygromycin B\n- Puromycin Dihydrochloride. \nExamine viability every 2 days.\nCulture for 14 days.\nReplace the media containing antibiotic every 3 days.\nUse the lowest concentration of your antibiotic that begins to give massive cell death in 3 days and kills all the cells within two weeks.\nA general starting point is usually 400 mg/ml G418 for HeLa cells and 200 mg/ml hygromycin for CHO cells.\nIn mammalian cells the optimal level of puromycin is typically around 1 mg/ml.\nHeLa cells are often selectable with 500 mg/ml G418, 500 mg/ml hygromycin, or 2.5 mg/ml puromycin, and SHSY-5Y cells are often selectable with 600 mg/ml G418 or 200mg/ml hygromycin.",
+    "actions": [
+      {
+        "action": "split",
+        "parameters": {
+          "container": "culture flask or dish (confluent, non-transduced cells)",
+          "reagent": "DMEM + 10% FBS media",
+          "volume": "10 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "split_ratio": "1:5"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "transfer",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cell suspension",
+          "volume": "0.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "media + drug (G418 Sulfate, Hygromycin B, Puromycin Dihydrochloride)",
+          "volume": "500 \u00b5l",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "drug_concentration": "variable, see protocol"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "examine",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cells",
+          "volume": null,
+          "temperature": null,
+          "duration": "every 2 days",
+          "speed": null,
+          "other": {
+            "endpoint": "viability"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "culture",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "cells in media + drug",
+          "volume": null,
+          "temperature": null,
+          "duration": "14 days",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "replace",
+        "parameters": {
+          "container": "24-well plate",
+          "reagent": "media containing antibiotic",
+          "volume": null,
+          "temperature": null,
+          "duration": "every 3 days",
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 1.0
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nsplit(container='culture flask or dish (confluent, non-transduced cells)', reagent='DMEM + 10% FBS media', volume='10 ml', split_ratio='1:5')\ntransfer(container='24-well plate', reagent='cell suspension', volume='0.5 ml')\ndispense(container='24-well plate', reagent='media + drug (G418 Sulfate, Hygromycin B, Puromycin Dihydrochloride)', volume='500 \u00b5l', drug_concentration='variable, see protocol')\n\n### MANUAL SECTION ###\n# MANUAL: examine (container: 24-well plate, reagent: cells, duration: every 2 days, other: {'endpoint': 'viability'})\n\n### AUTOMATED SECTION ###\nculture(container='24-well plate', reagent='cells in media + drug', duration='14 days')\nreplace(container='24-well plate', reagent='media containing antibiotic', duration='every 3 days')",
+    "source_file": "protocol_538.txt"
+  }
+]

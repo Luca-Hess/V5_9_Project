@@ -1,0 +1,182 @@
+[
+  {
+    "protocol": "Estimation of viral-induced phytoplankton mortality using the modified dilution method\nTo create the grazer-free diluent whole seawater is gravity filtered through acid-washed 0.2\u20130.45 \u00b5m filters (e.g., PALL Acropak\u2122 Supor\u00ae membrane capsules) into a clean carboy.\nAfter gravity filtration half of the grazer-free diluent is passed through a tangential flow filtration system with kilodalton (kDa) pore size to create the virus-free diluent.\nThe grazer-free and virus-free diluents are added to 10-L polycarbonate bottles in the correct proportions to create the parallel t0 dilution series, e.g., 20%, 40%, 70%, and 100% whole water.\nThe mesoplankton-free whole water is then gently added by siphoning.\nFrom each of these t0 bottles, triplicate 1-L polycarbonate bottles were rinsed twice and then gently filled by siphoning (to minimize physical damage to the grazers, viruses, and phytoplankton populations), ensuring that bottles are filled completely to avoid trapping air bubbles inside upon closure.\nAfter filling, triplicate experimental bottles are placed randomly into experimental conditions.\nFor determination of phytoplankton composition and abundance and virus abundance, triplicate subsamples (5 mL) are taken from the 10 L t0 dilution bottles and the 0.2\u20130.45-\u00b5m and kDa diluents.\nInitial (t0) and final (t24) phytoplankton composition and abundance estimates are typically determined by analysis of samples using flow cytometry\nApparent phytoplankton growth rates (\u00b5, d\u20131) are calculated from each experimental bottle as the changes in abundance during the incubation using the equation:\u00b5 = ln(Pt/Po)/t.\nThe actual dilution rate is calculated by dividing the t0 phytoplankton abundance in each bottle by the averaged abundance of the replicate t0 100% counts (3\u20136 bottles).",
+    "actions": [
+      {
+        "action": "filter",
+        "parameters": {
+          "container": "clean carboy",
+          "reagent": "whole seawater",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gravity",
+          "other": {
+            "filter_type": "acid-washed 0.2\u20130.45 \u00b5m filters (e.g., PALL Acropak\u2122 Supor\u00ae membrane capsules)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "filter",
+        "parameters": {
+          "container": null,
+          "reagent": "grazer-free diluent",
+          "volume": "half",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "system": "tangential flow filtration",
+            "filter_type": "kilodalton (kDa) pore size"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10-L polycarbonate bottles",
+          "reagent": "grazer-free and virus-free diluents",
+          "volume": "proportions to create dilution series (e.g., 20%, 40%, 70%, 100%)",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "10-L polycarbonate bottles",
+          "reagent": "mesoplankton-free whole water",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": "gently (by siphoning)",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "rinse",
+        "parameters": {
+          "container": "1-L polycarbonate bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "times": "twice"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "1-L polycarbonate bottles",
+          "reagent": "dilution mixture",
+          "volume": "gentle fill by siphoning",
+          "temperature": null,
+          "duration": null,
+          "speed": "gently",
+          "other": null
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "place",
+        "parameters": {
+          "container": "triplicate experimental bottles",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "experimental conditions",
+            "randomization": "randomly"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "pipette",
+        "parameters": {
+          "container": "triplicate subsamples (5 mL)",
+          "reagent": "from 10 L t0 dilution bottles and the 0.2\u20130.45-\u00b5m and kDa diluents",
+          "volume": "5 mL",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": null
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "analyze",
+        "parameters": {
+          "container": "samples",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "flow cytometry",
+            "timepoints": "initial (t0) and final (t24)"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": "experimental bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equation": "\u00b5 = ln(Pt/Po)/t",
+            "measurement": "phytoplankton growth rates"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "calculate",
+        "parameters": {
+          "container": "each bottle",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "equation": "t0 phytoplankton abundance / averaged abundance of replicate t0 100% counts (3\u20136 bottles)",
+            "measurement": "actual dilution rate"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: filter (container: clean carboy, reagent: whole seawater, speed: gravity, other: {'filter_type': 'acid-washed 0.2\u20130.45 \u00b5m filters (e.g., PALL Acropak\u2122 Supor\u00ae membrane capsules)'})\n# MANUAL: filter (reagent: grazer-free diluent, volume: half, other: {'system': 'tangential flow filtration', 'filter_type': 'kilodalton (kDa) pore size'})\n\n### AUTOMATED SECTION ###\ndispense(container='10-L polycarbonate bottles', reagent='grazer-free and virus-free diluents', volume='proportions to create dilution series (e.g., 20%, 40%, 70%, 100%)')\n\n### MANUAL SECTION ###\n# MANUAL: dispense (container: 10-L polycarbonate bottles, reagent: mesoplankton-free whole water, speed: gently (by siphoning))\n# MANUAL: rinse (container: 1-L polycarbonate bottles, other: {'times': 'twice'})\n# MANUAL: dispense (container: 1-L polycarbonate bottles, reagent: dilution mixture, volume: gentle fill by siphoning, speed: gently)\n# MANUAL: place (container: triplicate experimental bottles, other: {'location': 'experimental conditions', 'randomization': 'randomly'})\n\n### AUTOMATED SECTION ###\npipette(container='triplicate subsamples (5 mL)', reagent='from 10 L t0 dilution bottles and the 0.2\u20130.45-\u00b5m and kDa diluents', volume='5 mL')\n\n### MANUAL SECTION ###\n# MANUAL: analyze (container: samples, other: {'method': 'flow cytometry', 'timepoints': 'initial (t0) and final (t24)'})\n# MANUAL: calculate (container: experimental bottle, other: {'equation': '\u00b5 = ln(Pt/Po)/t', 'measurement': 'phytoplankton growth rates'})\n# MANUAL: calculate (container: each bottle, other: {'equation': 't0 phytoplankton abundance / averaged abundance of replicate t0 100% counts (3\u20136 bottles)', 'measurement': 'actual dilution rate'})",
+    "source_file": "protocol_83.txt"
+  }
+]

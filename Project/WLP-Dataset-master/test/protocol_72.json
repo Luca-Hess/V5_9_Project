@@ -1,0 +1,349 @@
+[
+  {
+    "protocol": "PBCV-1 Virus Plaque Assay\nPour the plates either the day of titering or the day before.\nMelt the MBBM soft agar and hold in the 50\u00b0C water bath.\nDispense 2.5 ml of soft agar to sterile 13 x 100 mm tubes and hold at 50\u00b0C.\nConcentrate the NC64A chlorella to 4.0 X 108 cells/ml in the Sorvall centrifuge at 5,000 rpm, 5 min, 4\u00b0C and resuspend the pellets with fresh medium.\nConcentrate enough so that 0.3 ml can be used for each plate.\nMake up dilution blanks for the virus in the sterile 13 x 100 mm tubes with 50 mM Tris-HCl, pH 7.8.\nDilute the virus in 1/10 serial dilutions.\nLabel the plates.\nRemove 13 x 100 mm tubes of soft agar from the water bath to a test tube rack as needed.\nTo each tube, add 0.3 ml of the concentrated chlorella and 0.1 ml of the diluted virus (when titering the NY-2A virus, use 0.05 to 0.1 ml of the concentrated chlorella instead of 0.3 ml).\nMix briefly (by rolling the tubes between the palms of the hands) and pour the contents of the tube onto the plate.\nTilt the plate gently until the entire surface of the plate is covered with soft agar.\nAllow the top agar to solidify and stick to the bottom agar (maybe 20 minutes).\nInvert the plates with the lid down.\nIncubate the plates at 25\u00b0C in continuous light.\nStack the plates only two deep, as the plaque size will increase if the plates are stacked deeper.\nPlaques will be ready to count after 3-4 days incubation.",
+    "actions": [
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plates",
+          "reagent": "soft agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "timing": "day of titering or day before"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "melt",
+        "parameters": {
+          "container": null,
+          "reagent": "MBBM soft agar",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.8
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": null,
+          "reagent": "MBBM soft agar",
+          "volume": null,
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "location": "water bath"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "dispense",
+        "parameters": {
+          "container": "sterile 13 x 100 mm tubes",
+          "reagent": "soft agar",
+          "volume": "2.5 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "hold",
+        "parameters": {
+          "container": "sterile 13 x 100 mm tubes",
+          "reagent": "soft agar",
+          "volume": "2.5 ml",
+          "temperature": "50\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": "Sorvall centrifuge",
+          "reagent": "NC64A chlorella",
+          "volume": null,
+          "temperature": "4\u00b0C",
+          "duration": "5 min",
+          "speed": "5,000 rpm",
+          "other": {
+            "final concentration": "4.0 x 10^8 cells/ml"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "resuspend",
+        "parameters": {
+          "container": null,
+          "reagent": "pellets",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "medium": "fresh medium"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.9
+      },
+      {
+        "action": "concentrate",
+        "parameters": {
+          "container": null,
+          "reagent": "NC64A chlorella",
+          "volume": "enough for 0.3 ml per plate",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "make",
+        "parameters": {
+          "container": "sterile 13 x 100 mm tubes",
+          "reagent": "dilution blanks for virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "buffer": "50 mM Tris-HCl, pH 7.8"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.7
+      },
+      {
+        "action": "dilute",
+        "parameters": {
+          "container": null,
+          "reagent": "virus",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "method": "1/10 serial dilutions"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "label",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "remove",
+        "parameters": {
+          "container": "13 x 100 mm tubes of soft agar",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "from": "water bath",
+            "to": "test tube rack"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "concentrated chlorella",
+          "volume": "0.3 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "use 0.05 to 0.1 ml for NY-2A virus"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": "each tube",
+          "reagent": "diluted virus",
+          "volume": "0.1 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "note": "for NY-2A virus, use 0.05 to 0.1 ml of concentrated chlorella"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": "tube",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": "briefly",
+          "speed": null,
+          "other": {
+            "method": "rolling tubes between palms"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "pour",
+        "parameters": {
+          "container": "plate",
+          "reagent": "contents of tube",
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "tilt",
+        "parameters": {
+          "container": "plate",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "goal": "cover entire surface with soft agar"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "allow",
+        "parameters": {
+          "container": "plate",
+          "reagent": "top agar",
+          "volume": null,
+          "temperature": null,
+          "duration": "maybe 20 minutes",
+          "speed": null,
+          "other": {
+            "goal": "solidify and stick to bottom agar"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "invert",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "orientation": "lid down"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.95
+      },
+      {
+        "action": "incubate",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": "25\u00b0C",
+          "duration": null,
+          "speed": null,
+          "other": {
+            "light": "continuous"
+          }
+        },
+        "automatable": true,
+        "confidence": 1.0
+      },
+      {
+        "action": "stack",
+        "parameters": {
+          "container": "plates",
+          "reagent": null,
+          "volume": null,
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "depth": "only two deep",
+            "note": "plaque size increases if stacked deeper"
+          }
+        },
+        "automatable": false,
+        "confidence": 0.9
+      },
+      {
+        "action": "count",
+        "parameters": {
+          "container": "plates",
+          "reagent": "plaques",
+          "volume": null,
+          "temperature": null,
+          "duration": "after 3-4 days incubation",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": false,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plates, reagent: soft agar, other: {'timing': 'day of titering or day before'})\n# MANUAL: melt (reagent: MBBM soft agar, other: {})\n\n### AUTOMATED SECTION ###\nhold(reagent='MBBM soft agar', temperature='50\u00b0C', location='water bath')\ndispense(container='sterile 13 x 100 mm tubes', reagent='soft agar', volume='2.5 ml')\nhold(container='sterile 13 x 100 mm tubes', reagent='soft agar', volume='2.5 ml', temperature='50\u00b0C')\nconcentrate(container='Sorvall centrifuge', reagent='NC64A chlorella', temperature='4\u00b0C', duration='5 min', speed='5,000 rpm', final concentration='4.0 x 10^8 cells/ml')\nresuspend(reagent='pellets', medium='fresh medium')\nconcentrate(reagent='NC64A chlorella', volume='enough for 0.3 ml per plate')\n\n### MANUAL SECTION ###\n# MANUAL: make (container: sterile 13 x 100 mm tubes, reagent: dilution blanks for virus, other: {'buffer': '50 mM Tris-HCl, pH 7.8'})\n\n### AUTOMATED SECTION ###\ndilute(reagent='virus', method='1/10 serial dilutions')\n\n### MANUAL SECTION ###\n# MANUAL: label (container: plates, other: {})\n# MANUAL: remove (container: 13 x 100 mm tubes of soft agar, other: {'from': 'water bath', 'to': 'test tube rack'})\n\n### AUTOMATED SECTION ###\nadd(container='each tube', reagent='concentrated chlorella', volume='0.3 ml', note='use 0.05 to 0.1 ml for NY-2A virus')\nadd(container='each tube', reagent='diluted virus', volume='0.1 ml', note='for NY-2A virus, use 0.05 to 0.1 ml of concentrated chlorella')\nmix(container='tube', duration='briefly', method='rolling tubes between palms')\n\n### MANUAL SECTION ###\n# MANUAL: pour (container: plate, reagent: contents of tube, other: {})\n# MANUAL: tilt (container: plate, other: {'goal': 'cover entire surface with soft agar'})\n\n### AUTOMATED SECTION ###\nallow(container='plate', reagent='top agar', duration='maybe 20 minutes', goal='solidify and stick to bottom agar')\n\n### MANUAL SECTION ###\n# MANUAL: invert (container: plates, other: {'orientation': 'lid down'})\n\n### AUTOMATED SECTION ###\nincubate(container='plates', temperature='25\u00b0C', light='continuous')\n\n### MANUAL SECTION ###\n# MANUAL: stack (container: plates, other: {'depth': 'only two deep', 'note': 'plaque size increases if stacked deeper'})\n# MANUAL: count (container: plates, reagent: plaques, duration: after 3-4 days incubation, other: {})",
+    "source_file": "protocol_72.txt"
+  }
+]

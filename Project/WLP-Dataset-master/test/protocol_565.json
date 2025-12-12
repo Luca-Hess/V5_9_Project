@@ -1,0 +1,125 @@
+[
+  {
+    "protocol": "Buffers for Chloroplast Isolation from Diatoms\nIsolation Buffer (40 mL)\n1) Mix:\n20 ml 1 M sorbitol400 \u03bcl 0.6 M Na2-EDTA200 \u03bcl 1 M MgCl2400 \u03bcl 1 M KCl40 \u03bcl 1 M MnCl22 ml 1 M HEPES-KOH pH = 8.016.96 ml Sterile H2O.\n2) Add bovine serum albumen (BSA) 1% (w/v) just before use to subset of isolation buffer needed at the beginning of the procedure PEG-6000 Solution.\nMix:6 g PEG10 ml water\u00a0\u00a0 Percoll Solution (20 mL Stock).\nMix:19 ml Percoll1 ml PEG \u2013 6000 solution0.2 g Ficoll0.2 g BSA Gradient Mixture (10 mL Stock).\nMix:250 \u03bcl 1 M HEPES-KOH pH = 8.01 ml 0.1 M EDTA6.26 ml 1 M sorbitol2.49 ml water 3X Bottom Layer (80% Percoll).\nMix:5.7 ml Percoll Solution1.01 ml Gradient Mixture 3X Top Layer (40% Percoll).\nMix:5.04 ml Percoll Solution6.96 ml Gradient Mixture 10M Ammonium Fluoride (NH4F).\nMix:3.7 g NH4F10 ml H2O",
+    "actions": [
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "1 M sorbitol, 0.6 M Na2-EDTA, 1 M MgCl2, 1 M KCl, 1 M MnCl2, 1 M HEPES-KOH pH 8.0, Sterile H2O",
+          "volume": "20 ml, 400 \u03bcl, 200 \u03bcl, 400 \u03bcl, 40 \u03bcl, 2 ml, 16.96 ml",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "add",
+        "parameters": {
+          "container": null,
+          "reagent": "bovine serum albumen (BSA) 1% (w/v)",
+          "volume": "to subset of isolation buffer needed",
+          "temperature": null,
+          "duration": "just before use",
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.8
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "PEG, water",
+          "volume": "6 g PEG, 10 ml water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Percoll, PEG-6000 solution, Ficoll, BSA",
+          "volume": "19 ml Percoll, 1 ml PEG-6000 solution, 0.2 g Ficoll, 0.2 g BSA",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "1 M HEPES-KOH pH 8.0, 0.1 M EDTA, 1 M sorbitol, water",
+          "volume": "250 \u03bcl 1 M HEPES-KOH pH 8.0, 1 ml 0.1 M EDTA, 6.26 ml 1 M sorbitol, 2.49 ml water",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Percoll Solution, Gradient Mixture",
+          "volume": "5.7 ml Percoll Solution, 1.01 ml Gradient Mixture",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "layer": "3X Bottom Layer (80% Percoll)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "Percoll Solution, Gradient Mixture",
+          "volume": "5.04 ml Percoll Solution, 6.96 ml Gradient Mixture",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {
+            "layer": "3X Top Layer (40% Percoll)"
+          }
+        },
+        "automatable": true,
+        "confidence": 0.95
+      },
+      {
+        "action": "mix",
+        "parameters": {
+          "container": null,
+          "reagent": "NH4F, H2O",
+          "volume": "3.7 g NH4F, 10 ml H2O",
+          "temperature": null,
+          "duration": null,
+          "speed": null,
+          "other": {}
+        },
+        "automatable": true,
+        "confidence": 0.95
+      }
+    ],
+    "script": "# Lab Automation Script\n# Generated from protocol analysis\n\n\n### AUTOMATED SECTION ###\nmix(reagent='1 M sorbitol, 0.6 M Na2-EDTA, 1 M MgCl2, 1 M KCl, 1 M MnCl2, 1 M HEPES-KOH pH 8.0, Sterile H2O', volume='20 ml, 400 \u03bcl, 200 \u03bcl, 400 \u03bcl, 40 \u03bcl, 2 ml, 16.96 ml')\nadd(reagent='bovine serum albumen (BSA) 1% (w/v)', volume='to subset of isolation buffer needed', duration='just before use')\nmix(reagent='PEG, water', volume='6 g PEG, 10 ml water')\nmix(reagent='Percoll, PEG-6000 solution, Ficoll, BSA', volume='19 ml Percoll, 1 ml PEG-6000 solution, 0.2 g Ficoll, 0.2 g BSA')\nmix(reagent='1 M HEPES-KOH pH 8.0, 0.1 M EDTA, 1 M sorbitol, water', volume='250 \u03bcl 1 M HEPES-KOH pH 8.0, 1 ml 0.1 M EDTA, 6.26 ml 1 M sorbitol, 2.49 ml water')\nmix(reagent='Percoll Solution, Gradient Mixture', volume='5.7 ml Percoll Solution, 1.01 ml Gradient Mixture', layer='3X Bottom Layer (80% Percoll)')\nmix(reagent='Percoll Solution, Gradient Mixture', volume='5.04 ml Percoll Solution, 6.96 ml Gradient Mixture', layer='3X Top Layer (40% Percoll)')\nmix(reagent='NH4F, H2O', volume='3.7 g NH4F, 10 ml H2O')",
+    "source_file": "protocol_565.txt"
+  }
+]
