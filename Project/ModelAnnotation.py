@@ -1,23 +1,19 @@
 import os
 import json
-from functools import total_ordering
 
 import torch
 import tqdm
-import re
 
 from typing import List, Dict, Optional
 
 from transformers import T5Tokenizer, T5ForConditionalGeneration
 from torch.optim import AdamW, lr_scheduler
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import DataLoader
 from torch.cuda.amp import GradScaler, autocast
 from peft import LoraConfig, get_peft_model
 
-from LLMExtraction import ImprovedAnnotationToScriptConverter #rules based
 from protocol_json_dataset import ProtocolJsonDataset
 from json_script_converter import JsonScriptConverter
-
 
 def load_model(use_cuda: bool = torch.cuda.is_available()) -> (T5ForConditionalGeneration, T5Tokenizer, torch.device):
     """Load T5 model and tokenizer"""

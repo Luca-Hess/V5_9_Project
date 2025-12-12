@@ -1,7 +1,6 @@
 
 import os
-import json
-from typing import Dict, List, Optional
+from typing import Dict, List
 from torch.utils.data import Dataset
 
 class ProtocolJsonDataset(Dataset):

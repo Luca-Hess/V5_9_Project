@@ -1,0 +1,12 @@
+name: project-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+    - peft==0.17.1
+    - torch==2.8.0
+    - tqdm==4.67.1
+    - transformers==4.56.2
