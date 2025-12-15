@@ -1,0 +1,1987 @@
+Python executable:
+Python 3.10.19
+GPU Info:
+Mon Dec 15 12:35:06 2025       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.161.07             Driver Version: 535.161.07   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA L40S                    On  | 00000000:8C:00.0 Off |                    0 |
+| N/A   29C    P8              33W / 350W |      0MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+Working directory:
+/cfs/earth/scratch/hessluc1/ADL
+
+============================================================
+Phase 1: Training JSON Extraction Model
+============================================================
+
+trainable params: 285,212,672 || all params: 19,744,826,368 || trainable%: 1.4445
+Trainable parameters: 285212672 / 19744826368 (1.44%)
+Skipping protocol_344.txt: target 2915 tokens > 2048
+Skipping protocol_423.txt: target 3082 tokens > 2048
+Skipping protocol_613.txt: target 2282 tokens > 2048
+Skipping protocol_392.txt: target 2959 tokens > 2048
+Skipping protocol_427.txt: target 2486 tokens > 2048
+Skipping protocol_295.txt: target 7422 tokens > 2048
+Skipping protocol_517.txt: target 3072 tokens > 2048
+Skipping protocol_300.txt: target 3586 tokens > 2048
+Skipping protocol_590.txt: target 2374 tokens > 2048
+Skipping protocol_289.txt: target 3323 tokens > 2048
+Skipping protocol_42.txt: input 4104 tokens > 2048
+Skipping protocol_449.txt: target 2852 tokens > 2048
+Skipping protocol_543.txt: target 2283 tokens > 2048
+Skipping protocol_609.txt: target 2587 tokens > 2048
+Skipping protocol_452.txt: target 2845 tokens > 2048
+Skipping protocol_368.txt: target 2871 tokens > 2048
+Skipping protocol_58.txt: target 2899 tokens > 2048
+Skipping protocol_582.txt: target 3140 tokens > 2048
+Skipping protocol_374.txt: target 2078 tokens > 2048
+Skipping protocol_66.txt: target 2122 tokens > 2048
+Skipping protocol_607.txt: target 3463 tokens > 2048
+Skipping protocol_105.txt: input 2265 tokens > 2048
+Skipping protocol_365.txt: target 5899 tokens > 2048
+Skipping protocol_67.txt: input 2748 tokens > 2048
+Skipping protocol_246.txt: target 4758 tokens > 2048
+Skipping protocol_74.txt: target 2622 tokens > 2048
+Skipping protocol_157.txt: target 10034 tokens > 2048
+Skipping protocol_25.txt: target 2637 tokens > 2048
+Skipping protocol_148.txt: target 3035 tokens > 2048
+Skipping protocol_116.txt: target 6170 tokens > 2048
+Skipping protocol_347.txt: target 2086 tokens > 2048
+Skipping protocol_371.txt: target 5863 tokens > 2048
+Skipping protocol_93.txt: target 5741 tokens > 2048
+Skipping protocol_333.txt: target 4396 tokens > 2048
+Skipping protocol_385.txt: input 3640 tokens > 2048
+Skipping protocol_155.txt: target 2970 tokens > 2048
+Skipping protocol_341.txt: target 2825 tokens > 2048
+Skipping protocol_387.txt: target 2828 tokens > 2048
+Skipping protocol_445.txt: target 3344 tokens > 2048
+Skipping protocol_180.txt: target 3026 tokens > 2048
+Skipping protocol_94.txt: target 3708 tokens > 2048
+Skipping protocol_472.txt: target 2060 tokens > 2048
+Skipping protocol_299.txt: target 2386 tokens > 2048
+Skipping protocol_187.txt: target 2221 tokens > 2048
+Skipping protocol_209.txt: target 2825 tokens > 2048
+Skipping protocol_53.txt: target 2404 tokens > 2048
+Skipping protocol_46.txt: target 2055 tokens > 2048
+Skipping protocol_33.txt: target 3036 tokens > 2048
+Skipping protocol_444.txt: target 3916 tokens > 2048
+Skipping protocol_101.txt: target 2146 tokens > 2048
+Skipping protocol_577.txt: target 5637 tokens > 2048
+Skipping protocol_497.txt: target 2435 tokens > 2048
+Skipping protocol_169.txt: target 4090 tokens > 2048
+Skipping protocol_123.txt: target 3184 tokens > 2048
+Skipping protocol_115.txt: target 2721 tokens > 2048
+Skipping protocol_391.txt: target 2330 tokens > 2048
+Skipping protocol_133.txt: target 3614 tokens > 2048
+Skipping protocol_430.txt: target 5768 tokens > 2048
+Skipping protocol_544.txt: target 2285 tokens > 2048
+Skipping protocol_142.txt: target 3753 tokens > 2048
+Skipping protocol_317.txt: target 2331 tokens > 2048
+Skipping protocol_413.txt: target 2795 tokens > 2048
+Skipping protocol_332.txt: target 4538 tokens > 2048
+Skipping protocol_504.txt: target 4446 tokens > 2048
+Skipping protocol_507.txt: target 3298 tokens > 2048
+Skipping protocol_124.txt: target 2596 tokens > 2048
+Skipping protocol_409.txt: target 3099 tokens > 2048
+Skipping protocol_370.txt: target 2399 tokens > 2048
+Skipping protocol_36.txt: target 3336 tokens > 2048
+Skipping protocol_424.txt: target 2460 tokens > 2048
+Skipping protocol_54.txt: target 3730 tokens > 2048
+Skipping protocol_482.txt: target 4355 tokens > 2048
+Skipping protocol_412.txt: target 2071 tokens > 2048
+Skipping protocol_13.txt: target 7394 tokens > 2048
+Skipping protocol_167.txt: target 3441 tokens > 2048
+Skipping protocol_234.txt: target 3152 tokens > 2048
+Skipping protocol_59.txt: target 4373 tokens > 2048
+Skipping protocol_248.txt: target 3417 tokens > 2048
+Skipping protocol_129.txt: target 3005 tokens > 2048
+Skipping protocol_390.txt: target 7314 tokens > 2048
+Skipping protocol_457.txt: target 3111 tokens > 2048
+Skipping protocol_139.txt: target 3107 tokens > 2048
+Skipping protocol_446.txt: target 2358 tokens > 2048
+Skipping protocol_539.txt: target 3357 tokens > 2048
+Skipping protocol_447.txt: target 3000 tokens > 2048
+Skipping protocol_75.txt: target 3055 tokens > 2048
+Skipping protocol_529.txt: target 2396 tokens > 2048
+Skipping protocol_7.txt: target 2221 tokens > 2048
+Skipping protocol_232.txt: target 2232 tokens > 2048
+Skipping protocol_202.txt: target 6758 tokens > 2048
+Skipping protocol_219.txt: target 3641 tokens > 2048
+Skipping protocol_147.txt: target 5864 tokens > 2048
+Skipping protocol_612.txt: target 2435 tokens > 2048
+Skipping protocol_100.txt: target 3438 tokens > 2048
+Skipping protocol_406.txt: target 5337 tokens > 2048
+Skipping protocol_556.txt: target 3796 tokens > 2048
+Skipping protocol_522.txt: target 3073 tokens > 2048
+Skipping protocol_283.txt: target 2185 tokens > 2048
+Skipping protocol_568.txt: target 3681 tokens > 2048
+Skipping protocol_487.txt: target 5419 tokens > 2048
+Skipping protocol_102.txt: target 3747 tokens > 2048
+Skipping protocol_84.txt: target 5403 tokens > 2048
+Skipping protocol_10.txt: target 2665 tokens > 2048
+Skipping protocol_342.txt: target 4714 tokens > 2048
+Skipping protocol_394.txt: target 3532 tokens > 2048
+Skipping protocol_175.txt: target 2499 tokens > 2048
+Skipping protocol_178.txt: target 3619 tokens > 2048
+Skipping protocol_581.txt: target 3373 tokens > 2048
+Skipping protocol_280.txt: target 7227 tokens > 2048
+Skipping protocol_548.txt: target 3412 tokens > 2048
+Skipping protocol_136.txt: target 2433 tokens > 2048
+Skipping protocol_18.txt: target 4857 tokens > 2048
+Skipping protocol_340.txt: target 5436 tokens > 2048
+Skipping protocol_403.txt: target 12660 tokens > 2048
+Skipping protocol_8.txt: target 6178 tokens > 2048
+Skipping protocol_534.txt: target 4529 tokens > 2048
+Skipping protocol_266.txt: target 3083 tokens > 2048
+Skipping protocol_304.txt: target 4244 tokens > 2048
+Skipping protocol_90.txt: target 2199 tokens > 2048
+Skipping protocol_23.txt: target 6918 tokens > 2048
+Skipping protocol_337.txt: target 3719 tokens > 2048
+Skipping protocol_260.txt: target 2861 tokens > 2048
+Skipping protocol_243.txt: target 2214 tokens > 2048
+Skipping protocol_416.txt: target 3293 tokens > 2048
+Skipping protocol_154.txt: target 3421 tokens > 2048
+Skipping protocol_440.txt: target 3808 tokens > 2048
+Skipping protocol_537.txt: target 3387 tokens > 2048
+Skipping protocol_454.txt: target 2786 tokens > 2048
+Skipping protocol_389.txt: target 2544 tokens > 2048
+Skipping protocol_429.txt: target 2723 tokens > 2048
+Skipping protocol_349.txt: target 3109 tokens > 2048
+Skipping protocol_503.txt: input 3181 tokens > 2048
+Skipping protocol_172.txt: target 2082 tokens > 2048
+Skipping protocol_14.txt: target 2836 tokens > 2048
+Skipping protocol_486.txt: target 4358 tokens > 2048
+Skipping protocol_357.txt: target 6460 tokens > 2048
+Skipping protocol_191.txt: target 2358 tokens > 2048
+Skipping protocol_111.txt: target 2268 tokens > 2048
+Skipping protocol_55.txt: target 3621 tokens > 2048
+Skipping protocol_208.txt: target 3068 tokens > 2048
+Skipping protocol_450.txt: target 2954 tokens > 2048
+Skipping protocol_308.txt: target 2302 tokens > 2048
+Skipping protocol_250.txt: target 2213 tokens > 2048
+Skipping protocol_428.txt: target 2928 tokens > 2048
+Skipping protocol_61.txt: target 2103 tokens > 2048
+Skipping protocol_197.txt: input 3824 tokens > 2048
+Skipping protocol_206.txt: target 2554 tokens > 2048
+Skipping protocol_479.txt: target 4461 tokens > 2048
+Skipping protocol_620.txt: target 4889 tokens > 2048
+Skipping protocol_19.txt: target 3487 tokens > 2048
+Skipping protocol_26.txt: target 2228 tokens > 2048
+Skipping protocol_264.txt: target 2095 tokens > 2048
+Skipping protocol_448.txt: target 3563 tokens > 2048
+Skipping protocol_591.txt: target 3749 tokens > 2048
+Skipping protocol_57.txt: target 2720 tokens > 2048
+Skipping protocol_463.txt: target 2693 tokens > 2048
+Skipping protocol_186.txt: target 3712 tokens > 2048
+Skipping protocol_490.txt: target 2794 tokens > 2048
+Skipping protocol_610.txt: target 5313 tokens > 2048
+Skipping protocol_114.txt: target 2907 tokens > 2048
+Skipping protocol_336.txt: target 2311 tokens > 2048
+Skipping protocol_451.txt: target 4421 tokens > 2048
+Skipping protocol_211.txt: target 4089 tokens > 2048
+Skipping protocol_170.txt: target 2099 tokens > 2048
+Skipping protocol_400.txt: target 2488 tokens > 2048
+Skipping protocol_535.txt: target 2836 tokens > 2048
+Skipping protocol_269.txt: target 2698 tokens > 2048
+Skipping protocol_489.txt: target 5296 tokens > 2048
+Skipping protocol_27.txt: target 5894 tokens > 2048
+Skipping protocol_267.txt: target 3091 tokens > 2048
+Skipping protocol_401.txt: target 2976 tokens > 2048
+Skipping protocol_551.txt: target 3703 tokens > 2048
+Skipping protocol_37.txt: target 4070 tokens > 2048
+Skipping protocol_469.txt: target 9170 tokens > 2048
+Skipping protocol_323.txt: target 5506 tokens > 2048
+Skipping protocol_31.txt: target 2847 tokens > 2048
+Skipping protocol_273.txt: target 3383 tokens > 2048
+Skipping protocol_141.txt: target 6178 tokens > 2048
+Skipping protocol_239.txt: target 2577 tokens > 2048
+Skipping protocol_588.txt: target 3380 tokens > 2048
+Skipping protocol_127.txt: target 2818 tokens > 2048
+Skipping protocol_189.txt: target 2662 tokens > 2048
+Skipping protocol_305.txt: target 2397 tokens > 2048
+Skipping protocol_474.txt: target 4338 tokens > 2048
+Skipping protocol_146.txt: target 3683 tokens > 2048
+Skipping protocol_138.txt: input 2308 tokens > 2048
+Skipping protocol_194.txt: target 3467 tokens > 2048
+Skipping protocol_120.txt: target 4372 tokens > 2048
+Skipping protocol_63.txt: target 3083 tokens > 2048
+Skipping protocol_95.txt: target 2757 tokens > 2048
+Skipping protocol_386.txt: target 3136 tokens > 2048
+Skipping protocol_364.txt: target 2064 tokens > 2048
+Skipping protocol_76.txt: target 3669 tokens > 2048
+Skipping protocol_584.txt: target 2187 tokens > 2048
+Skipping protocol_109.txt: target 3080 tokens > 2048
+Skipping protocol_258.txt: target 3139 tokens > 2048
+Skipping protocol_519.txt: target 3327 tokens > 2048
+Skipping protocol_362.txt: target 3672 tokens > 2048
+Skipping protocol_576.txt: target 2521 tokens > 2048
+Skipping protocol_52.txt: target 2630 tokens > 2048
+Skipping protocol_436.txt: target 2182 tokens > 2048
+Skipping protocol_287.txt: target 2723 tokens > 2048
+Skipping protocol_310.txt: target 2234 tokens > 2048
+Skipping protocol_521.txt: target 4530 tokens > 2048
+Skipping protocol_195.txt: target 2931 tokens > 2048
+Skipping protocol_334.txt: target 3632 tokens > 2048
+Skipping protocol_462.txt: target 3472 tokens > 2048
+Skipping protocol_242.txt: target 3202 tokens > 2048
+Skipping protocol_188.txt: target 3554 tokens > 2048
+Skipping protocol_618.txt: target 2161 tokens > 2048
+Skipping protocol_439.txt: target 4360 tokens > 2048
+Skipping protocol_229.txt: target 2062 tokens > 2048
+Skipping protocol_0.txt: target 2943 tokens > 2048
+Skipping protocol_410.txt: target 4728 tokens > 2048
+Skipping protocol_128.txt: target 2149 tokens > 2048
+Skipping protocol_499.txt: target 2395 tokens > 2048
+Skipping protocol_355.txt: target 3012 tokens > 2048
+Skipping protocol_292.txt: target 3522 tokens > 2048
+Skipping protocol_619.txt: target 3434 tokens > 2048
+Skipping protocol_384.txt: target 3943 tokens > 2048
+Skipping protocol_354.txt: target 4420 tokens > 2048
+Skipping protocol_580.txt: target 2314 tokens > 2048
+Skipping protocol_41.txt: target 2512 tokens > 2048
+Skipping protocol_203.txt: target 5243 tokens > 2048
+Skipping protocol_262.txt: target 3133 tokens > 2048
+Skipping protocol_163.txt: target 3313 tokens > 2048
+Skipping protocol_502.txt: target 6272 tokens > 2048
+Skipping protocol_297.txt: target 3672 tokens > 2048
+Skipping protocol_237.txt: target 2443 tokens > 2048
+Skipping protocol_464.txt: target 2199 tokens > 2048
+Skipping protocol_251.txt: target 9791 tokens > 2048
+Skipping protocol_583.txt: target 5112 tokens > 2048
+Skipping protocol_153.txt: target 2555 tokens > 2048
+Skipping protocol_164.txt: target 2207 tokens > 2048
+Skipping protocol_318.txt: target 4280 tokens > 2048
+Skipping protocol_500.txt: target 3029 tokens > 2048
+Skipping protocol_615.txt: target 3064 tokens > 2048
+Skipping protocol_326.txt: target 2312 tokens > 2048
+Skipping protocol_569.txt: target 4904 tokens > 2048
+Loaded 258 examples from WLP-Dataset-master/train
+Train samples: 207, Val samples: 51
+Epoch 1 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 3.33e-05
+  Saved best model to json_extractor_model
+Epoch 2 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 5.00e-05
+Epoch 3 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 4.97e-05
+Epoch 4 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 4.91e-05
+Epoch 5 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 4.82e-05
+Epoch 6 | Validation Loss: 6.5926 | Val JSON Parse Rate: 100.00% | LR: 4.70e-05
+Early stopping triggered.
+Model saved to json_extractor_model
+
+============================================================
+Phase 2: Evaluating JSON Extraction Model on Test Set
+============================================================
+
+
+============================================================
+Evaluating on Test Set
+============================================================
+
+Loading model from json_extractor_model
+Base model: google/flan-ul2
+Model loaded successfully!
+
+Found 125 protocols.
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): RNA FISH Protocol for Adherent Cells
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate. Aspirate growth medium, and wash with 1 mL of 1X PBS. Add 1 mL of fixation buffer. Incubate at room temperature for 10 minutes.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate. Aspirate growth medium, and wash with 1 mL of 1X PBS. Add 1 mL of fixation buffer. Incubate at room temperature for 10 minutes. Wash with 1 mL of 1X PBS. Wash again with 1 mL of 1X PBS. To permeabilize, immerse cells in 1 mL of
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): prepare_ethanol, prepare_cells, wash_cells, loosen_cell_pellet, add_ethanol, incubate_cells, wash_cells, stain_cells, stain_cells_with_antibody, stain_cells_for_flow_cytometry
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare 70% ethanol and chill at -20°C. Prepare target cells of interest and wash 2X with PBS by centrifuge at 350xg for 5 minutes. Discard supernatant and loosen the cell pellet by vortexing. Add 3 m
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare 70% ethanol and chill at -20°C. Prepare target cells of interest and wash 2X with PBS by centrifuge at 350xg for 5 minutes. Discard supernatant and loosen the cell pellet by vortexing. Add 3 ml cold 70% ethanol drop by drop to the cell pellet while vortexing. Continue vortexing for 30 second
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Agitate gel twice with 50% MeOH, 10% acetic acid (Fixer 1) for 15 min ea. Agitate in 10% EtOH, 5% glacial acetic acid (Fixer 2) for 6 min. Agitate in distilled water. Agitate twice (9 min each) with 5
+Successfully parsed JSON with 1 actions
+Failed to process protocol_253.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): aliquot 0.5ml Gram positive bacteria overnight culture into a 1.5ml microfuge tube and centrifuge at 14,000xg for 30 seconds. discard the supernatant. add 450l sterile water and 50l EDTA to the pellet
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Aliquot 0.5ml Gram positive bacteria overnight culture into a 1.5ml microfuge tube and centrifuge at 14,000xg for 30 seconds. Discard the supernatant. Add 450l sterile water and 50l EDTA to the pellet
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Aliquot 0.5ml Gram positive bacteria overnight culture into a 1.5ml microfuge tube and centrifuge at 14,000xg for 30 seconds. Discard the supernatant. Add 450l sterile water and 50l EDTA to the pellet and gently vortex to resuspend. Add 50l LonglifeTM Lysozyme, invert to mix and incubate at 37°C for
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): PCR_with_Taq_DNA_Polymerase (M0273) Set up the following reaction on ice. Gently mix the reaction. Collect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): PCR_with_Taq_DNA_Polymerase Set up the following reaction on ice. Gently mix the reaction. Collect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with mineral
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+PCR_with_Taq_DNA_Polymerase Set up the following reaction on ice. Gently mix the reaction. Collect all liquid to the bottom of the tube by a quick spin if necessary and overlay the sample with mineral oil if using a PCR machine without a heated lid. Transfer PCR tubes from ice to a PCR machine with 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): s = """
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): a = [] b = [] c = [] d = [] e = [] f = [] g = [] h = [] i = [] j = [] k = [] l = [] m = [] n = [] o = [] p = [] q = [] r = [] s = [] t = [] u = [] v = [] w = [] x = [] y = [] z = [] a.append([]) b.app
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+Array extraction failed: Extra data: line 1 column 4 (char 3)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Thaw a tube of NEB 10-beta Competent E. coli cells on ice until the last ice crystals disappear. Mix gently and carefully pipette 50 l of cells into a transformation tube on ice. Add 1-5 l containing 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Thaw a tube of NEB 10-beta Competent E. coli cells on ice until the last ice crystals disappear. Mix gently and carefully pipette 50 l of cells into a transformation tube on ice. Add 1-5 l containing 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Thaw a tube of NEB 10-beta Competent E. coli cells on ice until the last ice crystals disappear. Mix gently and carefully pipette 50 l of cells into a transformation tube on ice. Add 1-5 l containing 1 pg-100 ng of plasmid DNA to the cell mixture. Carefully flick the tube 4-5 times to mix cells and 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_220.txt: 1402 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Centrifuge anti-sera @ 4oC, 14,000g, 10min. (Optional) Filter through 0.2um filter. Apply protein A or protein G beads gently to Bio-Rad empty gravity column. Set up the column on a vacuum manifold. E
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Centrifuge anti-sera @ 4oC, 14,000g, 10min. (Optional) Filter through 0.2um filter. Apply protein A or protein G beads gently to Bio-Rad empty gravity column. Set up the column on a vacuum manifold. E
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Centrifuge anti-sera @ 4oC, 14,000g, 10min. (Optional) Filter through 0.2um filter. Apply protein A or protein G beads gently to Bio-Rad empty gravity column. Set up the column on a vacuum manifold. Equilibrate column with 10 volumes of ice cold Binding Buffer. Dilute anti-sera with 2 volumes of Bin
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): lysogens = [(VDCT - VDCC)/Bz]/BDC T=o'
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+Array extraction failed: Expecting value: line 1 column 2 (char 1)
+Successfully parsed JSON with 1 actions
+Failed to process protocol_302.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): 10x Tris-Glycine PAGE Running Buffer
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): 10x Tris-Glycine PAGE Running Buffer Fill 1L pyrex bottle with 700mL dH20 Add 30.2g Tris base. Add 144.2g glycine pH solution to 8.80 after disolution of tris and glycine. Add 10g SDS (1% final). Fill
+Direct parse failed: Extra data: line 1 column 3 (char 2)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting ',' delimiter: line 1 column 4 (char 3)
+All parsing strategies failed. Raw output (first 300 chars):
+10x Tris-Glycine PAGE Running Buffer Fill 1L pyrex bottle with 700mL dH20 Add 30.2g Tris base. Add 144.2g glycine pH solution to 8.80 after disolution of tris and glycine. Add 10g SDS (1% final). Fill to 1L with dH20
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Embryoid bodies generation
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Generate embryoid bodies.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Generate embryoid bodies.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Screening Recombinant Clones by PCR.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Screening Recombinant Clones by PCR.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Screening Recombinant Clones by PCR.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): kane_lab_lyophilized_coffee place_1_cup_of_coffee (cream&sugar ok) in a (clean) lyophilization_flask. flash_freeze by bathing_flask, with_hand_rotation, in a bath of liquid_nitrogen, until all_liquid_
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): kane_lab_lyophilized_coffee Place 1 cup of coffee (cream&sugar ok) in a (clean) lyophilization flask. Flash freeze by bathing flask, with hand rotation, in a bath of liquid nitrogen, until all liquid 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+kane_lab_lyophilized_coffee Place 1 cup of coffee (cream&sugar ok) in a (clean) lyophilization flask. Flash freeze by bathing flask, with hand rotation, in a bath of liquid nitrogen, until all liquid frozen. Attach to vacuum lyophilization system overnight.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Set up the following reaction with Enzyme #1 (total reaction volume 50 l). Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube. Quick ("touch") spin-down i
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Set up the following reaction with Enzyme #1 (total reaction volume 50 l). Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube. Quick ("touch") spin-down i
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Set up the following reaction with Enzyme #1 (total reaction volume 50 l). Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube. Quick ("touch") spin-down in a microcentrifuge. Do not vortex the reaction. Incubate for 1 hour at the enzyme-specific appropri
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Filtering for Cell Collection
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): pump  steel filter tank  a/e filter  durapore  di rinsed cubie container
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+pump  steel filter tank  a/e filter  durapore  di rinsed cubie container
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): PCR_Protocol_for_OneTaq_DNA_Polymerase_(M0480) Set up the following reaction on ice: Component25 l reaction50 l reactionFinal Concentration5X OneTaq Standard Reaction Buffer*5 l10 l1X10 mM dNTPs (#N04
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): PCR Protocol for OneTaq® DNA Polymerase (M0480) Set up the following reaction on ice: Component25 l reaction50 l reactionFinal Concentration5X OneTaq Standard Reaction Buffer*5 l10 l1X10 mM dNTPs (#N0
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+PCR Protocol for OneTaq® DNA Polymerase (M0480) Set up the following reaction on ice: Component25 l reaction50 l reactionFinal Concentration5X OneTaq Standard Reaction Buffer*5 l10 l1X10 mM dNTPs (#N0447)0.5 l1 l200 M10 M Forward Primer0.5 l1 l0.2 M10 M Reverse Primer0.5 l1 l0.2 MOneTaq DNA Polymera
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Arrange vials so that they all sit upright in a large plastic cage. Place caps into a small cage. Place cages upright into a soap bath overnight. Remove cages from soap, and rinse thoroughly 7 times t
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Arrange vials so that they all sit upright in a large plastic cage. Place caps into a small cage. Place cages upright into a soap bath overnight. Remove cages from soap, and rinse thoroughly 7 times t
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Arrange vials so that they all sit upright in a large plastic cage. Place caps into a small cage. Place cages upright into a soap bath overnight. Remove cages from soap, and rinse thoroughly 7 times to remove soap. Place cages upright into a 1N HCl bath. Remove vials and caps from the bath and rinse
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Stellaris® RNA FISH Cells in Suspension Protocol.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): RNA FISH Cells in Suspension Protocol.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+RNA FISH Cells in Suspension Protocol.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): MojoSortTM Positive Selection Columns Protocol
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): MojoSortTM Positive Selection Columns Protocol prepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSortTMbuffer is recommended) pass the cells through a 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+MojoSortTM Positive Selection Columns Protocol prepare a single cell suspension and resuspend the cells with ice cold cell separation buffer (MojoSortTMbuffer is recommended) pass the cells through a 70 m filter, centrifuge (300 x g for 5 minutes), discard the supernatant and resuspend the cells in 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Rinse a 60 mm culture dish of confluent cells with PBS. Lyse the cells with 0.5 ml cold Immunoprecipitation Buffer. Maintain constant agitation for 30 minutes at 4°C. Scrape the cells from the dish. S
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Rinse a 60 mm culture dish of confluent cells with PBS. Lyse the cells with 0.5 ml cold Immunoprecipitation Buffer. Maintain constant agitation for 30 minutes at 4°C. Scrape the cells from the dish. S
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Rinse a 60 mm culture dish of confluent cells with PBS. Lyse the cells with 0.5 ml cold Immunoprecipitation Buffer. Maintain constant agitation for 30 minutes at 4°C. Scrape the cells from the dish. Sonicate on ice for 5 seconds; repeat 4 times. Centrifuge for 5 minutes at 4°C. Assay for total prote
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Dilute each sub-library to 50 ng/ul in water or EB Electroporate the library. Pre-chill 0.1 cm cuvettes, megaX cells, 10% glycerol on ice. Follow the table for the amounts of sub-library plasmid DNA a
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Dilute each sub-library to 50 ng/ul in water or EB Electroporate the library. Pre-chill 0.1 cm cuvettes, megaX cells, 10% glycerol on ice. Follow the table for the amounts of sub-library plasmid DNA a
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Dilute each sub-library to 50 ng/ul in water or EB Electroporate the library. Pre-chill 0.1 cm cuvettes, megaX cells, 10% glycerol on ice. Follow the table for the amounts of sub-library plasmid DNA and MegaX competent cells, mix gently and incubate on ice for 30 min. Add pre-chilled 10% glycerol to
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_235.txt: 1296 tokens > 1024
+Skipping protocol_86.txt: 1253 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): amplification_of_crispra_and_crispri_libraries_(v1.0)
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Re-amplification of CRISPRa and CRISPRi libraries (v1.0)
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Re-amplification of CRISPRa and CRISPRi libraries (v1.0)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ['Monterey Wharf II Weekly Phytoplankton Monitoring', 'Sample Collection and Processing Notes', 'A vertical net tow is collected using a 25m mesh plankton net with a 200mL cod-end piece at a depth of 
+Successfully parsed JSON with 4 actions
+Failed to process protocol_554.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): one-step-transformation-of-yeast
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Add 90 uL of 50% Polyethylene Glycol 3350 to a 1.5 mL microcentrifuge tube Add 10 uL of 0.2 N Lithium Acetate to the microcentrifuge tube Pellet yeast from 1 mL liquid culture or take a toothpick full
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Add 90 uL of 50% Polyethylene Glycol 3350 to a 1.5 mL microcentrifuge tube Add 10 uL of 0.2 N Lithium Acetate to the microcentrifuge tube Pellet yeast from 1 mL liquid culture or take a toothpick full of freshly grown yeast on a plate and resuspend in the solution Add 1 ug of DNA and briefly vortex 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Centrifuge the NC64A chlorella Resuspend the cells with sterile BBM Add filter-sterilized tetracycline (12.5 mg/Ml stock, add 0.1 mL per 50 mL of BBM solution) and PBCV-1 at an moi (multiplicity of in
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Centrifuge the NC64A chlorella (use actively growing cells approximately 1.0-2.0 X 107 cells/mL) in the Sorvall GSA rotor at 7,000 rpm, 5 min, 4°C. Use sterile bottles to harvest the cells. Discard th
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Centrifuge the NC64A chlorella (use actively growing cells approximately 1.0-2.0 X 107 cells/mL) in the Sorvall GSA rotor at 7,000 rpm, 5 min, 4°C. Use sterile bottles to harvest the cells. Discard the supernatants. Resuspend the cells with sterile BBM. Adjust the final volume to 500 mL with sterile
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Add 5 volumes of Buffer PB to 1 volume of the PCR sample and mix. If pH indicator I has beein added to Buffer PB, check that the color of the mixture is yellow. If the color of the mixture is orange o
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Add 5 volumes of Buffer PB to 1 volume of the PCR sample and mix. If pH indicator I has beein added to Buffer PB, check that the color of the mixture is yellow. If the color of the mixture is orange o
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Add 5 volumes of Buffer PB to 1 volume of the PCR sample and mix. If pH indicator I has beein added to Buffer PB, check that the color of the mixture is yellow. If the color of the mixture is orange or violet, add 10 l of 3 M sodium acetate, pH 5.0, and mix. The color of the mixture will turn to yel
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Autoclave the medium Add 15 g of artificial salt (Instant Ocean) Let the medium cool down to 50 °C Add 15 ml of Penicillin/Streptomycin (concentration: XX) and 6 ml of horse serum Pour the medium in p
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Autoclave the medium Add 15 g of artificial salt (Instant Ocean) Let the medium cool down to 50 °C Add 15 ml of Penicillin/Streptomycin (concentration: XX) and 6 ml of horse serum Pour the medium in p
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Autoclave the medium Add 15 g of artificial salt (Instant Ocean) Let the medium cool down to 50 °C Add 15 ml of Penicillin/Streptomycin (concentration: XX) and 6 ml of horse serum Pour the medium in petri dishes, about 5 ml each plate
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Construction of pGGDestTol2LC-sgRNA vectors
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Construction of pGGDestTol2LC-sgRNA vectors
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Construction of pGGDestTol2LC-sgRNA vectors
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): a_typical_dna_i_reaction (m0303) resuspend 10 g rna in 1x dna i reaction buffer to a final volume of 100 l add 2 units of dna i mix thoroughly incubate at 37 °c for 10 minutes add 1 l of 0.5 m edta (t
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): A Typical DNase I Reaction (M0303) resuspend 10 g RNA in 1X DNase I Reaction Buffer to a final volume of 100 l add 2 units of DNase I Mix thoroughly incubate at 37 °C for 10 minutes add 1 l of 0.5 M E
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+A Typical DNase I Reaction (M0303) resuspend 10 g RNA in 1X DNase I Reaction Buffer to a final volume of 100 l add 2 units of DNase I Mix thoroughly incubate at 37 °C for 10 minutes add 1 l of 0.5 M EDTA (to a final concentration of 5 mM) heat inactivate at 75 °C for 10 minutes
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Grow NC64A to mid-log phase. Concentrate to 1 x 108 cells/ml. Use 30 ml concentrated cells per time point (3 x 109 cells91 mg cells wet weight). Infect with virus at m.o.i.=5 for appropriate time. Har
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Grow NC64A to mid-log phase. Concentrate to 1 x 108 cells/ml. Use 30 ml concentrated cells per time point (3 x 109 cells91 mg cells wet weight). Infect with virus at m.o.i.=5 for appropriate time. Har
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Grow NC64A to mid-log phase. Concentrate to 1 x 108 cells/ml. Use 30 ml concentrated cells per time point (3 x 109 cells91 mg cells wet weight). Infect with virus at m.o.i.=5 for appropriate time. Harvest infected cells by centrifugation at 5000 rpm, 5 min., 4°C. Discard supernatant and flash freeze
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): resuspend cells in MojoSortTM Buffer. resuspend cells in an appropriate volume of MojoSortTM Buffer. aliquot 100 L of cell suspension (107 cells) into a new tube. add 5 L of the biotin anti-human CD14
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): ['Prepare cells from your tissue of interest without lysing erythrocytes', 'Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of M
+Direct parse failed: Expecting value: line 1 column 2 (char 1)
+Array extraction failed: Expecting value: line 1 column 2 (char 1)
+Successfully parsed JSON with 6 actions
+Failed to process protocol_513.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Radioactive Labeling with T4 PNK (M0201S) Set-up the following reaction:. Incubate at 37°C for 30 minutes. Heat inactivate by incubating at 65°C for 20 minutes.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Radioactive Labeling with T4 PNK (M0201S) Set-up the following reaction:. Incubate at 37°C for 30 minutes. Heat inactivate by incubating at 65°C for 20 minutes.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Radioactive Labeling with T4 PNK (M0201S) Set-up the following reaction:. Incubate at 37°C for 30 minutes. Heat inactivate by incubating at 65°C for 20 minutes.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): In a sterile microfuge tube add: Add the following (bringing to 20 L final volume): Incubate at 42°C for 30min-1hr. Inactivate enzyme at 80°C for 5 minutes. Store products at -20°C or proceed to next 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): In a sterile microfuge tube add: Add the following (bringing to 20 L final volume): Incubate at 42°C for 30min-1hr. Inactivate enzyme at 80°C for 5 minutes. Store products at -20°C or proceed to next 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+In a sterile microfuge tube add: Add the following (bringing to 20 L final volume): Incubate at 42°C for 30min-1hr. Inactivate enzyme at 80°C for 5 minutes. Store products at -20°C or proceed to next step(s)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Place Buffer ATL and Buffer Al at 56C for at least 5 minutes before starting. Make sure AW1 and AW2 have ethanol added. Spin >500ul of bacteria liquid culture at 10000g for 10 minutes. Pour off supern
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Place Buffer ATL and Buffer Al at 56C for at least 5 minutes before starting. Make sure AW1 and AW2 have ethanol added. Spin >500ul of bacteria liquid culture at 10000g for 10 minutes. Pour off supern
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Place Buffer ATL and Buffer Al at 56C for at least 5 minutes before starting. Make sure AW1 and AW2 have ethanol added. Spin >500ul of bacteria liquid culture at 10000g for 10 minutes. Pour off supernatant. Add 200ul buffer ATL to each sample and vortex for 15s. Add 200ul 100% ethanol to each sample
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): resuspend cells in MojoSortTM Buffer. Count and adjust the cell concentration to 1 x 108 cells/mL. Aliquot 100 L of cell suspension (107 cells) into a new tube. Add 10 L of the biotin anti-human CD14.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSo
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of MojoSortTM Buffer. Count and adjust the cell concentration to 1 x 108 cells/mL. Aliquot 100 L of cell susp
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): resuspend cells in MojoSortTM Buffer resuspend cells in an appropriate volume of MojoSortTM Buffer aliquot 100 L of cell suspension (107 cells) into a new tube resuspend the beads by vortexing, maximu
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of MojoS
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of MojoSortTM Buffer. Count and adjust the cell concentration to 1 x 108 cells/mL. Aliquot 100 L of cell sus
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): pre-chill 14ml sterile culture tubes on ice pre-heat 0.9ml of LB broth to 42°C thaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed aliquot cells into pre-chilled steril
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pre-chill 14mL sterile culture tubes on ice Pre-heat 0.9mL of LB broth to 42°C Thaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed Aliquot cells into pre-chilled steril
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pre-chill 14mL sterile culture tubes on ice Pre-heat 0.9mL of LB broth to 42°C Thaw XL-10 Gold Ultracompetent cells on ice then mix gently after completely thawed Aliquot cells into pre-chilled sterile culture tubes Swirl tube gently then incubate on ice for 10 minutes swirling gently every 2 minute
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C. Absorb the viruses to the bacteria. Place 15 l of log phase cells and 15 l of seawater filtrate (co
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Incubate at 37 °C for 30 minutes. Heat inactivate by incubating at 65 °C for 20 minutes.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Radioactive_Labeling_with_T4_PNK_(M0201S) Incubate at 37 °C for 30 minutes. Heat inactivate by incubating at 65 °C for 20 minutes.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Radioactive_Labeling_with_T4_PNK_(M0201S) Incubate at 37 °C for 30 minutes. Heat inactivate by incubating at 65 °C for 20 minutes.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Re-suspend cell/tissue pellet in 3 volumes (approximately 200 l/107 cells or 100 mg of tissue) of Lysis Buffer and incubate on ice for 30 min. Centrifuge at 12,000 rpm for 5 min at 4°C and transfer th
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Re-suspend cell/tissue pellet in 3 volumes (approximately 200 l/107 cells or 100 mg of tissue) of Lysis Buffer and incubate on ice for 30 min. Centrifuge at 12,000 rpm for 5 min at 4°C and transfer th
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Re-suspend cell/tissue pellet in 3 volumes (approximately 200 l/107 cells or 100 mg of tissue) of Lysis Buffer and incubate on ice for 30 min. Centrifuge at 12,000 rpm for 5 min at 4°C and transfer the supernatant fraction (containing acid-soluble proteins) into a new vial. Prepare Balance-DTT Buffe
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Add 2 volumes of ice cold ethanol, mix well. Let sit on ice 15-30 minutes. Microfuge at max speed, 20 minutes. Carefully remove supernatant and fill tube halfway with 70% ethanol. Spin at max speed fo
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Add 2 volumes of ice cold ethanol, mix well. Let sit on ice 15-30 minutes. Microfuge at max speed, 20 minutes. Carefully remove supernatant and fill tube halfway with 70% ethanol. Spin at max speed fo
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Add 2 volumes of ice cold ethanol, mix well. Let sit on ice 15-30 minutes. Microfuge at max speed, 20 minutes. Carefully remove supernatant and fill tube halfway with 70% ethanol. Spin at max speed for 2 minutes. Repeat the above step one time (2nd 70% wash). Remove as much ethanol as possible witho
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): YES
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): YES
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+YES
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): MojoSortTM Mouse NK Cell Isolation Kit Protocol
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): ['Prepare cells from your tissue of interest without lysing erythrocytes', 'Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in anappropriate volume of Mo
+Direct parse failed: Expecting value: line 1 column 2 (char 1)
+Array extraction failed: Expecting value: line 1 column 2 (char 1)
+Successfully parsed JSON with 6 actions
+Failed to process protocol_71.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): wash embryos dechorionate embryos fix embryos
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Wash embryos and place into wash basket. Dechorionate by pouring bleach directly onto embryos. Let sit for three minutes. Rinse embryos in basket with ddH2O until bleach is completely washed away. Pla
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Wash embryos and place into wash basket. Dechorionate by pouring bleach directly onto embryos. Let sit for three minutes. Rinse embryos in basket with ddH2O until bleach is completely washed away. Place embryos into glass vial
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prepare the agarose. Cast the agarose. Lyse the agarose. Rinse the agarose.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Add agarose to SE buffer for a final concentration of 1.5% (wt/vol). Melt the agarose in a microwave oven, then cool and maintain at 37°C in a water bath. Warm the viral concentrate to 37°C in the wat
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Add agarose to SE buffer for a final concentration of 1.5% (wt/vol). Melt the agarose in a microwave oven, then cool and maintain at 37°C in a water bath. Warm the viral concentrate to 37°C in the water bath, then immediately mix with an equal volume of molten agarose and quickly transfer the mixtur
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): aliquot 0.1 mL of whole blood (heparin) into a 50 mL conical tube for each test prepare two aliquots: Negative control: untreated, Positive control: treated with stimuli incubate the cells with the ap
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): - Prepare two aliquots: Negative control: untreated, Positive control: treated with stimuli - Incubate the cells with the appropriate stimuli, at the suitable temperature and time. Fix the cells immed
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+- Prepare two aliquots: Negative control: untreated, Positive control: treated with stimuli - Incubate the cells with the appropriate stimuli, at the suitable temperature and time. Fix the cells immediately after treatment by pre-warmed 1 X RBC Lysis/Fixation Solution. Gently pipette to ensure thoro
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Developing a Titration Kill Curve (G418, Hygromycin B and Puromycin)
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Developing a Titration Kill Curve (G418, Hygromycin B and Puromycin)
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Developing a Titration Kill Curve (G418, Hygromycin B and Puromycin)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): LB Agar Plates
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Weigh out the following into a 1L Erlenmeyer flask: 5g NaCl. 5g Tryptone. 2.5g Yeast Extract. 7.5g Agar. add (dH2O) to 500mL. Swirl to mix. Cover the top of the flask with aluminum foil and label with
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Weigh out the following into a 1L Erlenmeyer flask: 5g NaCl. 5g Tryptone. 2.5g Yeast Extract. 7.5g Agar. add (dH2O) to 500mL. Swirl to mix. Cover the top of the flask with aluminum foil and label with autoclave tape. Autoclave on the liquid setting for 20 minutes or according to your autoclave's spe
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Marine Purity Broth
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Autoclave BD Difco AC Broth and NaCl Qs to 1 L with distilled water for 20 min. After broth has cooled, add 16 ml 2 M MgSO4 and 10 ml 1 M CaCl2. Dispense 2.0 or 4.5 ml per sterile tube. Inoculate ster
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Autoclave BD Difco AC Broth and NaCl Qs to 1 L with distilled water for 20 min. After broth has cooled, add 16 ml 2 M MgSO4 and 10 ml 1 M CaCl2. Dispense 2.0 or 4.5 ml per sterile tube. Inoculate sterile MPB with 1:5 (vol:vol) dilution of culture. Incubate at 22 °C
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): DNA_Extraction_of_Cesium_Chloride-Purified_Viruses_using_Wizard_Prep_Columns
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare 2 labeled 1.5ml microfuge tubes per sample and make sure resin is at room temperature. Shake resin vigorously to resuspend particles. Mix 1ml DNA Purification Resin with 0.5ml CsCl sample. Att
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare 2 labeled 1.5ml microfuge tubes per sample and make sure resin is at room temperature. Shake resin vigorously to resuspend particles. Mix 1ml DNA Purification Resin with 0.5ml CsCl sample. Attach minicolumn to bottom of 3ml or 5ml sterile syringe that has had plunger removed. Add resin with 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Inoculate flasks with Chlorella and incubate at 25°C with continuous light and shaking until the cells are in the actively growing phase. Inoculate flasks with Chlorella NC64A in MBBM (or Micractinium
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Inoculate flasks with Chlorella and incubate at 25°C with continuous light and shaking until the cells are in the actively growing phase. Inoculate flasks with Chlorella NC64A in MBBM (or Micractinium
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Inoculate flasks with Chlorella and incubate at 25°C with continuous light and shaking until the cells are in the actively growing phase. Inoculate flasks with Chlorella NC64A in MBBM (or Micractinium Pbi in FES) and incubate at 250C with continuous light and shaking until the cells are in the activ
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_103.txt: 1094 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): a. Let your plates warm to room temperature and label them b. Make whatever dilutions of your phages you plan to plate. Aliquot the agar into tubes and place in 40°C water bath. Pipet 100 l of your ph
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): a. Let your plates warm to room temperature and label them b. Make whatever dilutions of your phages you plan to plate. Aliquot the agar into tubes and place in 40°C water bath. Pipet 100 l of your ph
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+a. Let your plates warm to room temperature and label them b. Make whatever dilutions of your phages you plan to plate. Aliquot the agar into tubes and place in 40°C water bath. Pipet 100 l of your phage sample onto the plate. Remove the agar tube from the water bath and add the host to it. Add 3.5 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Western Blot Sample Prep- Whole Drosophila Embryos collect 100 embryos place into eppendorf tube (1.5ml) containing 50ul of embryo wash. Add 3 drops of bleach and let sit for 3 mins. Raise volume to 1
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Collect 100 embryos and place into eppendorf tube (1.5ml) containing 50ul of embryo wash. Add 3 drops of bleach and let sit for 3 mins. Raise volume to 1.5ml using dH2O. Spin down for 1min. Remove sol
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Collect 100 embryos and place into eppendorf tube (1.5ml) containing 50ul of embryo wash. Add 3 drops of bleach and let sit for 3 mins. Raise volume to 1.5ml using dH2O. Spin down for 1min. Remove solution. Add 1.5ml of dH2O. Spin down 1min. Remove solution. Add 1.5ml of dH2O. Spin down 1 min. Remov
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Dissolve each salt completely before adding the next one. Dispense into 500 ml acid-washed polycarbonate bottles. Autoclave 30 min. pH NaH2PO4 to 7.5 using 1M NaOH. Filter sterilize each solution usin
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Dissolve each salt completely before adding the next one. Autoclave 30 min. pH NaH2PO4 to 7.5 using 1M NaOH. Filter sterilize each solution using 0.2 m syringe filter into new, sterile 50ml centrifuge
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Dissolve each salt completely before adding the next one. Autoclave 30 min. pH NaH2PO4 to 7.5 using 1M NaOH. Filter sterilize each solution using 0.2 m syringe filter into new, sterile 50ml centrifuge tubes or acid washed and sterile polycarbonate bottles. Store at 4°C pH HEPES to 7.5 using 1M NaOH.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): a. Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate. b. Aspirate growth medium, and wash with 1 mL of 1X PBS. c. To fix and permeabilize cells, add 1 mL of methanol-acetic acid 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): a. Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate. b. Aspirate growth medium, and wash with 1 mL of 1X PBS. c. To fix and permeabilize cells, add 1 mL of methanol-acetic acid 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+a. Grow cells on 18 mm round #1 coverglass in a 12-well cell culture plate. b. Aspirate growth medium, and wash with 1 mL of 1X PBS. c. To fix and permeabilize cells, add 1 mL of methanol-acetic acid (MeOH-AcOH) fixation solution. d. Prepare the Hybridization Buffer containing probe. e. Aspirate the
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): thaw_the_slide_mounted_tissue_section immerse_the_slide_in_cold_4%_E.M._grade_paraformaldehyde_in_1X_PBS for_15_minutes wash_with_1X_PBS for_5_minutes wash_twice_with_1X_PBS for_5_minutes dip_the_slid
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): [TABLECONTEXT] [TITLE] Stellaris® RNA FISH Protocol for Brain [TABLECONTEXT] STEP Thaw the slide-mounted tissue section to room temperature. Immerse the slide in cold 4% E.M. grade paraformaldehyde in
+Direct parse failed: Expecting value: line 1 column 2 (char 1)
+Array extraction failed: Expecting value: line 1 column 2 (char 1)
+Successfully parsed JSON with 1 actions
+Failed to process protocol_179.txt: 'str' object has no attribute 'get'
+Skipping protocol_238.txt: 1967 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Take the desired petri plates of virus plaques on chlorella lawns and chill in the cold room for 30-60 min prior to use. Overlay the plates with the nitrocellulose circles. Allow the nitrocellulose to
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Overlay the plates with the nitrocellulose circles. Allow the nitrocellulose to lay on the agar surface for 15 min. Allow the filters to air dry. Add 7.5-8.0 mL of the blocking solution to each filter
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Overlay the plates with the nitrocellulose circles. Allow the nitrocellulose to lay on the agar surface for 15 min. Allow the filters to air dry. Add 7.5-8.0 mL of the blocking solution to each filter in a glass petri plate and incubate for 30 min with gentle shaking (approximately 100 rpm on the ro
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prepare the separating gel. Fill the gel. Prepare the stacking gel. Fill the gel.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): 4% / 10% Stacking and Separating Protein Gel Into a 15 mL centrifuge tube, add 5 mL 2x Separating Gel Buffer. Add 2.5 mL 40% Acrylamide/bis-acrylamide (29:1). Add 2.5 mL DI H2O 50 uL 10% Ammonium pers
+Direct parse failed: Extra data: line 1 column 2 (char 1)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting ',' delimiter: line 1 column 3 (char 2)
+All parsing strategies failed. Raw output (first 300 chars):
+4% / 10% Stacking and Separating Protein Gel Into a 15 mL centrifuge tube, add 5 mL 2x Separating Gel Buffer. Add 2.5 mL 40% Acrylamide/bis-acrylamide (29:1). Add 2.5 mL DI H2O 50 uL 10% Ammonium persulfate. Add 5 uL TEMED, then invert tube several times to properly mix all components and initiate t
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): a. For PVDF Membranes: Add 20ml 100% methanol and rinse for 1030 seconds. Discard the methanol and immediately add 12ml SwiftTM Membrane Stain. b. For Nitrocellulose Membranes: Add 20ml deionized wate
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): a. For PVDF Membranes: Add 20ml 100% methanol and rinse for 1030 seconds. Discard the methanol and immediately add 12ml SwiftTM Membrane Stain. b. For Nitrocellulose Membranes: Add 20ml deionized wate
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+a. For PVDF Membranes: Add 20ml 100% methanol and rinse for 1030 seconds. Discard the methanol and immediately add 12ml SwiftTM Membrane Stain. b. For Nitrocellulose Membranes: Add 20ml deionized water and rinse for 30 seconds. Discard the wash and add 12ml SwiftTM Membrane Stain. Place the trays on
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): aliquot_yeast_overnight_culture_into_a_1.5ml_microfuge_tube_and_centrifuge_at_14,000xg_for_30_seconds. discard_the_supernatant. add_150l_PBS,_5l_LongLifeTM_Zymolyase® and_1l_-mercaptoethanol_to_the_pe
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Aliquot 1.5ml yeast overnight culture into a 1.5ml microfuge tube and centrifuge at 14,000xg for 30 seconds. Discard the supernatant. Add 150l PBS, 5l LongLifeTM Zymolyase® and 1l -mercaptoethanol to 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Aliquot 1.5ml yeast overnight culture into a 1.5ml microfuge tube and centrifuge at 14,000xg for 30 seconds. Discard the supernatant. Add 150l PBS, 5l LongLifeTM Zymolyase® and 1l -mercaptoethanol to the pellet and gently vortex to resuspend. Incubate at 37°C for 30 minutes with periodic mixing. Cen
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Label the dilution preparation plate using example in guidelines. Label the sample plates with the date, host, phage name, and any other applicable information (e.g. the light level). Using a 8x1500 L
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Label the dilution preparation plate using example in guidelines. Label the sample plates with the date, host, phage name, and any other applicable information (e.g. the light level). Using a 8x1500 L
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Label the dilution preparation plate using example in guidelines. Label the sample plates with the date, host, phage name, and any other applicable information (e.g. the light level). Using a 8x1500 L multi-channel pipettor, put 270 L of Pro99 or SN medium in all wells of dilution plate. Using a 100
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Transformation and Storage Solution (TSS) Chemical Volume/Mass Final Conc.PEG 8000 or PEG 3350 20 g 20 % ( w/v ) DMSO 10 ml 10 % ( w/v ) MgCl2 * H2O 2.03 g 100 mL B Medium add 100 ml ( pH 6.5 ) Prepar
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Transformation and Storage Solution (TSS) Chemical Volume/Mass Final Conc.PEG 8000 or PEG 3350 20 g 20% (w/v) DMSO 10 ml 10% (w/v) MgCl2 * H2O 2.03 g 100 mL SB Mediumadd 100 ml (pH 6.5). Prepare 2x TS
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Transformation and Storage Solution (TSS) Chemical Volume/Mass Final Conc.PEG 8000 or PEG 3350 20 g 20% (w/v) DMSO 10 ml 10% (w/v) MgCl2 * H2O 2.03 g 100 mL SB Mediumadd 100 ml (pH 6.5). Prepare 2x TSS without DMSO and autoclave. Add sterile DMSO after autoclaving. Divide in 10 ml aliquots and store
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prepare FLVs for tracer assays. Collect seawater samples from the desired location. After determining the concentration of the FLVs in the concentrate, and the ambient concentration of viruses in the 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare FLVs for tracer assays. Collect seawater samples from the desired location. Add the proper amount of FLV concentrate at tracer levels (10% of original ambient virus concentration) into sample 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare FLVs for tracer assays. Collect seawater samples from the desired location. Add the proper amount of FLV concentrate at tracer levels (10% of original ambient virus concentration) into sample volumes of no less than 400 mL. Designate a control treatment.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Run tris-glycine gel. Transfer protein to PVDF. Rinse membrane in 1x TBST Block in 5% non-fat milk/TBST for 30 minutes at RT. Incubate membrane with anti-FMRP 1C3 at 1:4000 at RT for 1hr or O/N at 4C 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Run tris-glycine gel Transfer protein to PVDF Rinse membrane in 1x TBST Block in 5% non-fat milk/TBST for 30 minutes at RT Incubate membrane with anti-FMRP 1C3 at 1:4000 at RT for 1hr or O/N at 4C in 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Run tris-glycine gel Transfer protein to PVDF Rinse membrane in 1x TBST Block in 5% non-fat milk/TBST for 30 minutes at RT Incubate membrane with anti-FMRP 1C3 at 1:4000 at RT for 1hr or O/N at 4C in 5% non-fat milk/1x TBST Rinse membrane 5x with 1x TBST over 30 minutes. Block with 5% IgG-Free, Prot
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ['Mix Lysing Solution (LS) & Sodium Perchlorate (SP) in 2:1', 'Mix the combined Lysing Solution & sodium Perchlorate with virus prep :18.5 ml LS+SP with 10ml virus prep ( 1011 PFU/ml ). Incubate the l
+Successfully parsed JSON with 2 actions
+Failed to process protocol_82.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prepare 9 tubes (numbered #1–#9) with 4.5 mL medium. Add 500 L of the virus filtrate (virus size fraction) to tube #1 and vortex. Change the pipette tip and transfer 500 L of suspension #1 to tube #2 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare 9 tubes (numbered #1–#9) with 4.5 mL medium. Add 500 L of the virus filtrate (virus size fraction) to tube #1 and vortex. Change the pipette tip and transfer 500 L of suspension #1 to tube #2 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare 9 tubes (numbered #1–#9) with 4.5 mL medium. Add 500 L of the virus filtrate (virus size fraction) to tube #1 and vortex. Change the pipette tip and transfer 500 L of suspension #1 to tube #2 and vortex. Repeat the procedure to tube #8. Pour vigorously growing algal host culture into the res
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prepare anaerobic collection vessel. Collect samples. Dilute samples in Sulfolobus growth medium. Plate samples on Gelrite plates.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare anaerobic collection vessel. Collect liquid and wet sediment samples from turbid terrestrial hot springs with high temperature > 70 C and low pH  4. Dilute samples in Sulfolobus growth medium.
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare anaerobic collection vessel. Collect liquid and wet sediment samples from turbid terrestrial hot springs with high temperature > 70 C and low pH  4. Dilute samples in Sulfolobus growth medium. Plate samples on Gelrite plates.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Fractionation_of_Light_and_Heavy_Mitochondria_by_Gradient_Cushion
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Fractionation_of_Light_and_Heavy_Mitochondria_by_Gradient_Cushion
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Fractionation_of_Light_and_Heavy_Mitochondria_by_Gradient_Cushion
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_233.txt: 1211 tokens > 1024
+Skipping protocol_510.txt: 3177 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): TCBS_Agar_Plates_(500ml)
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): TCBS Agar Plates (500ml)
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+TCBS Agar Plates (500ml)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Isolation of Haloviruses from Natural Waters
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Isolation of Haloviruses from Natural Waters
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Isolation of Haloviruses from Natural Waters
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): RNA Extraction from Drosophila Tissues using TRIzol Reagent Add 1 mL TRIzol Reagent to 50-100 mg of frozen Drosophila tissue in a 1.5 mL microcentrifuge tube, and homogenize immediately with a disposa
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Add 1 mL TRIzol Reagent to 50-100 mg of frozen Drosophila tissue in a 1.5 mL microcentrifuge tube, and homogenize immediately with a disposable plastic pestle. Centifuge the sample at 12,000 x g for 1
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Add 1 mL TRIzol Reagent to 50-100 mg of frozen Drosophila tissue in a 1.5 mL microcentrifuge tube, and homogenize immediately with a disposable plastic pestle. Centifuge the sample at 12,000 x g for 10 minutes at 4 C. Incubate the sample for 5 minutes at room temperature. Add 0.2 mL of chloroform, a
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): protein_coomassie_blue_staining, submerge_protein_acrylamide_gel, shake, room_temperature, two_hours, pour_off_stain, wash_gel, then, pour_more_stain, shake, room_temperature, overnight, pour_off_stai
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): protein_coomassie_blue_staining
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+protein_coomassie_blue_staining
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Blunting_Protocol (M0203) Dissolve DNA in any 1X NEBuffer or T4 DNA Ligase Reaction Buffer. Supplement with 100 M of each dNTP. Add 1 unit of T4 DNA Polymerase per microgram DNA. Incubate 15 minutes a
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Blunting_Protocol (M0203)
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Blunting_Protocol (M0203)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C.
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pull Roseobacter cultures from freeze and grow in 5 ml broth cultures. Perform virus screening in sterile 96 well flat-bottom tissue culture treated microtiter plates. Store seawater filtrates at 4°C
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): ['Excise the DNA fragment from the agarose gel', 'Add 4 volumes of Gel Dissolving Buffer to the gel slice', 'Incubate the sample between 37–55°C (typically 50°C), until the gel slice is completely dis
+Direct parse failed: Expecting value: line 1 column 2 (char 1)
+Array extraction failed: Expecting value: line 1 column 2 (char 1)
+Successfully parsed JSON with 8 actions
+Failed to process protocol_585.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): DNA_fragmentation_by_DNase_digestion
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): DNA_fragmentation_by_DNase_digestion
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+DNA_fragmentation_by_DNase_digestion
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ['On ice, add up to 2.5x106 cells to a Tube-O-DIALYZERTM and centrifuge at 5,000xg for 5 minutes to pellet cells. Discard the supernatant. Add 500l Nuclei Isolation Buffer. Invert the tube 2-3 times t
+Successfully parsed JSON with 1 actions
+Failed to process protocol_471.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Prefilter at least 3 L water sample through a glass fiber filter. Filter sample through 0.2 m or 0.45 m low protein binding PVDF filter. Dispense the filtered water samples (e.g., 0.5 L or more) into 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prefilter at least 3 L water sample through a glass fiber filter. Filter sample through 0.2 m or 0.45 m low protein binding PVDF filter. Dispense the filtered water samples (e.g., 0.5 L or more) into 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prefilter at least 3 L water sample through a glass fiber filter. Filter sample through 0.2 m or 0.45 m low protein binding PVDF filter. Dispense the filtered water samples (e.g., 0.5 L or more) into culture vessels, e.g., 1 L or larger Erlenmeyer flasks. Add nutrients to the filtered water to suppo
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Pipette 1.7 mL amplified 0.22-m filtered virus stock into 1.7-mL screw cap tubes. Float the microcentrifuge tubes in long ultracentrifuge tubes (14  95 mm) using water until they are just flush with t
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pipette 1.7 mL amplified 0.22-m filtered virus stock into 1.7-mL screw cap tubes. Float the microcentrifuge tubes in long ultracentrifuge tubes (14  95 mm) using water until they are just flush with t
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pipette 1.7 mL amplified 0.22-m filtered virus stock into 1.7-mL screw cap tubes. Float the microcentrifuge tubes in long ultracentrifuge tubes (14  95 mm) using water until they are just flush with the top of the ultracentrifuge tubes; balance them to within 1 g. Load the ultracentrifuge tubes into
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): harvest lymph nodes isolate CD4+ cells culture cells for 3 days in complete RPMI containing 10% FCS, Con A (5 g/mL), recombinant mouse IL-2 (20 ng/ml), and recombinant mouse IL-4 (50 ng/ml) seed cells
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): harvest lymph nodes isolate CD4+ cells culture cells for 3 days in complete RPMI containing 10% FCS, Con A (5 g/mL), recombinant mouse IL-2 (20 ng/ml), and recombinant mouse IL-4 (50 ng/ml) seed cells
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+harvest lymph nodes isolate CD4+ cells culture cells for 3 days in complete RPMI containing 10% FCS, Con A (5 g/mL), recombinant mouse IL-2 (20 ng/ml), and recombinant mouse IL-4 (50 ng/ml) seed cells at 15 x106 cells/30 ml/T-75 flask along with recombinant mouse IL-2 (20 ng/ml) and recombinant mous
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): double_spri_for_second_generation_sequencing_add_65_u_l_spri_ampure_beads_to_50l_of_sample._mix_and_incubate_for_20_minutes._separate_on_magnet_(6_min.)_transfer_all_supernatant_(about_115_u_l)_into_a
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Actions = "Add 65 l SPRI Ampure beads to 50l of sample. Mix and incubate for 20 minutes. Separate on magnet (6 min.) Transfer all supernatant (about 115 l) into a new well (off magnet). Add 100 l of S
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Actions = "Add 65 l SPRI Ampure beads to 50l of sample. Mix and incubate for 20 minutes. Separate on magnet (6 min.) Transfer all supernatant (about 115 l) into a new well (off magnet). Add 100 l of SPRI beads. Mix and incubate for 15 minutes. Separate on magnet (6min), discard supernatant. Wash bea
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Plating Prochlorococcus and Synechococcus strains in top agarose for plaque assays
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare base plates using 0.4% GIBCO LM agarose (0.4g agarose / 100 ml). Make up plates using filtered, autoclaved 75% Sargasso Sea Water (SSW). Add appropriate agarose, then microwave to a boil. Add 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare base plates using 0.4% GIBCO LM agarose (0.4g agarose / 100 ml). Make up plates using filtered, autoclaved 75% Sargasso Sea Water (SSW). Add appropriate agarose, then microwave to a boil. Add appropriate nutrients to bring levels up to media of choice (SN, Pro99?) Vortex / shake to mix nutri
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): host_cells_grown, soft_agar, bacterial_culture, spotted_samples, incubation_period, clearing_zone
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by sp
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by spotting on target host cells Bacteriophage isolation by spotting on target host cells
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Single-temperature Double Digest, set_up, 50 l; Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube; Quick ("touch") spin-down in a microcentrifuge; Do not
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Single-temperature_Double_Digest Set up the following reaction (total reaction volume 50 l). Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube. Quick ("t
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Single-temperature_Double_Digest Set up the following reaction (total reaction volume 50 l). Mix components by pipetting the reaction mixture up and down, or by "flicking" the reaction tube. Quick ("touch") spin-down in a microcentrifuge. Do not vortex the reaction. Incubate for 1 hour at the enzyme
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Mix 25 ml of 40% glyoxal to be deionized with 2.5 g of mixed bed resin. Mix the solution by magnetic stirrer for 30 minutes at room temperature. Check the pH of the glyoxal solution. Repeat the deioni
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Mix 25 ml of 40% glyoxal to be deionized with 2.5 g of mixed bed resin. Repeat the deionization process (steps 2. and 3.) until the color of the resin does not change anymore. Check the pH of the glyo
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Mix 25 ml of 40% glyoxal to be deionized with 2.5 g of mixed bed resin. Repeat the deionization process (steps 2. and 3.) until the color of the resin does not change anymore. Check the pH of the glyoxal solution. Repeat the deionization process (steps 2. and 3.) until the pH of the glyoxal is >5.5.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_80.txt: 1632 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): resuspend_pellet_in_200_l_Plasmid_Resuspension_Buffer_(B1) add_200_l_Plasmid_Lysis_Buffer_(B2) incubate_at_room_temperature_for_1_minute add_400_l_Plasmid_Neutralization_Buffer_(B3) incubate_at_room_t
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pellet 1–5 ml bacterial culture by centrifugation at 16,000 x g for 30 seconds. Discard supernatant. Resuspend pellet in 200 l Plasmid Resuspension Buffer (B1). Vortex or pipet to ensure cells are com
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pellet 1–5 ml bacterial culture by centrifugation at 16,000 x g for 30 seconds. Discard supernatant. Resuspend pellet in 200 l Plasmid Resuspension Buffer (B1). Vortex or pipet to ensure cells are completely resuspended. There should be no visible clumps. Add 200 l Plasmid Lysis Buffer (B2), gently 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): wash_gel_in_ultra_pure_water_for_5_minutes.replace_the_water_and_wash_for_another_5_minutes.fix_gel_in_30%_ethanol:10%_acetic_acid_solution_(i.e., 6:3:1 water:ethanol:acetic acid)_for_15_minutes.repla
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Wash gel in ultra pure water for 5 minutes. Replace the water and wash for another 5 minutes. Fix gel in 30% ethanol:10% acetic acid solution (i.e., 6:3:1 water:ethanol:acetic acid) for 15 minutes. Re
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Wash gel in ultra pure water for 5 minutes. Replace the water and wash for another 5 minutes. Fix gel in 30% ethanol:10% acetic acid solution (i.e., 6:3:1 water:ethanol:acetic acid) for 15 minutes. Replace the solution and fix for another 15 minutes. Wash gel in 10% ethanol solution for 5 minutes. R
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ['Stained Material', 'Add 200l chloroform', 'Add 50l DNA Stripping Solution', 'Add 100l Precipitation Solution', 'Centrifuge the sample at 14,000xg for 5 minutes', 'Add 700l 70% ethanol to the tube an
+Successfully parsed JSON with 7 actions
+Failed to process protocol_51.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Perform assays at room temperature. Use 2ml tubes for assay. Prepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below: Tube #123456Prote
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Perform assays at room temperature. Use 2ml tubes for assay. Prepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below: Tube #123456Prote
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+Array extraction failed: Expecting ',' delimiter: line 1 column 3 (char 2)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Perform assays at room temperature. Use 2ml tubes for assay. Prepare a set of protein standards using the supplied BSA or Non-Animal Protein Standard as indicated in the table below: Tube #123456Protein Standard [2mg/ml] (l)048122025Protein (g)0816244050. Add 1-50l of the protein samples to be assay
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ['Add 0.5-1cm, approximately 50-100mg, mouse tail in to a 1.5ml microcentrifuge tube with 500l Genomic Lysis Buffer.', 'Add 10l Proteinase K solution and incubate at 60°C for 3-4 hours to overnight.',
+Successfully parsed JSON with 6 actions
+Failed to process protocol_496.txt: 'str' object has no attribute 'get'
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): PBCV-1 Virus Plaque Assay
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Pour the plates either the day of titering or the day before. Melt the MBBM soft agar and hold in the 50°C water bath. Dispense 2.5 ml of soft agar to sterile 13 x 100 mm tubes and hold at 50°C. Conce
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Pour the plates either the day of titering or the day before. Melt the MBBM soft agar and hold in the 50°C water bath. Dispense 2.5 ml of soft agar to sterile 13 x 100 mm tubes and hold at 50°C. Concentrate the NC64A chlorella to 4.0 X 108 cells/ml in the Sorvall centrifuge at 5,000 rpm, 5 min, 4°C 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Grow DH5alpha ecoli cells overnight with pSP64 poly(A) plasmid containing inserted spike-in sequence Digest plasmids with EcoRI. Set up the digestion reaction in 50ul 1x EcoRI compatible buffer with 3
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Grow DH5alpha ecoli cells overnight with pSP64 poly(A) plasmid containing inserted spike-in sequence. Miniprep plasmids, quantify. Set up the digestion reaction in 50ul 1x EcoRI compatible buffer with
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Grow DH5alpha ecoli cells overnight with pSP64 poly(A) plasmid containing inserted spike-in sequence. Miniprep plasmids, quantify. Set up the digestion reaction in 50ul 1x EcoRI compatible buffer with 3ug pSP64-NSERT-poly(A) and 5ul EcoRI. Incubate 2 hours each, 37C. Save some plasmid for the gel be
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): for each culture tube fill half way up with horse serum and then fill up with RPMI – leaving about 2 cm gap from the top. Add 500l of penicillium With a pair of blunt forceps gently open the top of di
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): For each culture tube fill half way up with horse serum and then fill up with RPMI – leaving about 2 cm gap from the top. Add 500l of penicillium With a pair of blunt forceps gently open the top of di
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+For each culture tube fill half way up with horse serum and then fill up with RPMI – leaving about 2 cm gap from the top. Add 500l of penicillium With a pair of blunt forceps gently open the top of dialysis membrane and place the worm into the membrane. Screw the top on to the tube – and loosen slig
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_397.txt: 1108 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): sterilize seawater wash activated charcoal add washed charcoal to the sterilized seawater stir the washed charcoal plus sterilized seawater for at least 30min, using a stir plate filter the mixture us
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): seawater_treatment_steps
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+seawater_treatment_steps
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_455.txt: 2744 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Isolation of Mitochondria from Animal Cells using the FOCUSTM Mitochondria Kit OPTIONAL: Add appropriate protease inhibitor cocktail (e.g. G-Biosciences’ Protease Arrest, Cat# 786-108) to SubCell Buff
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Isolation of Mitochondria from Animal Cells using the FOCUSTM Mitochondria Kit OPTIONAL: Add appropriate protease inhibitor cocktail (e.g. G-Biosciences’ Protease Arrest, Cat# 786-108) to SubCell Buffer-I just before use. Use fresh cells only. Pellet the harvested cells by centrifugation at 800 x g 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): select_samples, record_weight, size, number_of_samples, infect_samples, infect_samples_with_fungi, infect_samples_with_fungi_isolate, infect_samples_with_fungi_isolate, infect_samples, infect_samples_
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Manually select almond kernel samples that are pasteurized and shelled. Record weight and size of almond kernels Separate the samples into two groups. Out of the 550 almond kernels collected 460 of th
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Manually select almond kernel samples that are pasteurized and shelled. Record weight and size of almond kernels Separate the samples into two groups. Out of the 550 almond kernels collected 460 of those will be infected with two types of fungi that commonly affect almond crops. 230 will be infected
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): MojoSortTM Mouse Neutrophil Isolation Kit Protocol
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of MojoS
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare cells from your tissue of interest without lysing erythrocytes. Filter the cells with a 70 m cell strainer, centrifuge at 300 x g for 5 minutes, and resuspend in an appropriate volume of MojoSortTM Buffer. Count and adjust the cell concentration to 1 x 108 cells/mL. Aliquot 100 L of cell sus
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): To create the grazer-free diluent whole seawater is gravity filtered through acid-washed 0.2–0.45 m filters (e.g., PALL AcropakTM Supor® membrane capsules) into a clean carboy. After gravity filtratio
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): To create the grazer-free diluent whole seawater is gravity filtered through acid-washed 0.2–0.45 m filters (e.g., PALL AcropakTM Supor® membrane capsules)
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+To create the grazer-free diluent whole seawater is gravity filtered through acid-washed 0.2–0.45 m filters (e.g., PALL AcropakTM Supor® membrane capsules)
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): DNase_I_Treatment DNase I made up to 40,000 U/ml in storage buffer (-20°C freezer door) = stock solution. Dilute stock solution 1:40 in 10x reaction buffer = 1,000 U/ml = 1 U/ul = working dilution. Us
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): DNase I Treatment DNase I made up to 40,000 U/ml in storage buffer (-20°C freezer door) = stock solution. Dilute stock solution 1:40 in 10x reaction buffer = 1,000 U/ml = 1 U/ul = working dilution. Us
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+DNase I Treatment DNase I made up to 40,000 U/ml in storage buffer (-20°C freezer door) = stock solution. Dilute stock solution 1:40 in 10x reaction buffer = 1,000 U/ml = 1 U/ul = working dilution. Use at a 1:10 dilution: 1l per 9 l solution to be treated. Incubate at room temperature for 2hr. Prepa
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Grow 5 mL of the host cells overnight in L broth at 37°C. Inoculate 100 mL of L broth with 1 mL of the overnight culture. Grow the cells with shaking at 37°C to a density of approximately 5 X 107 cell
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Grow 5 mL of the host cells overnight in L broth at 37 °C. Inoculate 100 mL of L broth with 1 mL of the overnight culture. Grow the cells with shaking at 37 °C to a density of approximately 5 X 107 ce
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Grow 5 mL of the host cells overnight in L broth at 37 °C. Inoculate 100 mL of L broth with 1 mL of the overnight culture. Grow the cells with shaking at 37 °C to a density of approximately 5 X 107 cells/ml. Chill the culture on ice for 10 min.
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): 5L of an enrichment culture, or 0.2 m filtered and centrifuged (10 min at 3000g) cell-free supernatant, is spotted onto carbon/formvar-coated electron microscope grids (Ted Pella or EM Sciences). It i
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): 5L of an enrichment culture, or 0.2 m filtered and centrifuged (10 min at 3000g) cell-free supernatant, is spotted onto carbon/formvar-coated electron microscope grids
+Direct parse failed: Extra data: line 1 column 2 (char 1)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting ',' delimiter: line 1 column 3 (char 2)
+All parsing strategies failed. Raw output (first 300 chars):
+5L of an enrichment culture, or 0.2 m filtered and centrifuged (10 min at 3000g) cell-free supernatant, is spotted onto carbon/formvar-coated electron microscope grids
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): ACUITYAdvanced_Protocol, "ACUITYAdvanced system is recommended for use on formalin fixed paraffin embedded sections. Positively charged slides recommended to securely adhere tissue. Paraffin embedded 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): ACUITYAdvanced_Protocol, "ACUITYAdvanced system is recommended for use on formalin fixed paraffin embedded sections. Positively charged slides recommended to securely adhere tissue. Paraffin embedded 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+ACUITYAdvanced_Protocol, "ACUITYAdvanced system is recommended for use on formalin fixed paraffin embedded sections. Positively charged slides recommended to securely adhere tissue. Paraffin embedded sections must be de-paraffinized with xylene and rehydrated with a graded series of ethanolbefore st
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Purify Viruses Using Sucrose Cushion
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Prepare sucrose (Molecular Biology Grade or higher) as 38% (weight to volume) in SM buffer (100mM NaCl, 8mM MgSO4, 50mM TrisJHCl, pH 7.5) that has been 0.2m filtered. Rinse SW40 tubes with SM buffer o
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Prepare sucrose (Molecular Biology Grade or higher) as 38% (weight to volume) in SM buffer (100mM NaCl, 8mM MgSO4, 50mM TrisJHCl, pH 7.5) that has been 0.2m filtered. Rinse SW40 tubes with SM buffer or sterile water. Place the 9.5ml DNase I-treated sample into the rinsed ultracentrifuge tube. Using 
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Isolation and Purification of DNA from Chlorella Viruses
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): For each gradient, in 100 x 13 mm tubes, mix together 500 L of virus, 60 L of 10X TEN, pH 7.4, and 60 L of 1% Na sarcosyl. Add 600 L of 60% (w/w) CsCl to each tube. Heat the tubes at 75°C for 15 min. 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+For each gradient, in 100 x 13 mm tubes, mix together 500 L of virus, 60 L of 10X TEN, pH 7.4, and 60 L of 1% Na sarcosyl. Add 600 L of 60% (w/w) CsCl to each tube. Heat the tubes at 75°C for 15 min. Layer the samples onto pre-formed 40-60% (w/w) CsCl gradients in SW60 rotor tubes (to make a final 3
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Infect appropriate host with desired Chlorovirus species at moi of 0.001-0.01. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the S
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Infect appropriate host with desired Chlorovirus species at moi of 0.001-0.01. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the S
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Infect appropriate host with desired Chlorovirus species at moi of 0.001-0.01. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the Sorvall SS34 rotor at 5,000 rpm (3,000 rcf), 5 min, 4°C. Add 10% NP-40 (or Triton X-100) to the lysat
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_275.txt: 1131 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Calculate how much NHS-Biotin that is needed for biotinylation of the desired amount of mucin (assumed to have Mw 500 000 Da) and the molar ratio of biotin:mucin should be 1:2000. Prepare Phosphate Bu
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Calculate how much NHS-Biotin that is needed for biotinylation of the desired amount of mucin (assumed to have Mw 500 000 Da) and the molar ratio of biotin:mucin should be 1:2000. Prepare Phosphate Bu
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Calculate how much NHS-Biotin that is needed for biotinylation of the desired amount of mucin (assumed to have Mw 500 000 Da) and the molar ratio of biotin:mucin should be 1:2000. Prepare Phosphate Buffered Saline (PBS) with pH 7.4. Dissolve mucin in PBS to a concentration of 2mg/ml. Take out the NH
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Grow cultured cells on cover slips or chamber slides overnight or add appropriate amount of cells to polyLlysine coated chamber slides and incubate at least 30 minutes at 37°C. At thetime of fixation 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Grow cultured cells on cover slips or chamber slides overnight or add appropriate amount of cells to polyLlysine coated chamber slides and incubate at least 30 minutes at 37°C. Rinse cells briefly in 
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Grow cultured cells on cover slips or chamber slides overnight or add appropriate amount of cells to polyLlysine coated chamber slides and incubate at least 30 minutes at 37°C. Rinse cells briefly in 1X PBS. Fix cells by incubation with cold 100% methanol for 515 minutes at 20°C. Rinse three times i
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Isolation_Buffer (40 mL) Isolation_Buffer (40 mL) Isolation_Buffer (40 mL) PEG-6000 Solution. Mix:6 g PEG10 ml water Percoll Solution (20 mL Stock). Mix:19 ml Percoll1 ml PEG – 6000 solution0.2 g Fico
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Buffers for Chloroplast Isolation from Diatoms  Isolation Buffer (40 mL) 1) Mix: 20 ml 1 M sorbitol400 l 0.6 M Na2-EDTA200 l 1 M MgCl2400 l 1 M KCl40 l 1 M MnCl22 ml 1 M HEPES-KOH pH = 8.016.96 ml Ste
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Buffers for Chloroplast Isolation from Diatoms  Isolation Buffer (40 mL) 1) Mix: 20 ml 1 M sorbitol400 l 0.6 M Na2-EDTA200 l 1 M MgCl2400 l 1 M KCl40 l 1 M MnCl22 ml 1 M HEPES-KOH pH = 8.016.96 ml Sterile H2O. 2) Add bovine serum albumen (BSA) 1% (w/v) just before use to subset of isolation buffer n
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): actions = "Thaw 20–50 mg of tissue or 15CM dish cells in 1 mL of high salt buffer. Homogenize tissues using an IKA Ultra Turbax blender at maximum speed ( 25,000rpm) for 30 s. Ultracentrifuge the susp
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): actions = "Thaw 20–50 mg of tissue or 15CM dish cells in 1 mL of high salt buffer. Homogenize tissues using an IKA Ultra Turbax blender at maximum speed ( 25,000rpm) for 30 s. Ultracentrifuge the susp
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+actions = "Thaw 20–50 mg of tissue or 15CM dish cells in 1 mL of high salt buffer. Homogenize tissues using an IKA Ultra Turbax blender at maximum speed ( 25,000rpm) for 30 s. Ultracentrifuge the suspension in Beckman MLA 130 at 100,000 g for 10 min. Discard the supernatant and homogenize pellets in
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Inoculate cultures of your donor and recipient strains, with appropriate antibiotics, in lysogeny broth (LB). Centrifuge the donor and recipient culture and resuspend the bacterial pellet in fresh LB 
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Inoculate small (2 or 3 ml) cultures of your donor and recipient strains, with appropriate antibiotics, in lysogeny broth (LB). Take 1 ml of donor and recipient culture and centrifuge at 10,000 rcf fo
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Inoculate small (2 or 3 ml) cultures of your donor and recipient strains, with appropriate antibiotics, in lysogeny broth (LB). Take 1 ml of donor and recipient culture and centrifuge at 10,000 rcf for 2 minutes to pellet the bacteria. Aspirate and discard the supernatant and resuspend the bacterial
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Resuspend pelleted bacterial cells in 250l Buffer P1 and transfer to a micro-centrifuge tube. Ensure that RNase A has been added to Buffer P1. If LyseBlue reagent has been added to Buffer P1, vigorous
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Resuspend pelleted bacterial cells in 250l Buffer P1 and transfer to a micro-centrifuge tube. Ensure that RNase A has been added to Buffer P1. If LyseBlue reagent has been added to Buffer P1, vigorous
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Resuspend pelleted bacterial cells in 250l Buffer P1 and transfer to a micro-centrifuge tube. Ensure that RNase A has been added to Buffer P1. If LyseBlue reagent has been added to Buffer P1, vigorously shake the buffer bottle to ensure LyseBlue particles are completely dissolved. The bacteria shoul
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Skipping protocol_176.txt: 1595 tokens > 1024
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Infect 60 mL of chlorella with 200 L of viral single plaque isolates. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the Sorvall SS
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Infect 60 mL of chlorella with 200 L of viral single plaque isolates. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the Sorvall SS
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Infect 60 mL of chlorella with 200 L of viral single plaque isolates. Incubate the samples at 25°C for 24-72 hours, with continuous light and shaking. Centrifuge 30 mL of the lysates in the Sorvall SS34 rotor at 5,000 rpm (3,000 rcf), 5 min, 4°C. Save the supernatants. Add 10% NP-40 (or Triton X-100
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+Using constrained decoding with JSON schema...
+Constrained decoding failed: `prefix_allowed_tokens_fn` returned an empty list for batch ID 0.This means that the constraint is unsatisfiable. Please check your implementationof `prefix_allowed_tokens_fn` 
+Falling back to standard generation...
+Fallback attempt 1/2
+Raw output (first 200 chars): Concentrate the viruses by centrifuging in the centrifugal ultrafiltration device at 1000g until only a small volume (ca. 10 L) remains. Add 100 L TE (or TEGED). Concentrate the sample again to ca. 10
+Attempt 1 failed to produce valid JSON
+Fallback attempt 2/2
+Raw output (first 200 chars): Release of nucleic acids with heat, chelator, and detergent
+Direct parse failed: Expecting value: line 1 column 1 (char 0)
+json_repair failed: Expecting value: line 1 column 1 (char 0)
+Manual fixes failed: Expecting value: line 1 column 2 (char 1)
+All parsing strategies failed. Raw output (first 300 chars):
+Release of nucleic acids with heat, chelator, and detergent
+Attempt 2 failed to produce valid JSON
+Warning: All generation attempts failed to produce valid JSON
+
+============================================================
+Test Set Evaluation Summary
+============================================================
+
+Total Protocols Processed:   125
+Successful JSON Parses:     11
+Failed JSON Parses:          23
+JSON Parse rate:            8.80%
+
+Action Extraction:
+Ground Truth Actions:        2208
+Predicted Actions:          43
+Correct Action Names:       0
+Action Precision:           0.00%
+Action Recall:              0.00%
+Action F1 Score:            0.00%
+
+Parameter Extraction:
+True Positives (TP):        0
+False Positives (FP):       0
+False Negatives (FN):       0
+Parameter Precision:        0.00%
+Parameter Recall:           0.00%
+Parameter F1 Score:         0.00%
+
+Failed Parses:
+ - protocol_253.txt: 'str' object has no attribute 'get'...
+ - protocol_220.txt: Input too long: 1402 tokens...
+ - protocol_302.txt: 'str' object has no attribute 'get'...
+ - protocol_235.txt: Input too long: 1296 tokens...
+ - protocol_86.txt: Input too long: 1253 tokens...
+ ... and 18 more.
+
+Predicted JSON files saved to: test_predictions
+
+============================================================
+
+
+============================================================
+Phase 3: Generating Automation Script from Example Protocol
+============================================================
+
+Example Automation Script (protocol_224):
+
+# Lab Automation Script
+# Generated from protocol analysis
+
